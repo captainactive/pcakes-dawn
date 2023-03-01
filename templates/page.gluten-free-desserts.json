@@ -13,19 +13,19 @@
         "template--16656210395378__5fc43b1e-93cd-4ae8-a7f5-a0cffd008288-1677647719581a7b92-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "vegan-cupcakes"
+            "collection": "gluten-free-cupcakes"
           }
         },
         "template--16656210395378__5fc43b1e-93cd-4ae8-a7f5-a0cffd008288-1677647719581a7b92-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "vegan-mini-cupcakes"
+            "collection": "gluten-free-mini-cupcakes"
           }
         },
         "template--16656210395378__5fc43b1e-93cd-4ae8-a7f5-a0cffd008288-1677647719581a7b92-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "vegan-cakes"
+            "collection": "gluten-free-cakes"
           }
         }
       },
@@ -35,7 +35,7 @@
         "template--16656210395378__5fc43b1e-93cd-4ae8-a7f5-a0cffd008288-1677647719581a7b92-2"
       ],
       "settings": {
-        "title": "Vegan Desserts",
+        "title": "Gluten-Free Desserts",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
