@@ -3,12 +3,17 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
+
 <link
   rel="preload"
   href="{{ 'component-rte.css' | asset_url }}"
   as="style"
   onload="this.onload=null;this.rel='stylesheet'"
 >
+<!-- PCAKES ADDED -->
+{% comment %}https://undefined.agency/#/blog/how-to-add-infinite-scrolling-to-dawn{% endcomment %}
+
+{{ "ajaxinate.min.js" | asset_url | script_tag  }}
 
 {%- if section.settings.enable_quick_add -%}
   <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -30,6 +35,13 @@
     }
   }
 {%- endstyle -%}
+
+<script>
+const endlessCollection = new Ajaxinate({
+container: '#product-grid',
+pagination: '.infinite_next',
+});
+</script>
 
 <div class="section-{{ section.id }}-padding">
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
