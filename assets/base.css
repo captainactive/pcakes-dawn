@@ -31,6 +31,12 @@
   --gradient-background: var(--gradient-base-accent-2);
 }
 
+.color-accent-3 {
+  --color-foreground: var(--color-base-solid-button-labels);
+  --color-background: var(--color-base-accent-3);
+  --gradient-background: var(--gradient-base-accent-3);
+}
+
 .color-foreground-outline-button {
   --color-foreground: var(--color-base-outline-button-labels);
 }
@@ -52,7 +58,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-link: var(--color-foreground);
   --alpha-link: 0.7;
 }
@@ -68,7 +75,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-button: var(--color-foreground);
   --color-button-text: var(--color-background);
 }
@@ -82,7 +90,8 @@
 
 .color-background-2 .button--secondary,
 .color-accent-1 .button--secondary,
-.color-accent-2 .button--secondary {
+.color-accent-2 .button--secondary,
+.color-accent-3 .button--secondary{
   --color-button: var(--color-background);
   --color-button-text: var(--color-foreground);
 }
@@ -117,7 +126,8 @@
 .color-background-2,
 .color-inverse,
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-badge-background: var(--color-background);
   --color-badge-border: var(--color-background);
   --alpha-badge-border: 1;
@@ -134,7 +144,8 @@
 }
 
 .color-accent-1,
-.color-accent-2 {
+.color-accent-2,
+.color-accent-3 {
   --color-card-hover: var(--color-base-solid-button-labels);
 }
 
