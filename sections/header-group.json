@@ -25,11 +25,11 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "main-shop-menu",
+        "menu": "v2-1-main",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
