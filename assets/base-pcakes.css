@@ -2,3 +2,7 @@
 .pagination-wrapper {
   display: none;
 }
+
+button {
+  background-color: #e14984;
+}
