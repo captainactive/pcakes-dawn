@@ -31,7 +31,7 @@
         {%- endif -%}
 
         {%- for part in paginate.parts -%}
-          <!--li>
+          <li>
             {%- if part.is_link -%}
               <a
                 href="{{ part.url }}{{ anchor }}"
@@ -55,7 +55,7 @@
                 <span class="pagination__item">{{ part.title }}</span>
               {%- endif -%}
             {%- endif -%}
-      </li-->
+      </li>
         {%- endfor -%}
 
         {%- if paginate.next -%}
