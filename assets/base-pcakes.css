@@ -33,7 +33,7 @@
 }
 
 .pc-patty-footer {
-  max-height: 300px;
+  max-height: 350px;
 }
 .pc-patty-footer-cont {
   max-width: 1200px;
@@ -44,7 +44,7 @@
   margin: auto;
 }
 .pc-patty-footer-cont h2 {
-  margin: 75px 0 0px 0;
+  margin: 100px 0 0px 0;
 }
 .pc-patty-footer-cont p {
   margin: 2px 0 2px 0;
