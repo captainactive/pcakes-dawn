@@ -12,3 +12,8 @@
 .mega-menu__list {
   grid-template-columns: repeat(4,minmax(0,1fr))!important;
 }
+
+.mega-menu__content {
+  background-color: white;
+  color: #e14984;
+}
