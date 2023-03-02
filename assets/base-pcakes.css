@@ -3,9 +3,9 @@
   display: none;
 }
 
-ton {
-  background-color: #e14984;
-  color: white;
-  border-radius: 3px;
-  border: none; 
+
+.mega-menu__list ul li a {
+{
+  text-decoration: none;
+  font-size: 150%;
 }
