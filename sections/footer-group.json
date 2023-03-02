@@ -4,6 +4,7 @@
   "sections": {
     "bd6744f2-6061-41d8-afc5-fc6c880e1d9e": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<img class=\"pc-shoppay\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/Shop_Pay_with_Affirm_-_White.svg?v=1677733355\">",
         "color_scheme": "accent-2",
@@ -31,8 +32,8 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Hours",
+            "subtext": "<p><strong>Store<br\/><\/strong><br\/>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><p><strong>Custom Order Counter<\/strong><br\/>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
           }
         }
       },
