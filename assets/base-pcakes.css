@@ -4,8 +4,8 @@
 }
 
 
-.mega-menu__list ul li a {
+.mega-menu__link--level-2 {
 {
   text-decoration: none;
-  font-size: 150%;
+  font-size: 1.6rem;
 }
