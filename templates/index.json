@@ -77,6 +77,62 @@
         "padding_bottom": 0
       }
     },
+    "e35d42e6-4217-49e1-9143-08965faa71a1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-cbs2.jpg",
+            "title": "CBS 2 News",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-abc7.jpg",
+            "title": "ABC 7 News",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-fox11.jpg",
+            "title": "Good Day LA",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0",
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1",
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2"
+      ],
+      "settings": {
+        "title": "As Seen on TV",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -101,6 +157,61 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "95c8973e-410b-4133-8a10-68877962cf7a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-greg-sebourn.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-of-the-year.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2"
+      ],
+      "settings": {
+        "title": "Fullerton Small Business of the Year!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -139,114 +250,6 @@
         "mobile_layout": "collage",
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "a6b648aa-2032-4a5f-bd7d-0d2d1f110694": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>As Seen on TV<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-0",
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-1",
-        "template--16655251636466__a6b648aa-2032-4a5f-bd7d-0d2d1f110694-16777207238c5ab3a0-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-cbs2.jpg",
-            "title": "CBS 2 News",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "e917a145-fdf2-4fce-8e95-bc864da6e158": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3",
-        "e917a145-fdf2-4fce-8e95-bc864da6e158"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -329,9 +332,10 @@
         "template--16655251636466__6c06b54a-5111-462c-a284-b5d714736132-16777209857523ab2c-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/header-image2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -339,73 +343,16 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "e35d42e6-4217-49e1-9143-08965faa71a1": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-cbs2.jpg",
-            "title": "CBS 2 News",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-abc7.jpg",
-            "title": "ABC 7 News",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-fox11.jpg",
-            "title": "Good Day LA",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0",
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1",
-        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2"
-      ],
-      "settings": {
-        "title": "As Seen on TV",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
+    "e35d42e6-4217-49e1-9143-08965faa71a1",
     "featured_collection",
+    "95c8973e-410b-4133-8a10-68877962cf7a",
     "collage",
-    "a6b648aa-2032-4a5f-bd7d-0d2d1f110694",
-    "multicolumn",
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
-    "6c06b54a-5111-462c-a284-b5d714736132",
-    "e35d42e6-4217-49e1-9143-08965faa71a1"
+    "6c06b54a-5111-462c-a284-b5d714736132"
   ]
 }
