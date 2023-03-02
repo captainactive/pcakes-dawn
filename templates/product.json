@@ -221,6 +221,7 @@
       "type": "test-section",
       "settings": {
         "custom_text_title": "Title",
+        "custom_html": "Title",
         "custom_text_body": "<p>Add your text here<\/p>"
       }
     },
@@ -232,6 +233,14 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "8ecb3739-d88c-4a76-95b3-fefa16fa8755": {
+      "type": "test-section",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_html": "<p> hello<\/p>",
+        "custom_text_body": "<p>Add your text here<\/p>"
+      }
     }
   },
   "order": [
@@ -240,6 +249,7 @@
     "multicolumn",
     "related-products",
     "733b708d-2c2f-436d-8788-0dc252a6bb70",
-    "c57521e9-ec31-4176-94d0-c988915c81e2"
+    "c57521e9-ec31-4176-94d0-c988915c81e2",
+    "8ecb3739-d88c-4a76-95b3-fefa16fa8755"
   ]
 }
