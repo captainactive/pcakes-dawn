@@ -5,10 +5,10 @@
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\">",
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 44,
+        "padding_bottom": 0
       }
     },
     "bd6744f2-6061-41d8-afc5-fc6c880e1d9e": {
@@ -63,7 +63,7 @@
         "b2bc1e89-494a-4a87-9202-44cf50d9e63e": {
           "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
           "settings": {
-            "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>     \n           ",
+            "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
             "custom_liquid": ""
           }
         }
