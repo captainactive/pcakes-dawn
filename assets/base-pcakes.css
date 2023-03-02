@@ -1,0 +1,60 @@
+
+.pagination-wrapper {
+  display: none;
+}
+
+
+.mega-menu__link--level-2 {
+  text-decoration: none!important;
+  font-size: 1.8rem!important;
+  border-bottom: 1px solid #e14984;
+}
+
+.mega-menu__list {
+  grid-template-columns: repeat(4,minmax(0,1fr))!important;
+}
+
+.mega-menu__content, .mega-menu__content a {
+  background-color: white!important;
+  color: #e14984!important;
+}
+.mega-menu__content {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.pc-shoppay {
+  max-width: 300px;
+  padding: 25px 25px;
+}
+
+.bakeflowlogo-footer {
+  height: 15px;
+  margin: 0 0 -3px 0;
+}
+
+.pc-patty-footer {
+  max-height: 350px;
+}
+.pc-patty-footer-cont {
+  max-width: 1200px;
+  padding-right: 200px;
+  text-align:right;
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  margin: auto;
+}
+.pc-patty-footer-cont h2 {
+  margin: 100px 0 0px 0;
+  font-size: 200%;
+}
+.pc-patty-footer-cont p {
+  margin: 2px 0 2px 0;
+  font-size: 140%;
+}
+
+@media (max-width: 500px) {
+  .pc-patty-footer-cont {
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}

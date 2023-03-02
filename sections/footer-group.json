@@ -2,11 +2,45 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "bd6744f2-6061-41d8-afc5-fc6c880e1d9e": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<img class=\"pc-shoppay\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/Shop_Pay_with_Affirm_-_White.svg?v=1677733355\">",
+        "color_scheme": "accent-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
+        "6a0e7d78-565e-473b-94be-910995db0636": {
+          "type": "text",
+          "settings": {
+            "heading": "Location Info",
+            "subtext": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<br\/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"Call us at 714 525 8350\">(714) 525-8350<\/a><br\/><a href=\"https:\/\/pattys-cakes.com\/contact-us\" title=\"Contact Us\">Email<\/a><\/p>"
+          }
+        },
+        "footer-2": {
+          "type": "text",
+          "settings": {
+            "heading": "Store Hours",
+            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+          }
+        },
         "footer-0": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
@@ -14,40 +48,54 @@
         },
         "footer-1": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Info",
             "menu": "footer"
           }
         },
-        "footer-2": {
+        "c0c4aa63-3468-4e3a-9b67-5c39e99d1988": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
+            "heading": "Heading",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "b2bc1e89-494a-4a87-9202-44cf50d9e63e": {
+          "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
+          "settings": {
+            "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
+            "custom_liquid": ""
           }
         }
       },
       "block_order": [
+        "6a0e7d78-565e-473b-94be-910995db0636",
+        "footer-2",
         "footer-0",
         "footer-1",
-        "footer-2"
+        "c0c4aa63-3468-4e3a-9b67-5c39e99d1988",
+        "b2bc1e89-494a-4a87-9202-44cf50d9e63e"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 48,
+        "show_policy": true,
+        "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b",
+    "bd6744f2-6061-41d8-afc5-fc6c880e1d9e",
     "footer"
   ]
 }

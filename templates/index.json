@@ -6,23 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Freshly Baked Deliciousness",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "We all about flavor!",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -35,12 +35,12 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "image": "shopify:\/\/shop_images\/header-image_8090b774-ceb0-478f-812c-eeb4546b944e.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
@@ -49,18 +49,19 @@
     },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
+            "heading": "<p>Freshly Baked Deliciousness<\/p>",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>We are all about flavor! We use a light, airy icing on our cakes and cupcakes. Our icings are enjoyed by all and brings smiles to all!<\/p>"
           }
         }
       },
@@ -69,132 +70,434 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "e35d42e6-4217-49e1-9143-08965faa71a1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-cbs2.jpg",
+            "title": "CBS 2 News",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-abc7.jpg",
+            "title": "ABC 7 News",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-cakes-news-fox11.jpg",
+            "title": "Good Day LA",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0",
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1",
+        "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
+        "title": "As Seen on TV",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33": {
+      "type": "multirow",
+      "blocks": {
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+            "caption": "Baking",
+            "heading": "Since 1985",
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people in Orange County.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4d2b4220-80f2-4173-a691-e1fcd5aab2fe": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Since 1985",
+            "heading_size": "h1"
+          }
+        },
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-0",
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-1",
+        "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cupcakes"
+          }
+        },
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cupcakes"
+          }
+        },
+        "6dd67bee-7612-429f-b90b-3bd97d2e189d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gluten-free-cupcakes"
+          }
+        },
+        "4176e170-74d9-400c-8257-7fea47ba800c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vegan-cupcakes"
+          }
+        },
+        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "standard-cakes"
+          }
+        },
+        "540a865d-6f7c-43da-a640-1cc1766c4a50": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vegan-cakes"
+          }
+        },
+        "58102b15-c734-4b45-ac24-3d31f7327f8f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tiered-cakes"
+          }
+        },
+        "45db95d4-6560-424a-820f-5bfc12fadf50": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "semi-custom-cakes"
+          }
+        },
+        "5b76face-13f0-442e-9d09-9bd353471bd3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cookies"
+          }
+        },
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cake-balls"
+          }
+        },
+        "6a83ab8b-35d7-408e-afab-746db64c7693": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "candles-and-accessories"
+          }
+        },
+        "0aea4033-4bc0-43b6-8f55-7656cf917dce": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bag-o-cake"
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1",
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2",
+        "6dd67bee-7612-429f-b90b-3bd97d2e189d",
+        "4176e170-74d9-400c-8257-7fea47ba800c",
+        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170",
+        "540a865d-6f7c-43da-a640-1cc1766c4a50",
+        "58102b15-c734-4b45-ac24-3d31f7327f8f",
+        "45db95d4-6560-424a-820f-5bfc12fadf50",
+        "5b76face-13f0-442e-9d09-9bd353471bd3",
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0",
+        "6a83ab8b-35d7-408e-afab-746db64c7693",
+        "0aea4033-4bc0-43b6-8f55-7656cf917dce"
+      ],
+      "settings": {
+        "title": "Plenty to Choose From",
+        "heading_size": "h1",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": false,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c17535a6-21a0-4bac-8237-e8baeb53f00c": {
+      "type": "multirow",
+      "blocks": {
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bag-o-cake.jpg",
+            "caption": "Patty's Famous",
+            "heading": "Bag-O-Cake",
+            "text": "<p>Bag-O-Cake is comprised of the scrumptious top of the cake, where all the goodness is found. We guarantee you can’t eat just one bite.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/bag-o-cake"
+          }
+        },
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0",
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1",
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "95c8973e-410b-4133-8a10-68877962cf7a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-greg-sebourn.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-of-the-year.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2"
+      ],
+      "settings": {
+        "title": "Fullerton Small Business of the Year!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Popular Items",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25": {
+      "type": "image-with-text",
+      "disabled": true,
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-0": {
+          "type": "heading",
           "settings": {
-            "collection": ""
+            "heading": "Image with text",
+            "heading_size": "h1"
           }
         },
-        "product": {
-          "type": "product",
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-1": {
+          "type": "text",
           "settings": {
-            "product": "",
-            "second_image": false
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-2": {
+          "type": "button",
           "settings": {
-            "collection": ""
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-0",
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-1",
+        "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-2"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
+        "image": "shopify:\/\/shop_images\/patty-of-pattys-cakes.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -203,9 +506,13 @@
   "order": [
     "image_banner",
     "rich_text",
+    "e35d42e6-4217-49e1-9143-08965faa71a1",
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33",
+    "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
+    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
+    "c17535a6-21a0-4bac-8237-e8baeb53f00c",
+    "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
   ]
 }

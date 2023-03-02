@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Welcome to our store!!",
             "text_alignment": "center",
             "color_scheme": "background-1",
             "link": ""
@@ -25,15 +25,15 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "main-shop-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "menu": "v2-1-main",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "mobile_logo_position": "center",
         "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     }
   },
