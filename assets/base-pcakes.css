@@ -45,11 +45,11 @@
 }
 .pc-patty-footer-cont h2 {
   margin: 100px 0 0px 0;
-  font-size: 120%;
+  font-size: 200%;
 }
 .pc-patty-footer-cont p {
   margin: 2px 0 2px 0;
-  font-size: 120%;
+  font-size: 180%;
 }
 
 @media (max-width: 500px) {
