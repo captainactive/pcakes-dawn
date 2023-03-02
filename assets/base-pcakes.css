@@ -39,4 +39,6 @@
   max-width: 1200px;
   padding-right: 200px;
   text-align:right;
+  display:grid;
+  grid-template-columns: 3fr 1fr;
 }
