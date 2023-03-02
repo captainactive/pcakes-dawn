@@ -134,8 +134,43 @@
         "padding_bottom": 36
       }
     },
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33": {
+      "type": "multirow",
+      "blocks": {
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+            "caption": "Baking",
+            "heading": "Since 1985",
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people in Orange County.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-0": {
           "type": "heading",
@@ -220,7 +255,7 @@
         "58102b15-c734-4b45-ac24-3d31f7327f8f": {
           "type": "featured_collection",
           "settings": {
-            "collection": "gluten-free-mini-cupcakes"
+            "collection": "tiered-cakes"
           }
         },
         "45db95d4-6560-424a-820f-5bfc12fadf50": {
@@ -466,52 +501,18 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "24a1ac6f-b8af-42b3-b639-d7dac3028b33": {
-      "type": "multirow",
-      "blocks": {
-        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
-            "caption": "Baking",
-            "heading": "Since 1985",
-            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people in Orange County.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "background-1",
-        "row_color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
     "e35d42e6-4217-49e1-9143-08965faa71a1",
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33",
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
-    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25",
-    "24a1ac6f-b8af-42b3-b639-d7dac3028b33"
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
   ]
 }
