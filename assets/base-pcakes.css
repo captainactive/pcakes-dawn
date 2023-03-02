@@ -6,5 +6,9 @@
 
 .mega-menu__link--level-2 {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem!important;
+}
+
+.mega-menu__list {
+  grid-template-columns: repeat(4,minmax(0,1fr))
 }
