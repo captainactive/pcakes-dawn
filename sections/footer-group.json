@@ -5,7 +5,7 @@
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
         "color_scheme": "background-1",
         "padding_top": 44,
         "padding_bottom": 0
@@ -13,6 +13,7 @@
     },
     "bd6744f2-6061-41d8-afc5-fc6c880e1d9e": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<img class=\"pc-shoppay\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/Shop_Pay_with_Affirm_-_White.svg?v=1677733355\">",
         "color_scheme": "accent-2",
