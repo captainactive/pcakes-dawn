@@ -7,7 +7,7 @@
       "settings": {
         "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
         "color_scheme": "background-1",
-        "padding_top": 44,
+        "padding_top": 80,
         "padding_bottom": 0
       }
     },
