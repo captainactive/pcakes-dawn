@@ -19,7 +19,7 @@
           "type": "text",
           "settings": {
             "heading": "Location Info",
-            "subtext": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<br\/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"tel:(714) 525-8350\">(714) 525-8350<\/a><br\/>Email<\/p>"
+            "subtext": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<br\/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"Call us at 714 525 8350\">(714) 525-8350<\/a><br\/><a href=\"https:\/\/pattys-cakes.com\/contact-us\" title=\"Contact Us\">Email<\/a><\/p>"
           }
         },
         "footer-0": {
