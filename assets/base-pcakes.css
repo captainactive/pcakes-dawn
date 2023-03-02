@@ -41,6 +41,7 @@
   text-align:right;
   display:grid;
   grid-template-columns: 3fr 1fr;
+  margin: auto;
 }
 .pc-patty-footer-cont h2 {
   margin: 75px 0 0px 0;
