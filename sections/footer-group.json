@@ -22,25 +22,19 @@
             "subtext": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<br\/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"Call us at 714 525 8350\">(714) 525-8350<\/a><br\/><a href=\"https:\/\/pattys-cakes.com\/contact-us\" title=\"Contact Us\">Email<\/a><\/p>"
           }
         },
-        "footer-0": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Info",
-            "menu": "footer"
-          }
-        },
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Hours",
-            "subtext": "<h3>Store<\/h3><p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter<\/h3><p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+            "heading": "Store Hours",
+            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
           }
         },
         "13424cc5-0939-46f3-9894-6c601286bd1d": {
@@ -50,8 +44,17 @@
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         },
+        "footer-1": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Info",
+            "menu": "footer"
+          }
+        },
         "eea3c528-dfa0-415a-a8c0-2e47ea9a3083": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "Heading",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
@@ -59,6 +62,7 @@
         },
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "Heading",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
@@ -67,10 +71,10 @@
       },
       "block_order": [
         "6a0e7d78-565e-473b-94be-910995db0636",
-        "footer-0",
-        "footer-1",
         "footer-2",
+        "footer-0",
         "13424cc5-0939-46f3-9894-6c601286bd1d",
+        "footer-1",
         "eea3c528-dfa0-415a-a8c0-2e47ea9a3083",
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988"
       ],
