@@ -5,10 +5,10 @@
 
 
 .mega-menu__link--level-2 {
-  text-decoration: none;
+  text-decoration: none!important;
   font-size: 1.8rem!important;
 }
 
 .mega-menu__list {
-  grid-template-columns: repeat(4,minmax(0,1fr))
+  grid-template-columns: repeat(4,minmax(0,1fr))!important;
 }
