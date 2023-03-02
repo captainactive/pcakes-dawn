@@ -35,3 +35,8 @@
 .pc-patty-footer {
   max-height: 250px;
 }
+.pc-patty-footer-cont {
+  max-width: 1200px;
+  padding-right: 200px;
+  text-align:right;
+}
