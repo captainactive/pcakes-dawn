@@ -51,6 +51,7 @@
 
 @media (max-width: 500px) {
   .pc-patty-footer-cont {
-    padding-right: 0px;
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 }
