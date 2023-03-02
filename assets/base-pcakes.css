@@ -48,3 +48,9 @@
 .pc-patty-footer-cont p {
   margin: 2px 0 2px 0;
 }
+
+@media (max-width: 500px) {
+  .pc-patty-footer-cont {
+    padding-right: 0px;
+  }
+}
