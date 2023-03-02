@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Cupcakes",
-            "heading_size": "h0"
+            "heading": "Freshly Baked Deliciousness",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Freshly Iced to Order",
+            "text": "We all about flavor!",
             "text_style": "subtitle"
           }
         },
@@ -49,6 +49,7 @@
     },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -331,8 +332,8 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-right",
-        "section_color_scheme": "accent-1",
-        "row_color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -465,6 +466,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33": {
+      "type": "multirow",
+      "blocks": {
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+            "caption": "Baking",
+            "heading": "Since 1985",
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people in Orange County.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -476,6 +511,7 @@
     "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
-    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25",
+    "24a1ac6f-b8af-42b3-b639-d7dac3028b33"
   ]
 }
