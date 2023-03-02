@@ -42,3 +42,9 @@
   display:grid;
   grid-template-columns: 3fr 1fr;
 }
+.pc-patty-footer-cont h2 {
+  padding: 35px 0 15px 0;
+}
+.pc-patty-footer-cont p {
+  padding: 15px 0 15px 0;
+}
