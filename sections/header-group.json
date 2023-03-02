@@ -26,7 +26,7 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "v2-1-main",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "accent-1",
