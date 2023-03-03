@@ -89,7 +89,7 @@
 
 @media (max-width: 600px) {
   .pc-patty-footer-cont {
-    grid-template-columns: 2fr 1fr 40px;
+    grid-template-columns: 2fr 1fr 0px;
   }
 }
 
