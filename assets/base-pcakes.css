@@ -98,7 +98,7 @@
   background-color: #ffffff;
 }
 
-.cart-notification__heading, .cart-notification-product__name{
+.cart-notification__heading, .cart-notification-product__name, .cart-notification-form {
   color: purple;
 }
 
