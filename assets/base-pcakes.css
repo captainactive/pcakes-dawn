@@ -135,7 +135,7 @@
 .quick-add__submit {
   background-color: red;
 }
-..quick-add__submit::after {
+.quick-add__submit::after {
   box-shadow: none;
 }
 
