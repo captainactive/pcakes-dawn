@@ -5,7 +5,7 @@
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><\/div>",
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/patty-of-pattys-cakes.jpg?v=1677722679\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;<\/span><\/div>",
         "color_scheme": "background-1",
         "padding_top": 80,
         "padding_bottom": 0
