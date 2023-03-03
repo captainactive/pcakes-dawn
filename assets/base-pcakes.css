@@ -72,10 +72,9 @@
 }
 .pc-patty-footer-cont {
   max-width: 1200px;
-  padding-right: 200px;
   text-align:right;
   display:grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   margin: auto;
 }
 .pc-patty-footer-cont h2 {
@@ -91,7 +90,6 @@
   .pc-patty-footer-cont {
     padding-right: 20px;
     grid-template-columns: 1fr 1fr;
-    padding-right: 0;
   }
 }
 
