@@ -24,7 +24,7 @@
     "122a88d2-99ec-4f91-9602-b5e9a6003af7": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"miniheadlinks\">\n\t<a href=\"\/pages\/delivery\">$5 Local Delivery is Available<\/a> &nbsp;-&nbsp; <a href=\"\/account\">My Account<\/a> &nbsp;-&nbsp; <a href=\"http:\/\/map.pattys-cakes.com\/\">Get Directions<\/a> &nbsp;-&nbsp;  <a href=\"tel:7145258350\">(714) 525-8350<\/a>&nbsp;-&nbsp;<a href=\"\/account\/login\">Sign in<\/a>\n<\/div>",
+        "custom_liquid": "<div class=\"miniheadlinks\">\n\t<a href=\"\/pages\/delivery\">$5 Local Delivery is Available<\/a> &nbsp;-&nbsp; <a href=\"\/account\">My Account<\/a> &nbsp;-&nbsp; <a href=\"http:\/\/map.pattys-cakes.com\/\">Get Directions<\/a> &nbsp;-&nbsp;  <a href=\"tel:7145258350\">(714) 525-8350<\/a>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
