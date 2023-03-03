@@ -98,7 +98,7 @@
   background-color: #ffffff;
 }
 
-#cart-notification h2{
+.cart-notification__heading, cart-notification-product__name{
   color: purple;
 }
 
