@@ -6,6 +6,9 @@
 
 /* HEADER  */
 
+.miniheadlinks {
+  text-align: right;
+}
 .miniheadlinks, .miniheadlinks a {
   font-size: 12px;
   text-decoration: none;
