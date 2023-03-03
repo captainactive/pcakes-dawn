@@ -213,119 +213,6 @@
         "padding_bottom": 36
       }
     },
-    "95c8973e-410b-4133-8a10-68877962cf7a": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0": {
-          "type": "column",
-          "settings": {
-            "title": "",
-            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pattys-cakes-greg-sebourn.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-of-the-year.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0",
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1",
-        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2"
-      ],
-      "settings": {
-        "title": "Fullerton Small Business of the Year!",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "c17535a6-21a0-4bac-8237-e8baeb53f00c": {
-      "type": "multirow",
-      "blocks": {
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bag-o-cake.jpg",
-            "caption": "Patty's Famous",
-            "heading": "Bag-O-Cake",
-            "text": "<p>Bag-O-Cake is comprised of the scrumptious top of the cake, where all the goodness is found. We guarantee you can’t eat just one bite.<\/p>",
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/bag-o-cake"
-          }
-        },
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0",
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1",
-        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
-        "section_color_scheme": "background-1",
-        "row_color_scheme": "accent-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
       "type": "collection-list",
       "blocks": {
@@ -429,6 +316,119 @@
         "padding_bottom": 36
       }
     },
+    "c17535a6-21a0-4bac-8237-e8baeb53f00c": {
+      "type": "multirow",
+      "blocks": {
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bag-o-cake.jpg",
+            "caption": "Patty's Famous",
+            "heading": "Bag-O-Cake",
+            "text": "<p>Bag-O-Cake is comprised of the scrumptious top of the cake, where all the goodness is found. We guarantee you can’t eat just one bite.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/bag-o-cake"
+          }
+        },
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-0",
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1",
+        "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "95c8973e-410b-4133-8a10-68877962cf7a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-greg-sebourn.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-of-the-year.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-0",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1",
+        "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2"
+      ],
+      "settings": {
+        "title": "Fullerton Small Business of the Year!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "disabled": true,
@@ -509,9 +509,9 @@
     "e35d42e6-4217-49e1-9143-08965faa71a1",
     "24a1ac6f-b8af-42b3-b639-d7dac3028b33",
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
-    "95c8973e-410b-4133-8a10-68877962cf7a",
-    "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
+    "c17535a6-21a0-4bac-8237-e8baeb53f00c",
+    "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
     "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
   ]
