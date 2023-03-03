@@ -76,7 +76,7 @@
   display:grid;
   grid-template-columns: 3fr 1fr 1fr;
   margin: auto;
-  padding: 10px 0;
+  padding: 0 10px;
 }
 .pc-patty-footer-cont h2 {
   margin: 100px 0 0px 0;
