@@ -91,6 +91,7 @@
   .pc-patty-footer-cont {
     padding-right: 20px;
     grid-template-columns: 1fr 1fr;
+    padding-right: 0;
   }
 }
 
