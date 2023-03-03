@@ -112,14 +112,17 @@
   border: none;
   box-shadow: none;
 }
-#cart-notification-form .button:after, #cart-notification-button .button:after  {
-  box-shadow: none;
-}
 
 #cart-notification-button {
   border: none;
   box-shadow: none;
 }
+
+
+#cart-notification-form .button:after, #cart-notification-button .button:after  {
+  box-shadow: none;
+}
+
 
 
 
