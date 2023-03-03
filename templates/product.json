@@ -224,6 +224,14 @@
         "custom_html": "<p>html<\/p>",
         "custom_text_body": "<p>Add your text here<\/p>"
       }
+    },
+    "b4e91d0e-df9a-4994-90f1-7e4169e07244": {
+      "type": "test-section",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_html": "<p>html<\/p>",
+        "custom_text_body": "<p>Add your text here<\/p>"
+      }
     }
   },
   "order": [
@@ -231,6 +239,7 @@
     "image-with-text",
     "multicolumn",
     "related-products",
-    "78e0212c-b864-4fb2-b59a-4a816f435f4a"
+    "78e0212c-b864-4fb2-b59a-4a816f435f4a",
+    "b4e91d0e-df9a-4994-90f1-7e4169e07244"
   ]
 }

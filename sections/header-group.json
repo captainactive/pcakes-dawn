@@ -21,6 +21,15 @@
       "settings": {
       }
     },
+    "122a88d2-99ec-4f91-9602-b5e9a6003af7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "$5 Local Delivery is Available  -  Get Directions  -  (714) 525-8350",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -39,6 +48,7 @@
   },
   "order": [
     "announcement-bar",
+    "122a88d2-99ec-4f91-9602-b5e9a6003af7",
     "header"
   ]
 }
