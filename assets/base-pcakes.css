@@ -20,6 +20,13 @@
   color: #e14984;
 }
 
+@media (max-width: 400px) {
+.miniheadlinks-drop {
+  display: none;
+}
+}
+
+
 /* MEGA MENU  */
 .mega-menu__link--level-2 {
   text-decoration: none!important;
