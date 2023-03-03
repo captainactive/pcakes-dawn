@@ -98,12 +98,12 @@
   background-color: #ffffff;
 }
 
-.cart-notification__heading, cart-notification-product__name{
+.cart-notification__heading, .cart-notification-product__name{
   color: purple;
 }
 
 #cart-notification-form button {
-  color: purple;
+  background-color: purple;
 }
 
 
