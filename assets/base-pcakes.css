@@ -102,8 +102,12 @@
   color: purple;
 }
 
-.cart-notification__heading, .cart-notification-product__name, #cart-notification-form button.link.button-label {
+.cart-notification__heading, .cart-notification-product__name {
   color: purple;
+}
+
+#cart-notification-form button.link.button-label { 
+  color:red;
 }
 
 #cart-notification-form button {
