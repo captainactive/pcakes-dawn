@@ -13,8 +13,8 @@
         "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Store Hours",
+            "text": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -22,17 +22,8 @@
         "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Custom Order Counter Hours",
+            "text": "<p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -40,15 +31,14 @@
       },
       "block_order": [
         "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-0",
-        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-1",
-        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-2"
+        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Hours",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
@@ -142,7 +132,7 @@
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 8
       }
     },
     "6753315f-32dd-430d-badd-474c50e01e5d": {
