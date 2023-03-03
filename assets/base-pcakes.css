@@ -102,7 +102,7 @@
   color: purple;
 }
 
-.cart-notification__heading, .cart-notification-product__name, #cart-notification-form .button-label {
+.cart-notification__heading, .cart-notification-product__name, #cart-notification-form button.button-label {
   color: purple;
 }
 
