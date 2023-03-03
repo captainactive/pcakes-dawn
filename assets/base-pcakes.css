@@ -134,7 +134,9 @@
 
 .quick-add__submit {
   background-color: red;
-  border: none;
+}
+..quick-add__submit::after {
+  box-shadow: none;
 }
 
 quantity::before {
