@@ -13,10 +13,20 @@
             "color_scheme": "accent-2",
             "link": "shopify:\/\/pages\/local-delivery"
           }
+        },
+        "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce": {
+          "type": "announcement",
+          "settings": {
+            "text": "Announcing our new Loyalty Program. Join Today.",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": "shopify:\/\/pages\/loyalty"
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce"
       ],
       "settings": {
       }
