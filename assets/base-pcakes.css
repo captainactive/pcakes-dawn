@@ -133,7 +133,8 @@
 }
 
 .quick-add__submit {
-  background-color: red;
+  background-color: #e14984;
+  color: #ffffff;
 }
 .quick-add__submit::after {
   box-shadow: none;
