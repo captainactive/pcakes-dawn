@@ -106,7 +106,7 @@
   color: purple;
 }
 
-#cart-notification-form button {
+#cart-notification-form button, #cart-notification-form .button:after{
   background-color: purple;
   color: #ffffff;
   border: none;
