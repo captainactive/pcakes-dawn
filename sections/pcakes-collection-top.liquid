@@ -1,6 +1,11 @@
 
 
 
+/// START 
+
+
+
+
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
@@ -34,9 +39,9 @@
     <div class="collection-hero__inner page-width">
       <div class="collection-hero__text-wrapper">
           
-        {%- if section.settings.show_collection_description -%}
+        
           <div class="collection-hero__description rte">{{ collection.description }}</div>
-        {%- endif -%}
+       
       </div>
   
      
@@ -424,3 +429,4 @@
     }
     {% endschema %}
     
+
