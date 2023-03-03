@@ -131,6 +131,9 @@
   width:100%;
 }
 
+.quantity::before {
+  box-shadow: none;
+}
 
 
 
