@@ -104,6 +104,9 @@
 .pc-patty-footer-cont div h2, .pc-patty-footer-cont div p  {
     display:none;
   }
+    .pc-patty-footer-cont {
+    grid-template-columns: 0px 1fr 0px;
+  }
 }
 
 
