@@ -10,6 +10,7 @@
     },
     "821ed918-beeb-4111-b7c9-00fc145207c6": {
       "type": "pcakes-collection-top",
+      "disabled": true,
       "blocks": {
         "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-0": {
           "type": "heading",
