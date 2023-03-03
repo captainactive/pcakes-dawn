@@ -8,6 +8,50 @@
         "color_scheme": "background-1"
       }
     },
+    "821ed918-beeb-4111-b7c9-00fc145207c6": {
+      "type": "pcakes-collection-top",
+      "blocks": {
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-0",
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-1",
+        "template--16657076322546__821ed918-beeb-4111-b7c9-00fc145207c6-1677808294d25af37e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img-confetti-cake.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -136,6 +180,7 @@
   },
   "order": [
     "banner",
+    "821ed918-beeb-4111-b7c9-00fc145207c6",
     "product-grid",
     "695e5234-ba30-4202-ba7a-70cc6a914749",
     "b8bab7a4-af38-4b61-968b-7a1245232865",
