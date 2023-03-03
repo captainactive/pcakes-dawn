@@ -54,6 +54,8 @@
 }
 
 
+
+
 /* FOOTER  */
 .pc-shoppay {
   max-width: 300px;
@@ -92,6 +94,10 @@
   }
 }
 
+
+
+
+
 /* CART FLYOUT */
 
 .cart-notification {
@@ -123,6 +129,15 @@
 #cart-notification-form .button:after, #cart-notification-button .button:after, parentNode  {
   box-shadow: none;
 }
+
+
+
+/* COLLECTION PAGES  */
+.collection-hero__inner.page-width H1 {
+  padding-left: 40px;
+}
+
+
 
 
 
