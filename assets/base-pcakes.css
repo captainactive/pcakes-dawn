@@ -87,10 +87,15 @@
   font-size: 140%;
 }
 
+@media (max-width: 600px) {
+  .pc-patty-footer-cont {
+    grid-template-columns: 2fr 1fr 40px;
+  }
+}
+
 @media (max-width: 500px) {
   .pc-patty-footer-cont {
-    padding-right: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 20px;
   }
 }
 
