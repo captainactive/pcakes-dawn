@@ -121,32 +121,20 @@
         "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
+            "heading": "<p>Treasure Map<\/p>",
             "heading_size": "h1"
           }
         },
-        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-1": {
+        "fb8078d9-7940-4117-a657-2914b4b1d8f0": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<\/p>"
           }
         }
       },
       "block_order": [
         "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-0",
-        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-1",
-        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-2"
+        "fb8078d9-7940-4117-a657-2914b4b1d8f0"
       ],
       "settings": {
         "desktop_content_position": "center",
