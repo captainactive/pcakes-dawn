@@ -91,6 +91,9 @@
   .pc-patty-footer-cont {
     grid-template-columns: 2fr 1fr 0px;
   }
+  .pc-patty-footer-cont div h2, .pc-patty-footer-cont div p {
+    font-size: 140%
+  }
 }
 
 @media (max-width: 500px) {
