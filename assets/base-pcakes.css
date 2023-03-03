@@ -120,7 +120,7 @@
 }
 
 
-#cart-notification-form .button:after, #cart-notification-button .button:after  {
+#cart-notification-form .button:after, #cart-notification-button .button:after, parentNode  {
   box-shadow: none;
 }
 
@@ -132,7 +132,12 @@
   width:100%;
 }
 
-.quantity::before {
+.quick-add__submit {
+  background-color: red;
+  border: none;
+}
+
+quantity::before {
   box-shadow: none;
 }
 
