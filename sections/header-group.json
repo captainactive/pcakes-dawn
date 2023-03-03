@@ -29,7 +29,7 @@
         "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce"
       ],
       "custom_css": [
-        "p {font-family: var(--font-body-family); font-size: 120%; font-weight: normal;}"
+        "p {font-family: var(--font-body-family); font-size: 110%; font-weight: normal;}"
       ],
       "settings": {
       }
@@ -45,6 +45,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "v2-1-main",
