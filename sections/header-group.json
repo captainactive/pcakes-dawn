@@ -17,7 +17,7 @@
         "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce": {
           "type": "announcement",
           "settings": {
-            "text": "Announcing our new Loyalty Program. Join Today.",
+            "text": "Buy, Earn, Enjoy.  Join our Loyalty Program Today.",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": "shopify:\/\/pages\/loyalty"
@@ -29,7 +29,7 @@
         "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce"
       ],
       "custom_css": [
-        "p{font-family: var(--font-body-family);}"
+        "p {font-family: var(--font-body-family);}"
       ],
       "settings": {
       }
