@@ -127,7 +127,7 @@
 
 /* product-card-grid  */
 
-quantity-input .quantity {
+.form__label visually-hidden .quantity {
   width:100%;
 }
 
