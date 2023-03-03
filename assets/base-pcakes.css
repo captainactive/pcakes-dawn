@@ -96,7 +96,10 @@
 
 .cart-notification {
   background-color: #ffffff;
-  
+}
+
+#cart-notification h2{
+  color: purple;
 }
 
 
