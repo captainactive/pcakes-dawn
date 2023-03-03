@@ -24,7 +24,7 @@
     "122a88d2-99ec-4f91-9602-b5e9a6003af7": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<small>$5 Local Delivery is Available  -  Get Directions  -  (714) 525-8350<\/small>",
+        "custom_liquid": "<div><a href$5 Local Delivery is Available  -  Get Directions  -  (714) 525-8350<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
