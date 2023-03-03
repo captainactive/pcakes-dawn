@@ -99,11 +99,11 @@
 }
 
 #cart-notification .icon {
-  color: purple;
+  color: #8a54a8;
 }
 
-.cart-notification__heading, .cart-notification-product__name {
-  color: purple;
+.cart-notification__heading, .cart-notification-product__name, button.link.button-label {
+  color: #8a54a8;
 }
 
 button.link.button-label { 
@@ -111,7 +111,7 @@ button.link.button-label {
 }
 
 #cart-notification-form button {
-  background-color: purple;
+  background-color: #8a54a8;
   color: #ffffff;
   border: none;
   box-shadow: none;
