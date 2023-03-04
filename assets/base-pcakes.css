@@ -139,6 +139,7 @@ nav a {
 	grid-column-gap: 10px;
 	grid-template-rows: 1fr;
 	grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
 
 	}
 .pc-review-icons img {
