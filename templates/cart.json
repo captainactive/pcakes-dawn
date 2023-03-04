@@ -7,6 +7,15 @@
         "padding_bottom": 36
       }
     },
+    "d5066918-c14a-4b72-a5ff-3ced37c1d8a6": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<cart-note class=\"cart__note field\">\n          <label for=\"Cart-note\">{{ 'sections.cart.note' | t }}<\/label>\n          <textarea\n            class=\"text-area field__input\"\n            name=\"note\"\n            form=\"cart\"\n            id=\"Cart-note\"\n            placeholder=\"{{ 'sections.cart.note' | t }}\"\n          >{{ cart.note }}<\/textarea>\n        <\/cart-note>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -59,6 +68,7 @@
   },
   "order": [
     "cart-items",
+    "d5066918-c14a-4b72-a5ff-3ced37c1d8a6",
     "cart-footer",
     "featured-collection"
   ]
