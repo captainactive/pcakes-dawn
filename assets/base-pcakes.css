@@ -186,8 +186,10 @@ display: none;
 	display: grid;
 	align-items: center;
 	justify-items: center;
-	max-width: 180px;
 	}
+.pc-cart-boxes-img img {
+	max-width: 180px;
+	}	
 
 .pc-cart-boxes-text h2 {
 	margin-bottom: 2px;
