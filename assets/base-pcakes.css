@@ -184,7 +184,13 @@ display: none;
 	align-items: center;
 	justify-items: center;
 }
+.pc-cart-boxes-img {
+	align-items: center;
+	justify-items: center;
+	}
 
+.pc-cart-boxes-text {
+	}
 
 /* COLLECTION PAGES  */
 
