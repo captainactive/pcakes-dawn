@@ -127,6 +127,20 @@ nav a {
 
 
 
+/* FOOTER REVIEWS  */
+
+.pc-review-icons-cont {
+	background-color: #f3b6ce;
+}	
+.pc-review-icons {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 20px;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 10px 20px;
+	}
+
 
 
 /* CART FLYOUT */
