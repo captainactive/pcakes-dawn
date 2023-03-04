@@ -175,15 +175,21 @@ display: none;
 	/*grid-template-columns: repeat(12, 1fr);*/
 }	
 
-.pc-cart-boxes-sub {
+.pc-cart-boxes-sub, .pc-cart-boxes-note {
 	display: grid;
 	grid-row-gap: 2px;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 2fr;
 	border: .1rem solid rgba(var(--color-foreground),.08);
 	padding: 15px;
 }
+.pc-cart-boxes-sub {
+	grid-template-columns: 1fr 2fr;
+	}
+.pc-cart-boxes-note {
+	grid-template-columns: 1fr;
+}
+	
 .pc-cart-boxes-img {
 	display: grid;
 	align-items: center;
@@ -212,7 +218,6 @@ display: none;
 	max-width: 110px;
 	}
 }
-
 
 
 	
