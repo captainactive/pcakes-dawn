@@ -7,37 +7,58 @@
         "padding_bottom": 28
       }
     },
-    "0285a1d3-6b2f-48fb-82ae-a75b58f646e0": {
-      "type": "multirow",
+    "263af5d5-d43c-4c05-a4ba-4334fcbddc88": {
+      "type": "multicolumn",
       "blocks": {
-        "template--16658407358706__0285a1d3-6b2f-48fb-82ae-a75b58f646e0-167788568708a93c0d-0": {
-          "type": "row",
-          "disabled": true,
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0": {
+          "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-patty-mall2_2abb72b4-6cdb-434f-b54c-93de599de8fa.jpg",
-            "caption": "Baking",
-            "heading": "Since 1985",
-            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom.<\/p>",
-            "button_label": "",
-            "button_link": ""
+            "title": "Patty in 1985",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-kids2.jpg",
+            "title": "Patty's sons, David and Philip",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-kids-2.jpg",
+            "title": "Patty's son Mark",
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--16658407358706__0285a1d3-6b2f-48fb-82ae-a75b58f646e0-167788568708a93c0d-0"
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0",
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1",
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
+        "title": "",
         "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "background-1",
-        "row_color_scheme": "accent-1",
-        "mobile_content_alignment": "left",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -48,7 +69,7 @@
         "template--16658407358706__04a4a181-455b-4b8a-a040-96539944dc0d-16778857306ad817c5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. This hobby soon blossomed into a full time business which Patty ran from her Fullerton, California home while also participating in community roles such as the PTA, Cub Scouts, Booster Club President, Assistance League and more.<br\/><br\/>With dreams of one day having her own shop she continued to decorate year after year. Along the way she baked the dessert cakes twice weekly for Disneyland's Exclusive \"Club 33\" for four years.<\/p>"
+            "text": "<p>In search of a new journey after selling his previous company on the NYSE, Patty's middle son Philip joined Patty's Cakes as co-owner, set to handle the business operations and marketing. Pulling together resources from kindhearted friends and family, a store location was found and transformed. In October 2010, Patty's dream of having her own Cake shop became a reality. With positive reviews streaming in from around the community, Patty's creative and tasty menu of Cakes, Cupcakes, and Cake Balls has been pleasantly welcomed and enjoyed.<br\/><br\/>In 2016, Patty's Cakes moved down the street to a new larger location near the intersection of Commonwealth and Euclid in Fullerton. With the added space, the bakery has continued to thrive and has even become the highest rated bakery on major review sites (Yelp, Google, The Knot, Wedding Wire, TripAdvisor). This is largely due to their commitment to providing exceptional customer service and delicious baked goods.<br\/><br\/>Patty's Cakes is an innovative company that is always looking for ways to improve and grow. They have integrated technology throughout their kitchen and customer experience to streamline processes and provide a more efficient and enjoyable experience for their employees and customers.<br\/><br\/>Despite their success, Patty's Cakes has not forgotten their roots. They continue to be active members of their community, participating in local events and supporting various charities. Patty's Cakes is a true success story, born out of passion and hard work, and continues to thrive thanks to their dedication to quality and customer satisfaction.<\/p>"
           }
         }
       },
@@ -234,73 +255,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "263af5d5-d43c-4c05-a4ba-4334fcbddc88": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-patty-mall2_2abb72b4-6cdb-434f-b54c-93de599de8fa.jpg",
-            "title": "Patty in 1985",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pattys-cakes-kids2.jpg",
-            "title": "Patty's sons, David and Philip",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pattys-kids-2.jpg",
-            "title": "Patty's son Mark",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0",
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1",
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2"
-      ],
-      "settings": {
-        "title": "The Beginning",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "0285a1d3-6b2f-48fb-82ae-a75b58f646e0",
+    "263af5d5-d43c-4c05-a4ba-4334fcbddc88",
     "04a4a181-455b-4b8a-a040-96539944dc0d",
     "622e0ed9-cadc-4d11-95b4-45abf4237683",
     "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e",
     "6753315f-32dd-430d-badd-474c50e01e5d",
     "b2a8bba2-0eee-43e0-9a99-219b3771bfe1",
-    "50f02a68-ccba-4e24-b0c5-852172bfb4c1",
-    "263af5d5-d43c-4c05-a4ba-4334fcbddc88"
+    "50f02a68-ccba-4e24-b0c5-852172bfb4c1"
   ]
 }
