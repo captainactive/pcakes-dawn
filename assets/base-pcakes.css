@@ -208,7 +208,10 @@ display: none;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
 }	
-
+.pc-cart-boxes-img img {
+	max-width: 110px;
+	}
+}
 
 
 
