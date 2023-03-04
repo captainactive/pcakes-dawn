@@ -178,7 +178,7 @@ nav a {
 display: none;
 }
 
-	
+		
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -225,6 +225,10 @@ display: none;
 .cart__note	{
 	margin-top: 75px;
 }
+
+.pccartnote	{
+	background-color: #FDF1F5;
+	}
 	
 @media (max-width: 500px) {
 .pc-cart-boxes {
