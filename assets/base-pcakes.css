@@ -1,4 +1,13 @@
 
+
+
+/* TEXT */
+
+.link--text {
+  color: #8a54a8;
+}
+
+
 /* PAGES  */
 .pagination-wrapper {
   display: none;
