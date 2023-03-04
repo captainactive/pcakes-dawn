@@ -173,6 +173,7 @@ display: none;
       grid-template-rows: auto auto;
   grid-template-columns: repeat(auto-fit, minmax( 500px, 1fr));
   /*grid-template-columns: repeat(12, 1fr);*/
+    border: solid 1px black;
   }	
 
   .pc-cart-boxes-sub {
@@ -181,6 +182,7 @@ display: none;
       grid-column-gap: 2px;
       grid-template-rows: 1fr;
   grid-template-columns: 1fr 2fr;
+    border: solid 1px red;
   }
 
 
