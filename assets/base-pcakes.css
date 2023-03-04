@@ -178,7 +178,13 @@ nav a {
 display: none;
 }
 
-		
+
+
+
+
+
+
+
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -194,7 +200,7 @@ display: none;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
 	border: .1rem solid rgba(var(--color-foreground),.08);
-	padding: 15px;
+	padding: 20px;
 }
 .pc-cart-boxes-sub {
 	grid-template-columns: 1fr 2fr;
@@ -227,7 +233,7 @@ display: none;
 }
 
 .pccartnote	{
-	background-color: #FDF1F5;
+	background-color: #FFF8FB;
 	}
 	
 @media (max-width: 500px) {
@@ -246,7 +252,7 @@ display: none;
 	max-width: 110px;
 	}
 }
-	
+
 
 
 
