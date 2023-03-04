@@ -179,7 +179,6 @@ display: none;
 }
 
 
-
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -202,6 +201,7 @@ display: none;
 	}
 .pc-cart-boxes-note {
 	grid-template-columns: 1fr;
+	grid-column: span 2;
 }
 	
 .pc-cart-boxes-img {
@@ -238,7 +238,6 @@ display: none;
 	max-width: 110px;
 	}
 }
-	
 
 
 
