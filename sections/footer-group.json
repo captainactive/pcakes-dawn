@@ -2,15 +2,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.png?v=1677970297\">\n\t\t<img alt=\"Google 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-google.png?v=1677970298\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-trip.png?v=1677970298\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-ww.png?v=1677970298\">\n\t\t<img alt=\"The Knot 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-knot.png?v=1677970297\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.png?v=1677970297\">\n\t<\/div>\n<\/div>",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
@@ -18,6 +9,15 @@
         "color_scheme": "background-1",
         "padding_top": 80,
         "padding_bottom": 0
+      }
+    },
+    "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.png?v=1677970297\">\n\t\t<img alt=\"Google 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-google.png?v=1677970298\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-trip.png?v=1677970298\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-ww.png?v=1677970298\">\n\t\t<img alt=\"The Knot 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-knot.png?v=1677970297\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.png?v=1677970297\">\n\t<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "bd6744f2-6061-41d8-afc5-fc6c880e1d9e": {
@@ -103,8 +103,8 @@
     }
   },
   "order": [
-    "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a",
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b",
+    "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a",
     "bd6744f2-6061-41d8-afc5-fc6c880e1d9e",
     "footer"
   ]
