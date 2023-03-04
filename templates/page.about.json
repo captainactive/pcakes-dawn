@@ -261,7 +261,7 @@
         "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pattys-cakes-kids.jpg",
+            "image": "shopify:\/\/shop_images\/pattys-kids-2.jpg",
             "title": "Patty's son Mark",
             "text": "",
             "link_label": "",
@@ -275,10 +275,10 @@
         "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "The Beginning",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
@@ -286,7 +286,7 @@
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
