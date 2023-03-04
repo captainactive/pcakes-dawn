@@ -131,6 +131,7 @@ nav a {
 
 .pc-review-icons-cont {
 	background-color: #f3b6ce;
+	padding: 30px;
 }	
 .pc-review-icons {
 	display: grid;
@@ -144,6 +145,9 @@ nav a {
 	width: 100%;
 	max-width: 150px;
 }	
+
+
+
 
 
 /* CART FLYOUT */
