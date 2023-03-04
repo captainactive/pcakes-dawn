@@ -166,24 +166,24 @@
 display: none;
 }
 
-  .pc-cart-boxes {
-      display: grid;
-      grid-row-gap: 2px;
-      grid-column-gap: 2px;
-      grid-template-rows: auto auto;
-  grid-template-columns: repeat(auto-fit, minmax( 500px, 1fr));
-  /*grid-template-columns: repeat(12, 1fr);*/
-    border: solid 1px black;
-  }	
+.pc-cart-boxes {
+	display: grid;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	grid-template-rows: auto auto;
+	grid-template-columns: repeat(auto-fit, minmax( 500px, 1fr));
+	/*grid-template-columns: repeat(12, 1fr);*/
+}	
 
-  .pc-cart-boxes-sub {
-      display: grid;
-      grid-row-gap: 2px;
-      grid-column-gap: 2px;
-      grid-template-rows: 1fr;
-  grid-template-columns: 1fr 2fr;
-    border: solid 1px red;
-  }
+.pc-cart-boxes-sub {
+	display: grid;
+	grid-row-gap: 2px;
+	grid-column-gap: 2px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	justify-items: center;
+}
 
 
 /* COLLECTION PAGES  */
