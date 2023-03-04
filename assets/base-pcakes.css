@@ -181,8 +181,6 @@ display: none;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 2fr;
-	align-items: center;
-	justify-items: center;
 }
 .pc-cart-boxes-img {
 	align-items: center;
