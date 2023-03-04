@@ -183,11 +183,13 @@ display: none;
 	grid-template-columns: 1fr 2fr;
 }
 .pc-cart-boxes-img {
+	display: grid;
 	align-items: center;
 	justify-items: center;
 	}
 
 .pc-cart-boxes-text {
+	display: grid;
 	}
 
 /* COLLECTION PAGES  */
