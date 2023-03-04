@@ -166,6 +166,8 @@
 display: none;
 }
 
+
+
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -205,6 +207,10 @@ display: none;
 .pc-cart-boxes-text h2 {
 	margin-bottom: 2px;
 	}
+.pc-cart-boxes p {
+	margin-bottom: 2px;
+
+}	
 	
 @media (max-width: 500px) {
 .pc-cart-boxes {
@@ -218,6 +224,12 @@ display: none;
 	max-width: 110px;
 	}
 }
+	
+
+
+
+
+
 
 
 	
