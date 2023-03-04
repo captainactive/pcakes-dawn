@@ -15,7 +15,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img-patty-mall2_2abb72b4-6cdb-434f-b54c-93de599de8fa.jpg",
             "title": "Patty in 1985",
-            "text": "",
+            "text": "<p>At the \"Taste of the Town\" event, she made her debut sharing her baked goods with others.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -24,8 +24,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/pattys-cakes-kids2.jpg",
-            "title": "Patty's sons, David and Philip",
-            "text": "",
+            "title": "Patty's Sons",
+            "text": "<p>Patty's sons, David and Philip, displaying their decorating talents. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -34,8 +34,18 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/pattys-kids-2.jpg",
-            "title": "Patty's son Mark",
-            "text": "",
+            "title": "The Chef",
+            "text": "<p>Patty's son, Mark, dressing the part and ready to bake up a storm. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d8057659-5a3d-44d3-b764-5c62e6b4ce7f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-oc-fair-11.jpg",
+            "title": "Orange County Fair",
+            "text": "<p>Having won multiple \"Best of Show\" awards for consecutive years, she was invited to give live baking demos.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -44,14 +54,15 @@
       "block_order": [
         "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0",
         "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1",
-        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2"
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2",
+        "d8057659-5a3d-44d3-b764-5c62e6b4ce7f"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
