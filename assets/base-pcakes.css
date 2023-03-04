@@ -199,7 +199,15 @@ display: none;
 .pc-cart-boxes-text h2 {
 	margin-bottom: 2px;
 	}
-
+	
+@media (max-width: 500px) {
+.pc-cart-boxes {
+	display: grid;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}	
 
 
 
