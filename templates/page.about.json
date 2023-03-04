@@ -78,11 +78,69 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 28,
-        "padding_bottom": 40
+        "padding_bottom": 12
+      }
+    },
+    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf": {
+      "type": "multirow",
+      "blocks": {
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC08997.jpg",
+            "caption": "Current",
+            "heading": "Location",
+            "text": "<p>Located new the corner of Commonwealth and Euclid in Fullerton, California.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0",
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1",
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "53702ab7-2fa7-4919-aaff-1fc73f56d2d2": {
@@ -122,7 +180,7 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 20,
@@ -260,73 +318,17 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf": {
-      "type": "multirow",
-      "blocks": {
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC08997.jpg",
-            "caption": "Current",
-            "heading": "Location",
-            "text": "<p>Located new the corner of Commonwealth and Euclid in Fullerton, California.<\/p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0",
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1",
-        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2"
-      ],
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "large",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "background-1",
-        "row_color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "263af5d5-d43c-4c05-a4ba-4334fcbddc88",
     "04a4a181-455b-4b8a-a040-96539944dc0d",
+    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf",
     "53702ab7-2fa7-4919-aaff-1fc73f56d2d2",
     "622e0ed9-cadc-4d11-95b4-45abf4237683",
     "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e",
     "6753315f-32dd-430d-badd-474c50e01e5d",
-    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1",
-    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf"
+    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1"
   ]
 }
