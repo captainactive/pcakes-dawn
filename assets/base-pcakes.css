@@ -181,7 +181,8 @@ display: none;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 2fr;
-	border: .1rem solid rgba(var(--color-foreground),.08)
+	border: .1rem solid rgba(var(--color-foreground),.08);
+	padding: 15px;
 }
 .pc-cart-boxes-img {
 	display: grid;
@@ -193,12 +194,11 @@ display: none;
 	}	
 
 .pc-cart-boxes-text {
-	padding-right: 5px;
+	padding-left: 15px;
 	}	
 .pc-cart-boxes-text h2 {
 	margin-bottom: 2px;
 	}
-	
 
 
 
