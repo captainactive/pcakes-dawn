@@ -183,6 +183,7 @@ display: none;
 
 
 
+	
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -220,7 +221,7 @@ display: none;
 	display: grid;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr auto;
 	grid-template-columns: 1fr;
 	}
 	
@@ -241,7 +242,7 @@ display: none;
 	background-color: #FFF8FB;
 	}
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
 	.pc-cart-boxes {
 	grid-template-columns: 1fr;
 	}
@@ -262,6 +263,7 @@ display: none;
 	max-width: 110px;
 	}
 }
+	
 	
 
 
