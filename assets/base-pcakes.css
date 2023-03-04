@@ -137,10 +137,13 @@ nav a {
 	grid-row-gap: 10px;
 	grid-column-gap: 20px;
 	grid-template-rows: 1fr;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	padding: 10px 20px;
 	}
-
+.pc-review-icons img {
+	width: 100%;
+	max-width: 150px;
+}	
 
 
 /* CART FLYOUT */
