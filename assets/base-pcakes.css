@@ -183,7 +183,6 @@ display: none;
 
 
 
-
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -202,7 +201,7 @@ display: none;
 	padding: 20px;
 }
 .pc-cart-boxes-sub {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 3fr;
 	}
 .pc-cart-boxes-note {
 	grid-template-columns: 1fr;
@@ -217,7 +216,14 @@ display: none;
 .pc-cart-boxes-img img {
 	max-width: 180px;
 	}	
-
+.pc-cart-boxes-text {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	}
+	
 .pc-cart-boxes-text {
 	padding-left: 15px;
 	}	
@@ -257,8 +263,6 @@ display: none;
 	}
 }
 	
-
-
 
 
 
