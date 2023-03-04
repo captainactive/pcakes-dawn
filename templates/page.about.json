@@ -85,6 +85,50 @@
         "padding_bottom": 52
       }
     },
+    "53702ab7-2fa7-4919-aaff-1fc73f56d2d2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Patty's Cakes is an innovative company that is always looking for ways to improve and grow. They have integrated technology throughout their kitchen and customer experience to streamline processes and provide a more efficient and enjoyable experience for their employees and customers.<br\/><br\/>Despite their success, Patty's Cakes has not forgotten their roots. They continue to be active members of their community, participating in local events and supporting various charities. Patty's Cakes is a true success story, born out of passion and hard work, and continues to thrive thanks to their dedication to quality and customer satisfaction.<\/p>"
+          }
+        },
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-0",
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-1",
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "622e0ed9-cadc-4d11-95b4-45abf4237683": {
       "type": "multicolumn",
       "blocks": {
@@ -222,6 +266,7 @@
     "main",
     "263af5d5-d43c-4c05-a4ba-4334fcbddc88",
     "04a4a181-455b-4b8a-a040-96539944dc0d",
+    "53702ab7-2fa7-4919-aaff-1fc73f56d2d2",
     "622e0ed9-cadc-4d11-95b4-45abf4237683",
     "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e",
     "6753315f-32dd-430d-badd-474c50e01e5d",
