@@ -178,7 +178,7 @@ nav a {
 display: none;
 }
 
-
+	
 .pc-cart-boxes {
 	display: grid;
 	grid-row-gap: 20px;
@@ -234,11 +234,15 @@ display: none;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
 }	
+	
+.pc-cart-boxes-note {
+	grid-column: span 1;
+}	
 .pc-cart-boxes-img img {
 	max-width: 110px;
 	}
 }
-
+	
 
 
 
