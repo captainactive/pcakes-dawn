@@ -243,7 +243,7 @@
         "fb8078d9-7940-4117-a657-2914b4b1d8f0": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"http:\/\/map.pattys-cakes.com\" target=\"_blank\" title=\"Get Directions to Patty's Cakes\">825 W. Commonwealth Ave Fullerton, CA 92832<\/a><\/p><p>This is our only location<\/p>"
+            "text": "<p>825 W. Commonwealth Ave Fullerton, CA 92832 (Get Directions)<\/p><p>This is our only location<\/p>"
           }
         }
       },
