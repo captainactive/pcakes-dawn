@@ -136,7 +136,7 @@ nav a {
 .pc-review-icons {
 	display: grid;
 	grid-row-gap: 10px;
-	grid-column-gap: 20px;
+	grid-column-gap: 10px;
 	grid-template-rows: 1fr;
 	grid-template-columns: repeat(6, 1fr);
 	padding: 10px 20px;
@@ -145,7 +145,6 @@ nav a {
 	width: 100%;
 	max-width: 150px;
 }	
-	
 
 
 
