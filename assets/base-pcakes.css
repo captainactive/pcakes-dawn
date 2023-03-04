@@ -208,9 +208,11 @@ display: none;
 	margin-bottom: 2px;
 	}
 .pc-cart-boxes p {
-	margin-bottom: 2px;
-
+	margin: 2px 0 5px 0;
 }	
+.cart__note	{
+	margin-top: 45px;
+}
 	
 @media (max-width: 500px) {
 .pc-cart-boxes {
