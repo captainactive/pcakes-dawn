@@ -188,8 +188,8 @@ display: none;
 	justify-items: center;
 	}
 
-.pc-cart-boxes-text {
-	display: grid;
+.pc-cart-boxes-text h2 {
+	margin-bottom: 2px;
 	}
 
 /* COLLECTION PAGES  */
