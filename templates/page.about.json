@@ -205,9 +205,9 @@
         "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC08500.jpg",
+        "image": "shopify:\/\/shop_images\/DSC08500-4.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -215,49 +215,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "50f02a68-ccba-4e24-b0c5-852172bfb4c1": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-0",
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-1",
-        "template--16658407358706__50f02a68-ccba-4e24-b0c5-852172bfb4c1-167788772332d7c279-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
@@ -268,7 +225,6 @@
     "622e0ed9-cadc-4d11-95b4-45abf4237683",
     "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e",
     "6753315f-32dd-430d-badd-474c50e01e5d",
-    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1",
-    "50f02a68-ccba-4e24-b0c5-852172bfb4c1"
+    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1"
   ]
 }
