@@ -194,7 +194,7 @@
           "rightLeftPosition": 10,
           "iconSize": "large",
           "iconCustomSize": 64,
-          "position": "top-right"
+          "position": "bottom-right"
         }
       }
     }
