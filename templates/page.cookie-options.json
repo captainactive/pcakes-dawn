@@ -13,13 +13,13 @@
         "1e7e7df9-0316-40a6-bf25-d3c74f1fa866": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cake-balls"
+            "collection": "cookies"
           }
         },
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cake-ball-packs"
+            "collection": "cookie-packs"
           }
         }
       },
@@ -39,10 +39,93 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "birthday-gifting"
+          }
+        },
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "congrats-gifting"
+          }
+        },
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "holiday-gifting"
+          }
+        },
+        "99d9f2ff-ac0a-4954-82ab-a867e9e50fc6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lets-celebrate-gifting"
+          }
+        },
+        "95b3f6a3-72ec-4d9b-9281-7dfe84829006": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "love-valentines-day"
+          }
+        },
+        "593b05ac-417b-42c1-b725-3d90f2689bf6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mothers-day-gifting"
+          }
+        },
+        "5fb93e1b-1795-4303-964f-237d9f22292a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thank-you-gifting"
+          }
+        },
+        "b5e2de5b-40d9-4ec9-b5c7-ba6805781f80": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thanksgiving-gifting"
+          }
+        },
+        "a25bc9cb-103a-4fff-8b99-d842d3242ec7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thinking-of-you-gifting"
+          }
+        }
+      },
+      "block_order": [
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-0",
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-1",
+        "template--16658680348914__8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5-167798668121aaaa8c-2",
+        "99d9f2ff-ac0a-4954-82ab-a867e9e50fc6",
+        "95b3f6a3-72ec-4d9b-9281-7dfe84829006",
+        "593b05ac-417b-42c1-b725-3d90f2689bf6",
+        "5fb93e1b-1795-4303-964f-237d9f22292a",
+        "b5e2de5b-40d9-4ec9-b5c7-ba6805781f80",
+        "a25bc9cb-103a-4fff-8b99-d842d3242ec7"
+      ],
+      "settings": {
+        "title": "Also Available in Gift Boxes",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f"
+    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
+    "8bb1c2bd-8dd3-4b38-91aa-9d96e1730ad5"
   ]
 }
