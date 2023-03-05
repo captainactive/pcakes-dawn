@@ -22,18 +22,6 @@
             "collection": "semi-custom-cakes"
           }
         },
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "vegan-cakes"
-          }
-        },
-        "fc9b6fdf-69a8-44c2-ad05-e07d4942e43c": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "gluten-free-cakes"
-          }
-        },
         "1e7e7df9-0316-40a6-bf25-d3c74f1fa866": {
           "type": "featured_collection",
           "settings": {
@@ -50,8 +38,6 @@
       "block_order": [
         "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-0",
         "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-1",
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-2",
-        "fc9b6fdf-69a8-44c2-ad05-e07d4942e43c",
         "1e7e7df9-0316-40a6-bf25-d3c74f1fa866",
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e"
       ],
