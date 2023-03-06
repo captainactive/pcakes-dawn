@@ -71,12 +71,7 @@ nav a {
 
 .pc-mega-image {
   max-height: 180px;
-}
-
-@media (max-width: 700px) {
-  .pc-mega-image {
-    display:  none;
-  }
+  margin-top: 35px;
 }
 
 
