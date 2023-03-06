@@ -489,10 +489,10 @@
                           {% if childlink.title contains "|" %}
                              
                               {% assign megaimg = childlink.title | split: "|" %}
-
-                                  <img class="pc-mega-image" src="{{ megaimg | slice: 1 }}">
-                                  <div> {{ childlink.title | escape }}</div>
-
+                                  <div>
+                                    <img class="pc-mega-image" src="{{ megaimg | slice: 1 }}">
+                                    <div> {{ childlink.title | escape }}</div>
+                                  </div>
                             {%- else -%}
 
 
