@@ -489,10 +489,10 @@
                           <!-- PC ADD -->
                           {% if childlink.title contains "|" %}
                               {% assign megaimg = childlink.title | split: "|" %}
-                                  <div>
+                                  <a href="{{ childlink.url }}">
                                     <img class="pc-mega-image" src="{{ megaimg | slice: 1 }}">
                                    <div>{{ megaimg | slice: 0 }}</div> 
-                                  </div>
+                                  </a>
                             {%- else -%}
 
                             <li>
