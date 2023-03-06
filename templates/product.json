@@ -118,6 +118,16 @@
             "liquid": ""
           }
         },
+        "23b03fac-2103-4662-be29-c9f2c5c710f2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Handling Guidelines (All)",
+            "icon": "check_mark",
+            "content": "<p>content to come<\/p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -148,6 +158,7 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
+        "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883"
       ],
