@@ -102,7 +102,7 @@
           "settings": {
             "heading": "Allergens",
             "icon": "check_mark",
-            "content": "<p>{{ block.settings.page.title }}<\/p>",
+            "content": "<p>{{ block.settings.page.title }}{{ product.metafields.custom.gmerch.value }}<\/p>",
             "page": ""
           }
         }
