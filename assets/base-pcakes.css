@@ -341,3 +341,48 @@ quantity::before {
 
 
 
+/* PRODUCT PAGE  */
+
+
+
+
+/* PRODUCT PAGE ALLERGEN INFORMATION */
+.allergrid {
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 0px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  border-top:#666666 solid 1px;
+  border-bottom:#666666 solid 1px;
+  
+  }
+.allergrid div {
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 0px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 116px 4fr  80px 3fr; 
+  
+  }
+  
+.allergrid div div{
+    display:block;
+  }
+  
+.allertitle {
+      font-weight: 600;
+    padding: 5px 2px 5px 7px;
+  }
+.allercontent {
+    padding: 5px 5px 5px 2px;
+  }
+  
+.oddrow {background-color:#f2f2f2;}
+  
+.allerfooter {font-size: 70%;
+  padding:10px;}
+
+
+
+
