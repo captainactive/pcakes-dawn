@@ -177,12 +177,6 @@
           "wsaio_custom_css_file": ""
         }
       },
-      "14479319785270113485": {
-        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "15885745614559378752": {
         "type": "shopify:\/\/apps\/accessibly\/blocks\/app-embed\/4b59303e-1141-4c8a-945f-bf4adb516864",
         "disabled": false,
@@ -195,6 +189,12 @@
           "iconSize": "large",
           "iconCustomSize": 64,
           "position": "bottom-right"
+        }
+      },
+      "14479319785270113485": {
+        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
+        "disabled": false,
+        "settings": {
         }
       }
     }
