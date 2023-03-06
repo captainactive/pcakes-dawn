@@ -61,6 +61,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -71,6 +72,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -81,6 +83,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -91,6 +94,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -107,6 +111,7 @@
         },
         "28c74ebb-2d26-4b7b-ba70-118eadef4883": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.metafields.my_fields.allergens %}\n      \n      <h2 class=\"marbtm10\">Allergen Information<\/h2>\n      <div class=\"allergrid martop15\">  \n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Flours:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.flours}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Dairy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.dairy}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Starch:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.starch}}<\/div>\n\t\t\t\n\t\t\t<div class=\"allertitle\">Eggs:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.eggs}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Nuts:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.nuts}}<\/div>  \n\n\t\t\t<div class=\"allertitle\">Gelatin:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.gelatin}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Sugar:<\/div>\n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.sugar}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Soy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.soy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n        \t<div class=\"allertitle\">Fruit Seeds:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.fruitseeds}}<\/div>  \n        \t\n\t\t\t<div class=\"allertitle\">&nbsp;<\/div> \n\t\t\t<div class=\"allercontent\">&nbsp;<\/div>  \t\t\t\n   \n      <\/div>\n       \n      <\/div>\n      <div class=\"allerfooter\">All equipment is washed, however, cross-contamination with ingredients is a possibility. Due to challenges with supply chains, these values may fluctuate.<br><\/div> \n    <br> \n  \n        \n        {% endif %}"
           }
