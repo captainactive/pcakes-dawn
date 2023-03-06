@@ -384,6 +384,10 @@ quantity::before {
 .allerfooter {font-size: 70%;
   padding:10px;}
 
+@media (max-width: 1350px) {
+.allergrid div {
+  grid-template-columns: 116px 4fr; 
+  
 
 
 
