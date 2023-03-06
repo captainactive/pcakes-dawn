@@ -386,7 +386,7 @@ quantity::before {
 
 @media (max-width: 1350px) {
 .allergrid div {
-  grid-template-columns: 1fr 4fr; 
+  grid-template-columns: 1fr 1fr; 
   
 
 
