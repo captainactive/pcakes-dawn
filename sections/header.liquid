@@ -491,7 +491,7 @@
                               {% assign megaimg = childlink.title | split: "|" %}
                                   <div>
                                     <img class="pc-mega-image" src="{{ megaimg | slice: 1 }}">
-                                 {%  comment %}<div> {{ childlink.title | escape }}</div> {%  endcomment %}
+                                   <div> {{ childlink.title | escape }}</div> 
                                   </div>
                             {%- else -%}
 
