@@ -488,7 +488,7 @@
 
                           {% if childlink.title contains "|" %}
                         {{ childlink.title }}
-                              {% assign megaimg = childlink.title | split: " | " %}
+                              {% assign megaimg = childlink.title | split: "|" %}
                               {{ megaimg | slice: 2 }}
                           
                             
