@@ -102,7 +102,7 @@
           "settings": {
             "heading": "Allergens",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>&lt;p&gt;test&lt;\/p&gt;<\/p>",
             "page": ""
           }
         }
