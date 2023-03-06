@@ -487,11 +487,16 @@
                           {%- for childlink in link.links -%}
 
                           {% if childlink.title contains "|" %}
-                            YES!
+
+                              {% assign megaimg = childlink.title | split: " | " %}
+                              {{ megaimg | slice: 2 }}
+                          
+                            
+
+                          
                             {%- else -%}
-                            
-                            {%- endif -%}
-                            
+
+
 
                           
                             <li>
@@ -510,6 +515,11 @@
                                 </ul>
                               {%- endif -%}
                             </li>
+                            {%- endif -%}
+                            
+
+                          
+                        
                           {%- endfor -%}
                         </ul>
                       </div>
