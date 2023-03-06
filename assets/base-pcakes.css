@@ -353,7 +353,7 @@ quantity::before {
   grid-column-gap: 0px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
-  border-top: 1rem solid rgba(var(--color-foreground),.08);
+  border-top: .1rem solid rgba(var(--color-foreground),.08);
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   
   }
@@ -378,7 +378,7 @@ quantity::before {
     padding: 5px 5px 5px 2px;
   }
   
-.oddrow {background-color:#f2f2f2;}
+.oddrow {background-color:#FFF8FB;}
   
 .allerfooter {font-size: 70%;
   padding:10px;}
