@@ -355,7 +355,7 @@ quantity::before {
   grid-template-columns: 1fr;
   border-top: .1rem solid rgba(var(--color-foreground),.08);
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
-  color: rgba(var(--color-foreground),1)
+  color: rgba(var(--color-foreground),.85)
   
   }
 .allergrid div {
