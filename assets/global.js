@@ -192,6 +192,12 @@ class QuantityInput extends HTMLElement {
       buttonPlus.classList.toggle('disabled', value >= max);
     }
   }
+  if (window.BOLD && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function'){
+  setTimeout(function(){
+        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
+  },800);
+    }
+
 }
 
 customElements.define('quantity-input', QuantityInput);
