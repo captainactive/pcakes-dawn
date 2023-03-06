@@ -166,7 +166,10 @@
                                 </button>
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
 
-                          dd
+                                {% if childlink.title contains "|" %}
+                                  {% comment %} HIDE THE IMAGE {% endcomment %}
+                                 {%- else -%}  
+                            
                                   {%- for childlink in link.links -%}
                                     <li>
                                       {%- if childlink.links == blank -%}
@@ -200,7 +203,7 @@
                                       {%- endif -%}
                                     </li>
                                   {%- endfor -%}
-cc
+                                  {%- endif -%}
                           
                                 </ul>
                               </div>
@@ -492,7 +495,6 @@ cc
                           {%- for childlink in link.links -%}
 
                           {% if childlink.title contains "|" %}
-                             
                               {% assign megaimg = childlink.title | split: "|" %}
                                   <div>
                                     <img class="pc-mega-image" src="{{ megaimg | slice: 1 }}">
@@ -520,10 +522,6 @@ cc
                               {%- endif -%}
                             </li>
                             {%- endif -%}
-                            
-
-                          
-                        
                           {%- endfor -%}
                         </ul>
                       </div>
