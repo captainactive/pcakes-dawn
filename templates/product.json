@@ -100,19 +100,10 @@
         "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Allergens",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>{{ block.settings.page.title }}<\/p>",
             "page": ""
-          }
-        },
-        "f2f28794-652a-4ed6-bfe9-0e8ffaaa3151": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": "about"
           }
         }
       },
@@ -131,8 +122,7 @@
         "collapsible-row-3",
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
-        "f1cbc232-fd87-4d9b-94a1-5158525653ce",
-        "f2f28794-652a-4ed6-bfe9-0e8ffaaa3151"
+        "f1cbc232-fd87-4d9b-94a1-5158525653ce"
       ],
       "settings": {
         "enable_sticky_info": true,
