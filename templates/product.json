@@ -100,13 +100,12 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Care Instructions",
+            "heading": "Handling Guidelines",
             "icon": "heart",
             "content": "",
             "page": "",
-            "liquid": ""
+            "liquid": "<p>Desserts are Fragile, always becareful when traveling with them<\/p>"
           }
         },
         "share": {
