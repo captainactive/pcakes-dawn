@@ -19,7 +19,6 @@
           >{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
-<div id="storePickupApp"></div>
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
@@ -31,7 +30,7 @@
                   <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
-
+<div id="storePickupApp"></div>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
