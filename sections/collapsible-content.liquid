@@ -80,6 +80,7 @@
                   >
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
+                    {{ block.settings.custom_liquid }}
                   </div>
                 </details>
               </div>
@@ -318,13 +319,6 @@
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
         },
         {
-          "type": "liquid",
-          "id": "custom_liquid",
-          "default": "Collapsible row",
-          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.custom_liquid.label",
-          "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.custom_liquid.info"
-        },
-        {
           "type": "select",
           "id": "icon",
           "options": [
@@ -517,6 +511,11 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
+        },
+          {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.custom_liquid.label"
         }
       ]
     }
