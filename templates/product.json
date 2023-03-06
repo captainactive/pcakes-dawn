@@ -90,6 +90,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "28c74ebb-2d26-4b7b-ba70-118eadef4883": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.my_fields.allergens %}\n      \n      <h3 class=\"marbtm10\">Allergen Information<\/h3>\n      <div class=\"allergrid martop15\">  \n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Flours:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.flours}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Dairy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.dairy}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Starch:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.starch}}<\/div>\n\t\t\t\n\t\t\t<div class=\"allertitle\">Eggs:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.eggs}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Nuts:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.nuts}}<\/div>  \n\n\t\t\t<div class=\"allertitle\">Gelatin:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.gelatin}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Sugar:<\/div>\n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.sugar}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Soy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.soy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n        \t<div class=\"allertitle\">Fruit Seeds:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.fruitseeds}}<\/div>  \n        \t\n\t\t\t<div class=\"allertitle\">&nbsp;<\/div> \n\t\t\t<div class=\"allercontent\">&nbsp;<\/div>  \t\t\t\n   \n      <\/div>\n       \n      <\/div>\n      <div class=\"allerfooter\">All equipment is washed, however, cross-contamination with ingredients is a possibility. Due to challenges with supply chains, these values may fluctuate.<br><\/div> \n    <br> \n  \n        \n        {% endif %}"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "28c74ebb-2d26-4b7b-ba70-118eadef4883"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -216,30 +223,12 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "78e0212c-b864-4fb2-b59a-4a816f435f4a": {
-      "type": "test-section",
-      "settings": {
-        "custom_text_title": "Title",
-        "custom_html": "<p>html<\/p>",
-        "custom_text_body": "<p>Add your text here<\/p>"
-      }
-    },
-    "b4e91d0e-df9a-4994-90f1-7e4169e07244": {
-      "type": "test-section",
-      "settings": {
-        "custom_text_title": "Title",
-        "custom_html": "<p>html<\/p>",
-        "custom_text_body": "<p>Add your text here<\/p>"
-      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products",
-    "78e0212c-b864-4fb2-b59a-4a816f435f4a",
-    "b4e91d0e-df9a-4994-90f1-7e4169e07244"
+    "related-products"
   ]
 }
