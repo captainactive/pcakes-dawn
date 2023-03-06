@@ -1,1 +1,4 @@
-{{ 'general.cart.view' | t: count: cart.item_count }}
+{% capture boldCartCount %}
+  {% render 'bold-options-hybrid-cart-item-count' %}
+{% endcapture %}
+{{ 'general.cart.view' | t: count: boldCartCount }}
