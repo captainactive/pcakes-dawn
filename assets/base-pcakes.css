@@ -387,7 +387,7 @@ quantity::before {
   font-size: calc(var(--font-heading-scale) * 2.4rem);
 
 }
-#accessories-item {
+#.ccessories-item {
    border: .1rem solid rgba(var(--color-foreground),.08); 
   border-radius: 4px;
 }
