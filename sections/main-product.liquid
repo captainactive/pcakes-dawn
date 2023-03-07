@@ -88,13 +88,13 @@
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
-
-                  <div class="yotpo bottomLine"
-                    data-product-id="{{ product.id }}">
-                  </div>
-                
                 </a>
               </div>
+
+<div class="yotpo bottomLine"
+                    data-product-id="{{ product.id }}">
+                  </div>
+            
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
