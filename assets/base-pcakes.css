@@ -390,7 +390,7 @@ quantity::before {
 .accessories-item {
    border: .1rem solid rgba(var(--color-foreground),.08); 
   border-radius: 4px;
-  padding 5px 10px;
+  padding: 5px 10px;
 }
 .accessories-img-wrapper {
 
