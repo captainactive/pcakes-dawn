@@ -414,7 +414,11 @@ quantity::before {
   
 }
 
-
+.accessories-right select {
+  padding: 7px;
+  font-size: 14px;
+  width: 50%;
+}
 
 .accessories-img-wrapper {
 
