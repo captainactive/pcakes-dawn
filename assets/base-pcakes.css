@@ -427,7 +427,7 @@ quantity::before {
 .accessories-right input {
   color:#8a54a;
 }
-.accessories-right {
+.accessories-right a {
 font-size: 140%;
   text-decoration: none;
 }
