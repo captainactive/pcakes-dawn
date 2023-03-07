@@ -152,6 +152,12 @@
           "settings": {
             "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div>\n<\/div>"
           }
+        },
+        "509e35e4-7159-4a39-a416-a5df9d0d3428": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<h2>Description<\/h2>"
+          }
         }
       },
       "block_order": [
@@ -174,7 +180,8 @@
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
-        "1ddad9ad-36c7-4b85-a947-0faf17106226"
+        "1ddad9ad-36c7-4b85-a947-0faf17106226",
+        "509e35e4-7159-4a39-a416-a5df9d0d3428"
       ],
       "settings": {
         "enable_sticky_info": true,
