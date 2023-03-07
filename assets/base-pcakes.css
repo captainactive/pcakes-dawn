@@ -377,7 +377,7 @@ quantity::before {
   padding-bottom: 18px;
 }
 
-.pc-prod-h2 {
+.pc-prod-h2, .pc-prod-h2 h2 {
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   margin-top: 40px;
 }
