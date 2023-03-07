@@ -424,11 +424,11 @@ quantity::before {
   border-radius: 4px;
 }
 
-.accessories-right input {
+.accessories-right input[type="checkbox"]:checked {
   color:#8a54a;
 }
 .accessories-title {
-font-size: 100%;
+font-size: 100%!important;
   text-decoration: none;
 }
 
