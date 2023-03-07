@@ -20,7 +20,7 @@ nav a {
 
 .hrtoplite {
   border-top: .1rem solid rgba(var(--color-foreground),.08);
-  padding-top: 20px;
+  padding-top: 18px;
   width: 100%; 
 }
 
