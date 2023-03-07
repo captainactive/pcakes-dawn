@@ -380,14 +380,14 @@ quantity::before {
 .pc-prod-h2, .pc-prod-h2 h2, #accessories-container-heading h3 {
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   margin-top: 40px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   
 }
 #accessories-container-heading h3 {
   font-size: calc(var(--font-heading-scale) * 2.4rem);
 
 }
-#.ccessories-item {
+#accessories-item {
    border: .1rem solid rgba(var(--color-foreground),.08); 
   border-radius: 4px;
 }
