@@ -15,6 +15,21 @@ nav a {
   text-align: center;
 }
 
+
+/* GENERAL */
+
+.hrtoplite {
+  border-top: .1rem solid rgba(var(--color-foreground),.08);
+  padding-top: 30px;
+  width: 100%; 
+}
+
+.hrtbtmlite {
+  border-btm: .1rem solid rgba(var(--color-foreground),.08);
+  padding-btm: 30px;
+  width: 100%; 
+}
+
 /* PAGES  */
 .pagination-wrapper {
   display: none;
