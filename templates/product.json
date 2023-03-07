@@ -144,7 +144,13 @@
         "1ddad9ad-36c7-4b85-a947-0faf17106226": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div>\n<\/div>"
+          }
+        },
+        "350680f0-8058-4d5b-94cc-38930f6b92e9": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- PROD DETAILS -->    \n{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Theme Cake\" or product.tags contains \"Tiered Cake\" %}     \n\n    \n    <h2>Cake Icing<\/h2>\n    <div><img class=\"ftright\" src=\"{{ 'certified-delicious-logo-200.png' | asset_img_url: '200x' }}\" >\n    <p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance of sweetness.<\/p>\n    <\/div>\n    \n\n    <h3>Looking for more?<\/h3>\n    <div>\n        <p>Are you looking for more customization? Send us a <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107&prod={{product.handle}}\">message to order a custom cake<\/a>. <span>Please note that delivery orders must be placed online.<\/span><\/p>\n    <\/div> \n{% endif %}  \n\n\n{% if product.tags contains \"Vegan\" or product.tags contains \"semi VEGF\" %}     \n<!-- VEGAN -->\n  \n<h2>Vegan Option<\/h2>\n    <div>\n        <p>Our vegan option is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n    {% endif %}          \n  \n{% if product.tags contains \"VE White\" or product.tags contains \"VE Choc\" or product.tags contains \"VE Straw\" %}     \n   <!-- VEGAN -->\n   <div>\n        <p>Our vegan cupcakes is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n{% endif %}         \n          \n       \n{% if product.tags contains \"Standard Cakes\" %}  \n    <h2>Lead time<\/h2>\n       <p>Cakes ordered within 24 business hours will be fulfilled based on availability. Some flavors and sizes may sell out. We will contact you if a change is needed.<\/p>\n      \n{% endif %}       \n          \n          \n{% if product.tags contains \"ccpk12\" or product.tags contains \"ccpk4\" or product.tags contains \"ccpk6\" %} \n          \n    {% if product.tags contains \"customcc\" %} \n    {% else %}   \n  \n         <!-- PACKS -->\n        <h2>Flavor Choices<\/h2>\n        <div>\n            <p> If you would like to select the flavors in each pack. Visit our <a href=\"\/collections\/cupcakes\">cupcake page<\/a> to make your selection and then add a <a href=\"\/collections\/candles-and-accessories\/box\">gift box<\/a> separately.<\/p>\n\n        <\/div>        \n    {% endif %}   \n    {% endif %}   \n          \n{% if product.tags contains \"mccpk12\" or product.tags contains \"mccpk24\" %}       \n   <!-- PACKS -->\n          <h3>Flavor Choices<\/h3>\n          <div>\n            <p> If you would like to select the flavors in each pack. You may do so with our <a href=\"\/collections\/mini-cupcakes\/products\/mini-cupcakes-split-dozen\">split dozen mini cupcakes<\/a>.<\/p>\n          <\/div>        \n    {% endif %}   \n           \n         \n{% if product.tags contains \"3 Days\"%}     \n    <h2>Lead Time<\/h2>\n    <div>\n        <p>This cake has a lead time of 3 days until we are sold out.<\/p>\n        <\/div>         \n    {% endif %} \n  \n          \n    {% if product.tags contains \"5 Days\"%}     \n           <h2>Lead Time<\/h2>\n           <div>\n            <p>This cake has a lead time of 5 days until we are sold out.<\/p>\n          <\/div>        \n      {% endif %}"
           }
         }
       },
@@ -167,7 +173,8 @@
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
-        "1ddad9ad-36c7-4b85-a947-0faf17106226"
+        "1ddad9ad-36c7-4b85-a947-0faf17106226",
+        "350680f0-8058-4d5b-94cc-38930f6b92e9"
       ],
       "settings": {
         "enable_sticky_info": true,
