@@ -411,7 +411,7 @@ quantity::before {
   grid-column-gap: 0px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  padding-left: 3px;
+  padding-left: 5px;
   
 }
 
@@ -427,7 +427,9 @@ quantity::before {
 .accessories-right input {
   color:#8a54a;
 }
-
+.accessories-right {
+font-size: 14px;  
+}
 .accessories-img-wrapper {
 
 }
