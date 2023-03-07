@@ -428,7 +428,8 @@ quantity::before {
   color:#8a54a;
 }
 .accessories-right {
-font-size: 14px;  
+font-size: 140%;
+  text-decoration: none;
 }
 .accessories-img-wrapper {
 
