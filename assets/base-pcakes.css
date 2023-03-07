@@ -411,6 +411,7 @@ quantity::before {
   grid-column-gap: 0px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
+  padding-left: 3px;
   
 }
 
