@@ -30,6 +30,14 @@ nav a {
   width: 100%; 
 }
 
+.product__info-container .installment {
+  border-top: .1rem solid rgba(var(--color-foreground),.08);
+  border-btm: .1rem solid rgba(var(--color-foreground),.08);
+  
+}
+
+
+
 /* PAGES  */
 .pagination-wrapper {
   display: none;
