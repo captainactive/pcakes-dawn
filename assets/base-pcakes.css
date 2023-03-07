@@ -380,7 +380,7 @@ quantity::before {
 .pc-prod-h2, .pc-prod-h2 h2, #accessories-container-heading h3 {
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   margin-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   
 }
 #accessories-container-heading h3 {
