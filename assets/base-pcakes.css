@@ -382,6 +382,10 @@ quantity::before {
   margin-top: 40px;
 }
 
+.product__info-container h2 .summary__title {
+  border-bottom: none;
+  margin-top: none;
+}
 
 
 
