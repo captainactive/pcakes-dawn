@@ -36,7 +36,7 @@
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<h2 class=\"hrtoplite\">Description<\/h2>"
+            "custom_liquid": "<h2>Description<\/h2>"
           }
         },
         "description": {
