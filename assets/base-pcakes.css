@@ -167,10 +167,10 @@ nav a {
 /* CART FLYOUT */
 
 
-
-//cart-notification-form {
+#cart-notification-form {
   display: none;
 }
+
 
 
 
@@ -348,6 +348,11 @@ quantity::before {
 /* PRODUCT PAGE  */
 
 
+.img-descrip {
+  float: right;
+  width: 100%;
+  max-width: 150px;
+}
 
 
 /* PRODUCT PAGE ALLERGEN INFORMATION */
