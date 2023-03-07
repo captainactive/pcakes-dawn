@@ -391,7 +391,27 @@ quantity::before {
    border: .1rem solid rgba(var(--color-foreground),.08); 
   border-radius: 4px;
   padding: 5px 10px;
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 0px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr; 
 }
+
+.accessories-left {
+  
+}
+.accessories-right  {
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 0px;
+  grid-template-rows: 1fr 1 fr 1fr;
+  grid-template-columns: 1fr;
+  
+}
+
+
+
 .accessories-img-wrapper {
 
 }
