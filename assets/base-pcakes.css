@@ -20,19 +20,19 @@ nav a {
 
 .hrtoplite {
   border-top: .1rem solid rgba(var(--color-foreground),.08);
-  padding-top: 15px;
+  padding-top: 20px;
   width: 100%; 
 }
 
 .hrtbtmlite {
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   width: 100%; 
 }
 
 .product__info-container .installment {
   border-top: .1rem solid rgba(var(--color-foreground),.08);
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 
