@@ -377,14 +377,9 @@ quantity::before {
   padding-bottom: 18px;
 }
 
-.product__info-container h2 {
+.pc-prod-h2 {
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   margin-top: 40px;
-}
-
-.product__info-container h2 .summary__title {
-  border-bottom: none;
-  margin-top: none;
 }
 
 
