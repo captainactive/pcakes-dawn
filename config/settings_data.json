@@ -165,18 +165,6 @@
           "inject_sdk_loader": true
         }
       },
-      "18209738915288330680": {
-        "type": "shopify:\/\/apps\/wholesale-all-in-one\/blocks\/wholesale-all-in-one\/5a3d95fb-5647-47d5-8445-d5858f91ff9d",
-        "disabled": false,
-        "settings": {
-          "wsaio_app_access_token": "",
-          "wsaio_main_js_file": "",
-          "wsaio_main_liquid_file": "",
-          "wsaio_modules_liquid_file": "",
-          "wsaio_addons_liquid_file": "",
-          "wsaio_custom_css_file": ""
-        }
-      },
       "15885745614559378752": {
         "type": "shopify:\/\/apps\/accessibly\/blocks\/app-embed\/4b59303e-1141-4c8a-945f-bf4adb516864",
         "disabled": false,
@@ -195,6 +183,18 @@
         "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
         "disabled": false,
         "settings": {
+        }
+      },
+      "18209738915288330680": {
+        "type": "shopify:\/\/apps\/wholesale-all-in-one\/blocks\/wholesale-all-in-one\/5a3d95fb-5647-47d5-8445-d5858f91ff9d",
+        "disabled": false,
+        "settings": {
+          "wsaio_app_access_token": "dawn_wsaiouvh6qz",
+          "wsaio_main_js_file": "",
+          "wsaio_main_liquid_file": "",
+          "wsaio_modules_liquid_file": "",
+          "wsaio_addons_liquid_file": "",
+          "wsaio_custom_css_file": ""
         }
       }
     }
