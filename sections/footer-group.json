@@ -74,6 +74,13 @@
           "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
           "settings": {
             "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
+            "custom_liquid": ""
+          }
+        },
+        "fc094b44-d5bc-4daa-b010-3bead0d6edea": {
+          "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
+          "settings": {
+            "custom_html": "Reviews, need styling",
             "custom_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
         }
@@ -84,7 +91,8 @@
         "footer-0",
         "footer-1",
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988",
-        "b2bc1e89-494a-4a87-9202-44cf50d9e63e"
+        "b2bc1e89-494a-4a87-9202-44cf50d9e63e",
+        "fc094b44-d5bc-4daa-b010-3bead0d6edea"
       ],
       "settings": {
         "color_scheme": "accent-1",
