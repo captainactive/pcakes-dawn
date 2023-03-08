@@ -132,12 +132,6 @@
             "page": ""
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -173,6 +167,12 @@
           "settings": {
             "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div> \n<\/div>"
           }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
@@ -193,13 +193,13 @@
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "33cb1234-dee4-40b9-a8e7-29a55562e834",
-        "share",
         "variant_picker",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "quantity_selector",
         "buy_buttons",
-        "1ddad9ad-36c7-4b85-a947-0faf17106226"
+        "1ddad9ad-36c7-4b85-a947-0faf17106226",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
