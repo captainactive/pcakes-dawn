@@ -146,6 +146,12 @@
           "settings": {
             "custom_liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"305209\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-name=\"{{ product.title | escape }}\" data-yotpo-url=\"{{ shop.url }}{{ product.url }}\"  data-yotpo-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: '?', '%3F' | replace: '&','%26'}}\"  data-yotpo-description=\"{{ product.description | escape }}\"><\/div>"
           }
+        },
+        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -167,7 +173,8 @@
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
-        "b3bc871b-4dc3-4b3a-89be-650c99875e6f"
+        "b3bc871b-4dc3-4b3a-89be-650c99875e6f",
+        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4"
       ],
       "settings": {
         "enable_sticky_info": true,
