@@ -63,7 +63,8 @@
             "heading": "Allergens",
             "icon": "nut_free",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-0": {
@@ -73,7 +74,8 @@
             "heading": "Materials",
             "icon": "leather",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-1": {
@@ -83,7 +85,8 @@
             "heading": "Shipping & Returns",
             "icon": "truck",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-2": {
@@ -93,7 +96,8 @@
             "heading": "Dimensions",
             "icon": "ruler",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-3": {
@@ -102,7 +106,8 @@
             "heading": "Handling Guidelines (Cake)",
             "icon": "heart",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56": {
@@ -111,7 +116,8 @@
             "heading": "Handling Guidelines (Cupcakes)",
             "icon": "check_mark",
             "content": "<p>Content to come<\/p>",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "23b03fac-2103-4662-be29-c9f2c5c710f2": {
@@ -120,7 +126,8 @@
             "heading": "Handling Guidelines (All)",
             "icon": "check_mark",
             "content": "<p>content to come<\/p>",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "33cb1234-dee4-40b9-a8e7-29a55562e834": {
@@ -129,7 +136,8 @@
             "heading": "Reviews",
             "icon": "star",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "variant_picker": {
@@ -173,6 +181,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "8cf77127-d99a-46a6-98bc-23de985f94b5": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<select name=\"id\" id=\"ProductSelect-{{ section.id }}\" class=\"product-form__variants no-js\">\n              {% for variant in product.variants %}\n                {% if variant.available %}\n                  <option {% if variant == product.selected_or_first_available_variant %} selected=\"selected\" {% endif %} value=\"{{ variant.id }}\">\n                    {{ variant.title }}\n                  <\/option>\n                {% else %}\n                  <option disabled=\"disabled\">{{ variant.title }} - {{ 'products.product.sold_out' | t }}<\/option>\n                {% endif %}\n              {% endfor %}\n            <\/select>"
+          }
         }
       },
       "block_order": [
@@ -199,7 +213,8 @@
         "buy_buttons",
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "1ddad9ad-36c7-4b85-a947-0faf17106226",
-        "share"
+        "share",
+        "8cf77127-d99a-46a6-98bc-23de985f94b5"
       ],
       "settings": {
         "enable_sticky_info": true,
