@@ -145,7 +145,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "dropdown"
           }
         },
         "28c74ebb-2d26-4b7b-ba70-118eadef4883": {
