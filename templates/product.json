@@ -55,6 +55,16 @@
             "show_dynamic_checkout": false
           }
         },
+        "e8c2b04f-c641-4129-9989-aaf954743474": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "icon": "star",
+            "content": "",
+            "page": "",
+            "liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
+          }
+        },
         "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
           "type": "collapsible_tab",
           "settings": {
@@ -152,16 +162,6 @@
           "settings": {
             "custom_liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
           }
-        },
-        "e8c2b04f-c641-4129-9989-aaf954743474": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Reviews",
-            "icon": "star",
-            "content": "",
-            "page": "",
-            "liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
-          }
         }
       },
       "block_order": [
@@ -174,6 +174,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "e8c2b04f-c641-4129-9989-aaf954743474",
         "f1cbc232-fd87-4d9b-94a1-5158525653ce",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -184,8 +185,7 @@
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
         "b3bc871b-4dc3-4b3a-89be-650c99875e6f",
-        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4",
-        "e8c2b04f-c641-4129-9989-aaf954743474"
+        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4"
       ],
       "settings": {
         "enable_sticky_info": true,
