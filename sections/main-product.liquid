@@ -91,9 +91,7 @@
                 </a>
               </div>
 
-                  <div class="yotpo bottomLine"
-                    data-product-id="{{ product.id }}">
-                  </div>
+             
             
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -577,15 +575,6 @@
   </script>
 </section>
 
-<div class="yotpo yotpo-main-widget"
-data-product-id="{{ product.id }}"
-data-name="{{ product.title | escape }}"
-data-url="{{ shop.url }}{{ product.url }}"
-data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
-data-price="{{ variant.price | money_without_currency }}"
-data-currency="{{ shop.currency }}"
-data-description="{{ product.description | escape }}">
-</div>
                           
 {% schema %}
 {
