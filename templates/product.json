@@ -18,7 +18,14 @@
         },
         "d9b7d681-77ad-4789-b67b-32efe6c9333d": {
           "type": "rating",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
         },
         "caption": {
@@ -164,12 +171,23 @@
           "settings": {
             "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div>\n<a href=\"#\">buy more<\/a> \n<\/div>"
           }
+        },
+        "33cb1234-dee4-40b9-a8e7-29a55562e834": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "icon": "star",
+            "content": "",
+            "page": "",
+            "liquid": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"305209\" data-yotpo-product-id=\"{{product.id}}\" data-yotpo-name=\"{{ product.title | escape }}\" data-yotpo-url=\"{{ shop.url }}{{ product.url }}\"  data-yotpo-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: '?', '%3F' | replace: '&','%26'}}\"  data-yotpo-description=\"{{ product.description | escape }}\"><\/div>"
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
         "d9b7d681-77ad-4789-b67b-32efe6c9333d",
+        "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd",
         "caption",
         "price",
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
@@ -188,7 +206,8 @@
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "quantity_selector",
         "buy_buttons",
-        "1ddad9ad-36c7-4b85-a947-0faf17106226"
+        "1ddad9ad-36c7-4b85-a947-0faf17106226",
+        "33cb1234-dee4-40b9-a8e7-29a55562e834"
       ],
       "settings": {
         "enable_sticky_info": true,
