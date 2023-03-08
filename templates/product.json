@@ -18,7 +18,14 @@
         },
         "d9b7d681-77ad-4789-b67b-32efe6c9333d": {
           "type": "rating",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "39e8986e-d4e7-4409-8eba-813e6086f722": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
         },
         "caption": {
@@ -163,18 +170,13 @@
           "settings": {
             "custom_liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
           }
-        },
-        "39e8986e-d4e7-4409-8eba-813e6086f722": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
-          }
         }
       },
       "block_order": [
         "vendor",
         "title",
         "d9b7d681-77ad-4789-b67b-32efe6c9333d",
+        "39e8986e-d4e7-4409-8eba-813e6086f722",
         "caption",
         "price",
         "description",
@@ -192,8 +194,7 @@
         "share",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
         "b3bc871b-4dc3-4b3a-89be-650c99875e6f",
-        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4",
-        "39e8986e-d4e7-4409-8eba-813e6086f722"
+        "9772f0a2-f211-44c7-98ec-d71d2c8d87c4"
       ],
       "settings": {
         "enable_sticky_info": true,
