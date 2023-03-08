@@ -10,39 +10,25 @@
     "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f": {
       "type": "collection-list",
       "blocks": {
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "standard-cakes"
-          }
-        },
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "semi-custom-cakes"
-          }
-        },
         "1e7e7df9-0316-40a6-bf25-d3c74f1fa866": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tiered-cakes"
+            "collection": "vegan-cupcakes"
           }
         },
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e": {
           "type": "featured_collection",
           "settings": {
-            "collection": "theme-cakes"
+            "collection": "vegan-mini-cupcakes"
           }
         }
       },
       "block_order": [
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-0",
-        "template--16656210100466__e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f-1677645989e198b7cd-1",
         "1e7e7df9-0316-40a6-bf25-d3c74f1fa866",
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e"
       ],
       "settings": {
-        "title": "Classic Cake Options",
+        "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,

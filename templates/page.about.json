@@ -1,0 +1,345 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "263af5d5-d43c-4c05-a4ba-4334fcbddc88": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-patty-mall2_2abb72b4-6cdb-434f-b54c-93de599de8fa.jpg",
+            "title": "Patty in 1985",
+            "text": "<p>At the \"Taste of the Town\" event, she made her debut sharing her baked goods with others.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-kids2.jpg",
+            "title": "Patty's Sons",
+            "text": "<p>Patty's sons, David and Philip, displaying their decorating talents. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-kids-2.jpg",
+            "title": "The Chef",
+            "text": "<p>Patty's son, Mark, dressing the part and ready to bake up a storm. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d8057659-5a3d-44d3-b764-5c62e6b4ce7f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patty-oc-fair-11.jpg",
+            "title": "Orange County Fair",
+            "text": "<p>Having won multiple \"Best of Show\" awards for consecutive years, she was invited to give live baking demos.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-0",
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-1",
+        "template--16658407358706__263af5d5-d43c-4c05-a4ba-4334fcbddc88-167788568103ac6084-2",
+        "d8057659-5a3d-44d3-b764-5c62e6b4ce7f"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "04a4a181-455b-4b8a-a040-96539944dc0d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16658407358706__04a4a181-455b-4b8a-a040-96539944dc0d-16778857306ad817c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In search of a new journey after selling his previous company on the NYSE, Patty's middle son Philip joined Patty's Cakes as co-owner, set to handle the business operations and marketing. Pulling together resources from kindhearted friends and family, a store location was found and transformed. In October 2010, Patty's dream of having her own Cake shop became a reality. With positive reviews streaming in from around the community, Patty's creative and tasty menu of Cakes, Cupcakes, and Cake Balls has been pleasantly welcomed and enjoyed.<br\/><br\/>In 2016, Patty's Cakes moved down the street to a new larger location near the intersection of Commonwealth and Euclid in Fullerton. With the added space, the bakery has continued to thrive and has even become the highest rated bakery on major review sites (Yelp, Google, The Knot, Wedding Wire, TripAdvisor). This is largely due to their commitment to providing exceptional customer service and delicious baked goods.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__04a4a181-455b-4b8a-a040-96539944dc0d-16778857306ad817c5-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf": {
+      "type": "multirow",
+      "blocks": {
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC08997.jpg",
+            "caption": "Current",
+            "heading": "Location",
+            "text": "<p>We are located near the corner of Commonwealth and Euclid in Fullerton, California.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-0",
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-1",
+        "template--16658407358706__0b75074d-2c1d-4ef5-aae8-b9035eab07cf-167788568708a93c0d-2"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "53702ab7-2fa7-4919-aaff-1fc73f56d2d2": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Patty's Cakes is an innovative company that is always looking for ways to improve and grow. They have integrated technology throughout their kitchen and customer experience to streamline processes and provide a more efficient and enjoyable experience for their employees and customers.<br\/><br\/>Despite their success, Patty's Cakes has not forgotten their roots. They continue to be active members of their community, participating in local events and supporting various charities. Patty's Cakes is a true success story, born out of passion and hard work, and continues to thrive thanks to their dedication to quality and customer satisfaction.<\/p>"
+          }
+        },
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-0",
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-1",
+        "template--16658407358706__53702ab7-2fa7-4919-aaff-1fc73f56d2d2-16778857306ad817c5-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
+    },
+    "622e0ed9-cadc-4d11-95b4-45abf4237683": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-0": {
+          "type": "column",
+          "settings": {
+            "title": "Store Hours",
+            "text": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-1": {
+          "type": "column",
+          "settings": {
+            "title": "Custom Order Counter Hours",
+            "text": "<p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p><p>Sunday-Monday: Closed<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-0",
+        "template--16658407358706__622e0ed9-cadc-4d11-95b4-45abf4237683-167788568103ac6084-1"
+      ],
+      "settings": {
+        "title": "Hours",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Treasure Map<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "fb8078d9-7940-4117-a657-2914b4b1d8f0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>825 W. Commonwealth Ave Fullerton, CA 92832 <br\/>(<a href=\"http:\/\/map.pattys-cakes.com\" target=\"_blank\" title=\"http:\/\/map.pattys-cakes.com\">Get Directions<\/a>)<br\/>This is our only location<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e-16778857306ad817c5-0",
+        "fb8078d9-7940-4117-a657-2914b4b1d8f0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "6753315f-32dd-430d-badd-474c50e01e5d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<center><div class=\"rich-text__wrapper rich-text__wrapper--center page-width\"><iframe title=\"Map to Patty's Cakes\" class=\"pcmap\" src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3312.7489055762935!2d-117.9428690487932!3d33.870361434644614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd5e693856077%3A0xce6a128b6ee3d448!2sPatty&#39;s+Cakes+and+Desserts!5e0!3m2!1sen!2sus!4v1488771770040\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe><\/div><\/center>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 76
+      }
+    },
+    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-0",
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-1",
+        "template--16658407358706__b2a8bba2-0eee-43e0-9a99-219b3771bfe1-1677887694f55cf518-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC08500-4.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "263af5d5-d43c-4c05-a4ba-4334fcbddc88",
+    "04a4a181-455b-4b8a-a040-96539944dc0d",
+    "0b75074d-2c1d-4ef5-aae8-b9035eab07cf",
+    "53702ab7-2fa7-4919-aaff-1fc73f56d2d2",
+    "622e0ed9-cadc-4d11-95b4-45abf4237683",
+    "bdfa6dd2-ac75-4a18-b7c9-7563ac366d9e",
+    "6753315f-32dd-430d-badd-474c50e01e5d",
+    "b2a8bba2-0eee-43e0-9a99-219b3771bfe1"
+  ]
+}

@@ -2,13 +2,16 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/pattys-cakes-logo-white.svg",
     "logo_width": 220,
+    "favicon": "shopify:\/\/shop_images\/pcakes32.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#e14984",
     "gradient_accent_1": "",
     "colors_accent_2": "#8a54a8",
+    "colors_accent_3": "#8a54a8",
+    "colors_accent_4": "#8a54a8",
     "gradient_accent_2": "",
     "colors_text": "#e14984",
-    "colors_outline_button_labels": "#121212",
+    "colors_outline_button_labels": "#8a54a8",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#fafafa",
@@ -21,7 +24,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
-    "buttons_border_thickness": 2,
+    "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 4,
     "buttons_shadow_opacity": 0,
@@ -38,7 +41,7 @@
     "inputs_border_thickness": 1,
     "inputs_border_opacity": 55,
     "inputs_radius": 4,
-    "inputs_shadow_opacity": 10,
+    "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
@@ -47,7 +50,7 @@
     "card_text_alignment": "center",
     "card_color_scheme": "background-2",
     "card_border_thickness": 0,
-    "card_border_opacity": 10,
+    "card_border_opacity": 0,
     "card_corner_radius": 0,
     "card_shadow_opacity": 0,
     "card_shadow_horizontal_offset": 0,
@@ -76,13 +79,13 @@
     "blog_card_shadow_vertical_offset": 4,
     "blog_card_shadow_blur": 5,
     "text_boxes_border_thickness": 0,
-    "text_boxes_border_opacity": 10,
+    "text_boxes_border_opacity": 0,
     "text_boxes_radius": 0,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
     "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 1,
+    "media_border_thickness": 0,
     "media_border_opacity": 5,
     "media_radius": 0,
     "media_shadow_opacity": 0,
@@ -96,7 +99,7 @@
     "popup_shadow_horizontal_offset": 0,
     "popup_shadow_vertical_offset": 4,
     "popup_shadow_blur": 5,
-    "drawer_border_thickness": 1,
+    "drawer_border_thickness": 5,
     "drawer_border_opacity": 10,
     "drawer_shadow_opacity": 0,
     "drawer_shadow_horizontal_offset": 0,
@@ -123,7 +126,7 @@
     "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": false,
-    "show_cart_note": true,
+    "show_cart_note": false,
     "cart_drawer_collection": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/pattys-cakes-logo.svg",
     "checkout_heading_font": "Fjalla One",
@@ -146,7 +149,55 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "8962992520437913685": {
+        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": true
+        }
+      },
+      "18209738915288330680": {
+        "type": "shopify:\/\/apps\/wholesale-all-in-one\/blocks\/wholesale-all-in-one\/5a3d95fb-5647-47d5-8445-d5858f91ff9d",
+        "disabled": false,
+        "settings": {
+          "wsaio_app_access_token": "",
+          "wsaio_main_js_file": "",
+          "wsaio_main_liquid_file": "",
+          "wsaio_modules_liquid_file": "",
+          "wsaio_addons_liquid_file": "",
+          "wsaio_custom_css_file": ""
+        }
+      },
+      "15885745614559378752": {
+        "type": "shopify:\/\/apps\/accessibly\/blocks\/app-embed\/4b59303e-1141-4c8a-945f-bf4adb516864",
+        "disabled": false,
+        "settings": {
+          "themeColor": "#574cd5",
+          "iconColor": "#574cd5",
+          "showLogo": true,
+          "topBottomPosition": 10,
+          "rightLeftPosition": 10,
+          "iconSize": "large",
+          "iconCustomSize": 64,
+          "position": "bottom-right"
+        }
+      },
+      "14479319785270113485": {
+        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {

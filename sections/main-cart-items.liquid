@@ -306,6 +306,7 @@
                       </div>
                     </div>
 
+                    
                     <div class="cart-item__price-wrapper">
                 <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
                       {%- if item.original_line_price != item.final_line_price -%}
@@ -358,7 +359,12 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">
       {{ 'accessibility.loading' | t }}
-    </p>
+    </p                     
+      <!-- Zapiet | Store Pickup + Delivery -->
+            <div id="storePickupApp"></div>
+            <!-- Zapiet | Store Pickup + Delivery -->>
+
+                          
   </form>
 </cart-items>
 
