@@ -74,7 +74,7 @@
           "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
           "settings": {
             "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
-            "custom_liquid": ""
+            "custom_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
         }
       },
