@@ -1,3 +1,4 @@
+{%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- break -%}{%- endif -%}
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -110,7 +111,7 @@
               {%- endif -%}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large no_bold_options' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                 {%- endform -%}
@@ -198,6 +199,7 @@
                   </div>
                 </details>
               </div>
+           
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -570,7 +572,18 @@
     }
   </script>
 </section>
-
+<script>
+  BOLD.common.eventEmitter.on('BOLD_OPTIONS_option_products_loaded', function(event){
+  var optionsDiv = document.querySelector('.bold_options_loaded');
+  if(optionsDiv.children.length != 0){
+    var buyItNow = document.querySelectorAll('.shopify-payment-button');
+    console.log(buyItNow);
+    buyItNow.forEach(function(button){
+      button.remove();
+    })
+  }
+});
+</script>
 {% schema %}
 {
   "name": "t:sections.main-product.name",

@@ -1,0 +1,1120 @@
+
+{% comment %} 
+
+START HERE
+1. SET THE DATE ON THE ON THE SETTINGS
+2. ADJUST THE CONTENT OF THE ALERTS BELOW
+
+
+
+FUTURE IMPROVEMENTS
+refine the process. 
+use stacked calcs
+some times mondays appear
+Group the annoucements by category, not page - DONE
+CREATE A PAGE WITH TO SHOW WHAT ALWERTS ARE ACTIVE
+
+add the ability to say  on tuesday, sell out for (this day)
+ALERT DATE- THE LEAD TIME = DAY TO TURN OFF THE ANNOUNCEMENT
+
+Add warnings for 
+
+cookies  - need cookie alert
+4 RTG sizes
+6 RTG sizes
+8 RTG sizes
+10 RTG sizes
+vegan CC
+gf CC
+
+
+ADD SOLD OUT WARNINGS?
+
+
+time
+Sell out cakes 
+Wed at 11:59pm
+
+{% endcomment %} 
+
+
+{% comment %} 
+
+<!-- THESE ARE THE FIXED LEAD TIMES in hours 
+1-24,
+2-48
+3-72
+4-96
+5-120
+6-144
+7-168
+8-192
+9-216
+-->
+
+{% endcomment %} 
+
+
+
+
+{% comment %} 
+
+/////
+STEP 1 - SET AVAIL DATE AND LEAD TIME. 
+CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT. 
+
+{% endcomment %}
+
+
+<!-- CUPCAKE DATE: YEAR/MONTH/DAY -->
+	{% capture cupcake_avail_date %}{{"2023/01/14 00:01" | date: '%s'}}{% endcapture %}
+	{% assign cupcake_lead_time = 0 %}
+    {% assign cupcake_tag = "Cupcakes" %}
+
+<!-- MINI CUPCAKE DATE: YEAR/MONTH/DAY -->
+	{% capture mini_cupcake_avail_date %}{{"2023/01/15 00:01" | date: '%s'}}{% endcapture %}
+	{% assign mini_cupcake_lead_time = 0 %}
+   {% assign mini_cupcake_tag = "Mini Cupcakes" %}
+
+<!-- CAKEBALL DATE: YEAR/MONTH/DAY -->
+	{% capture cake_ball_avail_date %}{{"2023/01/16 00:01" | date: '%s'}}{% endcapture %}
+	{% assign cake_ball_lead_time = 0 %}
+     {% assign cake_ball_tag = "Cakeballs" %}
+
+<!-- COOKIE DATE: YEAR/MONTH/DAY -->
+	{% capture cookie_avail_date %}{{"2023/01/05 00:01" | date: '%s'}}{% endcapture %}
+	{% assign cookie_lead_time = 0 %}
+   {% assign cookie_tags = "cookies" %}
+
+<!-- DONUT DATE: YEAR/MONTH/DAY -->
+	{% capture donut_avail_date %}{{"2023/01/25 00:01" | date: '%s'}}{% endcapture %}
+	{% assign donut_lead_time = 0 %}
+
+<!-- STANDARD CAKE DATE: YEAR/MONTH/DAY -->
+	{% capture std_cake_avail_date %}{{"2023/01/28 00:01" | date: '%s'}}{% endcapture %}
+	{% assign std_cake_lead_time = 0 %}
+
+<!-- 3 DAY DATE: YEAR/MONTH/DAY -->
+	{% capture three_day_avail_date %}{{"2023/02/15 00:01" | date: '%s'}}{% endcapture %}
+	{% assign three_day_lead_time = 64 %} 
+    {% assign three_day_lead_time_days = 3 %} 
+  
+
+<!-- 5 DAY DATE: YEAR/MONTH/DAY -->
+	{% capture five_day_avail_date %}{{"2023/02/15 00:01" | date: '%s'}}{% endcapture %}
+	{% assign five_day_lead_time = 86  %}
+    {% assign five_day_lead_time_days = 5  %}
+
+<!-- 110 is normal!  -->
+
+<!-- SOLDOUT DATE: YEAR/MONTH/DAY -->
+	{% capture sold_out_avail_date %}{{"2023/01/28 00:01" | date: '%s'}}{% endcapture %}
+	{% assign sold_out_lead_time = 0 %}
+
+
+<!-- EDIBLE IMAGE DATE: YEAR/MONTH/DAY -->
+	{% capture edible_image_avail_date %}{{"2023/01/05 00:01" | date: '%s'}}{% endcapture %}
+	{% assign edible_image_lead_time = 2  %}
+
+{% comment %}
+DEPRECAITED 
+<!-- SEMI CUSTOM CAKE DATE: YEAR/MONTH/DAY -->
+	{% capture semi_cake_avail_date %}{{"2022/11/28 00:01" | date: '%s'}}{% endcapture %}
+	{% assign semi_cake_lead_time = 64 %} 
+
+<!-- CUSTOM CAKE DATE: YEAR/MONTH/DAY -->
+	{% capture cust_cake_avail_date %}{{"2022/11/28 00:01" | date: '%s'}}{% endcapture %}
+	{% assign cust_cake_lead_time = 64 %}
+
+{% endcomment %}
+
+
+{% comment %} 
+
+/////
+STEP 2 - AN ARRAY OF THE DATA IS CREATED TO LOOP THROUGH 
+
+{% endcomment %}
+
+    {% capture product_title_and_avail_dates %}
+      cupcake|{{cupcake_avail_date}}|{{cupcake_lead_time}},
+      mini_cupcake|{{mini_cupcake_avail_date}}|{{mini_cupcake_lead_time}},
+      cake_ball|{{cake_ball_avail_date}}|{{cake_ball_lead_time}},
+      cookie|{{cookie_avail_date}}|{{cookie_lead_time}},
+      donut|{{donut_avail_date}}|{{donut_lead_time}},
+      std_cake|{{std_cake_avail_date}}|{{std_cake_lead_time}},
+      three_day_tag|{{three_day_avail_date}}|{{three_day_lead_time}},
+      five_day_tag|{{five_day_avail_date}}|{{five_day_lead_time}},
+      sold_out_tag|{{sold_out_avail_date}}|{{sold_out_lead_time}},
+      edible_image|{{edible_image_avail_date}}|{{edible_image_lead_time}}
+      
+    {% endcapture %}
+    {% assign product_title_and_avail_dates =  product_title_and_avail_dates | split: ',' %}
+
+   {% comment %} DEP  
+      semi_cake|{{semi_cake_avail_date}}|{{semi_cake_lead_time}},
+      cust_cake|{{cust_cake_avail_date}}|{{cust_cake_lead_time}},
+{% endcomment %}
+
+{% comment %} 
+
+/////
+STEP 3 - FIND TODAYS DATE 
+
+{% endcomment %}
+
+ {% capture date_now2 %}{{'now' | date: "%b %d, %Y"}} 10:00:01 AM{% endcapture %}
+ {% assign date_now = date_now2  | date: '%s' %}
+
+{% comment %} DATE TESTING {% endcomment %}
+{% comment %} DATE TESTING {% endcomment %}
+
+{% comment %}  
+ 		{% capture date_now %}{{'2022/11/30 11:00' | date: '%s'}}{% endcapture %}
+  {% endcomment %}
+
+
+{% comment %} 
+
+/////
+STEP 4 - THE MAIN LOOP. PROCESS DATES
+
+{% endcomment %}
+
+
+
+{% comment %} 
+
+/////
+STEP 4.1 - LOOP MAIN ARRAY. GET VARIABLES
+
+{% endcomment %}
+
+<!-- LOOP THE MAIN ARRAY-->
+  {% for single_product_title_and_avail_date in product_title_and_avail_dates %}
+      <!--//single_product_title_and_avail_date: {{single_product_title_and_avail_date}} <br>-->
+      {% assign counter = 1 %}
+      <!-- LOOP THE SECOND/ITEM ARRAY-->
+      {% assign product_details_array =  single_product_title_and_avail_date | split: '|' %}
+          {% for product_details in product_details_array %}
+
+          {%if counter == 1 %}
+              {% assign product_title = product_details %}
+             <!--//{{product_title}} - title<br>-->
+
+          {% elsif counter == 2 %}
+              {% assign product_avail_date = product_details | plus: 0 %}
+              <!--//{{product_avail_date}} - date<br>-->
+
+          {% elsif  counter == 3 %}
+              {% assign product_lead_time = product_details %}
+              <!--//{{product_lead_time}} - available hours<br> -->
+          {% else %}
+              error
+          {% endif %}
+          {% assign counter = counter | plus: 1 %}
+
+      {% endfor %}
+
+
+
+{% comment %}  
+
+    PREVIOUS ATTEMPTS AT BEING SMARTER.
+    TRYING TO TAKE THE TODAY + THE LEAD TIME = AVAIL DATE
+    BACKWARD CALC AVAIL DATE AT 7AM TO NOW, THAT IS THE NEW LEAD TIME. 
+    IT WON'T FUCKING WORK
+    
+
+    /// HERE IS LIES FOR ANOTHER DAYS ATTEMPT ///
+    
+////////////////////////<br> 
+ {{product_title}}<br>
+product_lead_time: {{product_lead_time}}// <br><br>
+ {{ date_now | date: "%a, %b %d, %Y %I %M" }} | today  <br>
+ {{ product_lead_time | times: 3600 | plus: date_now | date: "%a, %b %d, %Y %I %M"}} | new avail date <br>
+    
+    {% capture product_date %}{{product_lead_time | times: 3600 | plus: date_now | date: "%a, %b %d, %Y"}} 06:00:02 AM{% endcapture %}<br>
+      ||{{ product_date | date: "%s" }}|| move to 6am on the avail date<br>
+    ||{{ product_date | date: "%a, %b %d, %Y %I %M"}}|| that date/time<br>
+
+    ||{{ product_date | date: "%s" }}||<br>
+    ||{{ date_now| date: "%s" }}||<br>
+
+    {% assign product_date_sec = product_date | date: "%s" %}
+    {% assign date_now_sec = date_now | date: "%s" %}
+
+    ||{{ product_date_sec}}|| produ date<br>
+    ||{{ date_now_sec }}|| date now <br>
+
+    
+    {% assign new_lead_time =  product_date_sec | minus: date_now_sec %}
+    new_lead_time::  {{ new_lead_time }} <br>
+    new_lead_time sec::  {{ new_lead_time | divided_by: 3600  }} <br>
+     {% assign product_lead_time1 = new_lead_time %}
+   {{  product_date | minus: date_now | date: "%s" }}!<br>
+
+
+    /// END ATTEMPT ///
+    {% endcomment %}
+ 
+
+{% comment %} 
+
+/////
+STEP 4.2 - FIGURE OUT DATES AND DELAYS
+
+{% endcomment %}
+
+
+	{% assign avail_date_diff = product_avail_date | minus: date_now | minus: 7 %} <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
+	{% assign product_lead_time_sec = product_lead_time | times: 3600 %} <!-- CONVERT PRODUCT LEAD TIME TO SECONDS -->
+	{% assign lead_time_date =  date_now | plus: product_lead_time_sec  %} <!-- CALC THE LEAD TIME DATE - SECONDS -->
+	{% assign lead_time_difference = product_lead_time_sec | minus: avail_date_diff  %} <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+
+
+{% if avail_date_diff < 0 %}
+		{% assign status = "normal" %}
+		{% assign type = "pass through, OK" %} 
+		{% assign order_date = date_now | plus: product_lead_time_sec %}
+		{% assign step = "A1" %}
+		{% assign calcd_avail_hours = product_lead_time | plus: 0 %}
+
+{% else %}
+	{% if lead_time_difference > 0 %}
+		{% assign status = "normal"%}
+		{% assign type = "alert expired - regular availability" %}
+		{% assign order_date = date_now | plus: product_lead_time_sec %}
+		{% assign step = "A2" %}
+		{% assign calcd_avail_hours = product_lead_time | plus: 0 %}
+	{% else %}
+		{% assign status = "alert"%}
+		{% assign type = "active delay, products delayed " %}
+		{% assign order_date = product_avail_date %}
+		{% assign step = "A3" %}
+		{% assign calcd_avail_hours = avail_date_diff | divided_by: 3600 %}
+
+	{% endif %}
+
+{% endif %}
+
+  
+{% comment %} CALC THE FIRST AVAILABLE DATES, ADJUST FOR SUNDAY AND MONDAY  {% endcomment %}  	 
+  
+  		{% assign order_date_day = order_date | date: "%a" %}
+		{%if order_date_day == "Sun" %}
+			{%assign order_date = order_date | plus:  172800 %}
+			{%assign new_day = "Tuesday" %}	
+		{%elsif order_date_day == "Mon" %} 
+			{%assign order_date = order_date | plus: 86400 %}
+			{%assign new_day = "Tuesday" %}	
+		{% else %}
+			{%assign new_day = "same" %}	
+
+			<!--NOTHING -->
+		{% endif %}
+	
+
+
+ 
+
+{% comment %} 
+
+/////
+STEP 4.3 - TESTING/TROUBLESHOOTING
+
+{% endcomment %}
+
+         {% comment %} TESTING SECTION! {% endcomment %}
+         {% comment %} TESTING SECTION! {% endcomment %}
+         {% comment %} TESTING SECTION! {% endcomment %}
+
+
+
+        {% comment %} UNCOMMENT THIS SECTION TO OPEN THE HOOD {% endcomment %}
+    
+{% comment %}    
+
+        {% assign product_title = product_title | strip %}  
+        {% if pagetype == "collection" %} 
+        {% if product_title == "cust_cake" or product_title == "semi_cake" or product_title == "std_cake" or product_title == "cookie"  %}
+
+
+        <div style="color: blue;">
+        <span style="color: orange;">/// START FOR TESTING /// </span><br><br>
+
+        TITLE: <span style="color: red;"> {{product_title}} </span> <br>
+        Product_avail_date ({{product_avail_date | divided_by: 86400}} days) - date_now ({{date_now| divided_by: 86400}} days) =  avail_date_diff ({{avail_date_diff| divided_by: 3600}} hours) <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
+         - negative # means good, positive number<br>
+        product_lead_time ({{product_lead_time_sec | divided_by: 3600}} hours) - avail_date_diff ({{avail_date_diff | divided_by: 3600}} hours) = lead_time_difference ({{lead_time_difference | divided_by: 3600}} hours) <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+        <br><br>
+        <span style="color: red;"> {{date_now  | date: "%D %R"}}</span> - DATE TODAY:<br>
+        <span style="color: red;"> 	{{lead_time_date  | date: "%D %R"}}	</span> -  DATE WITH LEAD TIME: <span style="color: red;">{{product_lead_time}} </span> - LEAD TIME HOURS<br>
+        <span style="color: red;"> 	{{product_avail_date | date: "%D %R"}}	</span> - AVAIL DATE: <span style="color: red;">{{avail_date_diff | divided_by: 3600}} </span> - DIFF HOURS <br>
+        Status: <span style="color: red;"> {{ status}}</span><br>
+        Type: <span style="color: red;"> {{type}} </span><br>
+        Order_date: <span style="color: red;"> {{order_date | date: "%D %R"}}</span><br>
+        Calcd_avail_hours: <span style="color: red;"> {{calcd_avail_hours}}</span><br>
+        Step: <span style="color: red;"> {{step}} </span><br>
+        Lead_time_difference: <span style="color: red;"> {{lead_time_difference | divided_by: 3600}} </span><br>
+        Order Date Day: <span style="color: red;"> {{order_date_day}}</span><br>
+        Order New Day: <span style="color: red;"> {{new_day}}</span><br>
+
+        <br><br><br>  
+             {% endif %}
+          {% endif %}
+         {% comment %} // END TESTING SECTION! {% endcomment %}
+         {% comment %} // END TESTING SECTION! {% endcomment %}
+
+{% endcomment %}
+
+
+    
+  {% comment %} 
+
+/////
+STEP 4.4 - EXIT VAIRABLES
+
+{% endcomment %}
+
+  
+  
+  {% comment %} EXIT VAIRABLES {% endcomment %}
+
+  {% assign product_title = product_title | strip %}  
+  {%if product_title == "std_cake" %}
+  		{% assign alertstandcake = status %}
+  		{% assign nextstandcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign std_cake_lead_time_final = calcd_avail_hours %}
+
+  {%elsif product_title == "cupcake" %}
+  		{% assign alert_cupcake = status %}
+  		{% assign next_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "mini_cupcake" %}
+  		{% assign alert_mini_cupcake = status %}
+  		{% assign next_mini_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign mini_cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "cake_ball" %}
+  		{% assign alert_cake_ball = status %}
+  		{% assign next_cake_ball_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cake_ball_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "donut" %}
+  		{% assign alert_donut = status %}
+  		{% assign next_donut_date = order_date | date: "%A, %b. %e" %}
+  		{% assign donut_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "cookie" %}
+  		{% assign alert_cookie = status %}
+  		{% assign next_cookie_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cookie_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "three_day_tag" %}
+  		{% assign alert3day = status %}
+  		{% assign next3daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign three_day_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "five_day_tag" %}
+  		{% assign alert5day = status %}
+  		{% assign next5daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign five_day_lead_time_final = calcd_avail_hours %}  
+
+   {%elsif product_title == "sold_out_tag" %}
+  		{% assign alert_sold_out = status %}
+  		{% assign next_sold_out_date = order_date | date: "%A, %b. %e" %}
+  		{% assign sold_out_lead_time_final = calcd_avail_hours %}           
+
+   {%elsif product_title == "edible_image" %}
+  		{% assign alert_edible_image = status %}
+  		{% assign next_edible_image_date = order_date | date: "%A, %b. %e" %}
+  		{% assign edible_image_lead_time_final = calcd_avail_hours %}  
+
+         {% comment %} DEPRECAITED {% endcomment %}  
+
+  {%elsif product_title == "semi_cake" %}
+  		{% assign alertsemicake = status %}
+  		{% assign nextsemicakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign semi_cake_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "cust_cake" %}
+  		{% assign alertcustcake = status %}
+  		{% assign nextcustomcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign cust_cake_lead_time_final = calcd_avail_hours %}  
+          
+  {% endif %}
+{% endfor %}
+
+  {% comment %} 
+
+/////
+STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO THE ZAPIET
+
+{% endcomment %}
+
+
+{% assign cc_tag = "" %}
+{% assign mcc_tag = "" %}
+{% assign cb_tag = "" %}
+{% assign co_tag = "" %}  
+{% assign st_tag = "" %}
+{% assign dn_tag = "" %}   
+{% assign so_tag = "" %} 
+{% assign td_tag = "" %}        
+{% assign fd_tag = "" %} 
+{% assign ei_tag = "" %} 
+
+  
+{% assign max_lead_time = 0 %}
+                 
+{% for item in cart.items %}
+{% comment %} {{ item.product.tags }}{% endcomment %} 
+{% assign max_lead_time = max_lead_time | plus: 0 %}
+  
+   {% if item.product.tags contains 'Cupcakes' and cc_tag == ""  %}
+      {% assign cc_tag = "CC" %}
+        {% if cupcake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cupcake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if item.product.tags contains 'Mini Cupcakes' and mcc_tag == ""  %}
+      {% assign mcc_tag = "MCC" %}
+        {% if mini_cupcake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = mini_cupcake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+
+   {% if item.product.tags contains 'cakeball' and cb_tag == ""  %}
+      {% assign cb_tag = "CB" %}
+        {% if cake_ball_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cake_ball_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if item.product.tags contains 'cookies' and co_tag == ""  %}
+      {% assign co_tag = "CO" %}
+        {% if cookie_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cookie_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if item.product.tags contains 'donut' and dn_tag == ""  %}
+      {% assign dn_tag = "DN" %}
+        {% if donut_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = donut_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+  
+   {% if item.product.tags contains 'Standard Cakes' and st_tag == ""  %}
+      {% assign st_tag = "ST" %}
+        {% if std_cake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = std_cake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+     {% if item.product.tags contains 'soldout' and so_tag == ""  %}
+      {% assign so_tag = "SO" %}
+        {% if sold_out_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = sold_out_lead_time_final %}
+        {% endif %}
+    {% endif %}
+  
+   {% if item.product.tags contains '3 Days' and td_tag == ""  %}
+      {% assign td_tag = "3D" %}
+        {% if three_day_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = three_day_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if item.product.tags contains '5 Days' and fd_tag == ""   %}
+      {% assign fd_tag = "5D" %}
+        {% if five_day_lead_time_final >= max_lead_time %}
+            {% assign max_lead_time = five_day_lead_time_final %}
+        {% endif %}
+    {% endif %}     
+
+
+   {% if item.product.tags contains 'edibleimage' and ei_tag == ""  %}
+      {% assign ei_tag = "EI" %}
+        {% if edible_image_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = edible_image_lead_time_final %}
+        {% endif %}
+    {% endif %}     
+
+  
+{% endfor %}
+
+  
+{% comment %}   
+  //RECAP//<br>
+!!{{ cc_tag }}<br>
+{{ mcc_tag}}<br>
+{{ cb_tag}}<br>
+{{ co_tag }}<br> 
+{{ st_tag }}<br> 
+{{ dn_tag }}<br>   
+{{ so_tag }}<br>  
+{{ td_tag }}<br>        
+{{ fd_tag }}<br>
+{{ ei_tag }}<br>
+MAX: {{ max_lead_time }}
+   {% endcomment %} 
+
+       
+         
+
+
+
+{% comment %} 
+
+/////
+STEP 6 - CREATE AND DISPLAY ERROR MESSAGES BELOW HERE
+
+{% endcomment %}
+        
+  
+{%- comment -%}  
+PRE-DEFINED MESSAGES
+PRE-DEFINED MESSAGES
+PRE-DEFINED MESSAGES
+{%- endcomment -%}  
+          
+{% assign cakeballcontent = "Due to high demand, Standard Cakes are sold out this week. Please see our <a href='/pages/cupcakes'>cupcakes</a>." %}
+{% assign instock_message = "<strong>In stock daily</strong> until sold out. Order now." %}
+
+
+
+
+
+
+{%- comment -%}  
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+COLLECTIONS
+COLLECTIONS
+{%- endcomment -%}  
+          
+
+{% if collection.handle == "theme-cakes" or collection.handle == "semi-custom-cakes" or collection.handle == "vegan-cakes" or collection.handle == "gluten-free-cakes" or collection.handle == "tiered-cakes" %}
+	{% if pagetype == "collection" %} 
+
+
+   <div class="page-width">
+
+      {% if collection.handle == "semi-custom-cakes" %}  
+       <p style="text-align:center;">These cakes have a 3 day lead time.</p>
+      {% else %}
+        <p style="text-align:center;">These cakes have a 3 or 5 day lead time.</p>
+        {% endif %}
+     
+        <div class="alert-bar alert-large-main">
+           <div><span class="icon icon-schedule"></span></div><div class="alert-large">
+            <div class="padbtm10">
+            {% if alert3day == "normal" %}                    
+             <strong>3 day cakes are available.</strong> The first available pick up/delivery date is {{next3daydate}}.<br>
+            {% else %}   
+              <strong>3 day cakes are SOLD OUT this week.</strong> The first available pick up/delivery date is {{next3daydate}}.<br>
+            {% endif %}
+            </div>
+
+             {% if collection.handle != "semi-custom-cakes" %}   
+                {% if alert5day == "normal" %}                    
+                 <strong>5 day cakes are available.</strong> The first available pick up/delivery date is {{next5daydate}}.<br>
+                {% else %}   
+                  <strong>5 day cakes are SOLD OUT this week.</strong> The first available pick up/delivery date is {{next5daydate}}.<br>
+                {% endif %}
+          {% endif %}
+          </div>          
+       </div>
+   </div>
+  {% endif %}
+{% endif %}
+
+
+
+
+
+{%- comment -%} 
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+PRODUCT PAGE
+PRODUCT PAGE
+{%- endcomment -%} 
+
+{% if product.tags contains "3 Days"%}
+		{% if alert5day == "normal" %}
+           <div class="alert-bar">
+            	<div><span class="icon icon-schedule"></span></div> <div class="alert-large">This cake need to be ordered at least 3 days in advance. The first available date is {{next3daydate}}.</div>  
+        	</div>
+		{% else %}
+         <div class="alert-bar">
+              <div><span class="icon icon-schedule"></span></div> 
+               <div class="alert-large">
+                   <div class="padbtm10">Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
+                   <div>This cake has a 3 day lead time. The first available pick up/delivery date is {{next3daydate}}.</div>  
+               </div> 
+          </div>
+		{% endif %}  
+{% endif %} 
+
+          
+{% if product.tags contains "5 Days"%}
+		{% if alert5day == "normal" %}
+           <div class="alert-bar">
+            	<div><span class="icon icon-schedule"></span></div> <div class="alert-large">This cake need to be ordered at least 5 days in advance. The first available date is {{next5daydate}}.</div>  
+        	</div>
+		{% else %}
+         <div class="alert-bar">
+              <div><span class="icon icon-schedule"></span></div> 
+               <div class="alert-large">
+                   <div class="padbtm10">Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
+                   <div>This cake has a 5 day lead time. The first available pick up/delivery date is {{next5daydate}}.</div>  
+               </div> 
+          </div>
+		{% endif %}  
+{% endif %} 
+
+
+
+
+ {%- comment -%} 
+CART
+CART
+CART
+
+{%- endcomment -%} 
+
+{% if pagetype == "cart" %} 
+
+	{% if prodtags contains "3 Days" and alert3day == "normal"%}
+       <div class="alert-bar cart-alert">
+         <div><span class="icon icon-schedule"></span></div><p>This cake has a 3 day lead time. The first available date is {{next3daydate}}.</p>          
+      </div>  
+  {% elsif prodtags contains "3 Days" and alert3day == "alert"%} 
+     <div class="alert-bar cart-alert">
+        <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next3daydate}}. </p>  
+      </div>
+  {% endif %} 
+
+	{% if prodtags contains "5 Days" and alert5day == "normal"%}
+       <div class="alert-bar cart-alert">
+         <div><span class="icon icon-schedule"></span></div><p>This cake has a 5 day lead time. The first available date is {{next5daydate}}.</p>          
+      </div>  
+  {% elsif prodtags contains "5 Days" and alert5day == "alert"%} 
+     <div class="alert-bar cart-alert">
+        <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next5daydate}}. </p>  
+      </div>
+  {% endif %} 
+{% endif %}
+
+
+
+
+    
+
+{%- comment -%} 
+
+STANDARD CAKES
+STANDARD CAKES
+STANDARD CAKES
+
+{%- endcomment -%} 
+
+
+
+
+{% if pagetype == "collection" %}      
+	{% if collection.handle == "standard-cakes" %}
+		{% if alertstandcake == "alert" %}
+           <div class="page-width">
+              <div class="alert-bar alert-large-main">
+                  <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Due to high demand, standard cakes are sold out this week. Please see our <a href="pages/cupcakes">cupcakes</a>.
+              	<br>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</div>          
+              </div>
+           </div>
+
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+  {% if pagetype == "product" %} 
+  	{% if product.tags contains "Standard Cakes"%}
+  		{% if alertstandcake == "alert" %}
+                 <div class="alert-bar">
+                   <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Standard Cakes are sold out this week. Please see our <a href="/pages/cupcakes">cupcakes</a>.<br>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</p>         
+                  </div>
+         	 {% endif %}
+   	{% endif %}
+
+  {% elsif pagetype == "cart" %}
+  	{% if prodtags contains "Standard Cakes" %}
+  		{% if alertstandcake == "alert" %}
+  			  <div class="alert-bar">
+            		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Standard Cakes are sold out this week. <br>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</p>       
+          	</div>
+  			{% endif %}
+      {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+COOKIES
+COOKIES
+NEW 2.0
+{%- endcomment -%} 
+
+{% if pagetype == "collection" %}      
+	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %}
+		{% if alert_cookie == "alert" %}
+           <div class="page-width">
+              <div class="alert-bar alert-large-main">
+                  <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.</div>         
+              </div>
+           </div>
+
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+  {% if pagetype == "product" %} 
+  	{% if product.tags contains "cookies"%}
+  		{% if alert_cookie == "alert" %}
+                 <div class="alert-bar">
+                   <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.</p>          
+                  </div>
+         	 {% endif %}
+   	{% endif %}
+
+  {% elsif pagetype == "cart" %}
+  	{% if prodtags contains "cookies" or prodtags contains "copack" or prodtags contains "ist-cookies" %}
+  		{% if alert_cookie == "alert" %}
+  			  <div class="alert-bar">
+            		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.</p></div>         
+          	</div>
+  			{% endif %}
+      {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+CUPCAKES 
+CUPCAKES 
+CUPCAKES 
+{%- endcomment -%} 
+
+{% if pagetype == "collection" %}      
+	{% if collection.handle == "cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "cupcake-packs" or collection.handle == "custom-cupcakes" %}
+		{% if alert_cupcake == "alert" %}
+           <div class="page-width">
+              <div class="alert-bar alert-large-main">
+                  <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.</div>         
+              </div>
+           </div>
+		{% endif %}
+	{% endif %}
+{% endif %}
+  
+{% if prodtags contains "box" %}
+{% else %}
+  {% if pagetype == "product" %} 
+        	{% if product.tags contains "cupcakes"  %}
+             {% if alert_cupcake == "alert" %}
+             <div class="alert-bar">
+                       <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.</p>          
+                      </div>
+               {% endif %}
+            {% endif %}
+       	
+  {% elsif pagetype == "cart" %}
+        {% if prodtags contains "cupcakes" or prodtags contains "Cupcakes" %}
+          		{% if alert_cupcake == "alert" %}
+          			  <div class="alert-bar">
+                    		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.</p></div>         
+                  	</div>
+          	    {% endif %}
+        {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+MINI CUPCAKES 
+MINI CUPCAKES
+{%- endcomment -%} 
+
+{% if pagetype == "collection" %}      
+	{% if collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-mini-cupcakes" or collection.handle == "mini-cupcake-packs" %}
+		{% if alert_cupcake == "alert" %}
+           <div class="page-width">
+              <div class="alert-bar alert-large-main">
+                  <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.</div>         
+              </div>
+           </div>
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+{% if pagetype == "product" %} 
+	{% if product.tags contains "Mini Cupcakes"%}
+		{% if alert_cupcake == "alert" %}
+               <div class="alert-bar">
+                 <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.</p>          
+                </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif pagetype == "cart" %}
+	{% if prodtags contains "Mini Cupcakes" %}
+		{% if alert_cupcake == "alert" %}
+			  <div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.</p></div>         
+        	</div>
+			{% endif %}
+    {% endif %}
+{% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+CAKE BALLS
+CAKE BALLS
+{%- endcomment -%} 
+
+{% if pagetype == "collection" %}      
+	{% if collection.handle == "cake-balls" or collection.handle == "cake-ball-packs" %}
+      
+		{% if alert_cake_ball == "alert" %}
+
+           <div class="page-width">
+              <div class="alert-bar alert-large-main">
+                  <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.</div>         
+              </div>
+           </div>
+
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+{% if pagetype == "product" %} 
+	{% if product.tags contains "cakeball"%}
+		{% if alert_cake_ball == "alert" %}
+               <div class="alert-bar">
+                 <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.</p>          
+                </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif pagetype == "cart" %}
+	{% if prodtags contains "cakeball" %}
+		{% if alert_cake_ball == "alert" %}
+			  <div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.</p></div>         
+        	</div>
+			{% endif %}
+    {% endif %}
+{% endif %}
+  {% endif %}
+
+
+
+
+
+{%- comment -%} 
+GENERAL SOLD OUT
+GENERAL SOLD OUT
+GENERAL SOLD OUT
+{%- endcomment -%} 
+
+{% if pagetype == "product" %} 
+	{% if product.tags contains "soldout"%}
+		{% if alert_sold_out == "alert" %}
+               <div class="alert-bar">
+                 <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this item is sold out. The first available pick up/delivery date is {{next_sold_out_date}}.</p>          
+                </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif pagetype == "cart" %}
+	{% if prodtags contains "soldout" %}
+		{% if alert_sold_out == "alert" %}	
+			  <div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this item is sold out. The first available pick up/delivery date is {{next_sold_out_date}}.</p></div>         
+        	</div>
+			{% endif %}
+{% endif %}
+{% endif %}
+
+
+
+{%- comment -%} 
+
+EDIBLE IMAGES
+EDIBLE IMAGES
+EDIBLE IMAGES
+
+{%- endcomment -%} 
+
+
+
+{% if pagetype == "product" %} 
+	{% if product.tags contains "edibleimage"%}
+		{% if alert_edible_image == "alert" %}
+               <div class="alert-bar">
+                 <div><span class="icon icon-schedule"></span></div> <p>Edible images are unavailable until {{next_edible_image_date}}. They are available for any cakes on or after this date.</p>          
+                </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif pagetype == "cart" %}
+	{% if prodtags contains "edibleimage" %}
+		{% if alert_edible_image == "alert" %}	
+			  <div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Edible images are unavailable until {{next_edible_image_date}}. They are available for any cakes on or after this date.</p>  </div>         
+        	</div>
+			{% endif %}
+{% endif %}
+{% endif %}
+
+
+
+      
+
+
+{%- comment -%} 
+
+PRODUCT ALERTS
+PRODUCT ALERTS
+PRODUCT ALERTS
+
+{%- endcomment -%} 
+
+{% if pagetype == "product" %}  <!-- STOCK ALERTS -->
+       {% if product.tags contains "GF WhiteXX" or product.tags contains "gfsplitdozenXX" %}
+
+               <div class="alert-bar">
+                <div><span class="icon icon-schedule"></span></div> <p>Due to supply chain issues caused COVID-19, our gluten-free white flavor is unavailable. As soon as the supplies arrive, they'll be back. </p>          
+            </div>
+
+       {% endif %}   
+
+       {% if product.tags contains "Gluten-FreeXX" and product.tags contains "Semi CustomXX" %}
+          <div class="alert-bar">
+            <div><span class="icon icon-schedule"></span></div> <p>Due to supply chain issues caused COVID-19, our gluten-free white flavor is unavailable. As soon as the supplies arrive, it will be back. </p>          
+          </div>
+        {% endif %}   
+
+
+	{% if collection.handle == "standard-cakes" %}
+     	 {% if on_off_var == "off" %}  {% comment %} SET TO "on" IF NEEDED  {% endcomment %}      
+           <div class="alert-bar">
+             <div><span class="icon icon-schedule"></span></div> <p> Valentine's Weekend: Due to high demand, 8 and 10 inch cakes are sold out through Sunday. Please see our <a href="/pages/cupcakes">cupcakes</a>.</p>          
+            </div>
+		{% endif %}
+	{% endif %}
+
+        {% if product.handle == "red-velvet-standard-cakeXX" %}
+            <div class="hrtoplite"></div>
+            <h3> ALERT: For Saturday, April 25th </h3>
+            <p>Due to very high demand, we are sold out of 6 inch Red Velvet Cakes. We will have them for future dates. </p>
+        {% endif %}
+
+        {% if collection.handle == "standard-cakesXX" %}
+        	{% if product.handle != "red-velvet-standard-cake" %}
+              <div class="hrtoplite"></div>
+              <h3> ALERT: Saturday, April 18th! </h3>
+              <p>Due to very high demand, we have a limited amount of 4 and 6 inch cakes available today. We are sold out of 8 and 10 inch cakes. We have plenty of cupcakes. =)</p>
+        	{% endif %}
+        {% endif %}
+ {% endif %}   
+
+
+
+
+
+
+{%- comment -%} 
+
+FUTURE CAKE SELL OUT
+FUTURE CAKE SELL OUT
+FUTURE CAKE SELL OUT
+
+
+{% if collection.handle == "semi-custom-cakes" or collection.handle == "vegan-cakes" or collection.handle == "gluten-free-cakes" or collection.handle == "custom-cakes" or collection.handle == "theme-cakes" or collection.handle == "tiered-cakes"%}
+
+	{% if pagetype == "collection" %} 
+	<br>
+			 <div class="page-width">
+                <div class="alert-bar alert-large-main">
+                    <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Memorial Week/Weekend, May 24-29th. <br> Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span>
+                    </div>  
+                </div>
+             </div>
+
+
+	{% elsif pagetype == "product" %} 
+
+
+  			<div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Memorial Week/Weekend, May 24-29th. <br> Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span> </p>  
+            </div>
+
+	{% endif %}  
+
+{% elsif pagetype == "cart" %} <!--main-->
+
+	{% if product.tags contains "Semi Custom" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Custom Cake" or product.tags contains "Theme Cake"   %}
+
+                <div class="alert-bar">
+                    <div><span class="icon icon-schedule"></span></div> <p>Memorial Week/Weekend, May 24-29th. Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span> </p>  
+                </div>
+	{% endif %}  
+{% endif %}  <!--main-->
+
+{%- endcomment -%} 
+
+
+
+
+{% comment %} 
+
+/////
+STEP 7 - OUTPUT: this will pass on to the storepickup-addons.liquid pickup page.
+THIS MUST STAY AT THE END OF THE PAGE! 
+
+{% endcomment %}
+
+<span class="alert-zapiet">{{max_lead_time}}</span>

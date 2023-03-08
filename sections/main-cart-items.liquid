@@ -70,6 +70,11 @@
 
             <tbody>
               {%- for item in cart.items -%}
+                 {%- comment -%}Bold:PO 2.0 - Hybrid Input{%- endcomment -%}
+  {%- if item.properties._boldBuilderId  and item.properties._boldVariantIds == null -%}
+      <input type="hidden" name="updates[]" id="updates_{{- item.key -}}" class="bold_hidden_input cart__product-qty" value="{{- item.quantity -}}" min="0" data-id="{{- item.key -}}">
+      {%- continue -%}
+  {%- endif -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     {% if item.image %}
@@ -94,7 +99,7 @@
                     {%- endif -%}
 
                     <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-
+                    <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
                         <span class="visually-hidden">
@@ -130,7 +135,7 @@
                           {%- endfor -%}
                         {%- endif -%}
 
-                        {%- for property in item.properties -%}
+                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {%- if property.last != blank and property_first_char != '_' -%}
                             <div class="product-option">
@@ -233,6 +238,8 @@
                           class="quantity__input"
                           data-quantity-variant-id="{{ item.variant.id }}"
                           type="number"
+                          id="updates_{{ item.key }}" 
+                          data-id="{{ item.key }}"
                           name="updates[]"
                           value="{{ item.quantity }}"
                           {% # theme-check-disable %}
@@ -301,6 +308,7 @@
 
                     
                     <div class="cart-item__price-wrapper">
+                <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
