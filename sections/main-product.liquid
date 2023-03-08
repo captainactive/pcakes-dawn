@@ -199,7 +199,10 @@
                   </div>
                 </details>
               </div>
-           
+
+
+            <!-- QUANTITY--> 
+            
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -260,7 +263,7 @@
                   </button>
                 </quantity-input>
 
-
+ 
                 <div class="quantity__rules caption no-js-hidden">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
@@ -289,7 +292,8 @@
                 </div>
               </div>
 
-            xx
+           <!-- END QUANTITY--> 
+            
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
