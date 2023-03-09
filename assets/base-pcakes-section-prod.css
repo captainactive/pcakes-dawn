@@ -291,6 +291,8 @@ border-radius: 4px;
 
 /* YOTPO DETAILS */
 
+/* THEIR CSS IN THEIR WIDGET IS GARBAGE  */
+
 .yotpo-label-container {
   display: none;
 }
@@ -342,7 +344,6 @@ border-radius: 4px;
   
 }
 
-
 .yotpo-nav-content, .yotpo-reviews-filters, .filters-container,.yotpo-label-container, .bottom-line-items-container-mobile .yotpo-star-distribution-wrapper, .yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-mobile  {
   display: grid;
 }
@@ -357,7 +358,6 @@ display: grid;
   justify-items: center;
   align-content: center;
   align-items: center;
-
 	grid-row-gap: 20px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
@@ -371,12 +371,10 @@ display: grid;
   justify-items: center;
   align-content: center;
   align-items: center;
-
 	grid-row-gap: 50px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
-
 }
 .yotpo-display-wrapper {
   display: grid;
@@ -396,10 +394,8 @@ display: grid;
   grid-auto-rows: auto;
 }
 
-.yotpo-regular-box yotpo-bottomline bottom-line-items-container-desktop
 
-
-
+/* END YOTPO DETAILS */
 
 
 /*   BOLD PRODUCT OPTIONS OLD 
