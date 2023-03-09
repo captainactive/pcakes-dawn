@@ -27,12 +27,12 @@
   border: 1px solid #eaeaea;
   border-radius: 4px;
   background-color: whitesmoke;
-  color: #000;
 }
 
+/* DROP DOWN  */
 .bold_option_element select { 
   margin: 2px 2px;
-  padding: 2px 8px;
+  padding: 6px 8px;
   display: block;
   font-size: 19px;
   color: rgba(var(--color-foreground),.75);
