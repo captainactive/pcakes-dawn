@@ -193,7 +193,7 @@ font-size: 100%!important;
 }
 
 
-.bold_option_dropdown .bold_option_element select:hover, .select__select:hover, .accessory-variant-select {
+.bold_option_dropdown .bold_option_element select:hover, .select__select:hover, .accessory-variant-select:hover {
  background-color: #e14984;
 }
 
