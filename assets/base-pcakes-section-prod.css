@@ -334,6 +334,9 @@ border-radius: 4px;
   display: grid;
 }
 
+.bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items {
+  margin-top: 70px;
+}
 
 .bottom-line-items-container-desktop {
 display: grid;
