@@ -24,7 +24,7 @@
 
 
 
-/*   BOLD PRODUCT OPTIONS OLD */
+/*   BOLD PRODUCT OPTIONS OLD 
   
   
 .bold_options {
@@ -53,6 +53,7 @@
   /* display: inline;
    margin: 0 0 -10px 0;*/ }
 
+/*
 .bold_option_element {
   margin: 10px 0 0 0; }
 
@@ -69,11 +70,11 @@
   font-weight: bold;
   margin-top: 5px; }
 
-/*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
+/*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE 
 .bold_option_radio .bold_option_value label {
   border: 1px solid #eaeaea;
   margin: 2px 2px;
-  /*max-width:350px;*/
+  /*max-width:350px;
   width: 100%;
   padding: 2px 8px;
   border-radius: 4px;
@@ -85,7 +86,7 @@
   color: #fff; }
 
 .bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea {
-  /*max-width:350px;*/
+  /*max-width:350px;
   width: 100%;
   border: 1px solid #eaeaea;
   border-radius: 4px;
@@ -98,7 +99,7 @@
   color: #000000;
   border-bottom: 1px solid #e14984;
   padding-bottom: 3px;
-  /*max-width:350px;*/
+ 
   width: 100%;
   display: block;
   margin-top: 15px; }
@@ -110,7 +111,7 @@
   font-family: "Raleway", Verdana, Arial, Helvetica, sans-serif , Geneva, sans-serif; }
 
 .bold_help_text, .bold_option_swatch .bold_option_element, .selector-wrapper select {
-  /*max-width:350px;*/
+  /*max-width:350px;
   width: 100%; }
 
 .bold_option_swatch .bold_option_element .bold_option_value label {
@@ -118,18 +119,18 @@
 
 .bold_option_value label {
   /*  margin: 15px 0 0 15px;
-    display: inline;*/ }
+    display: inline; }
 
 .bold_option_value_element {
   /*  margin: 15px 0 0 15px;
-    display: inline;*/ }
+    display: inline; }
 
 .bold_option_value_element input {
   /* margin: 15px 0 0 15px;
-   display: inline;*/ }
+   display: inline; }
 
 .bold_option_value_title {
-  /* margin: 15px 0 0 15px;*/ }
+  /* margin: 15px 0 0 15px; }
 
 .bold_option_element select, .selector-wrapper select {
   font-size: 115%; }
@@ -163,11 +164,11 @@
 .bold_option_checkbox .bold_option_element input {
   -webkit-appearance: checkbox; }
 
-/*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
+/*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE 
 .bold_option_checkbox .bold_option_value label {
   border: 1px solid #eaeaea;
   margin: 2px 2px;
-  /*max-width:350px;*/
+  /*max-width:350px;
   width: 100%;
   padding: 2px 8px;
   border-radius: 4px;
@@ -178,7 +179,7 @@
   background-color: #e14984;
   color: #fff; }
 
-/* CART STYLE */
+/* CART STYLE 
 .cart__meta .list-view-item__title a {
   font-size: 22px; }
 
@@ -199,3 +200,5 @@
 
   .bold_option_dropdown .bold_option_element {
   margin-left: 0 !important; }
+
+*/
