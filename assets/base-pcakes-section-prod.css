@@ -46,6 +46,7 @@ color: #ffffff;
 }
 .bold_option_element select option {
   background-color: whitesmoke;
+  padding: 5px 0px;
 }
 
 /* DROP DOWN  */
