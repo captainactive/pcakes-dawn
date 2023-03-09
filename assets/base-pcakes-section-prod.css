@@ -123,7 +123,8 @@ font-size: 100%!important;
   }
   
 .oddrow {
-  background-color:#FFF8FB;
+ /* background-color:#FFF8FB; */
+  background-color: whitesmoke;
 }
   
 .allerfooter {
