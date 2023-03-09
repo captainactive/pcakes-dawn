@@ -13,7 +13,7 @@
 }
 
 .bold_options {
-    font-family: var(--font-body-family);
+    font-family: var(--font-body-family)!important;
 }
 
 .bold_option_value {
