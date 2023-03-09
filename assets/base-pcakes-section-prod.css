@@ -349,6 +349,7 @@ border-radius: 4px;
   padding-inline-end: 0;
   height: initial;
   float: none;
+  word-break: unset;
 }
 .yotpo .yotpo-regular-box {
   padding: 0;
