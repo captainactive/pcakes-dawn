@@ -273,22 +273,30 @@
             "text": "<p>Allow our delivery team to deliver your order right to your door. Select Local Delivery at checkout and let us take it from there.   <\/p>",
             "text_style": "body"
           }
+        },
+        "f93e7e04-9581-4842-ac3a-cdecb90c5aa2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/local-delivery"
+          }
         }
       },
       "block_order": [
         "image-with-text-0",
         "5f289c58-5615-4adf-849e-f9c42b55915e",
-        "image-with-text-1"
+        "image-with-text-1",
+        "f93e7e04-9581-4842-ac3a-cdecb90c5aa2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/pattys-cakes-delivery.png",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
