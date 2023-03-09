@@ -339,7 +339,7 @@ display: grid;
   position: initial;
 }
 
-.bottom-line-items-wrapper, .yotpo span {
+.bottom-line-items-wrapper, .yotpo {
 display: grid;
   justify-content: center;
   justify-items: center;
