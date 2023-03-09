@@ -51,14 +51,7 @@
             if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
               assign quantity_rule_soldout = true
             endif
-          -%}
-        <div class="bold_option_total">
-          <div>
-            <span>Total extra: </span>
-            <span class="bold_option_price_display"></span>
-          </div>
-        </div>
-         
+          -%}   
           <button
             id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
