@@ -347,6 +347,9 @@ display: grid;
 	grid-template-columns: 1fr;
 }
 
+.bottom-line-items {
+  display: grid;
+}
 
 .yotpo-regular-box yotpo-bottomline bottom-line-items-container-desktop
 
