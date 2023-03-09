@@ -355,6 +355,9 @@ border-radius: 4px;
   padding: 0;
 }
 
+.yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-desktop {
+  display: grid;
+}
 
 .yotpo-regular-box .bottom-line-items-wrapper {
 display: grid;
@@ -395,7 +398,7 @@ display: grid;
 
 .bottom-line-items {
   display: grid;
-  grid-template-rows: 3fr 2fr;
+  grid-template-rows: 60px 1fr;
   justify-items: center;
   align-items: center;
 }
