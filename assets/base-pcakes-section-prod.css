@@ -44,7 +44,7 @@ color: #424242;
 .bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover {
 color: #ffffff;  
 }
-.bold_option_element select option {
+.bold_option_element select option, .select__select option {
   background-color: whitesmoke;
   height: 30px;
 }
