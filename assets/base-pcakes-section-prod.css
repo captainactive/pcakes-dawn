@@ -385,6 +385,14 @@ display: grid;
 
 }
 
+.bottom-line-only-container {
+   display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+
+
 
 .picker__list,.picker__holder,.picker__frame,.picker__wrap,.picker__box {
   background-color: #ffffff!important;
