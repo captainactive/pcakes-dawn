@@ -31,14 +31,14 @@
   background-color: whitesmoke;
 }
 
-.bold_option_element select, .bold_option_value {
+.bold_option_element select, .bold_option_value, .bold_option_element select option {
 color: #424242;  
 }
 .bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover {
 color: #ffffff;  
 }
 .bold_option_element select option {
-  color: purple;
+  background-color: whitesmoke;
 }
 
 /* DROP DOWN  */
