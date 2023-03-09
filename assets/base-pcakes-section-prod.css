@@ -339,7 +339,7 @@ display: grid;
   position: initial;
 }
 
-.bottom-line-items-wrapper {
+.bottom-line-items-wrapper, .yotpo span {
 display: grid;
   justify-content: center;
   justify-items: center;
@@ -350,7 +350,7 @@ display: grid;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
-  margin: 50px 0px!important;
+
 }
 
 .yotpo-display-wrapper  {
