@@ -329,6 +329,9 @@ border-radius: 4px;
   width: 100%;
 }
 
+*.yotpo-display-wrapper {
+  float: initial;
+}
 
 .yotpo-nav-content, .yotpo-reviews-filters, .filters-container,.yotpo-label-container, .bottom-line-items-container-mobile .yotpo-star-distribution-wrapper  {
   display: grid;
