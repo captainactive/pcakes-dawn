@@ -407,20 +407,6 @@ display: grid;
 }
 
 
-
-.yotpo {
-display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-	grid-row-gap: 50px;
-	grid-column-gap: 10px;
-	grid-template-rows: auto;
-	grid-template-columns: 1fr 1fr;
-}
-
-
 .yotpo-display-wrapper {
   display: grid;
   
