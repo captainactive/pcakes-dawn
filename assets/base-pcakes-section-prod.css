@@ -385,8 +385,12 @@ display: grid;
 
 }
 
+bottom-line-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
 .bottom-line-only-container {
-   display: grid;
+  display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
