@@ -66,11 +66,20 @@ color: #ffffff;
   color:#e14984;
 }
 
-.bold_option_error, .bold_option_error .bold_option_title {
-  color: white;
+
+.bold_option_error .bold_option_title {
+   color: white;
+}
+
+.bold_option_error .bold_help_text {
+ color: white;
+}
+.bold_option_error {
+color: white;
 background-color: red;
 width: 100%;
-padding: 6px 2px;}
+margin: 6px 6px;
+}
 
 .bold_option_element, .bold_option_value_title {
   font-weight: normal !important; }
