@@ -327,7 +327,11 @@ display: grid;
   justify-items: center;
   align-content: center;
   align-items: center;
-  
+
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
 }
 
 
