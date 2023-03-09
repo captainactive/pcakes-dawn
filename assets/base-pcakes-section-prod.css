@@ -43,7 +43,7 @@ color: #ffffff;
 /* DROP DOWN  */
 .bold_option_element select { 
   margin: 2px 2px;
-  padding: 8px 8px;
+  padding: 10px 8px;
   display: block;
   font-size: 19px;
   /*color: rgba(var(--color-foreground),.75);*/
