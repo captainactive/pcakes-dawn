@@ -31,7 +31,7 @@
 }
 
 
-.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea {
+.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea, .select__select {
   width: 100%;
   border: 1px solid #eaeaea;
   border-radius: 4px;
@@ -49,7 +49,7 @@ color: #ffffff;
 }
 
 /* DROP DOWN  */
-.bold_option_element select { 
+.bold_option_element select, .select__select { 
   margin: 2px 2px;
   padding: 10px 8px;
   display: block;
