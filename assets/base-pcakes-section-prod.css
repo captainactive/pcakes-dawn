@@ -20,8 +20,17 @@
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
   margin-top: 40px;
   padding-bottom: 5px;
-  
+
+
+
+/* ACCESSORIES PAGE  */
+
+#w3-product-accessories {
+  border-radius: 5px;
+  border: 1px solid #e14984;
+  padding: 10px;
 }
+  
 #accessories-container-heading h3 {
   font-size: calc(var(--font-heading-scale) * 2.4rem);
 
