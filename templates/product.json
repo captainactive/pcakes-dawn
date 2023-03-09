@@ -40,12 +40,6 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
           "type": "custom_liquid",
           "settings": {
@@ -202,6 +196,12 @@
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
@@ -211,7 +211,6 @@
         "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd",
         "caption",
         "price",
-        "share",
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
         "350680f0-8058-4d5b-94cc-38930f6b92e9",
@@ -231,7 +230,8 @@
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "482e5093-9f52-4b15-b07e-f569237a6e36",
         "8cf77127-d99a-46a6-98bc-23de985f94b5",
-        "9728012a-c46e-49ae-847e-c01a09e7e717"
+        "9728012a-c46e-49ae-847e-c01a09e7e717",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
