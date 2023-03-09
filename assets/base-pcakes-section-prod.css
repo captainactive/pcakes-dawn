@@ -365,7 +365,6 @@ display: grid;
 
 .yotpo-display-wrapper, .yotpo-main-widget  {
   display: grid;
-  	grid-row-gap: 20px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
