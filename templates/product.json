@@ -250,25 +250,33 @@
     },
     "image-with-text": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Cupcakes",
             "heading_size": "h1"
+          }
+        },
+        "5f289c58-5615-4adf-849e-f9c42b55915e": {
+          "type": "caption",
+          "settings": {
+            "caption": "Freshly Iced to Order",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>We freshly iced our cupcakes to order. All 91 flavors, in large and mini sizes. <\/p>",
             "text_style": "body"
           }
         }
       },
       "block_order": [
         "image-with-text-0",
+        "5f289c58-5615-4adf-849e-f9c42b55915e",
         "image-with-text-1"
       ],
       "settings": {
