@@ -345,7 +345,8 @@ border-radius: 4px;
   transform: none;
 }
 
-.bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items {
+.bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items, 
+.bottom-line-items-container-desktop .bottom-line-items-wrapper .yotpo-star-distribution-wrapper {
   padding-inline-end: 0;
 }
 
