@@ -3,11 +3,6 @@
 /* PRODUCT PAGE  */
 
 
-.shopify-installments {
-  color: rgba(var(--color-foreground), 0.85);
-}
-
-
 .img-descrip {
   float: right;
   width: 100%;
@@ -32,6 +27,10 @@
 .product__info-container {
   color: #424242;
 }
+.shopify-installments {
+  color: rgba(var(--color-foreground), 0.85);
+}
+
 
 /* ACCESSORIES PAGE  */
 
