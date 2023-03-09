@@ -306,7 +306,6 @@ border-radius: 4px;
 .yotpo-label-container {
   display: none;
 }
-
 .yotpo-icon-star {font-size: 20px!important;}
 
 .yotpo .text-m {font-size: 14px!important;}
@@ -327,6 +326,23 @@ border-radius: 4px;
 
 
 
+.filters-container .free-text-search,.filters-container .free-text-search-input {
+  width: 100%;
+}
+.ProductAccordion-33cb1234-dee4-40b9-a8e7-29a55562e834-template--16655251996914__main {
+  padding-top: 20px;
+}
+
+
+.yotpo .yotpo-label-container {
+  border: none;
+  
+}
+
+
+
+
+
 .bottom-line-items-container-desktop .bottom-line-items-wrapper {
   width: initial;
   position: initial;
@@ -344,22 +360,15 @@ border-radius: 4px;
   position: initial;
 }
 
-.filters-container .free-text-search,.filters-container .free-text-search-input {
-  width: 100%;
-}
+
 
 *.yotpo-display-wrapper {
   float: initial;
 }
 
-.ProductAccordion-33cb1234-dee4-40b9-a8e7-29a55562e834-template--16655251996914__main {
-  padding-top: 20px;
-}
 
-.yotpo .yotpo-label-container {
-  border: none;
-  
-}
+
+
 
 .yotpo-nav-content, .yotpo-reviews-filters, .filters-container,.yotpo-label-container, .bottom-line-items-container-mobile .yotpo-star-distribution-wrapper, .yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-mobile  {
   display: grid;
@@ -382,7 +391,7 @@ display: grid;
   position: initial;
 }
 
-.bottom-line-items-wrapper, .yotpo {
+.bottom-line-items-wrapper {
 display: grid;
   justify-content: center;
   justify-items: center;
@@ -391,8 +400,22 @@ display: grid;
 	grid-row-gap: 50px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 }
+
+.yotpo {
+display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+	grid-row-gap: 50px;
+	grid-column-gap: 10px;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+
 .yotpo-display-wrapper {
   display: grid;
   
