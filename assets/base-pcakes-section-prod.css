@@ -287,6 +287,36 @@ border-radius: 4px;
 
 
 
+
+
+/* YOTPO DETAILS */
+
+.yotpo-icon-star {font-size: 20px!important;}
+
+.yotpo .text-m {font-size: 14px!important;}
+
+.yotpo-display-wrapper {margin: 0 0 15px 0px!important;}
+
+#yotpo-pdp-stars .text-m {
+  margin-top: 1px;}
+}
+
+.yotpo-logo-link-new {
+ display: none;}
+
+.yotpo-powered, .yotpo-logo-link-new {
+ display: none!important;}
+
+.bottom-line-items-container .avg-score {padding-right: 10px;}
+
+
+
+
+
+
+
+
+
 /*   BOLD PRODUCT OPTIONS OLD 
   
   
