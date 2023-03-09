@@ -67,13 +67,12 @@ color: #ffffff;
 }
 
 
-.bold_option_error .bold_option_title {
+
+/* ERROR MESSAGE  */
+.bold_option_error .bold_option_title, .bold_option_error .bold_help_text { {
    color: red;
 }
 
-.bold_option_error .bold_help_text {
- color: red;
-}
 .bold_option_error {
 background-color: #C9C9C9;
 border: 2px solid red;
@@ -81,6 +80,18 @@ width: 100%;
 padding: 6px 10px;
 border-radius: 4px;
 }
+
+.bold_error_message {
+  color: white !important;
+  padding: 2px 2px 2px 15px;
+  background-color: red !important;
+  font-weight: bold;
+  margin-top: 5px; }
+
+
+
+
+
 
 .bold_option_element, .bold_option_value_title {
   font-weight: normal !important; }
@@ -130,12 +141,6 @@ border-radius: 4px;
 .bold_option_error, .bold_option_error .bold_option_title {
   color: red !important; }
 
-.bold_error_message {
-  color: white !important;
-  padding: 2px 2px 2px 15px;
-  background-color: red !important;
-  font-weight: bold;
-  margin-top: 5px; }
 
 
 
