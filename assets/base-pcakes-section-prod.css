@@ -366,6 +366,15 @@ display: grid;
 }
 
 
+
+/* STARS */
+
+.bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items .yotpo-filter-stars {
+  display: grid;
+  padding-inline-start: 0;
+  position: initial;
+}
+
 .rating-stars-container {
   display: grid;
   margin: 0;
