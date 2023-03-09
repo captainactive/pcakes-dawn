@@ -355,7 +355,7 @@ border-radius: 4px;
   padding: 0;
 }
 
-.yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-desktop {
+.yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-desktop, .avg-score .font-color-gray-darker {
   display: grid;
 }
 
@@ -396,6 +396,7 @@ display: grid;
   position: initial;
   margin-left: 0;
   float: none;
+  padding-top: 0;
 }
 .bottom-line-items-container-desktop {
  height: unset; 
