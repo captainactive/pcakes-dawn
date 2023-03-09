@@ -18,10 +18,15 @@
 }
   
 
-.bold_option_radio .bold_option_value label:hover, .bold_option_dropdown .bold_option_element select:hover, .selector-wrapper select {
+.bold_option_radio .bold_option_value label:hover, .selector-wrapper select {
   background-color: #e14984;
   color: #fff; }
 
+/*  DROP DOWN COLOR - NEEDS WORK
+.bold_option_dropdown .bold_option_element select:hover {
+ background-color: #e14984;
+}
+*/
 
 .bold_option_dropdown .bold_option_element select:active {
   blue;
@@ -60,9 +65,7 @@ background-color: ORANGE;
 }
 
 
-.bold_option_dropdown .bold_option_element select:hover {
-background-color: purple;
-}
+
 
 
 
