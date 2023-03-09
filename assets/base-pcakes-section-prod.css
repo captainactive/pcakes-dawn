@@ -53,6 +53,15 @@
 
 
 
+.bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
+  font-weight: bold !important; }
+
+.bold_option_error, .bold_option_error .bold_option_title {
+  color: red !important; }
+
+.bold_option_element, .bold_option_value_title {
+  font-weight: normal !important; }
+
 
 
 
@@ -65,11 +74,7 @@
   
 }
 
-.bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
-  font-weight: bold !important; }
 
-.bold_option_element, .bold_option_value_title {
-  font-weight: normal !important; }
 
 .bold_option_value_element {
   /* margin: 0 0 0 10px;*/ }
