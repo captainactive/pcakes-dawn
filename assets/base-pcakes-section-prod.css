@@ -2,7 +2,9 @@
 
 /* PRODUCT PAGE  */
 
-
+h1 {
+  color: blue;
+}
 .img-descrip {
   float: right;
   width: 100%;
