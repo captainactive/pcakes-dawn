@@ -476,7 +476,8 @@ font-size: 100%!important;
 @media (max-width: 1350px) {
 .allergrid div {
   grid-template-columns: 4fr 5fr; 
-  
+}
+}
 
 
 
