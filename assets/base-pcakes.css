@@ -468,10 +468,14 @@ font-size: 100%!important;
     padding: 5px 5px 5px 2px;
   }
   
-.oddrow {background-color:#FFF8FB;}
+.oddrow {
+  background-color:#FFF8FB;
+}
   
-.allerfooter {font-size: 70%;
-  padding:10px;}
+.allerfooter {
+  font-size: 70%;
+  padding:10px;
+}
 
 @media (max-width: 1350px) {
 .allergrid div {
