@@ -486,7 +486,7 @@ font-size: 100%!important;
 
 
 *:focus-visible {
-  outline-offset: none;
+  outline-offset: initial;
   box-shadow: none;
   
 }
