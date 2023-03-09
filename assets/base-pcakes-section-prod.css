@@ -31,7 +31,7 @@
   background-color: whitesmoke;
 }
 
-.bold_option_value_title, .bold_option_element select {
+.bold_option_element select {
 color: #424242;  
 }
 .bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover {
@@ -190,20 +190,15 @@ color: #ffffff;
 .bold_option_checkbox .bold_option_element input {
   -webkit-appearance: checkbox; }
 
-/*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE 
-.bold_option_checkbox .bold_option_value label {
-  border: 1px solid #eaeaea;
-  margin: 2px 2px;
-  /*max-width:350px;
-  width: 100%;
-  padding: 2px 8px;
-  border-radius: 4px;
-  display: block;
-  background-color: whitesmoke; }
 
-.bold_option_checkbox .bold_option_value label:hover {
-  background-color: #e14984;
-  color: #fff; }
+
+
+
+
+
+
+
+
 
 /* CART STYLE 
 .cart__meta .list-view-item__title a {
