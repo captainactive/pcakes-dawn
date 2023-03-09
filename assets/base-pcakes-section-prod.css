@@ -7,7 +7,7 @@
 /*   BOLD PRODUCT OPTIONS NEW  */
 
 
-.product-form__input .select, .select__select {
+.product-form__input .select, .select__select, .product-form__input {
   width: 100%;
   max-width: 100%;
 }
