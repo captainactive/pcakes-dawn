@@ -34,7 +34,7 @@
 .bold_option_value_title, .bold_option_element select {
 color: #424242;  
 }
-.bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover {
+.bold_option_value:hover, .bold_option_element select:hover {
 color: #ffffff;  
 }
 
