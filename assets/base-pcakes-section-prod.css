@@ -75,8 +75,8 @@ color: #ffffff;
  color: red;
 }
 .bold_option_error {
-background-color: #CE4656;
-  border: 2px solid red;
+background-color: #C9C9C9;
+border: 2px solid red;
 width: 100%;
 padding: 6px 10px;
 border-radius: 4px;
