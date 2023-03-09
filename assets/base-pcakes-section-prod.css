@@ -43,7 +43,7 @@ color: #ffffff;
 /* DROP DOWN  */
 .bold_option_element select { 
   margin: 2px 2px;
-  padding: 6px 8px;
+  padding: 8px 8px;
   display: block;
   font-size: 19px;
   /*color: rgba(var(--color-foreground),.75);*/
@@ -54,7 +54,7 @@ color: #ffffff;
   border: 1px solid #eaeaea;
   margin: 2px 2px;
   width: 100%;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 4px;
   display: block;
   background-color: whitesmoke; 
