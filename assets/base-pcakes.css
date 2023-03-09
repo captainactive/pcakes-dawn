@@ -485,7 +485,12 @@ font-size: 100%!important;
 /*   BOLD PRODUCT OPTIONS NEW  */
 
 
-.select__select {
+.product-form__input .select {
+  width: 100%;
+}
+
+
+  .select__select {
   width: 100%;
   
 }
