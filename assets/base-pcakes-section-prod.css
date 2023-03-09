@@ -364,7 +364,7 @@ display: grid;
 }
 .yotpo-display-wrapper {
   display: grid;
-  grid-row-gap: 20px;
+  
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
@@ -373,6 +373,7 @@ display: grid;
 
 .yotpo-main-widget  {
   display: grid;
+  grid-row-gap: 20px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
