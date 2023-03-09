@@ -353,7 +353,7 @@ display: grid;
 
 }
 
-.yotpo-display-wrapper  {
+.yotpo-display-wrapper, .yotpo-main-widget  {
   display: grid;
   	grid-row-gap: 20px;
 	grid-column-gap: 10px;
