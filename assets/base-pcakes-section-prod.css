@@ -268,6 +268,11 @@ border-radius: 4px;
 
 
 
+.alert-bar-pink {
+  
+}
+
+
 
 
 /*   BOLD PRODUCT OPTIONS OLD 
@@ -314,11 +319,6 @@ border-radius: 4px;
   display: block;
   margin-top: 15px; }
 
-.product-form__item label {
-  font-family: Ubuntu, sans-serif; }
-
-.bold_option_value label {
-  font-family: "Raleway", Verdana, Arial, Helvetica, sans-serif , Geneva, sans-serif; }
 
 .bold_help_text, .bold_option_swatch .bold_option_element, .selector-wrapper select {
   /*max-width:350px;
