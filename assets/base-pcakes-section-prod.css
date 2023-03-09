@@ -88,6 +88,10 @@ font-size: 100%!important;
   text-decoration: none;
 }
 
+.accessory-variant-select {
+  padding: 10px;
+  font-size: 18px;
+}
 
 
 /* PRODUCT PAGE ALLERGEN INFORMATION */
