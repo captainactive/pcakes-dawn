@@ -347,6 +347,7 @@ border-radius: 4px;
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items, 
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .yotpo-star-distribution-wrapper {
   padding-inline-end: 0;
+  height: initial;
 }
 .yotpo .yotpo-regular-box {
   padding: 0;
@@ -399,6 +400,7 @@ display: grid;
 
 .main-widget .avg-score {
   width: 0px;
+  height: initial;
 }
 
 
