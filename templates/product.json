@@ -140,6 +140,12 @@
           "settings": {
             "custom_liquid": "{% if product.metafields.my_fields.allergens %}\n      \n      <h2 class=\"marbtm10\">Allergen Information<\/h2>\n      <div class=\"allergrid martop15\">  \n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Flours:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.flours}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Dairy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.dairy}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Starch:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.starch}}<\/div>\n\t\t\t\n\t\t\t<div class=\"allertitle\">Eggs:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.eggs}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Nuts:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.nuts}}<\/div>  \n\n\t\t\t<div class=\"allertitle\">Gelatin:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.gelatin}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Sugar:<\/div>\n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.sugar}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Soy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.soy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n        \t<div class=\"allertitle\">Fruit Seeds:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.fruitseeds}}<\/div>  \n        \t\n\t\t\t<div class=\"allertitle\">&nbsp;<\/div> \n\t\t\t<div class=\"allercontent\">&nbsp;<\/div>  \t\t\t\n   \n      <\/div>\n       \n      <\/div>\n      <div class=\"allerfooter\">All equipment is washed, however, cross-contamination with ingredients is a possibility. Due to challenges with supply chains, these values may fluctuate.<br><\/div> \n    <br> \n  \n        \n        {% endif %}"
           }
+        },
+        "b16e6c5a-779c-4c92-ba31-3755c8da701b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -160,7 +166,8 @@
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "share",
-        "28c74ebb-2d26-4b7b-ba70-118eadef4883"
+        "28c74ebb-2d26-4b7b-ba70-118eadef4883",
+        "b16e6c5a-779c-4c92-ba31-3755c8da701b"
       ],
       "settings": {
         "enable_sticky_info": true,
