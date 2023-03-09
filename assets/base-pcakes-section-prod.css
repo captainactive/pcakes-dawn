@@ -333,7 +333,7 @@ border-radius: 4px;
   float: initial;
 }
 
-.yotpo-nav-content, .yotpo-reviews-filters, .filters-container,.yotpo-label-container, .bottom-line-items-container-mobile .yotpo-star-distribution-wrapper  {
+.yotpo-nav-content, .yotpo-reviews-filters, .filters-container,.yotpo-label-container, .bottom-line-items-container-mobile .yotpo-star-distribution-wrapper, .yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-mobile  {
   display: grid;
 }
 
