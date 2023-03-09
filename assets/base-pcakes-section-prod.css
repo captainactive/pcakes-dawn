@@ -336,7 +336,6 @@ border-radius: 4px;
 
 .yotpo .yotpo-label-container {
   border: none;
-  
 }
 
 .bottom-line-items-container-desktop .bottom-line-items-wrapper {
@@ -349,7 +348,9 @@ border-radius: 4px;
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .yotpo-star-distribution-wrapper {
   padding-inline-end: 0;
 }
-
+.yotpo .yotpo-regular-box {
+  padding: 0;
+}
 
 
 .yotpo-regular-box .bottom-line-items-wrapper {
