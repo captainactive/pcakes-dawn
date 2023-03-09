@@ -325,6 +325,14 @@ border-radius: 4px;
   position: initial;
 }
 
+.filters-container .free-text-search,.filters-container .free-text-search-input {
+  width: 100px;
+}
+
+
+
+
+
 .bottom-line-items-container-desktop {
 display: grid;
   justify-content: center;
