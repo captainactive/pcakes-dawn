@@ -366,6 +366,9 @@ display: grid;
 }
 
 
+.main-widget .yotpo-display-wrapper {
+  border: 1px solid purple;
+}
 
 /* STARS */
 
