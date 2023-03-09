@@ -326,7 +326,7 @@ border-radius: 4px;
 }
 
 .filters-container .free-text-search,.filters-container .free-text-search-input {
-  width: 100px;
+  width: 100%;
 }
 
 
