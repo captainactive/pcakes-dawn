@@ -394,6 +394,8 @@ display: grid;
 }
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .avg-score {
   position: initial;
+  margin-left: 0;
+  float: none;
 }
 .bottom-line-items-container-desktop {
  height: unset; 
