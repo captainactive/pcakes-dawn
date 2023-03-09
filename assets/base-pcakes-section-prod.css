@@ -69,7 +69,7 @@ color: #ffffff;
 
 
 /* ERROR MESSAGE  */
-.bold_option_error .bold_option_title, .bold_option_error .bold_help_text { {
+.bold_option_error .bold_option_title, .bold_option_error .bold_help_text {
    color: red;
 }
 
