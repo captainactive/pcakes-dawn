@@ -48,7 +48,7 @@
   grid-template-columns: 1fr 3fr; 
 }
 .accessories-item:hover {
-  background-color: red;
+  border: 1px solid #e14984;
 }
 .accessories-left {
   display: grid;
