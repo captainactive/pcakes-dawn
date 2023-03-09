@@ -321,6 +321,10 @@ border-radius: 4px;
   border-top:1px solid #e14984!important;
 }
 
+.yotpo .yotpo-regular-box, yotpo-display-wrapper {
+  position: initial;
+}
+
 .bottom-line-items-container-desktop {
 display: grid;
   justify-content: center;
