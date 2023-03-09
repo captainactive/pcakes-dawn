@@ -76,9 +76,11 @@ color: #ffffff;
 }
 .bold_option_error {
 color: white;
-background-color: red;
+background-color: CE4656;
+  border: 1px solid red;
 width: 100%;
 margin: 6px 10px;
+border-radius: 4px;
 }
 
 .bold_option_element, .bold_option_value_title {
