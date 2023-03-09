@@ -37,6 +37,9 @@ color: #424242;
 .bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover {
 color: #ffffff;  
 }
+.bold_option_element select option {
+  color: purple;
+}
 
 /* DROP DOWN  */
 .bold_option_element select { 
