@@ -7,6 +7,11 @@
   width: 100%;
   max-width: 100%;
 }
+.form__label {
+  font-size:19px;
+}
+
+
 
 .bold_option_value {
   margin-right: 0px;
@@ -59,7 +64,6 @@ color: #ffffff;
   display: block;
   background-color: whitesmoke; 
 }
-
 
 
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
