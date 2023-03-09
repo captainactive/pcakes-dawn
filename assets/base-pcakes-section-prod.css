@@ -384,6 +384,10 @@ display: grid;
 }
 .yotpo-icon-star {
   display: grid;
+    justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
 
 
