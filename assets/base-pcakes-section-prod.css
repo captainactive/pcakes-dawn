@@ -373,21 +373,16 @@ display: grid;
   display: grid;
   padding-inline-start: 0!important;
   position: initial;
-
-}
-
-.rating-stars-container {
-  display: grid;
   margin: 0;
-  position: initial;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.yotpo-icon-star {
-  display: grid;
-    justify-content: center;
+      justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
+}
+.yotpo-icon-star {
+  display: grid;
+
 }
 
 
