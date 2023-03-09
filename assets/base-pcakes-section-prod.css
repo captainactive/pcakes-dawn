@@ -371,8 +371,9 @@ display: grid;
 
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items .yotpo-filter-stars {
   display: grid;
-  padding-inline-start: 0;
+  padding-inline-start: 0!important;
   position: initial;
+
 }
 
 .rating-stars-container {
