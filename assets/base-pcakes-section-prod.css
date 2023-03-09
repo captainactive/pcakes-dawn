@@ -392,7 +392,7 @@ display: grid;
 
 .bottom-line-items {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-rows: 3fr 1fr ; 
 }
 .bottom-line-only-container {
   display: grid;
