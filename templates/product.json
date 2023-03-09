@@ -58,7 +58,7 @@
         "b16e6c5a-779c-4c92-ba31-3755c8da701b": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"wsaiovolumetable\"><\/di>"
+            "custom_liquid": "<div class=\"wsaiovolumetable\"><\/div>"
           }
         },
         "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
