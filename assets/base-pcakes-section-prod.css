@@ -155,6 +155,10 @@ font-size: 100%!important;
 
 
 
+
+
+
+
 /*   BOLD PRODUCT OPTIONS NEW  */
 
 .bold_option_title {
@@ -277,6 +281,7 @@ border-radius: 4px;
   font-family: var(--font-heading-family);
   border-radius: 4px;
   font-size: 26px;
+  margin-top: 70px;
 }
 .alert-bar-pink p {
   margin: 5px;
