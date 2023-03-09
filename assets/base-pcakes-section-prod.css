@@ -67,10 +67,10 @@ color: #ffffff;
 }
 
 
-.bold_option_value label bold_option_value_price {
+.bold_option_value label .bold_option_value_price {
   color: #8a54a8;
 }
-.bold_option_value label bold_option_value_price:hover {
+.bold_option_value label .bold_option_value_price:hover {
   color: #ffffff;
 }
 
