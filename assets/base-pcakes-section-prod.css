@@ -43,6 +43,17 @@
 }
 
 
+.bold_option_element select {
+  border: 1px solid #eaeaea;
+  margin: 2px 2px;
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: block;
+  background-color: whitesmoke; 
+  
+}
+
 
 /*   BOLD PRODUCT OPTIONS OLD 
   
