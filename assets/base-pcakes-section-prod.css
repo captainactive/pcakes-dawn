@@ -321,7 +321,20 @@ border-radius: 4px;
   border-top:1px solid #e14984!important;
 }
 
-.bottom-line-items-container-desktop, .bottom-line-items-wrapper {
+.bottom-line-items-container-desktop {
+display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+.bottom-line-items-wrapper {
 display: grid;
   justify-content: center;
   justify-items: center;
