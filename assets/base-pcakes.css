@@ -485,5 +485,11 @@ font-size: 100%!important;
 
 
 
+*:focus-visible {
+  outline-offset: none;
+  box-shadow: none;
+  
+}
+
 
 
