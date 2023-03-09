@@ -240,6 +240,11 @@ color: #ffffff;
   background-color: whitesmoke; 
 }
 
+.bold_option_element imput {
+  margin: 2px 2px;
+  padding: 4px 8px;
+}
+
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
   color:#e14984;
 }
@@ -321,8 +326,6 @@ border-radius: 4px;
 
 .bold_option_checkbox .bold_option_element input {
   -webkit-appearance: checkbox; }
-
-
 
 
 
