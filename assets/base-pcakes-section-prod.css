@@ -366,6 +366,16 @@ display: grid;
 }
 
 
+.rating-stars-container {
+  display: grid;
+  margin: 0;
+  position: initial;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.yotpo-icon-star {
+  display: grid;
+}
+
 
 .picker__list,.picker__holder,.picker__frame,.picker__wrap,.picker__box {
   background-color: #ffffff!important;
