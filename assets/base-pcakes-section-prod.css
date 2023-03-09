@@ -360,7 +360,7 @@ display: grid;
   align-content: center;
   align-items: center;
 	grid-row-gap: 50px;
-	grid-column-gap: 10px;
+	grid-column-gap: 2px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr 1fr;
 }
