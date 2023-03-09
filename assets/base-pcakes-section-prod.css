@@ -115,8 +115,9 @@ font-size: 100%!important;
   }
   
 .allertitle {
-      font-weight: 600;
+      font-weight: 500;
     padding: 5px 2px 5px 7px;
+  color: #e14984;
   }
 .allercontent {
     padding: 5px 5px 5px 2px;
