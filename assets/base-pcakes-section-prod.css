@@ -9,6 +9,7 @@
 
 .product-form__input .select {
   width: 100%;
+  max-width: 100%;
 }
 
 
