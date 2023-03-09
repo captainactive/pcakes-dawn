@@ -26,7 +26,7 @@
 }
 
 
-.bold_option_dropdown .bold_option_element select:hover {
+.bold_option_dropdown .bold_option_element select:hover, .select__select {
  background-color: #e14984;
 }
 
