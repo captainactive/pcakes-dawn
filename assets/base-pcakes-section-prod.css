@@ -3,6 +3,11 @@
 /* PRODUCT PAGE  */
 
 
+.shopify-installments__content {
+  color: rgba(var(--color-foreground), 0.85);
+}
+
+
 .img-descrip {
   float: right;
   width: 100%;
