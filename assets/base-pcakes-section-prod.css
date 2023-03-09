@@ -355,7 +355,7 @@ border-radius: 4px;
   padding: 0;
 }
 
-.yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-desktop, .avg-score .font-color-gray-darker {
+.yotpo-regular-box .yotpo-bottomline .bottom-line-items-container-desktop, .avg-score .font-color-gray-darker, .yotpo-icon .yotpo-icon-star .rating-star .pull-left {
   display: grid;
 }
 
