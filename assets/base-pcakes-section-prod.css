@@ -380,7 +380,7 @@ display: grid;
   align-content: center;
   align-items: center;
 }
-.yotpo-icon-star {
+.yotpo-icon yotpo-icon-star rating-star pull-left {
   display: grid;
 
 }
