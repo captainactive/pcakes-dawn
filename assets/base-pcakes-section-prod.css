@@ -291,6 +291,10 @@ border-radius: 4px;
 
 /* YOTPO DETAILS */
 
+.yotpo-label-container {
+  display: none;
+}
+
 .yotpo-icon-star {font-size: 20px!important;}
 
 .yotpo .text-m {font-size: 14px!important;}
