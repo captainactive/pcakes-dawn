@@ -397,7 +397,9 @@ display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-
+.main-widget .avg-score {
+  width: 0px;
+}
 
 
 
