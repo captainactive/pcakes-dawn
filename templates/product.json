@@ -172,8 +172,14 @@
             "custom_liquid": "<div class=\"pc-prod-h2\">\n{%  if product.tags contains \"Standard Cakes\" %} <!-- HAS VARIANT -->\n    \n<h2>Cancellation\/Change Policy<\/h2>\n<p>Standard Cakes sales are final 24 hours before the pickup time..<\/p>\n<!--div class=\"hrtoplite\"><\/div-->\n{% endif %}\n\n\n{%  if product.tags contains \"Semi Custom\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Theme Cake\" or product.tags contains \"Tiered Cake\" %} <!-- HAS VARIANT -->\n<di><\/div>\n<h2>Design and Pricing<\/h2>\n<p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href=\"https:\/\/pattys-cakes.com\/contact-us\">Contact Us<\/a> page. They will provide you with accurate pricing based on your desired specifications.<\/p>\n\n\n<div><\/div>\n<h2>Cancellation\/Change Policy<\/h2>\n<p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the pickup\/delivery date, all cake orders are final and non-refundable. The pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.<\/p>\n\n{% endif %}\n<\/div>"
           }
         },
+        "482e5093-9f52-4b15-b07e-f569237a6e36": {
+          "type": "shopify:\/\/apps\/w3-product-accessories\/blocks\/widget\/cebf1474-e4fa-4cb4-a91e-d313690bf6f1",
+          "settings": {
+          }
+        },
         "1ddad9ad-36c7-4b85-a947-0faf17106226": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div> \n<\/div>"
           }
@@ -186,6 +192,7 @@
         },
         "8cf77127-d99a-46a6-98bc-23de985f94b5": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<select name=\"id\" id=\"ProductSelect-{{ section.id }}\" class=\"product-form__variants no-js\">\n              {% for variant in product.variants %}\n                {% if variant.available %}\n                  <option {% if variant == product.selected_or_first_available_variant %} selected=\"selected\" {% endif %} value=\"{{ variant.id }}\">\n                    {{ variant.title }}\n                  <\/option>\n                {% else %}\n                  <option disabled=\"disabled\">{{ variant.title }} - {{ 'products.product.sold_out' | t }}<\/option>\n                {% endif %}\n              {% endfor %}\n            <\/select>"
           }
@@ -214,6 +221,7 @@
         "buy_buttons",
         "quantity_selector",
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
+        "482e5093-9f52-4b15-b07e-f569237a6e36",
         "1ddad9ad-36c7-4b85-a947-0faf17106226",
         "share",
         "8cf77127-d99a-46a6-98bc-23de985f94b5"
