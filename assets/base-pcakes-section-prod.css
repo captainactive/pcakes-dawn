@@ -27,7 +27,7 @@
 .product__info-container {
   color: #424242;
 }
-#shopify-installments, .shopify-installments__content {
+#shopify-installments, #shopify-installments__content {
   color: #e14984;
   font-size: 25px;
  /* color: rgba(var(--color-foreground), 0.85); */
