@@ -332,6 +332,7 @@ display: grid;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
+  position: initial;
 }
 
 .bottom-line-items-wrapper {
