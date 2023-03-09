@@ -18,6 +18,17 @@
 }
   
 
+.bold_option_radio .bold_option_value label:hover, .bold_option_dropdown .bold_option_element select:hover, .selector-wrapper select {
+  background-color: #e14984;
+  color: #fff; }
+
+.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: #000;
+}
 
 
 
@@ -81,17 +92,7 @@
   display: block;
   background-color: whitesmoke; }
 
-.bold_option_radio .bold_option_value label:hover, .bold_option_dropdown .bold_option_element select:hover, .selector-wrapper select {
-  background-color: #e14984;
-  color: #fff; }
 
-.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea {
-  /*max-width:350px;
-  width: 100%;
-  border: 1px solid #eaeaea;
-  border-radius: 4px;
-  background-color: whitesmoke;
-  color: #000; }
 
 .bold_option_element textarea
 .bold_option_set .bold_option_title, .product-form__item label {
