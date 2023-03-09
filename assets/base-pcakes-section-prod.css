@@ -385,7 +385,7 @@ display: grid;
 
 }
 
-bottom-line-items {
+.bottom-line-items {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr; 
 }
