@@ -1,23 +1,17 @@
 
 
 
-
-
-
 /*   BOLD PRODUCT OPTIONS NEW  */
-
 
 .product-form__input .select, .select__select, .product-form__input {
   width: 100%;
   max-width: 100%;
 }
 
-
 .bold_option_value {
   margin-right: 0px;
 }
   
-
 .bold_option_radio .bold_option_value label:hover, .selector-wrapper select {
   background-color: #e14984;
   color: #fff; }
@@ -28,9 +22,6 @@
 }
 */
 
-.bold_option_dropdown .bold_option_element select:active {
-  blue;
-}
 
 .bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea {
   width: 100%;
@@ -57,11 +48,6 @@
   border-radius: 4px;
   display: block;
   background-color: whitesmoke; 
-}
-
-
-.bold_option_radio .bold_option_value label:hover, .selector-wrapper select {
-background-color: ORANGE;
 }
 
 
