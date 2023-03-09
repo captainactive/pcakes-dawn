@@ -347,7 +347,7 @@ display: grid;
 	grid-template-columns: 1fr;
 }
 
-.bottom-line-items {
+.yotpo-display-wrapper  {
   display: grid;
 }
 
