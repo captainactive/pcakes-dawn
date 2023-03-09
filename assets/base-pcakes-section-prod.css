@@ -395,7 +395,9 @@ display: grid;
 .bottom-line-items-container-desktop .bottom-line-items-wrapper .avg-score {
   position: initial;
 }
-
+.bottom-line-items-container-desktop {
+ height: unset; 
+}
 .bottom-line-items {
   display: grid;
   grid-template-rows: 60px 1fr;
