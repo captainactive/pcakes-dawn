@@ -27,7 +27,7 @@
 
 #w3-product-accessories {
   border-radius: 5px;
-  border: 1px solid #e14984;
+  border: .1rem solid rgba(var(--color-foreground),.8);
   padding: 10px;
 }
   
