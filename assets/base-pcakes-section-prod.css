@@ -349,7 +349,7 @@ border-radius: 4px;
   padding-inline-end: 0;
   height: initial;
   float: none;
-  word-break: unset;
+  word-break: initial;
 }
 .yotpo .yotpo-regular-box {
   padding: 0;
@@ -393,7 +393,11 @@ display: grid;
 
 .bottom-line-items {
   display: grid;
-  grid-template-rows: 3fr 1fr ; 
+  grid-template-rows: 3fr 2fr;
+        justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
 .bottom-line-only-container {
   display: grid;
