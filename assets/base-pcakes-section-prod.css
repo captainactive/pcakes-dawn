@@ -193,11 +193,11 @@ font-size: 100%!important;
 }
 
 
-.bold_option_dropdown .bold_option_element select:hover, .select__select:hover {
+.bold_option_dropdown .bold_option_element select:hover, .select__select:hover, .accessory-variant-select {
  background-color: #e14984;
 }
 
-.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea, .select__select {
+.bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea, .select__select, .accessory-variant-select {
   width: 100%;
   border: 1px solid #eaeaea;
   border-radius: 4px;
@@ -212,7 +212,7 @@ color: #424242;
 color: #ffffff;  
 }
 
-.bold_option_element select option, .select__select option {
+.bold_option_element select option, .select__select option, .accessory-variant-select option {
   background-color: whitesmoke;
   color: #424242; 
   height: 30px;
@@ -221,7 +221,7 @@ color: #ffffff;
 }
 
 /* DROP DOWN  */
-.bold_option_element select, .select__select { 
+.bold_option_element select, .select__select, .accessory-variant-select { 
   margin: 2px 2px;
   padding: 10px 8px;
   display: block;
