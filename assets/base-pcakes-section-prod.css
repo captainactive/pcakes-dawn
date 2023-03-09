@@ -54,7 +54,9 @@
 
 
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
-  font-weight: bold !important; }
+  font-weight: bold;
+  color:#e14984;
+}
 
 .bold_option_error, .bold_option_error .bold_option_title {
   color: red !important; }
