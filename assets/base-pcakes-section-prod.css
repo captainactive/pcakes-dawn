@@ -405,7 +405,7 @@ display: grid;
 }
 
 .main-widget .avg-score {
-  width: 0px;
+  width: unset;
   height: initial;
 }
 
