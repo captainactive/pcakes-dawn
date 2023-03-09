@@ -43,7 +43,8 @@
 
 }
 .accessories-item {
-  border: .1rem solid rgba(var(--color-foreground),.08); 
+  /*border: .1rem solid rgba(var(--color-foreground),.08); */
+  border: #ffffff 1px solid
   border-radius: 4px;
   padding: 5px 10px;
   display: grid;
