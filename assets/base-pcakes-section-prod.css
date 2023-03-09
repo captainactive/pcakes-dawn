@@ -33,6 +33,8 @@
   
 #accessories-container-heading h3 {
   font-size: calc(var(--font-heading-scale) * 2.4rem);
+  color: #8a54a8;
+  margin-top: 20px;
 
 }
 .accessories-item {
