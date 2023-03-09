@@ -68,18 +68,17 @@ color: #ffffff;
 
 
 .bold_option_error .bold_option_title {
-   color: white;
+   color: red;
 }
 
 .bold_option_error .bold_help_text {
- color: white;
+ color: red;
 }
 .bold_option_error {
-color: white;
-background-color: CE4656;
-  border: 1px solid red;
+background-color: #CE4656;
+  border: 2px solid red;
 width: 100%;
-margin: 6px 10px;
+padding: 6px 10px;
 border-radius: 4px;
 }
 
