@@ -79,12 +79,13 @@
                 <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
               </svg>
             </div>
+            <span class="bold_option_price_display">Total extra: </span>
           </button>
           {%- if block.settings.show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
         </div>
-        <span class="bold_option_price_display">Total extra: </span>
+        
       {%- endform -%}
     </product-form>
   {%- else -%}
