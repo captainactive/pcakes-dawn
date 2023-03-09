@@ -2,9 +2,7 @@
 
 /* PRODUCT PAGE  */
 
-h1 {
-  color: blue;
-}
+
 .img-descrip {
   float: right;
   width: 100%;
@@ -29,7 +27,7 @@ h1 {
 .product__info-container {
   color: #424242;
 }
-#shopify-installments, #shopify-installments__content {
+#shopify-installments, #shopify-installments__content h1 {
   color: #e14984;
   font-size: 25px;
  /* color: rgba(var(--color-foreground), 0.85); */
