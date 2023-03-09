@@ -98,7 +98,7 @@ font-size: 100%!important;
   grid-template-columns: 1fr;
   border-top: .1rem solid rgba(var(--color-foreground),.08);
   border-bottom: .1rem solid rgba(var(--color-foreground),.08);
-  color: rgba(var(--color-foreground),.90)
+  color: var(--pcakes-text);
   
   }
 .allergrid div {
