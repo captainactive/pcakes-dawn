@@ -177,13 +177,6 @@
           "settings": {
           }
         },
-        "1ddad9ad-36c7-4b85-a947-0faf17106226": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div id=\"w3-product-accessories\" data-product-handle=\"{{ product.handle }}\">\n<div id=\"w3-money-format\" style=\"display:none;\">{{ shop.money_format }}<\/div> \n<\/div>"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -195,6 +188,12 @@
           "disabled": true,
           "settings": {
             "custom_liquid": "<select name=\"id\" id=\"ProductSelect-{{ section.id }}\" class=\"product-form__variants no-js\">\n              {% for variant in product.variants %}\n                {% if variant.available %}\n                  <option {% if variant == product.selected_or_first_available_variant %} selected=\"selected\" {% endif %} value=\"{{ variant.id }}\">\n                    {{ variant.title }}\n                  <\/option>\n                {% else %}\n                  <option disabled=\"disabled\">{{ variant.title }} - {{ 'products.product.sold_out' | t }}<\/option>\n                {% endif %}\n              {% endfor %}\n            <\/select>"
+          }
+        },
+        "9728012a-c46e-49ae-847e-c01a09e7e717": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
           }
         }
       },
@@ -222,9 +221,9 @@
         "quantity_selector",
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "482e5093-9f52-4b15-b07e-f569237a6e36",
-        "1ddad9ad-36c7-4b85-a947-0faf17106226",
         "share",
-        "8cf77127-d99a-46a6-98bc-23de985f94b5"
+        "8cf77127-d99a-46a6-98bc-23de985f94b5",
+        "9728012a-c46e-49ae-847e-c01a09e7e717"
       ],
       "settings": {
         "enable_sticky_info": true,
