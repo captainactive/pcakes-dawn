@@ -30,6 +30,11 @@
   color: #000;
 }
 
+.bold_option_element select { 
+  margin: 2px 2px;
+  padding: 2px 8px;
+  display: block;
+}
 
 /*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
 .bold_option_radio .bold_option_value label {
@@ -43,16 +48,7 @@
 }
 
 
-.bold_option_element select {
-  border: 1px solid #eaeaea;
-  margin: 2px 2px;
-  width: 100%;
-  padding: 2px 8px;
-  border-radius: 4px;
-  display: block;
-  background-color: whitesmoke; 
-  
-}
+
 
 
 /*   BOLD PRODUCT OPTIONS OLD 
