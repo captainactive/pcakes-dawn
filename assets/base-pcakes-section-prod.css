@@ -67,7 +67,10 @@ color: #ffffff;
 }
 
 .bold_option_error, .bold_option_error .bold_option_title {
-  color: red !important; }
+  color: white;
+background-color: red;
+width: 100%;
+padding: 6px 2px;}
 
 .bold_option_element, .bold_option_value_title {
   font-weight: normal !important; }
@@ -75,8 +78,8 @@ color: #ffffff;
 
 
 .bold_option_value_swatch {
-  width: 70px !important;
-  height: 70px !important; }
+  width: 70px;
+  height: 70px; }
 
 
 
