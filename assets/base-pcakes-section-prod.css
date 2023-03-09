@@ -46,7 +46,7 @@ color: #ffffff;
 }
 .bold_option_element select option, .select__select option {
   background-color: whitesmoke;
-  height: 30px;
+  color: #424242; 
 }
 
 /* DROP DOWN  */
