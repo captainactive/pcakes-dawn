@@ -371,6 +371,20 @@ display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 900px) {
+.yotpo-regular-box .bottom-line-items-wrapper {
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 750px) {
+.yotpo-regular-box .bottom-line-items-wrapper {
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+}
+}
+
 
 .main-widget .yotpo-display-wrapper div {
   /* border: 1px solid purple; */
