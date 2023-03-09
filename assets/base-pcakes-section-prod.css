@@ -230,7 +230,7 @@ color: #ffffff;
 }
 
 /*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
-.bold_option_radio .bold_option_value label, .bold_option_element input {
+.bold_option_radio .bold_option_value label {
   border: 1px solid #eaeaea;
   margin: 2px 2px;
   width: 100%;
@@ -306,6 +306,23 @@ border-radius: 4px;
   border-bottom: 1px solid #ffffff;
   
 }
+
+
+
+.bold_option_element select, .bold_option_element input {
+  margin: 10px 0 0 0; }
+
+.bold_swatch_selected.bold_option_value_element {
+  border: 3px solid #e14984 !important; }
+
+.bold_option_element select option {
+  border: 2px solid #eaeaea;
+  paddding: 2px; }
+
+.bold_option_checkbox .bold_option_element input {
+  -webkit-appearance: checkbox; }
+
+
 
 
 
@@ -592,22 +609,8 @@ display: grid;
 .selector-wrapper select {
   margin-bottom: 15px; }
 
-.bold_option_element select, .bold_option_element input {
-  margin: 10px 0 0 0; }
 
 
-
-
-
-.bold_swatch_selected.bold_option_value_element {
-  border: 3px solid #e14984 !important; }
-
-.bold_option_element select option {
-  border: 2px solid #eaeaea;
-  paddding: 2px; }
-
-.bold_option_checkbox .bold_option_element input {
-  -webkit-appearance: checkbox; }
 
 
 
