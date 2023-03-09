@@ -254,22 +254,23 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Cupcakes",
+            "heading": "$5 Local Delivery",
             "heading_size": "h1"
           }
         },
         "5f289c58-5615-4adf-849e-f9c42b55915e": {
           "type": "caption",
+          "disabled": true,
           "settings": {
-            "caption": "Freshly Iced to Order",
+            "caption": "What a deal!",
             "text_style": "subtitle",
-            "text_size": "medium"
+            "text_size": "large"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We freshly iced our cupcakes to order. All 91 flavors, in large and mini sizes. <\/p>",
+            "text": "<p>Allow our delivery team to deliver your order right to your door. Select Local Delivery at checkout and let us take it from there.   <\/p>",
             "text_style": "body"
           }
         }
@@ -280,8 +281,9 @@
         "image-with-text-1"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
+        "image": "shopify:\/\/shop_images\/pattys-cakes-delivery.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
