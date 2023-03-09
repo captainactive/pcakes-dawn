@@ -29,7 +29,9 @@
   
 .bold_options {
   width: 100%;
-  margin: 0 auto 20px auto; }
+  margin: 0 auto 20px auto;
+  
+}
 
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
   font-weight: bold !important; }
@@ -41,7 +43,7 @@
   /* margin: 0 0 0 10px;*/ }
 
 .bold_option_value_element input {
- /* height: 10px;
+ /* height: 10px; */
 }
 
 .bold_option_value_title {
