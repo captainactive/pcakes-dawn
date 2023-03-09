@@ -69,6 +69,7 @@ color: #ffffff;
 
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
   color:#e14984;
+  font-family: var(--font-body-family);
 }
 
 
