@@ -74,6 +74,13 @@ color: #ffffff;
 
 
 
+.bold_option_value_swatch {
+  width: 70px !important;
+  height: 70px !important; }
+
+
+
+
 
 /*   BOLD PRODUCT OPTIONS OLD 
   
@@ -178,9 +185,7 @@ color: #ffffff;
 .bold_option_value_price:hover {
   color: #fff; }
 
-.bold_option_value_swatch {
-  width: 70px !important;
-  height: 70px !important; }
+
 
 .bold_swatch_selected.bold_option_value_element {
   border: 3px solid #e14984 !important; }
