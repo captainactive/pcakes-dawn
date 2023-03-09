@@ -230,7 +230,7 @@ color: #ffffff;
 }
 
 /*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
-.bold_option_radio .bold_option_value label {
+.bold_option_radio .bold_option_value label, .bold_option_element input {
   border: 1px solid #eaeaea;
   margin: 2px 2px;
   width: 100%;
