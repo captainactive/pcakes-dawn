@@ -30,7 +30,6 @@
  background-color: #e14984;
 }
 
-
 .bold_option_textbox .bold_option_element input, .bold_option_dropdown .bold_option_element select, .bold_option_uploadfile input, .selector-wrapper select, .bold_option_element textarea, .select__select {
   width: 100%;
   border: 1px solid #eaeaea;
@@ -41,9 +40,11 @@
 .bold_option_element select, .bold_option_value, .bold_option_element select option, .select__select {
 color: #424242;  
 }
+
 .bold_option_value_title:hover,.bold_option_value:hover, .bold_option_element select:hover, .select__select:hover {
 color: #ffffff;  
 }
+
 .bold_option_element select option, .select__select option {
   background-color: whitesmoke;
   color: #424242; 
@@ -69,12 +70,9 @@ color: #ffffff;
   background-color: whitesmoke; 
 }
 
-
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
   color:#e14984;
-
 }
-
 
 .bold_option_value label .bold_option_value_price {
   color: #8a54a8;
@@ -113,15 +111,8 @@ border-radius: 4px;
 border-radius: 4px;
 }
 
-
-
-
-
-
 .bold_option_element, .bold_option_value_title {
-  font-weight: normal !important; }
-
-
+  font-weight: normal; }
 
 .bold_option_value_swatch {
   width: 70px;
