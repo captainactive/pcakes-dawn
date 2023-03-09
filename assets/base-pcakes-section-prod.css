@@ -339,15 +339,21 @@ border-radius: 4px;
   
 }
 
-
-
-
-
 .bottom-line-items-container-desktop .bottom-line-items-wrapper {
   width: initial;
   position: initial;
   transform: none;
 }
+
+.bottom-line-items-container-desktop .bottom-line-items-wrapper .bottom-line-items {
+  padding-inline-end: nonel
+}
+
+
+
+
+
+
 
 
 .picker__list,.picker__holder,.picker__frame,.picker__wrap,.picker__box {
