@@ -279,7 +279,9 @@ border-radius: 4px;
   font-size: 26px;
 }
 .alert-bar-pink p {
-  padding: 5px;
+  margin: 5px;
+  border-bottom: 1px solid #ffffff;
+  
 }
 
 
