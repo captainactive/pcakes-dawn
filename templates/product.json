@@ -366,6 +366,7 @@
     },
     "9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9": {
       "type": "multirow",
+      "disabled": true,
       "blocks": {
         "template--16655251996914__9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9-167840439498bfcf1c-0": {
           "type": "row",
