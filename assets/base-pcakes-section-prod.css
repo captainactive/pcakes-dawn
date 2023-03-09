@@ -243,6 +243,7 @@ color: #ffffff;
 .bold_option_element input {
   margin: 2px 2px;
   padding: 10px 18px;
+  font-size: 19px;
 }
 
 .bold_option_title, .selector-wrapper label, .option-label, .flavorlist {
