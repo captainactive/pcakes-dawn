@@ -1,7 +1,6 @@
 
 
-
-/*   BOLD PRODUCT OPTIONS NEW  */
+/* SHOPIFY  */
 
 .product-form__input .select, .select__select, .product-form__input {
   width: 100%;
@@ -11,6 +10,14 @@
   font-size:19px;
   color: #e14984;
 }
+
+.product-form__input product-form__quantity {
+  padding-bottom: 30px;
+}
+
+
+
+/*   BOLD PRODUCT OPTIONS NEW  */
 
 .bold_option_title {
     font-family: var(--font-body-family)!important;
