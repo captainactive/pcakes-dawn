@@ -28,7 +28,8 @@
   color: #424242;
 }
 #shopify-installments, .shopify-installments__content {
-  color: rgba(var(--color-foreground), 0.85);
+  color: #e14984;
+ /* color: rgba(var(--color-foreground), 0.85); */
 }
 
 
