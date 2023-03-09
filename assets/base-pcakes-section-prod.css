@@ -91,6 +91,8 @@ font-size: 100%!important;
 .accessory-variant-select {
   padding: 10px;
   font-size: 18px;
+  background-color: whitesmoke;
+  color: var(--pcakes-text);
 }
 .accessory-variant-select option {
   color: var(--pcakes-text);
