@@ -68,6 +68,18 @@ color: #ffffff;
 
 
 
+
+.bold_option_value_price {
+  padding: 0 0 0 20px;
+  color: #8a54a8;
+  font-weight: bold !important;
+  font-size: 100% !important; }
+
+.bold_option_value_price:hover {
+  color: #fff; }
+
+
+
 /* ERROR MESSAGE  */
 .bold_option_error .bold_option_title, .bold_option_error .bold_help_text {
    color: red;
@@ -195,14 +207,7 @@ border-radius: 4px;
 .bold_option_element select, .bold_option_element input {
   margin: 10px 0 0 0; }
 
-.bold_option_value_price {
-  padding: 0 0 0 20px;
-  color: #8a54a8;
-  font-weight: bold !important;
-  font-size: 100% !important; }
 
-.bold_option_value_price:hover {
-  color: #fff; }
 
 
 
