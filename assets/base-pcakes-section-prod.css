@@ -36,7 +36,8 @@
   padding: 6px 8px;
   display: block;
   font-size: 19px;
-  color: rgba(var(--color-foreground),.75);
+  color: #8a54a8;
+  /*color: rgba(var(--color-foreground),.75);*/
 }
 
 /*THIS IS HOW TO MAKE THE RADIO BUTTON SELECTABLE */
