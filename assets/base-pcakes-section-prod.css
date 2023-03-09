@@ -330,7 +330,7 @@ border-radius: 4px;
 }
 
 
-.yotpo-nav-content, .yotpo-reviews-filters {
+.yotpo-nav-content, .yotpo-reviews-filters, .filters-container {
   display: grid;
 }
 
