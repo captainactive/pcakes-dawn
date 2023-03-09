@@ -43,7 +43,7 @@
                     </ul>
                   {%- endif -%}
                 </div>
-<div id="storePickupApp"></div>
+
                 <small class="tax-note caption-large rte">
                   {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                     {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
@@ -57,6 +57,7 @@
                 </small>
               </div>
             {%- else -%}
+            <div id="storePickupApp"></div>
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
