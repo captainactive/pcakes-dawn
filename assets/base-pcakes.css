@@ -375,13 +375,13 @@ display: none;
 quantity::before {
   box-shadow: none;
 }
-.quantity {
+.quantity, .quantity__button {
   color: #8a54a8;
-  background-color: #eadff2;
+  background-color: #f4f0f7;
 }
 .quantity:after {
   box-shadow: none;
-  border: 1px solid #8a54a8;
+  border: 2px solid #8a54a8;
 }
 
 
