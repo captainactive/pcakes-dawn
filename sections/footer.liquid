@@ -72,9 +72,9 @@
                 {%- endif -%}
 
                 {%- case block.type -%}
-                  {%- when 'html' -%}
+                  {%- when 'liquid' -%}
                   <div class="footer-block__details-content rte">
-                    {{ block.settings.section_html }}
+                    {{ block.settings.section_liquid }}
                   </div>
                   {%- when '@app' -%}
                     {% render block %}
@@ -494,10 +494,10 @@
       "name": "HTML",
       "settings": [
         {
-          "type": "html",
+          "type": "liquid",
           "id": "section_html",
           "default": "your code here",
-          "label": "HTML",
+          "label": "Liquid",
           "info": "Insert custom HTML"
         }
       ]
