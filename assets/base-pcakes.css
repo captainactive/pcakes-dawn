@@ -375,6 +375,10 @@ display: none;
 quantity::before {
   box-shadow: none;
 }
+.quantity: {
+  color: #8a54a8;
+  background-color: #eadff2;
+}
 .quantity:after {
   box-shadow: none;
   border: 1px solid #8a54a8;
