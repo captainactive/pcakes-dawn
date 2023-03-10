@@ -375,6 +375,9 @@ display: none;
 quantity::before {
   box-shadow: none;
 }
+.quantity:after  
+  box-shadow: none;
+}
 
 
 /* ABOUT  PAGE  */
