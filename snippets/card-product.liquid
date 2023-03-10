@@ -175,12 +175,12 @@
             {%- endif -%}
 
             <!-- REG - DESCRIP --> 
-        {{product.metafields.pcakes.prodquickdescrip}}
+     
 
-  {{ card_product.metafields.pcakes.prodquickdescrip }}
+            {%- if card_product.metafields.pcakes.prodquickdescrip -%}
               <span class="visually-hidden">Description</span>
-              <div class="caption-with-letter-spacing light">{{product.metafields.pcakes.prodquickdescrip}} XXX</div>
-           
+              <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
+             {%- endif -%}
   
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
