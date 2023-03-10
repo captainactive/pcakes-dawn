@@ -375,7 +375,7 @@ display: none;
 quantity::before {
   box-shadow: none;
 }
-.quantity:after  
+.quantity::after  
   box-shadow: none;
 }
 
