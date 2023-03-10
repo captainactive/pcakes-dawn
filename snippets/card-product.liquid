@@ -56,6 +56,8 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
+
+         <!-- SNIP/CARD-PRODUCT - FEATURED MEDIA -->
           <div class="card__media">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
@@ -104,6 +106,8 @@
             </div>
           </div>
         {%- endif -%}
+
+  <!-- SNIP/CARD-PRODUCT - CARD CONTENT-->
         <div class="card__content">
           <div class="card__information">
             <h3
