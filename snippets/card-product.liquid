@@ -168,8 +168,9 @@
             {% endif %}
           >
 
-             {{ card_product.url }}
-            <a
+             
+            <a 
+              href="{{ card_product.url }}" 
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
