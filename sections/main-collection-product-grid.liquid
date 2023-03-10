@@ -165,6 +165,8 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+
+              <!--SECTION/MAIN-COLLECTION-PRODUCT-GRID  - RENDER card-product -->
                 <li class="grid__item">
                   {% render 'card-product',
                     card_product: product,
