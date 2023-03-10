@@ -70,20 +70,6 @@
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         },
-        "b2bc1e89-494a-4a87-9202-44cf50d9e63e": {
-          "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
-          "settings": {
-            "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
-            "custom_liquid": ""
-          }
-        },
-        "d161e905-11ce-4306-b33d-53caf68d7b44": {
-          "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
-          "settings": {
-            "custom_html": "REVIEWS",
-            "custom_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
-          }
-        },
         "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
           "type": "liquid",
           "settings": {
@@ -105,8 +91,6 @@
         "footer-0",
         "footer-1",
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988",
-        "b2bc1e89-494a-4a87-9202-44cf50d9e63e",
-        "d161e905-11ce-4306-b33d-53caf68d7b44",
         "7c512f14-f51c-4d04-9a61-72f8383f28f1",
         "c8f3ed7b-dcaa-402f-a62a-732b1b69ee58"
       ],
