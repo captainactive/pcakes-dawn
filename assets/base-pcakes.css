@@ -375,7 +375,7 @@ display: none;
 quantity::before {
   box-shadow: none;
 }
-.quantity: {
+.quantity {
   color: #8a54a8;
   background-color: #eadff2;
 }
