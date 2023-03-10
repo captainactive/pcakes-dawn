@@ -158,11 +158,60 @@
     
 
 <div class="itemgrid3"> 
+    <!-- REG - DESCRIP --> 
+    {%- if card_product.metafields.pcakes.prodquickdescrip -%}
+    <span class="visually-hidden">Description</span>
+    <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
+
+    {%- else -%}
+    <div class="caption-with-letter-spacing light">&nbsp;</div>
+    {%- endif -%}
+</div>
+
+<div class="itemgrid4"> 
+    <!-- YOTPO REVIEWS-->
+    <div class="pcakes-yotpo-collection">
+        <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
+    </div>
+</div>
+
+<div class="itemgrid5"> 
+  
+<!-- STARTING PRICE -->  
+    {%  if card_product.tags contains "candles" %} 
+            <div>&nbsp;</div>
+    {% else %}
+       {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+            <div class="tinyprice">Starting at</div>
+  
+        {% elsif card_product.tags contains "customize" %}
+        <!-- mini cupcake, split dozen -->
+            <div>&nbsp;</div>
+        {% else %}
+        {% endif %}
+    {% endif %}
+
+</div>
+
+<div class="itemgrid6"> 
+    {% render 'price', product: card_product, price_class: '' %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
    <!-- SNIP/CARD-PRODUCT - CARD CONTENT ROUND 2 -->
       <!--div class="card__content"-->
         <div class="card__information">
   
-         <!-- REG - TITLE --> 
+         <!-- REG - TITLE 
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -179,7 +228,7 @@
             >
               {{ card_product.title | escape }}
             </a>
-          </h3>
+          </h3>--> 
           <!-- END REG - TITLE --> 
 
   
@@ -191,14 +240,7 @@
 
 
   
-            <!-- REG - DESCRIP --> 
-            {%- if card_product.metafields.pcakes.prodquickdescrip -%}
-              <span class="visually-hidden">Description</span>
-              <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
-              
-              {%- else -%}
-              <div class="caption-with-letter-spacing light">&nbsp;</div>
-              {%- endif -%}
+            
 
 
   
@@ -245,36 +287,17 @@
             {%- endif -%}
          {% endcomment %}
 
-           <!-- YOTPO REVIEWS-->
-            <div class="pcakes-yotpo-collection">
-              <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
-            </div>
+           
 
 
 
-  
-<!-- STARTING PRICE -->
-<div class="itemgrid4">    
-  {%  if card_product.tags contains "candles" %} 
-  		<div>&nbsp;</div>
-  {% else %}
-     {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
-          <div class="tinyprice">Starting at</div>
-
-      {% elsif card_product.tags contains "customize" %}
-      <!-- mini cupcake, split dozen -->
-  		<div>&nbsp;</div>
-      {% else %}
-      {% endif %}
-  {% endif %}
- </div> 
 
 
 
 
 
   
-            {% render 'price', product: card_product, price_class: '' %}
+           
           </div>
         </div>
 
