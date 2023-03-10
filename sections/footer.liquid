@@ -72,6 +72,10 @@
                 {%- endif -%}
 
                 {%- case block.type -%}
+                  {%- when 'html' -%}
+                  <div class="footer-block__details-content rte">
+                    {{ block.settings.section_html }}
+                  </div>
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
@@ -484,7 +488,21 @@
           "default": "center"
         }
       ]
+    },
+    {
+      "type": "html",
+      "name": "HTML",
+      "settings": [
+        {
+          "type": "html",
+          "id": "section_html",
+          "default": "your code here",
+          "label": "HTML",
+          "info": "Insert custom HTML"
+        }
+      ]
     }
+
   ],
   "settings": [
     {
