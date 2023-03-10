@@ -87,6 +87,7 @@
         "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
           "type": "liquid",
           "settings": {
+            "heading": "Reviews",
             "section_liquid": "your code here"
           }
         }
