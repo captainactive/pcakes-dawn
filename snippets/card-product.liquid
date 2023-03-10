@@ -220,12 +220,16 @@
           <!-- QUICK ADD --> 
           <div class="quick-add no-js-hidden">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
+
+
+
+
           
             {%- if card_product.variants.size == 1 -%}
               <product-form>
                 {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
-                  <div>test</div>
+                  <div>test V1 </div>
                   <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                 {{ block.shopify_attributes }}
@@ -235,7 +239,7 @@
                 </label>
 
 
-                    <!-- BUTTON --> 
+                    <!-- QUANTITY --> 
                 <quantity-input class="quantity" style="margin-bottom: 10px;">
                   <button class="quantity__button no-js-hidden" name="minus" type="button">
                     <span class="visually-hidden">
@@ -259,8 +263,6 @@
                     {% render 'icon-plus' %}
                   </button>
                 </quantity-input>
-
-
                   
               </div>
                   <input
@@ -312,6 +314,7 @@
               
             {%- else -%}
 
+              <div>TEST V2 </div>
               <!-- QUICK ADD MODAL --> 
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button
