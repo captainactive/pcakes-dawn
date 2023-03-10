@@ -229,10 +229,25 @@
          {% endcomment %}
 
            <!-- YOTPO REVIEWS-->
+            <div class="pcakes-yotpo-collection">
               <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
+            </div>
 
+<!-- STARTING PRICE -->
+<div class="itemgrid4">    
+  {%  if product.tags contains "candles" %} 
+  		<div>&nbsp;</div>
+  {% else %}
+     {%  if product.variants.size > 1 or product.tags contains "Standard Cakes" or product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+          <div class="tinyprice">Starting at</div>
 
-
+      {% elsif product.tags contains "customize" %}
+      <!-- mini cupcake, split dozen -->
+  		<div>&nbsp;</div>
+      {% else %}
+      {% endif %}
+  {% endif %}
+ </div> 
   
             {% render 'price', product: card_product, price_class: '' %}
           </div>
