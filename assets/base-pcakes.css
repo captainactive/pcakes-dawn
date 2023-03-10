@@ -407,6 +407,10 @@ quantity::before {
   justify-items: center;
 }
 
+.card__content .bold_options {
+  display: none;
+}
+
 
 
 
