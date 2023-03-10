@@ -380,7 +380,7 @@ quantity::before {
   background-color: #f4f0f7;
   border: 2px solid #8a54a8;
 }
- .quantity__button {
+ .quantity__button, .quantity__input {
    color: #8a54a8;
  }
 .quantity:after {
