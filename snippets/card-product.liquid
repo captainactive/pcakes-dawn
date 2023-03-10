@@ -56,7 +56,6 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
       <div class="itemgrid1">
-        
       <div
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -114,8 +113,8 @@
           </div>
           <!-- END - SNIP/CARD-PRODUCT - FEATURED MEDIA -->
         {%- endif -%}
-
     </div>
+
   
   <!-- SNIP/CARD-PRODUCT - CARD CONTENT-->
         <div class="card__content">
@@ -153,14 +152,7 @@
             {%- endif -%}
  
           </div>
-        </div> <!-- END SNIP/CARD-PRODUCT - CARD CONTENT -->
-
-
-
-
-
-
-
+        </div>
       </div>
 
     
