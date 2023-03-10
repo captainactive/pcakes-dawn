@@ -270,14 +270,14 @@
 
 
          <!-- OLD LOGIC // if product.variants.size > 1 // <!-- HAS VARIANT -->
-   {% if product.type == "Cakes" or product.type == "Standard Cakes" or product.type == "options" or product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "customize" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Theme Cake"    %}
+   {% if card_product.type == "Cakes" or card_product.type == "Standard Cakes" or card_product.type == "options" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "customize" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"    %}
 
   <!-- CUSTOMIZE --> 
    <div style="height: 5px;">&nbsp;</div>
 
     <div class="pc-addtocart">
       <div class="linkbox2">
-          <a class="" href="{{ product.url | within: collection }}">
+          <a class="" href="{{ card_product.url | within: collection }}">
            CUSTOMIZE
           </a>
       </div>
