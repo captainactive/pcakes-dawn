@@ -235,13 +235,13 @@
 
 <!-- STARTING PRICE -->
 <div class="itemgrid4">    
-  {%  if product.tags contains "candles" %} 
+  {%  if card_product.tags contains "candles" %} 
   		<div>&nbsp;</div>
   {% else %}
-     {%  if product.variants.size > 1 or product.tags contains "Standard Cakes" or product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+     {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
           <div class="tinyprice">Starting at</div>
 
-      {% elsif product.tags contains "customize" %}
+      {% elsif card_product.tags contains "customize" %}
       <!-- mini cupcake, split dozen -->
   		<div>&nbsp;</div>
       {% else %}
