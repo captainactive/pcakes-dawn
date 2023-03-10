@@ -83,6 +83,12 @@
             "custom_html": "REVIEWS",
             "custom_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
+        },
+        "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
+          "type": "liquid",
+          "settings": {
+            "section_liquid": "your code here"
+          }
         }
       },
       "block_order": [
@@ -92,7 +98,8 @@
         "footer-1",
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988",
         "b2bc1e89-494a-4a87-9202-44cf50d9e63e",
-        "d161e905-11ce-4306-b33d-53caf68d7b44"
+        "d161e905-11ce-4306-b33d-53caf68d7b44",
+        "7c512f14-f51c-4d04-9a61-72f8383f28f1"
       ],
       "settings": {
         "color_scheme": "accent-2",
