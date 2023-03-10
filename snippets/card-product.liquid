@@ -267,7 +267,29 @@
         </div>
 
 
-<product-form>
+
+
+         <!-- OLD LOGIC // if product.variants.size > 1 // <!-- HAS VARIANT -->
+   {% if product.type == "Cakes" or product.type == "Standard Cakes" or product.type == "options" or product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "customize" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Theme Cake"    %}
+
+  <!-- CUSTOMIZE --> 
+   <div style="height: 5px;">&nbsp;</div>
+
+    <div class="pc-addtocart">
+      <div class="linkbox2">
+          <a class="" href="{{ product.url | within: collection }}">
+           CUSTOMIZE
+          </a>
+      </div>
+    </div>
+
+   {% endif %}
+
+  
+
+  
+
+              <product-form>
                 {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
                   <div>test AAA1 </div>
@@ -352,6 +374,15 @@
               </product-form>
 
 
+
+
+
+
+
+
+
+
+  
 
   
   
