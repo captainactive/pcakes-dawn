@@ -72,6 +72,7 @@
         },
         "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "heading": "Reviews",
             "section_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
