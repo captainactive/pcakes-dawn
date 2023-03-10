@@ -95,7 +95,7 @@
           "type": "liquid",
           "settings": {
             "heading": "Support",
-            "section_liquid": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>"
+            "section_liquid": "<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>"
           }
         }
       },
