@@ -47,16 +47,7 @@
         
         <div class="itemgrid1 product-card-wrapper">
 
-               <!-- customize the cake -->
-                <div class="img-banner-top"> 
-                    {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" %}
-                        <div class="imgbanner">
-                            <span>Customize this Cake</span> 
-                        </div>
-                    {% endif %}
-                </div>
-
-
+              
             
             <div
             class="
@@ -137,24 +128,19 @@
         <div class="img-banner-btm"> 
 
             
-                {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" %}
+                {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" or card_product.tags contains "3 Days" or card_product.tags contains "5 Days" %}
                     <div class="imgbanner">
-                        <span>Customize this Cake</span> 
+
+                        {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake"  %}
+                            <span>Customize this Cake</span> 
+                        {% endif %}
+                        {%  if card_product.tags contains "3 Days"   %} 
+                        <span>3 Day Lead Time</span>
+                        {% elsif card_product.tags contains "5 Days" %}
+                        <span>5 Day Lead Time</span>
+                        {% endif %}
                     </div>
                 {% endif %}
-            
-
-
-            {%  if card_product.tags contains "3 Days"   %} 
-            <div class="imgbanner">
-                <span>3 Day Lead Time</span>
-            </div>
-                {% elsif card_product.tags contains "5 Days" %}
-                            
-            <div class="imgbanner">
-                <span>5 Day Lead Time</span>
-            </div>
-            {% endif %}
 
         </div>
         
