@@ -179,17 +179,10 @@
 
             <!-- CUSTOMIZE --> 
                 
-                <div class="button">
+                <div class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     CUSTOMIZE
                 </div>
-                <div >
-                <div class="linkbox2">
-                    <a class="" href="{{ card_product.url | within: collection }}">
-                        CUSTOMIZE
-                    </a>
-                </div>
-                </div>
-            
+                            
 
                 {% elsif product.tags contains "candles" or product.tags contains "variants" %}
 
