@@ -47,6 +47,7 @@
           {% if extend_height %} card--extend-height{% endif %}
           {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
           {% if horizontal_class %} card--horizontal{% endif %}
+          pcakes-grid
         "
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
