@@ -159,6 +159,7 @@ a:-webkit-any-link:hover {
 .yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
   display: grid;
     grid-template-rows: 1fr 1fr;
+  text-align: center;
 
 }
 
