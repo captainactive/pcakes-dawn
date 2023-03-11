@@ -173,3 +173,8 @@ a:-webkit-any-link:hover {
 }
 
 
+/*   HOME PAGE SLIDER  */
+  .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {
+    width: 100%; 
+  }
+
