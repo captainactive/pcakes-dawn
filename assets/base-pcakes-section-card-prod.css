@@ -77,22 +77,15 @@
   width: 100%;
   padding: 7px 5px;
   text-align: center;
-
+  border-radius: 4px;
 }
 
+.imgbanner p{
+  padding: 2px 6px;
+}
 .imgbanner span {
   color: white;
 }
-
-.img-banner-top .imgbanner  {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-.img-banner-btm .imgbanner  {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
 
 
 
