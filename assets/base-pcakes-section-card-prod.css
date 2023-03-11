@@ -1,6 +1,29 @@
 /* CARD-PRODUCT CSS  */
 
 
+.pcakes-grid-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+@media (max-width: 950px) {
+.pcakes-grid-main  {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.pcakes-grid-item {
+    display: grid;
+
+}
+
+
+
+
+
 .pcakes-card-grid {
   display: grid;
   grid-row-gap: 0px;
