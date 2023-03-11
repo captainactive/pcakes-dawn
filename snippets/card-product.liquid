@@ -18,11 +18,9 @@
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
-
-
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {% endcomment %}
 
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -38,24 +36,11 @@
   -%}
 
    <!-- BEGIN : SNIP/CARD-PRODUCT -->
-  <div class="card-wrapper product-card-wrapper underline-links-hover ">
 
-      <div
-        class="
-          card
-          card--{{ settings.card_style }}
-          {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
-          {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-          {% if extend_height %} card--extend-height{% endif %}
-          {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
-          {% if horizontal_class %} card--horizontal{% endif %}
-          pcakes-grid
-        "
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-      >
-      
-    
-      <div class="pcakes-card-grid">
+   <a href="{{ card_product.url}}">
+
+
+    <div class="pcakes-card-grid">
         
         <div class="itemgrid1">
             <div
@@ -520,6 +505,34 @@
           {%- endif -%}
         </div>
       </div>
+
+
+
+
+   </a>
+
+
+
+
+
+  <div class="card-wrapper product-card-wrapper underline-links-hover ">
+
+      <div
+        class="
+          card
+          card--{{ settings.card_style }}
+          {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
+          {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
+          {% if extend_height %} card--extend-height{% endif %}
+          {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
+          {% if horizontal_class %} card--horizontal{% endif %}
+          pcakes-grid
+        "
+        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+      >
+      
+    
+
     </div>
   </div>
 {%- else -%}
