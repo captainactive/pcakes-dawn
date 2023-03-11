@@ -10,14 +10,14 @@
   grid-column-gap: 20px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1150px) {
 .pcakes-grid-main  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 7900px) {
 .pcakes-grid-main  {
     display: grid;
     grid-template-columns: 1fr 1fr;
