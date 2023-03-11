@@ -84,13 +84,11 @@ font-family:var(--font-heading-family);
   text-align: center;
 }
 
-.itemgrid3 {
-  font-size: 90%;
-  line-height: 80%;
-
-}
 .pcakes-metadescrip {
-  padding:8px 0; 
+  padding: 10px 0; 
+  opacity: 85%
+    font-size: 90%;
+  line-height: 90%;
 }
 
   .bold_options {
