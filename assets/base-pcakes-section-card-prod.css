@@ -1,350 +1,101 @@
-{% comment %}
-  Renders a product card
+/* CARD-PRODUCT CSS  */
 
-  Accepts:
-  - card_product: {Object} Product Liquid object (optional)
-  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
-  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
-  - show_vendor: {Boolean} Show the product vendor. Default: false
-  - show_rating: {Boolean} Show the product rating. Default: false
-  - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
-  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
-  - show_quick_add: {Boolean} Show the quick add button.
-  - section_id: {String} The ID of the section that contains this card.
-  - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false
 
-// Add on for individual items from this place
-// https://community.shopify.com/c/shopify-design/how-to-make-a-quantity-selector-next-to-quick-add-on-the-product/td-p/1874259
+.pcakes-grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+  grid-column-gap: 20px;
+}
 
-  Usage:
-  {% render 'card-product', show_vendor: section.settings.show_vendor %}
-{% endcomment %}
+@media (max-width: 950px) {
+.pcakes-grid-main  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
 
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
-{%- if card_product and card_product != empty -%}
-  {%- liquid
-    assign ratio = 1
-    if card_product.featured_media and media_aspect_ratio == 'portrait'
-      assign ratio = 0.8
-    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
-      assign ratio = card_product.featured_media.aspect_ratio
-    endif
-    if ratio == 0 or ratio == nil
-      assign ratio = 1
-    endif
-  -%}
+.pcakes-grid-item {
+    display: grid;
 
-   <!-- BEGIN : SNIP/CARD-PRODUCT -->
+}
 
+
+
+
+
+.pcakes-card-grid {
+  display: grid;
+  grid-row-gap: 2px;
+  grid-column-gap: 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 30px 30px 30px auto;
+  padding-bottom: 30px; 
+  /* border: 1px solid limegreen; */
+}
+
+.pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid15, .itemgrid6, .itemgrid7, .itemgrid8 {
+  display: grid;
+  /* border: 1px solid dodgerblue; */
+}
+.itemgrid1 {
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  /*border: 1px solid limegreen;*/
+}
+
+.pcakes-button {
+  width: 100%;
+}
+
+
+
+.itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6 {
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+  .bold_options {
+    display: none;
+  }
+
+
+.img-banner-top, .img-banner-btm {
   
+}
+          
+.imgbanner {
+  background-color: #e14984;
+  width: 100%;
+  padding: 7px 5px;
+  text-align: center;
 
+}
 
+.imgbanner span {
+  color: white;
+}
 
- <div class="card-wrapper underline-links-hover pcakes-card-grid"> 
-
-      
-        
-        <div class="itemgrid1 product-card-wrapper">
-
-               <!-- customize the cake -->
-                <div class="img-banner-top"> 
-                    {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" %}
-                        <div class="imgbanner">
-                            <span>Customize this Cake</span> 
-                        </div>
-                    {% endif %}
-                </div>
-
-
-            
-            <div
-            class="
-                card
-                card--{{ settings.card_style }}
-                {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
-                {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-                {% if extend_height %} card--extend-height{% endif %}
-                {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
-                {% if horizontal_class %} card--horizontal{% endif %}
-                pcakes-grid
-            "
-            >
-            <!-- 1- image -->
-            <a href="{{ card_product.url}}">
-            <div
-                class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
-                style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-            >
-                {%- if card_product.featured_media -%}
-
-                <!-- SNIP/CARD-PRODUCT - FEATURED MEDIA -->
-                <div class="card__media">
-                    <div class="media media--transparent media--hover-effect">
-                    {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-                    <img
-                        srcset="
-                        {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-                        {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-                        {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-                        {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-                        {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-                        {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-                        {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
-                        "
-                        src="{{ card_product.featured_media | image_url: width: 533 }}"
-                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                        alt="{{ card_product.featured_media.alt | escape }}"
-                        class="motion-reduce"
-                        {% unless lazy_load == false %}
-                        loading="lazy"
-                        {% endunless %}
-                        width="{{ card_product.featured_media.width }}"
-                        height="{{ card_product.featured_media.height }}"
-                    >
-                    {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-
-                    {%- if card_product.media[1] != nil and show_secondary_image -%}
-                        <img
-                        srcset="
-                            {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
-                            {%- if card_product.media[1].width >= 360 -%}{{ card_product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
-                            {%- if card_product.media[1].width >= 533 -%}{{ card_product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
-                            {%- if card_product.media[1].width >= 720 -%}{{ card_product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
-                            {%- if card_product.media[1].width >= 940 -%}{{ card_product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
-                            {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
-                            {{ card_product.media[1] | image_url }} {{ card_product.media[1].width }}w
-                        "
-                        src="{{ card_product.media[1] | image_url: width: 533 }}"
-                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                        alt=""
-                        class="motion-reduce"
-                        loading="lazy"
-                        width="{{ card_product.media[1].width }}"
-                        height="{{ card_product.media[1].height }}"
-                        >
-                    {%- endif -%}
-                    </div>
-                
-                </div>
-                <!-- END - SNIP/CARD-PRODUCT - FEATURED MEDIA -->
-                {%- endif -%}
-            </div>
-            </a>
-        </div>
-
-
-        <div class="img-banner-btm"> 
-
-            
-                {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" %}
-                    <div class="imgbanner">
-                        <span>Customize this Cake</span> 
-                    </div>
-                {% endif %}
-            
-
-
-            {%  if card_product.tags contains "3 Days"   %} 
-            <div class="imgbanner">
-                <span>3 Day Lead Time</span>
-            </div>
-                {% elsif card_product.tags contains "5 Days" %}
-                            
-            <div class="imgbanner">
-                <span>5 Day Lead Time</span>
-            </div>
-            {% endif %}
-
-        </div>
-        
-
-    </div>
-
-   
-
-
-<!-- 2 REG - DESCRIP --> 
-        <div class="itemgrid3"> 
-            
-            {%- if card_product.metafields.pcakes.prodquickdescrip -%}
-            <span class="visually-hidden">Description</span>
-            <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
-
-            {%- else -%}
-            <div class="caption-with-letter-spacing light">&nbsp;</div>
-            {%- endif -%}
-        </div>
-
-
-
-
-<!-- YOTPO REVIEWS-->
-        <div class="itemgrid4"> 
-            
-            <div class="pcakes-yotpo-collection">
-                <div class="yotpo bottomLine" data-product-id="{{ card_product.id }}"></div>
-            </div>
-        </div>
-
-        <!-- STARTING PRICE -->  
-        <div class="itemgrid5"> 
-        
-        
-            {%  if card_product.tags contains "candles" %} 
-                    <div>&nbsp;</div>
-            {% else %}
-                {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
-                    <div class="tinyprice">Starting at</div>
-        
-                {% elsif card_product.tags contains "customize" %}
-                <!-- mini cupcake, split dozen -->
-                    <div>&nbsp;</div>
-                {% else %}
-                {% endif %}
-            {% endif %}
-
-        </div>
-        <!-- price -->
-        <div class="itemgrid6"> 
-            {{ card_product.price | money }}
-
-        </div>
-
-        <div class="itemgrid7"> 
-
-
-                        
-            {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake"    %}
-
-            <!-- CUSTOMIZE --> 
-                
-                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
-                    CUSTOMIZE
-                </a>
-                            
-
-                {% elsif product.tags contains "candles" or product.tags contains "variants" %}
-
-                <!-- EXPLORE -->  
-                  <div style="height: 5px;">&nbsp;</div>
-                  <div class="pc-addtocart">  
-                    <div class="linkbox2">
-                        <a class="" href="{{ product.url | within: collection }}">
-                         EXPLORE
-                       </a>
-                    </div>
-                  </div>
-
-                  {% elsif product.tags contains "variant-diff-prices" %}
-
-                  <!-- EXPLORE -->  
-                    <div style="height: 5px;">&nbsp;</div>
-                 
-                    <div class="pc-addtocart">  
-                      <div class="linkbox2">
-                          <a class="" href="{{ product.url | within: collection }}">
-                           CHOOSE SIZE
-                         </a>
-                      </div>
-                    </div> 
+.img-banner-top .imgbanner  {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.img-banner-btm .imgbanner  {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 
 
 
 
 
-                {% else %} <!-- HAS NO VARIANT -->
-
-                <product-form>
-                    {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-
-                    <div>test AAA1 </div>
-                    <div
-                    class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
-                    {{ block.shopify_attributes }}
-                >
-                    <label class="form__label visually-hidden" for="Quantity-{{ section.id }}">
-                    {{ 'products.product.quantity.label' | t }}
-                    </label>
 
 
-                        <!-- QUANTITY --> 
-                    <quantity-input class="quantity" style="margin-bottom: 10px;">
-                    <button class="quantity__button no-js-hidden" name="minus" type="button">
-                        <span class="visually-hidden">
-                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                        </span>
-                        {% render 'icon-minus' %}
-                    </button>
-                    <input
-                        class="quantity__input"
-                        type="number"
-                        name="quantity"
-                        id="Quantity-{{ section.id }}"
-                        min="1"
-                        value="1"
-                        form="{{ product_form_id }}"
-                    >
-                    <button class="quantity__button no-js-hidden" name="plus" type="button">
-                        <span class="visually-hidden">
-                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-                        </span>
-                        {% render 'icon-plus' %}
-                    </button>
-                    </quantity-input>
-                    
-                </div>
-                    <input
-                        type="hidden"
-                        name="id"
-                        value="{{ card_product.selected_or_first_available_variant.id }}"
-                        disabled
-                    >
-                    <button
-                        id="{{ product_form_id }}-submit"
-                        type="submit"
-                        name="add"
-                        class="quick-add__submit button button--full-width button--secondary"
-                        aria-haspopup="dialog"
-                        aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
-                        aria-live="polite"
-                        data-sold-out-message="true"
-                        {% if card_product.selected_or_first_available_variant.available == false %}
-                        disabled
-                        {% endif %}
-                    >
-                        <span>
-                        {%- if card_product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                        {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                        {%- endif -%}
-                        </span>
-                        <span class="sold-out-message hidden">
-                        {{ 'products.product.sold_out' | t }}
-                        </span>
-                        <div class="loading-overlay__spinner hidden">
-                        <svg
-                            aria-hidden="true"
-                            focusable="false"
-                            role="presentation"
-                            class="spinner"
-                            viewBox="0 0 66 66"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                        </div>
-                    </button>
-                    {%- endform -%}
-                </product-form>
-
-                
-                {% endif %}
-        </div>
-
-        
-</div>
-  
-
-{%- endif -%}
