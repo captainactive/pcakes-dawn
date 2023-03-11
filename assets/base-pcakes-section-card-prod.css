@@ -151,16 +151,13 @@ a:-webkit-any-link:hover {
 
 
 /* YOTPO REVIEWS */
-.yotpo-bottomline {
 
-  grid-template-rows: 1fr 1fr;
-}
-
+@media (max-width: 500px) {
 .yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
   display: grid;
     grid-template-rows: 1fr 1fr;
   text-align: center;
-
+}
 }
 
 
