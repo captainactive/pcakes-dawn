@@ -271,6 +271,19 @@ display: none;
 
 
 
+/*   HOME PAGE SLIDER  */
+  .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {
+    width: 100%; 
+  }
+
+.slider--tablet.grid--peek .grid__item {
+  box-sizing:0 !important;
+}
+
+
+
+
+
 
 
 
