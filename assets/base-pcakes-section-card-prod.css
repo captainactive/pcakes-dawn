@@ -35,6 +35,8 @@
   grid-template-rows: auto 1fr auto 30px 30px 30px auto;
   padding-bottom: 30px; 
   /* border: 1px solid limegreen; */
+  text-decoration: none!important;
+  
 }
 
 .pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid15, .itemgrid6, .itemgrid7, .itemgrid8 {
