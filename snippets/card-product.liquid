@@ -43,24 +43,26 @@
 
  <div class="card-wrapper product-card-wrapper underline-links-hover pcakes-grid"> 
 
-      <div
-        class="
-          card
-          card--{{ settings.card_style }}
-          {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
-          {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-          {% if extend_height %} card--extend-height{% endif %}
-          {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
-          {% if horizontal_class %} card--horizontal{% endif %}
-          pcakes-grid
-        "
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-      >
       
     
       <div class="pcakes-card-grid">
         
         <div class="itemgrid1">
+
+
+            
+            <div
+            class="
+                card
+                card--{{ settings.card_style }}
+                {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
+                {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
+                {% if extend_height %} card--extend-height{% endif %}
+                {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
+                {% if horizontal_class %} card--horizontal{% endif %}
+                pcakes-grid
+            "
+            >
             <!-- 1- image -->
             <a href="{{ card_product.url}}">
             <div
@@ -123,6 +125,7 @@
             </div>
             </a>
         </div>
+    </div>
    
 
         <div class="itemgrid2"> 
