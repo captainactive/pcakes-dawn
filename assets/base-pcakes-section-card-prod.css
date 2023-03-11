@@ -32,18 +32,18 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 30px 30px 30px auto;
   padding-bottom: 30px; 
-  border: 1px solid limegreen;
+  /* border: 1px solid limegreen; */
 }
 
 .pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid15, .itemgrid6, .itemgrid7, .itemgrid8 {
   display: grid;
-  border: 1px solid dodgerblue;
+  /* border: 1px solid dodgerblue; */
 }
 .itemgrid1 {
   grid-row-gap: 5px;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  border: 1px solid limegreen;
+  /*border: 1px solid limegreen;*/
 }
 
 .pcakes-button {
@@ -75,7 +75,7 @@
   width: 100%;
   padding: 7px 5px;
   text-align: center;
-  border-radius: 4px;
+
 }
 
 .imgbanner span {
