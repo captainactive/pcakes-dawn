@@ -58,7 +58,7 @@ body,
 }
 
 .pcakes-grid {
-  display: grid;
+  display: grid!important;
 }
 
 /* PAGES  */
