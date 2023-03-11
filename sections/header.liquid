@@ -177,9 +177,9 @@
                                         </a>
                                       {%- else -%}
 
-                                            <div class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                            <!--div class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true"-->
                                              <a class="menu-drawer__menu-item link link--text list-menu__item href="{{ childlink.url }}"> {{ childlink.title | escape }} \\</a>
-                                            </div>
+                                <!--/div-->
 
                                         <ul class="menu-drawer__menu list-menu pcakes-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
