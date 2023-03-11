@@ -152,9 +152,14 @@ a:-webkit-any-link:hover {
 
 /* YOTPO REVIEWS */
 .yotpo-bottomline {
-  display: grid;
+
   grid-template-rows: 1fr 1fr;
 }
 
+.yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
+  display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
 
 
