@@ -73,6 +73,7 @@
 .itemgrid2 {
 font-family:var(--font-heading-family);
   font-size: 120%;
+  line-height: 90%;
 }
 .itemgrid7 {
   align-items: end;
@@ -83,8 +84,10 @@ font-family:var(--font-heading-family);
   text-align: center;
 }
 
-.itemgrid2 {
-  max-height: 75px;
+.itemgrid3 {
+  font-size: 90%;
+  line-height: 80%;
+}
 }
 
   .bold_options {
