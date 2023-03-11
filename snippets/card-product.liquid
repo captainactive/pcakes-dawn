@@ -124,9 +124,9 @@
             </a>
         </div>
     </div>
-   
+   <!-- pre order banner -->
     <div class="itemgrid2"> 
-        <!-- pre order banner -->
+        
         {%  if card_product.tags contains "3 Days"   %} 
         <div class="imgbanner btmbanner">
             3 Day Lead Time
@@ -140,9 +140,9 @@
     </div>
 
 
-
+<!-- 2 REG - DESCRIP --> 
         <div class="itemgrid3"> 
-            <!-- 2 REG - DESCRIP --> 
+            
             {%- if card_product.metafields.pcakes.prodquickdescrip -%}
             <span class="visually-hidden">Description</span>
             <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
@@ -155,17 +155,18 @@
 
 
 
-
+<!-- YOTPO REVIEWS-->
         <div class="itemgrid4"> 
-            <!-- YOTPO REVIEWS-->
+            
             <div class="pcakes-yotpo-collection">
-                <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
+                <div class="yotpo bottomLine" data-product-id="{{ card_product.id }}"></div>
             </div>
         </div>
 
+        <!-- STARTING PRICE -->  
         <div class="itemgrid5"> 
         
-        <!-- STARTING PRICE -->  
+        
             {%  if card_product.tags contains "candles" %} 
                     <div>&nbsp;</div>
             {% else %}
@@ -180,8 +181,9 @@
             {% endif %}
 
         </div>
-
+        <!-- price -->
         <div class="itemgrid6"> 
+            {{ card_product.pice }}
             {% render 'price', product: card_product, price_class: '' %}
         </div>
 
