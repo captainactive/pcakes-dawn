@@ -68,9 +68,6 @@
   }
 
 
-.img-banner-top, .img-banner-btm {
-  
-}
           
 .imgbanner {
   background-color: #e14984;
@@ -81,11 +78,10 @@
 }
 
 .imgbanner p{
-  padding: 2px 6px;
-}
-.imgbanner span {
+  margin: 2px 6px;
   color: white;
 }
+
 
 
 
