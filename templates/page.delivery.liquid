@@ -1,0 +1,136 @@
+
+
+
+
+<style type="text/css">
+  .zipjs {
+   display:inline-block;
+   text-align:center;
+    width: 95%;
+    text-align:center;
+}
+
+.zipjs input[type=number]::-webkit-inner-spin-button, 
+.zipjs input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 10px; 
+}
+
+  .zipjs input[type=number] { 
+  margin: 10px; 
+}
+  
+.zipjs input{
+/* add custom css here */
+  width: 100%;
+  border: 2px solid #e14984;
+  background-color: whitesmoke;
+  text-align:center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.zipjs input:focus {
+  border: 1px solid #e14984 !important; 
+}
+.zipjs div{
+/* add custom css here */
+}
+</style>
+
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+<div class="deliverypage">
+  
+<div>Anaheim</div>
+<div>Anaheim Hills</div>
+<div>Artesia</div>
+<div>Brea</div>
+<div>Buena Park</div>
+<div>Cerritos</div>
+<div>Costa Mesa</div>  
+<div>Cypress</div>
+<div>Fullerton</div>
+<div>Garden Grove</div>
+<div>Irvine</div>
+ <div>La Habra</div>
+<div>La Habra Heights</div>  
+<div>La Mirada</div>
+<div>La Palma</div>  
+<div>North Tustin</div>  
+<div>Orange</div> 
+<div>Placentia</div>
+<div>Santa Ana</div>
+<div>Stanton</div>
+<div>Tustin</div>
+<div>Villa Park</div>
+<div>Yorba Linda</div>
+  
+  
+<!--div>Anaheim</div>
+<div>Artesia</div>
+<div>Brea</div>
+<div>Buena Park</div>
+<div>Cerritos</div>
+<div>Cypress</div>
+<div>Fullerton</div>
+<div>Garden Grove</div>
+<div>La Habra</div>
+<div>La Habra Heights</div>
+<div>La Mirada</div>
+<div>La Palma</div>
+<div>Orange</div>
+<div>Placentia</div>
+<div>Rowland Heights</div>
+<div>Santa Ana</div>
+<div>Stanton</div>
+<div>Tustin</div>
+<div>Villa Park</div>
+<div>Westminster</div>
+<div>Whittier</div-->
+
+        </div>
+        <p>&nbsp;</p>
+<p style="text-align: left;">*Delivery availability is determined by zip code, not by city boundaries. Some parts of a city may be included, while other parts may not. Enter your zip code above to confirm availability. Must be placed online. </p>
+<p style="text-align: left;">*Due to COVID-19, we have adjusted our delivery area as of May 2020. Some zip codes previously available have been removed and others have been added.</p>
+
+        
+        
+        <!-- NEED TO ADJUST THE CODE-->
+        
+        
+        
+
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD THIS TO THE PAGE <div id="zipjs"></div>  -->
+
+
+
+
+<script type="text/javascript">
+"use strict";var zipjs=function(e,t,r){var n=!1;if(e&&t&&r||(n=!0,t||console.log("A dom element is required"),e||console.log("An array of allowed zip codes is required"),r||console.log("An array of responses is required")),Array.isArray(e)||(n=!0,console.log("List of allowed zip codes needs to be a numeric array")),Array.isArray(r)||(n=!0,console.log("Response must be an array [Success, Fail]")),!n){var o=e,i=document.createElement("input"),a=document.createElement("div");i.setAttribute("type","number"),i.setAttribute("title","Five digit zip code"),i.setAttribute("maxlength","5");var l=document.getElementById(t);l.classList.add("zipjs"),i.onkeyup=function(e){5==e.target.value.length?s(e.target.value)?(c(!0,a,r[0]),i.style.color="green"):(c(!1,a,r[1]),i.style.color="red"):e.target.value.length>5?e.target.value=e.target.value.slice(0,5):(a.innerText="",i.style.color="initial")},l.appendChild(i),l.appendChild(a);var s=function(e){return o.indexOf(parseInt(e))>-1},c=function(e,t,r){t.innerText=r,t.style.color=e?"green":"red"};return{checkZip:s}}};
+</script>
+  
+<script type="text/javascript">
+    var zipCodesAllowedOLD = [92801, 92805, 92831, 92832, 92833, 92835, 90620, 90621, 90631, 90638, 92802, 92806, 92821, 92840, 92865, 92870, 90603, 90604, 90605, 90623, 90630, 90680, 90701, 90703, 90715, 90716, 91748, 92655, 92683, 92703, 92706, 92807, 92841, 92843, 92844, 92845, 92861, 92866, 92867, 92868, 92886];
+    var zipCodesAllowed = [92801,92805,92802,92806,92804,92886,92807,90701,92821,90620,90621,90703,90630,92831,92833,92832,92835,92834,92840,92841,92845,90631,90638,90623,92865,92868,92867,92866,92869,92870,92707,90680,92861,92808,92602,92604,92606,92612,92614,92620,92603,92617,92618,92697,92780,92782,92705,92887,92626,92823];
+	  var zipCheck = new zipjs(zipCodesAllowed, "zipjs", ["Delivery is available!!", "Sorry, delivery is not available"]);
+</script>
+
+
+
+
