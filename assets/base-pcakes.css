@@ -277,7 +277,7 @@ display: none;
   }
 
 .slider--tablet.grid--peek .grid__item {
-  box-sizing:0 !important;
+  box-sizing:border-box !important;
 }
 
 
