@@ -207,7 +207,7 @@
         <div class="itemgrid6"> 
             {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
                
-            <span class="tinyprice pcakes-grid">Starting at</span > 
+            <span class="tinyprice pcakes-grid">Starting at &nbsp;</span > 
                 {% endif %}
                 <span>{{ card_product.price | money }}</span>
 
