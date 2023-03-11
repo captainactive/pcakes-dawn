@@ -87,7 +87,10 @@ font-family:var(--font-heading-family);
 .itemgrid3 {
   font-size: 90%;
   line-height: 80%;
+
 }
+.pcakes-metadescrip {
+  padding:8px 0; 
 }
 
   .bold_options {
