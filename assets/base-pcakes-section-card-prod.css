@@ -41,7 +41,7 @@
 
 .pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid15, .itemgrid6, .itemgrid7, .itemgrid8 {
   display: grid;
-
+}
   .bold_options {
     display: none;
   }
