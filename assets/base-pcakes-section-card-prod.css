@@ -90,6 +90,13 @@
   background-color: #d14a81;
 }
 
+a:-webkit-any-link {
+ text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+ text-decoration: none;
+}
 
   .underline-links-hover:hover a {
     text-decoration: none;
