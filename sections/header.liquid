@@ -159,14 +159,14 @@
                               {% render 'icon-caret' %}
                             </summary>
                             <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
-                              <div class="menu-drawer__inner-submenu">XXX
+                              <div class="menu-drawer__inner-submenu">
                                 <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                                   {% render 'icon-arrow' %}
                                   {{ link.title | escape }}
                                 </button>
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                   {%- for childlink in link.links -%}
-                                    <li>
+                                    <li>XXX
                                       {%- if childlink.title contains "|" -%} <!--PC ADD -->
                                       {%- elsif childlink.links == blank -%}
                                         <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
