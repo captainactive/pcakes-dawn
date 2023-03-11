@@ -30,7 +30,7 @@
   grid-row-gap: 0px;
   grid-column-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 30px auto 30px 30px 30px 1fr 1fr;
+  grid-template-rows: auto 30px auto 30px 30px 30px 1fr;
   padding-bottom: 30px; 
 }
 
