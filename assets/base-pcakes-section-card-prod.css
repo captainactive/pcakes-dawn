@@ -65,4 +65,9 @@
 .imgbanner {
   background-color: #e14984;
   width: 100%;
+  padding: 7px 5px;
+}
+
+.imgbanner details {
+  color: white;
 }
