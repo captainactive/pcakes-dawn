@@ -45,6 +45,13 @@
   
 }
 
+@media (max-width: 500px) {
+.pcakes-card-grid {
+  grid-template-rows: auto 1fr 1fr 40px 50px 130px;  
+}
+
+
+
 .pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6, .itemgrid7, .itemgrid8 {
   display: grid;
  /* border: 1px solid dodgerblue; */
