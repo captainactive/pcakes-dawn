@@ -70,6 +70,10 @@
   text-align: center;
 }
 
+.itemgrid2 {
+var(--font-heading-family);
+  font-size: 120%;
+}
 .itemgrid7 {
   align-items: end;
   text-align: center;
