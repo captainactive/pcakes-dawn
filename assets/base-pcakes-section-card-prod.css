@@ -73,7 +73,7 @@
 .itemgrid2 {
 font-family:var(--font-heading-family);
   font-size: 120%;
-  line-height: 90%;
+  line-height: 140%;
 }
 .itemgrid7 {
   align-items: end;
@@ -93,7 +93,7 @@ font-family:var(--font-heading-family);
   color: #8a54a8;
     opacity: 85%;
     font-size: 90%;
-  line-height: 90%;
+  line-height: 110%;
 }
   .bold_options {
     display: none;
