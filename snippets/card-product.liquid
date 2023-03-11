@@ -61,6 +61,7 @@
       <a class="pcakes-card-grid" href="{{ card_product.url}}">
         
         <div class="itemgrid1">
+            <!-- 1- image -->
             <div
                 class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
                 style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -123,7 +124,7 @@
    
 
         <div class="itemgrid2"> 
-            <!-- REG - DESCRIP --> 
+            <!-- 2 REG - DESCRIP --> 
             {%- if card_product.metafields.pcakes.prodquickdescrip -%}
             <span class="visually-hidden">Description</span>
             <div class="caption-with-letter-spacing light">{{ card_product.metafields.pcakes.prodquickdescrip }}</div>
@@ -135,6 +136,7 @@
 
 
         <div class="itemgrid3"> 
+            <!-- pre order banner -->
             {%  if product.tags contains "3 Days"   %} 
             <div class="imgbanner btmbanner" style="{{bannercolor}}">
                 3 Day Lead Time
@@ -308,6 +310,8 @@
                 
                 {% endif %}
         </div>
+
+        test
       </a>
 
 
