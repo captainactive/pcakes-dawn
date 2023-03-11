@@ -88,6 +88,7 @@
 
 .img-banner:hover {
   background-color: #d14a81;
+   border-radius: 4px;
 }
 
 a:-webkit-any-link {
