@@ -111,6 +111,9 @@ a:-webkit-any-link:hover {
     text-decoration: none;
   }
 
+.quick-add {
+  margin: 0; 
+}
 
 
 
