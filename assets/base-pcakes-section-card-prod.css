@@ -177,3 +177,7 @@ a:-webkit-any-link:hover {
     width: 100%; 
   }
 
+.slider--tablet.grid--peek .grid__item {
+  box-sizing:0;
+}
+
