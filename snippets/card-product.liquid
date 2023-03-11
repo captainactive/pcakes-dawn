@@ -222,32 +222,25 @@
                 </a>
                             
 
-                {% elsif product.tags contains "candles" or product.tags contains "variants" %}
+                {% elsif card_product.tags contains "candles" or card_product.tags contains "variants" %}
 
                 <!-- EXPLORE -->  
-                  <div style="height: 5px;">&nbsp;</div>
-                  <div class="pc-addtocart">  
-                    <div class="linkbox2">
-                        <a class="" href="{{ product.url | within: collection }}">
-                         EXPLORE
-                       </a>
-                    </div>
-                  </div>
+                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    EXPLORE 
+                </a>
 
-                  {% elsif product.tags contains "variant-diff-prices" %}
+                  {% elsif card_product.tags contains "variant-diff-prices" %}
 
-                  <!-- EXPLORE -->  
-                    <div style="height: 5px;">&nbsp;</div>
-                 
-                    <div class="pc-addtocart">  
-                      <div class="linkbox2">
-                          <a class="" href="{{ product.url | within: collection }}">
-                           CHOOSE SIZE
-                         </a>
-                      </div>
-                    </div> 
+                  <!-- CHOOSE -->  
+                  <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    CHOOSE SIZE
+                </a>
 
-
+                {% elsif card_product.available == false %}
+                    <!-- EXPLORE -->  
+                    <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                        EXPLORE
+                    </a>
 
 
 
