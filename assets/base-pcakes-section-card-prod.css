@@ -86,6 +86,9 @@
   text-decoration: none;
 }
 
+.img-banner:hover {
+  background-color: #d14a81;
+}
 
 
   .underline-links-hover:hover a {
