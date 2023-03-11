@@ -13,9 +13,17 @@
 @media (max-width: 950px) {
 .pcakes-grid-main  {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 750px) {
+.pcakes-grid-main  {
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 }
+
 
 
 .pcakes-grid-item {
