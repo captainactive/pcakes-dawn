@@ -27,7 +27,7 @@
 
 .pcakes-card-grid {
   display: grid;
-  grid-row-gap: 0px;
+  grid-row-gap: 40px;
   grid-column-gap: 40px;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr 30px 30px 30px auto;
