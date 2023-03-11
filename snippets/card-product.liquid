@@ -58,10 +58,11 @@
       >
       
     
-      <a class="pcakes-card-grid" href="{{ card_product.url}}">
+      <div class="pcakes-card-grid">
         
         <div class="itemgrid1">
             <!-- 1- image -->
+            <a class="pcakes-card-grid" href="{{ card_product.url}}">
             <div
                 class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
                 style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -120,6 +121,7 @@
                 <!-- END - SNIP/CARD-PRODUCT - FEATURED MEDIA -->
                 {%- endif -%}
             </div>
+            </a>
         </div>
    
 
@@ -311,8 +313,8 @@
                 {% endif %}
         </div>
 
-        test
-      </a>
+        
+      </div>
 
 
 
