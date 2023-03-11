@@ -178,7 +178,7 @@
             {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake"    %}
 
             <!-- CUSTOMIZE --> 
-                <div style="height: 5px;">&nbsp;</div>
+                
             
                 <div >
                 <div class="linkbox2">
@@ -189,8 +189,36 @@
                 </div>
             
 
+                {% elsif product.tags contains "candles" or product.tags contains "variants" %}
 
-                {% else %}
+                <!-- EXPLORE -->  
+                  <div style="height: 5px;">&nbsp;</div>
+                  <div class="pc-addtocart">  
+                    <div class="linkbox2">
+                        <a class="" href="{{ product.url | within: collection }}">
+                         EXPLORE
+                       </a>
+                    </div>
+                  </div>
+
+                  {% elsif product.tags contains "variant-diff-prices" %}
+
+                  <!-- EXPLORE -->  
+                    <div style="height: 5px;">&nbsp;</div>
+                 
+                    <div class="pc-addtocart">  
+                      <div class="linkbox2">
+                          <a class="" href="{{ product.url | within: collection }}">
+                           CHOOSE SIZE
+                         </a>
+                      </div>
+                    </div> 
+
+
+
+
+
+                {% else %} <!-- HAS NO VARIANT -->
 
                 <product-form>
                     {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
