@@ -176,7 +176,10 @@
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
-<ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+
+
+
+                                        <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
                                                   <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
@@ -186,8 +189,9 @@
                                               {%- endfor -%}
                                             </ul>
 
+                                        {% comment %}
 
-                                        
+                                        OG LAYOUT
                                         <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
                                           <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                             {{ childlink.title | escape }}
@@ -199,9 +203,18 @@
                                               {% render 'icon-arrow' %}
                                               {{ childlink.title | escape }}
                                             </button>
-                                            
+                                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                              {%- for grandchildlink in childlink.links -%}
+                                                <li>
+                                                  <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                    {{ grandchildlink.title | escape }}
+                                                  </a>
+                                                </li>
+                                              {%- endfor -%}
+                                            </ul>
                                           </div>
                                         </details>
+                                        {% endcomment %}
                                       {%- endif -%}
                                     </li>
                                   {%- endfor -%}                          
