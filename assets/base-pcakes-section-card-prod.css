@@ -17,7 +17,7 @@
 }
 }
 
-@media (max-width: 7900px) {
+@media (max-width: 790px) {
 .pcakes-grid-main  {
     display: grid;
     grid-template-columns: 1fr 1fr;
