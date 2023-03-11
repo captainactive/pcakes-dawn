@@ -186,26 +186,30 @@
         </div>
 
         <!-- STARTING PRICE -->  
-        <div class="itemgrid5"> 
+        <!--div class="itemgrid5"> 
         
         
             {%  if card_product.tags contains "candles" %} 
                     <div>&nbsp;</div>
             {% else %}
-                {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+                {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %}
                     <div class="tinyprice pcakes-grid">Starting at</div>
         
                 {% elsif card_product.tags contains "customize" %}
-                <!-- mini cupcake, split dozen -->
+                <!-- mini cupcake, split dozen >
                     <div>&nbsp;</div>
                 {% else %}
                 {% endif %}
             {% endif %}
 
-        </div>
+        </div-->
         <!-- price -->
         <div class="itemgrid6"> 
-            <span class="tinyprice pcakes-grid">Starting at</span > <span>{{ card_product.price | money }}</span>
+            {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+               
+            <span class="tinyprice pcakes-grid">Starting at</span > 
+                {% endif %}
+                <span>{{ card_product.price | money }}</span>
 
         </div>
 

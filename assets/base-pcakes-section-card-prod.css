@@ -37,7 +37,7 @@
   grid-row-gap: 2px;
   grid-column-gap: 0px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto 30px 30px 50px 130px;
+  grid-template-rows: auto 1fr auto 30px 50px 130px;
   padding-bottom: 30px; 
   /* border: 1px solid limegreen; */
   text-decoration: none!important;
