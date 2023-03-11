@@ -253,35 +253,6 @@
                 {% else %} <!-- HAS NO VARIANT -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <product-form>
 
 
@@ -300,8 +271,7 @@
                           <product-form>
                             {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             
-                              <div>test AAA1 </div>
-                              <div
+                        <div
                             class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
                             {{ block.shopify_attributes }}
                           >
