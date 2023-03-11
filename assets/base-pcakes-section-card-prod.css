@@ -94,6 +94,9 @@ a:-webkit-any-link:hover {
  text-decoration: none;
 }
 
+  .underline-links-hover:hover a {
+    text-decoration: none;
+  }
 
 
 
