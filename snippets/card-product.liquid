@@ -125,8 +125,23 @@
         </div>
     </div>
    
+    <div class="itemgrid2"> 
+        <!-- pre order banner -->
+        {%  if card_product.tags contains "3 Days"   %} 
+        <div class="imgbanner btmbanner">
+            3 Day Lead Time
+        </div>
+            {% elsif card_product.tags contains "5 Days" %}
+                        
+        <div class="imgbanner btmbanner">
+            5 Day Lead Time
+        </div>
+        {% endif %}
+    </div>
 
-        <div class="itemgrid2"> 
+
+
+        <div class="itemgrid3"> 
             <!-- 2 REG - DESCRIP --> 
             {%- if card_product.metafields.pcakes.prodquickdescrip -%}
             <span class="visually-hidden">Description</span>
@@ -138,19 +153,7 @@
         </div>
 
 
-        <div class="itemgrid3"> 
-            <!-- pre order banner -->
-            {%  if product.tags contains "3 Days"   %} 
-            <div class="imgbanner btmbanner" style="{{bannercolor}}">
-                3 Day Lead Time
-            </div>
-                {% elsif product.tags contains "5 Days" %}
-                            
-            <div class="imgbanner btmbanner" style="{{bannercolor}}">
-                5 Day Lead Time
-            </div>
-            {% endif %}
-        </div>
+
 
 
         <div class="itemgrid4"> 
