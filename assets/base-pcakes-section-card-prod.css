@@ -71,7 +71,7 @@
 }
 
 .itemgrid2 {
-var(--font-heading-family);
+font-family:var(--font-heading-family);
   font-size: 120%;
 }
 .itemgrid7 {
