@@ -125,7 +125,7 @@
         </div>
 
 
-        <div class="img-banner-btm"> 
+        <a href="{{ card_product.url}}" class="img-banner-btm"> 
 
             
                 {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" or card_product.tags contains "3 Days" or card_product.tags contains "5 Days" %}
@@ -142,12 +142,23 @@
                     </div>
                 {% endif %}
 
-        </div>
+                </a>
         
 
     </div>
 
-   
+    <div class="itemgrid2"> 
+
+            <a
+            href="{{ card_product.url }}"
+            id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
+            class="full-unstyled-link"
+            aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+        >
+            {{ card_product.title | escape }}
+    </a>
+    </div>
+
 
 
 <!-- 2 REG - DESCRIP --> 
