@@ -51,7 +51,7 @@
                 <div class="img-banner-top"> 
                     {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" %}
                         <div class="imgbanner">
-                            <details>Customize this Cake</details> 
+                            <span>Customize this Cake</span> 
                         </div>
                     {% endif %}
                 </div>
@@ -137,12 +137,12 @@
         <div class="img-banner-btm"> 
             {%  if card_product.tags contains "3 Days"   %} 
             <div class="imgbanner">
-                <details>3 Day Lead Time</details>
+                <span>3 Day Lead Time</span>
             </div>
                 {% elsif card_product.tags contains "5 Days" %}
                             
             <div class="imgbanner">
-                <details>5 Day Lead Time</details>
+                <span>5 Day Lead Time</span>
             </div>
             {% endif %}
 
