@@ -86,11 +86,15 @@ font-family:var(--font-heading-family);
 
 .pcakes-metadescrip {
   padding: 10px 0; 
-  opacity: 85%;
+
+}
+
+.pcakes-descrip {
+  color: #8a54a8;
+    opacity: 85%;
     font-size: 90%;
   line-height: 90%;
 }
-
   .bold_options {
     display: none;
   }
@@ -133,11 +137,7 @@ a:-webkit-any-link:hover {
   margin: 0 !important; 
 }
 
-.pcakes-descrip {
-  font-size: 100%;
-  color: #8a54a8;
-  
-}
+
 
 
 
