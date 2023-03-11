@@ -88,7 +88,7 @@ a:-webkit-any-link {
  text-decoration: none;
 }
 
-a:hover:-webkit-any-link {
+a:-webkit-any-link:hover {
  text-decoration: none;
 }
 
