@@ -127,20 +127,35 @@
             {%- endif -%}
         </div>
 
+
         <div class="itemgrid3"> 
+            {%  if product.tags contains "3 Days"   %} 
+            <div class="imgbanner btmbanner" style="{{bannercolor}}">
+                3 Day Lead Time
+            </div>
+                {% elsif product.tags contains "5 Days" %}
+                            
+            <div class="imgbanner btmbanner" style="{{bannercolor}}">
+                5 Day Lead Time
+            </div>
+            {% endif %}
+        </div>
+
+
+        <div class="itemgrid4"> 
             <!-- YOTPO REVIEWS-->
             <div class="pcakes-yotpo-collection">
                 <div class="yotpo bottomLine" data-product-id="{{ product.id }}"></div>
             </div>
         </div>
 
-        <div class="itemgrid4"> 
+        <div class="itemgrid5"> 
         
         <!-- STARTING PRICE -->  
             {%  if card_product.tags contains "candles" %} 
                     <div>&nbsp;</div>
             {% else %}
-            {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
+                {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
                     <div class="tinyprice">Starting at</div>
         
                 {% elsif card_product.tags contains "customize" %}
@@ -152,116 +167,118 @@
 
         </div>
 
-        <div class="itemgrid5"> 
+        <div class="itemgrid6"> 
             {% render 'price', product: card_product, price_class: '' %}
         </div>
 
-        <div class="itemgrid5"> 
+        <div class="itemgrid7"> 
 
 
+                        
+            {% if card_product.tags contains "cake" or card_product.tags contains "customize"    %}
+
+            <!-- CUSTOMIZE --> 
+                <div style="height: 5px;">&nbsp;</div>
             
-   {% if card_product.tags contains "cake" or card_product.tags contains "customize"    %}
-
-   <!-- CUSTOMIZE --> 
-    <div style="height: 5px;">&nbsp;</div>
- 
-     <div >
-       <div class="linkbox2">
-           <a class="" href="{{ card_product.url | within: collection }}">
-            CUSTOMIZE
-           </a>
-       </div>
-     </div>
- 
+                <div >
+                <div class="linkbox2">
+                    <a class="" href="{{ card_product.url | within: collection }}">
+                        CUSTOMIZE
+                    </a>
+                </div>
+                </div>
+            
 
 
-     {% else %}
+                {% else %}
 
-     <product-form>
-        {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                <product-form>
+                    {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
-          <div>test AAA1 </div>
-          <div
-        class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
-        {{ block.shopify_attributes }}
-      >
-        <label class="form__label visually-hidden" for="Quantity-{{ section.id }}">
-          {{ 'products.product.quantity.label' | t }}
-        </label>
+                    <div>test AAA1 </div>
+                    <div
+                    class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+                    {{ block.shopify_attributes }}
+                >
+                    <label class="form__label visually-hidden" for="Quantity-{{ section.id }}">
+                    {{ 'products.product.quantity.label' | t }}
+                    </label>
 
 
-            <!-- QUANTITY --> 
-        <quantity-input class="quantity" style="margin-bottom: 10px;">
-          <button class="quantity__button no-js-hidden" name="minus" type="button">
-            <span class="visually-hidden">
-              {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-            </span>
-            {% render 'icon-minus' %}
-          </button>
-          <input
-            class="quantity__input"
-            type="number"
-            name="quantity"
-            id="Quantity-{{ section.id }}"
-            min="1"
-            value="1"
-            form="{{ product_form_id }}"
-          >
-          <button class="quantity__button no-js-hidden" name="plus" type="button">
-            <span class="visually-hidden">
-              {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-            </span>
-            {% render 'icon-plus' %}
-          </button>
-        </quantity-input>
-          
-      </div>
-          <input
-            type="hidden"
-            name="id"
-            value="{{ card_product.selected_or_first_available_variant.id }}"
-            disabled
-          >
-          <button
-            id="{{ product_form_id }}-submit"
-            type="submit"
-            name="add"
-            class="quick-add__submit button button--full-width button--secondary"
-            aria-haspopup="dialog"
-            aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
-            aria-live="polite"
-            data-sold-out-message="true"
-            {% if card_product.selected_or_first_available_variant.available == false %}
-              disabled
-            {% endif %}
-          >
-            <span>
-              {%- if card_product.selected_or_first_available_variant.available -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- else -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- endif -%}
-            </span>
-            <span class="sold-out-message hidden">
-              {{ 'products.product.sold_out' | t }}
-            </span>
-            <div class="loading-overlay__spinner hidden">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="presentation"
-                class="spinner"
-                viewBox="0 0 66 66"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </button>
-        {%- endform -%}
-      </product-form>
-    {% endif %}
+                        <!-- QUANTITY --> 
+                    <quantity-input class="quantity" style="margin-bottom: 10px;">
+                    <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <span class="visually-hidden">
+                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                        </span>
+                        {% render 'icon-minus' %}
+                    </button>
+                    <input
+                        class="quantity__input"
+                        type="number"
+                        name="quantity"
+                        id="Quantity-{{ section.id }}"
+                        min="1"
+                        value="1"
+                        form="{{ product_form_id }}"
+                    >
+                    <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <span class="visually-hidden">
+                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                        </span>
+                        {% render 'icon-plus' %}
+                    </button>
+                    </quantity-input>
+                    
+                </div>
+                    <input
+                        type="hidden"
+                        name="id"
+                        value="{{ card_product.selected_or_first_available_variant.id }}"
+                        disabled
+                    >
+                    <button
+                        id="{{ product_form_id }}-submit"
+                        type="submit"
+                        name="add"
+                        class="quick-add__submit button button--full-width button--secondary"
+                        aria-haspopup="dialog"
+                        aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                        aria-live="polite"
+                        data-sold-out-message="true"
+                        {% if card_product.selected_or_first_available_variant.available == false %}
+                        disabled
+                        {% endif %}
+                    >
+                        <span>
+                        {%- if card_product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                        {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                        {%- endif -%}
+                        </span>
+                        <span class="sold-out-message hidden">
+                        {{ 'products.product.sold_out' | t }}
+                        </span>
+                        <div class="loading-overlay__spinner hidden">
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                        </div>
+                    </button>
+                    {%- endform -%}
+                </product-form>
 
+                
+                {% endif %}
+        </div>
     </div>
 </div>
 
@@ -309,11 +326,7 @@
           <div class="quick-add no-js-hidden">
             {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
 
-
-
-
-
-          
+        
 
 
 
@@ -458,6 +471,10 @@
             <!-- END QUICK ADD MODAL --> 
           
           </div>
+
+
+
+
         {%- endif -%}
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
