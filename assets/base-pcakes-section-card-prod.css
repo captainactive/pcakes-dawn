@@ -32,6 +32,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 30px auto 30px 30px 30px 1fr;
   padding-bottom: 30px; 
+  border: 1px solid limegreen;
 }
 
 .pcakes-button {
