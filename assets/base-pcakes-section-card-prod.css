@@ -35,14 +35,22 @@
   border: 1px solid limegreen;
 }
 
-.pcakes-button {
-  width: 100%;
-}
-
 .pcakes-grid, .itemgrid1, .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid15, .itemgrid6, .itemgrid7, .itemgrid8 {
   display: grid;
   border: 1px solid dodgerblue;
 }
+.itemgrid1 {
+  grid-row-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid limegreen;
+}
+
+.pcakes-button {
+  width: 100%;
+}
+
+
 
 .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6 {
   justify-content: center;
