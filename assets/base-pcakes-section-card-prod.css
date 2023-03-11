@@ -150,6 +150,11 @@ a:-webkit-any-link:hover {
 }
 
 
+/* YOTPO REVIEWS */
+.yotpo-bottomline {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
 
 
