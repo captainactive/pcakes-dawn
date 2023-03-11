@@ -236,6 +236,13 @@
                     CHOOSE SIZE
                 </a>
 
+                {% elsif card_product.tags contains "variant-same-price" %}
+
+                <!-- CHOOSE -->  
+                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    EXPLORE 
+              </a>                
+
                 {% elsif card_product.available == false %}
                     <!-- EXPLORE -->  
                     <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
