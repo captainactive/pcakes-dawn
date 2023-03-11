@@ -74,6 +74,8 @@
   background-color: #e14984;
   width: 100%;
   padding: 7px 5px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .imgbanner span {
