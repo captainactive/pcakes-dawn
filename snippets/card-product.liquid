@@ -183,7 +183,7 @@
         </div>
         <!-- price -->
         <div class="itemgrid6"> 
-            {{ card_product.price }}
+            {{ card_product.price | price }}
             {% render 'price', product: card_product, price_class: '' %}
         </div>
 
