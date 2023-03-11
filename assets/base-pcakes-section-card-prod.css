@@ -153,6 +153,11 @@ a:-webkit-any-link:hover {
 /* YOTPO REVIEWS */
 
 @media (max-width: 500px) {
+
+.itemgrid4 {
+  padding: 6px 2px;
+}
+  
 .yotpo .standalone-bottomline.star-clickable, .yotpo .standalone-bottomline .star-clickable {
   display: grid;
     grid-template-rows: 1fr 1fr;
