@@ -178,6 +178,6 @@ a:-webkit-any-link:hover {
   }
 
 .slider--tablet.grid--peek .grid__item {
-  box-sizing:0;
+  box-sizing:0 !important;
 }
 
