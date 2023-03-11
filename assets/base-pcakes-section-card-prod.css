@@ -78,6 +78,10 @@
   text-align: center;
 }
 
+.itemgrid2 {
+  max-height: 75px;
+}
+
   .bold_options {
     display: none;
   }
