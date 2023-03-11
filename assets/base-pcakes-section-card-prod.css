@@ -76,7 +76,7 @@
 font-family:var(--font-heading-family);
   font-size: 120%;
   line-height: 140%;
-  padding: 17px;
+  padding: 17px 4px 8px 4px;
 }
 
 .itemgrid6 {
