@@ -62,13 +62,23 @@
 
 
 
-.itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6 {
+.itemgrid2, .itemgrid3, .itemgrid4 .itemgrid6 {
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
   text-align: center;
 }
+
+
+.itemgrid5 {
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 .itemgrid2 {
 font-family:var(--font-heading-family);
