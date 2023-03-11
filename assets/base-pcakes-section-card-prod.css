@@ -32,9 +32,6 @@
 }
 
 
-
-
-
 .pcakes-card-grid {
   display: grid;
   grid-row-gap: 2px;
@@ -54,7 +51,7 @@
 .itemgrid1 {
   grid-row-gap: 5px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   /*border: 1px solid limegreen;*/
 }
 
