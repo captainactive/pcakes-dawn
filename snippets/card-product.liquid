@@ -241,6 +241,10 @@
                  <!-- QUICKADD -->  
               
                 <product-form>
+
+              <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    EXPLORE 
+                </a>
                     <div class="quick-add no-js-hidden">
                         {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
                         {%- liquid
