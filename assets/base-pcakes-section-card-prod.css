@@ -95,7 +95,7 @@ font-family:var(--font-heading-family);
   display: inline-flex;
 }
 .itemgrid7 {
-  align-items: end;
+  align-items: baseline;
   text-align: center;
 }
 .itemgrid7 {
