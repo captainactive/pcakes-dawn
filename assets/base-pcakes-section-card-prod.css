@@ -111,8 +111,10 @@ font-family:var(--font-heading-family);
   line-height: 110%;
 }
 .tinyprice {
-  font-size: 70%;
+  font-size: 60%;
 }
+
+
   .bold_options {
     display: none;
   }
