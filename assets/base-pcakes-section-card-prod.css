@@ -67,7 +67,8 @@
   max-height: 54px;
 }
 .explore-button {
-  padding-bottom: 4px;
+  margin-bottom: 10px;
+  min-height: 35px !important;
 }
 
 
