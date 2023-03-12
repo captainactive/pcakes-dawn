@@ -215,53 +215,32 @@
 
   
         <div class="itemgrid7"> 
-
-
-                        
-            {% if card_product.tags contains "cake" or card_product.tags contains "customize" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake"    %}
-
-            <!-- CUSTOMIZE --> 
-                
+   {% comment %} SET THE THE METAFIELD! {% endcomment %}
+  
+            {% if card_product.metafields.pcakes.quickadd == "customize"    %}
+                <!-- CUSTOMIZE --> 
                 <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     CUSTOMIZE
                 </a>
                             
 
-                {% elsif card_product.tags contains "candles" or card_product.tags contains "variants" %}
-
+                {% elsif card_product.metafields.pcakes.quickadd == "explore" %}
                 <!-- EXPLORE -->  
                 <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     EXPLORE 
                 </a>
 
-                  {% elsif card_product.tags contains "variant-diff-prices" %}
-
-                  <!-- CHOOSE -->  
+              
+               {% elsif card_product.metafields.pcakes.quickadd == "choosesize" %}              
+                  <!-- CHOOSE SIZE -->                
                   <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     CHOOSE SIZE
-                </a>
+                </a>          
 
-                {% elsif card_product.tags contains "variant-same-price" %}
-
-                <!-- CHOOSE -->  
-                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
-                    EXPLORE 
-              </a>                
-
-                {% elsif card_product.available == false %}
-                    <!-- EXPLORE -->  
-                    <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
-                        EXPLORE
-                    </a>
-
-
-
-                {% else %} <!-- HAS NO VARIANT -->
-
-
+                 {% elsif card_product.metafields.pcakes.quickadd == "quickadd" %}
+                 <!-- QUICKADD -->  
+              
                 <product-form>
-
-
                     <div class="quick-add no-js-hidden">
                         {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
                         {%- liquid
@@ -359,6 +338,11 @@
 
 
 
+              {% else %} 
+                <!-- EXPLORE NO ASSIGNMENT -->  
+                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    EXPLORE 
+                </a>
                           
                 
                 {% endif %}
