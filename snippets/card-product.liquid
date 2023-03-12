@@ -316,7 +316,7 @@
                               >
                                 <span>
                                   {%- if card_product.selected_or_first_available_variant.available -%}
-                                    {{ 'products.product.add_to_cart' | t }}1
+                                    ADD TO CART {% comment %}  %}{{ 'products.product.add_to_cart' | t }} {% endcomment %} 
                                   {%- else -%}
                                     {{ 'products.product.sold_out' | t }}2
                                   {%- endif -%}
