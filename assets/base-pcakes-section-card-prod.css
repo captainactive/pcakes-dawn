@@ -98,10 +98,6 @@ font-family:var(--font-heading-family);
   align-items: baseline;
   text-align: center;
 }
-.itemgrid7 {
-  align-items: end;
-  text-align: center;
-}
 
 .pcakes-metadescrip {
   padding: 10px 0; 
