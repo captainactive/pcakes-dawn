@@ -1,6 +1,23 @@
 
 
 
+/* PAGES  */
+.pagination-wrapper {
+  display: none;
+}
+
+.info-pages h2 {
+  padding-top: 60px;
+}
+.info-pages h3 {
+  padding-top: 20px;
+}
+
+.info-pages p {
+  color: #424242;
+}
+
+
 /* TEXT */
 
 :root,
@@ -76,21 +93,7 @@ footer h2 {
 
 
 
-/* PAGES  */
-.pagination-wrapper {
-  display: none;
-}
 
-.info-pages h2 {
-  padding-top: 60px;
-}
-.info-pages h3 {
-  padding-top: 20px;
-}
-
-.info-pages p {
-  color: #424242;
-}
 
 /* HEADER  */
 
