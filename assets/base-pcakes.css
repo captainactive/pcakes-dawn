@@ -134,6 +134,32 @@ footer h2 {
 	}
 
 
+
+
+.pcakes-button , .pcakes-button:visited {
+	display:block;
+	border-radius: 4px;
+	padding: 25px 0;
+	width:90%;
+  max-width: 400px;
+	text-align:center;
+	margin: 25px auto 50px auto;
+	background-color:#8a54a8;
+	text-decoration: none;
+	color: #fff;
+  font-family:var(--font-heading-family);
+  font-size: :150%;
+}
+.pcakes-button:hover {
+	background-color: #e14984;
+	color: #fff;
+	text-decoration: none;
+	}
+
+
+
+  
+
 /* MEGA MENU  */
 .mega-menu__link--level-2 {
   text-decoration: none!important;
