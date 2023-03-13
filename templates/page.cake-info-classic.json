@@ -10,7 +10,16 @@
     "1f22dc2b-7ae4-4f62-9491-1bd31647eeec": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"info-pages\">\t<img class=\"imgcertdel4\" alt=\"Certified Delicious\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" \/>\n\t<p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\t<p>Our Custom Cakes are created for any celebration and every palate. With 11 cake flavors and 22 cake fillings, we can create a memorable dessert for your special occasion.<\/p>\n\t<p>Custom Cakes allow you to tailor the creation of the cake for your specific event. Mix and match flavors, select specific colors, take creative design control, and feed any crowd of any size. You may also request <a href=\"\/pages\/gluten-free-cake-information\">gluten-free<\/a> and <a href=\"\/pages\/gluten-free-cake-information\">vegan<\/a> flavors. <\/p>\n\t<p>To allocate the time required to create Custom Cakes, advance ordering is required. Plan ahead for your next birthday, baby shower, bridal shower, religious celebration, or event with a custom cake!<\/p><\/div>",
+        "custom_liquid": "<div class=\"page-width info-pages\">\n\n\t<img class=\"imgcertdel4\" alt=\"Certified Delicious\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" \/>\n\t<p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\t<p>Our Custom Cakes are created for any celebration and every palate. With 11 cake flavors and 22 cake fillings, we can create a memorable dessert for your special occasion.<\/p>\n\t<p>Custom Cakes allow you to tailor the creation of the cake for your specific event. Mix and match flavors, select specific colors, take creative design control, and feed any crowd of any size. You may also request <a href=\"\/pages\/gluten-free-cake-information\">gluten-free<\/a> and <a href=\"\/pages\/gluten-free-cake-information\">vegan<\/a> flavors. <\/p>\n\t<p>To allocate the time required to create Custom Cakes, advance ordering is required. Plan ahead for your next birthday, baby shower, bridal shower, religious celebration, or event with a custom cake!<\/p>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"info-pages\">\t\n\n<h2>Custom Cake Sizes and Shapes<\/h2>\n<!-- CLASSIC FLAVORS  -->\n\n<h3>Round Cakes<\/h3>\t\n<table id=\"tblcakes\" class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td >4&quot; Round Smash Cake (no filling) <\/td>\n    <td>1<\/td>\n    <td>$19.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/products\/smash-cake-semi-custom\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>8&quot; Round Single Layer<\/td>\n    <td>11<\/td>\n    <td>$35.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\t\n\t\n  <tr>\n    <td>10&quot; Round Single Layer<\/td>\n    <td>16<\/td>\n    <td>$46.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\t\n\t\n  <tr>\n    <td >6&quot; Round Double Layer<\/td>\n    <td>12<\/td>\n    <td>$45.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>8&quot; Round Double Layer<\/td>\n    <td>23<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>10&quot; Round Double Layer<\/td>\n    <td>36<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n\t\n<h3>Sheet Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>8x11 Sheet<\/td>\n    <td>20<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Quarter Sheet<\/td>\n    <td>29<\/td>\n    <td>$65.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Third Sheet<\/td>\n    <td>37<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Half Sheet<\/td>\n    <td>48<\/td>\n    <td>$87.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Two-Thirds Sheet<\/td>\n    <td>75<\/td>\n    <td>$119.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Full Sheet<\/td>\n    <td>100<\/td>\n    <td>$151.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n<h3>Tiered Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t<th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (5&quot; &amp; 8&quot;)<\/td>\n    <td>30<\/td>\n    <td>$129.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 9&quot;)<\/td>\n    <td>40<\/td>\n    <td>$149.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 10&quot;)<\/td>\n    <td>47<\/td>\n    <td>$169.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 11&quot;)<\/td>\n    <td>55<\/td>\n    <td>$199.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td> \n  <\/tr>\n  <tr>\n    <td>3-4-5 Tier Round and Square Cakes<\/td>\n    <td>75-500+<\/td>\n    <td>$375.00+<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/pattys-cakes.com\/events\">request<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\n\t\n<p class=\"tinytext\">All custom cakes include a filling and a basic design for the price listed. Some designs will have additional costs. Sales tax is not collected. Not seeing what you are looking for? <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">Send us a message<\/a><\/p>\n\n\t <!-- END CLASSIC -->\n\n\n\t<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -24,109 +33,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894": {
-      "type": "pcakes-collection-top",
-      "blocks": {
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-0",
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-1",
-        "template--16655251931378__c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894-167872727568b51ee1-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "993835be-49b3-4691-bf02-7246ab619b3a": {
-      "type": "pcakes-collection-top",
-      "blocks": {
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-0",
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-1",
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "fcc09cc1-52ca-4e50-b451-f11a6b50be11": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"info-pages\">\t\n\n<h2>Custom Cake Sizes and Shapes<\/h2>\n<!-- CLASSIC FLAVORS  -->\n\n<h3>Round Cakes<\/h3>\t\n<table id=\"tblcakes\" class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td >4&quot; Round Smash Cake (no filling) <\/td>\n    <td>1<\/td>\n    <td>$19.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/products\/smash-cake-semi-custom\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>8&quot; Round Single Layer<\/td>\n    <td>11<\/td>\n    <td>$35.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\t\n\t\n  <tr>\n    <td>10&quot; Round Single Layer<\/td>\n    <td>16<\/td>\n    <td>$46.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\t\n\t\n  <tr>\n    <td >6&quot; Round Double Layer<\/td>\n    <td>12<\/td>\n    <td>$45.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>8&quot; Round Double Layer<\/td>\n    <td>23<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>10&quot; Round Double Layer<\/td>\n    <td>36<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n\t\n<h3>Sheet Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>8x11 Sheet<\/td>\n    <td>20<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Quarter Sheet<\/td>\n    <td>29<\/td>\n    <td>$65.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Third Sheet<\/td>\n    <td>37<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Half Sheet<\/td>\n    <td>48<\/td>\n    <td>$87.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Two-Thirds Sheet<\/td>\n    <td>75<\/td>\n    <td>$119.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Full Sheet<\/td>\n    <td>100<\/td>\n    <td>$151.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n<h3>Tiered Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t<th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (5&quot; &amp; 8&quot;)<\/td>\n    <td>30<\/td>\n    <td>$129.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 9&quot;)<\/td>\n    <td>40<\/td>\n    <td>$149.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 10&quot;)<\/td>\n    <td>47<\/td>\n    <td>$169.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 11&quot;)<\/td>\n    <td>55<\/td>\n    <td>$199.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td> \n  <\/tr>\n  <tr>\n    <td>3-4-5 Tier Round and Square Cakes<\/td>\n    <td>75-500+<\/td>\n    <td>$375.00+<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/pattys-cakes.com\/events\">request<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\n\t\n<p class=\"tinytext\">All custom cakes include a filling and a basic design for the price listed. Some designs will have additional costs. Sales tax is not collected. Not seeing what you are looking for? <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">Send us a message<\/a><\/p>\n\n\t <!-- END CLASSIC -->\n\n\n\t<\/div>",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
     "1f22dc2b-7ae4-4f62-9491-1bd31647eeec",
-    "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
-    "c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894",
-    "993835be-49b3-4691-bf02-7246ab619b3a",
-    "fcc09cc1-52ca-4e50-b451-f11a6b50be11"
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11",
+    "f671c920-0b5a-4cb8-b34b-96b5f40e3972"
   ]
 }
