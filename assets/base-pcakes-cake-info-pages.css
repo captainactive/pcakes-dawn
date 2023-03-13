@@ -283,10 +283,10 @@
 	text-decoration: none;
 	}
 
-.helpbox head, .helpbox p { 
+.helpbox .head, .helpbox p { 
 	color: #FFF;
 }
-.helpbox head { 
+.helpbox .head { 
 	margin:0;
 	color: #FFF;
   font-size: :150%;
