@@ -1,4 +1,4 @@
-<script type="text/javascript">
+{% comment %}<script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) {
   window.customCheckoutValidation = function() {
     document.getElementById("checkoutBtn").innerHTML = "Loading ...";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   };
 });
-</script>
+</script> {% endcomment %}
 
 
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
