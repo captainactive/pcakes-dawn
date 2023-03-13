@@ -559,7 +559,15 @@ quantity::before {
 .txtright {text-align:right;}
 .txtcenter  {text-align:center;}
 
-  
+
+@media (max-width: 740px) {
+/* ALL BOXES */
+.box_20, .box_25, .box_30, .box_33, .box_35, .box_40, .box_45, .box_50, .box_55, .box_60, .box_65, .box_70, .box_75, .box_80, .box_85, .box_90, .box_95, .box_100 {
+	float:none;
+	width:100%;
+	height:auto;
+}
+}
 
 
 
