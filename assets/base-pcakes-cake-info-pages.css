@@ -58,10 +58,9 @@
    grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 
-.ptable-sizes
 
 @media (max-width: 500px) {
-.ptable tbody tr {
+.ptable-sizes tbody tr {
   grid-template-columns: 5fr 3fr 3fr 3fr;
 }
 }
