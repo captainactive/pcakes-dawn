@@ -71,8 +71,9 @@ footer h2 {
 /*  LAYOUT */
 @media screen and (min-width: 990px) {
   .page-width--narrow {
-    max-width:none;
+    max-width:var(--page-width)
     padding: 0 5rem;
+    margin: 0 auto;
   }
 }
 
