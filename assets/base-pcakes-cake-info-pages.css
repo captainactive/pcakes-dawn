@@ -198,6 +198,36 @@
 
 
 
+.icon-grid {
+		display: grid;
+		grid-row-gap: 0px;
+		grid-column-gap:0px; 
+		grid-template-columns: 110px 1fr;
+		grid-template-rows: 1fr;
+		padding-bottom: 30px;
+		}	
+	.icon-grid p {margin-top: 3px; }	
+	.iconctr {
+	padding-bottom: 10px;
+		}
+	
+	@media( max-width: 330px) {
+	.icon-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr ;
+		}	
+		.icontop {
+			display: grid;
+			justify-content: center;
+		}
+		.iconctr {
+			text-align: center;
+		}
+	}
+
+
+
+
 
 
 
