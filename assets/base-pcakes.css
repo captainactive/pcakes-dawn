@@ -143,12 +143,12 @@ footer h2 {
 	width:90%;
   max-width: 400px;
 	text-align:center;
-	margin: 20px auto 50px auto;
+	margin: 40px auto 30px auto;
 	background-color:#8a54a8;
 	text-decoration: none;
 	color: #fff;
   font-family:var(--font-heading-family);
-  font-size:150%;
+  font-size:120%;
 }
 .pcakes-button:hover {
 	background-color: #e14984;
