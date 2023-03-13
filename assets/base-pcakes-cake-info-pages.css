@@ -1,0 +1,69 @@
+
+
+/* PCAKES PAGE STYLE  */
+
+
+
+/* MMMMMMM TABLES MMMMMMM  */
+
+.ptable {
+	border: none;
+	border-top:#666 solid 1px;
+	border-bottom:#666 solid 1px;
+	width:100%;
+	overflow:auto;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-collapse:collapse;
+}
+.ptable th {
+	font-weight: bold;
+	background-color:#F2F2F2;
+}
+
+.ptable td, .ptable th {
+	padding: 5px 3px;
+}
+
+.ptable tr td:first-child, .ptable tr th:first-child {
+	text-align:left;
+	padding-left:8px;
+}
+
+.ptable tr:nth-child(odd) {
+	background-color:#F2F2F2;
+}
+
+.ptable50 tr td {
+	width:50%;
+	text-align:left;
+	padding-left:8px;
+}
+
+
+
+.buynow, .buynow:visited {
+	-moz-border-radius: 2px; 
+	border-radius: 2px; 
+	margin: 0px; 
+	padding:3px 10px; 
+	background-color:#8a54a8; 
+	color:#FFF !important; 
+	font-size:14px;
+	/*white-space: nowrap;*/
+	display: inline-block;
+	text-decoration: none;
+}
+.buynow:active, .buynow:hover {
+	background-color:#e14984;
+	text-decoration: none;
+}
+
+.icingimage {
+	width:80%; 
+	height:auto; 
+	margin-left:30px; 
+	border-radius:5px;
+}
