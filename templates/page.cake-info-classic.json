@@ -46,30 +46,19 @@
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h3>Color Swatches<\/h4>{% render 'pc-color-swatches' %}<\/div>",
+        "custom_liquid": "<div class=\"page-width info-pages\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h3>Color Swatches<\/h4>{% render 'pc-color-swatches' %}<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 40
       }
     },
-    "ab73610e-2011-475e-b125-4ca6045ae592": {
-      "type": "page",
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9": {
+      "type": "custom-liquid",
       "settings": {
-        "page": "",
-        "heading_size": "h1",
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\n\n\t<h2>Custom Cake Icing<\/h2>\n\t<p>We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\n\t<div class=\"help\">\n\t\t<a href=\"\/pages\/cake-flavor-chart\">\n\t\t<p>Need help choosing a flavor combination? <\/p>\n\t\t<p>Get fancy with our cake flavor chart.<\/p>\n\t  <\/a>\n\t<\/div>\n\n\n\t<h2>Custom Cake Design<\/h2>\n\t<p>Your greeting, your colors, and a basic design are included in the price of your cake. If you want to go for a real wow factor, we can always get more elaborate for an additional charge.<\/p>\n\t<p>Check out our <a href=\"https:\/\/pattys-cakes.com\/photos\">photo galleries<\/a> if you need some inspiration on the design, or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">send us a message<\/a> today. We're here to help you make something memorable.<\/p>\n\n\t<div>\n\t\t<a href=\"https:\/\/pattys-cakes.com\/photos\">View Cake Photos<\/a>\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "4a68c028-2a88-41c3-8854-30cead9146a3": {
-      "type": "page",
-      "settings": {
-        "page": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -80,7 +69,6 @@
     "af2414ba-9c6a-4d1d-820d-0acb3e435447",
     "3ff3778f-e9ed-4269-85c6-e3d4407a7fbf",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
-    "ab73610e-2011-475e-b125-4ca6045ae592",
-    "4a68c028-2a88-41c3-8854-30cead9146a3"
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9"
   ]
 }
