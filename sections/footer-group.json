@@ -44,7 +44,7 @@
           "type": "text",
           "settings": {
             "heading": "Store Hours",
-            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:00 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
           }
         },
         "footer-0": {
