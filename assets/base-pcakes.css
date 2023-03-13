@@ -478,8 +478,59 @@ quantity::before {
 
 
 
+/*  OG BOXES  */
+
+  /* SINGLE BOXES */
+
+.box_cont {
+
+	overflow:hidden;
+	height:auto;
+	clear:both;
+	text-align:center;
+	padding: 2px 0;
+} 	
+
+.box_20 { width:20%;} 	
+.box_25 { width:25%;} 	
+.box_30 { width:30%;} 	
+.box_33 { width:33.3%;} 	
+.box_35 { width:35%;} 	
+.box_40 { width:40%;} 	
+.box_45 { width:45%;} 	
+.box_50 { width:50%;} 	
+.box_55 { width:55%;} 	
+.box_60 { width:60%;} 	
+.box_65 { width:65%;} 	
+.box_70 { width:70%;} 	
+.box_75 { width:75%;} 	
+.box_80 { width:80%;} 	
+.box_85 { width:85%;} 
+.box_90 { width:90%;} 
+.box_95 { width:95%;} 
+.box_100 { width:100%;} 	
+
+/* ALL BOXES */
+.box_20, .box_25, .box_30, .box_33, .box_35, .box_40, .box_45, .box_50, .box_55, .box_60, .box_65, .box_70, .box_75, .box_80, .box_85, .box_90, .box_95, .box_100 {
+	overflow:visible;
+	margin: -1px;
+	padding:1px;
+	float:left;
+	display:block;
+}
 
 
+/* BOX OPTIONS */
+.clear, .ftclr {clear:both;}
+.ftleft {float:left;}
+.ftright {float:right;}
+.ftnone {float:none;}
+
+.txtleft  {text-align:left;}
+.txtright {text-align:right;}
+.txtcenter  {text-align:center;}
+
+  
 
 
 
