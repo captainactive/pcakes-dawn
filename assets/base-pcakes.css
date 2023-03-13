@@ -37,7 +37,7 @@ body,
 .color-inverse,
 .color-accent-1,
 .color-accent-2 {
-  color: rgba(var(--color-foreground), 0.85);
+  color: rgba(var(--pcakes-text), 0.85);
   background-color: rgb(var(--color-background));
 }
 
