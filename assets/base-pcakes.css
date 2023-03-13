@@ -148,7 +148,7 @@ footer h2 {
 	text-decoration: none;
 	color: #fff;
   font-family:var(--font-heading-family);
-  font-size: :150%;
+  font-size:150%;
 }
 .pcakes-button:hover {
 	background-color: #e14984;
