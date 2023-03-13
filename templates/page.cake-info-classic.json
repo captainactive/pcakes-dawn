@@ -55,7 +55,7 @@
     "c4c25d3a-9c96-469a-9c14-c36cf9137275": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t<h2>Custom Cake Design<\/h2>\n\t<p>Your greeting, your colors, and a basic design are included in the price of your cake. If you want to go for a real wow factor, we can always get more elaborate for an additional charge.<\/p>\n\t<p>Check out our <a href=\"https:\/\/pattys-cakes.com\/photos\">photo galleries<\/a> if you need some inspiration on the design, or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">send us a message<\/a> today. We're here to help you make something memorable.<\/p>\n\n\t<a class=\"pcakes-button\" href=\"https:\/\/pattys-cakes.com\/photos\">View Cake Photos<\/a>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t<h2>Custom Cake Design<\/h2>\n\t<p>Your greeting, your colors, and a basic design are included in the price of your cake. If you want to go for a real wow factor, we can always get more elaborate for an additional charge.<\/p>\n\t<p>Check out our <a href=\"https:\/\/pattys-cakes.com\/photos\">photo galleries<\/a> if you need some inspiration on the design, or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">send us a message<\/a> today. We're here to help you make something memorable.<\/p>\n\n\t<a class=\"pcakes-button-center\" href=\"https:\/\/pattys-cakes.com\/photos\">View Cake Photos<\/a>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
