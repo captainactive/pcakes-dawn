@@ -237,6 +237,32 @@
 
 
 
+.comques {
+	display:block;
+	border: #8a54a8 solid 1px;
+	background-color:#f6eefa; 
+	border-radius: 2px;
+	padding: 8px 8px 20px 0;
+	background-image:url(images/help-vbar.png);
+	background-position:top left;
+	background-repeat:repeat-y;
+	margin-top: 70px;
+}
+.comques div { 
+	margin:10px 0 0 30px;
+	font-size:24px;
+	color:#8a54a8;
+	font-weight:bold;
+	/*border-bottom: #8a54a8 solid 1px;*/
+}
+.comques div a, .comques div a:link, .comques div a:hover, .comques div a:visited {
+	color:#8a54a8 !important;
+	font-size:24px !important;
+	
+}
+.comques div a:hover {
+	text-decoration:underline;
+}
 
 
 
