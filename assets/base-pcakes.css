@@ -123,18 +123,18 @@ footer h2 {
   display: inline-flex;
   margin: 0;
 }
-  .svg20 {
-		height: 20px;
-		width: 20px;
+.svg20 {
+	height: 20px;
+	width: 20px;
     margin-bottom: 0 !important;
     width: 20px;
     max-width: 20px;
-	}
+}
 .svg90 {
-		height: 90px;
-		width: 90px;
+  height: 90px;
+  width: 90px;
   max-width: 90px;
-	}
+}
 
 
 
