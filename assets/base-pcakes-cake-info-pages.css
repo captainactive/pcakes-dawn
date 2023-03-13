@@ -240,12 +240,10 @@
 .comques {
 	display:block;
 	border: #8a54a8 solid 1px;
+    border-left:#8a54a8 solid 15px;
 	background-color:#f6eefa; 
-	border-radius: 2px;
+	border-radius: 4px;
 	padding: 8px 8px 20px 0;
-	background-image:url(images/help-vbar.png);
-	background-position:top left;
-	background-repeat:repeat-y;
 	margin-top: 70px;
 }
 .comques div { 
