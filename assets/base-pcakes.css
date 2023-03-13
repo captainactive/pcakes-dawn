@@ -76,8 +76,12 @@ footer h2 {
     margin: 0 auto;
   }
 }
-
-
+@media screen and (min-width: 750px) {
+  .page-width--narrow {
+    padding: 0 5rem;
+  }
+}
+  
 
 
 /* PAGES  */
