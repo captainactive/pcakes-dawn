@@ -60,7 +60,7 @@
 
 .buynow, .buynow:visited {
 	-moz-border-radius: 2px; 
-	border-radius: 2px; 
+	border-radius: 4px; 
 	margin: 0px; 
 	padding:3px 10px; 
 	background-color:#8a54a8; 
