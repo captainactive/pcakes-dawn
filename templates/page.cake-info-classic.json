@@ -46,7 +46,7 @@
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h2>Color Swatches<\/h2>{% render 'pc-color-swatches' %}<\/div>",
+        "custom_liquid": "<div class=\"page-width\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h3>Color Swatches<\/h4>{% render 'pc-color-swatches' %}<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 40
