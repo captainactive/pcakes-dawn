@@ -17,6 +17,7 @@
 	margin-right:auto;
 	text-align:center;
 	border-collapse:collapse;
+  color: var(--pcakes-text);
 }
 .ptable th {
 	font-weight: bold;
