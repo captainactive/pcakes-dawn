@@ -69,7 +69,6 @@
 
 
 .buynow, .buynow:visited {
-	-moz-border-radius: 2px; 
 	border-radius: 4px; 
 	margin: 0px; 
 	align-content: center;
@@ -85,6 +84,133 @@
 	background-color:#e14984;
 	text-decoration: none;
 }
+
+
+
+
+
+/* FLAVOR TABLES */
+/* FLAVOR TABLES */
+/* FLAVOR TABLES */
+/* FLAVOR TABLES */
+
+
+	.gridtable {
+		display: grid;
+		grid-row-gap: 0px;
+		grid-column-gap:0px; 
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		border-top:#ccc solid 1px;
+		border-bottom: #ccc solid 1px;
+	}
+	.gridtablerow {
+		padding: 5px 3px 5px 8px;
+	}
+	.gridtablerow:nth-child(4n), .gridtablerow:nth-child(4n-1) { 
+		background-color: #fff;	
+	}
+	.gridtablerow:nth-child(4n-3), .gridtablerow:nth-child(4n-2) { 
+		background-color: #F2F2F2;		
+	}	
+
+
+	@media( max-width: 550px) {
+	.gridtable {
+		grid-template-columns: 1fr  ;
+		grid-template-rows: 1fr;
+	}
+	.gridtablerow:nth-child(odd) { 
+		background-color: #F2F2F2;	
+		}
+	.gridtablerow:nth-child(even) { 
+		background-color: #fff;	
+		}
+	}
+
+	.gridtablerowsubhead, .gridtablerowsubnote {
+		grid-column: 1/-1;
+		padding: 15px 3px 5px 8px;
+		/*border-bottom: #8a54a8 solid 1px*/
+	}
+
+
+
+
+.gridtablelong {
+		display: grid;
+		grid-row-gap: 0px;
+		grid-column-gap:0px; 
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		border-top:#ccc solid 1px;
+		border-bottom: #ccc solid 1px;
+	}
+
+.gridtablelong .gridtablerow:nth-child(even) { 
+		background-color: #fff;	
+	}
+	.gridtablelong .gridtablerow:nth-child(odd) { 
+		background-color: #F2F2F2;		
+	}	
+
+	
+	@media( max-width: 560px) {
+	.gridtablerow {
+		line-height: 30px;
+	}
+	}
+
+
+
+
+
+
+.icon-grid {
+		display: grid;
+		grid-row-gap: 0px;
+		grid-column-gap:0px; 
+		grid-template-columns: 110px 1fr;
+		grid-template-rows: 1fr;
+		padding-bottom: 30px;
+		}	
+	.icon-grid p {margin-top: 3px; }	
+	.iconctr {
+	padding-bottom: 10px;
+		}
+	
+	@media( max-width: 330px) {
+	.icon-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr ;
+		}	
+		.icontop {
+			display: grid;
+			justify-content: center;
+		}
+		.iconctr {
+			text-align: center;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .icingimage {
 	width:80%; 
