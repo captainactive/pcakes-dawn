@@ -32,15 +32,6 @@ footer h2 {
   border-bottom: 1px solid #ffffff;
 }
 
-body,
-.color-background-1,
-.color-background-2,
-.color-inverse,
-.color-accent-1,
-.color-accent-2 {
-  color: rgba(var(--pcakes-text), 0.85);
-  background-color: rgb(var(--color-background));
-}
 
 .tinytext {
   font-size: 80%;
@@ -85,6 +76,10 @@ body,
 }
 .info-pages h3 {
   padding-top: 20px;
+}
+
+.info-pages p{
+  color: rgba(var(--pcakes-text), 0.85);
 }
 
 /* HEADER  */
