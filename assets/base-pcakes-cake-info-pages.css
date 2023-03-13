@@ -283,8 +283,8 @@
 	text-decoration: none;
 	}
 
-.helpbox .head, .helpbox p { 
-	color: #FFF;
+.helpbox p {
+  padding-bottom: 0px;
 }
 .helpbox .head { 
 	margin:0;
