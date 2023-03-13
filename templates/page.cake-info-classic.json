@@ -7,6 +7,15 @@
         "padding_bottom": 28
       }
     },
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"info-pages\">\t<img class=\"imgcertdel4\" alt=\"Certified Delicious\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" \/>\n\t<p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\t<p>Our Custom Cakes are created for any celebration and every palate. With 11 cake flavors and 22 cake fillings, we can create a memorable dessert for your special occasion.<\/p>\n\t<p>Custom Cakes allow you to tailor the creation of the cake for your specific event. Mix and match flavors, select specific colors, take creative design control, and feed any crowd of any size. You may also request <a href=\"\/pages\/gluten-free-cake-information\">gluten-free<\/a> and <a href=\"\/pages\/gluten-free-cake-information\">vegan<\/a> flavors. <\/p>\n\t<p>To allocate the time required to create Custom Cakes, advance ordering is required. Plan ahead for your next birthday, baby shower, bridal shower, religious celebration, or event with a custom cake!<\/p><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
       "type": "custom-liquid",
       "settings": {
@@ -101,22 +110,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
     "c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894",
-    "993835be-49b3-4691-bf02-7246ab619b3a",
-    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec"
+    "993835be-49b3-4691-bf02-7246ab619b3a"
   ]
 }
