@@ -75,6 +75,10 @@ body,
   display: none;
 }
 
+.info-pages h2 {
+  padding-top: 60px;
+}
+
 /* HEADER  */
 
 .miniheadlinks {
