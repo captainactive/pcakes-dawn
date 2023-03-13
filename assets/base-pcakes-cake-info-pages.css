@@ -50,11 +50,11 @@
   text-decoration: none!important;
 }
 
-.tblicingimages {
+.tblicingimages tbody tr {
    grid-template-columns: 3fr 1fr;
 }
 
-.ptable-sizes {
+.ptable-sizes tbody tr {
    grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 
