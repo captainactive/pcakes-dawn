@@ -46,13 +46,19 @@
   display: grid;
   grid-row-gap: 2px;
   grid-column-gap: 0px;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   text-decoration: none!important;
 }
-.ptable tbody tr td {
-  display: grid;
+
+.tblicingimages {
+   grid-template-columns: 3fr 1fr;
 }
+
+.ptable-sizes {
+   grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.ptable-sizes
 
 @media (max-width: 500px) {
 .ptable tbody tr {
@@ -60,6 +66,9 @@
 }
 }
 
+.ptable tbody tr td {
+  display: grid;
+}
 
 .imgcertdel4 {
   float: right;
