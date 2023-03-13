@@ -44,6 +44,7 @@ body,
 
 .tinytext {
   font-size: 80%;
+  rgb(var(--color-foreground))
 }
 
 
