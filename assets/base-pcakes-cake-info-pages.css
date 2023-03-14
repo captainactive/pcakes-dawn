@@ -138,8 +138,8 @@
 
 	.gridtablerowsubhead, .gridtablerowsubnote {
 		grid-column: 1/-1;
-		padding: 15px 3px 5px 8px;
-		/*border-bottom: #8a54a8 solid 1px*/
+		/*padding: 15px 3px 5px 8px;
+		border-bottom: #8a54a8 solid 1px*/
 	}
 
 
