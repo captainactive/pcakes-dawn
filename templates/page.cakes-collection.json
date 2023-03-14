@@ -69,36 +69,26 @@
         "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Custom Cake Flavor Guide",
+            "text": "<p>Find the find flavor for your event with our flavor guide. <\/p>",
+            "link_label": "Flavor Guide",
+            "link": "shopify:\/\/pages\/cake-flavor-guide"
           }
         }
       },
       "block_order": [
         "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-0",
-        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-1",
-        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-2"
+        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-1"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Custom Cake Information",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
