@@ -271,8 +271,8 @@ footer h2 {
 }
 
 
-.pcakes-menu li a:last-of-type {
-  margin-bottom: 75px;
+.menu-drawer__inner-submenu {
+  padding-bottom: 75px;
 }
 
 /* FOOTER REVIEWS  */
