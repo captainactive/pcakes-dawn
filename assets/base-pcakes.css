@@ -270,7 +270,7 @@ footer h2 {
   
 }
 
-
+/* add padding to the mobile drawer */
 .menu-drawer__inner-submenu {
   padding-bottom: 100px;
 }
