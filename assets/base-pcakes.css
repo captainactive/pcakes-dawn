@@ -271,7 +271,7 @@ footer h2 {
 }
 
 
-.list-menu:last-child {
+.menu-drawer__menu li ul li:last-child {
   margin-bottom: 75px;
 }
 
