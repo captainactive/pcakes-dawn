@@ -41,7 +41,12 @@ footer h2 {
   font-size: 80%;
   color: rgb(var(--color-foreground));
 }
-
+.purpletext {
+	color:#8a54a8;	
+}
+.pinktext {
+	color:#e14984;	
+}
 
 /* GENERAL */
 
