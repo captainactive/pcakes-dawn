@@ -271,7 +271,7 @@ footer h2 {
 }
 
 
-.pcakes-menu li:last-child a:last-child {
+.pcakes-menu li a:last-of-type {
   margin-bottom: 75px;
 }
 
