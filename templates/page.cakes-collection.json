@@ -61,7 +61,7 @@
           "type": "column",
           "settings": {
             "title": "Custom Cake Information",
-            "text": "<p>Find out more about how to order a cake.<\/p>",
+            "text": "<p>Find out more about how to order a custom cake.<\/p>",
             "link_label": "Custom Cake Info.",
             "link": "shopify:\/\/pages\/classic-custom-cake-information"
           }
