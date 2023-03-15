@@ -304,7 +304,7 @@
     </script>
 
 
-
+{% if collection %}
     
 <script type="text/javascript">
 var _learnq = _learnq || [];
@@ -340,7 +340,7 @@ function addedToCart() {
 }(window, window.fetch))
 </script>
 
-    
+  {%- endif -%}  
 
     
     {%- if settings.predictive_search_enabled -%}
