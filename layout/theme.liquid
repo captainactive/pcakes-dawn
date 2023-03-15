@@ -325,6 +325,7 @@ function addedToCart() {
     if (item && item !== 'undefined') {
       cart = Object.assign(cart, item)
     }
+    console.log(cart)
     _learnq.push(['track', 'Added to Cart', cart])
   }))
 } 
@@ -334,7 +335,6 @@ function addedToCart() {
     response.then(res => {
       if (`${window.location.origin}/cart/add.js`
       	.includes(res.url)) {
-        console.log(settings)
         	addedToCart()
       }
     });
