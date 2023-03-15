@@ -322,7 +322,7 @@ function addedToCart() {
       original_total_price: data.original_total_price/100,
       items: data.items
     }
-    if (item && item !== 'undefined') {
+    if (typeof item !== 'undefined') {
       cart = Object.assign(cart, item)
     }
     console.log(cart)
