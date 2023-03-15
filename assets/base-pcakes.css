@@ -517,10 +517,11 @@ quantity::before {
   align-items: center;
   
 }
-
+/* collection page */
 .product__info-container .product__column-sticky .bottomLine {
 justify-items: center;
 }
+
 .card__content .bold_options {
   display: none;
 }
