@@ -304,9 +304,9 @@
     </script>
 
 
-    {{ request.page_type }}
+    
 
-{% if collection %}
+{% if request.page_type == "collection" %} col!
 
     <!-- KLAYVIO COLLECTION CODE --> 
 <script type="text/javascript">
@@ -347,7 +347,7 @@ function addedToCart() {
 
 
     <!-- KLAYVIO PRODUCT CODE --> 
-   {% if product %}
+   {% if request.page_type == "product" %}
 <script type="text/javascript">
 var _learnq = _learnq || [];
 	document.getElementById("AddToCart").addEventListener('click',function (){
