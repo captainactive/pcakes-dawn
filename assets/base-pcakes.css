@@ -202,8 +202,8 @@ footer h2 {
 }
 
 .pc-mega-image {
-  height: 250px;
   margin-top: 30px;
+  width: 100%;
 }
 
 .pc-mega-link {
