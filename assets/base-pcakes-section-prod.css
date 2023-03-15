@@ -35,6 +35,9 @@
   font-size: 120%;
 }
 
+.product-form__buttons {
+  max-width: 100%;
+}
 
 
 /* ACCESSORIES PAGE  */
