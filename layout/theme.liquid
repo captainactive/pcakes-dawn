@@ -319,6 +319,7 @@ function addedToCart() {
       items: data.items
     }
     if (typeof item !== 'undefined') {
+       console.log(item)
       cart = Object.assign(cart, item)
     }
     console.log(cart)
