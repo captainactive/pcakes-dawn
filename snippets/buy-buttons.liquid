@@ -137,6 +137,12 @@
   {%- endif -%}
 
 
-            ProductSubmitButton-{{ section_id }}
+            <script type="text/javascript">
+var _learnq = _learnq || [];
+	document.getElementById("ProductSubmitButton-{{ section_id }}").addEventListener('click',function (){
+ 		_learnq.push(['track', 'Added to Cart', item]);
+	});</script>
+
+            
             
 </div>
