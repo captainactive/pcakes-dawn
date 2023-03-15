@@ -348,10 +348,13 @@ function addedToCart() {
 
     <!-- KLAYVIO PRODUCT CODE --> 
 {% if request.page_type == "product" %}
+LOADED!
+    <BR>
+    <BR><BR><BR><BR><BR>
 
     <script type="text/javascript">
 var _learnq = _learnq || [];
-	document.getElementById("{{ product_form_id }}-submit").addEventListener('click',function (){
+	document.getElementById("addToCartCopy").addEventListener('click',function (){
  		_learnq.push(['track', 'Added to Cart', item]);
 	});</script>
 
