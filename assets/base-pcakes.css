@@ -510,13 +510,17 @@ quantity::before {
 
 /* COLLECTION PAGE  */
 
+
 .pcakes-yotpo-collection, .bottomLine, .standalone-bottomline, .yotpo-display-wrapper {
   display: grid;
   text-align: center;
   align-items: center;
-  justify-items: center;
+  
 }
 
+.product__info-container .product__column-sticky .bottomLine {
+justify-items: center;
+}
 .card__content .bold_options {
   display: none;
 }
