@@ -348,7 +348,14 @@ function addedToCart() {
 
     <!-- KLAYVIO PRODUCT CODE --> 
 {% if request.page_type == "product" %}
+ 
+    {%- endif -%}  
 
+    
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+
+    
     
     {%- endif -%}
   </body>
