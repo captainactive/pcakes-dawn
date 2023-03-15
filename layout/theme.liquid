@@ -322,7 +322,9 @@ function addedToCart() {
       original_total_price: data.original_total_price/100,
       items: data.items
     }
-  
+    if (item && item !== 'undefined') {
+      cart = Object.assign(cart, item)
+    }
     _learnq.push(['track', 'Added to Cart', cart])
   }))
 } 
@@ -339,6 +341,7 @@ function addedToCart() {
   }
 }(window, window.fetch))
 $(document).ajaxComplete(function(event, request, settings){
+  console.log("dick")
   console.log(settings)
 })</script>
 
