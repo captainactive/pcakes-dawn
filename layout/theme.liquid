@@ -338,7 +338,7 @@ function addedToCart() {
   }
 }(window, window.fetch))
 $(document).ajaxComplete(function(event, request, settings){
-  console.log (settings)
+  console.log(settings)
   if(settings.url == "/cart/add.js"){
       addedToCart()
   }
