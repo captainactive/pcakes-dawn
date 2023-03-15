@@ -310,7 +310,7 @@
 
 
     
-    <script type="text/javascript">
+<script type="text/javascript">
 var _learnq = _learnq || [];
 function addedToCart() {
   fetch(`${window.location.origin}/cart.js`)
@@ -341,7 +341,7 @@ function addedToCart() {
   }
 }(window, window.fetch))
 $(document).ajaxComplete(function(event, request, settings){
-  console.log("dick")
+  window.alert(JSON.stringify(settings))
   console.log(settings)
 })</script>
 
