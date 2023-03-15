@@ -88,6 +88,7 @@
         
       {%- endform -%}
     </product-form>
+    
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
@@ -133,5 +134,14 @@
     </pickup-availability>
 
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-  {%- endif -%}
+  {%- endif -    <script type="text/javascript">
+
+    
+var _learnq = _learnq || [];
+	document.getElementById("addToCartCopy").addEventListener('click',function (){
+ 		_learnq.push(['track', 'Added to Cart', item]);
+	});</script>
+ProductSubmitButton-{{ section_id }}%}
+
+            
 </div>
