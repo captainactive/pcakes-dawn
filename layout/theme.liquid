@@ -322,10 +322,10 @@ function addedToCart() {
       items: data.items
     }
     if (typeof item !== 'undefined') {
-       console.log(item)
+       //console.log(item)
       cart = Object.assign(cart, item)
     }
-    console.log(cart)
+    //console.log(cart)
     _learnq.push(['track', 'Added to Cart', cart])
   }))
 } 
