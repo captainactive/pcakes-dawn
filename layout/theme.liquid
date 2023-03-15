@@ -334,6 +334,7 @@ function addedToCart() {
     response.then(res => {
       if (`${window.location.origin}/cart/add.js`
       	.includes(res.url)) {
+        console.log(settings)
         	addedToCart()
       }
     });
