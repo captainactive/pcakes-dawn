@@ -348,24 +348,6 @@ function addedToCart() {
 
     <!-- KLAYVIO PRODUCT CODE --> 
 {% if request.page_type == "product" %}
-LOADED! 2
-    <BR>
-    <BR><BR><BR><BR><BR>
-
-    <script type="text/javascript">
-      
-var _learnq = _learnq || [];
-	document.getElementById("ProductSubmitButton-{{ section_id }}").addEventListener('click',function (){
- 		_learnq.push(['track', 'Added to Cart', item]);
-	});</script>
-
-    {%- endif -%}  
-
-    
-    {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-
-    
 
     
     {%- endif -%}
