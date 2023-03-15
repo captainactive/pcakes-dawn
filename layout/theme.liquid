@@ -343,6 +343,17 @@ function addedToCart() {
 
   {%- endif -%}  
 
+
+    <!-- KLAYVIO PRODUCT CODE --> 
+   {% if product %}
+<script type="text/javascript">
+var _learnq = _learnq || [];
+	document.getElementById("AddToCart").addEventListener('click',function (){
+ 		_learnq.push(['track', 'Added to Cart', item]);
+	});</script>
+
+    {%- endif -%}  
+
     
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
