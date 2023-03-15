@@ -408,7 +408,7 @@
     "41a66fc9-bec6-4c2a-844c-636bc329cac2": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script type=\"text\/javascript\">\n      \nvar _learnq = _learnq || [];\n\tdocument.getElementById(\"addToCartCopy\").addEventListener('click',function (){\n \t\t_learnq.push(['track', 'Added to Cart', item]);\n\t});<\/script>",
+        "custom_liquid": "<script type=\"text\/javascript\">\n      \nvar _learnq = _learnq || [];\n\tdocument.getElementById(\"addToCartCopy\").addEventListener('click',function (){\n \t\t_learnq.push(['track', 'Added to Cart', item]);\n\t});<\/script>\nProductSubmitButton-{{ section_id }}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
