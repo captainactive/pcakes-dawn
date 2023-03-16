@@ -194,6 +194,10 @@ opacity: 1;
   grid-template-columns: repeat(4,minmax(0,1fr))!important;
 }
 
+#Details-HeaderMenu-2 .mega-menu__list {
+  grid-template-columns: repeat(5,minmax(0,1fr))!important;
+}
+
 .mega-menu__content, .mega-menu__content a {
   background-color: white!important;
   color: #e14984!important;
