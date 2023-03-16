@@ -124,12 +124,13 @@
             </a>
         </div>
 
-
-        <a href="{{ card_product.url}}" class="img-banner"> 
+        <div>
+        
 
             
                 {% if card_product.tags contains "cake" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake" or card_product.tags contains "3 Days" or card_product.tags contains "5 Days" %}
-                    <div class="imgbanner">
+                  <a href="{{ card_product.url}}" class="img-banner"> 
+                  <div class="imgbanner">
 
                         {% if card_product.tags contains "cake" or card_product.tags contains "Standard Cake" or card_product.tags contains "Tiered Cake"  %}
                         <p class="border-btm">Customize this Cake</p> 
@@ -140,10 +141,12 @@
                         <p>5 Day Lead Time</p>
                         {% endif %}
                     </div>
+                </a>
+                  
                 {% endif %}
 
-                </a>
-        
+
+       </div> 
 
     </div>
 
