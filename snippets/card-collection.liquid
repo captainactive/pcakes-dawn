@@ -138,13 +138,18 @@
               <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
             </p>
           {%- endif -%}
-      
-        <div>
 
-          {{ request.page_type }}
-            {{card_collection.metafields.pcakes-col.leadtime}}
+          {% if request.page_type == "page" %}
+         <div>
+           <div> 
+              <div>          
+              Lead time:
+              <div>         
+             <div>          
+              {{card_collection.metafields.pcakes-col.leadtime}}
+            <div>
         </div>
-          
+          {%- endif -%}
         </div>
       </div>
 
