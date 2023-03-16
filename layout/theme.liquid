@@ -235,6 +235,46 @@
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
 
+
+<script type="text/javascript">
+    (function(w,t,c,p,s,e){p=new Promise(function(r){w[c]={client:function(){if(!s){
+    s=document.createElement(t);s.src='https://js.cobrowse.io/CobrowseIO.js';s.async=1;
+    e=document.getElementsByTagName(t)[0];e.parentNode.insertBefore(s,e);s.onload=function()
+    {r(w[c]);};}return p;}};});})(window,'script','CobrowseIO');
+
+    CobrowseIO.license = "8p_Wio1O7qmDoA";    
+    CobrowseIO.client().then(function(){
+      
+        CobrowseIO.trustedOrigins = [
+          'https://pattys-cakes.com', 
+          'https://shop.pattys-cakes.com'    
+        ];
+        CobrowseIO.start({allowIFrameStart:true});
+    });
+
+    // generateSupportCode();
+    function generateSupportCode() {
+      // ensure Cobrowse is loaded
+      CobrowseIO.client().then(function () {
+        // create a code and display it to the user
+        CobrowseIO.createSessionCode().then(function (code) {
+          document.getElementById('generate-button').style.display = 'none';
+          document.getElementById('support-code').innerHTML = '<p>Your Support Code is <br>' + code.substr(0, 3) + '-' + code.substr(3, 6) + '</p>';
+          CobrowseIO.currentSession.on('ended', function () {
+            onExpire();
+          })
+        });
+      });
+    }
+
+    function onExpire() {
+      console.log('Support code expired.');
+      document.getElementById('support-code').innerHTML = '<p>Support Code expired.</p>';
+      document.getElementById('generate-button').style.display = 'inline-block';
+    }
+</script>	
+    
+    
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     if (Shopify.designMode) {
       document.documentElement.classList.add('shopify-design-mode');
