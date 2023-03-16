@@ -119,9 +119,11 @@
    margin: 0 auto;
    padding: 8px;
    width: 95%;
-   border-radius: 5px;
-   
+   border-radius: 5px; 
  }
+  .pc-leadtime-cont {
+    padding-top: 5px;
+  }
   
   
 </style>
@@ -160,7 +162,7 @@
           {%- endif -%}
 
           {% if request.page_type == "page" %}
-         <div>
+         <div class="pc-leadtime-cont">
            <div> 
               <div class="tinytext">          
               Lead time:
