@@ -108,6 +108,8 @@
       </div>
     </div>
     {% if card_style == 'card' or card_collection.featured_image %}
+
+    
        <!-- SNIP/CARD-COLLECTION 2-->
       <div class="card__content">
         <div class="card__information">
@@ -136,8 +138,11 @@
               <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
             </p>
           {%- endif -%}
+      {{collection.metafields.pcakes-col.leadtime}}
         </div>
       </div>
+
+    
     {% endif %}
   </div>
 </div>
