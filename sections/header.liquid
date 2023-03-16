@@ -520,7 +520,7 @@
                           {% if childlink.title contains "|" %}
                               {% assign megaimg = childlink.title | split: "|" %}
                                   <a href="{{ childlink.url }}" class="pc-mega-link">
-                                    <img class="pc-mega-image" loading="lazy" src="{{ megaimg | slice: 1 }}">
+                                    <img class="pc-mega-image" loading="lazy" src="{{ megaimg | slice: 1 }}" alt="{{ megaimg | slice: 0 }}">
                                    <div>{{ megaimg | slice: 0 }}</div> 
                                   </a>
                             {%- else -%}
