@@ -56,7 +56,7 @@
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e"
       ],
       "settings": {
-        "title": "",
+        "title": "Cakes Available to Order Online",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -67,10 +67,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-0": {
+          "type": "column",
+          "settings": {
+            "title": "Classic Cakes",
+            "text": "<p>Find more info. about our Classic cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Custom Cake Info.",
+            "link": "shopify:\/\/pages\/classic-custom-cake-information"
+          }
+        },
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-1": {
+          "type": "column",
+          "settings": {
+            "title": "Vegan Cakes",
+            "text": "<p>Find more info. about our Vegan Cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Vegan Cakes",
+            "link": "shopify:\/\/pages\/vegan-custom-cake-information"
+          }
+        },
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Find more info about our Gluten-Free Cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Gluten-Free Cakes",
+            "link": "shopify:\/\/pages\/gluten-free-custom-cake-information"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-0",
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-1",
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-2"
+      ],
+      "settings": {
+        "title": "Custom Cakes",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f"
+    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
+    "7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa"
   ]
 }
