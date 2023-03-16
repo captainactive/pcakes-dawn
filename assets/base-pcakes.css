@@ -604,6 +604,64 @@ justify-items: center;
 
 
 
+/* COBROWSE BUTTONS */
+    #generate-button {
+      height: 46px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 6px;
+      background-color: #8a54a8;
+      color: #fff;
+      outline: none;
+      display: inline-block;
+      margin: 0 0 5px 0;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    #support-code {
+        margin: 0;
+        padding: 0;
+    }
+    #support-code p {
+/*     height: 46px;*/
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 6px;
+      background-color: #e14984;
+      color: #fff;
+      outline: none;
+      display: inline-block;
+      margin: 0 0 5px 0;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      /*white-space: nowrap;*/
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    } 
+
+
+
+
 
 
 
