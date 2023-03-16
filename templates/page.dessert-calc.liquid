@@ -1,9 +1,3 @@
-<div class="page-width">
-
-<h1>  {{ page.title }}</h1>
-
-
-
 
 <style>
 
@@ -60,7 +54,7 @@
 .d-two {
   grid-column: 1;
   grid-row: 2;	
-	border-right: 1px solid #eaeaea;
+	border: none;
 	}	
 .d-three {
   grid-column: 1;
@@ -70,6 +64,7 @@
 	grid-column: 1;
   	grid-row: 4;
 	grid-template-rows: 1fr;
+	min-height: 130px;
 	}	
 	
 .desscalc {
@@ -222,8 +217,17 @@
 	opacity:1;
 }
 	
+	.bottom-buttons	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding-top: 70px;
+	}
 	
-	
+	.bottom-buttons div	{
+		display: grid;
+		justify-content: center;
+		align-content: center;
+	}	
 	
 	
 input[type=range]::-webkit-slider-runnable-track {
@@ -306,6 +310,7 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #CCC;
 }
+	
 	
 	
 </style>
@@ -657,17 +662,17 @@ input[type=range]:focus::-ms-fill-upper {
 		
 </form>
 	
-<div class="buttombuttons">
-	
-	<button href="#">Order online</button>
-	<button href="#">Submit a inquiry for an Event</button>
+<div class="bottom-buttons">
+	<div><button href="/">Order online</button></div>
+		
+	<div><button href="https://pattys-cakes.com/events">Submit a inquiry for an Event</button></div>
 </div>	
 	
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	
 <!--script src="https://pattys-cakes.com/wp-content/themes/pcakeswideopen/js/volumeDiscount-min.js?v=3.1.7" language="javascript"></script-->
 
@@ -685,13 +690,5 @@ buildForm('Cake Pricing');
 });
 
 </script>
-
-</div>
-
-  
-
-  
-  
-	
 
 </div>
