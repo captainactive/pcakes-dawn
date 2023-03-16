@@ -272,18 +272,26 @@
 	.bottom-buttons	{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 20px;
+	 grid-column-gap: 20px;
 	}
 	
 	.bottom-buttons div	{
 		display: grid;
 		justify-content: center;
 		align-content: center;
+		padding: 10px;
 	}	
 	
 	.bottom-buttons div button	{
 		max-width: 300px;
 		width: 100%;
 	}
+	
+	@media (max-width: 400px) {
+		
+	}
+	
 	
 	
 input[type=range]::-webkit-slider-runnable-track {
@@ -755,4 +763,5 @@ buildForm('Cake Pricing');
 </div>
 	
 </div>	
-       
+        
+	
