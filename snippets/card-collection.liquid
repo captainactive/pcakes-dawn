@@ -109,6 +109,16 @@
     </div>
     {% if card_style == 'card' or card_collection.featured_image %}
 
+<style>
+.pc-col-leadtime {
+  color: #8a54a8;
+}
+  
+</style>
+
+
+
+
     
        <!-- SNIP/CARD-COLLECTION 2-->
       <div class="card__content">
@@ -142,10 +152,10 @@
           {% if request.page_type == "page" %}
          <div>
            <div> 
-              <div>          
+              <div class="tinytext">          
               Lead time:
               <div>         
-             <div>          
+             <div class="pc-col-leadtime">          
               {{card_collection.metafields.pcakes-col.leadtime}}
             <div>
         </div>
