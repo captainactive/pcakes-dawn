@@ -198,7 +198,7 @@ opacity: 1;
   grid-template-columns: repeat(5,minmax(0,1fr))!important;
 }
 
-.mega-menu__content, .mega-menu__content a, .predictive-search {
+.mega-menu__content, .mega-menu__content a, .predictive-search, .predictive-search .link--text {
   background-color: white!important;
   color: #e14984!important;
 }
