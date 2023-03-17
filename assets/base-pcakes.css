@@ -227,16 +227,13 @@ opacity: 1;
   color: #8a54a8;
 }
 
-.predictive-search__item-heading span {
-  color: green;
-}
 
 .predictive-search__item .price {
   color: rgba(var(--gradient-background),.7)
 }
 
 /*pink*/
-.predictive-search__item--term .icon-arrow  {
+.predictive-search__item--term .icon-arrow, .predictive-search__item-heading span  {
   color: #e14984!;
 }
 
