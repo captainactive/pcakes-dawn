@@ -207,6 +207,7 @@
 
         </div-->
         <!-- price -->
+  
         <div class="itemgrid6"> 
             {%  if card_product.variants.size > 1 or card_product.tags contains "Standard Cakes" or card_product.tags contains "Semi Custom" or card_product.tags contains "Custom Cake" or card_product.tags contains "semi VEGF" or card_product.tags contains "Tiered Cake" or card_product.tags contains "Theme Cake"   %} <!-- HAS VARIANT -->
                
@@ -215,6 +216,16 @@
                 <span>{{ card_product.price | money }}</span>
         </div>
 
+
+  {%- assign product_in_collects = '[' -%}
+  {%- for collection in card_product.collections -%} 
+  {%- assign product_in_collects = product_in_collects | append: '{"collection_id":"' | append: collection.id | append: '","product_id":"' | append: card_product.id | append: '"' | append: ',"product_handle":"' | append: card_product.handle | append: '"}' -%}
+  {% if forloop.last == false %}
+  {%- assign product_in_collects =  product_in_collects | append: ',' -%}
+  {% endif %}
+  {%- endfor -%}
+  {%- assign product_in_collects =  product_in_collects | append: ']' -%}
+<span class="col_clct" clct='{{product_in_collects}}'></span>
 
   
         <div class="itemgrid7"> 
