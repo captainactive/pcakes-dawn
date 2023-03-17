@@ -223,12 +223,12 @@ opacity: 1;
 
 
 
-.predictive-search__heading, .predictive-search__item-heading.h5, .predictive-search__item-query-result .mark {
+.predictive-search__heading, .predictive-search__item-heading.h5, .predictive-search__item-query-result.mark {
   color: #8a54a8;
 }
 
-.predictive-search__item-query-result .h5 {
-  color: #8a54a8;
+..predictive-search__item-heading span {
+  color: green;
 }
 
 .predictive-search__item .price {
