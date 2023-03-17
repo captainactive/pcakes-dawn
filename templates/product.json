@@ -200,7 +200,7 @@
         "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"wsaiovolumetable\"><\/div>"
+            "custom_liquid": "test<div class=\"wsaiovolumetable\">\n\n<\/div>"
           }
         },
         "share": {
