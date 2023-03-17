@@ -222,18 +222,24 @@ opacity: 1;
 }
 
 
-
-.predictive-search__heading, .predictive-search__item-heading.h5, .predictive-search__item-query-result.h5 mark, .predictive-search__item--term .icon-arrow {
+ /* purple */
+.predictive-search__heading, .predictive-search__item-heading.h5, .predictive-search__item-query-result.h5 mark {
   color: #8a54a8;
 }
 
-..predictive-search__item-heading span {
+.predictive-search__item-heading span {
   color: green;
 }
 
 .predictive-search__item .price {
   color: rgba(var(--gradient-background),.7)
 }
+
+/*pink*/
+.predictive-search__item--term .icon-arrow  {
+  color: #e14984!;
+}
+
 
 
 
