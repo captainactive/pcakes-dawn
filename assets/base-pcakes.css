@@ -223,7 +223,7 @@ opacity: 1;
 
 
  /* purple */
-.predictive-search__heading, .predictive-search__item-heading.h5, .predictive-search__item-query-result.h5 mark {
+.predictive-search__heading, .predictive-search__item-heading.h5,.predictive-search__item-heading span  {
   color: #8a54a8;
 }
 
@@ -233,8 +233,8 @@ opacity: 1;
 }
 
 /*pink*/
-.predictive-search__item--term .icon-arrow, .predictive-search__item-heading span  {
-  color: #e14984!;
+.predictive-search__item--term .icon-arrow, .predictive-search__item-query-result.h5 mark   {
+  color: #e14984;
 }
 
 
