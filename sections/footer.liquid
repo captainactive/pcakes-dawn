@@ -72,6 +72,10 @@
                 {%- endif -%}
 
                 {%- case block.type -%}
+                  {%- when 'liquid' -%}
+                  <div class="footer-block__details-content rte">
+                    {{ block.settings.section_liquid }}
+                  </div>
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
@@ -484,7 +488,27 @@
           "default": "center"
         }
       ]
+    },
+    {
+      "type": "liquid",
+      "name": "Liquid",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading for Liquid"
+        },
+        {
+          "type": "liquid",
+          "id": "section_liquid",
+          "default": "your code here",
+          "label": "Liquid",
+          "info": "Insert custom Liquid"
+        }
+      ]
     }
+
   ],
   "settings": [
     {

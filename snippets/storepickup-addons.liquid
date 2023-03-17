@@ -1,0 +1,281 @@
+{% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
+{% assign alertcontent_clean = alertcontent | strip_html %}
+{% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
+{% assign alertcontent_clean = alertcontent_clean | strip %}
+{% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
+{% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'weball' %}
+    {% assign increase_notice_42 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_42 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'weball' %}
+    {% assign increase_notice_43 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_43 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains '3 Days' %}
+    {% assign increase_notice_10 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_10 %}
+  {% assign pickup_notice_value = 60 %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = 60 %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains '3 Days' %}
+    {% assign increase_notice_11 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_11 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains '5 Days' %}
+    {% assign increase_notice_20 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_20 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains '5 Days' %}
+    {% assign increase_notice_21 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_21 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'cakeball' %}
+    {% assign increase_notice_12 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_12 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'cakeball' %}
+    {% assign increase_notice_13 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_13 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'Cupcakes' %}
+    {% assign increase_notice_34 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_34 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'Cupcakes' %}
+    {% assign increase_notice_35 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_35 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'Mini Cupcakes' %}
+    {% assign increase_notice_24 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_24 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "10:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'Mini Cupcakes' %}
+    {% assign increase_notice_25 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_25 %}
+  {% assign delivery_notice_value = alertcontent_clean %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "10:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'edibleimage' %}
+    {% assign increase_notice_50 = true %}
+  {% endif %}
+{% endfor %}
+
+
+{% if increase_notice_50 %}
+  {% assign pickup_notice_value = alertcontent_clean  %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "9:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean  %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'edibleimage' %}
+    {% assign increase_notice_51 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_51 %}
+  {% assign delivery_notice_value = alertcontent_clean  %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "9:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean  %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'cookies' %}
+    {% assign increase_notice_54 = true %}
+  {% endif %}
+{% endfor %}
+
+
+{% if increase_notice_54 %}
+  {% assign pickup_notice_value = alertcontent_clean  %}
+  {% assign pickup_notice_unit = "hours" %}
+  {% assign pickup_notice_breakpoint = "9:00" %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean  %}
+  {% assign pickup_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+{% for item in cart.items %}
+  {% if item.product.tags contains 'cookies' %}
+    {% assign increase_notice_55 = true %}
+  {% endif %}
+{% endfor %}
+
+{% if increase_notice_55 %}
+  {% assign delivery_notice_value = alertcontent_clean  %}
+  {% assign delivery_notice_unit = "hours" %}
+  {% assign delivery_notice_breakpoint = "9:00" %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean  %}
+  {% assign delivery_notice_after_breakpoint_unit = "hours" %}
+{% endif %}
+
+
+
+
+<script type="text/javascript"> 
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    window.customCheckoutValidation = function() {
+      console.log("aaaaaaa");
+      if(typeof WSAIO !== "undefined" && typeof WSAIO.productDiscount === "function"){
+        WSAIO.getDiscountCode(function(b, c){ 
+          console.log("jajaja");
+          var discountt = c.checkout_url.split("discount=")[1];
+          var discount = (discountt === undefined) ? ' ' : discountt;
+          var checkout_params = Zapiet.Widget.getCheckoutParams();
+          checkout_params.discount = discount;
+          window.location = '/checkout?' + new URLSearchParams(checkout_params);
+        });
+      }
+    }; 
+  }); 
+</script>
+
+
+

@@ -5,7 +5,7 @@
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vector-patty-350.png?v=1677971937\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;<\/span><\/div>",
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vector-patty-350.png?v=1677971937\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;<\/span><\/div>",
         "color_scheme": "background-1",
         "padding_top": 80,
         "padding_bottom": 0
@@ -14,7 +14,7 @@
     "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.svg?v=1677971684\">\n\t\t<img alt=\"Google 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-google.svg?v=1677971684\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-trip.svg?v=1677971684\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-ww.svg?v=1677971684\">\n\t\t<img alt=\"The Knot 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-knot.svg?v=1677971684\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-pc.svg?v=1677971684\">\n\t<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.svg?v=1677971684\">\n\t\t<img alt=\"Google 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-google.svg?v=1677971684\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-trip.svg?v=1677971684\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-ww.svg?v=1677971684\">\n\t\t<img alt=\"The Knot 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-knot.svg?v=1677971684\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-pc.svg?v=1677971684\">\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 24,
         "padding_bottom": 24
@@ -44,7 +44,7 @@
           "type": "text",
           "settings": {
             "heading": "Store Hours",
-            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:30 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>Tuesday-Friday: 10 am - 5:00 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
           }
         },
         "footer-0": {
@@ -66,15 +66,23 @@
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Allergen Info.",
+            "subtext": "<p>Our items are made on equipment used in producing items containing tree nuts, peanuts, soy, eggs, and milk.<\/p>"
           }
         },
-        "b2bc1e89-494a-4a87-9202-44cf50d9e63e": {
-          "type": "shopify:\/\/apps\/hura-theme-blocks\/blocks\/html-block\/5b288e0f-cbe6-47c0-909d-b0904b0ad6dd",
+        "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
+          "type": "liquid",
+          "disabled": true,
           "settings": {
-            "custom_html": "<h2 class=\"footer-block__heading inline-richtext\">Support<\/h2>\n<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>",
-            "custom_liquid": ""
+            "heading": "Reviews",
+            "section_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
+          }
+        },
+        "c8f3ed7b-dcaa-402f-a62a-732b1b69ee58": {
+          "type": "liquid",
+          "settings": {
+            "heading": "Support",
+            "section_liquid": "<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>"
           }
         }
       },
@@ -84,10 +92,11 @@
         "footer-0",
         "footer-1",
         "c0c4aa63-3468-4e3a-9b67-5c39e99d1988",
-        "b2bc1e89-494a-4a87-9202-44cf50d9e63e"
+        "7c512f14-f51c-4d04-9a61-72f8383f28f1",
+        "c8f3ed7b-dcaa-402f-a62a-732b1b69ee58"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "accent-2",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,

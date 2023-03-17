@@ -1,0 +1,114 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\n\n\t<img loading=\"lazy\" class=\"imgcertdel4\" alt=\"Certified Delicious\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" \/>\n\t<p>At Patty's Cakes, we're all about flavor! Our cakes are topped and filled with a light, airy icing that strikes the perfect balance between taste and texture, without being too sugary or hard.<\/p>\n\t<p>We love creating Custom Cakes for any occasion and taste buds. With 11 cake flavors and 22 fillings to choose from, we're sure to make your dessert unforgettable.<\/p>\n\t<p>Custom Cakes are the perfect way to tailor your cake to your event. You can mix and match flavors, select colors, get creative with the design, and feed any crowd size. We also offer <a href=\"\/pages\/gluten-free-cake-information\">gluten-free<\/a> and <a href=\"\/pages\/gluten-free-cake-information\">vegan<\/a> options.<\/p>\n\t<p>Please keep in mind that we require advance ordering to give your Custom Cake the time and attention it deserves. So plan ahead and let us create a delicious cake for your next celebration, whether it's a birthday, baby shower, bridal shower, religious event, or anything in between!<\/p>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\n<h2>Custom Cake Sizes and Shapes<\/h2>\n<!-- CLASSIC FLAVORS  -->\n\n<h3>Round Cakes<\/h3>\t\n<table id=\"tblcakes\" class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td >4&quot; Round Smash Cake (no filling) <\/td>\n    <td>1<\/td>\n    <td>$19.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/products\/smash-cake-semi-custom\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>8&quot; Round Single Layer<\/td>\n    <td>11<\/td>\n    <td>$35.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\t\n\t\n  <tr>\n    <td>10&quot; Round Single Layer<\/td>\n    <td>16<\/td>\n    <td>$46.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\t\n\t\n  <tr>\n    <td >6&quot; Round Double Layer<\/td>\n    <td>12<\/td>\n    <td>$45.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>8&quot; Round Double Layer<\/td>\n    <td>23<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>10&quot; Round Double Layer<\/td>\n    <td>36<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n\t\n<h3>Sheet Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>8x11 Sheet<\/td>\n    <td>20<\/td>\n    <td>$55.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Quarter Sheet<\/td>\n    <td>29<\/td>\n    <td>$65.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Third Sheet<\/td>\n    <td>37<\/td>\n    <td>$77.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Half Sheet<\/td>\n    <td>48<\/td>\n    <td>$87.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\n\t<\/tr>\n  <tr>\n    <td>Two-Thirds Sheet<\/td>\n    <td>75<\/td>\n    <td>$119.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>Full Sheet<\/td>\n    <td>100<\/td>\n    <td>$151.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/semi-custom-cakes\/sheet\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\t\n\t\n<h3>Tiered Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t<th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (5&quot; &amp; 8&quot;)<\/td>\n    <td>30<\/td>\n    <td>$129.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 9&quot;)<\/td>\n    <td>40<\/td>\n    <td>$149.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 10&quot;)<\/td>\n    <td>47<\/td>\n    <td>$169.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td>  \n  <\/tr>\n  <tr>\n    <td>2 Tier Round (6&quot; &amp; 11&quot;)<\/td>\n    <td>55<\/td>\n    <td>$199.00<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/shop.pattys-cakes.com\/collections\/tiered-cakes\">order online<\/a><\/td> \n  <\/tr>\n  <tr>\n    <td>3-4-5 Tier Round and Square Cakes<\/td>\n    <td>75-500+<\/td>\n    <td>$375.00+<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/pattys-cakes.com\/events\">request<\/a><\/td>\t  \n  <\/tr>\n<\/table>\n\n\t\n<p class=\"tinytext\">All custom cakes include a filling and a basic design for the price listed. Some designs will have additional costs. Sales tax is not collected. Not seeing what you are looking for? <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">Send us a message<\/a><\/p>\n\n\t <!-- END CLASSIC -->\n\n\n\t<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "af2414ba-9c6a-4d1d-820d-0acb3e435447": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\n\n\t<h2>Custom Cakes Explained<\/h2>\n\t\n\t<p>New to cake lingo? We are here to help. Let's get visual.<\/p>\n<br><br>\n\t<p><img loading=\"lazy\" class=\"pageimage\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/cake-layers-explained.png?v=1678725648\" alt=\"Custom Cakes Explained\" border=\"0\" \/><\/p>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\t<h2>Custom Cake Icing<\/h2>\n\t<p>We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\n\t\t<a class=\"helpbox\" href=\"\/pages\/cake-flavor-chart\" title=\"popular flavors\">\n\t\t<p class=\"head\">Need help choosing a flavor combination? <\/p>\n\t\t<p>Get fancy with our cake flavor chart.<\/p>\n\t <\/a>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "3ff3778f-e9ed-4269-85c6-e3d4407a7fbf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n<!-- STANDARD FLAVORS  -->\n\n\n\t<h2>Classic Cake Flavors<\/h2>\n\t<div id=\"tblcakefillings\" class=\"gridtable\">\t\t\t\n\t\t<div class=\"gridtablerow\">Banana<\/div>\t\t\t\n\t\t<div class=\"gridtablerow\">Butter Pecan<\/div>\t\t\t\n\t\t<div class=\"gridtablerow\">Butter Yellow<\/div>\n\t\t<div class=\"gridtablerow\">Carrot <span class=\"tinytext\"> **<\/span><\/div>\t\t\t\n\t\t<div class=\"gridtablerow\">Chocolate <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\" \/><\/div>\t\t\t\n\t\t<div class=\"gridtablerow\">Coconut<\/div>\n\t\t<div class=\"gridtablerow\">Confetti <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t<div class=\"gridtablerow\">Lemon <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t<div class=\"gridtablerow\">Red Velvet <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t<div class=\"gridtablerow\">Strawberry<\/div>\n\t\t<div class=\"gridtablerow\">White &amp; Chocolate Marble Swirl <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t<div class=\"gridtablerow\">White <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\n\t<\/div>\n\n\t<div class=\"tinytext\">**additional charge and not available in all sizes<\/div>\n\n\t<h2>Classic Cake Fillings<\/h2>\n\n\t<div class=\"gridtablerowsubhead\"><h3>Fillings<\/h3><\/div>\n\t<div class=\"gridtable ptable50\">\n\t\t\t<div class=\"gridtablerow\">Chocolate Chip Mousse <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Chocolate Fudge <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Chocolate Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Coconut<\/div>\n\t\t\t<div class=\"gridtablerow\">Cream Cheese Mousse <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<!--div class=\"gridtablerow\">Mandarin Orange Mousse<\/div-->\n\t\t\t<div class=\"gridtablerow\">Mint Chip Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Nutella Mousse <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Oreo Mousse <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Peanut Butter Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Pineapple Cream Cheese Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Strawberry Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Strawberry Oreo Mousse<\/div>\n\t\t\t<div class=\"gridtablerow\">Vanilla Bavarian Custard <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Vanilla Mousse<\/div>\n\n  <\/div>\n\n\t<div class=\"gridtablerowsubhead\"><h3>Fruit Fillings<\/h3>\n  <\/div>\n\t\t<div class=\"gridtable ptable50\">\n\t\t\t<div class=\"gridtablerow\">Apple<\/div>\n\t\t\t<div class=\"gridtablerow\">Blueberry<\/div>\n\t\t\t<div class=\"gridtablerow\">Guava <!--span class=\"tinytext\">(currently unavailable)<\/span--><\/div>\n\t\t\t<div class=\"gridtablerow\">Mango <!--span class=\"tinytext\">(currently unavailable)<\/span--><\/div>\n\t\t\t<div class=\"gridtablerow\">Pineapple<\/div>\n\t\t\t<div class=\"gridtablerow\">Raspberry <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Strawberry <img loading=\"lazy\" class=\"svg20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t\t<div class=\"gridtablerow\">Tart Lemon<\/div>\n\t\t<\/div>\t\n\t<div class=\"tinytext\">Similar to a jam. Pairs well with vanilla bavarian custard or cream cheese mousse.<\/div>\n\n\t\n\t<br><br>\n\t\t\t\t\t\n\t<h2 class=\"iconctr\">Popular Flavors<\/h2>\n\t<div class=\"icon-grid\">\n\t\t<div class=\"icontop\">\n\t\t\t<div class=\"svg90\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392\" alt=\"Popular Flavor\"\/><\/div>\n\t\t<\/div>\n\t\t<div>\n\t\t\t<p>Items marked with this symbol are popular flavors.<\/p>\n\t\t\t<div class=\"tinytext\">Keep in mind that all flavors are delicious and enjoyed by many. Explore your flavor preferences.<\/div>\n\t\t<\/div>\n\t<\/div>\t\n\t\n\t\n\t<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "c4c25d3a-9c96-469a-9c14-c36cf9137275": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t<h2>Custom Cake Design<\/h2>\n\t<p>Your greeting, your colors, and a basic design are included in the price of your cake. If you want to go for a real wow factor, we can always get more elaborate for an additional charge.<\/p>\n\t<p>Check out our <a href=\"https:\/\/pattys-cakes.com\/photos\">photo galleries<\/a> if you need some inspiration on the design, or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">send us a message<\/a> today. We're here to help you make something memorable.<\/p>\n\n\t<a class=\"pcakes-button-center\" href=\"https:\/\/pattys-cakes.com\/photos\">View Cake Photos<\/a>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h3>Color Swatches<\/h4>{% render 'pc-color-swatches' %}<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "282f7e1f-3255-47dd-9f03-2fd034605498": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\t\t\t\n\t<h2>Edible Image<\/h2>\n\t<div class=\"box_cont\">\n\t  <div class=\"box_50 txtleft\">\n\t\t<p>Have a photo or logo you'd like to feature on your cake? We can print it on edible icing!<\/p>\n\n\t\t<table id=\"tblicingimages\" class=\"ptable ptable-image\">\n\t\t  <tr>\n\t\t\t<th scope=\"col\">Edible Images<\/th>\n\t\t\t<th scope=\"col\">Price<\/th>\n\t\t  <\/tr>\n\t\t  <tr>\n\t\t\t<td >8x11 Print<\/td>\n\t\t\t<td>$20<\/td>\n\t\t  <\/tr>\n\t\t  <tr>\n\t\t\t<td>11x17 Print<\/td>\n\t\t\t<td>$30<\/td>\n\t\t  <\/tr>\n\t\t<\/table>\n\t\t<p>You may <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">inquire about a cake with an edible image<\/a> or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=16\">submit an image for an already placed order<\/a>.<\/p>\n\t  <\/div>\n\t  <div class=\"box_50\"> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/edible-image.jpg?v=1678726250\" alt=\"Edible Image\" class=\"icingimage\"\/> <\/div>\n\t<\/div>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "d3607d02-e8e3-4c79-b1e1-3d2749a0469f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\n\t<h2>How To Order Custom Cakes<\/h2>\n\t<p>Come into our shop, send us a <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">message<\/a>, or <a href=\"\/pages\/classic-cake-options\">order online<\/a> and your order can be placed in minutes. It's easy as pie&hellip; or cake.<\/p>\n\n<a class=\"pcakes-button-center\" href=\"\/pages\/classic-cake-options\">Order Online<\/a>\n\t\n\t<h3>Cake counter Hours<\/h3>\n\t\t<p>Tuesday-Friday, 10:00 am to 5:00 pm,<br \/>\n\t  Saturday, 10:00 am to 4:00 pm<\/p>\n<h3>The Earlier the Better<\/h3>\n\t<p>We recommend placing your order as soon as you can, being early is a good thing. Our busiest days are Fridays and Saturdays and they always sell out, therefore we recommend placing your order 1-3 weeks ahead of time. We have many options of cakes to fit your timeframe or design requirements. We work within a first-come, first-served method and will accept new orders until we have reached capacity.<\/p>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "8b6c9480-c5e5-403a-9454-cc15748026e9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\t\n\t\n\t<h2>Cancellation\/Change Policy<\/h2>\n\t<p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the order date, all custom cake orders are final, the pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.<\/p>\n\n\n\t<div class=\"comques\">\n\t  <div><a href=\"https:\/\/pattys-cakes.com\/faq\/faq-custom-cakes\">FAQS: Have Questions? View Common Cake Questions<\/a><\/div>\n\t<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec",
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11",
+    "af2414ba-9c6a-4d1d-820d-0acb3e435447",
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9",
+    "3ff3778f-e9ed-4269-85c6-e3d4407a7fbf",
+    "c4c25d3a-9c96-469a-9c14-c36cf9137275",
+    "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
+    "282f7e1f-3255-47dd-9f03-2fd034605498",
+    "d3607d02-e8e3-4c79-b1e1-3d2749a0469f",
+    "8b6c9480-c5e5-403a-9454-cc15748026e9"
+  ]
+}

@@ -75,6 +75,8 @@
           </div>
         </div>
       {%- endif -%}
+
+      <!-- SNIP/CARD-COLLECTION-->
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
@@ -106,6 +108,32 @@
       </div>
     </div>
     {% if card_style == 'card' or card_collection.featured_image %}
+
+<style>
+.pc-col-leadtime {
+  color: #8a54a8;
+}
+ .card__heading a {
+   color: #ffffff;
+   background-color: #8a54a8;
+   margin: 0 auto;
+   padding: 14px 8px;
+   width: 95%;
+   border-radius: 5px; 
+ }
+  .pc-leadtime-cont {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  
+  
+</style>
+
+
+
+
+    
+       <!-- SNIP/CARD-COLLECTION 2-->
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
@@ -133,8 +161,22 @@
               <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
             </p>
           {%- endif -%}
+
+          {% if request.page_type == "page" %}
+         <div class="pc-leadtime-cont">
+           <div> 
+              <div class="tinytext">          
+              Lead time:
+              </div>         
+             <div class="pc-col-leadtime">          
+              {{card_collection.metafields.pcakes-col.leadtime}}
+            <div>
+        </div>
+          {%- endif -%}
         </div>
       </div>
+
+    
     {% endif %}
   </div>
 </div>

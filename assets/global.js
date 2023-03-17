@@ -191,6 +191,9 @@ class QuantityInput extends HTMLElement {
       const buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
     }
+  setTimeout(function(){
+        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
+  },500);
   }
 }
 

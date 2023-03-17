@@ -51,7 +51,7 @@
             if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
               assign quantity_rule_soldout = true
             endif
-          -%}
+          -%}   
           <button
             id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -79,13 +79,16 @@
                 <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
               </svg>
             </div>
+           
           </button>
           {%- if block.settings.show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
         </div>
+        
       {%- endform -%}
     </product-form>
+    
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
@@ -132,4 +135,14 @@
 
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
+
+
+            <script type="text/javascript">
+var _learnq = _learnq || [];
+	document.getElementById("ProductSubmitButton-{{ section_id }}").addEventListener('click',function (){
+ 		_learnq.push(['track', 'Added to Cart', item]);
+	});</script>
+
+            
+            
 </div>

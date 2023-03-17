@@ -45,10 +45,53 @@
         "title": "Classic Cake Options",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6e1b458a-1108-4cd3-95ab-173fc534895f": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-0": {
+          "type": "column",
+          "settings": {
+            "title": "Custom Cake Information",
+            "text": "<p>Find out more about how to order a custom cake.<\/p>",
+            "link_label": "Custom Cake Info.",
+            "link": "shopify:\/\/pages\/classic-custom-cake-information"
+          }
+        },
+        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-1": {
+          "type": "column",
+          "settings": {
+            "title": "Custom Cake Flavor Guide",
+            "text": "<p>Find the find flavor for your event with our flavor guide. <\/p>",
+            "link_label": "Flavor Guide",
+            "link": "shopify:\/\/pages\/cake-flavor-guide"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-0",
+        "template--16656992370930__6e1b458a-1108-4cd3-95ab-173fc534895f-167876188089acc4c8-1"
+      ],
+      "settings": {
+        "title": "Custom Cake Information",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -57,6 +100,7 @@
   },
   "order": [
     "main",
-    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f"
+    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
+    "6e1b458a-1108-4cd3-95ab-173fc534895f"
   ]
 }
