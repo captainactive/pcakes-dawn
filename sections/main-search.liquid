@@ -13,6 +13,7 @@
 {%- endif -%}
 
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
+{{ "ajaxinate.min.js" | asset_url | script_tag  }}
 
 <style>
   .template-search__header {
@@ -273,6 +274,13 @@
   {%- endif -%}
 </div>
 
+<script>
+const endlessCollection = new Ajaxinate({
+container: '#product-grid',
+pagination: '.infinite_next',
+});
+</script>
+                      
 {% schema %}
 {
   "name": "t:sections.main-search.name",
