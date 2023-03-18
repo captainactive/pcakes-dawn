@@ -165,13 +165,35 @@
                                   {{ link.title | escape }}
                                 </button>
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                  
+                          
+                          
                                   {%- for childlink in link.links -%}
                                     <li>
-                                      {%- if childlink.links == blank -%}
+                                      {%- if childlink.title contains "|" -%} <!--PC ADD -->
+                                      {%- elsif childlink.links == blank -%}
                                         <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ childlink.title | escape }}
                                         </a>
                                       {%- else -%}
+
+                                           
+                                             <a class="menu-drawer__menu-item link link--text list-menu__item" href="{{ childlink.url }}"> {{ childlink.title | escape }} \\</a>
+                               
+
+                                        <ul class="menu-drawer__menu list-menu pcakes-menu" role="list" tabindex="-1">
+                                              {%- for grandchildlink in childlink.links -%}
+                                                <li>
+                                                  <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                    {{ grandchildlink.title | escape }}
+                                                  </a>
+                                                </li>
+                                              {%- endfor -%}
+                                            </ul>
+
+                                        {% comment %}
+
+                                        OG LAYOUT
                                         <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
                                           <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
                                             {{ childlink.title | escape }}
@@ -194,10 +216,14 @@
                                             </ul>
                                           </div>
                                         </details>
+                                        {% endcomment %}
                                       {%- endif -%}
                                     </li>
-                                  {%- endfor -%}
+                                  {%- endfor -%}                          
                                 </ul>
+
+
+                          
                               </div>
                             </div>
                           </details>
@@ -471,6 +497,8 @@
           </ul>
         </nav>
       {%- else -%}
+
+                    <!-- DESKTOP-->
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
@@ -485,6 +513,18 @@
                       <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
                         <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
+
+
+                          
+                          <!-- PC ADD -->
+                          {% if childlink.title contains "|" %}
+                              {% assign megaimg = childlink.title | split: "|" %}
+                                  <a href="{{ childlink.url }}" class="pc-mega-link">
+                                    <img class="pc-mega-image" loading="lazy" src="{{ megaimg | slice: 1 }}" alt="{{ megaimg | slice: 0 }}">
+                                   <div>{{ megaimg | slice: 0 }}</div> 
+                                  </a>
+                            {%- else -%}
+
                             <li>
                               <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                 {{ childlink.title | escape }}
@@ -501,6 +541,7 @@
                                 </ul>
                               {%- endif -%}
                             </li>
+                            {%- endif -%}
                           {%- endfor -%}
                         </ul>
                       </div>
@@ -658,7 +699,7 @@
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span aria-hidden="true">{%- render 'bold-options-hybrid-cart-item-count' with cart -%}</span>
             {%- endif -%}
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>

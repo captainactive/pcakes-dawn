@@ -29,7 +29,7 @@
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
                   <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
-                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="totals__subtotal-value"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ cart.total_price | money_with_currency }}</p>
                 </div>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
@@ -82,11 +82,11 @@
                 </button>
               </div>
 
-              {%- if additional_checkout_buttons -%}
-                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-                  {{ content_for_additional_checkout_buttons }}
-                </div>
-              {%- endif -%}
+              {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">
+              {{ content_for_additional_checkout_buttons }}
+              </div>
+              {% endif %}
           {%- endcase -%}
         {% endfor %}
 

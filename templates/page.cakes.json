@@ -56,7 +56,7 @@
         "0a028c2d-3f99-4c0f-b31c-4fe63117fe4e"
       ],
       "settings": {
-        "title": "Cupcakes",
+        "title": "Cakes Available to Order Online",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -67,10 +67,112 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-0": {
+          "type": "column",
+          "settings": {
+            "title": "Classic Cakes",
+            "text": "<p>Find more info. about our Classic cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Custom Cake Info.",
+            "link": "shopify:\/\/pages\/classic-custom-cake-information"
+          }
+        },
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-1": {
+          "type": "column",
+          "settings": {
+            "title": "Vegan Cakes",
+            "text": "<p>Find more info. about our Vegan Cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Vegan Cakes",
+            "link": "shopify:\/\/pages\/vegan-custom-cake-information"
+          }
+        },
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-2": {
+          "type": "column",
+          "settings": {
+            "title": "Gluten-Free Cakes",
+            "text": "<p>Find more info about our Gluten-Free Cakes and, if your design isn't found with our online options, you can request a custom cake.<\/p>",
+            "link_label": "Gluten-Free Cakes",
+            "link": "shopify:\/\/pages\/gluten-free-custom-cake-information"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-0",
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-1",
+        "template--16656992305394__7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa-16790000168d155439-2"
+      ],
+      "settings": {
+        "title": "Custom Cake Details",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "45d3e66f-a2b7-4b73-bcaa-958680d4c011": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cake Flavor Guide",
+            "heading_size": "h1"
+          }
+        },
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-1": {
+          "type": "text",
+          "settings": {
+            "text": "Need help choosing a flavor and filling?",
+            "text_style": "body"
+          }
+        },
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View our Flavor Guide",
+            "button_link_1": "shopify:\/\/pages\/cake-flavor-guide",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-0",
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-1",
+        "template--16656992305394__45d3e66f-a2b7-4b73-bcaa-958680d4c011-16790004673110b31e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/stand-low2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f"
+    "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
+    "7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa",
+    "45d3e66f-a2b7-4b73-bcaa-958680d4c011"
   ]
 }

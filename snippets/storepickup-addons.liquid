@@ -13,10 +13,10 @@
 {% endfor %}
 
 {% if increase_notice_42 %}
-  {% assign pickup_notice_value = 0 %}
+  {% assign pickup_notice_value = alertcontent_clean %}
   {% assign pickup_notice_unit = "hours" %}
   {% assign pickup_notice_breakpoint = "10:00" %}
-  {% assign pickup_notice_after_breakpoint_value = 0 %}
+  {% assign pickup_notice_after_breakpoint_value = alertcontent_clean %}
   {% assign pickup_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
 
@@ -43,10 +43,11 @@
 {% endfor %}
 
 {% if increase_notice_10 %}
-  {% assign pickup_notice_value = 64 %}
+
+  {% assign pickup_notice_value = 60 %}
   {% assign pickup_notice_unit = "hours" %}
   {% assign pickup_notice_breakpoint = "10:00" %}
-  {% assign pickup_notice_after_breakpoint_value = 64 %}
+  {% assign pickup_notice_after_breakpoint_value = 60 %}
   {% assign pickup_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
 
@@ -57,10 +58,11 @@
 {% endfor %}
 
 {% if increase_notice_11 %}
-  {% assign delivery_notice_value = 600 %}
+
+  {% assign delivery_notice_value = alertcontent_clean %}
   {% assign delivery_notice_unit = "hours" %}
   {% assign delivery_notice_breakpoint = "10:00" %}
-  {% assign delivery_notice_after_breakpoint_value = 600 %}
+  {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
   {% assign delivery_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
 
@@ -256,11 +258,5 @@
   {% assign delivery_notice_after_breakpoint_value = alertcontent_clean  %}
   {% assign delivery_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
-
-
-
-
-
-
 
 

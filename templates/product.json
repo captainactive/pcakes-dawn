@@ -5,6 +5,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -13,6 +14,18 @@
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "d9b7d681-77ad-4789-b67b-32efe6c9333d": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
           }
         },
         "caption": {
@@ -27,21 +40,10 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "509e35e4-7159-4a39-a416-a5df9d0d3428": {
+          "type": "custom_liquid",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
+            "custom_liquid": "<div class=\"pc-prod-h2\"><h2>Description<\/h2><\/div>"
           }
         },
         "description": {
@@ -49,40 +51,157 @@
           "settings": {
           }
         },
+        "350680f0-8058-4d5b-94cc-38930f6b92e9": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"pc-prod-h2\">\n   <!-- PROD DETAILS -->    \n{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Theme Cake\" or product.tags contains \"Tiered Cake\" %}     \n\n    \n    <h2>Cake Icing<\/h2>\n    <div><img class=\"img-descrip\" alt=\"Certified Delicious cakes\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" >\n    <p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance of sweetness.<\/p>\n    <\/div>\n    \n\n    <h2>Looking for more?<\/h2>\n    <div>\n        <p>Are you looking for more customization? Send us a <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107&prod={{product.handle}}\">message to order a custom cake<\/a>. <span>Please note that delivery orders must be placed online.<\/span><\/p>\n    <\/div> \n{% endif %}  \n\n\n{% if product.tags contains \"Vegan\" or product.tags contains \"semi VEGF\" %}     \n<!-- VEGAN -->\n  \n<h2>Vegan Option<\/h2>\n    <div>\n        <p>Our vegan option is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n    {% endif %}          \n  \n{% if product.tags contains \"VE White\" or product.tags contains \"VE Choc\" or product.tags contains \"VE Straw\" %}     \n   <!-- VEGAN -->\n   <div>\n        <p>Our vegan cupcakes is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n{% endif %}         \n          \n       \n{% if product.tags contains \"Standard Cakes\" %}  \n    <h2>Lead time<\/h2>\n       <p>Cakes ordered within 24 business hours will be fulfilled based on availability. Some flavors and sizes may sell out. We will contact you if a change is needed.<\/p>\n      \n{% endif %}       \n          \n          \n{% if product.tags contains \"ccpk12\" or product.tags contains \"ccpk4\" or product.tags contains \"ccpk6\" %} \n          \n    {% if product.tags contains \"customcc\" %} \n    {% else %}   \n  \n         <!-- PACKS -->\n        <h2>Flavor Choices<\/h2>\n        <div>\n            <p> If you would like to select the flavors in each pack. Visit our <a href=\"\/collections\/cupcakes\">cupcake page<\/a> to make your selection and then add a <a href=\"\/collections\/candles-and-accessories\/box\">gift box<\/a> separately.<\/p>\n\n        <\/div>        \n    {% endif %}   \n    {% endif %}   \n          \n{% if product.tags contains \"mccpk12\" or product.tags contains \"mccpk24\" %}       \n   <!-- PACKS -->\n          <h2>Flavor Choices<\/h2>\n          <div>\n            <p> If you would like to select the flavors in each pack. You may do so with our <a href=\"\/collections\/mini-cupcakes\/products\/mini-cupcakes-split-dozen\">split dozen mini cupcakes<\/a>.<\/p>\n          <\/div>        \n    {% endif %}   \n           \n         \n{% if product.tags contains \"3 Days\"%}     \n    <h2>Lead Time<\/h2>\n    <div>\n        <p>This cake has a lead time of 3 days until we are sold out.<\/p>\n        <\/div>         \n    {% endif %} \n  \n          \n    {% if product.tags contains \"5 Days\"%}     \n           <h2>Lead Time<\/h2>\n           <div>\n            <p>This cake has a lead time of 5 days until we are sold out.<\/p>\n          <\/div>        \n      {% endif %} \n  \n      <\/div>"
+          }
+        },
+        "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Allergens",
+            "icon": "nut_free",
+            "content": "",
+            "page": "",
+            "liquid": "{% if product.metafields.my_fields.allergens %}\n      \n      <div class=\"allergrid\">  \n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Flours:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.flours}}<\/div>\n        <\/div>\n\t\t  <div>\n\t\t \n\t\t\t<div class=\"allertitle\">Dairy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.dairy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Starch:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.starch}}<\/div>\n        <\/div>\n\t\t <div>\t\t\t\n\t\t\t<div class=\"allertitle\">Eggs:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.eggs}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Nuts:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.nuts}}<\/div>  \n        <\/div>\n\t\t <div>\n\t\t\t<div class=\"allertitle\">Gelatin:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.gelatin}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Sugar:<\/div>\n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.sugar}}<\/div>\n        <\/div>\n\t\t <div>\n\t\t\t<div class=\"allertitle\">Soy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.soy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n        \t<div class=\"allertitle\">Fruit Seeds:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.fruitseeds}}<\/div>  \n        <\/div>\n      <\/div>\n      <div class=\"allerfooter\">All equipment is washed, however, cross-contamination with ingredients is a possibility. Due to challenges with supply chains, these values may fluctuate.<br><\/div> \n    <br> \n  \n       {% else %}\nThis item either has too many options to list the allergens or is not a food item.\n        {% endif %}"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
+            "heading": "Handling Guidelines",
             "icon": "heart",
             "content": "",
-            "page": ""
+            "page": "",
+            "liquid": "<p>Desserts are Fragile, always becareful when traveling with them\n<\/p>\n<p>Make this dynamic, based on tags.<\/p>"
+          }
+        },
+        "304c3ed7-07e4-49d6-bee0-335c1cab9d56": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Handling Guidelines (Cupcakes)",
+            "icon": "check_mark",
+            "content": "<p>Content to come<\/p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "23b03fac-2103-4662-be29-c9f2c5c710f2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Handling Guidelines (All)",
+            "icon": "check_mark",
+            "content": "<p>content to come<\/p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "33cb1234-dee4-40b9-a8e7-29a55562e834": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "icon": "star",
+            "content": "",
+            "page": "",
+            "liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
+          }
+        },
+        "fcebf180-2f2b-47fe-bd81-4bc2da9c2379": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Tiered Cake\" or product.tags contains \"Theme Cake\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Cake<\/p>          \n    <\/div>\n\n {% elsif product.tags contains \"customize\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Item<\/p>          \n    <\/div>\n\n {% endif %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "28c74ebb-2d26-4b7b-ba70-118eadef4883": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% if product.metafields.my_fields.allergens %}\n      \n      <h2 class=\"marbtm10\">Allergen Information<\/h2>\n      <div class=\"allergrid martop15\">  \n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Flours:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.flours}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Dairy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.dairy}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Starch:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.starch}}<\/div>\n\t\t\t\n\t\t\t<div class=\"allertitle\">Eggs:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.eggs}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n\t\t\t<div class=\"allertitle\">Nuts:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.nuts}}<\/div>  \n\n\t\t\t<div class=\"allertitle\">Gelatin:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.gelatin}}<\/div>\n\t\t<\/div>\n        <div>\n\t\t\t<div class=\"allertitle\">Sugar:<\/div>\n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.sugar}}<\/div>\n\n\t\t\t<div class=\"allertitle\">Soy:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.soy}}<\/div>\n\t\t<\/div>\n        <div class=\"oddrow\">\n        \t<div class=\"allertitle\">Fruit Seeds:<\/div> \n\t\t\t<div class=\"allercontent\">{{product.metafields.my_fields.allergens.value.fruitseeds}}<\/div>  \n        \t\n\t\t\t<div class=\"allertitle\">&nbsp;<\/div> \n\t\t\t<div class=\"allercontent\">&nbsp;<\/div>  \t\t\t\n   \n      <\/div>\n       \n      <\/div>\n      <div class=\"allerfooter\">All equipment is washed, however, cross-contamination with ingredients is a possibility. Due to challenges with supply chains, these values may fluctuate.<br><\/div> \n    <br> \n  \n        \n        {% endif %}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"wsaiovolumetable\">\n\n<\/div>"
+          }
+        },
+        "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"pc-prod-h2\">\n{%  if product.tags contains \"Standard Cakes\" %} <!-- HAS VARIANT -->\n    \n<h2>Cancellation\/Change Policy<\/h2>\n<p>Standard Cakes sales are final 24 hours before the pickup time..<\/p>\n<!--div class=\"hrtoplite\"><\/div-->\n{% endif %}\n\n\n{%  if product.tags contains \"Semi Custom\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Theme Cake\" or product.tags contains \"Tiered Cake\" %} <!-- HAS VARIANT -->\n<div><\/div>\n<h2>Design and Pricing<\/h2>\n<p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href=\"https:\/\/pattys-cakes.com\/contact-us\">Contact Us<\/a> page. They will provide you with accurate pricing based on your desired specifications.<\/p>\n\n\n<div><\/div>\n<h2>Cancellation\/Change Policy<\/h2>\n<p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the pickup\/delivery date, all cake orders are final and non-refundable. The pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.<\/p>\n\n{% endif %}\n<\/div>"
+          }
+        },
+        "482e5093-9f52-4b15-b07e-f569237a6e36": {
+          "type": "shopify:\/\/apps\/w3-product-accessories\/blocks\/widget\/cebf1474-e4fa-4cb4-a91e-d313690bf6f1",
+          "settings": {
+          }
+        },
+        "8cf77127-d99a-46a6-98bc-23de985f94b5": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<select name=\"id\" id=\"ProductSelect-{{ section.id }}\" class=\"product-form__variants no-js\">\n              {% for variant in product.variants %}\n                {% if variant.available %}\n                  <option {% if variant == product.selected_or_first_available_variant %} selected=\"selected\" {% endif %} value=\"{{ variant.id }}\">\n                    {{ variant.title }}\n                  <\/option>\n                {% else %}\n                  <option disabled=\"disabled\">{{ variant.title }} - {{ 'products.product.sold_out' | t }}<\/option>\n                {% endif %}\n              {% endfor %}\n            <\/select>"
+          }
+        },
+        "9728012a-c46e-49ae-847e-c01a09e7e717": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "share": {
@@ -95,27 +214,42 @@
       "block_order": [
         "vendor",
         "title",
+        "d9b7d681-77ad-4789-b67b-32efe6c9333d",
+        "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd",
         "caption",
         "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
+        "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
+        "350680f0-8058-4d5b-94cc-38930f6b92e9",
+        "f1cbc232-fd87-4d9b-94a1-5158525653ce",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
+        "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
+        "23b03fac-2103-4662-be29-c9f2c5c710f2",
+        "33cb1234-dee4-40b9-a8e7-29a55562e834",
+        "fcebf180-2f2b-47fe-bd81-4bc2da9c2379",
+        "variant_picker",
+        "28c74ebb-2d26-4b7b-ba70-118eadef4883",
+        "buy_buttons",
+        "quantity_selector",
+        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7",
+        "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
+        "482e5093-9f52-4b15-b07e-f569237a6e36",
+        "8cf77127-d99a-46a6-98bc-23de985f94b5",
+        "9728012a-c46e-49ae-847e-c01a09e7e717",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
-        "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -128,30 +262,49 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "$5 Local Delivery",
             "heading_size": "h1"
+          }
+        },
+        "5f289c58-5615-4adf-849e-f9c42b55915e": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "What a deal!",
+            "text_style": "subtitle",
+            "text_size": "large"
           }
         },
         "image-with-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Allow our delivery team to deliver your order right to your door. Select Local Delivery at checkout and let us take it from there.   <\/p>",
             "text_style": "body"
+          }
+        },
+        "f93e7e04-9581-4842-ac3a-cdecb90c5aa2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/local-delivery"
           }
         }
       },
       "block_order": [
         "image-with-text-0",
-        "image-with-text-1"
+        "5f289c58-5615-4adf-849e-f9c42b55915e",
+        "image-with-text-1",
+        "f93e7e04-9581-4842-ac3a-cdecb90c5aa2"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
+        "image": "shopify:\/\/shop_images\/pattys-cakes-delivery-450.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -159,11 +312,12 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
+            "title": "Freshly Iced to Order",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -172,7 +326,7 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
+            "title": "Local Delivery",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -202,6 +356,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -217,20 +372,45 @@
         "padding_bottom": 28
       }
     },
-    "78e0212c-b864-4fb2-b59a-4a816f435f4a": {
-      "type": "test-section",
+    "9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9": {
+      "type": "multirow",
+      "disabled": true,
+      "blocks": {
+        "template--16655251996914__9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9-167840439498bfcf1c-0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pattys-cakes-delivery-450.png",
+            "caption": "Caption",
+            "heading": "$5 Local Delivery",
+            "text": "<p>Allow our delivery team to deliver your order right to your door. Select Local Delivery at checkout and we'll take care of it from there.<\/p>",
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/pages\/local-delivery"
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251996914__9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9-167840439498bfcf1c-0"
+      ],
       "settings": {
-        "custom_text_title": "Title",
-        "custom_html": "<p>html<\/p>",
-        "custom_text_body": "<p>Add your text here<\/p>"
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "accent-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "b4e91d0e-df9a-4994-90f1-7e4169e07244": {
-      "type": "test-section",
+    "1678407954a48f9a26": {
+      "type": "apps",
       "settings": {
-        "custom_text_title": "Title",
-        "custom_html": "<p>html<\/p>",
-        "custom_text_body": "<p>Add your text here<\/p>"
+        "include_margins": true
       }
     }
   },
@@ -239,7 +419,7 @@
     "image-with-text",
     "multicolumn",
     "related-products",
-    "78e0212c-b864-4fb2-b59a-4a816f435f4a",
-    "b4e91d0e-df9a-4994-90f1-7e4169e07244"
+    "9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9",
+    "1678407954a48f9a26"
   ]
 }

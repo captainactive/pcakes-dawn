@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    },
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\n\n\t<img loading=\"lazy\" style=\"width: 330px;\" class=\"imgcertdel4\" alt=\"Certified Delicious\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" \/>\n\t<p>At Patty's Cakes, we're all about flavor! Our cakes are topped and filled with a light, airy icing that strikes the perfect balance between taste and texture, without being too sugary or hard.<\/p>\n\t<p>We love creating Custom Cakes for any occasion and taste buds. With 11 cake flavors and 22 fillings to choose from, we're sure to make your dessert unforgettable.<\/p>\n\t<p>Custom Cakes are the perfect way to tailor your cake to your event. You can mix and match flavors, select colors, get creative with the design, and feed any crowd size. We also offer <a href=\"\/pages\/classic-cake-information\">classic<\/a> and <a href=\"\/pages\/gluten-free-cake-information\">gluten-free<\/a> options.<\/p>\n\t<p>Please keep in mind that we require advance ordering to give your Custom Cake the time and attention it deserves. So plan ahead and let us create a delicious cake for your next celebration, whether it's a birthday, baby shower, bridal shower, religious event, or anything in between!<\/p>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- liquid \n    assign icon-veg = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vegan-free-logo.svg?v=1678740392' alt='Vegan Flavor' \/>\"\n    assign icon-pop = \"<img loading='lazy' class='svg20'  src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392' alt='Popular Flavor'\/>\"\n    assign icon-adv = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/adv-logo.svg?v=1678740814' alt='Adventurous Flavor' \/>\"\n    assign icon-kid = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/kid-friendly-logo.svg?v=1678740392' alt='kid Friendly Flavor' \/>\"\n    assign icon-gf = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/gluten-free-logo.svg?v=1678728404' alt='Gluten-Free Flavor' \/>\"\n-%}\n\n<div class=\"page-width info-pages\">\t\n\n<h2>Vegan Custom Cake Sizes and Shapes<\/h2>\n<!-- VEGAN FLAVORS  -->\n\n<h3>Round Cakes<\/h3>\t\n\t\n<table id=\"tblcakes\" class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t  <th scope=\"col\">Order<\/th>\n  <\/tr>\t\n  <tr>\n    <td>{{ icon-veg }} 4&quot; Round Smash Cake (no filling) <\/td>\n    <td>1<\/td>\n    <td>$27.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/products\/smash-cake-semi-custom\">order online<\/a><\/td>\n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 8&quot; Round Single Layer<\/td>\n    <td>11<\/td>\n    <td>$49.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\t\n\t\n  <tr>\n    <td>{{ icon-veg }} 10&quot; Round Single Layer<\/td>\n    <td>16<\/td>\n    <td>$60.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/round-single-layer\">order online<\/a><\/td>\t  \n  <\/tr>\t\n\t\n\t\n  <tr>\n\t<td >{{ icon-veg }} 6&quot; Round Double Layer<\/td>\n    <td>12<\/td>\n    <td>$61.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>{{ icon-veg }} 8&quot; Round Double Layer<\/td>\n    <td>23<\/td>\n    <td>$75.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n\n  <tr>\n    <td>{{ icon-veg }} 10&quot; Round Double Layer<\/td>\n    <td>36<\/td>\n    <td>$105.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/round-double-layer\">order online<\/a><\/td>\t  \n  <\/tr>\n<\/table>\t\n\t\n\t\n\t\n\t\n<h3>Tiered Cakes<\/h3>\t\n<table class=\"ptable ptable-sizes\">\n  <tr>\n    <th scope=\"col\" class=\"txtleft\">Size\/Shape<\/th>\n    <th scope=\"col\">Serves<\/th>\n    <th scope=\"col\">Price<\/th>\n\t<th scope=\"col\">Order<\/th>\n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 2 Tier Round (5&quot; &amp; 8&quot;)<\/td>\n    <td>30<\/td>\n    <td>$159.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/tiered-cake\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 2 Tier Round (6&quot; &amp; 9&quot;)<\/td>\n    <td>40<\/td>\n    <td>$179.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/tiered-cake\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 2 Tier Round (6&quot; &amp; 10&quot;)<\/td>\n    <td>47<\/td>\n    <td>$211.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/tiered-cake\">order online<\/a><\/td>\t  \n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 2 Tier Round (6&quot; &amp; 11&quot;)<\/td>\n    <td>55<\/td>\n    <td>$241.00<\/td>\n\t<td><a class=\"buynow\" href=\"\/collections\/vegan-cakes\/tiered-cake\">order online<\/a><\/td>  \n  <\/tr>\n  <tr>\n    <td>{{ icon-veg }} 3 Tier Round <\/td>\n    <td>75-110<\/td>\n    <td>$425.00+<\/td>\n\t<td><a class=\"buynow\" href=\"https:\/\/pattys-cakes.com\/events\">request<\/a><\/td>\t\t  \n  <\/tr>\t\n<\/table>\n\n\t\n<p class=\"tinytext\">All custom cakes include a filling and a basic design for the price listed. Some designs will have additional costs. Sales tax is not collected. Not seeing what you are looking for? <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">Send us a message<\/a><\/p>\n\n\t <!-- END VEGAN -->\n\n\t<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "af2414ba-9c6a-4d1d-820d-0acb3e435447": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\n\n\t<h2>Custom Cakes Explained<\/h2>\n\t\n\t<p>New to cake lingo? We are here to help. Let's get visual.<\/p>\n<br><br>\n\t<p><img loading=\"lazy\" class=\"pageimage\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/cake-layers-explained.png?v=1678725648\" alt=\"Custom Cakes Explained\" border=\"0\" \/><\/p>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "3ff3778f-e9ed-4269-85c6-e3d4407a7fbf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- liquid \n    assign icon-veg = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vegan-free-logo.svg?v=1678740392' alt='Vegan Flavor' \/>\"\n    assign icon-pop = \"<img loading='lazy' class='svg20'  src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392' alt='Popular Flavor'\/>\"\n    assign icon-adv = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/adv-logo.svg?v=1678740814' alt='Adventurous Flavor' \/>\"\n    assign icon-kid = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/kid-friendly-logo.svg?v=1678740392' alt='kid Friendly Flavor' \/>\"\n    assign icon-gf = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/gluten-free-logo.svg?v=1678728404' alt='Gluten-Free Flavor' \/>\"\n-%}\n\n<!-- VEGAN CAKES -->\n<div class=\"page-width info-pages\">\t\n\n\t\t\n\t\t<h2>Vegan Cake Flavors<\/h2>\n\n\t\t<div id=\"tblcakefillings\" class=\"gridtable\">\t\t\t\n\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Chocolate  {{icon-pop}}<\/div>\t\t\t\n\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} White {{icon-pop}}<\/div>\n\t\t<\/div>\n\t\n\t\t<div class=\"tinytext\">Be sure to request vegan cake and fillings at the time of ordering.<\/div>\n\n\t<br><br>\n\t\t<h2>Vegan Cake Fillings<\/h2>\n\t\t<div>\n\t\t<div class=\"gridtablerowsubhead\"><h3>Fudge &amp; Custards<\/h3><\/div>\n\t\t<div id=\"tblcakefillings4\" class=\"gridtable\">\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Chocolate Fudge  {{icon-pop}}<\/div>\n\t\t\t\t<!--div class=\"gridtablerow\">{{ icon-veg }} Raspberry &amp; Bavarian Custard  {{icon-pop}}<\/div-->\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Vanilla Bavarian Custard  {{icon-pop}}<\/div>\n\t\t<\/div>\n\t\t\t\n\t\t<div class=\"gridtablerowsubhead\"><h3>Mousses<\/h3><\/div>\n\t\t<div id=\"tblcakefillings2\" class=\"gridtable\">\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Chocolate Chip Mousse  {{icon-pop}}<\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Chocolate Mousse <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Coconut <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Oreo Mousse  {{icon-pop}}<\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Strawberry Mousse <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Strawberry Oreo Mousse <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Vanilla Mousse <\/div>\n\t\t\t\n\t\t<\/div>\n\t\t\t\n\t\t\t<div class=\"gridtablerowsubhead\"><h3>Fruit Fillings <\/h3><\/div>\n\t\t\t<div id=\"tblcakefillings3\" class=\"gridtable\">\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Apple <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Blueberry <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Guava <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Mango <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Pineapple <\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Raspberry  {{icon-pop}}<\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Strawberry  {{icon-pop}}<\/div>\n\t\t\t\t<div class=\"gridtablerow\">{{ icon-veg }} Tart Lemon <\/div>\n\t\t\t<\/div>\n\t\t\t<div class=\"tinytext\">Pairs well with vanilla bavarian custard or cream cheese mousse.<\/div>\n<\/div>\t\t\t\n\n\n\t\t<br><br>\n<h2 class=\"iconctr\">Vegan Cakes <\/h2>\n\n\t<div class=\"icon-grid\">\n\t\t<div class=\"icontop\">\n\t\t\t<div class=\"svg90\"><img loading='lazy' class='svg90' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vegan-free-logo.svg?v=1678740392' alt='Vegan Flavor' \/><\/div>\n\t\t<\/div>\n\t\t<div>\n\t\t\t<p>Items marked with this symbol have a vegan option available. Please be sure and ask for the vegan option when ordering.<\/p>\n\t\t\t<div class=\"tinytext\">Please note: We have the best intentions in making vegan items. However, we are not a vegan environment, so cross-contamination with non vegan ingredients is a possibility.<\/div>\n\t\t<\/div>\n\t<\/div>\n\n\t\n\t\t\n\t<br><br>\n\n\t\t\t\t\t\n\t<h2 class=\"iconctr\">Popular Flavors<\/h2>\n\t<div class=\"icon-grid\">\n\t\t<div class=\"icontop\">\n\t\t\t<div class=\"svg90\"><img loading='lazy' class='svg90'  src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392' alt='Popular Flavor'\/><\/div>\n\t\t<\/div>\n\t\t<div>\n\t\t\t<p>Items marked with this symbol are popular flavors.<\/p>\n\t\t\t<div class=\"tinytext\">Keep in mind that all flavors are delicious and enjoyed by many. Explore your flavor preferences.<\/div>\n\t\t<\/div>\n\t<\/div>\t\n\t\n\t\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "d3607d02-e8e3-4c79-b1e1-3d2749a0469f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- liquid \n    assign icon-veg = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vegan-free-logo.svg?v=1678740392' alt='Vegan Flavor' \/>\"\n    assign icon-pop = \"<img loading='lazy' class='svg20'  src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/favorite-logo.svg?v=1678740392' alt='Popular Flavor'\/>\"\n    assign icon-adv = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/adv-logo.svg?v=1678740814' alt='Adventurous Flavor' \/>\"\n    assign icon-kid = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/kid-friendly-logo.svg?v=1678740392' alt='kid Friendly Flavor' \/>\"\n    assign icon-gf = \"<img loading='lazy' class='svg20' src='https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/gluten-free-logo.svg?v=1678728404' alt='Gluten-Free Flavor' \/>\"\n-%}\n\n<div class=\"page-width info-pages\">\t\n\n\n\t<h2>Custom Vegan Cake Flavor and Filling Combinations <\/h2>\n\n\t<p>Not sure what to order for your cake? Here are plenty of delicious suggestions to make life a little easier. Select one of these or choose your own, it's up to you. <\/p>\n\n\n\t  <div class=\"gridtablerowsubhead\">\n\t\t<h3>Flavor Key<\/h3>\n\t  <\/div>\n\t  <div class=\"gridtablelong ptable50\">\n\t\t<div class=\"gridtablerow\">{{icon-pop}} Popular Flavors <\/div>\n\t\t<div class=\"gridtablerow\">{{icon-adv}} Adventurous Flavors<\/div>\n\t\t<div class=\"gridtablerow\">{{icon-kid}} Kid Friendly Flavors<\/div>\n\t  <\/div>\n\t<br>\n\t<br>\n\n\n\n\t<!-- VEGAN FLAVORS -->\n\n\n\n\t<h2>Vegan Cake Flavor and Filling Combinations<\/h2>\n\n\n\t  <div class=\"gridtablerowsubhead\">\n\t\t<h3>Chocolate<\/h3>\n\t  <\/div>\n\t  <div id=\"tblcakefillings\" class=\"gridtablelong\">\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }}\t Chocolate<\/span> with Chocolate Chip Mousse\t\t {{icon-pop}} <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Chocolate<\/span> with Chocolate Fudge <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Chocolate<\/span> with Oreo {{icon-pop}} {{icon-kid}} <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Chocolate<\/span> with Strawberry Oreo <\/div>\n\t  <\/div>\n\n\t  <!--div class=\"gridtablerowsubhead\">\n\t\t<h3>Strawberry <div class=\"tinytext\">Vegan cakes are an additional charge and are available in limited sizes.<\/div><\/h3>\n\t  <\/div>\n\t  <div id=\"tblcakefillings\" class=\"gridtablelong ptable50\">\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Chocolate Mousse <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Strawberry Filling and Vanilla Bavarian Custard{{icon-pop}} <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Strawberry Oreo {{icon-pop}}\t{{icon-kid}} <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Strawberry Mousse <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Vanilla Bavarian Custard<\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} Strawberry<\/span> with Vanilla Mousse {{icon-kid}}<\/div>\n\t  <\/div-->\n\n\t  <div class=\"gridtablerowsubhead\">\n\t\t<h3>White\/Vanilla <\/h3>\n\t  <\/div>\n\t  <div id=\"tblcakefillings\" class=\"gridtablelong\">\n\t\t<div class=\"gridtablerow flavorhide\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Fresh Bananas and Vanilla Bavarian Custard<\/div>\n\t\t<div class=\"gridtablerow flavorhide\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Fresh Strawberries and Vanilla Bavarian Custard<\/div>\n\t\t<div class=\"gridtablerow flavorhide\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Fresh Strawberries &amp; Bananas and Vanilla Bavarian Custard<\/div>\n\t\t<!--div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Mandarin Orange Mousse\t\t\t<span class=\"vlogo svg20\"><?php echo $advimg2 ?> <\/div-->\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Raspberry &amp; Vanilla Bav. Custard\t\t {{icon-pop}} <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Strawberry Filling and Vanilla Bavarian Custard<\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Strawberry Filling <\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Strawberry Mousse {{icon-kid}}<\/div>\n\t\t<div class=\"gridtablerow\"><span class=\"pinktext\">{{ icon-veg }} White\/Vanilla<\/span> with Vanilla Bavarian Cust\t\t {{icon-pop}} \t{{icon-kid}} <\/div>\n\t  <\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\t<h2>Custom Cake Icing<\/h2>\n\t<p>We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\n\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c4c25d3a-9c96-469a-9c14-c36cf9137275": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t<h2>Custom Cake Design<\/h2>\n\t<p>Your greeting, your colors, and a basic design are included in the price of your cake. If you want to go for a real wow factor, we can always get more elaborate for an additional charge.<\/p>\n\t<p>Check out our <a href=\"https:\/\/pattys-cakes.com\/photos\">photo galleries<\/a> if you need some inspiration on the design, or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">send us a message<\/a> today. We're here to help you make something memorable.<\/p>\n\n\t<a class=\"pcakes-button-center\" href=\"https:\/\/pattys-cakes.com\/photos\">View Cake Photos<\/a>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\"><h2>Custom Cake Colors<\/h2>\n\t<p>Here is our selection colors available for cakes and cupcakes. Keep in mind, that <strong>this is food, so colors will look slightly different<\/strong>, and we cannot match colors. We <strong>highly recommend<\/strong> avoiding deeper colors because they will bleed (not run) into the surrounding icing. <\/p>\n<h3>Color Swatches<\/h4>{% render 'pc-color-swatches' %}<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "282f7e1f-3255-47dd-9f03-2fd034605498": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\t\t\t\n\t<h2>Edible Image<\/h2>\n\t<div class=\"box_cont\">\n\t  <div class=\"box_50 txtleft\">\n\t\t<p>Have a photo or logo you'd like to feature on your cake? We can print it on edible icing!<\/p>\n\n\t\t<table id=\"tblicingimages\" class=\"ptable ptable-image\">\n\t\t  <tr>\n\t\t\t<th scope=\"col\">Edible Images<\/th>\n\t\t\t<th scope=\"col\">Price<\/th>\n\t\t  <\/tr>\n\t\t  <tr>\n\t\t\t<td >8x11 Print<\/td>\n\t\t\t<td>$20<\/td>\n\t\t  <\/tr>\n\t\t  <tr>\n\t\t\t<td>11x17 Print<\/td>\n\t\t\t<td>$30<\/td>\n\t\t  <\/tr>\n\t\t<\/table>\n\t\t<p>You may <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">inquire about a cake with an edible image<\/a> or <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=16\">submit an image for an already placed order<\/a>.<\/p>\n\t  <\/div>\n\t  <div class=\"box_50\"> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/edible-image.jpg?v=1678726250\" alt=\"Edible Image\" class=\"icingimage\"\/> <\/div>\n\t<\/div>\n\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "b24a7f3c-32ea-4098-855c-e7637e3bc2e9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\n\t<h2>How To Order Custom Vegan Cakes<\/h2>\n\t<p>Come into our shop, send us a <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\">message<\/a>, or <a href=\"\/collections\/vegan-cakes\">order online<\/a> and your order can be placed in minutes. It's easy as pie&hellip; or cake.<\/p>\n\n\t<a class=\"pcakes-button-center\" href=\"\/collections\/vegan-cakes\">Order Online<\/a>\n\n\t<h3>Our Cake Counter Hours<\/h3>\n\t\t<p>Tuesday-Friday, 10:00 am to 5:00 pm,<br \/>\n\t  Saturday, 10:00 am to 4:00 pm<\/p>\n\n\t\t<h3>The Earlier the Better<\/h3>\n\t<p>We recommend placing your order as soon as you can, being early is a good thing. Our busiest days are Fridays and Saturdays and they always sell out, therefore we recommend placing your order 1-3 weeks ahead of time. We have many options of cakes to fit your timeframe or design requirements. We work within a first-come, first-served method and will accept new orders until we have reached capacity.<\/p>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "8b6c9480-c5e5-403a-9454-cc15748026e9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\t\n\t\n\t<h2>Cancellation\/Change Policy<\/h2>\n\t<p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the order date, all custom cake orders are final, the pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.<\/p>\n\n\n\t<div class=\"comques\">\n\t  <div><a href=\"https:\/\/pattys-cakes.com\/faq\/faq-custom-cakes\">FAQS: Have Questions? View Common Cake Questions<\/a><\/div>\n\t<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1f22dc2b-7ae4-4f62-9491-1bd31647eeec",
+    "fcc09cc1-52ca-4e50-b451-f11a6b50be11",
+    "af2414ba-9c6a-4d1d-820d-0acb3e435447",
+    "3ff3778f-e9ed-4269-85c6-e3d4407a7fbf",
+    "d3607d02-e8e3-4c79-b1e1-3d2749a0469f",
+    "9629d87c-f498-4fcc-89a0-54e3c68a1ab9",
+    "c4c25d3a-9c96-469a-9c14-c36cf9137275",
+    "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
+    "282f7e1f-3255-47dd-9f03-2fd034605498",
+    "b24a7f3c-32ea-4098-855c-e7637e3bc2e9",
+    "8b6c9480-c5e5-403a-9454-cc15748026e9"
+  ]
+}
