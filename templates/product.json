@@ -172,6 +172,12 @@
           "settings": {
           }
         },
+        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"wsaiovolumetable\">\n\n<\/div>"
+          }
+        },
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf": {
           "type": "custom_liquid",
           "settings": {
@@ -195,12 +201,6 @@
           "disabled": true,
           "settings": {
             "product": "{{product}}"
-          }
-        },
-        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"wsaiovolumetable\">\n\n<\/div>"
           }
         },
         "share": {
@@ -233,11 +233,11 @@
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
         "buy_buttons",
         "quantity_selector",
+        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7",
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "482e5093-9f52-4b15-b07e-f569237a6e36",
         "8cf77127-d99a-46a6-98bc-23de985f94b5",
         "9728012a-c46e-49ae-847e-c01a09e7e717",
-        "5f9f7fbc-12db-4705-a6fe-cd91ec75bcf7",
         "share"
       ],
       "settings": {
