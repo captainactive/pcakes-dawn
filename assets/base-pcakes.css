@@ -378,7 +378,7 @@ opacity: 1;
 }
 
 
-.cart__checkout-button button {
+.cart-drawer .cart__checkout-button {
   margin-bottom: 40px;
 }
 
