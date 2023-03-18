@@ -556,9 +556,7 @@ display: grid;
 
 /*  ///////////// BULK DISCOUNT  //////////    */
 .ba-discount-table, .wholesale-table {
-  border: none !important;
-  border-top: #666666 solid 1px !important;
-  border-bottom: #666666 solid 1px !important;
+  border: .1rem solid rgba(var(--color-foreground),.5);
   width: 100%;
   overflow: auto;
   float: none;
@@ -566,7 +564,9 @@ display: grid;
   margin-right: auto;
   text-align: center;
   border-spacing: 0;
-  border-collapse: separate; }
+  border-collapse: separate;
+border-radius: 5px;
+}
 
 .ba-discount-table th, .wholesale-table th {
   font-weight: bold;
