@@ -557,8 +557,8 @@ display: grid;
 /*  ///////////// BULK DISCOUNT  //////////    */
 
 table#wsaio-volume-discount--table {
-   border-collapse: inherit;
-  padding: 1px;
+  border-collapse: initial;
+  padding: 1px!important;
 }
 
 .wholesale-table th {
