@@ -55,9 +55,8 @@
         <!--div class="hrtoplite"></div-->
         {% endif %}
         
-         {{ products.product.metafields.pcakes.type}}
-        {{ product.metafields.pcakes.type}}
-        {%  if product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Theme Cake" or product.tags contains "Tiered Cake" %}
+        {{ product.metafields.pcakes.leadtime }}
+        {%  if product.metafields.pcakes.type == "Cakes" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Theme Cake" or product.tags contains "Tiered Cake" %}
         <h2>Design and Pricing</h2>
         <p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href="https://pattys-cakes.com/contact-us">Contact Us</a> page. They will provide you with accurate pricing based on your desired specifications.</p>
         
