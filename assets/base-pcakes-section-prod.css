@@ -555,6 +555,12 @@ display: grid;
 
 
 /*  ///////////// BULK DISCOUNT  //////////    */
+
+table#wsaio-volume-discount--table {
+   border-collapse: inherit;
+  padding: 1px;
+  
+}
 .ba-discount-table, .wholesale-table {
   border: .1rem solid rgba(var(--color-foreground),.5);
   width: 100%;
@@ -564,7 +570,7 @@ display: grid;
   margin-right: auto;
   text-align: center;
   border-spacing: 0;
-  border-collapse: separate;
+ 
 border-radius: 5px;
 }
 
