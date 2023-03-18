@@ -559,8 +559,13 @@ display: grid;
 table#wsaio-volume-discount--table {
    border-collapse: inherit;
   padding: 1px;
-  
 }
+
+.wholesale-table th {
+  font-family: var(--font-heading-family);
+  color: #8a54a8;
+}
+
 .ba-discount-table, .wholesale-table {
   border: .1rem solid rgba(var(--color-foreground),.5);
   width: 100%;
