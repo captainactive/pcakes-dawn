@@ -378,6 +378,10 @@ opacity: 1;
 }
 
 
+.cart__checkout-button button {
+  margin-bottom: 40px;
+}
+
 
 
 /* CART PAGE */
