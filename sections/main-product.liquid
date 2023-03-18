@@ -114,7 +114,7 @@
                 </div>
               {%- endif -%}
               <div {{ block.shopify_attributes }}>
-              <!-- SEC / MAIN-PRODUCT FORM -->
+              <!-- SEC / MAIN-PRODUCT - SHOP PAYMENTS -->
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large no_bold_options' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
