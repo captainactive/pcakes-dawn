@@ -293,7 +293,7 @@
                                 class="quantity__input"
                                 type="number"
                                 name="quantity"
-                                id="Quantity-{{ section.id }}"
+                                
                                 min="1"
                                 value="1"
                                 form="{{ product_form_id }}"
@@ -318,7 +318,6 @@
                                 type="submit"
                                 name="add"
                                 class="quick-add__submit button button--full-width button--secondary"
-                    
                                 data-sold-out-message="true"
                                 {% if card_product.selected_or_first_available_variant.available == false %}
                                   disabled
