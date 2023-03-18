@@ -46,7 +46,27 @@
           class="product-variant-id"
         >
 
-            test!
+            <div class="pc-prod-h2">
+{%  if product.tags contains "Standard Cakes" %} <!-- HAS VARIANT -->
+    
+<h2>Cancellation/Change Policy</h2>
+<p>Standard Cakes sales are final 24 hours before the pickup time..</p>
+<!--div class="hrtoplite"></div-->
+{% endif %}
+
+
+{%  if product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Theme Cake" or product.tags contains "Tiered Cake" %} <!-- HAS VARIANT -->
+<div></div>
+<h2>Design and Pricing</h2>
+<p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href="https://pattys-cakes.com/contact-us">Contact Us</a> page. They will provide you with accurate pricing based on your desired specifications.</p>
+
+
+<div></div>
+<h2>Cancellation/Change Policy</h2>
+<p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the pickup/delivery date, all cake orders are final and non-refundable. The pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.</p>
+
+{% endif %}
+</div>
             
         <div class="product-form__buttons">
           {%- liquid
