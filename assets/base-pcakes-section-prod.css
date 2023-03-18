@@ -567,7 +567,7 @@ table#wsaio-volume-discount--table {
 }
 
 .ba-discount-table, .wholesale-table {
-  border: .1rem solid rgba(var(--color-foreground),.5);
+  border: .1rem solid rgba(var(--color-foreground),.8);
   width: 100%;
   overflow: auto;
   float: none;
