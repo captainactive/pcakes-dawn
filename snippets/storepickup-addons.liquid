@@ -1,3 +1,4 @@
+
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
@@ -42,6 +43,7 @@
 {% endfor %}
 
 {% if increase_notice_10 %}
+
   {% assign pickup_notice_value = 60 %}
   {% assign pickup_notice_unit = "hours" %}
   {% assign pickup_notice_breakpoint = "10:00" %}
@@ -56,6 +58,7 @@
 {% endfor %}
 
 {% if increase_notice_11 %}
+
   {% assign delivery_notice_value = alertcontent_clean %}
   {% assign delivery_notice_unit = "hours" %}
   {% assign delivery_notice_breakpoint = "10:00" %}
@@ -255,27 +258,5 @@
   {% assign delivery_notice_after_breakpoint_value = alertcontent_clean  %}
   {% assign delivery_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
-
-
-
-
-<script type="text/javascript"> 
-  document.addEventListener("DOMContentLoaded", function(event) { 
-    window.customCheckoutValidation = function() {
-      console.log("aaaaaaa");
-      if(typeof WSAIO !== "undefined" && typeof WSAIO.productDiscount === "function"){
-        WSAIO.getDiscountCode(function(b, c){ 
-          console.log("jajaja");
-          var discountt = c.checkout_url.split("discount=")[1];
-          var discount = (discountt === undefined) ? ' ' : discountt;
-          var checkout_params = Zapiet.Widget.getCheckoutParams();
-          checkout_params.discount = discount;
-          window.location = '/checkout?' + new URLSearchParams(checkout_params);
-        });
-      }
-    }; 
-  }); 
-</script>
-
 
 
