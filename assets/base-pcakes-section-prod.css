@@ -552,6 +552,68 @@ display: grid;
 /* END YOTPO DETAILS */
 
 
+
+
+/*  ///////////// BULK DISCOUNT  //////////    */
+.ba-discount-table, .wholesale-table {
+  border: none !important;
+  border-top: #666666 solid 1px !important;
+  border-bottom: #666666 solid 1px !important;
+  width: 100%;
+  overflow: auto;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-spacing: 0;
+  border-collapse: separate; }
+
+.ba-discount-table th, .wholesale-table th {
+  font-weight: bold;
+  background-color: #F2F2F2;
+  text-align: center; }
+
+.ba-discount-table thead tr, .wholesale-table thead tr {
+  background-color: #f2f2f2; }
+
+.ba-discount-table td, .ba-discount-table th, .wholesale-table td, .wholesale-table th {
+  padding: 5px 3px;
+  text-align: center; }
+
+.ba-discount-table tr td:first-child, .ba-discount-table tr th:first-child, .wholesale-table tr td:first-child, .wholesale-table tr th:first-child {
+  text-align: center;
+  padding-left: 8px; }
+
+.ba-discount-table thead tr, .wholesale-table thead tr {
+  background-color: #f2f2f2; }
+
+.ba-discount-table tr:nth-child(even), .wholesale-table tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+.ba-discount-tiers h4 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px; }
+
+table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
+  border: none !important; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*   BOLD PRODUCT OPTIONS OLD 
   
   
