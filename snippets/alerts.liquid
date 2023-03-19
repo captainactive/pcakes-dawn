@@ -606,7 +606,13 @@ COLLECTIONS
    width:200px; 
     height: auto;
     display: block;
+    background-color: #8a54a8;
+    border-radius: 50%;
+    padding: 20px;
   }
+
+
+  
 </style>
 
         {%- render 'icon-clock' -%}  
@@ -614,6 +620,24 @@ COLLECTIONS
 {% if request.page_type == "collection" %} 
 
    <div class="page-width">
+
+
+      <div class="alert-collect-cont">
+          <div class="alert-collect-left">
+
+              {%- render 'icon-clock' -%}
+            
+          </div>
+          <div class="alert-collect-right">  
+          
+          </div>
+       </div> 
+
+
+
+
+
+     
 
       {% if collection.handle == "semi-custom-cakes" %}  
        <p style="text-align:center;">These cakes have a 3 day lead time.</p>
