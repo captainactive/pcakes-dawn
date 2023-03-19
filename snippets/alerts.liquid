@@ -603,15 +603,27 @@ COLLECTIONS
 
 <style>
   .icon-clock {
+   width:90%; 
+    height: auto;
+    display: block;
+    color: #ffffff;
+  }
+  .icon-contain {
    width:200px; 
     height: auto;
     display: block;
     background-color: #8a54a8;
     border-radius: 50%;
     padding: 20px;
+    margin: auto;
   }
-
-
+.alert-collect-cont {
+  display: grid;
+	grid-row-gap: 2px;
+	grid-column-gap: 2px;
+	grid-template-rows: 1fr
+	grid-template-columns: 1fr 5fr;
+}
   
 </style>
 
@@ -624,12 +636,12 @@ COLLECTIONS
 
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
-
+            <div class="icon-contain">
               {%- render 'icon-clock' -%}
-            
+            </div>
           </div>
           <div class="alert-collect-right">  
-          
+               test
           </div>
        </div> 
 
