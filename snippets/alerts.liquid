@@ -612,7 +612,6 @@ COLLECTIONS
           
 
 {% if request.page_type == "collection" %} 
-</div>
 
    <div class="page-width">
 
@@ -623,7 +622,8 @@ COLLECTIONS
         {% endif %}
      
         <div class="alert-bar alert-large-main">
-           <div><span class="icon icon-schedule"></span></div><div class="alert-large">
+           <div><span class="icon icon-schedule">{%- render 'icon-clock' -%}
+</span></div><div class="alert-large">
             <div class="padbtm10">
             {% if alert3day == "normal" %}                    
              <strong>3 day cakes are available.</strong> The first available pick up/delivery date is {{next3daydate}}.<br>
