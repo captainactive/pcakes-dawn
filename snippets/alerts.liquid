@@ -624,6 +624,18 @@ COLLECTIONS
 	grid-template-rows: 1fr
 	grid-template-columns: 1fr 5fr;
 }
+
+.alert-collect-left {
+  height: 4.4rem;
+  width: 4.4rem;
+  padding: 0;
+}
+.alert-collect-left  span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
   
 </style>
 
@@ -638,8 +650,10 @@ COLLECTIONS
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
             <div class="icon-contain">
-              <img class="icon-clock" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/icon-clock-white.svg?v=1679270978" />
-            </div>
+              <span>
+                {%- render 'icon-clock' -%}
+              </span>
+              </div>
           </div>
           <div class="alert-collect-right">  
                test
