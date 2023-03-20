@@ -680,7 +680,7 @@ COLLECTIONS
 
      <h2 style="text-align: center">Availability</h2>
 
-          {% if collection.handle == "semi-custom-cakes" %}  
+       {% if collection.handle == "semi-custom-cakes" %}  
        <p class="txtcenter">These cakes have a 3 day lead time.</p>
       {% else %}
         <p class="txtcenter">These cakes have a 3 or 5 day lead time.</p>
@@ -690,9 +690,7 @@ COLLECTIONS
 
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
-            
             <img class="icon-clock" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/>
-             
           </div>
           <div class="alert-collect-right">  
               <div>
@@ -714,10 +712,9 @@ COLLECTIONS
           </div>
        </div> 
 
+{% endif %}
 
-       {% endif %}
-
-
+{{card_collection.metafields.pcakes-col.leadtime}}
 
 
 
@@ -728,6 +725,10 @@ PRODUCT PAGE
 PRODUCT PAGE
 {%- endcomment -%} 
 
+
+{% if request.page_type == "page " %}  
+
+  {% endif %} 
 {% if product.tags contains "3 Days"%}
 		{% if alert5day == "normal" %}
            <div class="alert-bar">
