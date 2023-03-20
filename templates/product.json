@@ -142,6 +142,12 @@
             "liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
           }
         },
+        "cb7b11f7-b04b-46dc-aee8-e967058988bb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'alerts'%}"
+          }
+        },
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379": {
           "type": "custom_liquid",
           "settings": {
@@ -229,6 +235,7 @@
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "33cb1234-dee4-40b9-a8e7-29a55562e834",
+        "cb7b11f7-b04b-46dc-aee8-e967058988bb",
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379",
         "variant_picker",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
