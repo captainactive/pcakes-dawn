@@ -756,11 +756,11 @@ padding: 20px;
     {% if request.page_type == "product" %}  
 
      {% if product.tags contains "3 Days"%}
-		{% if alert5day == "normal" %}
+		{% if alert3day == "normal" %}
            
          <div class="alert-bar">
             	<div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-                 <div class="alert-large">This cake needs to be ordered at least 3 days in advance. The first available date is {{next3daydate}}.</div>  
+                 <div class="alert-large">The first available date is {{next3daydate}}.</div>  
         	</div>
 		{% else %}
          <div class="alert-bar">
