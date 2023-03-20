@@ -673,7 +673,7 @@ COLLECTIONS
 }
 </style>
 
-{% if collection.handle == "standard-cakes" or collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
+{% if collection.handle != "standard-cakes" or collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
 
   
    <div class="page-width">
