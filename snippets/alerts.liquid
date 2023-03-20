@@ -738,12 +738,14 @@ PRODUCT PAGE
   border-radius: 4px;
 }
 
-.alert-bar div:first-child {
+.alert-clock, .alert-large {
   display: grid;
   justify-content: center;
   align-content: center;
-  padding: 10px;
 }
+  .alert-clock {
+      padding: 10px;
+  } 
  .icon-clock-sm {
   height: 35px;
   width: 35px;
@@ -763,7 +765,7 @@ padding: 20px;
 		{% if alert3day == "normal" %}
            
          <div class="alert-bar">
-            	<div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+            	<div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                  <div class="alert-large">The first available date is {{next3daydate}}.</div>  
         	</div>
 		{% else %}
