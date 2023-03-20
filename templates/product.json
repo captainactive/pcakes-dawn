@@ -60,7 +60,7 @@
         "cb7b11f7-b04b-46dc-aee8-e967058988bb": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% render 'alerts'%}"
+            "custom_liquid": "{% render 'alerts', leadtime:product.metafields.pc-filter.leadtime %}"
           }
         },
         "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
