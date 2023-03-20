@@ -728,8 +728,22 @@ PRODUCT PAGE
 
  <style>
 
+.alert-bar {
+  display: grid;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto 1fr;
+  background-color: #8a54a8;
+  color: #ffffff;
+}
 
-   
+.alert-bar div {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
   
  </style>
 
@@ -739,8 +753,10 @@ PRODUCT PAGE
 
 {% if product.tags contains "3 Days"%}
 		{% if alert5day == "normal" %}
-           <div class="alert-bar">
-            	<div><span class="icon icon-schedule"></span></div> <div class="alert-large">This cake need to be ordered at least 3 days in advance. The first available date is {{next3daydate}}.</div>  
+           
+         <div class="alert-bar">
+            	<div><span class="icon icon-schedule"></span></div>
+                 <div class="alert-large">This cake need to be ordered at least 3 days in advance. The first available date is {{next3daydate}}.</div>  
         	</div>
 		{% else %}
          <div class="alert-bar">
