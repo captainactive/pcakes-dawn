@@ -586,8 +586,7 @@ PRE-DEFINED MESSAGES
           
 {% assign cakeballcontent = "Due to high demand, Standard Cakes are sold out this week. Please see our <a href='/pages/cupcakes'>cupcakes</a>." %}
 {% assign instock_message = "<strong>In stock daily</strong> until sold out. Order now." %}
-
-
+{% assign icon_clock = "https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811" %}
 
 
 
@@ -690,7 +689,7 @@ COLLECTIONS
 
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
-            <img class="icon-clock" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/>
+            <img class="icon-clock" src="{{ icon_clock }}"/>
           </div>
           <div class="alert-collect-right">  
               <div>
@@ -754,49 +753,45 @@ padding: 20px;
 }
  </style>
 
-     
-     
-{% if request.page_type == "product" %}  
+    {% if request.page_type == "product" %}  
 
-{% if product.tags contains "3 Days"%}
+     {% if product.tags contains "3 Days"%}
 		{% if alert5day == "normal" %}
            
          <div class="alert-bar">
-            	<div><img class="icon-clock-sm" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/></div>
+            	<div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                  <div class="alert-large">This cake needs to be ordered at least 3 days in advance. The first available date is {{next3daydate}}.</div>  
         	</div>
 		{% else %}
          <div class="alert-bar">
-              <img class="icon-clock-sm" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/>
+          <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                <div class="alert-large">
                    <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
                    <div>This cake has a 3 day lead time. The first available pick up/delivery date is {{next3daydate}}.</div>  
                </div> 
           </div>
 		{% endif %}  
-{% endif %} 
+     {% endif %} 
 
           
-{% if product.tags contains "5 Days"%}
+     {% if product.tags contains "5 Days"%}
 		{% if alert5day == "normal" %}
            <div class="alert-bar">
-            	<div><img class="icon-clock-sm" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/></div>
-             <div class="alert-large">This cake need to be ordered at least 5 days in advance. The first available date is {{next5daydate}}.</div>  
+               <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                 <div class="alert-large">This cake need to be ordered at least 5 days in advance. The first available date is {{next5daydate}}.</div>  
         	</div>
 		{% else %}
          <div class="alert-bar">
-              <div><span class="icon icon-schedule"></span></div> 
+          <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                <div class="alert-large">
                    <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
                    <div>This cake has a 5 day lead time. The first available pick up/delivery date is {{next5daydate}}.</div>  
                </div> 
           </div>
 		{% endif %}  
-{% endif %} 
+     {% endif %} 
 
-{% endif %}   
-
-
+{% endif %}  
 
 
  {%- comment -%} 
@@ -806,25 +801,27 @@ CART
 
 {%- endcomment -%} 
 
-{% if pagetype == "cart" %} 
+{% if request.page_type == "cart" %} 
 
 	{% if prodtags contains "3 Days" and alert3day == "normal"%}
-       <div class="alert-bar cart-alert">
-         <div><span class="icon icon-schedule"></span></div><p>This cake has a 3 day lead time. The first available date is {{next3daydate}}.</p>          
+       <div class="cart-alert">
+          <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+         <div>This cake has a 3 day lead time. The first available date is {{next3daydate}}.</div>          
       </div>  
   {% elsif prodtags contains "3 Days" and alert3day == "alert"%} 
-     <div class="alert-bar cart-alert">
-        <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next3daydate}}. </p>  
+     <div class="cart-alert">
+        <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
+        <div>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next3daydate}}. </div>  
       </div>
   {% endif %} 
 
 	{% if prodtags contains "5 Days" and alert5day == "normal"%}
        <div class="alert-bar cart-alert">
-         <div><span class="icon icon-schedule"></span></div><p>This cake has a 5 day lead time. The first available date is {{next5daydate}}.</p>          
+         <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div><div>This cake has a 5 day lead time. The first available date is {{next5daydate}}.</div>          
       </div>  
   {% elsif prodtags contains "5 Days" and alert5day == "alert"%} 
      <div class="alert-bar cart-alert">
-        <div><span class="icon icon-schedule"></span></div> <p>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next5daydate}}. </p>  
+        <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> <div>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next5daydate}}. </div>  
       </div>
   {% endif %} 
 {% endif %}
