@@ -602,24 +602,9 @@ COLLECTIONS
 
 
 <style>
-  .icon-clock222 {
-   width:90%; 
-    height: auto;
-    display: block;
-    color: #ffffff;
-  }
-  .icon-contain {
-   width:200px; 
-    height: auto;
-    display: block;
-    background-color: #8a54a8;
-    border-radius: 50%;
-    padding: 20px;
-    margin: auto;
-  }
 .alert-collect-cont {
   display: grid;
-	grid-row-gap: 2px;
+	grid-row-gap: 20px;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 5fr;
@@ -627,14 +612,18 @@ COLLECTIONS
 }
 
 .alert-collect-left {
-background-color: #8a54a8;;
+  background-color: #8a54a8;
+  border-radius: 4px;
 }
-.alert-collect-left  span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: #ffffff;
+.alert-collect-right {
+  background-color: #8a54a8;
+  border-radius: 4px;
+} 
+.alert-collect-left {
+  border-top: 1px solid #8a54a8;
+  border-right: 1px solid #8a54a8;
+  border-bottom: 1px solid #8a54a8;  
+  color: #8a54a8; 
 }
 .icon-clock {
   height: 2rem;
@@ -643,12 +632,6 @@ background-color: #8a54a8;;
 }
 
 
-  .iconimg  {
-    background-color: red;
-    -webkit-mask-image: url(icon-clock.svg);
-    mask-image: url(icon-clock.svg);
-}
-  
 </style>
 
 
@@ -661,7 +644,7 @@ background-color: #8a54a8;;
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
             
-            <img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/>
+            <img class="icon-clock" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811"/>
              
           </div>
           <div class="alert-collect-right">  
