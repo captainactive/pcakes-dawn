@@ -600,6 +600,8 @@ COLLECTIONS
 
 
 
+{% if request.page_type == "collection" %} 
+
 <style>
 .alert-collect-cont {
   display: grid;
@@ -672,9 +674,7 @@ COLLECTIONS
 </style>
 
 
-
-{% if request.page_type == "collection" %} 
-
+  
    <div class="page-width">
 
      <h2 style="text-align: center">Availability</h2>
@@ -725,6 +725,8 @@ PRODUCT PAGE
 
 
 
+    {% if request.page_type == "product" %}  
+
  <style>
 
 .alert-bar {
@@ -764,8 +766,7 @@ padding: 20px 20px 20px 5px;
 }
  </style>
 
-    {% if request.page_type == "product" %}  
-
+     
      {% if product.tags contains "3 Days"%}
 		{% if alert3day == "normal" %}
            
@@ -812,28 +813,75 @@ CART
 
 {%- endcomment -%} 
 
-  {{ item.product.tags }}
+
+
+     
+
 {% if request.page_type == "cart" %} 
 
+ <style>
+
+.cart-alert {
+  display: grid;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	grid-template-rows: 1fr;
+	grid-template-columns: auto 1fr;
+  background-color: #8a54a8;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.alert-clock-cart, .alert-lrg-cart {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.alert-clock-cart {
+      padding: 10px;
+  } 
+
+   .icon-clock-sm {
+  height: 35px;
+  width: 35px;
+} 
+
+   .alert-lrg-cart {
+padding: 20px 20px 20px 5px;
+}
+   .alert-btm {
+     padding-top: 15px;
+   }
+
+   .alert-lrg-cart a:link {
+  color:#ffffff;
+}
+ </style>
+
+
+     
+     
 	{% if prodtags contains "3 Days" and alert3day == "normal"%}
        <div class="cart-alert">
-          <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-         <div>This cake has a 3 day lead time. The first available date is {{next3daydate}}.</div>          
+          <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+         <div class="alert-lrg-cart">This cake has a 3 day lead time. The first available date is {{next3daydate}}.</div>          
       </div>  
   {% elsif prodtags contains "3 Days" and alert3day == "alert"%} 
      <div class="cart-alert">
-        <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
-        <div>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next3daydate}}. </div>  
+        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
+       <div class="alert-lrg-cart">Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next3daydate}}. </div>  
       </div>
   {% endif %} 
 
 	{% if prodtags contains "5 Days" and alert5day == "normal"%}
        <div class="alert-bar cart-alert">
-         <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div><div>This cake has a 5 day lead time. The first available date is {{next5daydate}}.</div>          
+         <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+         <div class="alert-lrg-cart">This cake has a 5 day lead time. The first available date is {{next5daydate}}.</div>          
       </div>  
   {% elsif prodtags contains "5 Days" and alert5day == "alert"%} 
      <div class="alert-bar cart-alert">
-        <div><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> <div>Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next5daydate}}. </div>  
+        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
+       <div class="alert-lrg-cart">Due to high demand, this cake is sold out this week. The first available pick up/delivery date is {{next5daydate}}. </div>  
       </div>
   {% endif %} 
 {% endif %}
