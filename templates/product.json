@@ -57,6 +57,12 @@
             "custom_liquid": "<div class=\"pc-prod-h2\">\n   <!-- PROD DETAILS -->    \n{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Theme Cake\" or product.tags contains \"Tiered Cake\" %}     \n\n    \n    <h2>Cake Icing<\/h2>\n    <div><img class=\"img-descrip\" alt=\"Certified Delicious cakes\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/certified-delicious-logo-280.png?v=1678148774\" >\n    <p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance of sweetness.<\/p>\n    <\/div>\n    \n\n    <h2>Looking for more?<\/h2>\n    <div>\n        <p>Are you looking for more customization? Send us a <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107&prod={{product.handle}}\">message to order a custom cake<\/a>. <span>Please note that delivery orders must be placed online.<\/span><\/p>\n    <\/div> \n{% endif %}  \n\n\n{% if product.tags contains \"Vegan\" or product.tags contains \"semi VEGF\" %}     \n<!-- VEGAN -->\n  \n<h2>Vegan Option<\/h2>\n    <div>\n        <p>Our vegan option is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n    {% endif %}          \n  \n{% if product.tags contains \"VE White\" or product.tags contains \"VE Choc\" or product.tags contains \"VE Straw\" %}     \n   <!-- VEGAN -->\n   <div>\n        <p>Our vegan cupcakes is all encompassing. The cake, filling, and icing are all vegan. Dairy and egg free.<\/p>\n    <\/div>        \n{% endif %}         \n          \n       \n{% if product.tags contains \"Standard Cakes\" %}  \n    <h2>Lead time<\/h2>\n       <p>Cakes ordered within 24 business hours will be fulfilled based on availability. Some flavors and sizes may sell out. We will contact you if a change is needed.<\/p>\n      \n{% endif %}       \n          \n          \n{% if product.tags contains \"ccpk12\" or product.tags contains \"ccpk4\" or product.tags contains \"ccpk6\" %} \n          \n    {% if product.tags contains \"customcc\" %} \n    {% else %}   \n  \n         <!-- PACKS -->\n        <h2>Flavor Choices<\/h2>\n        <div>\n            <p> If you would like to select the flavors in each pack. Visit our <a href=\"\/collections\/cupcakes\">cupcake page<\/a> to make your selection and then add a <a href=\"\/collections\/candles-and-accessories\/box\">gift box<\/a> separately.<\/p>\n\n        <\/div>        \n    {% endif %}   \n    {% endif %}   \n          \n{% if product.tags contains \"mccpk12\" or product.tags contains \"mccpk24\" %}       \n   <!-- PACKS -->\n          <h2>Flavor Choices<\/h2>\n          <div>\n            <p> If you would like to select the flavors in each pack. You may do so with our <a href=\"\/collections\/mini-cupcakes\/products\/mini-cupcakes-split-dozen\">split dozen mini cupcakes<\/a>.<\/p>\n          <\/div>        \n    {% endif %}   \n           \n         \n{% if product.tags contains \"3 Days\"%}     \n    <h2>Lead Time<\/h2>\n    <div>\n        <p>This cake has a lead time of 3 days until we are sold out.<\/p>\n        <\/div>         \n    {% endif %} \n  \n          \n    {% if product.tags contains \"5 Days\"%}     \n           <h2>Lead Time<\/h2>\n           <div>\n            <p>This cake has a lead time of 5 days until we are sold out.<\/p>\n          <\/div>        \n      {% endif %} \n  \n      <\/div>"
           }
         },
+        "cb7b11f7-b04b-46dc-aee8-e967058988bb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'alerts'%}"
+          }
+        },
         "f1cbc232-fd87-4d9b-94a1-5158525653ce": {
           "type": "collapsible_tab",
           "settings": {
@@ -142,12 +148,6 @@
             "liquid": "<div class=\"yotpo yotpo-main-widget\"\ndata-product-id=\"{{ product.id }}\"\ndata-name=\"{{ product.title | escape }}\"\ndata-url=\"{{ shop.url }}{{ product.url }}\"\ndata-image-url=\"{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}\"\ndata-price=\"{{ variant.price | money_without_currency }}\"\ndata-currency=\"{{ shop.currency }}\"\ndata-description=\"{{ product.description | escape }}\">\n<\/div>"
           }
         },
-        "cb7b11f7-b04b-46dc-aee8-e967058988bb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% render 'alerts'%}"
-          }
-        },
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379": {
           "type": "custom_liquid",
           "settings": {
@@ -227,6 +227,7 @@
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
         "350680f0-8058-4d5b-94cc-38930f6b92e9",
+        "cb7b11f7-b04b-46dc-aee8-e967058988bb",
         "f1cbc232-fd87-4d9b-94a1-5158525653ce",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -235,7 +236,6 @@
         "304c3ed7-07e4-49d6-bee0-335c1cab9d56",
         "23b03fac-2103-4662-be29-c9f2c5c710f2",
         "33cb1234-dee4-40b9-a8e7-29a55562e834",
-        "cb7b11f7-b04b-46dc-aee8-e967058988bb",
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379",
         "variant_picker",
         "28c74ebb-2d26-4b7b-ba70-118eadef4883",
