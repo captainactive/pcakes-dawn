@@ -727,7 +727,7 @@ PRODUCT PAGE
 
 
 {% if request.page_type == "page " %}  
-
+{{product.metafields.pc-filter.leadtime}}
   {% endif %} 
 {% if product.tags contains "3 Days"%}
 		{% if alert5day == "normal" %}
