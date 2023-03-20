@@ -646,6 +646,15 @@ COLLECTIONS
 
    <div class="page-width">
 
+     <h2 style="text-align: center">Availability</h2>
+
+          {% if collection.handle == "semi-custom-cakes" %}  
+       <p style="text-align:center;">These cakes have a 3 day lead time.</p>
+      {% else %}
+        <p style="text-align:center;">These cakes have a 3 or 5 day lead time.</p>
+        {% endif %}
+
+     
 
       <div class="alert-collect-cont">
           <div class="alert-collect-left">
@@ -671,36 +680,7 @@ COLLECTIONS
        </div> 
 
 
-
-
-
-     
-
-      {% if collection.handle == "semi-custom-cakes" %}  
-       <p style="text-align:center;">These cakes have a 3 day lead time.</p>
-      {% else %}
-        <p style="text-align:center;">These cakes have a 3 or 5 day lead time.</p>
-        {% endif %}
-     
-        <div class="alert-bar alert-large-main">
-    
-            <div class="padbtm10">
-
-              
- 
-            </div>
-
-             {% if collection.handle != "semi-custom-cakes" %}   
-                {% if alert5day == "normal" %}                    
-                 <strong>5 day cakes are available.</strong> The first available pick up/delivery date is {{next5daydate}}.<br>
-                {% else %}   
-                  <strong>5 day cakes are SOLD OUT this week.</strong> The first available pick up/delivery date is {{next5daydate}}.<br>
-                {% endif %}
-          {% endif %}
-          </div>          
-       </div>
-   </div>
-  {% endif %}
+       {% endif %}
 
 
 
