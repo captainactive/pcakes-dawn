@@ -812,7 +812,7 @@ CART
 
 {%- endcomment -%} 
 
-     {{ request.page_type }}
+  {{ item.product.tags }}
 {% if request.page_type == "cart" %} 
 
 	{% if prodtags contains "3 Days" and alert3day == "normal"%}
