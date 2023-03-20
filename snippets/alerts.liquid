@@ -672,7 +672,8 @@ COLLECTIONS
   grid-template-rows: 1fr 1fr;
 }
 </style>
-{{collection.metafields.pcakes-col.leadtime}}
+
+{% if collection.handle == "standard-cakes" or collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
 
   
    <div class="page-width">
@@ -710,6 +711,7 @@ COLLECTIONS
              </div> 
           </div>
        </div> 
+  {% endif %}
 
 {% endif %}
 
