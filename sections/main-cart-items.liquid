@@ -160,8 +160,8 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-                {{ item.product.tags}}
-                {% render 'alerts'%}
+              
+                {% render 'alerts', prodtags:item.product.tags %}
                   </td>
 
                   <td class="cart-item__totals right medium-hide large-up-hide">
