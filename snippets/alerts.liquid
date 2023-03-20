@@ -755,6 +755,9 @@ PRODUCT PAGE
    .alert-large {
 padding: 20px 20px 20px 5px;
 }
+   .alert-btm {
+     padding-top: 15px;
+   }
 
    .alert-large a:link {
   color:#ffffff;
@@ -775,7 +778,7 @@ padding: 20px 20px 20px 5px;
           <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                <div class="alert-large">
                    <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
-                   <div>The first available pick up/delivery date is {{next3daydate}}.</div>  
+                   <div class="alert-btm">The first available pick up/delivery date is {{next3daydate}}.</div>  
                </div> 
           </div>
 		{% endif %}  
@@ -793,7 +796,7 @@ padding: 20px 20px 20px 5px;
           <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                <div class="alert-large">
                    <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
-                   <div>This cake has a 5 day lead time. The first available pick up/delivery date is {{next5daydate}}.</div>  
+                   <div class="alert-btm">This cake has a 5 day lead time. The first available pick up/delivery date is {{next5daydate}}.</div>  
                </div> 
           </div>
 		{% endif %}  
