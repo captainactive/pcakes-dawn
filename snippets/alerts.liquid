@@ -661,11 +661,12 @@ COLLECTIONS
   border-right: 1px solid #8a54a8;
   border-bottom: 1px solid #8a54a8;  
   text-align: center;
-  grid-template-rows: 1fr 1fr;
-
-   
+  
  }
-
+.alert-collect-right div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 </style>
 
 
@@ -677,9 +678,9 @@ COLLECTIONS
      <h2 style="text-align: center">Availability</h2>
 
           {% if collection.handle == "semi-custom-cakes" %}  
-       <p style="text-align:center;">These cakes have a 3 day lead time.</p>
+       <p class="txtcenter">These cakes have a 3 day lead time.</p>
       {% else %}
-        <p style="text-align:center;">These cakes have a 3 or 5 day lead time.</p>
+        <p class="txtcenter">These cakes have a 3 or 5 day lead time.</p>
         {% endif %}
 
      
