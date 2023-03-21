@@ -43,7 +43,7 @@
         "8790818a-75db-445e-942e-02651d146fd6": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<!-- BOLD PRICE --> \n        <div class=\"price__regular price-custom\">\n          <span class=\"visually-hidden visually-hidden--inline\">{{ 'products.product.price.regular_price' | t }}<\/span>\n          <span class=\"bold_option_price_display price-item price-item--regular\" style=\"color: 225, 73, 132;\">\n            {{ money_price }}\n          <\/span>\n        <\/div>\n      <!-- END BOLD PRICE -->"
+            "custom_liquid": ""
           }
         },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
