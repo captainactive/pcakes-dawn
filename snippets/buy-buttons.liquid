@@ -82,12 +82,14 @@
  		<!-- LOWER PRICE -->
                
           	    {%  if product.variants.size > 1 or product.tags contains "Standard Cakes" or product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "customize" or product.tags contains "semi VEGF" or product.tags contains "Theme Cake" or product.tags contains "Tiered Cake"  %} <!-- HAS VARIANT -->
-        	<div class="hrtoplite"></div>
-             <div class="product__price pcakes-collection aav  {% if product.available %} wsaio-pid-{{product.id}} {% endif %}" style="width:100%" product_id="{{product.id}}" product_handle="{{product.handle}}" product_variant_id="{{product.selected_or_first_available_variant.id}}"product_variant_sku="{{product.selected_or_first_available_variant.sku}}" product_variant_price="{{product.selected_or_first_available_variant.price}}" product_variant_compare_price="{{product.selected_or_first_available_variant.compare_at_price}}"> Price:
-            	{% include 'product-price', variant: current_variant %}
+
+                  {% endif %}
+
+            <div class="product__price pcakes-collection aav  {% if product.available %} wsaio-pid-{{product.id}} {% endif %}" style="width:100%" product_id="{{product.id}}" product_handle="{{product.handle}}" product_variant_id="{{product.selected_or_first_available_variant.id}}"product_variant_sku="{{product.selected_or_first_available_variant.sku}}" product_variant_price="{{product.selected_or_first_available_variant.price}}" product_variant_compare_price="{{product.selected_or_first_available_variant.compare_at_price}}"> Price:
+            	{% render 'product-price', variant: current_variant %}
           	</div>
                 
-    		{% endif %}
+    		
 
 
 
