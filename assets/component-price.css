@@ -95,7 +95,7 @@
   color: rgba(var(--color-foreground), 0.7);
 }
 
-.price__regular {
+.price-custom {
     color: #e14984;
     text-align: center;
 }
