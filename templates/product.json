@@ -40,12 +40,6 @@
           "settings": {
           }
         },
-        "8790818a-75db-445e-942e-02651d146fd6": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
-        },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
           "type": "custom_liquid",
           "settings": {
@@ -230,7 +224,6 @@
         "b0a141a6-f7cb-4f64-b573-f8ce5bf14abd",
         "caption",
         "price",
-        "8790818a-75db-445e-942e-02651d146fd6",
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
         "350680f0-8058-4d5b-94cc-38930f6b92e9",
