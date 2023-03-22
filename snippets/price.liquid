@@ -45,6 +45,7 @@
         - div.price__sale: Displayed when a variant is a sale
     {%- endcomment -%}
     <div class="price__regular">
+      <p>23123123</p>
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="bold_option_price_display price-item price-item--regular">
         {{ money_price }}
@@ -65,7 +66,6 @@
       {%- endunless -%}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       <span class="price-item price-item--sale price-item--last">
-        <p>23123123</p>
         {{ money_price }}
       </span>
     </div>
