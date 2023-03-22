@@ -60,7 +60,7 @@
 .price .price__badge-sold-out,
 .price--on-sale .price__regular,
 .price--on-sale .price__availability {
-  
+  display: none;
 }
 
 .price--sold-out .price__badge-sold-out,
@@ -72,7 +72,6 @@
   display: initial;
   flex-direction: row;
   flex-wrap: wrap;
-  display: none;
 }
 
 .price--center {
@@ -81,6 +80,7 @@
 }
 
 .price--on-sale .price-item--regular {
+  text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.3rem;
 }
@@ -93,12 +93,4 @@
   margin-top: 0.2rem;
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
-}
-
-.price-custom {
-    color: #e14984;
-    text-align: center;
-}
-.price__sale {
-    display: none;
 }
