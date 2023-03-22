@@ -99,3 +99,6 @@
     color: #e14984;
     text-align: center;
 }
+.price__sale {
+    display: none;
+}
