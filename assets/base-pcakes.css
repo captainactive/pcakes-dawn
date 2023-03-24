@@ -687,7 +687,7 @@ justify-items: center;
 
 
   .list-menu__item {
-	line-height: calc(.7 / var(--font-body-scale));
+	line-height: calc(.7 / var(--font-body-scale))!important;
   }
 
 
