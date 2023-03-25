@@ -758,7 +758,7 @@ PRODUCT PAGE
 } 
 
    .alert-large {
-padding: 0px 20px 20px 20px;
+padding: 20px 20px 20px 0px;
 }
    .alert-btm {
      padding-top: 15px;
@@ -766,6 +766,15 @@ padding: 0px 20px 20px 20px;
 
   .alert-large a:link, .alert-large div a {
   color:#ffffff;
+}
+@media (max-width: 600px) {
+.alert-bar {  
+      	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr;
+}
+   .alert-large {
+padding: 0px 20px 20px 20px;
+}      
 }
  </style>
 
