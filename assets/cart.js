@@ -141,9 +141,6 @@ class CartItems extends HTMLElement {
           trapFocus(cartDrawerWrapper, document.querySelector('.cart-item__name'))
         }
         publish(PUB_SUB_EVENTS.cartUpdate, {source: 'cart-items'});
-        if(window.BOLD && BOLD.common){
-  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
-}
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
         const errors = document.getElementById('cart-errors') || document.getElementById('CartDrawer-CartErrors');
@@ -152,9 +149,6 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
-    if(window.BOLD && BOLD.common){
-  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
-}
   }
 
   updateLiveRegions(line, message) {
