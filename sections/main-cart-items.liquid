@@ -324,6 +324,7 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
+                        <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>
                           {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
