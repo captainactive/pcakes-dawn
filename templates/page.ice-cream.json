@@ -17,6 +17,56 @@
         "padding_bottom": 52
       }
     },
+    "1d7f7be9-0685-418b-835d-11e2a00fb0d3": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-0",
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-1",
+        "template--16670823579890__1d7f7be9-0685-418b-835d-11e2a00fb0d3-1679701970f9cdde7b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/thrifty-800.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "993835be-49b3-4691-bf02-7246ab619b3a": {
       "type": "pcakes-collection-top",
       "blocks": {
@@ -65,6 +115,7 @@
       "blocks": {
         "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
@@ -73,11 +124,12 @@
         "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Flavor is the primary focus of our bakery. We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<br\/><br\/>Our Custom Cakes are created for any celebration and every palate. With 12 cake flavors and 18 cake fillings, we can create a memorable dessert for your special occasion.<br\/><br\/>Custom Cakes go a step further than Standard Cakes by tailoring the creation to your specific event. Mix and match flavors, select specific colors, take creative design control, and feed any crowd of any size. You may also request gluten-free and egg-free options with a Custom Cake. <br\/><br\/>To allocate the time required to create Custom Cakes, advance ordering is required. Plan ahead for your next birthday, baby shower, bridal shower, religious celebration, or themed dinner party with a Custom Cake!<\/p>"
+            "text": "<p>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>"
           }
         },
         "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
@@ -106,6 +158,7 @@
   "order": [
     "main",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
+    "1d7f7be9-0685-418b-835d-11e2a00fb0d3",
     "993835be-49b3-4691-bf02-7246ab619b3a",
     "c6e9240a-d319-4f03-85e6-8daf10467463"
   ]
