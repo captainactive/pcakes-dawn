@@ -737,7 +737,7 @@ PRODUCT PAGE
 	grid-row-gap: 0px;
 	grid-column-gap: 0px;
 	grid-template-rows: 1fr;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: auto 1fr;
   background-color: #8a54a8;
   color: #ffffff;
   border-radius: 4px;
@@ -745,7 +745,7 @@ PRODUCT PAGE
 
 .alert-clock, .alert-large {
   display: grid;
-  justify-content: center;
+  justify-content: left;
   align-content: center;
 }
 .alert-clock {
@@ -776,6 +776,8 @@ padding: 20px 20px 20px 0px;
    .alert-large {
 padding: 0px 20px 20px 20px;
 }      
+.alert-large {
+  justify-content: center;      
 }
  </style>
 
