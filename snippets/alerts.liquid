@@ -674,9 +674,9 @@ COLLECTIONS
 }
 </style>
 
-{% if collection.handle != "standard-cakes" or collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
+{% if collection.handle != "standard-cakes" %}
+  {% if  collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
 
-  
    <div class="page-width">
 
      <h2 style="text-align: center">Availability</h2>
@@ -713,7 +713,7 @@ COLLECTIONS
           </div>
        </div> 
   {% endif %}
-
+{% endif %}
 {% endif %}
 
 
@@ -997,8 +997,8 @@ COOKIES
 NEW 2.0
 {%- endcomment -%} 
 
-{% if request.page_type == "collection" %}    1  
-	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %} 2
+{% if request.page_type == "collection" %}  
+	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %} 
 		{% if alert_cookie == "alert" %}
 
             <div class="page-width">
