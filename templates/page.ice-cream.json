@@ -20,63 +20,16 @@
     "9e794321-3149-4bf1-adf5-966f26ad4fe5": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n\t.pc-feat-img {\n\t\tborder-radius: 4px;\n\t\twidth: 90%;\n\t\tmargin-top: 20px;\n\t}\n\t.pc-thrifty-img {\n\t\twidth:100%;\n\t\tmax-width: 250px;\n\t}\n\t\n\t.ptable tbody tr {\n\t\tgrid-template-columns: 1fr 1fr;\n\t}\n\t\n#tblcookies, #tblcookies tr, #tblcookies td, #tblcookies th {\n\ttext-align:center !important;}\t\n<\/style>\n\n\n<div class=\"page-width\">\n\n\t<div class=\"box_cont\">\n\t\t<div class=\"box_50 txtleft\">\n\t\t\t<p class=\"padtop20\"><img class=\"pc-thrifty-img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-400.png?v=1679705254\" alt=\"Thrifty Ice Cream\" \/>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>    \t\n\n\t\t\t<h2> Ice Cream Flavors<\/h2>\n\t\t\t<table id=\"tblcookies\" class=\"ptable txtcenter\">\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Chocolate Malt Crunch<\/td>\n\t\t\t\t<td>Rainbow Sherbet<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Cookies and Cream<\/td>\n\t\t\t\t<td>Vanilla<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Cotton Candy<\/td>\n\t\t\t\t<td>Strawberry<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Butter Pecan<\/td>\n\t\t\t\t<td>Green Tea<\/td>\n\t\t\t  <\/tr>\n\t\t\t<\/table>\n\t\t\t<span class=\"tinytext\">Currently available flavors. We rotate them occasionally.<\/span>\n\t\t<\/div>\n\t\t<div class=\"box_50\">\n\n\t\t\t<img class=\"pc-feat-img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-ice-cream-cone.jpg?v=1679705316\" alt=\"Thirfty Ice Cream\" \/>\n\t\t<\/div>\n\t<\/div>\n<\/div>",
+        "custom_liquid": "<style>\n\t.pc-feat-img {\n\t\tborder-radius: 4px;\n\t\twidth: 90%;\n\t\tmargin-top: 20px;\n\t}\n\t.pc-thrifty-img {\n\t\twidth:100%;\n\t\tmax-width: 250px;\n\t\tfloat: right;\n\t}\n\t\n\t.ptable tbody tr {\n\t\tgrid-template-columns: 1fr 1fr;\n\t}\n\t\n#tblcookies, #tblcookies tr, #tblcookies td, #tblcookies th {\n\ttext-align:center !important;}\t\n<\/style>\n\n\n<div class=\"page-width\">\n\n\t<div class=\"box_cont\">\n\t\t<div class=\"box_50 txtleft\">\n\t\t\t<p class=\"padtop20\"><img class=\"pc-thrifty-img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-400.png?v=1679705254\" alt=\"Thrifty Ice Cream\" \/>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>    \t\n\n\t\t\t<h2> Ice Cream Flavors<\/h2>\n\t\t\t<table id=\"tblcookies\" class=\"ptable txtcenter\">\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Chocolate Malt Crunch<\/td>\n\t\t\t\t<td>Rainbow Sherbet<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Cookies and Cream<\/td>\n\t\t\t\t<td>Vanilla<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Cotton Candy<\/td>\n\t\t\t\t<td>Strawberry<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Butter Pecan<\/td>\n\t\t\t\t<td>Green Tea<\/td>\n\t\t\t  <\/tr>\n\t\t\t<\/table>\n\t\t\t<span class=\"tinytext\">Currently available flavors. We rotate them occasionally.<\/span>\n\t\t<\/div>\n\t\t<div class=\"box_50\">\n\n\t\t\t<img class=\"pc-feat-img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-ice-cream-cone.jpg?v=1679705316\" alt=\"Thirfty Ice Cream\" \/>\n\t\t<\/div>\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 52
-      }
-    },
-    "3586c124-1edd-452a-ba57-5961adb41720": {
-      "type": "image-banner",
-      "blocks": {
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-0",
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-1",
-        "template--16670823579890__3586c124-1edd-452a-ba57-5961adb41720-1679701970f9cdde7b-2"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     }
   },
   "order": [
     "main",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
-    "9e794321-3149-4bf1-adf5-966f26ad4fe5",
-    "3586c124-1edd-452a-ba57-5961adb41720"
+    "9e794321-3149-4bf1-adf5-966f26ad4fe5"
   ]
 }
