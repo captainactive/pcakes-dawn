@@ -405,7 +405,10 @@ display: none;
 
 
 
-
+.price__regular .price-item--regular {
+  font-size: 180%;
+  padding-bottom: 20px;
+}
 
 
 
