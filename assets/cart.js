@@ -8,6 +8,11 @@ class CartRemoveButton extends HTMLElement {
       cartItems.updateQuantity(this.dataset.index, 0);
     });
   }
+  if (window.BOLD && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function'){
+  setTimeout(function(){
+        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
+  },800);
+    }
 }
 
 customElements.define('cart-remove-button', CartRemoveButton);
@@ -182,9 +187,6 @@ class CartItems extends HTMLElement {
 
     document.activeElement.blur();
     this.lineItemStatusElement.setAttribute('aria-hidden', false);
-    if(window.BOLD && BOLD.common){
-  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
-}
   }
 
   disableLoading(line) {
@@ -197,9 +199,6 @@ class CartItems extends HTMLElement {
     cartItemElements.forEach((overlay) => overlay.classList.add('hidden'));
     cartDrawerItemElements.forEach((overlay) => overlay.classList.add('hidden'));
   }
-  if(window.BOLD && BOLD.common){
-  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
-}
 }
 
 customElements.define('cart-items', CartItems);
