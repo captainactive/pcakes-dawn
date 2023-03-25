@@ -157,7 +157,7 @@
     "9e794321-3149-4bf1-adf5-966f26ad4fe5": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div class=\"box_cont\">\n\t<div class=\"box_50 txtleft\">\n\t\t<p class=\"padtop20\"><img class=\"ftright padlt5 padtop15\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-400.png?v=1679705254\" alt=\"Thrifty Ice Cream\" width=\"150\" height=\"59\" \/>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>    \t\n    \n        <h2> Ice Cream Flavors<\/h2>\n        <table id=\"tblcookies\" class=\"ptable txtcenter\">\n          <tr class=\"even\">\n            <td>Chocolate Malt Crunch<\/td>\n            <td>Rainbow Sherbet<\/td>\n          <\/tr>\n          <tr>\n            <td>Cookies and Cream<\/td>\n            <td>Vanilla<\/td>\n          <\/tr>\n          <tr class=\"even\">\n            <td>Cotton Candy<\/td>\n            <td>Strawberry<\/td>\n          <\/tr>\n          <tr>\n            <td>Butter Pecan<\/td>\n            <td>Green Tea<\/td>\n          <\/tr>\n        <\/table>\n        <span class=\"tinytext\">Currently available flavors. We rotate them occasionally.<\/span>\n\t<\/div>\n\t<div class=\"box_50\">\n    \n    \t<img class=\"img90 corners martop20\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-ice-cream-cone.jpg?v=1679705316\" alt=\"Thirfty Ice Cream\" \/>\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
