@@ -149,6 +149,9 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
+    if(window.BOLD && BOLD.common){
+  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
+}
   }
 
   updateLiveRegions(line, message) {
