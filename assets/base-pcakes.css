@@ -84,7 +84,7 @@ footer h2 {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 920px) {
   .page-width--narrow {
     padding: 0 2rem;
   }
