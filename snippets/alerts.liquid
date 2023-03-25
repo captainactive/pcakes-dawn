@@ -336,7 +336,7 @@ STEP 4.3 - TESTING/TROUBLESHOOTING
 {% comment %}    
 
         {% assign product_title = product_title | strip %}  
-        {% if pagetype == "collection" %} 
+        {% if request.page_type == "collection" %} 
         {% if product_title == "cust_cake" or product_title == "semi_cake" or product_title == "std_cake" or product_title == "cookie"  %}
 
 
@@ -966,7 +966,7 @@ STANDARD CAKES
 
 {% if prodtags contains "box" %}
 {% else %}
-  {% if pagetype == "product" %} 
+  {% if request.page_type == "product" %} 
   	{% if product.tags contains "Standard Cakes"%}
   		{% if alertstandcake == "alert" %}
 
@@ -980,7 +980,7 @@ STANDARD CAKES
          	 {% endif %}
    	{% endif %}
 
-  {% elsif pagetype == "cart" %}
+  {% elsif request.page_type == "cart" %}
   	{% if prodtags contains "Standard Cakes" %}
   		{% if alertstandcake == "alert" %}
             
@@ -1005,7 +1005,7 @@ COOKIES
 NEW 2.0
 {%- endcomment -%} 
 
-{% if pagetype == "collection" %}      
+{% if request.page_type == "collection" %}      
 	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %}
 		{% if alert_cookie == "alert" %}
 
@@ -1029,7 +1029,7 @@ NEW 2.0
 
 {% if prodtags contains "box" %}
 {% else %}
-  {% if pagetype == "product" %} 
+  {% if request.page_type == "product" %} 
   	{% if product.tags contains "cookies"%}
   		{% if alert_cookie == "alert" %}
 
@@ -1042,7 +1042,7 @@ NEW 2.0
          	 {% endif %}
    	{% endif %}
 
-  {% elsif pagetype == "cart" %}
+  {% elsif request.page_type == "cart" %}
   	{% if prodtags contains "cookies" or prodtags contains "copack" or prodtags contains "ist-cookies" %}
   		{% if alert_cookie == "alert" %}
               <div class="cart-alert">
@@ -1065,7 +1065,7 @@ CUPCAKES
 CUPCAKES 
 {%- endcomment -%} 
 
-{% if pagetype == "collection" %}      
+{% if request.page_type == "collection" %}      
 	{% if collection.handle == "cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "cupcake-packs" or collection.handle == "custom-cupcakes" %}
 		{% if alert_cupcake == "alert" %}
 
@@ -1088,7 +1088,7 @@ CUPCAKES
   
 {% if prodtags contains "box" %}
 {% else %}
-  {% if pagetype == "product" %} 
+  {% if request.page_type == "product" %} 
         	{% if product.tags contains "cupcakes"  %}
              {% if alert_cupcake == "alert" %}
                       <div class="alert-bar">
@@ -1100,7 +1100,7 @@ CUPCAKES
                {% endif %}
             {% endif %}
        	
-  {% elsif pagetype == "cart" %}
+  {% elsif request.page_type == "cart" %}
         {% if prodtags contains "cupcakes" or prodtags contains "Cupcakes" %}
           		{% if alert_cupcake == "alert" %}
 
@@ -1123,7 +1123,7 @@ MINI CUPCAKES
 MINI CUPCAKES
 {%- endcomment -%} 
 
-{% if pagetype == "collection" %}      
+{% if request.page_type == "collection" %}      
 	{% if collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-mini-cupcakes" or collection.handle == "mini-cupcake-packs" %}
 		{% if alert_cupcake == "alert" %}
             <div class="page-width">
@@ -1145,7 +1145,7 @@ MINI CUPCAKES
 
 {% if prodtags contains "box" %}
 {% else %}
-{% if pagetype == "product" %} 
+{% if request.page_type == "product" %} 
 	{% if product.tags contains "Mini Cupcakes"%}
 		{% if alert_cupcake == "alert" %}
                 <div class="alert-bar">
@@ -1157,7 +1157,7 @@ MINI CUPCAKES
        	 {% endif %}
  	{% endif %}
 
-{% elsif pagetype == "cart" %}
+{% elsif request.page_type == "cart" %}
 	{% if prodtags contains "Mini Cupcakes" %}
 		{% if alert_cupcake == "alert" %}
             <div class="cart-alert">
@@ -1179,7 +1179,7 @@ CAKE BALLS
 CAKE BALLS
 {%- endcomment -%} 
 
-{% if pagetype == "collection" %}      
+{% if request.page_type == "collection" %}      
 	{% if collection.handle == "cake-balls" or collection.handle == "cake-ball-packs" %}
       
 		{% if alert_cake_ball == "alert" %}
@@ -1203,7 +1203,7 @@ CAKE BALLS
 
 {% if prodtags contains "box" %}
 {% else %}
-{% if pagetype == "product" %} 
+{% if request.page_type == "product" %} 
 	{% if product.tags contains "cakeball"%}
 		{% if alert_cake_ball == "alert" %}
                 <div class="alert-bar">
@@ -1215,7 +1215,7 @@ CAKE BALLS
        	 {% endif %}
  	{% endif %}
 
-{% elsif pagetype == "cart" %}
+{% elsif request.page_type == "cart" %}
 	{% if prodtags contains "cakeball" %}
 		{% if alert_cake_ball == "alert" %}
             <div class="cart-alert">
@@ -1237,7 +1237,7 @@ GENERAL SOLD OUT
 GENERAL SOLD OUT
 {%- endcomment -%} 
 
-{% if pagetype == "product" %} 
+{% if request.page_type == "product" %} 
 	{% if product.tags contains "soldout"%}
 		{% if alert_sold_out == "alert" %}
                 <div class="alert-bar">
@@ -1249,7 +1249,7 @@ GENERAL SOLD OUT
        	 {% endif %}
  	{% endif %}
 
-{% elsif pagetype == "cart" %}
+{% elsif request.page_type == "cart" %}
 	{% if prodtags contains "soldout" %}
 		{% if alert_sold_out == "alert" %}	
             <div class="cart-alert">
@@ -1272,7 +1272,7 @@ EDIBLE IMAGES
 
 
 
-{% if pagetype == "product" %} 
+{% if request.page_type == "product" %} 
 	{% if product.tags contains "edibleimage"%}
 		{% if alert_edible_image == "alert" %}
                 <div class="alert-bar">
@@ -1284,7 +1284,7 @@ EDIBLE IMAGES
        	 {% endif %}
  	{% endif %}
 
-{% elsif pagetype == "cart" %}
+{% elsif request.page_type == "cart" %}
 	{% if prodtags contains "edibleimage" %}
 		{% if alert_edible_image == "alert" %}	
             <div class="cart-alert">
@@ -1308,7 +1308,7 @@ PRODUCT ALERTS
 
 {%- endcomment -%} 
 
-{% if pagetype == "product" %}  <!-- STOCK ALERTS -->
+{% if request.page_type == "product" %}  <!-- STOCK ALERTS -->
        {% if product.tags contains "GF WhiteXX" or product.tags contains "gfsplitdozenXX" %}
 
                <div class="alert-bar">
@@ -1361,7 +1361,7 @@ FUTURE CAKE SELL OUT
 
 {% if collection.handle == "semi-custom-cakes" or collection.handle == "vegan-cakes" or collection.handle == "gluten-free-cakes" or collection.handle == "custom-cakes" or collection.handle == "theme-cakes" or collection.handle == "tiered-cakes"%}
 
-	{% if pagetype == "collection" %} 
+	{% if request.page_type == "collection" %} 
 	<br>
 			 <div class="page-width">
                 <div class="alert-bar alert-large-main">
@@ -1372,7 +1372,7 @@ FUTURE CAKE SELL OUT
              </div>
 
 
-	{% elsif pagetype == "product" %} 
+	{% elsif request.page_type == "product" %} 
 
 
   			<div class="alert-bar">
@@ -1382,7 +1382,7 @@ FUTURE CAKE SELL OUT
 
 	{% endif %}  
 
-{% elsif pagetype == "cart" %} <!--main-->
+{% elsif request.page_type == "cart" %} <!--main-->
 
 	{% if product.tags contains "Semi Custom" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Custom Cake" or product.tags contains "Theme Cake"   %}
 
