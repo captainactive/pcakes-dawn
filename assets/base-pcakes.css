@@ -727,6 +727,9 @@ justify-items: center;
 }
 }
 
+.ptable th {
+	font-size: 85%;
+}
 .ptable tbody tr td {
   /*display: grid;*/
 }
