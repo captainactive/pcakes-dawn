@@ -125,6 +125,18 @@ font-size: 100%!important;
   }
 }
 
+@media (max-width: 340px){
+  .accessories-item {
+   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;    
+  }
+  .accessory-price { text-align: right;}
+
+  .accessories-right select {
+    width: 97%;
+  }
+}
+
 
 
 
