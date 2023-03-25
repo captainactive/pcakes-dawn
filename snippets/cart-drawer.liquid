@@ -181,7 +181,7 @@
 
                               <div class="bold_load_cart_item_properties"></div>
                             </dl>
-
+      {% render 'alerts', prodtags:item.product.tags %}
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                           {%- endif -%}
 
