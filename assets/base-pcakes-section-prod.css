@@ -89,7 +89,7 @@
 .accessories-right select {
   padding: 7px;
   font-size: 14px;
-  width: 50%;
+/*   width: 50%; */
   border: .1rem solid rgba(var(--color-foreground),.5);
   color: rgb(var(--color-foreground));
   border-radius: 4px;
@@ -111,6 +111,16 @@ font-size: 100%!important;
   color: var(--pcakes-text);
   font-size: 18px;
 }
+
+
+@media (max-width: 0px) {
+  .accessories-item {
+   grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr ;    
+  }
+}
+
+
 
 
 /* PRODUCT PAGE ALLERGEN INFORMATION */
