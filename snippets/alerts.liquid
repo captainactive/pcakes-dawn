@@ -834,13 +834,7 @@ CART
   border-radius: 4px;
 }
 
-@media (max-width: 600px) {
-  .cart-alert {
-  	grid-template-rows: auto 1fr;
-	grid-template-columns: 1fr;
-  }
-}
-  
+
 
 .alert-clock-cart, .alert-lrg-cart {
   display: grid;
@@ -866,6 +860,18 @@ padding: 20px 15px 20px 0px;
    .alert-lrg-cart a:link {
   color:#ffffff;
 }
+@media (max-width: 600px) {
+  .cart-alert {
+  	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr;
+  }
+
+  .alert-lrg-cart {
+  padding: 0px 15px 15px 15px;
+  }
+}
+  
+  
  </style>
 
 
