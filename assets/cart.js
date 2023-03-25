@@ -182,6 +182,9 @@ class CartItems extends HTMLElement {
 
     document.activeElement.blur();
     this.lineItemStatusElement.setAttribute('aria-hidden', false);
+    if(window.BOLD && BOLD.common){
+  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
+}
   }
 
   disableLoading(line) {
