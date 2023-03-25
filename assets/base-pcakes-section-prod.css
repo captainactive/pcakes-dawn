@@ -80,7 +80,7 @@
   display: grid;
   grid-row-gap: 2px;
   grid-column-gap: 0px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto min-content;
   grid-template-columns: 1fr;
   padding-left: 5px;
   
