@@ -919,25 +919,6 @@ padding: 0px 15px 20px 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- FINISH --> 
-
-
-
-
-
-
     
 
 {%- comment -%} 
@@ -1016,8 +997,8 @@ COOKIES
 NEW 2.0
 {%- endcomment -%} 
 
-{% if request.page_type == "collection" %}      
-	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %}
+{% if request.page_type == "collection" %}    1  
+	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %} 2
 		{% if alert_cookie == "alert" %}
 
             <div class="page-width">
