@@ -669,7 +669,7 @@ COLLECTIONS
   
  }
 .alert-collect-right div {
-  display: grid;
+/*   display: grid; */
   grid-template-rows: 1fr 1fr;
 }
 </style>
@@ -696,17 +696,17 @@ COLLECTIONS
           <div class="alert-collect-right">  
               <div>
               {% if alert3day == "normal" %}                    
-             <strong>3 day cakes are available.</strong> The first available pick up/delivery date is {{next3daydate}}.<br>
+             <strong>3 day cakes are available.</strong><br> The first available pick up/delivery date is {{next3daydate}}.
             {% else %}   
-              <strong>3 day cakes are SOLD OUT this week.</strong> The first available pick up/delivery date is {{next3daydate}}.<br>
+              <strong>3 day cakes are SOLD OUT this week.</strong><br> The first available pick up/delivery date is {{next3daydate}}.
             {% endif %}
             </div>
             <div>
               {% if collection.handle != "semi-custom-cakes" %}   
                 {% if alert5day == "normal" %}                    
-                 <strong>5 day cakes are available.</strong> The first available pick up/delivery date is {{next5daydate}}.
+                 <strong>5 day cakes are available.</strong><br> The first available pick up/delivery date is {{next5daydate}}.
                 {% else %}   
-                  <strong>5 day cakes are SOLD OUT this week.</strong> The first available pick up/delivery date is {{next5daydate}}.
+                  <strong>5 day cakes are SOLD OUT this week.</strong><br> The first available pick up/delivery date is {{next5daydate}}.
                 {% endif %}
                {% endif %} 
              </div> 
