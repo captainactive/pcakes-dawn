@@ -745,7 +745,7 @@ PRODUCT PAGE
 
 .alert-clock, .alert-large {
   display: grid;
-  justify-content: left;
+  justify-content: center;
   align-content: center;
 }
 .alert-clock {
@@ -774,7 +774,7 @@ padding: 0px 20px 20px 20px;
 		{% if alert3day == "normal" %}
            
          <div class="alert-bar">
-            	<div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+            	<div class="alert-clock">Alert <img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                  <div class="alert-large">The first available date is {{next3daydate}}.</div>  
         	</div>
 		{% else %}
