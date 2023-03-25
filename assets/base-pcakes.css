@@ -730,6 +730,7 @@ justify-items: center;
 .ptable th {
 	font-size: 85%;
   word-break:break-all;
+  transform: rotate(-90deg);
 }
 .ptable tbody tr td {
   /*display: grid;*/
