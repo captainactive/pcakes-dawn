@@ -964,52 +964,6 @@ STANDARD CAKES
 
 
 
-
-{% if request.page_type == "product" %}  
-
-    {% if product.tags contains "3 Days"%}
-       {% if alert3day == "normal" %}
-          
-        <div class="alert-bar">
-               <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-                <div class="alert-large">The first available date is {{next3daydate}}.</div>  
-           </div>
-       {% else %}
-        <div class="alert-bar">
-         <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-              <div class="alert-large">
-                  <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
-                  <div class="alert-btm">The first available pick up/delivery date is {{next3daydate}}.</div>  
-              </div> 
-         </div>
-       {% endif %}  
-    {% endif %} 
-
-         
-    {% if product.tags contains "5 Days"%}
-       {% if alert5day == "normal" %}
-          <div class="alert-bar">
-              <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-                <div class="alert-large">The first available date is 111{{next5daydate}}.</div>  
-           </div>
-       {% else %}
-        <div class="alert-bar">
-         <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-              <div class="alert-large">
-                  <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
-                  <div class="alert-btm">The first available pick up/delivery date is {{next5daydate}}.</div>  
-              </div> 
-         </div>
-       {% endif %}  
-    {% endif %} 
-
-{% endif %}  
-
-
-
-
-
-
 {% if prodtags contains "box" %}
 {% else %}
   {% if pagetype == "product" %} 
@@ -1017,7 +971,7 @@ STANDARD CAKES
   		{% if alertstandcake == "alert" %}
 
           <div class="alert-bar">
-            <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+              <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                  <div class="alert-large">
                      <div>Due to high demand, Standard Cakes are sold out this week. Please see our <a href="/pages/cupcakes">cupcakes</a>.</div><div>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</div>    
                  </div> 
