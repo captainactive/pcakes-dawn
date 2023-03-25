@@ -17,99 +17,12 @@
         "padding_bottom": 52
       }
     },
-    "993835be-49b3-4691-bf02-7246ab619b3a": {
-      "type": "pcakes-collection-top",
-      "blocks": {
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-0",
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-1",
-        "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "c6e9240a-d319-4f03-85e6-8daf10467463": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>"
-          }
-        },
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-0",
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-1",
-        "template--16655251931378__c6e9240a-d319-4f03-85e6-8daf10467463-1678727419c60d0d42-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "9e794321-3149-4bf1-adf5-966f26ad4fe5": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<style>\n\t.pc-feat-img {\n\t\tborder-radius: 4px;\n\t\twidth: 90%;\n\t\tmargin-top: 20px;\n\t}\n\t\n\t.ptable tbody tr {\n\t\tgrid-template-columns: 1fr 1fr;\n\t}\n\t\n#tblcookies, #tblcookies tr, #tblcookies td, #tblcookies th {\n\ttext-align:center !important;}\t\n<\/style>\n\n\n<div class=\"page-width\">\n\n\t<div class=\"box_cont\">\n\t\t<div class=\"box_50 txtleft\">\n\t\t\t<p class=\"padtop20\"><img class=\"ftright padlt5 padtop15\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-400.png?v=1679705254\" alt=\"Thrifty Ice Cream\" width=\"150\" height=\"59\" \/>If you’re native to California, you'll recall the fame and fondness for Thrifty Ice Cream, which has a fan following and roots that run deep here on the west coast. Relive your youth with a double scoop of your favorite award-winning flavors.<\/p>    \t\n\n\t\t\t<h2> Ice Cream Flavors<\/h2>\n\t\t\t<table id=\"tblcookies\" class=\"ptable txtcenter\">\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Chocolate Malt Crunch<\/td>\n\t\t\t\t<td>Rainbow Sherbet<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Cookies and Cream<\/td>\n\t\t\t\t<td>Vanilla<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr class=\"even\">\n\t\t\t\t<td>Cotton Candy<\/td>\n\t\t\t\t<td>Strawberry<\/td>\n\t\t\t  <\/tr>\n\t\t\t  <tr>\n\t\t\t\t<td>Butter Pecan<\/td>\n\t\t\t\t<td>Green Tea<\/td>\n\t\t\t  <\/tr>\n\t\t\t<\/table>\n\t\t\t<span class=\"tinytext\">Currently available flavors. We rotate them occasionally.<\/span>\n\t\t<\/div>\n\t\t<div class=\"box_50\">\n\n\t\t\t<img class=\"pc-feat-img\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/thrifty-ice-cream-cone.jpg?v=1679705316\" alt=\"Thirfty Ice Cream\" \/>\n\t\t<\/div>\n\t<\/div>\n<\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 52
       }
     },
@@ -163,8 +76,6 @@
   "order": [
     "main",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
-    "993835be-49b3-4691-bf02-7246ab619b3a",
-    "c6e9240a-d319-4f03-85e6-8daf10467463",
     "9e794321-3149-4bf1-adf5-966f26ad4fe5",
     "3586c124-1edd-452a-ba57-5961adb41720"
   ]
