@@ -402,8 +402,7 @@ opacity: 1;
 cart-drawer-items .bold_line_properties {
   font-size: 80%;
 }
-
-cart-drawer-items .bold_line_value {
+cart-drawer-items .bold_line_value, .product-option .dd {
   color: #8a54a8;
 }
 
