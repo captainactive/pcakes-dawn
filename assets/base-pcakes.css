@@ -83,7 +83,17 @@ footer h2 {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 750px) {
+
+@media (max-width: 1050px) {
+  .page-width--narrow {
+    padding: 0 2rem;
+  }
+  .page-width {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 750px) {
   .page-width--narrow {
     padding: 0 2rem;
   }
