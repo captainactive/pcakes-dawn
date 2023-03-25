@@ -95,6 +95,11 @@
                 </a>
               </div>
             {%- when 'price' -%}
+
+            {% if card_product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
+    <!-- CUSTOMIZE --> 
+    <div class="tinytext"> Starting at</div>
+    {% endif %}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
