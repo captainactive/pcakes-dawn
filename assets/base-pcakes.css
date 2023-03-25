@@ -403,6 +403,9 @@ cart-drawer-items .bold_line_properties {
   font-size: 80%;
 }
 
+cart-drawer-items .bold_line_value {
+  color: #8a54a8;
+}
 
 
 
