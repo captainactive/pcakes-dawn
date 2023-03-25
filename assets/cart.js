@@ -197,6 +197,9 @@ class CartItems extends HTMLElement {
     cartItemElements.forEach((overlay) => overlay.classList.add('hidden'));
     cartDrawerItemElements.forEach((overlay) => overlay.classList.add('hidden'));
   }
+  if(window.BOLD && BOLD.common){
+  BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
+}
 }
 
 customElements.define('cart-items', CartItems);
