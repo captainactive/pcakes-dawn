@@ -89,7 +89,7 @@
 .accessories-right select {
   padding: 7px;
   font-size: 14px;
-/*   width: 50%; */
+  width: 90%;
   border: .1rem solid rgba(var(--color-foreground),.5);
   color: rgb(var(--color-foreground));
   border-radius: 4px;
