@@ -89,7 +89,7 @@
 .accessories-right select {
   padding: 7px;
   font-size: 14px;
-  width: 90%;
+  width: 93%;
   border: .1rem solid rgba(var(--color-foreground),.5);
   color: rgb(var(--color-foreground));
   border-radius: 4px;
@@ -119,6 +119,10 @@ font-size: 100%!important;
   grid-template-columns: 1fr;    
   }
   .accessory-price { text-align: right;}
+
+  .accessories-right select {
+    width: 97%;
+  }
 }
 
 
