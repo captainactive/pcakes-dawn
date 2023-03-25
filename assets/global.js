@@ -182,7 +182,6 @@ class QuantityInput extends HTMLElement {
         BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
   },800);
     }
-
   }
 
   validateQtyRules() {
@@ -196,10 +195,7 @@ class QuantityInput extends HTMLElement {
       const max = parseInt(this.input.max);
       const buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
-    }
-  setTimeout(function(){
-        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
-  },500);
+    } 
   }
 }
 
@@ -562,10 +558,6 @@ class DeferredMedia extends HTMLElement {
       this.setAttribute('loaded', true);
       const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
-      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
-        // force autoplay for safari
-        deferredElement.play();
-      }
     }
   }
 }
