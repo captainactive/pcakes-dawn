@@ -148,8 +148,8 @@ font-family:var(--font-heading-family);
    border-radius: 4px;
 }
 
-a:-webkit-any-link {
-/*  text-decoration: none; */
+.pcakes-grid-main a:-webkit-any-link {
+  text-decoration: none; 
 }
 
 a:-webkit-any-link:hover {
