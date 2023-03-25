@@ -182,7 +182,6 @@ class QuantityInput extends HTMLElement {
         BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
   },800);
     }
-
   }
 
   validateQtyRules() {
