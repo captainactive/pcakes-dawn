@@ -153,6 +153,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "9e794321-3149-4bf1-adf5-966f26ad4fe5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -160,6 +169,7 @@
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
     "1d7f7be9-0685-418b-835d-11e2a00fb0d3",
     "993835be-49b3-4691-bf02-7246ab619b3a",
-    "c6e9240a-d319-4f03-85e6-8daf10467463"
+    "c6e9240a-d319-4f03-85e6-8daf10467463",
+    "9e794321-3149-4bf1-adf5-966f26ad4fe5"
   ]
 }
