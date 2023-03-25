@@ -96,7 +96,7 @@
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-            {% if card_product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
+            {% if product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
               <!-- CUSTOMIZE --> 
               <div class="tinytext"> Starting at</div>
               {% endif %}
