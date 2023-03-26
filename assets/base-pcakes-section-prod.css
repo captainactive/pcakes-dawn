@@ -640,9 +640,80 @@ table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
 
 
 
+/* HANDLING GUIDELINES - PRODUCT PAGE  */
 
 
+.handle-sm-cont {
+	display: grid;
+	grid-row-gap: 25px;
+	grid-column-gap: 25px;
+	grid-template-rows: 1fr ;
+	grid-template-columns: 1fr;
+	padding-top: 30px;
+}
+	
+.handle-sm-subcont {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 20px;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;	
+	align-items: start;
+	justify-items: center;
+/*	border: 1px solid #eaeaea;*/
+	border-radius: 4px;
+	padding: 10px;
+	}	
+	
+.handle-sm-subsubcont {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-column-gap: 2px;
+	grid-template-rows: min-content 1fr;
+	grid-template-columns: 1fr;	
+	align-items: center;
+	justify-items: center;
+	}	
+	
+.handle-sm-subcont:hover {
+	background-color: #f9f9f9;	
+	}
 
+	.handle-sm-img1, .handle-sm-img2{
+		width: 100%;
+		max-width: 240px;
+	}	
+	
+	.handle-sm-txt1 {
+		color: #ed1c24;
+		font-weight: bold;
+	}
+	
+	.handle-sm-txt2 {
+		color: #009444;
+		font-weight: bold;
+	}
+	.handle-sm-txt1, .handle-sm-txt2 {
+		text-align: center;
+	}
+	
+	
+@media (max-width: 1275px) {
+.handle-sm-cont {
+	grid-row-gap: 25px;
+	font-size: 90%;
+		}
+	}
+	
+@media (max-width: 800px) {
+.handle-sm-cont {
+	grid-template-columns: 1fr;
+	grid-row-gap: 25px;
+}
+.handle-sm-txt1, .handle-sm-txt2 {
+		font-size: 85%;
+	}	
+}	
 
 
 
