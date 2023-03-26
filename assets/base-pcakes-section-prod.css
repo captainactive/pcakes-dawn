@@ -642,7 +642,7 @@ table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
 
 /* HANDLING GUIDELINES - PRODUCT PAGE  */
 
-
+	
 .handle-sm-cont {
 	display: grid;
 	grid-row-gap: 25px;
@@ -681,17 +681,15 @@ table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
 
 	.handle-sm-img1, .handle-sm-img2{
 		width: 100%;
-		max-width: 240px;
+		max-width: 240px!important;
 	}	
 	
 	.handle-sm-txt1 {
 		color: #ed1c24;
-		font-weight: bold;
 	}
 	
 	.handle-sm-txt2 {
 		color: #009444;
-		font-weight: bold;
 	}
 	.handle-sm-txt1, .handle-sm-txt2 {
 		text-align: center;
@@ -714,7 +712,6 @@ table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
 		font-size: 85%;
 	}	
 }	
-
 
 
 
