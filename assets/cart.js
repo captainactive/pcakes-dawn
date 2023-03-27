@@ -8,11 +8,10 @@ class CartRemoveButton extends HTMLElement {
       cartItems.updateQuantity(this.dataset.index, 0);
     });
   }
-  if (window.BOLD && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function'){
-  setTimeout(function(){
-        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
-  },1000);
-    }
+  setTimeout(() => {
+            location.reload();
+          }, 500);
+
 }
 
 customElements.define('cart-remove-button', CartRemoveButton);
