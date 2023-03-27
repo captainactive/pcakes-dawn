@@ -8,10 +8,6 @@ class CartRemoveButton extends HTMLElement {
       cartItems.updateQuantity(this.dataset.index, 0);
     });
   }
-  setTimeout(() => {
-            location.reload();
-          }, 500);
-
 }
 
 customElements.define('cart-remove-button', CartRemoveButton);
