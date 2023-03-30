@@ -75,8 +75,8 @@
 
 
 .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6 {
-  justify-content: start;
-  align-content: center;
+  justify-content: center;
+  align-content: start;
   justify-items: center;
   align-items: center;
   text-align: center;
