@@ -260,8 +260,13 @@ opacity: 1;
 footer h2 {
 /*   color: #ffffff; */
 }
+
 .footer-block__heading {
-  border-bottom: 1px solid #e14984;
+  border-bottom: 1px solid #8a54a8
+}
+
+.footer p {
+  color: #f2f2f2;
 }
 
 .pc-shoppay {
