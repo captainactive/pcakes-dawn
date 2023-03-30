@@ -258,10 +258,10 @@ opacity: 1;
 }
 
 footer h2 {
-  color: #ffffff;
+/*   color: #ffffff; */
 }
 .footer-block__heading {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #e14984;
 }
 
 .pc-shoppay {
