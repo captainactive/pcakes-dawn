@@ -254,7 +254,7 @@ opacity: 1;
 
 .footer {
   background-color: #fff5f9;
-  border-top: 30px solid #e14984!important;
+  border-top: 40px solid #e14984!important;
 }
 
 footer h2, footer h3 {
@@ -268,7 +268,7 @@ footer h2, footer h3 {
   border-bottom: 1px solid #e14984;
 }
 
-.footer p {
+.footer p, .footer__copyright .caption {
   color: #424242;
 }
 
