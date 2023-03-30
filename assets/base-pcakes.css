@@ -29,12 +29,7 @@ nav a {
 h2 {
   color: #8a54a8;
 }
-footer h2 {
-  color: #ffffff;
-}
-.footer-block__heading {
-  border-bottom: 1px solid #ffffff;
-}
+
 
 
 .tinytext {
@@ -256,6 +251,18 @@ opacity: 1;
 
 
 /* FOOTER  */
+
+footer {
+  background-color: #fff5f9;
+}
+
+footer h2 {
+  color: #ffffff;
+}
+.footer-block__heading {
+  border-bottom: 1px solid #ffffff;
+}
+
 .pc-shoppay {
   max-width: 300px;
   padding: 25px 25px;
