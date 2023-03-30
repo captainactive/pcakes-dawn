@@ -275,7 +275,7 @@ footer h2, footer h3 {
 .newsletter-form__field-wrapper input {
   background-color: #ffffff;
 }
-.field__label, .newsletter-form__button .field__button {
+.field__label, .field__button {
   color: #8a54a8;
 }
 
