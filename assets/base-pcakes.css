@@ -267,7 +267,9 @@ footer h2, footer h3 {
 .footer-block__heading {
   border-bottom: 1px solid #8a54a8
 }
-
+.footer.rte {
+  font-size:90%;
+}
 .footer p, .footer__copyright .caption, .copyright__content {
   color: #424242;
 }
