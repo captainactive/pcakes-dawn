@@ -37,7 +37,8 @@
   grid-row-gap: 2px;
   grid-column-gap: 0px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr min-content min-content 50px 180px;
+  grid-template-rows: max-content 100px 1fr max-content 50px 180px;
+/*   grid-template-rows: auto 1fr min-content min-content 50px 180px; */
   padding-bottom: 30px; 
   /* border: 1px solid limegreen; */
   text-decoration: none!important;
@@ -74,7 +75,7 @@
 
 
 .itemgrid2, .itemgrid3, .itemgrid4, .itemgrid5, .itemgrid6 {
-  justify-content: center;
+  justify-content: start;
   align-content: center;
   justify-items: center;
   align-items: center;
