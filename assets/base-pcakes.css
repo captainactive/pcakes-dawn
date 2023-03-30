@@ -271,7 +271,9 @@ footer h2, footer h3 {
 .footer p, .footer__copyright .caption, .copyright__content {
   color: #424242;
 }
-
+.footer-block {
+  padding: 5px;
+}
 .newsletter-form__field-wrapper input {
   background-color: #ffffff;
 }
