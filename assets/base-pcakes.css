@@ -260,7 +260,7 @@ opacity: 1;
 footer h2, footer h3 {
   color: #e14984;
 }
-.footer-block__details-content.rte a {
+.footer-block__details-content .rte a, .copyright__content a {
   color: #8a54a8;
 }
 
@@ -268,7 +268,7 @@ footer h2, footer h3 {
   border-bottom: 1px solid #e14984;
 }
 
-.footer p, .footer__copyright .caption {
+.footer p, .footer__copyright .caption, .copyright__content {
   color: #424242;
 }
 
