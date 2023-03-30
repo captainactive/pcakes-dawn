@@ -273,7 +273,7 @@ footer h2, footer h3 {
 .footer-block__details-content.rte p {
   font-size:90%;
 }
-.footer p, .footer__copyright .caption, .copyright__content {
+.footer p, .footer__copyright .caption, .copyright__content, .newsletter-form__message  {
   color: #424242;
 }
 .footer-block {
