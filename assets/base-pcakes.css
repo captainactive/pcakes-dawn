@@ -260,7 +260,7 @@ opacity: 1;
 footer h2, footer h3 {
   color: #8a54a8
 }
-.footer-block__details-content .rte a, .copyright__content a {
+.footer-block__details-content.rte a, .copyright__content a {
   color: #8a54a8 !important;
 }
 
