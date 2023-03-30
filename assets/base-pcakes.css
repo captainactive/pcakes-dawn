@@ -257,8 +257,11 @@ opacity: 1;
   border-top: 30px solid #e14984!important;
 }
 
-footer h2 {
+footer h2, footer h3 {
   color: #e14984;
+}
+.footer a {
+  color: #8a54a8;
 }
 
 .footer-block__heading {
