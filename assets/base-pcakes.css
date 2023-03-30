@@ -272,6 +272,10 @@ footer h2, footer h3 {
   color: #424242;
 }
 
+.newsletter-form__field-wrapper input {
+  background-color: #ffffff;
+}
+
 .pc-shoppay {
   max-width: 300px;
   padding: 25px 25px;
