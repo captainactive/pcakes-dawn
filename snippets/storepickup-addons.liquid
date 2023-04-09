@@ -1,9 +1,31 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
+
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
-{% assign alertcontent_clean = alertcontent_clean | strip %}
-{% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
-{% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
+{% assign alertcontent_split = alertcontent_clean | split: "," %}
+
+{% for num_content in alertcontent_split %}
+    {% if num_content contains "ST"%}
+        {% assign stndcakevar = num_content %}
+    {% elsif num_content contains "SC" %}
+        {% assign semicakevar = num_content %}
+    {% elsif num_content contains "CK" %}
+        {% assign custcakevar = num_content %}
+    {% elsif num_content contains "CB" %}
+        {% assign cakeballvar = num_content %}
+    {% endif %}
+{% endfor %}
+{% assign cakeballvar = cakeballvar | remove: "CB" | strip %}
+{% assign stndcakevar = stndcakevar | remove: "ST" | strip %}
+{% assign semicakevar = semicakevar | remove: "SC" | strip %}
+{% assign custcakevar = custcakevar | remove: "CK" | strip %}
+
+<script>
+    window.cakeballvar = {{cakeballvar}};
+    window.stndcakevar = {{stndcakevar}};
+    window.semicakevar = {{semicakevar}};
+    window.custcakevar = {{custcakevar}};
+</script>
 
 {% for item in cart.items %}
   {% if item.product.tags contains 'weball' %}
