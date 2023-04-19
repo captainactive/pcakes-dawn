@@ -577,9 +577,13 @@ display: none;
 
 #storePickupApp .checkoutMethodContainer .locations .location.active {
   background: #FFF8FB!important;
-  border:.1rem solid rgba(var(--color-foreground),.08)!important;
+  
 }
 
+#storePickupApp .checkoutMethodContainer .locations {
+  border:.1rem solid rgba(var(--color-foreground),.08)!important;
+
+}
 
 	
 /* COLLECTION PAGES  */
