@@ -560,13 +560,18 @@ display: none;
 	max-width: 110px;
 	}
 }
-	
+
+#storePickupApp .checkoutMethod {
+  border: !px solid #e14984!important;  
+}
 
 #storePickupApp .checkoutMethod.active {
   background-color: #8a54a8!important;
-  color: #ffffff;
-  
+  color: #ffffff;  
 }
+
+
+
 #storePickupApp .checkoutMethod svg {
    fill: #000000;
 }
