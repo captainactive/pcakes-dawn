@@ -591,6 +591,9 @@ display: none;
   border: .1rem solid rgba(var(--color-foreground),.08)!important;
 
 }
+.success {
+  display: none; 
+}
 
 	
 /* COLLECTION PAGES  */
