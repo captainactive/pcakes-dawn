@@ -459,7 +459,7 @@
     "checkout": {
       "review": {
         "blocks": {
-          "contact_method_title": "Enter your contact information and use a credit card"
+          "contact_method_title": "Contact!"
         }
       }
     }
