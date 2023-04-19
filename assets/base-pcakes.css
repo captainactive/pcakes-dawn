@@ -601,7 +601,9 @@ display: none;
 
 }
 
-#storePickupApp input[type=text]
+#storePickupApp input[type=text] {
+  border: 1px solid #8a54a8!important;  
+}
 
 p.success {
   display: none; 
