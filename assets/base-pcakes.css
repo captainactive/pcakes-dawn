@@ -581,7 +581,7 @@ display: none;
 }
 
 #storePickupApp .checkoutMethodContainer .locations {
-  border:.1rem solid rgba(var(--color-foreground),.08)!important;
+  border: .1rem solid rgba(var(--color-foreground),.08)!important;
 
 }
 
