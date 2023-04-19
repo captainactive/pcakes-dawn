@@ -562,7 +562,7 @@ display: none;
 }
 	
 
-
+#storePickupApp .checkoutMethod.active {
   background-color: #8a54a8!important;
   color: #ffffff;
   
