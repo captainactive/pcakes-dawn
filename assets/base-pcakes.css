@@ -608,6 +608,10 @@ display: none;
   margin-right: 5px!important;
 }
 
+#storePickupApp .checkoutMethodContainer .inputWithButton .button {
+  border: none!important;
+}
+
 p.success {
   display: none; 
 }
