@@ -563,6 +563,7 @@ display: none;
 
 #storePickupApp .checkoutMethod {
   border: 1px solid #e14984!important;  
+  color: #e14984!important; 
 }
 
 #storePickupApp .checkoutMethod.active {
