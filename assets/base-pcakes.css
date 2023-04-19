@@ -561,6 +561,13 @@ display: none;
 	}
 }
 
+
+/* CART PAGE ZAPIET PICKUP APP */
+
+#storePickupApp {
+  padding-top: 40px;
+}
+
 #storePickupApp .checkoutMethod {
   border: 1px solid #8a54a8!important;  
   color: #8a54a8!important; 
