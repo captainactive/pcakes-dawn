@@ -563,8 +563,11 @@ display: none;
 	
 
 #storePickupApp .checkoutMethodsContainer.default .checkoutMethod.active {
-  background-color: #8a54a8;
+  background-color: #8a54a8!important;
   color: #ffffff;
+}
+.pickupIcon {
+   color: #ffffff;
 }
 
 
