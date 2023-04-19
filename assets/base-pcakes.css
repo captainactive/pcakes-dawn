@@ -611,6 +611,9 @@ display: none;
 #storePickupApp .checkoutMethodContainer .inputWithButton .button {
   border: none!important;
 }
+.fa fa-calendar:after {
+box-shadow: none!important;
+}
 
 p.success {
   display: none; 
