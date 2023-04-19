@@ -567,7 +567,7 @@ display: none;
 /* CART PAGE ZAPIET PICKUP APP */
 
 #storePickupApp {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 #storePickupApp .checkoutMethod {
@@ -600,7 +600,10 @@ display: none;
   border: .1rem solid rgba(var(--color-foreground),.08)!important;
 
 }
-.success {
+
+#storePickupApp input[type=text]
+
+.successss {
   display: none; 
 }
 
