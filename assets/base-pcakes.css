@@ -567,7 +567,11 @@ display: none;
   color: #ffffff;
   
 }
-#storePickupApp .checkoutMethodsContainer.default .checkoutMethod.active .pickupIcon svg {
+#storePickupApp .checkoutMethod svg {
+   fill: #000000;
+}
+
+#storePickupApp .checkoutMethod.active svg {
    fill: #ffffff;
 }
 
