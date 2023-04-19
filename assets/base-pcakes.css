@@ -611,7 +611,7 @@ display: none;
 #storePickupApp .checkoutMethodContainer .inputWithButton .button {
   border: none!important;
 }
-#storePickupApp .checkoutMethodContainer .inputWithButton .button {
+#storePickupApp .checkoutMethodContainer .inputWithButton .button, #storePickupApp .checkoutMethodContainer .inputWithButton .button:after {
 box-shadow: none!important;
 }
 
