@@ -565,7 +565,10 @@ display: none;
 #storePickupApp .checkoutMethodsContainer.default .checkoutMethod.active {
   background-color: #8a54a8!important;
   color: #ffffff;
-  fill: #ffffff;
+  
+}
+.pickupIcon svg {
+   fill: #ffffff;
 }
 
 
