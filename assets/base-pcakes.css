@@ -575,7 +575,9 @@ display: none;
    fill: #ffffff;
 }
 
-
+#storePickupApp .checkoutMethodContainer .locations .location.active {
+  background-color: #FFF8FB;
+}
 
 
 	
