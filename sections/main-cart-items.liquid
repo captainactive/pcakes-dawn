@@ -362,7 +362,95 @@
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">
       {{ 'accessibility.loading' | t }}
     </p                     
-      <!-- Zapiet | Store Pickup + Delivery -->
+
+      <div class="page-width pc-cart-boxes">	
+	<div class="pc-cart-boxes-sub">
+		<div class="pc-cart-boxes-img">
+			<img alt="Personalized Card" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/products/note.jpg?v=1586107410&width=360">
+		</div>
+		<div class="pc-cart-boxes-text">
+			<div>
+				<h2>Add a Personalized Card</h2>
+				<p>Add a personalized card to your delivery order.</p>
+			</div>
+			<div class="banner__buttons">
+				<a href="/products/single-cupcake-box" class="button button--primary">Add Card</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="pc-cart-boxes-sub">
+		<div class="pc-cart-boxes-img">
+			<img alt="Individual Cupcake Box" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/products/single-box.jpg?v=1585702634">
+		</div>
+		<div class="pc-cart-boxes-text">
+			<div>	
+				<h2>Individual Cupcake Boxes</h2>
+				<p>If you would like each cupcake individually boxed, you may order them here.</p>
+			</div>	
+			<div class="banner__buttons">
+				<a href="/products/personalized-card" class="button button--primary">Add Boxes</a>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div class="pc-cart-boxes-note">
+		<h2>Special Instructions </h2>
+		<p>Anything provided here will <strong>not</strong> be sent to the recipient. We also <strong>cannot</strong> write on boxes.</p> 
+		<p>To send a message,  add a <a href="/products/personalized-card">personalized card</a> to your order.</p>
+        <p>Any requests will be considered, are <strong>not guaranteed</strong>, and <strong>may incur additional costs</strong>.</p> 
+		
+        <cart-note class="cart__note field">
+          <label for="Cart-note">Special Instructions:</label>
+          <textarea
+            class="text-area field__input"
+            name="note"
+            form="cart"
+            id="Cart-note"
+            placeholder="{{ 'sections.cart.note' | t }}"
+          >{{ cart.note }}</textarea>
+        </cart-note>
+	</div>
+
+
+
+	<div class="pc-cart-boxes-note pccartnote">
+		<h2>Delivery Information</h2>
+
+		<ol class="cartpage">
+		  <li><strong>Someone MUST be present</strong> to receive the items during the <strong>entire delivery window</strong>. Our product is perishable and cannot be left unattended.</li>
+		  <li>Please provide the <strong>recipient’s phone number</strong> with the delivery address. We will only call if we have challenges reaching them. The gift of desserts will remain a surprise.</li>
+		  <li>A specific time within the window cannot be requested.</li>
+		  <li>If the delivery is unsuccessful, the item(s) will be returned to Patty’s Cakes and will be available for pickup.</li>
+		</ol>
+
+		  <br />
+		<p>Please Note: We do not off delivery to Downtown Disney.</p>
+
+	</div>
+
+
+
+	<div class="pc-cart-boxes-note pccartnote">
+		<h2>Delivery Windows</h2>
+		<p>Delivery windows are Tuesday-Saturday:<br />
+			10 am – 1 pm<br />
+			12 pm – 3 pm<br />
+			2 pm – 5 pm<br />
+			4 pm – 7 pm - (Saturdays Only)<br />
+			<br />
+			If delivery windows are not displaying in the date and time selector above, they are full.</p>
+	</div>	
+</div>		
+<div class="page-width">
+	<br><br>	
+	<div class="txtcenter">By checking out you agree to our <a href="/policies/terms-of-service">terms and conditions</a>.</div>
+</div>
+
+     <!-- Zapiet | Store Pickup + Delivery -->
             <!--div id="storePickupApp"></div-->
             <!-- Zapiet | Store Pickup + Delivery -->
 
