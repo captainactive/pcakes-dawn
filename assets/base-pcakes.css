@@ -603,9 +603,9 @@ display: none;
 
 #storePickupApp input[type=text] {
   border: 1px solid #8a54a8!important;  
-  -webkit-box-shadow: none;
-  border-radius: 3px;
-  margin-right: 5px;
+  -webkit-box-shadow: none!important;
+  border-radius: 3px!important;
+  margin-right: 5px!important;
 }
 
 p.success {
