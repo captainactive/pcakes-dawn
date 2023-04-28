@@ -540,6 +540,9 @@ display: none;
 .pccartnote	{
 	background-color: #FFF8FB;
 	}
+.pccartnotepurple	{
+	background-color: #fcf8ff;
+	}
 
 @media (max-width: 930px) {
 	.pc-cart-boxes {
