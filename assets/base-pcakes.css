@@ -496,7 +496,7 @@ display: none;
 	grid-column-gap: 2px;
 	grid-template-rows: 1fr;
 	border: .1rem solid rgba(var(--color-foreground),.08);
-	padding: 20px;
+	padding: 10px 20px 20px 20px;
   border-radius: 3px;
 }
 .pc-cart-boxes-sub {
