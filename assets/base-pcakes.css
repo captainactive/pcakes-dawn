@@ -566,7 +566,7 @@ display: none;
 	}
 }
 
-.cart__footer.totals {
+.cart__footer .totals {
   font-size: 120%;
 }
 
