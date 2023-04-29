@@ -566,7 +566,7 @@ display: none;
 	}
 }
 
-.cart__footer .totals {
+.totals__subtotal, .totals__subtotal-value {
   font-size: 120%;
 }
 
