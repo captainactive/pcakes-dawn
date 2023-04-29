@@ -566,8 +566,11 @@ display: none;
 	}
 }
 
-.totals__subtotal, .totals__subtotal-value {
-  font-size: 120%;
+.totals__subtotal {
+  font-size: 140%!important;
+}
+.totals__subtotal-value {
+  font-size: 180%!important;
 }
 
 /* CART PAGE ZAPIET PICKUP APP */
