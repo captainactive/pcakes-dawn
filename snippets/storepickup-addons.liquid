@@ -1,6 +1,6 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 
-{% render 'alerts', max_lead_time_new: max_lead_time %}
+{% render 'alerts', with max_lead_time %}
 
 !!{{ max_lead_time_new }}!!
 
