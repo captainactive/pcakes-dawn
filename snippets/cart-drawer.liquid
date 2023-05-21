@@ -187,7 +187,7 @@
                             <!-- ALERTS WAS HERE --> 
 
                             {% assign supertags = item.product.tags | append: supertags %}
-           
+            {{ supertags }}
                             
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                           {%- endif -%}
