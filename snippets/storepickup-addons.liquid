@@ -1,10 +1,6 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 
 
-{%- render 'alerts', delay: cupcake_tag -%}
-
-
-
 
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
