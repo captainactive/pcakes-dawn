@@ -1,13 +1,10 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 
-
-
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
 {% assign alertcontent_clean = alertcontent_clean | strip %}
 {% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
 {% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
-
 
 
 {% for item in cart.items %}
