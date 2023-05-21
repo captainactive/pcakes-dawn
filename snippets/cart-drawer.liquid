@@ -185,6 +185,8 @@
                             
                   {% render 'alerts', prodtags:item.product.tags  %}
 
+                            {% assign testval = testval | plus: 1 %}
+
                             
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                           {%- endif -%}
