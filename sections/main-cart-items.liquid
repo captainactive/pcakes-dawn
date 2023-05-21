@@ -168,6 +168,11 @@
                     </ul>
               
                 {% render 'alerts', prodtags:item.product.tags %}
+
+                   {% assign supertags = item.product.tags | append: supertags %}
+            fuck{{ supertags }}
+
+                
                   </td>
 
                   <td class="cart-item__totals right medium-hide large-up-hide">
