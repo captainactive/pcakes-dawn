@@ -2,7 +2,7 @@
 
 {% render 'alerts', with max_lead_time %}
 
-!!{{ max_lead_time_new }}!!
+!!{{ max_lead_time }}!!
 
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
