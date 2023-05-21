@@ -366,9 +366,7 @@
                     </div>
                   </td>
                 </tr>
-              {%- endfor -%}
-
-end
+              {%- endfor -%}                
                           
             </tbody>
           </table>
@@ -381,7 +379,9 @@ end
       {{ 'accessibility.loading' | t }}
     </p                     
 
+   {% render 'alerts', prodtags:item.product.tags, cartitems:cart.items %}
 
+      
 
      <!-- Zapiet | Store Pickup + Delivery -->
             <!--div id="storePickupApp"></div-->
