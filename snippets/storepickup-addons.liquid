@@ -1,8 +1,8 @@
 
-{%- render 'alerts', delay: max_lead_time -%}
+{%- render 'alerts', delay: cupcake_tag -%}
 
 
-!!{{ delay }}!!
+!!{{ delay }}!!1
 
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
