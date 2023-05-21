@@ -185,7 +185,10 @@
                             
                   {% render 'alerts', prodtags:item.product.tags  %}
 
-                            !/{{ testval }}/!
+                           
+
+                            {% assign testval = testval2 | plus: 1 %}
+                           !1/{{ testval }}/1!
 
                             
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
