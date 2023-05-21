@@ -169,6 +169,12 @@
               
                 {% render 'alerts', prodtags:item.product.tags, testvar:testvar %}
 
+
+
+
+
+
+                
                    {% assign supertags = item.product.tags | append: supertags %}
          //{{ supertags }}//
 
@@ -361,6 +367,9 @@
                   </td>
                 </tr>
               {%- endfor -%}
+
+end
+                          
             </tbody>
           </table>
         {%- endif -%}
