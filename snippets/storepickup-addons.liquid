@@ -1,8 +1,8 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 
-{% render 'alerts', max_lead_time: max_lead_time %}
+{% render 'alerts', max_lead_time_new: max_lead_time %}
 
-!!{{ max_lead_time }}!!
+!!{{ max_lead_time_new }}!!
 
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
