@@ -1,31 +1,16 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 
+{% render 'alerts', max_lead_time: max_lead_time %}
+
+!!{{ max_lead_time }}!!
+
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
-{% assign alertcontent_split = alertcontent_clean | split: "," %}
+{% assign alertcontent_clean = alertcontent_clean | strip %}
+{% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
+{% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
 
-{% for num_content in alertcontent_split %}
-    {% if num_content contains "ST"%}
-        {% assign stndcakevar = num_content %}
-    {% elsif num_content contains "SC" %}
-        {% assign semicakevar = num_content %}
-    {% elsif num_content contains "CK" %}
-        {% assign custcakevar = num_content %}
-    {% elsif num_content contains "CB" %}
-        {% assign cakeballvar = num_content %}
-    {% endif %}
-{% endfor %}
-{% assign cakeballvar = cakeballvar | remove: "CB" | strip %}
-{% assign stndcakevar = stndcakevar | remove: "ST" | strip %}
-{% assign semicakevar = semicakevar | remove: "SC" | strip %}
-{% assign custcakevar = custcakevar | remove: "CK" | strip %}
 
-<script>
-    window.cakeballvar = {{cakeballvar}};
-    window.stndcakevar = {{stndcakevar}};
-    window.semicakevar = {{semicakevar}};
-    window.custcakevar = {{custcakevar}};
-</script>
 
 {% for item in cart.items %}
   {% if item.product.tags contains 'weball' %}
@@ -54,6 +39,23 @@
   {% assign delivery_notice_after_breakpoint_value = alertcontent_clean %}
   {% assign delivery_notice_after_breakpoint_unit = "hours" %}
 {% endif %}
+
+
+
+
+
+{% comment %}
+
+the app should only be the code above. 
+
+{% endcomment %}
+
+
+
+
+
+
+
 
 
 
