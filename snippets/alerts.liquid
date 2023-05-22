@@ -1,136 +1,54 @@
-
-{% comment %} 
-
-START HERE
-1. SET THE DATE ON THE ON THE SETTINGS
-2. ADJUST THE CONTENT OF THE ALERTS BELOW
-
-
-
-FUTURE IMPROVEMENTS
-refine the process. 
-use stacked calcs
-some times mondays appear
-Group the annoucements by category, not page - DONE
-CREATE A PAGE WITH TO SHOW WHAT ALWERTS ARE ACTIVE
-
-add the ability to say  on tuesday, sell out for (this day)
-ALERT DATE- THE LEAD TIME = DAY TO TURN OFF THE ANNOUNCEMENT
-
-Add warnings for 
-
-cookies  - need cookie alert
-4 RTG sizes
-6 RTG sizes
-8 RTG sizes
-10 RTG sizes
-vegan CC
-gf CC
-
-
-ADD SOLD OUT WARNINGS?
-
-
-time
-Sell out cakes 
-Wed at 11:59pm
-
-{% endcomment %} 
-
-
-{% comment %} 
-
-<!-- THESE ARE THE FIXED LEAD TIMES in hours 
-1-24,
-2-48
-3-72
-4-96
-5-120
-6-144
-7-168
-8-192
-9-216
--->
-
-{% endcomment %} 
-
-
-
-
-
-{% comment %} 
-
+ {% comment %} 
 /////
 STEP 1 - SET AVAIL DATE AND LEAD TIME. 
 CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT. 
 
-{% endcomment %}
+{% endcomment %} 
 
-
-<!-- CUPCAKE DATE: YEAR/MONTH/DAY -->
-    {% assign cupcake_avail_date = "2023/05/14 00:01" | date: '%s' %}
+	<!-- CUPCAKE DATE: YEAR/MONTH/DAY --> 
+	{% assign cupcake_avail_date = "2023/05/14 00:01" | date: '%s' %}
 	{% assign cupcake_lead_time = 0 %}
-    {% assign cupcake_tag = "Cupcakes" %}
+	{% assign cupcake_tag = "Cupcakes" %} 
 
-    {{ cupcake_avail_date }}- {{ cupcake_avail_date1 }}
-
-<!-- MINI CUPCAKE DATE: YEAR/MONTH/DAY -->
-	{% capture mini_cupcake_avail_date %}{{"2023/01/25 00:01" | date: '%s'}}{% endcapture %}
+	<!-- MINI CUPCAKE DATE: YEAR/MONTH/DAY --> 
+	{% assign mini_cupcake_avail_date = "2023/01/25 00:01" | date: '%s'%}
 	{% assign mini_cupcake_lead_time = 0 %}
-   {% assign mini_cupcake_tag = "Mini Cupcakes" %}
+	{% assign mini_cupcake_tag = "Mini Cupcakes" %} 
 
-<!-- CAKEBALL DATE: YEAR/MONTH/DAY -->
-	{% capture cake_ball_avail_date %}{{"2023/01/19 00:01" | date: '%s'}}{% endcapture %}
+	<!-- CAKEBALL DATE: YEAR/MONTH/DAY --> 
+	{% assign cake_ball_avail_date = "2023/01/19 00:01" | date: '%s'%}
 	{% assign cake_ball_lead_time = 0 %}
-     {% assign cake_ball_tag = "Cakeballs" %}
+	{% assign cake_ball_tag = "Cakeballs" %} 
 
-<!-- COOKIE DATE: YEAR/MONTH/DAY -->
-	{% capture cookie_avail_date %}{{"2023/01/05 00:01" | date: '%s'}}{% endcapture %}
+	 <!-- COOKIE DATE: YEAR/MONTH/DAY --> 
+	{% assign cookie_avail_date = "2023/01/05 00:01" | date: '%s'%}
 	{% assign cookie_lead_time = 0 %}
-   {% assign cookie_tags = "cookies" %}
+	{% assign cookie_tags = "cookies" %} 
 
-<!-- DONUT DATE: YEAR/MONTH/DAY -->
-	{% capture donut_avail_date %}{{"2023/01/25 00:01" | date: '%s'}}{% endcapture %}
-	{% assign donut_lead_time = 0 %}
+	<!-- DONUT DATE: YEAR/MONTH/DAY --> 
+	{% assign donut_avail_date = "2023/01/25 00:01" | date: '%s'%}
+	{% assign donut_lead_time = 0 %} 
 
-<!-- STANDARD CAKE DATE: YEAR/MONTH/DAY -->
-	{% capture std_cake_avail_date %}{{"2023/06/28 00:01" | date: '%s'}}{% endcapture %}
-	{% assign std_cake_lead_time = 0 %}
+	<!-- STANDARD CAKE DATE: YEAR/MONTH/DAY --> 
+	{% assign std_cake_avail_date = "2023/06/28 00:01" | date: '%s'%}
+	{% assign std_cake_lead_time = 0 %} 
 
-<!-- 3 DAY DATE: YEAR/MONTH/DAY -->
-	{% capture three_day_avail_date %}{{"2023/06/15 00:01" | date: '%s'}}{% endcapture %}
+	<!-- 3 DAY DATE: YEAR/MONTH/DAY --> 
+	{% assign three_day_avail_date = "2023/06/15 00:01" | date: '%s'%}
 	{% assign three_day_lead_time = 64 %} 
-    {% assign three_day_lead_time_days = 3 %} 
-  
+	{% assign three_day_lead_time_days = 3 %} 
 
-<!-- 5 DAY DATE: YEAR/MONTH/DAY -->
-	{% capture five_day_avail_date %}{{"2023/02/15 00:01" | date: '%s'}}{% endcapture %}
+	<!-- 5 DAY DATE: YEAR/MONTH/DAY --> 
+	{% assign five_day_avail_date = "2023/02/15 00:01" | date: '%s'%}
 	{% assign five_day_lead_time = 86  %}
-    {% assign five_day_lead_time_days = 5  %}
+	{% assign five_day_lead_time_days = 5  %} 
 
-<!-- 110 is normal!  -->
+	<!-- 110 is normal!  --> 
 
-<!-- SOLDOUT DATE: YEAR/MONTH/DAY -->
-	{% capture sold_out_avail_date %}{{"2023/01/28 00:01" | date: '%s'}}{% endcapture %}
-	{% assign sold_out_lead_time = 0 %}
+	<!-- SOLDOUT DATE: YEAR/MONTH/DAY --> 
+	{% assign sold_out_avail_date = "2023/01/28 00:01" | date: '%s'%}
+	{% assign sold_out_lead_time = 0 %} 
 
-
-<!-- EDIBLE IMAGE DATE: YEAR/MONTH/DAY -->
-	{% capture edible_image_avail_date %}{{"2023/01/05 00:01" | date: '%s'}}{% endcapture %}
-	{% assign edible_image_lead_time = 2  %}
-
-{% comment %}
-DEPRECAITED 
-<!-- SEMI CUSTOM CAKE DATE: YEAR/MONTH/DAY -->
-	{% capture semi_cake_avail_date %}{{"2022/11/28 00:01" | date: '%s'}}{% endcapture %}
-	{% assign semi_cake_lead_time = 64 %} 
-
-<!-- CUSTOM CAKE DATE: YEAR/MONTH/DAY -->
-	{% capture cust_cake_avail_date %}{{"2022/11/28 00:01" | date: '%s'}}{% endcapture %}
-	{% assign cust_cake_lead_time = 64 %}
-
-{% endcomment %}
-
-
-         
-
+	<!-- EDIBLE IMAGE DATE: YEAR/MONTH/DAY --> 
+	{% assign edible_image_avail_date = "2023/01/05 00:01" | date: '%s'%}
+	{% assign edible_image_lead_time = 2  %} 
