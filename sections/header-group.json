@@ -4,6 +4,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -36,6 +37,7 @@
     },
     "122a88d2-99ec-4f91-9602-b5e9a6003af7": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"miniheadlinks\">\n\t<a class=\"miniheadlinks-drop\" href=\"\/pages\/delivery\">$5 Local Delivery<\/a><span class=\"miniheadlinks-drop\"> &nbsp;-&nbsp;<\/span><a href=\"\/account\">My Account<\/a> &nbsp;-&nbsp; <a href=\"http:\/\/map.pattys-cakes.com\/\" target=\"_blank\">Get Directions<\/a> &nbsp;-&nbsp;  <a href=\"tel:7145258350\">(714) 525-8350<\/a>\n<\/div>",
         "color_scheme": "background-1",
@@ -45,6 +47,7 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "custom_css": [
 
       ],
