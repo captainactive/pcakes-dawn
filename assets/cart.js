@@ -210,3 +210,17 @@ if (!customElements.get('cart-note')) {
       }
   });
 };
+
+//PG ADDED 
+// FOUND HERE https://community.shopify.com/c/shopify-design/dawn-theme-accept-terms-checkbox/td-p/1336592
+$(document).ready(function() {
+   $('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
+       if ($('#agree').is(':checked')) {
+            $(this).submit();
+            }
+      else {
+           alert("Add your personal ERROR MESSAGE here");
+           return false;
+      }
+  });
+});
