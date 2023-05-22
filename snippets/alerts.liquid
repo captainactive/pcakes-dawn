@@ -604,14 +604,14 @@ COLLECTIONS
 COLLECTIONS
 {%- endcomment -%}  
 
-
+test
 
 
 {% render 'alerts_style' %}
 
 
 {% render 'alerts_notifications_all' %}
-
+ {% render 'alerts', prodtags:item.product.tags, testvar:testvar %}
 
 
 
