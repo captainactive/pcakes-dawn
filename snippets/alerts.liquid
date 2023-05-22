@@ -527,21 +527,8 @@ STEP 6 - CREATE AND DISPLAY ERROR MESSAGES BELOW HERE
 {% endcomment %}
 
         
-  
-
-
-{%- comment -%}  
-CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
-CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
-COLLECTIONS
-COLLECTIONS
-{%- endcomment -%}  
-
-test
-
 
 {% render 'alerts_style' %}
-
 
 {% render 'alerts_notifications_all', 
   alertstandcake:alertstandcake,
@@ -561,16 +548,14 @@ test
 
 
 {% comment %} 
-
 /////
 STEP 7 - OUTPUT: this will pass on to the storepickup-addons.liquid pickup page.
 THIS MUST STAY AT THE END OF THE PAGE! 
-
 {% endcomment %}
 
   {% comment %}  TEMP HARD CODE      {% endcomment %}   
 {% assign max_lead_time = 72 %} 
-       
+       {{max_lead_time}}!!/
 <span class="alert-zapiet">{{max_lead_time}}</span>
 
 
