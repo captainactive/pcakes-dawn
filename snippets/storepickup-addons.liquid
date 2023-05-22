@@ -2,7 +2,6 @@
 {% assign alertcontent_clean = alertcontent | split: "///" %}
 {% assign alertcontent_clean =  alertcontent_clean[1] | strip_html %}
 {% assign alertcontent_clean = alertcontent_clean | plus: 1 | minus: 1 %}
-{{ alertcontent_clean }}
 
 
 {% for item in cart.items %}
