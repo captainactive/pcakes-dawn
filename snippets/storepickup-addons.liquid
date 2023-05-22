@@ -2,6 +2,10 @@
 {{ alertcontent }}!<br><br>
 
 
+
+
+{% assign alertcontent_clean = alertcontent_clean | split: "///" %}
+  {{ alertcontent_clean }} NEW <br><br>
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {{ alertcontent_clean }} STRIP <br><br>
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
