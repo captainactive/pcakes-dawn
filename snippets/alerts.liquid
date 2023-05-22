@@ -399,6 +399,7 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
 {% endcomment %}
 
 
+
 {% assign cc_tag = "" %}
 {% assign mcc_tag = "" %}
 {% assign cb_tag = "" %}
@@ -410,26 +411,21 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
 {% assign fd_tag = "" %} 
 {% assign ei_tag = "" %} 
 
-
-<!--{{ cartitems }}--> 
-
-
-<!-- !//{{prodtags}}//! --> 
   
 {% assign max_lead_time = 0 %}
                  
-{% for item in prodtags %}
+{% for item in cart.items %}
 {% comment %} {{ item.product.tags }}{% endcomment %} 
 {% assign max_lead_time = max_lead_time | plus: 0 %}
   
-   {% if prodtags contains 'Cupcakes' and cc_tag == ""  %}
+   {% if item.product.tags contains 'Cupcakes' and cc_tag == ""  %}
       {% assign cc_tag = "CC" %}
         {% if cupcake_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = cupcake_lead_time_final %}
         {% endif %}
     {% endif %}
 
-   {% if prodtags contains 'Mini Cupcakes' and mcc_tag == ""  %}
+   {% if item.product.tags contains 'Mini Cupcakes' and mcc_tag == ""  %}
       {% assign mcc_tag = "MCC" %}
         {% if mini_cupcake_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = mini_cupcake_lead_time_final %}
@@ -437,21 +433,21 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
     {% endif %}
 
 
-   {% if prodtags contains 'cakeball' and cb_tag == ""  %}
+   {% if item.product.tags contains 'cakeball' and cb_tag == ""  %}
       {% assign cb_tag = "CB" %}
         {% if cake_ball_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = cake_ball_lead_time_final %}
         {% endif %}
     {% endif %}
 
-   {% if prodtags contains 'cookies' and co_tag == ""  %}
+   {% if item.product.tags contains 'cookies' and co_tag == ""  %}
       {% assign co_tag = "CO" %}
         {% if cookie_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = cookie_lead_time_final %}
         {% endif %}
     {% endif %}
 
-   {% if prodtags contains 'donut' and dn_tag == ""  %}
+   {% if item.product.tags contains 'donut' and dn_tag == ""  %}
       {% assign dn_tag = "DN" %}
         {% if donut_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = donut_lead_time_final %}
@@ -459,28 +455,28 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
     {% endif %}
 
   
-   {% if prodtags contains 'Standard Cakes' and st_tag == ""  %}
+   {% if item.product.tags contains 'Standard Cakes' and st_tag == ""  %}
       {% assign st_tag = "ST" %}
         {% if std_cake_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = std_cake_lead_time_final %}
         {% endif %}
     {% endif %}
 
-     {% if prodtags contains 'soldout' and so_tag == ""  %}
+     {% if item.product.tags contains 'soldout' and so_tag == ""  %}
       {% assign so_tag = "SO" %}
         {% if sold_out_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = sold_out_lead_time_final %}
         {% endif %}
     {% endif %}
   
-   {% if prodtags contains '3 Days' and td_tag == ""  %}
+   {% if item.product.tags contains '3 Days' and td_tag == ""  %}
       {% assign td_tag = "3D" %}
         {% if three_day_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = three_day_lead_time_final %}
         {% endif %}
     {% endif %}
 
-   {% if prodtags contains '5 Days' and fd_tag == ""   %}
+   {% if item.product.tags contains '5 Days' and fd_tag == ""   %}
       {% assign fd_tag = "5D" %}
         {% if five_day_lead_time_final >= max_lead_time %}
             {% assign max_lead_time = five_day_lead_time_final %}
@@ -488,7 +484,7 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
     {% endif %}     
 
 
-   {% if prodtags contains 'edibleimage' and ei_tag == ""  %}
+   {% if item.product.tags contains 'edibleimage' and ei_tag == ""  %}
       {% assign ei_tag = "EI" %}
         {% if edible_image_lead_time_final > max_lead_time  %}
             {% assign max_lead_time = edible_image_lead_time_final %}
@@ -497,6 +493,24 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
 
   
 {% endfor %}
+
+  
+{% comment %}      {% endcomment %} 
+  //RECAP//<br>
+!!{{ cc_tag }}<br>
+{{ mcc_tag}}<br>
+{{ cb_tag}}<br>
+{{ co_tag }}<br> 
+{{ st_tag }}<br> 
+{{ dn_tag }}<br>   
+{{ so_tag }}<br>  
+{{ td_tag }}<br>        
+{{ fd_tag }}<br>
+{{ ei_tag }}<br>
+MAX: {{ max_lead_time }}
+
+
+       
 
 
     
