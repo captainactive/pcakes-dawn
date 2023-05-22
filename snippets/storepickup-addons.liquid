@@ -1,6 +1,6 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 {{ alertcontent }}<br><br>
-{% assign alertcontent_clean = alertcontent | strip_html %}
+{% assign alertcontent_clean = alertcontent | strip %}
 {{ alertcontent_clean }} STRIP <br><br>
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
 {{ alertcontent_clean }}<br><br>
