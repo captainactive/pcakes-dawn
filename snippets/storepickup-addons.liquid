@@ -1,9 +1,13 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
 {{ alertcontent }}
 {% assign alertcontent_clean = alertcontent | strip_html %}
+{{ alertcontent_clean }}
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
+{{ alertcontent_clean }}
 {% assign alertcontent_clean = alertcontent_clean | strip %}
+{{ alertcontent_clean }}
 {% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
+{{ alertcontent_clean }}
 {% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
 {{ alertcontent_clean }}
 
