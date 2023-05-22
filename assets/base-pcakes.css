@@ -670,6 +670,23 @@ quantity::before {
 }
 
 
+
+.productrowflavor {
+  grid-column: 1 / -1;
+  /*border-bottom: 1px solid #e5e5e5;*/
+  background-color: #e14984;
+  border-radius: 5px; }
+
+.productrowflavor h2 {
+  color: #ffffff;
+  margin: 15px 40px; }
+
+@media (max-width: 450px) {
+  .productrowflavor h2 {
+    margin: 15px 10px;
+    text-align: center; } }
+
+
 /* ABOUT  PAGE  */
 
 .pcmap {
