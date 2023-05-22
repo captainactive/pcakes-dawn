@@ -443,7 +443,6 @@
 <style>
 	#deliveryinfo1, #deliveryinfo2 {display: none;}
 	.show {display: block!important;}
-  .hide {display: none!important;}
 	
 </style>
 
@@ -484,6 +483,15 @@
 	</div>	
 </div>
 
+
+     <p style="float: none; text-align: right; clear: both; margin: 10px 0;">
+  <input style="float:none; vertical-align: middle;" type="checkbox" id="agree" />
+  <label style="display:inline; float:none" for="agree">
+    I agree with the <a href="/pages/terms-and-conditions">terms and conditions</a>.
+  </label>
+</p>                     
+                          
+                          
 <script>
 const deliveryinfo1 = document.querySelector('#deliveryinfo1');
 const deliveryinfo2 = document.querySelector('#deliveryinfo2');
@@ -507,7 +515,17 @@ window.ZapietEvent.listen("pickup.datepicker.rendered", function() {
 	deliveryinfo2.classList.remove('show');  
 });	  
 
-  
+  $(document).ready(function() {
+    $('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
+      if ($('#agree').is(':checked')) {
+        $(this).submit();
+      }
+      else {
+        alert("You must agree with the terms and conditions of sales to check out.");
+        return false;
+      }
+    });
+  });
 	
 // MORE OPTIONS HERE - https://support.zapiet.com/en/articles/6279764-widget-api
 	
