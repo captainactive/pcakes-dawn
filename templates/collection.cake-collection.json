@@ -11,7 +11,7 @@
     "23c0b79e-f860-4007-8d55-2dce2d33801a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% render 'alerts'%}",
+        "custom_liquid": "",
         "color_scheme": "background-1",
         "padding_top": 32,
         "padding_bottom": 52
