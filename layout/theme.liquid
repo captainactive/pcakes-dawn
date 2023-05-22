@@ -400,6 +400,22 @@ function addedToCart() {
     
     {%- endif -%}
 
+
+<script>
+
+  //cart confirm numbers
+$('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
+  if ($('#agree').is(':checked')) {
+    $(this).submit();
+  }
+  else {
+    alert("You must agree with the terms and conditions of sales to check out.");
+    return false;
+  }
+});
+</script>
+
+    
   <!-- USER WAY ADA --> 
 <script>
       (function(d){
