@@ -515,17 +515,7 @@ window.ZapietEvent.listen("pickup.datepicker.rendered", function() {
 	deliveryinfo2.classList.remove('show');  
 });	  
 
-  $(document).ready(function() {
-    $('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
-      if ($('#agree').is(':checked')) {
-        $(this).submit();
-      }
-      else {
-        alert("You must agree with the terms and conditions of sales to check out.");
-        return false;
-      }
-    });
-  });
+
 	
 // MORE OPTIONS HERE - https://support.zapiet.com/en/articles/6279764-widget-api
 	
