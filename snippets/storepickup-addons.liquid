@@ -1,17 +1,8 @@
 {% capture alertcontent %}{%- render 'alerts' %}{% endcapture %}
-{{ alertcontent }}!<br><br>
-
-
-
 
 {% assign alertcontent_clean = alertcontent | split: "///" %}
   {{ alertcontent_clean[1] }}<br><br>
 {% assign alertcontent_clean =  alertcontent_clean[1] | strip_html %}
-{{ alertcontent_clean }} STRIP <br><br>
-{% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
-{{ alertcontent_clean }}<br><br>
-{% assign alertcontent_clean = alertcontent_clean | strip %}
-{{ alertcontent_clean }}<br><br>
 {% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
 {{ alertcontent_clean }}<br><br>
 {% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
