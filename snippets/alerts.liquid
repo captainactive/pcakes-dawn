@@ -249,7 +249,7 @@ STEP 4.2 - FIGURE OUT DATES AND DELAYS
 		{% else %}
 			{%assign new_day = "same" %}	
 
-			<!--NOTHING -->
+			{% comment %} <!--NOTHING -->{% endcomment %} 
 		{% endif %}
 	
 
@@ -282,9 +282,9 @@ STEP 4.3 - TESTING/TROUBLESHOOTING
         <span style="color: orange;">/// START FOR TESTING /// </span><br><br>
 
         TITLE: <span style="color: red;"> {{product_title}} </span> <br>
-        Product_avail_date ({{product_avail_date | divided_by: 86400}} days) - date_now ({{date_now| divided_by: 86400}} days) =  avail_date_diff ({{avail_date_diff| divided_by: 3600}} hours) <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
+        Product_avail_date ({{product_avail_date | divided_by: 86400}} days) - date_now ({{date_now| divided_by: 86400}} days) =  avail_date_diff ({{avail_date_diff| divided_by: 3600}} hours) {% comment %} <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->{% endcomment %} 
          - negative # means good, positive number<br>
-        product_lead_time ({{product_lead_time_sec | divided_by: 3600}} hours) - avail_date_diff ({{avail_date_diff | divided_by: 3600}} hours) = lead_time_difference ({{lead_time_difference | divided_by: 3600}} hours) <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+        product_lead_time ({{product_lead_time_sec | divided_by: 3600}} hours) - avail_date_diff ({{avail_date_diff | divided_by: 3600}} hours) = lead_time_difference ({{lead_time_difference | divided_by: 3600}} hours) {% comment %} <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->{% endcomment %} 
         <br><br>
         <span style="color: red;"> {{date_now  | date: "%D %R"}}</span> - DATE TODAY:<br>
         <span style="color: red;"> 	{{lead_time_date  | date: "%D %R"}}	</span> -  DATE WITH LEAD TIME: <span style="color: red;">{{product_lead_time}} </span> - LEAD TIME HOURS<br>
@@ -524,7 +524,6 @@ STEP 6 - CREATE AND DISPLAY ERROR MESSAGES BELOW HERE
   alert_edible_image:alert_edible_image
   
 %}
-
 
 
 
