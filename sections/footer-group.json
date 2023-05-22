@@ -4,6 +4,7 @@
   "sections": {
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vector-patty-350.png?v=1677971937\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;<\/span><\/div>",
         "color_scheme": "background-1",
@@ -32,7 +33,6 @@
     },
     "footer": {
       "type": "footer",
-      "disabled": true,
       "blocks": {
         "6a0e7d78-565e-473b-94be-910995db0636": {
           "type": "text",
