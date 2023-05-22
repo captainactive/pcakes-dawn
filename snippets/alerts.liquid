@@ -85,6 +85,8 @@ STEP 2 - AN ARRAY OF THE DATA IS CREATED TO LOOP THROUGH
 
 
 
+
+
 {% comment %} 
 /////
 STEP 3 - FIND TODAYS DATE 
@@ -104,5 +106,390 @@ STEP 3 - FIND TODAYS DATE
 
 
 
+
+
+
+{% comment %} 
+/////
+STEP 4 - THE MAIN LOOP. PROCESS DATES
+/////
+{% endcomment %}
+
+
+
+
+
+{% comment %} 
+/////
+STEP 4.1 - LOOP MAIN ARRAY. GET VARIABLES
+/////
+{% endcomment %}
+
+<!-- LOOP THE MAIN ARRAY-->
+  {% for single_product_title_and_avail_date in product_title_and_avail_dates %}
+      <!--//single_product_title_and_avail_date: {{single_product_title_and_avail_date}} <br>-->
+      {% assign counter = 1 %}
+      <!-- LOOP THE SECOND/ITEM ARRAY-->
+      {% assign product_details_array =  single_product_title_and_avail_date | split: '|' %}
+          {% for product_details in product_details_array %}
+
+          {%if counter == 1 %}
+              {% assign product_title = product_details %}
+             <!--//{{product_title}} - title<br>-->
+
+          {% elsif counter == 2 %}
+              {% assign product_avail_date = product_details | plus: 0 %}
+              <!--//{{product_avail_date}} - date<br>-->
+
+          {% elsif  counter == 3 %}
+              {% assign product_lead_time = product_details %}
+              <!--//{{product_lead_time}} - available hours<br> -->
+          {% else %}
+              error
+          {% endif %}
+          {% assign counter = counter | plus: 1 %}
+
+      {% endfor %}
+
+
+
+{% comment %}  
+
+    PREVIOUS ATTEMPTS AT BEING SMARTER.
+    TRYING TO TAKE THE TODAY + THE LEAD TIME = AVAIL DATE
+    BACKWARD CALC AVAIL DATE AT 7AM TO NOW, THAT IS THE NEW LEAD TIME. 
+    IT WON'T FUCKING WORK
+    
+
+    /// HERE IS LIES FOR ANOTHER DAYS ATTEMPT ///
+    
+////////////////////////<br> 
+ {{product_title}}<br>
+product_lead_time: {{product_lead_time}}// <br><br>
+ {{ date_now | date: "%a, %b %d, %Y %I %M" }} | today  <br>
+ {{ product_lead_time | times: 3600 | plus: date_now | date: "%a, %b %d, %Y %I %M"}} | new avail date <br>
+    
+    {% capture product_date %}{{product_lead_time | times: 3600 | plus: date_now | date: "%a, %b %d, %Y"}} 06:00:02 AM{% endcapture %}<br>
+      ||{{ product_date | date: "%s" }}|| move to 6am on the avail date<br>
+    ||{{ product_date | date: "%a, %b %d, %Y %I %M"}}|| that date/time<br>
+
+    ||{{ product_date | date: "%s" }}||<br>
+    ||{{ date_now| date: "%s" }}||<br>
+
+    {% assign product_date_sec = product_date | date: "%s" %}
+    {% assign date_now_sec = date_now | date: "%s" %}
+
+    ||{{ product_date_sec}}|| produ date<br>
+    ||{{ date_now_sec }}|| date now <br>
+
+    
+    {% assign new_lead_time =  product_date_sec | minus: date_now_sec %}
+    new_lead_time::  {{ new_lead_time }} <br>
+    new_lead_time sec::  {{ new_lead_time | divided_by: 3600  }} <br>
+     {% assign product_lead_time1 = new_lead_time %}
+   {{  product_date | minus: date_now | date: "%s" }}!<br>
+
+
+    /// END ATTEMPT ///
+    {% endcomment %}
+ 
+
+
+
+
+{% comment %} 
+/////
+STEP 4.2 - FIGURE OUT DATES AND DELAYS
+{% endcomment %}
+
+
+	{% assign avail_date_diff = product_avail_date | minus: date_now | minus: 7 %} <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
+	{% assign product_lead_time_sec = product_lead_time | times: 3600 %} <!-- CONVERT PRODUCT LEAD TIME TO SECONDS -->
+	{% assign lead_time_date =  date_now | plus: product_lead_time_sec  %} <!-- CALC THE LEAD TIME DATE - SECONDS -->
+	{% assign lead_time_difference = product_lead_time_sec | minus: avail_date_diff  %} <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+
+
+{% if avail_date_diff < 0 %}
+		{% assign status = "normal" %}
+		{% assign type = "pass through, OK" %} 
+		{% assign order_date = date_now | plus: product_lead_time_sec %}
+		{% assign step = "A1" %}
+		{% assign calcd_avail_hours = product_lead_time | plus: 0 %}
+
+{% else %}
+	{% if lead_time_difference > 0 %}
+		{% assign status = "normal"%}
+		{% assign type = "alert expired - regular availability" %}
+		{% assign order_date = date_now | plus: product_lead_time_sec %}
+		{% assign step = "A2" %}
+		{% assign calcd_avail_hours = product_lead_time | plus: 0 %}
+	{% else %}
+		{% assign status = "alert"%}
+		{% assign type = "active delay, products delayed " %}
+		{% assign order_date = product_avail_date %}
+		{% assign step = "A3" %}
+		{% assign calcd_avail_hours = avail_date_diff | divided_by: 3600 %}
+
+	{% endif %}
+
+{% endif %}
+
   
+{% comment %} CALC THE FIRST AVAILABLE DATES, ADJUST FOR SUNDAY AND MONDAY  {% endcomment %}  	 
+  
+  		{% assign order_date_day = order_date | date: "%a" %}
+		{%if order_date_day == "Sun" %}
+			{%assign order_date = order_date | plus:  172800 %}
+			{%assign new_day = "Tuesday" %}	
+		{%elsif order_date_day == "Mon" %} 
+			{%assign order_date = order_date | plus: 86400 %}
+			{%assign new_day = "Tuesday" %}	
+		{% else %}
+			{%assign new_day = "same" %}	
+
+			<!--NOTHING -->
+		{% endif %}
+	
+
+
+ 
+
+{% comment %} 
+
+/////
+STEP 4.3 - TESTING/TROUBLESHOOTING
+
+{% endcomment %}
+
+         {% comment %} TESTING SECTION! {% endcomment %}
+         {% comment %} TESTING SECTION! {% endcomment %}
+         {% comment %} TESTING SECTION! {% endcomment %}
+
+
+
+        {% comment %} UNCOMMENT THIS SECTION TO OPEN THE HOOD {% endcomment %}
+    
+{% comment %}   {% endcomment %} 
+
+        {% assign product_title = product_title | strip %}  
+        {% if request.page_type == "collection" %} 
+        {% if product_title == "cust_cake" or product_title == "semi_cake" or product_title == "std_cake" or product_title == "cookie"  %}
+
+
+        <div style="color: blue;">
+        <span style="color: orange;">/// START FOR TESTING /// </span><br><br>
+
+        TITLE: <span style="color: red;"> {{product_title}} </span> <br>
+        Product_avail_date ({{product_avail_date | divided_by: 86400}} days) - date_now ({{date_now| divided_by: 86400}} days) =  avail_date_diff ({{avail_date_diff| divided_by: 3600}} hours) <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
+         - negative # means good, positive number<br>
+        product_lead_time ({{product_lead_time_sec | divided_by: 3600}} hours) - avail_date_diff ({{avail_date_diff | divided_by: 3600}} hours) = lead_time_difference ({{lead_time_difference | divided_by: 3600}} hours) <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+        <br><br>
+        <span style="color: red;"> {{date_now  | date: "%D %R"}}</span> - DATE TODAY:<br>
+        <span style="color: red;"> 	{{lead_time_date  | date: "%D %R"}}	</span> -  DATE WITH LEAD TIME: <span style="color: red;">{{product_lead_time}} </span> - LEAD TIME HOURS<br>
+        <span style="color: red;"> 	{{product_avail_date | date: "%D %R"}}	</span> - AVAIL DATE: <span style="color: red;">{{avail_date_diff | divided_by: 3600}} </span> - DIFF HOURS <br>
+        Status: <span style="color: red;"> {{ status}}</span><br>
+        Type: <span style="color: red;"> {{type}} </span><br>
+        Order_date: <span style="color: red;"> {{order_date | date: "%D %R"}}</span><br>
+        Calcd_avail_hours: <span style="color: red;"> {{calcd_avail_hours}}</span><br>
+        Step: <span style="color: red;"> {{step}} </span><br>
+        Lead_time_difference: <span style="color: red;"> {{lead_time_difference | divided_by: 3600}} </span><br>
+        Order Date Day: <span style="color: red;"> {{order_date_day}}</span><br>
+        Order New Day: <span style="color: red;"> {{new_day}}</span><br>
+
+        <br><br><br>  
+             {% endif %}
+          {% endif %}
+         {% comment %} // END TESTING SECTION! {% endcomment %}
+         {% comment %} // END TESTING SECTION! {% endcomment %}
+
+
+
+
+    
+  {% comment %} 
+
+/////
+STEP 4.4 - EXIT VAIRABLES
+
+{% endcomment %}
+
+  
+  
+  {% comment %} EXIT VAIRABLES {% endcomment %}
+
+  {% assign product_title = product_title | strip %}  
+  {%if product_title == "std_cake" %}
+  		{% assign alertstandcake = status %}
+  		{% assign nextstandcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign std_cake_lead_time_final = calcd_avail_hours %}
+
+  {%elsif product_title == "cupcake" %}
+  		{% assign alert_cupcake = status %}
+  		{% assign next_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "mini_cupcake" %}
+  		{% assign alert_mini_cupcake = status %}
+  		{% assign next_mini_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign mini_cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "cake_ball" %}
+  		{% assign alert_cake_ball = status %}
+  		{% assign next_cake_ball_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cake_ball_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "donut" %}
+  		{% assign alert_donut = status %}
+  		{% assign next_donut_date = order_date | date: "%A, %b. %e" %}
+  		{% assign donut_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "cookie" %}
+  		{% assign alert_cookie = status %}
+  		{% assign next_cookie_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cookie_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "three_day_tag" %}
+  		{% assign alert3day = status %}
+  		{% assign next3daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign three_day_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "five_day_tag" %}
+  		{% assign alert5day = status %}
+  		{% assign next5daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign five_day_lead_time_final = calcd_avail_hours %}  
+
+   {%elsif product_title == "sold_out_tag" %}
+  		{% assign alert_sold_out = status %}
+  		{% assign next_sold_out_date = order_date | date: "%A, %b. %e" %}
+  		{% assign sold_out_lead_time_final = calcd_avail_hours %}           
+
+   {%elsif product_title == "edible_image" %}
+  		{% assign alert_edible_image = status %}
+  		{% assign next_edible_image_date = order_date | date: "%A, %b. %e" %}
+  		{% assign edible_image_lead_time_final = calcd_avail_hours %}  
+
+         {% comment %} DEPRECAITED {% endcomment %}  
+
+  {%elsif product_title == "semi_cake" %}
+  		{% assign alertsemicake = status %}
+  		{% assign nextsemicakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign semi_cake_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "cust_cake" %}
+  		{% assign alertcustcake = status %}
+  		{% assign nextcustomcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign cust_cake_lead_time_final = calcd_avail_hours %}  
+          
+  {% endif %}
+{% endfor %}
+
+  {% comment %} 
+
+/////
+STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO THE ZAPIET
+
+{% endcomment %}
+
+
+{% assign cc_tag = "" %}
+{% assign mcc_tag = "" %}
+{% assign cb_tag = "" %}
+{% assign co_tag = "" %}  
+{% assign st_tag = "" %}
+{% assign dn_tag = "" %}   
+{% assign so_tag = "" %} 
+{% assign td_tag = "" %}        
+{% assign fd_tag = "" %} 
+{% assign ei_tag = "" %} 
+
+
+<!--{{ cartitems }}--> 
+
+
+<!-- !//{{prodtags}}//! --> 
+  
+{% assign max_lead_time = 0 %}
+                 
+{% for item in cart.items %}
+{% comment %} {{ item.product.tags }}{% endcomment %} 
+{% assign max_lead_time = max_lead_time | plus: 0 %}
+  
+   {% if prodtags contains 'Cupcakes' and cc_tag == ""  %}
+      {% assign cc_tag = "CC" %}
+        {% if cupcake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cupcake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if prodtags contains 'Mini Cupcakes' and mcc_tag == ""  %}
+      {% assign mcc_tag = "MCC" %}
+        {% if mini_cupcake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = mini_cupcake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+
+   {% if prodtags contains 'cakeball' and cb_tag == ""  %}
+      {% assign cb_tag = "CB" %}
+        {% if cake_ball_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cake_ball_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if prodtags contains 'cookies' and co_tag == ""  %}
+      {% assign co_tag = "CO" %}
+        {% if cookie_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = cookie_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if prodtags contains 'donut' and dn_tag == ""  %}
+      {% assign dn_tag = "DN" %}
+        {% if donut_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = donut_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+  
+   {% if prodtags contains 'Standard Cakes' and st_tag == ""  %}
+      {% assign st_tag = "ST" %}
+        {% if std_cake_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = std_cake_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+     {% if prodtags contains 'soldout' and so_tag == ""  %}
+      {% assign so_tag = "SO" %}
+        {% if sold_out_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = sold_out_lead_time_final %}
+        {% endif %}
+    {% endif %}
+  
+   {% if prodtags contains '3 Days' and td_tag == ""  %}
+      {% assign td_tag = "3D" %}
+        {% if three_day_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = three_day_lead_time_final %}
+        {% endif %}
+    {% endif %}
+
+   {% if prodtags contains '5 Days' and fd_tag == ""   %}
+      {% assign fd_tag = "5D" %}
+        {% if five_day_lead_time_final >= max_lead_time %}
+            {% assign max_lead_time = five_day_lead_time_final %}
+        {% endif %}
+    {% endif %}     
+
+
+   {% if prodtags contains 'edibleimage' and ei_tag == ""  %}
+      {% assign ei_tag = "EI" %}
+        {% if edible_image_lead_time_final > max_lead_time  %}
+            {% assign max_lead_time = edible_image_lead_time_final %}
+        {% endif %}
+    {% endif %}     
+
+  
+{% endfor %}
+
+
+    
 
