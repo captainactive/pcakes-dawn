@@ -40,6 +40,7 @@
     },
     "d5066918-c14a-4b72-a5ff-3ced37c1d8a6": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width\">\n\t<br><br>\t\n\t<div class=\"txtcenter\">By checking out you agree to our <a href=\"\/policies\/terms-of-service\">terms and conditions<\/a>.<\/div>\n<\/div>",
         "color_scheme": "background-1",
