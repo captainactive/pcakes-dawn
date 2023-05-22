@@ -3,7 +3,7 @@
 {% assign alertcontent_clean = alertcontent | split: "///" %}
   {{ alertcontent_clean[1] }}<br><br>
 {% assign alertcontent_clean =  alertcontent_clean[1] | strip_html %}
-{% assign alertcontent_clean = alertcontent_clean | plus: 1 %}
+{% assign alertcontent_clean = alertcontent_clean | plus: 1 | minus: 1 %}
 {{ alertcontent_clean }}<br><br>
 {% assign alertcontent_clean = alertcontent_clean | minus: 1 %}
 {{ alertcontent_clean }}<br><br>
