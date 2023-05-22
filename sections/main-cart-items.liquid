@@ -167,18 +167,14 @@
                       {%- endfor -%}
                     </ul>
               
-                {% render 'alerts', prodtags:item.product.tags, testvar:testvar %}
+                {% render 'alerts', prodtags:item.product.tags %}
 
 
 
 
 
 
-                
-                   {% assign supertags = item.product.tags | append: supertags %}
-         <!--//{{ supertags }}//--> 
-
-        
+      
                 
                   </td>
 
