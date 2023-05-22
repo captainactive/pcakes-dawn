@@ -205,10 +205,10 @@ STEP 4.2 - FIGURE OUT DATES AND DELAYS
 {% endcomment %}
 
 
-	{% assign avail_date_diff = product_avail_date | minus: date_now | minus: 7 %} <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->
-	{% assign product_lead_time_sec = product_lead_time | times: 3600 %} <!-- CONVERT PRODUCT LEAD TIME TO SECONDS -->
-	{% assign lead_time_date =  date_now | plus: product_lead_time_sec  %} <!-- CALC THE LEAD TIME DATE - SECONDS -->
-	{% assign lead_time_difference = product_lead_time_sec | minus: avail_date_diff  %} <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->
+	{% assign avail_date_diff = product_avail_date | minus: date_now | minus: 7 %} {% comment %} <!-- COMPARE DATE AVAIL TO NOW - [SECONDS] -->{% endcomment %} 
+  	{% assign product_lead_time_sec = product_lead_time | times: 3600 %}  {% comment %} <!-- CONVERT PRODUCT LEAD TIME TO SECONDS --> {% endcomment %} 
+	{% assign lead_time_date =  date_now | plus: product_lead_time_sec  %} {% comment %} <!-- CALC THE LEAD TIME DATE - SECONDS --> {% endcomment %} 
+	{% assign lead_time_difference = product_lead_time_sec | minus: avail_date_diff  %} {% comment %} <!-- COMPARE PRODUCT LEAD TIME TO DIFF BETWEEN NOW AND PRODUCT AVAIL DATE [SECONDS] -->{% endcomment %} 
 
 
 {% if avail_date_diff < 0 %}
