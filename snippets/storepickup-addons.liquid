@@ -4,7 +4,7 @@
 
 
 
-{% assign alertcontent_clean = alertcontent_clean | split: "///" %}
+{% assign alertcontent_clean = alertcontent | split: "///" %}
   {{ alertcontent_clean[1] }} NEW <br><br>
 {% assign alertcontent_clean = alertcontent | strip_html %}
 {{ alertcontent_clean }} STRIP <br><br>
