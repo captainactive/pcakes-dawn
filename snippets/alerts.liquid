@@ -2,7 +2,7 @@
 /////
 STEP 1 - SET AVAIL DATE AND LEAD TIME. 
 CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT. 
-
+/////
 {% endcomment %} 
 
 	 {% comment %}  CUPCAKE DATE: YEAR/MONTH/DAY {% endcomment %}  
@@ -52,3 +52,32 @@ CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT.
 	 {% comment %}  EDIBLE IMAGE DATE: YEAR/MONTH/DAY {% endcomment %}  
 	{% assign edible_image_avail_date = "2023/01/05 00:01" | date: '%s'%}
 	{% assign edible_image_lead_time = 2  %} 
+
+
+
+
+
+
+ 
+{% comment %} 
+/////
+STEP 2 - AN ARRAY OF THE DATA IS CREATED TO LOOP THROUGH 
+/////
+{% endcomment %}
+
+
+    {% capture product_title_and_avail_dates %}
+      cupcake|{{cupcake_avail_date}}|{{cupcake_lead_time}},
+      mini_cupcake|{{mini_cupcake_avail_date}}|{{mini_cupcake_lead_time}},
+      cake_ball|{{cake_ball_avail_date}}|{{cake_ball_lead_time}},
+      cookie|{{cookie_avail_date}}|{{cookie_lead_time}},
+      donut|{{donut_avail_date}}|{{donut_lead_time}},
+      std_cake|{{std_cake_avail_date}}|{{std_cake_lead_time}},
+      three_day_tag|{{three_day_avail_date}}|{{three_day_lead_time}},
+      five_day_tag|{{five_day_avail_date}}|{{five_day_lead_time}},
+      sold_out_tag|{{sold_out_avail_date}}|{{sold_out_lead_time}},
+      edible_image|{{edible_image_avail_date}}|{{edible_image_lead_time}}
+      
+    {% endcapture %}
+    {% assign product_title_and_avail_dates =  product_title_and_avail_dates | split: ',' %}
+
