@@ -1,0 +1,612 @@
+
+
+{% if request.page_type == "collection" %} 
+
+
+{% if collection.handle != "standard-cakes" %}
+  {% if  collection.metafields.pcakes-col.leadtime == "3 Days" or collection.metafields.pcakes-col.leadtime == "5 Days" %}  
+
+   <div class="page-width">
+
+     <h2 style="text-align: center">Availability</h2>
+
+       {% if collection.handle == "semi-custom-cakes" %}  
+       <p class="txtcenter">These cakes have a 3 day lead time.</p>
+      {% else %}
+        <p class="txtcenter">These cakes have a 3 or 5 day lead time.</p>
+        {% endif %}
+
+     
+
+      <div class="alert-collect-cont">
+          <div class="alert-collect-left">
+            <img class="icon-clock" src="{{ icon_clock }}"/>
+          </div>
+          <div class="alert-collect-right">  
+              <div>
+              {% if alert3day == "normal" %}                    
+             <strong>3 day cakes are available.</strong><br> The first available pick up/delivery date is {{next3daydate}}.
+            {% else %}   
+              <strong>3 day cakes are SOLD OUT this week.</strong><br> The first available pick up/delivery date is {{next3daydate}}.
+            {% endif %}
+            </div>
+            <div>
+              {% if collection.handle != "semi-custom-cakes" %}   
+                {% if alert5day == "normal" %}                    
+                 <strong>5 day cakes are available.</strong><br> The first available pick up/delivery date is {{next5daydate}}.
+                {% else %}   
+                  <strong>5 day cakes are SOLD OUT this week.</strong><br> The first available pick up/delivery date is {{next5daydate}}.
+                {% endif %}
+               {% endif %} 
+             </div> 
+          </div>
+       </div> 
+  {% endif %}
+{% endif %}
+{% endif %}
+
+
+
+
+{%- comment -%} 
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+CUSTOM, THEME, SEMI, VEGAN, GF, TIERED CAKES
+PRODUCT PAGE
+PRODUCT PAGE
+{%- endcomment -%} 
+
+
+
+    {% if request.page_type == "product" %}  
+
+     
+     {% if product.tags contains "3 Days"%}
+		{% if alert3day == "normal" %}
+           
+         <div class="alert-bar">
+            	<div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                 <div class="alert-large">The first available date is {{next3daydate}}.</div>  
+        	</div>
+		{% else %}
+         <div class="alert-bar">
+          <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-large">
+                   <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
+                   <div class="alert-btm">The first available pick up/delivery date is {{next3daydate}}.</div>  
+               </div> 
+          </div>
+		{% endif %}  
+     {% endif %} 
+
+          
+     {% if product.tags contains "5 Days"%}
+		{% if alert5day == "normal" %}
+           <div class="alert-bar">
+               <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                 <div class="alert-large">The first available date is {{next5daydate}}.</div>  
+        	</div>
+		{% else %}
+         <div class="alert-bar">
+          <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-large">
+                   <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
+                   <div class="alert-btm">The first available pick up/delivery date is {{next5daydate}}.</div>  
+               </div> 
+          </div>
+		{% endif %}  
+     {% endif %} 
+
+{% endif %}  
+
+
+ {%- comment -%} 
+CART
+CART
+CART
+
+{%- endcomment -%} 
+
+
+
+     
+
+{% if request.page_type == "cart" %} 
+
+
+     
+     
+	{% if prodtags contains "3 Days" and alert3day == "normal"%}
+       <div class="cart-alert">
+          <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+         <div class="alert-lrg-cart">This cake has a 3 day lead time. The first available date is {{next3daydate}}.</div>          
+      </div>  
+  {% elsif prodtags contains "3 Days" and alert3day == "alert"%} 
+     <div class="cart-alert">
+        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
+       <div class="alert-lrg-cart">Due to high demand, this cake is sold out this week. The first available pick-up/delivery date is {{next3daydate}}. </div>  
+      </div>
+  {% endif %} 
+
+	{% if prodtags contains "5 Days" and alert5day == "normal"%}
+       <div class="alert-bar cart-alert">
+         <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+         <div class="alert-lrg-cart">This cake has a 5 day lead time. The first available date is {{next5daydate}}.</div>          
+      </div>  
+  {% elsif prodtags contains "5 Days" and alert5day == "alert"%} 
+     <div class="alert-bar cart-alert">
+        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div> 
+       <div class="alert-lrg-cart">Due to high demand, this cake is sold out this week. The first available pick-up/delivery date is {{next5daydate}}. </div>  
+      </div>
+  {% endif %} 
+{% endif %}
+
+
+
+
+    
+
+{%- comment -%} 
+
+STANDARD CAKES
+STANDARD CAKES
+STANDARD CAKES
+
+{%- endcomment -%} 
+
+
+
+{% if request.page_type == "collection" %} 
+
+{% if collection.handle == "standard-cakes" and alertstandcake == "alert" %}  
+
+  
+   <div class="page-width">
+     <h2 style="text-align: center">Availability</h2>
+       <p class="txtcenter">These cakes are typically available  on the same day.</p>
+      <div class="alert-collect-cont">
+          <div class="alert-collect-left">
+            <img class="icon-clock" src="{{ icon_clock }}"/>
+          </div>
+          <div class="alert-collect-right">  
+            <div> 
+                  Due to high demand, standard cakes are sold out this week. Please see our <a href="pages/cupcakes">cupcakes</a>.
+              	<br>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.
+             </div> 
+          </div>
+       </div> 
+  {% endif %}
+
+{% endif %}
+
+
+
+{% if prodtags contains "box" %}
+{% else %}
+  {% if request.page_type == "product" %} 
+  	{% if product.tags contains "Standard Cakes"%}
+  		{% if alertstandcake == "alert" %}
+
+          <div class="alert-bar">
+              <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                 <div class="alert-large">
+                     <div>Due to high demand, Standard Cakes are sold out this week. Please see our <a href="/pages/cupcakes">cupcakes</a>.</div><div>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</div>    
+                 </div> 
+            </div>
+
+         	 {% endif %}
+   	{% endif %}
+
+  {% elsif request.page_type == "cart" %}
+  	{% if prodtags contains "Standard Cakes" %}
+  		{% if alertstandcake == "alert" %}
+            
+              <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Due to high demand, Standard Cakes are sold out this week. <br>Standard Cakes are typically available on the same day. The first available pick up/delivery date is {{nextstandcakedate}}.</div>          
+            </div>  
+
+  			{% endif %}
+      {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+COOKIES
+COOKIES
+NEW 2.0
+{%- endcomment -%} 
+
+{% if request.page_type == "collection" %}  
+	{% if collection.handle == "cookies" or collection.handle == "cookie-packs" %} 
+		{% if alert_cookie == "alert" %}
+
+            <div class="page-width">
+                <h2 style="text-align: center">Availability</h2>
+                <p class="txtcenter">Cookies are typically available  on the same day.</p>
+                <div class="alert-collect-cont">
+                    <div class="alert-collect-left">
+                    <img class="icon-clock" src="{{ icon_clock }}"/>
+                    </div>
+                    <div class="alert-collect-right">  
+                    <div> 
+                        Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.
+                        </div> 
+                    </div>
+                </div> 
+
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+  {% if request.page_type == "product" %} 
+  	{% if product.tags contains "cookies"%}
+  		{% if alert_cookie == "alert" %}
+
+                  <div class="alert-bar">
+                    <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                         <div class="alert-large">
+                             <div>Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.</div>  
+                         </div> 
+                    </div>
+         	 {% endif %}
+   	{% endif %}
+
+  {% elsif request.page_type == "cart" %}
+  	{% if prodtags contains "cookies" or prodtags contains "copack" or prodtags contains "ist-cookies" %}
+  		{% if alert_cookie == "alert" %}
+              <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Due to high demand, cookies are sold out. The first available pick up/delivery date is {{next_cookie_date}}.</div>          
+            </div> 
+  			{% endif %}
+      {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+CUPCAKES 
+CUPCAKES 
+CUPCAKES 
+{%- endcomment -%} 
+
+{% if request.page_type == "collection" %}      
+	{% if collection.handle == "cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "cupcake-packs" or collection.handle == "custom-cupcakes" %}
+		{% if alert_cupcake == "alert" %}
+
+        <div class="page-width">
+            <h2 style="text-align: center">Availability</h2>
+            <p class="txtcenter">Cupcakes are typically available  on the same day.</p>
+            <div class="alert-collect-cont">
+                <div class="alert-collect-left">
+                <img class="icon-clock" src="{{ icon_clock }}"/>
+                </div>
+                <div class="alert-collect-right">  
+                <div> 
+                    Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.
+                    </div> 
+                </div>
+            </div> 
+		{% endif %}
+	{% endif %}
+{% endif %}
+  
+{% if prodtags contains "box" %}
+{% else %}
+  {% if request.page_type == "product" %} 
+        	{% if product.tags contains "cupcakes"  %}
+             {% if alert_cupcake == "alert" %}
+                      <div class="alert-bar">
+                        <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                             <div class="alert-large">
+                                 <div>Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.</div>  
+                             </div> 
+                        </div>
+               {% endif %}
+            {% endif %}
+       	
+  {% elsif request.page_type == "cart" %}
+        {% if prodtags contains "cupcakes" or prodtags contains "Cupcakes" %}
+          		{% if alert_cupcake == "alert" %}
+
+                      <div class="cart-alert">
+                        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                       <div class="alert-lrg-cart">Due to high demand, cupcakes are sold out. The first available pick up/delivery date is {{next_cupcake_date}}.</div>          
+                    </div> 
+          	    {% endif %}
+        {% endif %}
+  {% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+MINI CUPCAKES 
+MINI CUPCAKES
+{%- endcomment -%} 
+
+{% if request.page_type == "collection" %}      
+	{% if collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-mini-cupcakes" or collection.handle == "mini-cupcake-packs" %}
+		{% if alert_cupcake == "alert" %}
+            <div class="page-width">
+                <h2 style="text-align: center">Availability</h2>
+                <p class="txtcenter">Mini Cupcakes are typically available on the same day.</p>
+                <div class="alert-collect-cont">
+                    <div class="alert-collect-left">
+                    <img class="icon-clock" src="{{ icon_clock }}"/>
+                    </div>
+                    <div class="alert-collect-right">  
+                    <div> 
+                        Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.
+                        </div> 
+                    </div>
+                </div> 
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+{% if request.page_type == "product" %} 
+	{% if product.tags contains "Mini Cupcakes"%}
+		{% if alert_cupcake == "alert" %}
+                <div class="alert-bar">
+                    <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                         <div class="alert-large">
+                             <div>Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.</div>  
+                         </div> 
+                    </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif request.page_type == "cart" %}
+	{% if prodtags contains "Mini Cupcakes" %}
+		{% if alert_cupcake == "alert" %}
+            <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Due to high demand, Mini Cupcakes are sold out. The first available pick up/delivery date is {{next_mini_cupcake_date}}.</div>          
+            </div> 
+			{% endif %}
+    {% endif %}
+{% endif %}
+{% endif %}
+
+
+
+
+
+
+{%- comment -%} 
+CAKE BALLS
+CAKE BALLS
+{%- endcomment -%} 
+
+{% if request.page_type == "collection" %}      
+	{% if collection.handle == "cake-balls" or collection.handle == "cake-ball-packs" %}
+      
+		{% if alert_cake_ball == "alert" %}
+             
+        <div class="page-width">
+            <h2 style="text-align: center">Availability</h2>
+            <p class="txtcenter">Cake Balls are typically available on the same day.</p>
+            <div class="alert-collect-cont">
+                <div class="alert-collect-left">
+                <img class="icon-clock" src="{{ icon_clock }}"/>
+                </div>
+                <div class="alert-collect-right">  
+                <div> 
+                        Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.
+                    </div> 
+                </div>
+            </div> 
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+{% if prodtags contains "box" %}
+{% else %}
+{% if request.page_type == "product" %} 
+	{% if product.tags contains "cakeball"%}
+		{% if alert_cake_ball == "alert" %}
+                <div class="alert-bar">
+                    <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                         <div class="alert-large">
+                             <div>Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.</div>  
+                         </div> 
+                    </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif request.page_type == "cart" %}
+	{% if prodtags contains "cakeball" %}
+		{% if alert_cake_ball == "alert" %}
+            <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Due to high demand, Cake Balls are sold out. The first available pick up/delivery date is {{next_cake_ball_date}}.</div>          
+            </div> 
+			{% endif %}
+    {% endif %}
+{% endif %}
+  {% endif %}
+
+
+
+
+
+{%- comment -%} 
+GENERAL SOLD OUT
+GENERAL SOLD OUT
+GENERAL SOLD OUT
+{%- endcomment -%} 
+
+{% if request.page_type == "product" %} 
+	{% if product.tags contains "soldout"%}
+		{% if alert_sold_out == "alert" %}
+                <div class="alert-bar">
+                    <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                         <div class="alert-large">
+                             <div>Due to high demand, this item is sold out. The first available pick up/delivery date is {{next_sold_out_date}}.</div>  
+                         </div> 
+                    </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif request.page_type == "cart" %}
+	{% if prodtags contains "soldout" %}
+		{% if alert_sold_out == "alert" %}	
+            <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Due to high demand, this item is sold out. The first available pick up/delivery date is {{next_sold_out_date}}.</div>          
+            </div> 
+			{% endif %}
+{% endif %}
+{% endif %}
+
+
+
+{%- comment -%} 
+
+EDIBLE IMAGES
+EDIBLE IMAGES
+EDIBLE IMAGES
+
+{%- endcomment -%} 
+
+
+
+{% if request.page_type == "product" %} 
+	{% if product.tags contains "edibleimage"%}
+		{% if alert_edible_image == "alert" %}
+                <div class="alert-bar">
+                    <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                         <div class="alert-large">
+                             <div>Edible images are unavailable until {{next_edible_image_date}}. They are available for any cakes on or after this date.</div>  
+                         </div> 
+                    </div>
+       	 {% endif %}
+ 	{% endif %}
+
+{% elsif request.page_type == "cart" %}
+	{% if prodtags contains "edibleimage" %}
+		{% if alert_edible_image == "alert" %}	
+            <div class="cart-alert">
+                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+               <div class="alert-lrg-cart">Edible images are unavailable until {{next_edible_image_date}}. They are available for any cakes on or after this date.</div>          
+            </div> 
+			{% endif %}
+{% endif %}
+{% endif %}
+
+
+
+      
+
+
+{%- comment -%} 
+
+PRODUCT ALERTS
+PRODUCT ALERTS
+PRODUCT ALERTS
+
+{%- endcomment -%} 
+
+{% if request.page_type == "product" %}  <!-- STOCK ALERTS -->
+       {% if product.tags contains "GF WhiteXX" or product.tags contains "gfsplitdozenXX" %}
+
+               <div class="alert-bar">
+                <div><span class="icon icon-schedule"></span></div> <p>Due to supply chain issues caused COVID-19, our gluten-free white flavor is unavailable. As soon as the supplies arrive, they'll be back. </p>          
+            </div>
+
+       {% endif %}   
+
+       {% if product.tags contains "Gluten-FreeXX" and product.tags contains "Semi CustomXX" %}
+          <div class="alert-bar">
+            <div><span class="icon icon-schedule"></span></div> <p>Due to supply chain issues caused COVID-19, our gluten-free white flavor is unavailable. As soon as the supplies arrive, it will be back. </p>          
+          </div>
+        {% endif %}   
+
+
+	{% if collection.handle == "standard-cakes" %}
+     	 {% if on_off_var == "off" %}  {% comment %} SET TO "on" IF NEEDED  {% endcomment %}      
+           <div class="alert-bar">
+             <div><span class="icon icon-schedule"></span></div> <p> Valentine's Weekend: Due to high demand, 8 and 10 inch cakes are sold out through Sunday. Please see our <a href="/pages/cupcakes">cupcakes</a>.</p>          
+            </div>
+		{% endif %}
+	{% endif %}
+
+        {% if product.handle == "red-velvet-standard-cakeXX" %}
+            <div class="hrtoplite"></div>
+            <h3> ALERT: For Saturday, April 25th </h3>
+            <p>Due to very high demand, we are sold out of 6 inch Red Velvet Cakes. We will have them for future dates. </p>
+        {% endif %}
+
+        {% if collection.handle == "standard-cakesXX" %}
+        	{% if product.handle != "red-velvet-standard-cake" %}
+              <div class="hrtoplite"></div>
+              <h3> ALERT: Saturday, April 18th! </h3>
+              <p>Due to very high demand, we have a limited amount of 4 and 6 inch cakes available today. We are sold out of 8 and 10 inch cakes. We have plenty of cupcakes. =)</p>
+        	{% endif %}
+        {% endif %}
+ {% endif %}   
+
+
+
+
+
+
+{%- comment -%} 
+
+FUTURE CAKE SELL OUT
+FUTURE CAKE SELL OUT
+FUTURE CAKE SELL OUT
+
+
+{% if collection.handle == "semi-custom-cakes" or collection.handle == "vegan-cakes" or collection.handle == "gluten-free-cakes" or collection.handle == "custom-cakes" or collection.handle == "theme-cakes" or collection.handle == "tiered-cakes"%}
+
+	{% if request.page_type == "collection" %} 
+	<br>
+			 <div class="page-width">
+                <div class="alert-bar alert-large-main">
+                    <div><span class="icon icon-schedule"></span></div> <div class="alert-large">Memorial Week/Weekend, May 24-29th. <br> Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span>
+                    </div>  
+                </div>
+             </div>
+
+
+	{% elsif request.page_type == "product" %} 
+
+
+  			<div class="alert-bar">
+          		<div><span class="icon icon-schedule"></span></div> <p>Memorial Week/Weekend, May 24-29th. <br> Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span> </p>  
+            </div>
+
+	{% endif %}  
+
+{% elsif request.page_type == "cart" %} <!--main-->
+
+	{% if product.tags contains "Semi Custom" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Custom Cake" or product.tags contains "Theme Cake"   %}
+
+                <div class="alert-bar">
+                    <div><span class="icon icon-schedule"></span></div> <p>Memorial Week/Weekend, May 24-29th. Due to record demand, we are sold out of semi-custom and custom cakes on these dates. 
+                  Please see our deliciously simple <a href="/collections/standard-cakes">Standard Cakes</a> until they sell out, or choose from our 91 flavors of <a href="/pages/cupcakes">cupcakes</a>. <span style="font-size: 13px;">(posted on 5/7)</span> </p>  
+                </div>
+	{% endif %}  
+{% endif %}  <!--main-->
+
+{%- endcomment -%} 
