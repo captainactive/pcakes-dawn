@@ -125,31 +125,34 @@ STEP 4.1 - LOOP MAIN ARRAY. GET VARIABLES
 /////
 {% endcomment %}
 
-<!-- LOOP THE MAIN ARRAY-->
-  {% for single_product_title_and_avail_date in product_title_and_avail_dates %}
-      <!--//single_product_title_and_avail_date: {{single_product_title_and_avail_date}} <br>-->
-      {% assign counter = 1 %}
-      <!-- LOOP THE SECOND/ITEM ARRAY-->
-      {% assign product_details_array =  single_product_title_and_avail_date | split: '|' %}
-          {% for product_details in product_details_array %}
+{% comment %}  LOOP THE MAIN ARRAY{% endcomment %} 
+{% for single_product_title_and_avail_date in product_title_and_avail_dates %}
+  
+{% comment %} //single_product_title_and_avail_date: {{single_product_title_and_avail_date}} <br>{% endcomment %} 
 
-          {%if counter == 1 %}
-              {% assign product_title = product_details %}
-             <!--//{{product_title}} - title<br>-->
+  {% assign counter = 1 %}
+  {% comment %}  LOOP THE SECOND/ITEM ARRAY{% endcomment %} 
 
-          {% elsif counter == 2 %}
-              {% assign product_avail_date = product_details | plus: 0 %}
-              <!--//{{product_avail_date}} - date<br>-->
+  {% assign product_details_array =  single_product_title_and_avail_date | split: '|' %}
+	{% for product_details in product_details_array %}
 
-          {% elsif  counter == 3 %}
-              {% assign product_lead_time = product_details %}
-              <!--//{{product_lead_time}} - available hours<br> -->
-          {% else %}
-              error
-          {% endif %}
-          {% assign counter = counter | plus: 1 %}
+	{%if counter == 1 %}
+		{% assign product_title = product_details %}
+	   {% comment %} //{{product_title}} - title<br>{% endcomment %} 
 
-      {% endfor %}
+	{% elsif counter == 2 %}
+		{% assign product_avail_date = product_details | plus: 0 %}
+		{% comment %} //{{product_avail_date}} - date<br>{% endcomment %} 
+
+	{% elsif  counter == 3 %}
+		{% assign product_lead_time = product_details %}
+		{% comment %} //{{product_lead_time}} - available hours<br> {% endcomment %} 
+	{% else %}
+		error
+	{% endif %}
+	{% assign counter = counter | plus: 1 %}
+
+{% endfor %}
 
 
 
