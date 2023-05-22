@@ -318,6 +318,74 @@ STEP 4.4 - EXIT VAIRABLES
 {% endcomment %}
 
   
+  
+  {% comment %} EXIT VAIRABLES {% endcomment %}
+
+  {% assign product_title = product_title | strip %}  
+  {%if product_title == "std_cake" %}
+  		{% assign alertstandcake = status %}
+  		{% assign nextstandcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign std_cake_lead_time_final = calcd_avail_hours %}
+
+  {%elsif product_title == "cupcake" %}
+  		{% assign alert_cupcake = status %}
+  		{% assign next_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "mini_cupcake" %}
+  		{% assign alert_mini_cupcake = status %}
+  		{% assign next_mini_cupcake_date = order_date | date: "%A, %b. %e" %}
+  		{% assign mini_cupcake_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "cake_ball" %}
+  		{% assign alert_cake_ball = status %}
+  		{% assign next_cake_ball_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cake_ball_lead_time_final = calcd_avail_hours %} 
+
+  {%elsif product_title == "donut" %}
+  		{% assign alert_donut = status %}
+  		{% assign next_donut_date = order_date | date: "%A, %b. %e" %}
+  		{% assign donut_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "cookie" %}
+  		{% assign alert_cookie = status %}
+  		{% assign next_cookie_date = order_date | date: "%A, %b. %e" %}
+  		{% assign cookie_lead_time_final = calcd_avail_hours %}  
+
+  {%elsif product_title == "three_day_tag" %}
+  		{% assign alert3day = status %}
+  		{% assign next3daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign three_day_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "five_day_tag" %}
+  		{% assign alert5day = status %}
+  		{% assign next5daydate = order_date | date: "%A, %b. %e" %}
+  		{% assign five_day_lead_time_final = calcd_avail_hours %}  
+
+   {%elsif product_title == "sold_out_tag" %}
+  		{% assign alert_sold_out = status %}
+  		{% assign next_sold_out_date = order_date | date: "%A, %b. %e" %}
+  		{% assign sold_out_lead_time_final = calcd_avail_hours %}           
+
+   {%elsif product_title == "edible_image" %}
+  		{% assign alert_edible_image = status %}
+  		{% assign next_edible_image_date = order_date | date: "%A, %b. %e" %}
+  		{% assign edible_image_lead_time_final = calcd_avail_hours %}  
+
+         {% comment %} DEPRECAITED {% endcomment %}  
+
+  {%elsif product_title == "semi_cake" %}
+  		{% assign alertsemicake = status %}
+  		{% assign nextsemicakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign semi_cake_lead_time_final = calcd_avail_hours %}  
+  
+  {%elsif product_title == "cust_cake" %}
+  		{% assign alertcustcake = status %}
+  		{% assign nextcustomcakedate = order_date | date: "%A, %b. %e" %}
+  		{% assign cust_cake_lead_time_final = calcd_avail_hours %}  
+          
+  {% endif %}
+
 
 
           
@@ -350,7 +418,7 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
   
 {% assign max_lead_time = 0 %}
                  
-{% for item in cart.items %}
+{% for item in prodtags %}
 {% comment %} {{ item.product.tags }}{% endcomment %} 
 {% assign max_lead_time = max_lead_time | plus: 0 %}
   
