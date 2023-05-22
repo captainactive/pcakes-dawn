@@ -233,7 +233,7 @@
                      {% endfor %}   
 
 
-    			 {% if sort_by == "" or sort_by == "manual" %}
+    			
 
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
@@ -244,6 +244,8 @@
                                    {% assign flavorbase =  currentflavor %}					
 
                     {% endif %}
+
+                    {% if sort_by == "" or sort_by == "manual" %}
       			 {% endif %}
                 
           
