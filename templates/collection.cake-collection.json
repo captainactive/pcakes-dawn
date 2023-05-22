@@ -12,7 +12,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "{% render 'alerts'%}",
         "color_scheme": "background-1",
         "padding_top": 32,
         "padding_bottom": 52
@@ -20,6 +20,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
