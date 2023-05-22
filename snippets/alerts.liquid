@@ -377,7 +377,7 @@ STEP 4.4 - EXIT VAIRABLES
           
 {% endfor %}
 
-{% comment %} 
+ {% comment %} 
 /////
 STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO THE ZAPIET
 /////
@@ -398,11 +398,8 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
 
   
 {% assign max_lead_time = 0 %}
-
-{{ prodtags }}
-
                  
-{% for item in item.product.tags %}
+{% for item in cart.items %}
 {% comment %} {{ item.product.tags }}{% endcomment %} 
 {% assign max_lead_time = max_lead_time | plus: 0 %}
   
