@@ -81,3 +81,28 @@ STEP 2 - AN ARRAY OF THE DATA IS CREATED TO LOOP THROUGH
     {% endcapture %}
     {% assign product_title_and_avail_dates =  product_title_and_avail_dates | split: ',' %}
 
+
+
+
+
+{% comment %} 
+/////
+STEP 3 - FIND TODAYS DATE 
+/////
+{% endcomment %}
+
+
+ {% capture date_now2 %}{{'now' | date: "%b %d, %Y"}} 10:00:01 AM{% endcapture %}
+ {% assign date_now = date_now2  | date: '%s' %}
+
+
+{% comment %} DATE TESTING {% endcomment %}
+
+{% comment %}  
+ 		{% capture date_now %}{{'2022/11/30 11:00' | date: '%s'}}{% endcapture %}
+  {% endcomment %}
+
+
+
+  
+
