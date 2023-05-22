@@ -398,6 +398,9 @@ STEP 5 - MAX CART DELAY: FIND MAX VAL FROM ALL CART ITEMS AND SEND ONE VALUE TO 
 
   
 {% assign max_lead_time = 0 %}
+
+{{ item.product.tags }}
+
                  
 {% for item in item.product.tags %}
 {% comment %} {{ item.product.tags }}{% endcomment %} 
