@@ -72,6 +72,8 @@ CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT.
 	{% assign cupcake_lead_time = 0 %}
     {% assign cupcake_tag = "Cupcakes" %}
 
+    {{ cupcake_avail_date }}
+
 <!-- MINI CUPCAKE DATE: YEAR/MONTH/DAY -->
 	{% capture mini_cupcake_avail_date %}{{"2023/01/25 00:01" | date: '%s'}}{% endcapture %}
 	{% assign mini_cupcake_lead_time = 0 %}
