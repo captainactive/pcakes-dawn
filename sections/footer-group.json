@@ -32,6 +32,7 @@
     },
     "footer": {
       "type": "footer",
+      "disabled": true,
       "blocks": {
         "6a0e7d78-565e-473b-94be-910995db0636": {
           "type": "text",
