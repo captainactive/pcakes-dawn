@@ -5,6 +5,18 @@ alert5day:{{ alert5day }}<br>
 request.page_type: {{ request.page_type }}<br>
 collection.handle: {{ collection.handle }}
 
+{%- comment -%}  
+PRE-DEFINED MESSAGES
+PRE-DEFINED MESSAGES
+PRE-DEFINED MESSAGES
+{%- endcomment -%}  
+          
+{% assign cakeballcontent = "Due to high demand, Standard Cakes are sold out this week. Please see our <a href='/pages/cupcakes'>cupcakes</a>." %}
+{% assign instock_message = "<strong>In stock daily</strong> until sold out. Order now." %}
+{% assign icon_clock = "https://cdn.shopify.com/s/files/1/0024/7441/0043/files/clock.svg?v=1679272811" %}
+
+
+
 {% if request.page_type == "collection" %} 
 
 
