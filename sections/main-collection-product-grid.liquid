@@ -276,10 +276,15 @@ before//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}<br>
                  </li> 
                
            {% comment %}
-                RIP FLAVOR DIVIDERS
+                RIP FLAVOR DIVIDERS - PAGING DESTROYS THE LOOP
                 <!-- PCakes Debut:  SECTION /// collection-template -->
+                
               {% assign test1 = test1 | plus: 1  %}
-                {{ test1 }}{% endcomment %}
+                {{ test1 }}
+                
+                {% endcomment %}
+
+              
               {%- endfor -%}
             </ul>
 
