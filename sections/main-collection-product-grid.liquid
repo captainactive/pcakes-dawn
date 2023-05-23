@@ -194,9 +194,9 @@
  
                               
                       <!-- for tag in product.tags -->
-                   {% assign tag = product.metafields.pc-filter.flavor %}
+                   {% assign flavor = product.metafields.pc-filter.flavor %}
                           
-                      {% case tag %} 
+                      {% case flavor %} 
                       {% when 'Chocolate' %}
                     	{% assign currentflavor =  "Chocolate" %}	      
                       {% when 'White' %}
@@ -235,15 +235,15 @@
                      <!--endfor -->  
 
 
-    	{{ tag }}||{{ flavorbase }}||{{ currentflavor }}
+    	{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}
 
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
-                                   {% assign flavorbase =  currentflavor %}	
+                                   {% assign flavorbase =  flavor %}	
 
-                    {% elsif flavorbase != currentflavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
+                    {% elsif flavorbase != flavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
                            <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
-                                   {% assign flavorbase =  currentflavor %}					
+                                   {% assign flavorbase =  flavor %}					
                       {% else %}
                       shit//
                     {% endif %}
@@ -251,7 +251,7 @@
                     {% if sort_by == "" or sort_by == "manual" %}
       			 {% endif %}
                 
-          {{ tag }}||{{ flavorbase }}||{{ currentflavor }}
+          {{ flavor }}||{{ flavorbase }}||{{ currentflavor }}
  {%- endif -%}
                    
 
