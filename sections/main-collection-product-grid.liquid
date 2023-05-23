@@ -178,7 +178,8 @@
               
               {%- for product in collection.products -%}
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
-                {% assign lazy_load = false %}
+                {% assign lazy_load = true %}
+                
         
 
                 
