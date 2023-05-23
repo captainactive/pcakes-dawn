@@ -232,7 +232,7 @@
                    shit
                            {% endcase %}
                           
-              {{ collection.handle }}
+              {{ collection.handle }}<br><br>
 
 before//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}<br>
     	
@@ -240,15 +240,15 @@ before//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}<br>
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
                                    {% assign flavorbase =  flavor %}	
-                     top//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
+                     top//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
 
                     {% elsif flavorbase != flavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
                            <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
                                    {% assign flavorbase =  flavor %}
 
-                     mid//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
+                     mid//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
                       {% else %}
-                      shit//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
+                      shit//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
                     {% endif %}
 
                     {% if sort_by == "" or sort_by == "manual" %}
