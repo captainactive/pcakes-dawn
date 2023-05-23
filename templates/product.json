@@ -151,7 +151,7 @@
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Tiered Cake\" or product.tags contains \"Theme Cake\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Cake<\/p>          \n    <\/div>\n\n {% elsif product.tags contains \"customize\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Item<\/p>          \n    <\/div>\n\n {% endif %}"
+            "custom_liquid": "<!-- WIZWIG BLOCK EDITOR --> \n{% if product.tags contains \"Semi Custom\" or product.tags contains \"Standard Cakes\" or product.tags contains \"Custom Cake\" or product.tags contains \"semi VEGF\" or product.tags contains \"Tiered Cake\" or product.tags contains \"Theme Cake\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Cake<\/p>          \n    <\/div>\n\n {% elsif product.tags contains \"customize\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Customize Your Item<\/p>          \n    <\/div>\n {% elsif product.tags contains \"bagocake\" %}\n    <div class=\"alert-bar-pink\">\n        <p>Item Details<\/p>          \n    <\/div>\n\n {% endif %}"
           }
         },
         "variant_picker": {
