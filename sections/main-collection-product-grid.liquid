@@ -192,8 +192,9 @@
 
                  {% if collection.handle == "cupcakes" or collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "vegan-mini-cupcakes"  %}
  
-                              {{product.metafields.pc-filter.flavor}}  
-                      {% for tag in product.tags %}   
+                              
+                      <!-- for tag in product.tags -->
+                   {% assign tag = product.metafields.pc-filter.flavor %}
                           
                       {% case tag %} 
                       {% when 'Chocolate' %}
@@ -230,10 +231,10 @@
                       {% else %}    
                            {% endcase %}
                           
-                     {% endfor %}   
+                     <!--endfor -->  
 
 
-    			//{{ flavorbase }} //<br>
+    	{{ flavorbase  }}||{{ currentflavor }}
 
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
