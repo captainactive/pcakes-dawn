@@ -193,7 +193,7 @@
                  {% if collection.handle == "cupcakes" or collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "vegan-mini-cupcakes"  %}
  
                               
-                      <!-- for tag in product.tags -->
+                    
                    {% assign flavor = product.metafields.pc-filter.flavor %}
                           
                       {% case flavor %} 
@@ -225,14 +225,14 @@
                           {% assign currentflavor =  "Vegan Strawberry" %}	      
                       {% when 'Seasonal' %}
                           {% assign currentflavor =  "Seasonal" %}	
-                      {% when 'splitdozen' %}
+                      {% when 'All' %}
                           {% assign currentflavor =  "Split Dozen" %}	
                           
                       {% else %}   
                    shit
                            {% endcase %}
                           
-                     <!--endfor -->  
+              
 
 
     	{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}
