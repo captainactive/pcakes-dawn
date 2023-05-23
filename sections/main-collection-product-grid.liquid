@@ -192,7 +192,7 @@
 
                  {% if collection.handle == "cupcakes" or collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "vegan-mini-cupcakes"  %}
  
-                                
+                              {{product.metafields.pc-filter.flavor}}  
                       {% for tag in product.tags %}   
                           
                       {% case tag %} 
