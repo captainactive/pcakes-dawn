@@ -244,7 +244,8 @@
                     {% elsif flavorbase != currentflavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
                            <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
                                    {% assign flavorbase =  currentflavor %}					
-
+                      {% else %}
+                      shit//
                     {% endif %}
 
                     {% if sort_by == "" or sort_by == "manual" %}
