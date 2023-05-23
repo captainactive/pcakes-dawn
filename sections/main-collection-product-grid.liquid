@@ -164,17 +164,6 @@
               "
             >
 
-
-              {% if collection.handle == "cupcakes" or collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "vegan-mini-cupcakes"  %}
-                    <style>
-                  .itemgrid {
-                   grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-                  }
-                      </style>
-               
-              {% endif %}
-              
-
               
               {%- for product in collection.products -%}
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
@@ -183,83 +172,9 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
                 
-        
-
-                
+           
               <!--SECTION/MAIN-COLLECTION-PRODUCT-GRID  - RENDER card-product -->
                  {% comment%}<li class="grid__item">{% endcomment%}
-
-
-
-
-                 {% if collection.handle == "cupcakes" or collection.handle == "mini-cupcakes" or collection.handle == "gluten-free-cupcakes" or collection.handle == "gluten-free-mini-cupcakes" or collection.handle == "vegan-cupcakes" or collection.handle == "vegan-mini-cupcakes"  %}
- 
-                              
-                    
-                   {% assign flavor = product.metafields.pc-filter.flavor %}
-                          
-                      {% case flavor %} 
-                      {% when 'Chocolate' %}
-                    	{% assign currentflavor =  "Chocolate" %}	      
-                      {% when 'White' %}
-                    	{% assign currentflavor =  "White/Vanilla" %}	
-                      {% when 'Red Velvet' %}
-                    	{% assign currentflavor =  "Red Velvet" %}	
-                      {% when 'Lemon' %}
-                    	{% assign currentflavor =  "Lemon" %}	
-                      {% when 'Banana' %}
-                    	{% assign currentflavor =  "Banana" %}	      
-                      {% when 'Butter Pecan' %}
-                    	{% assign currentflavor =  "Butter Pecan" %}	
-                      {% when 'Peanut Butterxx' %}
-                    	{% assign currentflavor =  "Peanut Butterxx" %}	
-                      {% when 'Strawberry' %}
-                    	{% assign currentflavor =  "Strawberry" %}	
-                      {% when 'GF Chocolate' %}
-                    	{% assign currentflavor =  "Gluten-Free Chocolate" %}	
-                      {% when 'GF White' %}
-                          {% assign currentflavor =  "Gluten-Free White/Vanilla" %}	
-                      {% when 'Vegan Chocolate' %}
-                          {% assign currentflavor =  "Vegan Chocolate" %}	
-                      {% when 'Vegan White' %}
-                    	{% assign currentflavor =  "Vegan White" %}	
-                      {% when 'Vegan Strawberry' %}
-                          {% assign currentflavor =  "Vegan Strawberry" %}	      
-                      {% when 'Seasonal' %}
-                          {% assign currentflavor =  "Seasonal" %}	
-                      {% when 'All' %}
-                          {% assign currentflavor =  "Split Dozen" %}	
-                          
-                      {% else %}   
-                   shit
-                           {% endcase %}
-                          
-             <br>?? {{ collection.handle }}?/<br><br>
-
-before//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}<br>
-    	
-
-                    {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
-                              <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
-                                   {% assign flavorbase =  flavor %}	
-                     top//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
-
-                    {% elsif flavorbase != flavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
-                           <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
-                                   {% assign flavorbase =  flavor %}
-
-                     mid//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
-                      {% else %}
-                      shit//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//<br>
-                    {% endif %}
-
-                    {% if sort_by == "" or sort_by == "manual" %}
-      			 {% endif %}
-                
-         
-             {%- endif -%}
-                exit// {{ flavor }}||{{ flavorbase }}||{{ currentflavor }}   
-
                
                 
                    <li class="pcakes-grid-item">
