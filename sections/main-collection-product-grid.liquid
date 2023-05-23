@@ -234,21 +234,21 @@
                           
               
 
-
-    	{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}
+before//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}<br>
+    	
 
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
                                    {% assign flavorbase =  flavor %}	
-                      top//
+                     top//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
 
                     {% elsif flavorbase != flavor %}   {% comment %}   //FLAVOR HEADER CHANGE  {% endcomment %}
                            <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
                                    {% assign flavorbase =  flavor %}
 
-                      mid//
+                     mid//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
                       {% else %}
-                      shit//
+                      shit//{{ flavor }}||{{ flavorbase }}||{{ currentflavor }}//
                     {% endif %}
 
                     {% if sort_by == "" or sort_by == "manual" %}
