@@ -228,13 +228,14 @@
                       {% when 'splitdozen' %}
                           {% assign currentflavor =  "Split Dozen" %}	
                           
-                      {% else %}    
+                      {% else %}   
+                   shit
                            {% endcase %}
                           
                      <!--endfor -->  
 
 
-    	{{ tag }}||{{ flavorbase }}||{{ currentflavor }}//{{card_product.title | escape }}
+    	{{ tag }}||{{ flavorbase }}||{{ currentflavor }}
 
                     {% if flavorbase == "" %}  {% comment %}  //FLAVOR HEADER INTRO  {% endcomment %}
                               <div class='productrowflavor'><h2>{{ currentflavor }}</h2></div>
