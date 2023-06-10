@@ -171,12 +171,6 @@
         "settings": {
         }
       },
-      "14479319785270113485": {
-        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "18209738915288330680": {
         "type": "shopify:\/\/apps\/wholesale-all-in-one\/blocks\/wholesale-all-in-one\/5a3d95fb-5647-47d5-8445-d5858f91ff9d",
         "disabled": false,
@@ -191,6 +185,12 @@
       },
       "16735461377607925125": {
         "type": "shopify:\/\/apps\/rt-terms-and-conditions-box\/blocks\/app-embed\/17661ca5-aeea-41b9-8091-d8f7233e8b22",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14479319785270113485": {
+        "type": "shopify:\/\/apps\/zapiet-pickup-delivery\/blocks\/app-embed\/5599aff0-8af1-473a-a372-ecd72a32b4d5",
         "disabled": false,
         "settings": {
         }
