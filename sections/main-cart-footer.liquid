@@ -101,7 +101,7 @@
 {% assign alertcontent_split = alertcontent_clean | split: "," %}
 <script>
    console.log("HERE");
-  window.zapietAlertContent = {{alertcontent_clean}};
+  window.zapietAlertContent = String({{alertcontent_clean}});
   console.log("zapietAlertContent", window.zapietAlertContent, {{alert_content_clean}})
 </script>
 
