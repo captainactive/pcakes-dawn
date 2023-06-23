@@ -100,8 +100,8 @@
 {% assign alertcontent_clean = alertcontent_clean | strip_newlines %}
 {% assign alertcontent_split = alertcontent_clean | split: "," %}
 <script>
-  window.zapietAlertContent = {{alertcontent_clean}};
    console.log("HERE");
+  window.zapietAlertContent = {{alertcontent_clean}};
   console.log("zapietAlertContent", window.zapietAlertContent, {{alert_content_clean}})
 </script>
 
