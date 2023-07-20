@@ -210,7 +210,7 @@
           "fetchRequestPartialMatchimeout": 500,
           "buttonClickClassName": "",
           "buttonClickTimeout": 500,
-          "additionalJavascriptAndCss": "<style>\n.cart-drawer,.order-slots {display: none !important }\n<\/style>"
+          "additionalJavascriptAndCss": "<style>\n.cart-drawer .order-slots {display: none !important; }\n<\/style>"
         }
       }
     }
