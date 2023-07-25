@@ -614,21 +614,22 @@
 	
 </style>
 
-<br><br><br><br><br>
+<br><br>
 
 
 
 
                           
-<div class="pc-cart-boxes">	
+<div class="pc-cart-boxes" id="order-pickup-locations">	
 	
-	<!--div id="pickupinfo" class="pc-cart-boxes-note pccartnote">
+	<div id="pickupinfo" class="pc-cart-boxes-note pccartnote">
 		<h2>Pick-Up Details</h2>
 		  <p>Park in the lot or on the street</p>
 		  <p>Please Get line with and we will assist all customers </p>
-	</div-->	
-	
-	<div id="deliveryinfo1XX" class="pc-cart-boxes-note pccartnote">
+	</div>	
+
+  <div class="pc-cart-boxes" id="box-delivery-info">	
+	<div class="pc-cart-boxes-note pccartnote">
 		<h2>Delivery Information</h2>
 
 		<ol class="cartpage">
@@ -660,36 +661,38 @@
 
 
                    
-                          
-<script>
-const deliveryinfo1 = document.querySelector('#deliveryinfo1');
-const deliveryinfo2 = document.querySelector('#deliveryinfo2');
-const pickupinfo = document.querySelector('#pickupinfo');	
+     <script>
 
-window.ZapietEvent.listen("pickup.timepicker.rendered", function() {
- 	pickupinfo.classList.add('show');
-});	
-		
-		
-window.ZapietEvent.listen("delivery.datepicker.rendered", function() {
-//  alert("Zapiet DELIVERY loaded!");
- 	deliveryinfo1.classList.add('show');
-	deliveryinfo2.classList.add('show');  
-});	
+// JavaScript Code
+document.addEventListener('DOMContentLoaded', function() {
+  showInfoBoxes(); // Call this function initially to show appropriate boxes based on the current state.
 
-		
-window.ZapietEvent.listen("pickup.datepicker.rendered", function() {
-//  alert("Zapiet DELIVERY loaded!");
- 	deliveryinfo1.classList.remove('show');
-	deliveryinfo2.classList.remove('show');  
-});	  
+  // Function to show info boxes based on current state
+  function showInfoBoxes() {
+    const deliveryLocations = document.getElementById('order-delivery-locations');
+    const pickupLocations = document.getElementById('order-pickup-locations');
+    const boxDeliveryInfo = document.getElementById('box-delivery-info');
+    const boxPickupInfo = document.getElementById('box-pickup-info');
+
+    if (deliveryLocations && deliveryLocations.style.display !== 'none') {
+      boxDeliveryInfo.style.display = 'block';
+      boxPickupInfo.style.display = 'none';
+    } else if (pickupLocations && pickupLocations.style.display !== 'none') {
+      boxDeliveryInfo.style.display = 'none';
+      boxPickupInfo.style.display = 'block';
+    }
+  }
+
+  // MutationObserver to listen for changes on the page
+  const observer = new MutationObserver(showInfoBoxes);
+  const config = { attributes: true, childList: true, subtree: true };
+
+  observer.observe(document.body, config);
+});
 
 
-	
-// MORE OPTIONS HERE - https://support.zapiet.com/en/articles/6279764-widget-api
-	
+  
 </script>
-
                           
       </div>
     </div>
