@@ -555,7 +555,7 @@ display: none;
 @media (max-width: 500px) {
 .pc-cart-boxes {
 	display: grid;
-	grid-row-gap: 20px;
+	grid-row-gap: 50px;
 	grid-column-gap: 10px;
 	grid-template-rows: auto;
 	grid-template-columns: 1fr;
