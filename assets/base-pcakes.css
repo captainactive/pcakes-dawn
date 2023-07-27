@@ -316,6 +316,10 @@ footer h2, footer h3 {
   font-size: 120%;
 }
 
+.list-social__link svg path {
+fill: #8a54a8;
+}
+
 @media (max-width: 600px) {
   .pc-patty-footer-cont {
     grid-template-columns: 2fr 1fr 0px;
