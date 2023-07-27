@@ -3011,3 +3011,6 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+.reg-text {
+font-family:var(--font-body-family);
+}
