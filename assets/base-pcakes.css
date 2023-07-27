@@ -4,7 +4,7 @@
 /* TEXT */
 
 :root,
-.pcakes-text, body {
+.pcakes-text, body, .rich-text__text  {
   color:#424242;
 }
 
