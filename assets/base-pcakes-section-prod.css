@@ -376,7 +376,7 @@ border-radius: 4px;
 /* YOTPO NEW DETAILS */
 
 .yotpo-reviews-trademark yotpo-reviews-by {
-  display: none;
+  display: none !important;}
 }
 
 
