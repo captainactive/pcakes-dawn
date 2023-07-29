@@ -642,7 +642,7 @@ p.success {
 
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
-  height: 40rem;
+  height: 40rem !important;
   }
 }
 
