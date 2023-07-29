@@ -379,6 +379,9 @@ border-radius: 4px;
   display: none !important;}
 }
 
+.yotpo-head {
+  margin-bottom: 0!important;
+}
 
 
 /* THEIR CSS IN THEIR WIDGET IS GARBAGE  */
