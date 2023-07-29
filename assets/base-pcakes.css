@@ -636,6 +636,9 @@ p.success {
 /* COLLECTION PAGES  */
 
 
+.media > img {
+  object-fit: cover;
+}
 
 
 
