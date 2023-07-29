@@ -640,6 +640,12 @@ p.success {
   object-fit: contain;
 }
 
+@screen and (max-width: 749px) {
+  .collection-hero__image-container {
+height: 40rem;
+  }
+}
+
 
 
 
