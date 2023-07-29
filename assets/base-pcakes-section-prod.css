@@ -373,7 +373,13 @@ border-radius: 4px;
 
 
 
-/* YOTPO DETAILS */
+/* YOTPO NEW DETAILS */
+
+.yotpo-reviews-trademark yotpo-reviews-by {
+  display: none;
+}
+
+
 
 /* THEIR CSS IN THEIR WIDGET IS GARBAGE  */
 
