@@ -636,7 +636,7 @@ p.success {
 /* COLLECTION PAGES  */
 
 
-.media > img {
+.collection-hero__image-container .media > img {
   object-fit: contain;
 }
 
