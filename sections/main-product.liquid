@@ -229,9 +229,6 @@
                 {% # theme-check-enable %}
 
 
-             {% if product.tags contains "mod-hide" %}
-                 <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
-        	{% endif %}   
             
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
