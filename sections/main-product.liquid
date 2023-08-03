@@ -212,11 +212,7 @@
                 </details>
               </div>
 
- {% if product.tags contains "mod-hide" %}
-
-         <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
-
-        	{% endif %}    
+ 
             
             {%- when 'quantity_selector' -%}
             <!-- SEC/MAIN PRODUCT - QUANTITY--> 
@@ -229,6 +225,14 @@
                 {% # theme-check-disable %}
                 {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
                 {% # theme-check-enable %}
+
+
+             {% if product.tags contains "mod-hide" %}
+
+         <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
+
+        	{% endif %}   
+            
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
                   <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
