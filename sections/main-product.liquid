@@ -216,6 +216,8 @@
             
             {%- when 'quantity_selector' -%}
             <!-- SEC/MAIN PRODUCT - QUANTITY--> 
+
+            xxx
               <div
                 id="Quantity-Form-{{ section.id }}"
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -228,9 +230,7 @@
 
 
              {% if product.tags contains "mod-hide" %}
-
-         <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
-
+                 <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
         	{% endif %}   
             
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
