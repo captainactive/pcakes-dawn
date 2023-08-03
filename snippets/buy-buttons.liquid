@@ -95,6 +95,11 @@
             endif
           -%}  
 
+
+   {% if product.tags contains "mod-hide" %}
+                 <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
+        	{% else %} 
+
           
           <button
             id = "ProductSubmitButton-{{ section_id }}"
@@ -104,7 +109,9 @@
             {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
               disabled
             {% endif %}
-          >ddd
+          >
+
+
             <span>
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
@@ -125,6 +132,9 @@
             </div>
            
           </button>
+          {% endif %}  
+
+          
           {%- if block.settings.show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
