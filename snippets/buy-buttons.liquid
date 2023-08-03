@@ -66,6 +66,15 @@
         
         {% endif %}
         </div>
+
+
+       {% if product.tags contains "mod-hide" %}
+         <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This item cannot be added to a cart. Please see the parent item.</div>
+      {% else %}
+
+
+
+        
         <div class="pc-prod-h2">
             <h2>Price</h2>
           
@@ -75,7 +84,9 @@
                 {{ money_price }}
               </span>
             </div>
-         </div>   
+         </div> 
+{% endif %} 
+        
                         
       <!-- SNIP / BUY BUTTONS - END ADD ONS -->
             
