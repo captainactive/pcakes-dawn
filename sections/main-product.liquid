@@ -217,7 +217,7 @@
             {%- when 'quantity_selector' -%}
             <!-- SEC/MAIN PRODUCT - QUANTITY--> 
 
-            xxx
+           
               <div
                 id="Quantity-Form-{{ section.id }}"
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -253,7 +253,7 @@
                   </span>
                 </label>
                 <quantity-input class="quantity">
-                  <button class="quantity__button no-js-hidden" name="minus" type="button">
+                  <button class="quantity__button no-js-hidden" name="minus" type="button">xxx
                     <span class="visually-hidden">
                       {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
                     </span>
