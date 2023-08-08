@@ -38,7 +38,7 @@
   }
 {%- endstyle -%}
 
-!!
+
 <div class="section-{{ section.id }}-padding">
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -190,7 +190,7 @@
                       lazy_load: lazy_load,
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
-                    %}{% assign test1 = test1 | plus: 1  %}{{ test1 }}
+                    %}
                  </li> 
                
            {% comment %}
