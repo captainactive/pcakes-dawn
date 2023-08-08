@@ -167,11 +167,12 @@
 
               
               {%- for product in collection.products -%}
+                
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
-                  {% assign test1 = test1 | plus: 1  %}
+                  
                 {%- endif -%}
                 
            
@@ -189,7 +190,7 @@
                       lazy_load: lazy_load,
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
-                    %}{{ test1 }}
+                    %}{% assign test1 = test1 | plus: 1  %}{{ test1 }}
                  </li> 
                
            {% comment %}
