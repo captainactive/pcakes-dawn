@@ -172,7 +172,7 @@
 
               
               {%- for product in collection.products -%}
-                 {% assign test1 = test1 | plus: 1  %}
+                 {% # assign test1 = test1 | plus: 1  %}
                 
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
                 {% assign lazy_load = false %}
