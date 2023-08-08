@@ -138,7 +138,7 @@
             <div class="loading-overlay gradient"></div>
             <div class="title-wrapper center">
               <h2 class="title title--primary">
-                {{ 'sections.collection_template.empty' | t -}} {% assign test1 = test1 | plus: 1  %}{{ test1 }}
+                {{ 'sections.collection_template.empty' | t -}} 
                 <br>
                 {{
                   'sections.collection_template.use_fewer_filters_html'
@@ -188,7 +188,7 @@
                       lazy_load: lazy_load,
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
-                    %}
+                    %}{% assign test1 = test1 | plus: 1  %}{{ test1 }}
                  </li> 
                
            {% comment %}
