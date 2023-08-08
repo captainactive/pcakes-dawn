@@ -167,12 +167,11 @@
 
               
               {%- for product in collection.products -%}
-                {% assign test1 = test1 | plus: 1  %}
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
-                  
+                  {% assign test1 = test1 | plus: 1  %}
                 {%- endif -%}
                 
            
