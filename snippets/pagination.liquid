@@ -59,8 +59,8 @@
         {%- endfor -%}
 
         {%- if paginate.next -%}
-          {%- if {{ paginate.current_page }} > 1 -%}
-<script> console.log('ding!') </script>
+          {%- if paginate.current_page > 1 -%}
+            <script> console.log('ding!') </script>
           {%- endif -%}
           <li class="infinite_next">
           <div huek="">anchor value - </div>
