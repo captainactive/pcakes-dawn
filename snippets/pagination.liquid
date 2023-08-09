@@ -60,9 +60,7 @@
 
         {%- if paginate.next -%}
           <li class="infinite_next">
-          {%- if anchor > 2 -%}
-            <script>console.log('fire!')</script>
-          {%- endif -%}  
+          {{ anchor }}
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
