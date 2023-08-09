@@ -225,10 +225,12 @@
 
 
 <script>
-function renderYotpo(){
-  console.log('rendered Yotpo');
-  yotpoWidgetsContainer.initWidgets(false);
-}
+  function renderYotpo(){
+    console.log('rendered Yotpo');
+  if (typeof yotpoWidgetsContainer !== 'undefined') {
+    yotpoWidgetsContainer.initWidgets(false);
+    }
+  }
   
 const endlessCollection = new Ajaxinate({
 container: '#product-grid',
