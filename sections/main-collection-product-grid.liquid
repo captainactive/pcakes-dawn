@@ -217,6 +217,13 @@ api.yotpoWidgetsContainer.initWidgets();
 
               
               {%- endfor -%}
+                         <script>
+console.log("HI");
+var api = new Yotpo.API(yotpo);
+
+api.yotpoWidgetsContainer.initWidgets();
+
+</script>
             </ul>
 
             {%- if paginate.pages > 1 -%}
