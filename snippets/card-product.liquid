@@ -194,6 +194,12 @@
             <div class="pcakes-yotpo-collection">
                 <div class="yotpo-widget-instance" data-yotpo-instance-id="305219" data-yotpo-product-id="{{card_product.id}}" data-yotpo-cart-product-id="{{card_product.id}}" data-yotpo-section-id="{{template.name}}"></div>
             </div>
+            <script>
+          if (typeof yotpoWidgetsContainer !== 'undefined') {
+            yotpoWidgetsContainer.initWidgets(false);
+            console.log('ding');
+          }                 
+          </script>
         </div>
 
         <!-- STARTING PRICE //// DELETED! -->  
