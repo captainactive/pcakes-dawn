@@ -62,8 +62,8 @@
           {%- if paginate.current_page > 1 -%}
             <script> console.log('ding!') </script>
           {%- endif -%}
+          <p>{{ paginate.current_page }}</p>
           <li class="infinite_next">
-          <div huek="">anchor value - </div>
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
