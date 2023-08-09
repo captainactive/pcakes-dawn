@@ -199,6 +199,8 @@
                       section_id: section.id
                     %} {{ test1 }} 
                  </li> 
+                <script>  yotpoWidgetsContainer.initWidgets(false);
+</script>
 
            {% comment %}
                 RIP FLAVOR DIVIDERS - PAGING DESTROYS THE LOOP
@@ -229,7 +231,6 @@ const endlessCollection = new Ajaxinate({
 container: '#product-grid',
 pagination: '.infinite_next'
 });
-  yotpoWidgetsContainer.initWidgets(false);
 </script>
 
 
