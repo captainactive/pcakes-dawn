@@ -209,23 +209,7 @@
 
               
               {%- endfor -%}
-<script type="text/javascript">
-    var yotpoIsReady = false;
-    (function checkForYotpo() {
-        setTimeout(function () {
-            if (typeof Yotpo !== "undefined") {
-                if (yotpoWidgetsContainer !== "undefined") {
-                    yotpoWidgetsContainer.initWidgets(false);
-                    yotpoIsReady = true;
-                    console.log("Yotpooooo is here");
-                }
-            } else {
-                console.log("checking for Yotpo");
-            }
-            if (yotpoIsReady === false) checkForYotpo();
-        }, 500);
-    })();
-</script>
+
             </ul>
 
             {%- if paginate.pages > 1 -%}
