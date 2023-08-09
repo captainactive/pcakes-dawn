@@ -68,7 +68,11 @@
               {%- render 'icon-caret' -%}
           </a>
           </li>
-          <script>yotpoWidgetsContainer.initWidgets(false);</script>
+          <script>
+          if (typeof yotpoWidgetsContainer !== 'undefined') {
+            yotpoWidgetsContainer.initWidgets(false);
+          }                 
+          </script>
         {%- endif -%}
       </ul>
     </nav>
