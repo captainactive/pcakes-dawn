@@ -59,10 +59,6 @@
         {%- endfor -%}
 
         {%- if paginate.next -%}
-          {%- if paginate.current_page > 1 -%}
-            <script> console.log('ding!') </script>
-          {%- endif -%}
-          <p>{{ paginate.current_page }}</p>
           <li class="infinite_next">
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
