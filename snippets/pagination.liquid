@@ -60,7 +60,7 @@
 
         {%- if paginate.next -%}
           <li class="infinite_next">
-          <div huek="{{ paginate.next.title }}">anchor value - </div>
+          <div huek="{{ paginate.current_page }}">anchor value - </div>
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
