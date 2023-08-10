@@ -76,7 +76,14 @@
 {%- endif -%}
 
 <style>
-  #lastPageInit {
+@media (max-width: 767px) {  
+  #lastPageInit {    
+    position: relative; 
+    bottom: 2000px;
+    visibility: hidden;
+  }
+}
+  #lastPageInit {    
     position: relative; 
     bottom: 1200px; 
     visibility: hidden;
