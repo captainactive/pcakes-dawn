@@ -15,7 +15,7 @@
 <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- if paginate.parts.size > 0 -%}
-  <div id="" style="position: relative; bottom: 400px; display: inline-block;">.</div>
+  <div id="lastPageInit" style="position: relative; bottom: 400px; display: inline-block;">.</div>
   <div class="pagination-wrapper">
     <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
       <ul class="pagination__list list-unstyled" role="list">
@@ -74,3 +74,19 @@
     </nav>
   </div>
 {%- endif -%}
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log("Initiating Gallery");
+        if (typeof yotpoWidgetsContainer !== 'undefined') {
+          yotpoWidgetsContainer.initWidgets(false);
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  const lazyDiv = document.getElementById('lastPageInit')
+  observer.observe(lazyDiv);
+</script>
