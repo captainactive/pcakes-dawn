@@ -87,6 +87,9 @@ class FacetFiltersForm extends HTMLElement {
       containerDesktop.innerHTML = count;
       containerDesktop.classList.remove('loading');
     }
+    if (typeof yotpoWidgetsContainer !== 'undefined') {
+      yotpoWidgetsContainer.initWidgets(false);
+    }
     const endlessCollection = new Ajaxinate({
       container: '#product-grid',
       pagination: '.infinite_next',
