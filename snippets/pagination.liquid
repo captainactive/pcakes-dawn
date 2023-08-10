@@ -76,18 +76,23 @@
 {%- endif -%}
 
 <style>
-@media (max-width: 767px) {  
-  #lastPageInit {    
-    position: relative; 
+#lastPageInit {
+  position: relative;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 850px) {
+  #lastPageInit {
     bottom: 2000px;
-    visibility: hidden;
   }
 }
-  #lastPageInit {    
-    position: relative; 
-    bottom: 1200px; 
-    visibility: hidden;
+
+/* Media query for desktop screens */
+@media (min-width: 850px) {
+  #lastPageInit {
+    bottom: 1200px;
   }
+}
 </style>
 <script>
   const observer = new IntersectionObserver(entries => {
