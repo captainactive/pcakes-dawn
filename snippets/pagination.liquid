@@ -79,10 +79,8 @@
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        console.log("Initiating Gallery");
-        if (typeof yotpoWidgetsContainer !== 'undefined') {
-          yotpoWidgetsContainer.initWidgets(false);
-        }
+        console.log("Initiating Last Page");
+        yotpoWidgetsContainer.initWidgets(false);        
         observer.unobserve(entry.target);
       }
     });
