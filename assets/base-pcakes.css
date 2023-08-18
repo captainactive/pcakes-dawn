@@ -261,7 +261,7 @@ opacity: 1;
 
 /* SEARCH */
 
-.search-modal__form label {
+.search-modal__form.field.field__label {
   color: #ffffff;
 }
 
