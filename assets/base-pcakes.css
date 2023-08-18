@@ -259,6 +259,14 @@ opacity: 1;
 
 
 
+/* SEARCH */
+
+.search-modal__form label {
+  color: #ffffff;
+}
+
+
+
 /* FOOTER  */
 
 .footer {
