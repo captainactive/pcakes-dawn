@@ -48,17 +48,10 @@
 
      <!-- SNIP / BUY BUTTONS - FORM  ADD ONS -->
       <div class="pc-prod-h2">
-        {%  if product.metafields.pcakes.type contains "Standard Cake" %}
-           
-        <h2>Cancellation/Change Policy</h2>
-        <p>Standard Cakes sales are final 24 hours before the pickup time..</p>
-        <!--div class="hrtoplite"></div-->
+        {%  if product.metafields.pcakes.type contains "Standard Cake" %} 
+          <h2>Cancellation/Change Policy</h2>
+          <p>Standard Cakes sales are final 24 hours before the pickup time..</p>
         {% endif %}
-
-  
-        {{ product.metafields.pcakes.type }}1
-
-        {{ product.metafields.pc-filter.leadtime }}2
         
         {%  if product.metafields.pcakes.type contains "Cake"  and product.metafields.pc-filter.leadtime contains "Days" %}
         <h2>Design and Pricing</h2>
