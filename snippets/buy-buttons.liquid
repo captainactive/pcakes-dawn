@@ -56,20 +56,18 @@
         {% endif %}
 
   
-        {{ product.metafields.pcakes.type }}
+        {{ product.metafields.pcakes.type }}1
 
-        {{ product.metafields.pc-filter.leadtime }}
+        {{ product.metafields.pc-filter.leadtime }}2
         
         {%  if product.metafields.pcakes.type contains "Cake"  and product.metafields.pc-filter.leadtime contains "Days" %}
         <h2>Design and Pricing</h2>
         <p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href="https://pattys-cakes.com/contact-us">Contact Us</a> page. They will provide you with accurate pricing based on your desired specifications.</p>
         
-        
         <h2>Cancellation/Change Policy</h2>
         <p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the pickup/delivery date, all cake orders are final and non-refundable. The pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.</p>
-        
         {% endif %}
-
+        
 
       {%  if product.tags contains "Tiered Cake" %}
         
@@ -121,7 +119,7 @@
 
           {% # HIDES THE BUY BUTTON IF THE ITEM IS A MODIFIER %} 
                  <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This subitem cannot be purchased directly. Please see the parent item.</div>
-      {% else %} 
+        	{% else %} 
 
           
           <button
