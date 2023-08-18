@@ -163,7 +163,7 @@
             </p>
           {%- endif -%}
 
-          {% if request.page_type == "page" %}
+          {% if request.page_type == "page" and card_collection.metafields.pcakes-col.leadtime !="" %}
          <div class="pc-leadtime-cont">
            <div> 
               <div class="tinytext">          
