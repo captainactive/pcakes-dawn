@@ -261,13 +261,11 @@ opacity: 1;
 
 /* SEARCH */
 
-.search-modal__form.field.field__label {
+.search-modal__form.field.field__label, .search-modal__form.field.search__button {
   color: #ffffff;
 }
 
-.search__button field__button.icon-search path {
-  fill: #ffffff;
-}
+
 
 
 
