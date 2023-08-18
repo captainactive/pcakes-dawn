@@ -115,14 +115,13 @@
                         height="{{ card_product.media[1].height }}"
                         >
                     {%- endif -%}
-                    </div>
 
-                                    {%  if  card_product.tags contains "pop" %}                  		        
+                        {%  if  card_product.tags contains "pop" %}                  		        
       <div class='favimg poplogooverlay {%  if product.tags contains "Semi Custom" or product.tags contains "Custom Cake" or product.tags contains "semi VEGF" or product.tags contains "Tiered Cake" or product.tags contains "Theme Cake"  %} padtop30  {% endif %}'>          
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'><defs><style>.cls-191{fill:#e21d00;}.cls-251{fill:#fff;}</style></defs><title>Popular Item!</title><g id='Layer_261' data-name='Layer 261'><circle class='cls-191' cx='144' cy='144.6' r='142.37' transform='translate(-60.07 144.17) rotate(-45)'/><polygon class='cls-251' points='144 30.04 178.93 100.82 257.03 112.17 200.52 167.25 213.86 245.04 144 208.32 74.14 245.04 87.48 167.25 30.97 112.17 109.07 100.82 144 30.04'/></g></svg>
       </div>          
       {% endif %}
-                
+                    </div>
                 </div>
                 <!-- END - SNIP/CARD-PRODUCT - FEATURED MEDIA -->
                 {%- endif -%}
