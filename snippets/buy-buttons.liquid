@@ -69,6 +69,21 @@
         <p>Organizing hundreds of weekly orders and ensuring quality takes a lot of prep time. Seven (7) days prior to the pickup/delivery date, all cake orders are final and non-refundable. The pickup time cannot be moved up, and no changes can be made to the items. If you must make a change, if available, there will be a $30 change fee added to the order.</p>
         
         {% endif %}
+
+
+      {%  if product.tags contains "Tiered Cake" %}
+        
+      <h2>Tiered Cake Boxes</h2>
+      <div>
+        <img class="ftright" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/tiered-cake-in-box.jpg?v=1686363563" width="150" height="150"/>
+      <p>Tiered cakes are boxed in half-shell boxes. With the proper handling, your cakes will arrive safely.</p>
+          <p>- Carry your cake from the bottom of the box, please do not push on the sides of the box as this may touch and damage the cake.<br>
+    - Place your cake on the floor or trunk of your vehicle.<br>
+    - Enjoy your event and dessert!</p>
+        
+      </div>
+      {% endif %}
+        
         </div>
 
 
