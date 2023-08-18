@@ -90,6 +90,13 @@
 
         <div class="pc-prod-h2">
             <h2>Price</h2>
+
+                     {%- render 'price',
+                  product: product,
+                  use_variant: true,
+                  show_badges: true,
+                  price_class: 'price--large'
+                -%}
           
             <div class="price__regular price-custom">
               <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
