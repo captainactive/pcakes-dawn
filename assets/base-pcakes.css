@@ -951,7 +951,7 @@ justify-items: center;
 }
 
 .price--large {
-  font-size: 3rem;
+  font-size: 3rem !important;
 }
 
 
