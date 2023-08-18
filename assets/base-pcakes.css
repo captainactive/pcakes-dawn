@@ -265,7 +265,7 @@ opacity: 1;
   color: #ffffff;
 }
 
-.search-modal__form .field__button {
+.search-modal__form .field__button,.search-modal__form .search__input {
   color: #ffffff;
 }
 
