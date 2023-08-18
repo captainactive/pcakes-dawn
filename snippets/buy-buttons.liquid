@@ -48,7 +48,7 @@
 
      <!-- SNIP / BUY BUTTONS - FORM  ADD ONS -->
       <div class="pc-prod-h2">
-        {%  if product.tags contains "Standard Cakes" %}
+        {%  if products.product.tags contains "Standard Cakes" %}
            
         <h2>Cancellation/Change Policy</h2>
         <p>Standard Cakes sales are final 24 hours before the pickup time..</p>
@@ -56,7 +56,7 @@
         {% endif %}
         
         
-        {%  if product.metafields.pcakes.type == "Cakes"  and product.metafields.pc-filter.leadtime contains "Days" %}
+        {%  if products.product.metafields.pcakes.type == "Cakes"  and products.product.metafields.pc-filter.leadtime contains "Days" %}
         <h2>Design and Pricing</h2>
         <p>The prices listed above are specific to the design they are attached to. If more customization is needed, you must collaborate with one of our custom cake coordinators via the <a href="https://pattys-cakes.com/contact-us">Contact Us</a> page. They will provide you with accurate pricing based on your desired specifications.</p>
         
@@ -96,7 +96,7 @@
           -%}  
 
 
-   {% if product.tags contains "mod-hide" %}
+   {% if products.product.tags contains "mod-hide" %}
 
           {% # HIDES THE BUY BUTTON IF THE ITEM IS A MODIFIER %} 
                  <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This subitem cannot be purchased directly. Please see the parent item.</div>
