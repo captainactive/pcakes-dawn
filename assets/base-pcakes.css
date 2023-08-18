@@ -265,7 +265,9 @@ opacity: 1;
   color: #ffffff;
 }
 
-
+.search__button .field__button {
+  color: #ffffff;
+}
 
 
 
