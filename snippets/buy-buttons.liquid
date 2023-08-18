@@ -55,8 +55,8 @@
         <!--div class="hrtoplite"></div-->
         {% endif %}
 
-        {{ products.product.tags }}
-        {{ products.product.metafields.pcakes.type }}
+        {{ product.tags }}
+        {{ product.metafields.pcakes.type }}
 
         
         {%  if products.product.metafields.pcakes.type == "Cakes"  and products.product.metafields.pc-filter.leadtime contains "Days" %}
