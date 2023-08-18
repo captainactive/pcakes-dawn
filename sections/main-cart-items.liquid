@@ -374,7 +374,194 @@
 
 <br><br>
 
-<div class="page-width pc-cart-boxes">	
+
+                          
+<style>
+
+
+ /* BASIC LAYOUT */
+
+.pccartprotip	{
+  padding: 10px 20px 20px 20px;
+  border: 1px solid #d39ff0;
+  border-radius: 3px;
+
+	}
+  
+.pccartcartboxes {
+    border: 1px solid #8a54a8;
+    border-radius: 3px;
+  padding: 10px 20px 20px 20px !important;
+  background: #fcf8ff;
+}
+
+.pc-cart-boxes h2 {
+  border-bottom: 1px solid #8a54a8;
+}
+  
+  
+.order-slots  {
+  color:#424242;
+}
+
+.order-delivery-locations label, .orders-slots-heading {
+  color: #8a54a8;
+}
+
+#delivery-option-div div svg  {
+  height: 40px;
+  width: 40px;
+}
+
+#pickup-option-div div svg  {
+  height: 40px;
+  width: 40px;
+}
+
+ .ft-options-active {
+  background-color: #8a54a8 !important;
+  color: #ffffff;
+} 
+
+  #pickup-option-div.ft-options-active div svg, #delivery-option-div.ft-options-active div svg  {
+    fill: #ffffff;
+  }  
+
+.pickup-location {
+  background: #ffffff; 
+  border: 1px solid #dadada !important;
+  padding: 15px 5px !important;
+  border-radius: 4px;
+  overflow-y: auto;
+}  
+.pickup-location label {
+  font-size: 14px;
+}
+.pickup-location input {
+  width: 5px;
+}
+.pickup-location label:first-of-type {
+  margin-left: 0px !important;
+}  
+  .pickup-location label:last-of-type {
+  margin-left: 20px !important;
+}  
+
+
+.order-slots-option, .order-delivery-locations, .order-slot-pickers {
+  padding-bottom: 20px;
+}  
+
+#delivery-location-zip, #delivery-location-search, .neo-input {
+   border-radius: 4px;
+  border: 1px solid #dadada !important;
+  margin-bottom: 10px;
+}
+ #delivery-location-info {
+    padding-top: 10px;
+  }
+
+ .order-slots input {
+   height: 40px;
+   font-size: 18px;
+   padding: 7px 10px;
+ }
+.pickup-location input {
+  height: 4px !important;
+}
+
+#delivery-location-search {
+background: #8a54a8;
+  color: #ffffff;
+  border: 1px solid #8a54a8 !important;
+}
+#delivery-location-zip {
+  width: 100% !important;
+}  
+  
+  /* CALENDAR */
+
+ .neo-grid { 
+   min-width: 425px !important;
+   font-size: 16px !important;
+     }  
+   
+ @media (max-width: 520px) { 
+ .neo-grid { 
+   min-width: 325px !important;
+     }  
+  }
+  
+ .neo-th, .neo-td {
+   padding: 8px 3px !important;
+   font-size: 18px !important;
+ }
+
+
+.neo-paginate, .neo-close, .neo-back {
+  padding: 4px 30px !important;
+  font-size: 24px !important;
+}
+
+
+
+  /* SCROLL GRID */
+
+.neo-scroll .neo-tr {
+  display:grid;
+    grid-template-columns: 1fr;  /* add 1fr to make it 2 columns */
+  grid-template-rows: 1fr;
+}
+
+  .neo-scroll .neo-tr td {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center; 
+}
+
+  .neo-scroll .neo-tr {
+    height: inherit !important; 
+  }
+ .neo-scroll .neo-td {
+    overflow: auto !important; 
+  }
+/*.neo-equal-width, .neo-tr.neo-equal-width:first-child, .neo-tr.neo-equal-width:last-child  {
+  width: inherit !important; 
+  }
+*/
+  .neo-scroll .neo-tr.neo-equal-width>*:nth-last-child(4)~*, .neo-scroll .neo-tr.neo-equal-width>*:nth-last-child(2)~* {
+    width: inherit !important;
+  }
+
+.neo-cell-selected, .neo-cell-enabled:hover{
+  background-color: #8a54a8 !important;
+}  
+
+  /* LOADING */
+.slot-picker-loader svg {
+    height: 75px;
+  width: 75px;
+}  
+  
+  .slot-picker-loader H4 {
+    border-bottom: none;
+    font-size: inherit;
+  }
+
+.cart__items {
+  padding-bottom: 0!important;
+  border-bottom: none!important;
+}
+  
+</style>
+
+                          
+<!-- // sections/main-cart-items --> 
+
+                          
+<div class="pc-cart-boxes">	
 	<div class="pc-cart-boxes-sub">
 		<div class="pc-cart-boxes-img">
 			<img alt="Personalized Card" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/products/note.jpg?v=1586107410&width=360">
@@ -426,96 +613,107 @@
         </cart-note>
 	</div>
 
-	<div class="pc-cart-boxes-note pccartnotepurple" style="margin-top: 40px; margin-bottom: 5px; border: 1px solid #8a54a8;">
+
+   <div><br></div>
+  <div><br></div>
+  
+   	<div class=" pccartprotip">
 		<h2>Pro Tip!</h2>
 		<div style="color: #8a54a8;">
 		<strong>Desserts should be one of the last items to arrive at your event.</strong> Keep your fridge space available for other items and choose a pick-up or delivery time within <strong>1-2 hours of the event start time</strong>.</div>
 	</div> 
-</div>		
 
-<div class="page-width">	
-	
-     <!-- Zapiet | Store Pickup + Delivery -->
-            <div id="storePickupApp"></div>
-            <!-- Zapiet | Store Pickup + Delivery -->
+  <div class="pccartcartboxes">
+    <div class="pickeasy"></div>
+  </div> 
 </div>
-
+                          
 <style>
 	#deliveryinfo1, #deliveryinfo2 {display: none;}
 	.show {display: block!important;}
 	
 </style>
 
-<div class="page-width pc-cart-boxes">	
-	
-	<!--div id="pickupinfo" class="pc-cart-boxes-note pccartnote">
-		<h2>Pick-Up Details</h2>
-		  <p>Park in the lot or on the street</p>
-		  <p>Please Get line with and we will assist all customers </p>
-	</div-->	
-	
-	<div id="deliveryinfo1" class="pc-cart-boxes-note pccartnote">
-		<h2>Delivery Information</h2>
-
-		<ol class="cartpage">
-		  <li><strong>Someone MUST be present</strong> to receive the items during the <strong>entire delivery window</strong>. Our product is perishable and cannot be left unattended.</li>
-		  <li>Please provide the <strong>recipient’s phone number</strong> with the delivery address. We will only call if we have challenges reaching them. The gift of desserts will remain a surprise.</li>
-		  <li>A specific time within the window cannot be requested.</li>
-		  <li>If the delivery is unsuccessful, the item(s) will be returned to Patty’s Cakes and will be available for pickup.</li>
-          <li>Refunds are not available for unsuccessful deliveries.</li>
-		</ol>
-
-		  <br />
-		<p>Please Note: We do not off delivery to Downtown Disney.</p>
-
-	</div>
+<br>
 
 
 
-	<div id="deliveryinfo2" class="pc-cart-boxes-note pccartnote">
-		<h2>Delivery Windows</h2>
-		<p>Delivery windows are Tuesday-Saturday:<br />
-			10 am – 1 pm<br />
-			12 pm – 3 pm<br />
-			2 pm – 5 pm<br />
-			4 pm – 7 pm - (Saturdays Only)<br />
-			<br />
-			If delivery windows are not displaying in the date and time selector above, they are full.</p>
-	</div>	
-</div>
+
+<div id="box-pickup-info" style="display: none;">
+  <div class="pc-cart-boxes" >
+  	<div id="pickupinfo" class="pc-cart-boxes-note pccartnote">
+  		<h2>Pick-Up Details</h2>
+  		  <p>Park in our lot behind the building or on the street.</p>
+  		  <p>Once inside, please get in line and we will assist all customers in the order they have arrived.</p>
+  	</div>	
+  </div>
+</div>  
+
+<div id="box-delivery-info" style="display: none;">	                          
+  <div class="pc-cart-boxes">
+  	<div class="pc-cart-boxes-note pccartnote">
+  		<h2>Delivery Information</h2>
+  
+  		<ol class="cartpage">
+  		  <li><strong>Someone MUST be present</strong> to receive the items during the <strong>entire delivery window</strong>. Our product is perishable and cannot be left unattended.</li>
+  		  <li>Please provide the <strong>recipient’s phone number</strong> with the delivery address. We will only call if we have challenges reaching them. The gift of desserts will remain a surprise.</li>
+  		  <li>A specific time within the window cannot be requested.</li>
+  		  <li>If the delivery is unsuccessful, the item(s) will be returned to Patty’s Cakes and will be available for pickup.</li>
+            <li>Refunds are not available for unsuccessful deliveries.</li>
+  		</ol>
+  
+  		  <br />
+  		<p>Please Note: We do not off delivery to Downtown Disney.</p>
+  
+  	</div>
+  
+  	<div class="pc-cart-boxes-note pccartnote">
+  		<h2>Delivery Windows</h2>
+  		<p>Delivery windows are Tuesday-Saturday:<br />
+  			10 am – 1 pm<br />
+  			12 pm – 3 pm<br />
+  			2 pm – 5 pm<br />
+  			4 pm – 7 pm - (Saturdays Only)<br />
+  			<br />
+  			If delivery windows are not displaying in the date and time selector above, they are full.</p>
+  	</div>
+  </div>
+</div>  
 
 
                    
-                          
-<script>
-const deliveryinfo1 = document.querySelector('#deliveryinfo1');
-const deliveryinfo2 = document.querySelector('#deliveryinfo2');
-const pickupinfo = document.querySelector('#pickupinfo');	
+     <script>
 
-window.ZapietEvent.listen("pickup.timepicker.rendered", function() {
- 	pickupinfo.classList.add('show');
-});	
-		
-		
-window.ZapietEvent.listen("delivery.datepicker.rendered", function() {
-//  alert("Zapiet DELIVERY loaded!");
- 	deliveryinfo1.classList.add('show');
-	deliveryinfo2.classList.add('show');  
-});	
+// JavaScript Code
+document.addEventListener('DOMContentLoaded', function() {
+  showInfoBoxes(); // Call this function initially to show appropriate boxes based on the current state.
 
-		
-window.ZapietEvent.listen("pickup.datepicker.rendered", function() {
-//  alert("Zapiet DELIVERY loaded!");
- 	deliveryinfo1.classList.remove('show');
-	deliveryinfo2.classList.remove('show');  
-});	  
+  // Function to show info boxes based on current state
+  function showInfoBoxes() {
+    const deliveryLocations = document.getElementById('order-delivery-locations');
+    const pickupLocations = document.getElementById('order-pickup-locations');
+    const boxDeliveryInfo = document.getElementById('box-delivery-info');
+    const boxPickupInfo = document.getElementById('box-pickup-info');
+
+    if (deliveryLocations && deliveryLocations.style.display !== 'none') {
+      boxDeliveryInfo.style.display = 'block';
+      boxPickupInfo.style.display = 'none';
+    } else if (pickupLocations && pickupLocations.style.display !== 'none') {
+      boxDeliveryInfo.style.display = 'none';
+      boxPickupInfo.style.display = 'block';
+    }
+  }
+
+  // MutationObserver to listen for changes on the page
+  const observer = new MutationObserver(showInfoBoxes);
+  const config = { attributes: true, childList: true, subtree: true };
+
+  observer.observe(document.body, config);
+});
 
 
-	
-// MORE OPTIONS HERE - https://support.zapiet.com/en/articles/6279764-widget-api
-	
+  
 </script>
-
                           
       </div>
     </div>

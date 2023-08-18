@@ -15,6 +15,7 @@
 <noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- if paginate.parts.size > 0 -%}
+  <div id="lastPageInit">.</div>
   <div class="pagination-wrapper">
     <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
       <ul class="pagination__list list-unstyled" role="list">
@@ -59,7 +60,7 @@
         {%- endfor -%}
 
         {%- if paginate.next -%}
-          <li class="infinite_next">
+          <li class="infinite_next">            
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
               class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
@@ -73,3 +74,34 @@
     </nav>
   </div>
 {%- endif -%}
+
+
+<style>
+#lastPageInit {
+  position: relative;
+  visibility: hidden;
+}
+@media (max-width: 850px) {
+  #lastPageInit {
+    bottom: 2000px;
+  }
+}
+@media (min-width: 850px) {
+  #lastPageInit {
+    bottom: 1200px;
+  }
+}
+</style>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log("Initiating Last Page");
+        yotpoWidgetsContainer.initWidgets(false);        
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  const lazyDiv = document.getElementById('lastPageInit')
+  observer.observe(lazyDiv);
+</script>

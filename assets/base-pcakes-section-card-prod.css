@@ -181,5 +181,11 @@ a:-webkit-any-link:hover {
 
 }
 
-
+/* YOTPO NEW */
+.yotpo-sr-bottom-line-summary {
+  align-items: center !important;
+}
+.yotpo-sr-bottom-line-right-panel {
+  display: none;
+}
 

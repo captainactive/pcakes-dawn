@@ -66,6 +66,9 @@
         
         {% endif %}
         </div>
+
+
+
         <div class="pc-prod-h2">
             <h2>Price</h2>
           
@@ -75,7 +78,9 @@
                 {{ money_price }}
               </span>
             </div>
-         </div>   
+         </div> 
+
+        
                         
       <!-- SNIP / BUY BUTTONS - END ADD ONS -->
             
@@ -88,7 +93,16 @@
             if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
               assign quantity_rule_soldout = true
             endif
-          -%}   
+          -%}  
+
+
+   {% if product.tags contains "mod-hide" %}
+
+          {% # HIDES THE BUY BUTTON IF THE ITEM IS A MODIFIER %} 
+                 <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This subitem cannot be purchased directly. Please see the parent item.</div>
+        	{% else %} 
+
+          
           <button
             id = "ProductSubmitButton-{{ section_id }}"
             type="submit"
@@ -98,6 +112,8 @@
               disabled
             {% endif %}
           >
+
+
             <span>
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
@@ -118,6 +134,9 @@
             </div>
            
           </button>
+          {% endif %}  
+
+          
           {%- if block.settings.show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}

@@ -11,7 +11,8 @@
   as="style"
   onload="this.onload=null;this.rel='stylesheet'"
 >
-<!-- PCAKES ADDED -->
+<!--SECTION/MAIN-COLLECTION-PRODUCT-GRID -->
+<!-- PCAKES SCROLL ADDED -->
 {% comment %}https://undefined.agency/#/blog/how-to-add-infinite-scrolling-to-dawn{% endcomment %}
 
 {{ "ajaxinate.min.js" | asset_url | script_tag  }}
@@ -131,13 +132,20 @@
     {%- endif -%}
 
     <div class="product-grid-container" id="ProductGridContainer">
+
+    
+      {% comment %}
+      WORKING ON SECTION
+     // {{ section.settings.products_per_page }}
+    {% endcomment %}
       {%- paginate collection.products by section.settings.products_per_page -%}
+        
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
             <div class="title-wrapper center">
               <h2 class="title title--primary">
-                {{ 'sections.collection_template.empty' | t -}}
+                {{ 'sections.collection_template.empty' | t -}} 
                 <br>
                 {{
                   'sections.collection_template.use_fewer_filters_html'
@@ -147,7 +155,6 @@
             </div>
           </div>
         {%- else -%}
-
           <!--SECTION/MAIN-COLLECTION-PRODUCT-GRID -->
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
@@ -166,10 +173,13 @@
 
               
               {%- for product in collection.products -%}
+                 {% # assign test1 = test1 | plus: 1  %}
+                
                 {%- if product.metafields.inventory.ShappifyHidden == 'true' -%}{%- continue -%}{%- endif -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
+                  
                 {%- endif -%}
                 
            
@@ -187,20 +197,19 @@
                       lazy_load: lazy_load,
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id
-                    %}
+                    %} {{ test1 }} 
                  </li> 
-               
+
            {% comment %}
                 RIP FLAVOR DIVIDERS - PAGING DESTROYS THE LOOP
                 <!-- PCakes Debut:  SECTION /// collection-template -->
                 
-              {% assign test1 = test1 | plus: 1  %}
-                {{ test1 }}
-                
+              {% assign test1 = test1 | plus: 1  %}  {{ test1 }}                
                 {% endcomment %}
 
               
               {%- endfor -%}
+
             </ul>
 
             {%- if paginate.pages > 1 -%}
@@ -218,7 +227,7 @@
 <script>
 const endlessCollection = new Ajaxinate({
 container: '#product-grid',
-pagination: '.infinite_next',
+pagination: '.infinite_next'
 });
 </script>
 
