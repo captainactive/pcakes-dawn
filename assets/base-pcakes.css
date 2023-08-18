@@ -36,6 +36,12 @@ h2 {
   font-size: 80%;
   color: rgb(var(--color-foreground));
 }
+
+.tinytextdark {
+  font-size: 80%;
+  color: #424242;
+}
+
 .purpletext {
 	color:#8a54a8;	
 }
