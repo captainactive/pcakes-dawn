@@ -49,12 +49,17 @@
             <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.order.total' | t }}</th>
           </tr>
         </thead>
+
+
+        
         <tbody role="rowgroup">
           {%- for line_item in order.line_items -%} 
           
           
             {% if line_item.product.tags contains "mod-hide" %}
   test
+
+          {% else %}
           {% endif %}
             <tr role="row">
               <td
@@ -231,6 +236,9 @@
               </td>
             </tr>
           {%- endfor -%}
+
+
+                              
         </tbody>
         <tfoot role="rowgroup">
           <tr role="row">
