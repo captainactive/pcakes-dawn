@@ -484,6 +484,9 @@
       },
       "payment": {
         "same_billing_address_label": "Same as Delivery Address"
+      },
+      "order_payment_collection": {
+        "pay_now": "Complete Checkout"
       }
     }
   }
