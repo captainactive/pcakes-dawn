@@ -62,6 +62,7 @@
       {% assign ddate = ddate | date: "%a, %b %d, %Y" %}
         {%  assign putime = order.attributes.Pickup-Time %}
         {%  assign pudate = order.attributes.Pickup-Date %}
+  {% assign pudate = pudate | date: "%a, %b %d, %Y" %}
 {% endif %}
 
 <h3> {{order.attributes["Order Fulfillment Type"]}} {{order.attributes["Checkout-Method"]}} </h3>
