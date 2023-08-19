@@ -34,7 +34,11 @@
     <div>
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
 
+{% for attribute in attributes -%}
 
+      {{ attribute }}
+{%- endfor %}
+      
       {{ customer.order.attributes.order-fulfillment-type}}
 
       {{ customer.order.attributes['Order Fulfillment Type']}}
