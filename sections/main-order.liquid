@@ -51,7 +51,7 @@
         </thead>
         <tbody role="rowgroup">
           {%- for line_item in order.line_items -%} 
-
+          {{ line_item.properties }}
           {{ line_item.properties._boldVariantIds }}
               {% if line_item.properties._boldVariantIds %}
   test
