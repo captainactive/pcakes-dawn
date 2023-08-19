@@ -957,7 +957,7 @@ justify-items: center;
 
 
 
-.menu-drawer__inner-submenu.menu-drawer__menu li a {
+.menu-drawer__inner-submenu.menu-drawer__menu ul li a {
   border-bottom: 1px solid #ffffff;
 }
 
