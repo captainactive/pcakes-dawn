@@ -60,7 +60,7 @@
   test
 
           {% else %}
-          {% endif %}
+         
             <tr role="row">
               <td
                 id="Row{{ line_item.key }}"
@@ -235,6 +235,8 @@
                 {%- endif -%}
               </td>
             </tr>
+			
+			 {% endif %}
           {%- endfor -%}
 
 
