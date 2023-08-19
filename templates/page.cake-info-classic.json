@@ -37,7 +37,7 @@
     "9629d87c-f498-4fcc-89a0-54e3c68a1ab9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\t<h2>Custom Cake Icing<\/h2>\n\t<p>We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\n\t\t<a class=\"helpbox\" href=\"\/pages\/cake-flavor-chart\" title=\"popular flavors\">\n\t\t<p class=\"head\">Need help choosing a flavor combination? <\/p>\n\t\t<p>Get fancy with our cake flavor chart.<\/p>\n\t <\/a>\n\n<\/div>",
+        "custom_liquid": "<div class=\"page-width info-pages\">\t\n\t\n\t<h2>Custom Cake Icing<\/h2>\n\t<p>We ice our cakes in a light, airy icing, instead of hard fondant or overly sugary buttercream. Our light icing provides the perfect balance for flavor and texture as a topper and filling to our cakes.<\/p>\n\n\t\t<a class=\"helpbox\" href=\"\/pages\/cake-flavor-guide\" title=\"popular flavors\">\n\t\t<p class=\"head\">Need help choosing a flavor combination? <\/p>\n\t\t<p>Get fancy with our cake flavor chart.<\/p>\n\t <\/a>\n\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
