@@ -51,6 +51,9 @@
         </thead>
         <tbody role="rowgroup">
           {%- for line_item in order.line_items -%}
+              {% if line.properties._boldVariantIds %}
+  test
+          {% endif %}
             <tr role="row">
               <td
                 id="Row{{ line_item.key }}"
