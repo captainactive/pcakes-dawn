@@ -50,8 +50,8 @@
           </tr>
         </thead>
         <tbody role="rowgroup">
-          {%- for line_item in order.line_items -%} !!!
-              {% if line.properties._boldVariantIds %}
+          {%- for line_item in order.line_items -%} 
+              {% if line_item.properties._boldVariantIds %}
   test
           {% endif %}
             <tr role="row">
