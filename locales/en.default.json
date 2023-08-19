@@ -461,6 +461,9 @@
         "blocks": {
           "contact_method_title": "Contact!"
         }
+      },
+      "contact": {
+        "contact_method_title": "Or enter your email address and Credit Card info"
       }
     }
   }
