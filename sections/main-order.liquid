@@ -52,17 +52,21 @@
         {%   assign putime = order.attributes["Order Due Time"] %}
         {%   assign pudate = order.attributes["Order Due Date"] %}
    {% else %}
-        {%  assign dtime = order.attributes["Order Due Time"] %}
-        {% assign ddate = order.attributes["Order Due Date"] %}
+        {%  assign putime = order.attributes["Order Due Time"] %}
+        {% assign pudate = order.attributes["Order Due Date"] %}
       
    {% endif %}               
 {% else %}
-        {%  assign dtime = order.attributes.Delivery-Time %}
-        {%  assign ddate = order.attributes.Delivery-Date %}
-      {% assign ddate = ddate | date: "%a, %b %d, %Y" %}
-        {%  assign putime = order.attributes.Pickup-Time %}
-        {%  assign pudate = order.attributes.Pickup-Date %}
-  {% assign pudate = pudate | date: "%a, %b %d, %Y" %}
+
+         {% if order.attributes["Checkout-Method"] == "pickup" %}
+            {%  assign putime = order.attributes.Pickup-Time %}
+            {%  assign pudate = order.attributes.Pickup-Date %}
+            {% assign pudate = pudate | date: "%a, %b %d, %Y" %}
+        {% else %}
+            {%  assign putime = order.attributes.Delivery-Time %}
+            {%  assign pudate = order.attributes.Delivery-Date %}
+            {% assign pudate = ddate | date: "%a, %b %d, %Y" %}
+        {% endif %} 
 {% endif %}
 
 <h3> {{order.attributes["Order Fulfillment Type"]}} {{order.attributes["Checkout-Method"]}} </h3>
