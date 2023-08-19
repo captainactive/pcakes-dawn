@@ -53,7 +53,7 @@
           {%- for line_item in order.line_items -%} 
           
           
-              {% if line_item.properties._boldVariantIds %}
+            {% if line_item.product.tags contains "mod-hide" %}
   test
           {% endif %}
             <tr role="row">
