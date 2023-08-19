@@ -42,6 +42,7 @@
       {{ customer.order.attributes.order-fulfillment-type}}
 
       {{ customer.order.note_attributes["Order Due Date"]}}2
+       {{ customer.order.attributes}}///
 
       
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
