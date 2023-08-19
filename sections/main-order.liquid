@@ -34,7 +34,7 @@
     <div>
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
 
-{% for attribute in customer.order.attributes -%}
+{% for attribute in order.attributes -%}
 
       {{ attribute }}/
 {%- endfor %}
@@ -42,7 +42,7 @@
       {{ customer.order.attributes.order-fulfillment-type}}
 
       {{ customer.order.note_attributes["Order Due Date"]}}2
-       {{ customer.order.tags}}///
+       {{ order.tags}}///
 
       
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
