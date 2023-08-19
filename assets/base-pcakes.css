@@ -957,8 +957,8 @@ justify-items: center;
 
 
 
-.menu-drawer__inner-submenu .menu-drawer__menu ul li a {
- /* border-bottom: 1px solid #ffffff;*/
+.list-menu__item {
+  line-height: 20px;
 }
 .menu-drawer__inner-submenu ul li a {
   border-bottom: 1px solid rgba(255,255,255,0.5);
