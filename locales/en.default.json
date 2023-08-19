@@ -467,7 +467,7 @@
         "contact_method_title": "Or Enter Your Email Address and Credit Card Info."
       },
       "delivery_options": {
-        "shipping_address": "Delivery Address, If this is a Pickup, Enter the Billing Address",
+        "shipping_address": "Delivery Address |  If this is a Pickup, Enter your Billing Address",
         "none_method_definition": "No Delivery"
       },
       "general": {
