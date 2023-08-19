@@ -69,8 +69,9 @@
         {% endif %} 
 {% endif %}
 
-<h3> {{order.attributes["Order Fulfillment Type"]}} {{order.attributes["Checkout-Method"]}} </h3>
-<p>Date: {{ pudate}} at {{ putime }} </p>
+<h3> Order Type</h3>
+  <p>Method: {{order.attributes["Order Fulfillment Type"]}} {{order.attributes["Checkout-Method"]}} </p>
+  <p>Date: {{ pudate}} at {{ putime }} </p>
 
 
       <br><br>
