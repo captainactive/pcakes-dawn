@@ -952,13 +952,8 @@ justify-items: center;
 /* NAVIGATION */
 
   .list-menu__item {
-	line-height: calc(.9 / var(--font-body-scale))!important;
+	line-height: calc(1.2 / var(--font-body-scale))!important;
   }
-
-
-.list-menu__item {
-  line-height: 20px;
-}
 .menu-drawer__inner-submenu ul li a {
   border-bottom: 1px solid rgba(255,255,255,0.5);
 }
