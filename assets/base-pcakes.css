@@ -962,7 +962,10 @@ justify-items: center;
   border-bottom: none;
 }
 
-
+.menu-drawer__menu-item {
+  padding: .9rem 3.2rem
+  
+}
 
 *:focus-visible {
   outline-offset: initial;
