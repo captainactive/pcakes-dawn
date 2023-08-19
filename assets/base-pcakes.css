@@ -955,7 +955,9 @@ justify-items: center;
 	line-height: calc(.7 / var(--font-body-scale))!important;
   }
 
-.menu-drawer__menu li a {
+.menu-drawer__menu li a {}
+
+.menu-drawer__menu-item .link .link--text .list-menu__item {
   border-bottom: 1px solid #ffffff;
 }
 
