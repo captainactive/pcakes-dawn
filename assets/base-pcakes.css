@@ -964,6 +964,10 @@ justify-items: center;
   border-bottom: 1px solid #ffffff;
 }
 
+.menu-drawer__inner-submenu ul li ul li a {
+  border-bottom: none;
+}
+
 
 
 *:focus-visible {
