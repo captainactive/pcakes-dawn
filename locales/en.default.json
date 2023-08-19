@@ -464,6 +464,9 @@
       },
       "contact": {
         "contact_method_title": "Or enter your email address and credit card info."
+      },
+      "delivery_options": {
+        "shipping_address": "Delivery Address , if Pickup, Enter Billing Address"
       }
     }
   }
