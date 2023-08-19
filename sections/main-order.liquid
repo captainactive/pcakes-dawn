@@ -12,6 +12,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .center {
+    text-align: center;
+  }
+  
 {%- endstyle -%}
 
 <div class="customer order section-{{ section.id }}-padding">
@@ -207,6 +212,7 @@
                 headers="Row{{ line_item.key }} ColumnQuantity"
                 role="cell"
                 data-label="{{ 'customer.order.quantity' | t }}"
+              class-="center"
               >
                 {{ line_item.quantity }}
               </td>
