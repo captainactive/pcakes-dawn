@@ -142,8 +142,8 @@ opacity: 1;
 }
 
 
-@media (max-width: 475px) {
-  .miniheadlinks_drop, .miniheadlinks_drop2 {
+@media (max-width: 485px) {
+  .miniheadlinks_drop {
     display: none;
   }
 }
