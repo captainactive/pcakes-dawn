@@ -54,6 +54,7 @@
    {% else %}
         {%  assign dtime = order.attributes["Order Due Time"] %}
         {% assign ddate = order.attributes["Order Due Date"] %}
+      {% assign ddate = ddate | date: "%a, %b %d, %Y" %}
    {% endif %}               
 {% else %}
         {%  assign dtime = order.attributes.Delivery-Time %}
