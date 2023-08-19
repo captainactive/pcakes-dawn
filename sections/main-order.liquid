@@ -62,7 +62,7 @@
         {%  assign pudate = order.attributes.Pickup-Date %}
 {% endif %}
 
-<h3> {{order.attributes["Order Fulfillment Type"]}}</h3>
+<h3> {{order.attributes["Order Fulfillment Type"]}} {{order.attributes["Checkout-Method"]}} </h3>
 <p>Date: {{ pudate}} at {{ putime }} </p>
 
 
