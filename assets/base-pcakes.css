@@ -141,11 +141,11 @@ opacity: 1;
   color: #e14984;
 }
 
+
+@media (max-width: 475px) {
   .miniheadlinks_drop {
     display: none;
   }
-@media (max-width: 400px) {
-
 }
 
 
