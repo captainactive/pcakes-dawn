@@ -949,11 +949,15 @@ justify-items: center;
     } 
 
 
+/* NAVIGATION */
 
   .list-menu__item {
 	line-height: calc(.7 / var(--font-body-scale))!important;
   }
 
+.menu-drawer__menu li a {
+  border-bottom: 1px solid #ffffff;
+}
 
 
 
