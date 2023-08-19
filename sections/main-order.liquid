@@ -40,10 +40,13 @@
 {%- endfor %}
       <br>
       {{ customer.order.attributes.order-fulfillment-type}}
+<br>
+      {{ order.note_attributes["Order Due Date"]}} \\\
 
-      {{ order.note_attributes["Order Due Date"]}}2
+      <br>
        {{ order.tags}}///
 
+    
       
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
