@@ -142,9 +142,9 @@ opacity: 1;
 }
 
 @media (max-width: 400px) {
-.miniheadlinks-drop {
-  display: none;
-}
+  .miniheadlinks-drop {
+    display: none;
+  }
 }
 
 
