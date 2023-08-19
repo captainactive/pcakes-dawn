@@ -459,7 +459,8 @@
     "checkout": {
       "review": {
         "blocks": {
-          "contact_method_title": "Contact!"
+          "contact_method_title": "Contact",
+          "shipping_address_title": "Delivery or Billing"
         }
       },
       "contact": {
