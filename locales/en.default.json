@@ -475,8 +475,10 @@
         "choose_shipping_method": "Choose a method"
       },
       "order_summary": {
-        "free_shipping_discount_label": "Free Delivery",
-        "shipping_label": "Method"
+        "free_shipping_discount_label": "Free Delivery"
+      },
+      "shipping": {
+        "title": "Method"
       }
     }
   }
