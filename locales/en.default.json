@@ -481,6 +481,9 @@
       "shipping": {
         "title": "Method",
         "shipping_method_title": "Pickup\/Delivery Method"
+      },
+      "payment": {
+        "same_billing_address_label": "Same as Delivery Address"
       }
     }
   }
