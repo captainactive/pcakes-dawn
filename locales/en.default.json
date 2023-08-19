@@ -478,7 +478,8 @@
         "free_shipping_discount_label": "Free Delivery"
       },
       "shipping": {
-        "title": "Method"
+        "title": "Method",
+        "shipping_method_title": "Pickup\/Delivery Method"
       }
     }
   }
