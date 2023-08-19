@@ -952,9 +952,8 @@ justify-items: center;
 /* NAVIGATION */
 
   .list-menu__item {
-	line-height: calc(.7 / var(--font-body-scale))!important;
+	line-height: calc(.9 / var(--font-body-scale))!important;
   }
-
 
 
 .list-menu__item {
