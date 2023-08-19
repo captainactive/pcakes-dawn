@@ -961,7 +961,7 @@ justify-items: center;
  /* border-bottom: 1px solid #ffffff;*/
 }
 .menu-drawer__inner-submenu ul li a {
-  border-bottom: 1px solid rgba(var(--color-foreground),.04);
+  border-bottom: 1px solid rgba(255,255,255),.04);
 }
 
 .menu-drawer__inner-submenu ul li ul li a {
