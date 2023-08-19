@@ -46,6 +46,30 @@
       <br>
        {{ order.tags}}///
 
+
+{% if order.attributes["Order Due Time"] %}
+    {% if order.attributes["Order Fulfillment Type"] == "Store Pickup" %}
+        {%   assign putime = order.attributes["Order Due Time"] %}
+        {%   assign pudate = order.attributes["Order Due Date"] %}
+   {% else %}
+        {%  assign dtime = order.attributes["Order Due Time"] %}
+        {% assign ddate = order.attributes["Order Due Date"] %}
+   {% endif %}               
+{% else %}
+        {%  assign dtime = order.attributes.Delivery-Time %}
+        {%  assign ddate = order.attributes.Delivery-Date %}
+        {%  assign putime = order.attributes.Pickup-Time %}
+        {%  assign pudate = order.attributes.Pickup-Date %}
+{% endif %}
+
+
+{{ putime }} 
+{{ pudate}}
+
+
+      
+
+      
     
       
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
