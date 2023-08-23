@@ -55,15 +55,13 @@ var open = window.XMLHttpRequest.prototype.open;
 function openReplacement(method, url, async, user, password) { 
   console.log('XHR', method, url)
   this.addEventListener('load', function(event){ 
-    if(method === 'POST' && url === "https://wholesalecheckout.digitalcoo.com/checkout/v6/pre" && !isWholeAppRequestListened) { 
+    if(method === 'GET' && url === "/cart.js" && !isCartjsListened) { 
       console.log("disableCheckout")
-      isWholeAppRequestListened = true;
+      isCartjsListened = true;
       disableCheckout();
       setTimeout(function(){disableCheckout()}, 100);
       setTimeout(function(){disableCheckout()}, 200);
-      setTimeout(function(){disableCheckout()}, 300);
-      setTimeout(function(){disableCheckout()}, 400);
-      setTimeout(function(){disableCheckout()}, 500);
+      
     } 
   }); 
   return open.apply(this, arguments); 
