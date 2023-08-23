@@ -48,20 +48,6 @@ function disableCheckout() {
 };
 disableCheckout();
 
-//Request Listener for XHR type
-/* For XHR */ 
-var open = window.XMLHttpRequest.prototype.open; 
-function openReplacement(method, url, async, user, password) { 
-  console.log('XHR', method, url)
-  this.addEventListener('load', function(event){ 
-    if(method === 'GET' && url.indexOf('cart?view=ajax') !== -1) { 
-      disableCheckout(); 
-      setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 100); 
-    } 
-  }); 
-  return open.apply(this, arguments); 
-} 
-window.XMLHttpRequest.prototype.open = openReplacement;
 
 //Request Listener for fetch
 /* For Fetch */ 
@@ -70,9 +56,14 @@ fetch = async function(url, options) {
     console.log('Fetch', url);
     var promise = oldFetch(url, options);
   	await promise;
-    if (url.indexOf('cart?view=ajax') !== -1) {
+    if (url === "/cart/change") {
+            isCartjsListened = false;
             disableCheckout();
-            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 100); 
+            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
+    }
+  if (url === "/cart.js" && !isCartjsListened) {
+            disableCheckout();
+            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
     return promise;
 }
