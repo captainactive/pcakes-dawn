@@ -198,7 +198,7 @@
           "xhrRequestExactMatchTimeout": 500,
           "xhrRequestPartialMatch": "",
           "xhrRequestPartialMatchTimeout": 499,
-          "fetchRequestExactMatch": "\/cart.js",
+          "fetchRequestExactMatch": "",
           "fetchRequestExactMatchTimeout": 500,
           "fetchRequestPartialMatch": "",
           "fetchRequestPartialMatchimeout": 500,
