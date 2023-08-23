@@ -62,6 +62,7 @@ fetch = async function(url, options) {
             setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
   if (url === "/cart.js" && !isCartjsListened) {
+            isCartjsListened = true;
             disableCheckout();
             setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
