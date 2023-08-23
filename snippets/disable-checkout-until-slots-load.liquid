@@ -58,13 +58,13 @@ fetch = async function(url, options) {
     console.log('Fetch', url);
     var promise = oldFetch(url, options);
   	await promise;
-    if (url === "/cart/change") {
-            isCartjsListened = false;
-            disableCheckout();
-            setTimeout(function(){disableCheckout()}, 100);
-            setTimeout(function(){disableCheckout()}, 200); 
-            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
-    }
+    // if (url === "/cart/change") {
+    //         isCartjsListened = false;
+    //         disableCheckout();
+    //         setTimeout(function(){disableCheckout()}, 100);
+    //         setTimeout(function(){disableCheckout()}, 200); 
+    //         setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
+    // }
   if (url === "/cart.js" && !isCartjsListened) {
             isCartjsListened = true;
             disableCheckout();
