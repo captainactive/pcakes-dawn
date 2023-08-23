@@ -64,6 +64,8 @@ fetch = async function(url, options) {
   if (url === "/cart.js" && !isCartjsListened) {
             isCartjsListened = true;
             disableCheckout();
+            setTimeout(function(){if(typeof disableCheckout !== 'undefined')disableCheckout();}, 100);
+            setTimeout(function(){if(typeof disableCheckout !== 'undefined')disableCheckout();}, 200); 
             setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
     return promise;
