@@ -49,6 +49,24 @@ function disableCheckout() {
 };
 disableCheckout();
 
+//Request Listener for XHR type
+/* For XHR */ 
+var open = window.XMLHttpRequest.prototype.open; 
+function openReplacement(method, url, async, user, password) { 
+  console.log('XHR', method, url)
+  this.addEventListener('load', function(event){ 
+    if(method === 'GET' && url === "/cart.js" && !isCartjsListened) { 
+      console.log("disableCheckout")
+      isCartjsListened = true;
+      disableCheckout();
+      setTimeout(function(){disableCheckout()}, 100);
+      setTimeout(function(){disableCheckout()}, 200);
+      
+    } 
+  }); 
+  return open.apply(this, arguments); 
+} 
+window.XMLHttpRequest.prototype.open = openReplacement;
 
 //Request Listener for fetch
 /* For Fetch */ 
