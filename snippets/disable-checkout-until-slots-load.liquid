@@ -1,5 +1,6 @@
 <script>
 var isCartjsListened = false;
+var isWholeAppRequestListened = false;
 function disableCheckout() {
   //Polyfill for endsWith - starts
   if (!String.prototype.endsWith) {
@@ -55,9 +56,14 @@ var open = window.XMLHttpRequest.prototype.open;
 function openReplacement(method, url, async, user, password) { 
   console.log('XHR', method, url)
   this.addEventListener('load', function(event){ 
-    if(method === 'GET' && url.indexOf('cart?view=ajax') !== -1) { 
-      disableCheckout(); 
-      setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 100); 
+    if(method === 'POST' && url === "https://wholesalecheckout.digitalcoo.com/checkout/v6/pre" && !isWholeAppRequestListened) { 
+      isWholeAppRequestListened = true;
+      disableCheckout();
+      setTimeout(function(){disableCheckout()}, 100);
+      setTimeout(function(){disableCheckout()}, 200);
+      setTimeout(function(){disableCheckout()}, 300);
+      setTimeout(function(){disableCheckout()}, 400);
+      setTimeout(function(){disableCheckout()}, 500);
     } 
   }); 
   return open.apply(this, arguments); 
