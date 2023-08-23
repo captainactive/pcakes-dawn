@@ -79,6 +79,7 @@ fetch = async function(url, options) {
   	await promise;
     if (url === "/cart/change") {
             isCartjsListened = false;
+            isWholeAppRequestListened = false;
             disableCheckout();
             setTimeout(function(){disableCheckout()}, 100);
             setTimeout(function(){disableCheckout()}, 200); 
