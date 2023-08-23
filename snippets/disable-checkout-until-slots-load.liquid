@@ -60,15 +60,15 @@ fetch = async function(url, options) {
     if (url === "/cart/change") {
             isCartjsListened = false;
             disableCheckout();
-            setTimeout(function(){disableCheckout();}, 100);
-            setTimeout(function(){disableCheckout();}, 200); 
+            setTimeout(function(){disableCheckout()}, 100);
+            setTimeout(function(){disableCheckout()}, 200); 
             setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
   if (url === "/cart.js" && !isCartjsListened) {
             isCartjsListened = true;
             disableCheckout();
-            setTimeout(function(){disableCheckout();}, 100);
-            setTimeout(function(){if(disableCheckout();}, 200); 
+            setTimeout(function(){disableCheckout()}, 100);
+            setTimeout(function(){if(disableCheckout()}, 200); 
             setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
     }
     return promise;
