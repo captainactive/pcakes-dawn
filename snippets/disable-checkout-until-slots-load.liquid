@@ -8,7 +8,6 @@ if (document.body) {
             if (mutation.type === "attributes" && mutation.attributeName === "disabled" && document.querySelector(".slot-picker-loader") && mutation.target.disabled === false) {
                 mutation.target.disabled = true;
             }
-
         }
     });
     observer.observe(document.body, {
