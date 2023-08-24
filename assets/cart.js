@@ -43,7 +43,7 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     if(event?.srcElement?.id === "delivery-location-zip") 
-      console.log("Stop updating product quantity function - Pickeasy")
+      console.log("Stop updating product quantity - Pickeasy");
     else
       this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
