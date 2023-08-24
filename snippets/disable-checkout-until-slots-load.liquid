@@ -24,6 +24,7 @@ function disableCheckout() {
       }
     }
   }
+  console.log("cartForms",cartForms)
   if(cartForms.length) {
     var checkoutButton1 = cartForms[0].querySelector("button[name='checkout'][type='submit']");
     if(checkoutButton1) {
