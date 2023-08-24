@@ -42,8 +42,8 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    if(event.srcElement.id !== "delivery-location-zip")
-    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    if(event?.srcElement?.id !== "delivery-location-zip")
+      this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
 
   onCartUpdate() {
