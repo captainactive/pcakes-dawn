@@ -1,6 +1,20 @@
 <script>
 var isCartjsListened = false;
 var isWholeAppRequestListened = false;
+MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+if (document.body) {
+    var observer = new MutationObserver(function (mutations, observer) {
+        for (const mutation of mutations) {
+            if (mutation.type === "attributes" && mutation.attributeName === "disabled" && document.querySelector(".slot-picker-loader") && mutation.target.disabled === false) {
+                mutation.target.disabled = true;
+            }
+
+        }
+    });
+    observer.observe(document.body, {
+        attributes: true, childList: true, subtree: true
+    });
+}
 function disableCheckout() {
         var checkoutButtonsInPage1 = document.querySelectorAll("button[name='checkout'][type='submit']");
         var checkoutButtonsInPage2 = document.querySelectorAll("input[name='checkout'][type='submit']");
