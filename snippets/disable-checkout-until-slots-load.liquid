@@ -1,54 +1,34 @@
 <script>
 var isCartjsListened = false;
-function disableCheckout() {
-  //Polyfill for endsWith - starts
-  if (!String.prototype.endsWith) {
-    String.prototype.endsWith = function(search, this_len) {
-      if (this_len === undefined || this_len > this.length) {
-        this_len = this.length;
-      }
-      return this.substring(this_len - search.length, this_len) === search;
-    };
-  }
-  //Polyfill for endsWith - ends
-  var cartForms = [];
-  var formsInPage = document.querySelectorAll('form');
-  console.log("formsInPage",formsInPage)
-  if(formsInPage) {
-    for(var i = 0; i < formsInPage.length; i++) {
-      if(
-        (formsInPage[i].method === 'post') && 
-        (formsInPage[i].action.endsWith('/cart') || formsInPage[i].action.endsWith('/cart/') || formsInPage[i].action.indexOf('/cart?') > -1)
-      ) {
-        cartForms.push(formsInPage[i]);
-      }
-    }
-  }
-  if(cartForms.length) {
-    var checkoutButton1 = cartForms[0].querySelector("button[name='checkout'][type='submit']");
-    if(checkoutButton1) {
-      checkoutButton1.disabled = true;
-    } else {
-      checkoutButton1 = cartForms[0].querySelector("input[name='checkout'][type='submit']");
-      if(checkoutButton1){
-        checkoutButton1.disabled = true;
-      }
-    }
-    if(cartForms.length > 1) {
-      var checkoutButton2 = cartForms[1].querySelector("button[name='checkout'][type='submit']");
-      if(checkoutButton2) {
-        checkoutButton2.disabled = true;
-      } else {
-        checkoutButton2 = cartForms[1].querySelector("input[name='checkout'][type='submit']");
-        if(checkoutButton2){
-          checkoutButton2.disabled = true;
+var isWholeAppRequestListened = false;
+MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+if (document.body) {
+    var observer = new MutationObserver(function (mutations, observer) {
+        for (const mutation of mutations) {
+            if (mutation.type === "attributes" && mutation.attributeName === "disabled" && document.querySelector(".slot-picker-loader") && mutation.target.disabled === false) {
+                mutation.target.disabled = true;
+            }
         }
-      }
-    }
-  }
+    });
+    observer.observe(document.body, {
+        attributes: true, childList: true, subtree: true
+    });
+}
+function disableCheckout() {
+        var checkoutButtonsInPage1 = document.querySelectorAll("button[name='checkout'][type='submit']");
+        var checkoutButtonsInPage2 = document.querySelectorAll("input[name='checkout'][type='submit']");
+        if(checkoutButtonsInPage1 && checkoutButtonsInPage1.length) {
+            checkoutButtonsInPage1[0].disabled = true;
+            if(checkoutButtonsInPage1.length > 1)
+                checkoutButtonsInPage1[1].disabled = true;
+        } 
+        if(checkoutButtonsInPage2 && checkoutButtonsInPage2.length) {
+            checkoutButtonsInPage2[0].disabled = true;
+            if(checkoutButtonsInPage2.length > 1)
+                checkoutButtonsInPage2[1].disabled = true;
+        } 
 };
 disableCheckout();
-
 
 
 //Request Listener for fetch
@@ -58,13 +38,15 @@ fetch = async function(url, options) {
     console.log('Fetch', url);
     var promise = oldFetch(url, options);
   	await promise;
-    // if (url === "/cart/change") {
-    //         isCartjsListened = false;
-    //         disableCheckout();
-    //         setTimeout(function(){disableCheckout()}, 100);
-    //         setTimeout(function(){disableCheckout()}, 200); 
-    //         setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
-    // }
+    if (url === "/cart/change") {
+            isCartjsListened = false;
+            isWholeAppRequestListened = false;
+            disableCheckout();
+            setTimeout(function(){disableCheckout()}, 100);
+            setTimeout(function(){disableCheckout()}, 200); 
+            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
+    }
+ 
   if (url === "/cart.js" && !isCartjsListened) {
             isCartjsListened = true;
             disableCheckout();

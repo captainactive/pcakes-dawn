@@ -42,7 +42,10 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    if(event?.srcElement?.id === "delivery-location-zip") 
+      console.log("Stop updating product quantity - Pickeasy");
+    else
+      this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
   }
 
   onCartUpdate() {
