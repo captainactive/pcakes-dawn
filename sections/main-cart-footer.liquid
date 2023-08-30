@@ -80,7 +80,11 @@
                 </button>
               </div>
 
-             
+              {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">
+              {{ content_for_additional_checkout_buttons }}
+              </div>
+              {% endif %}
           {%- endcase -%}
         {% endfor %}
 
