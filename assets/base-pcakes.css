@@ -976,4 +976,8 @@ justify-items: center;
   font-size: 3rem !important;
 }
 
+.additional-checkout-buttons {
+  display: none!important;
+}
+}
 
