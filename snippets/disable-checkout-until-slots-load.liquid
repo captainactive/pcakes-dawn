@@ -1,0 +1,77 @@
+<script>
+var isCartjsListened = false;
+function disableCheckout() {
+  //Polyfill for endsWith - starts
+  if (!String.prototype.endsWith) {
+    String.prototype.endsWith = function(search, this_len) {
+      if (this_len === undefined || this_len > this.length) {
+        this_len = this.length;
+      }
+      return this.substring(this_len - search.length, this_len) === search;
+    };
+  }
+  //Polyfill for endsWith - ends
+  var cartForms = [];
+  var formsInPage = document.querySelectorAll('form');
+  console.log("formsInPage",formsInPage)
+  if(formsInPage) {
+    for(var i = 0; i < formsInPage.length; i++) {
+      if(
+        (formsInPage[i].method === 'post') && 
+        (formsInPage[i].action.endsWith('/cart') || formsInPage[i].action.endsWith('/cart/') || formsInPage[i].action.indexOf('/cart?') > -1)
+      ) {
+        cartForms.push(formsInPage[i]);
+      }
+    }
+  }
+  if(cartForms.length) {
+    var checkoutButton1 = cartForms[0].querySelector("button[name='checkout'][type='submit']");
+    if(checkoutButton1) {
+      checkoutButton1.disabled = true;
+    } else {
+      checkoutButton1 = cartForms[0].querySelector("input[name='checkout'][type='submit']");
+      if(checkoutButton1){
+        checkoutButton1.disabled = true;
+      }
+    }
+    if(cartForms.length > 1) {
+      var checkoutButton2 = cartForms[1].querySelector("button[name='checkout'][type='submit']");
+      if(checkoutButton2) {
+        checkoutButton2.disabled = true;
+      } else {
+        checkoutButton2 = cartForms[1].querySelector("input[name='checkout'][type='submit']");
+        if(checkoutButton2){
+          checkoutButton2.disabled = true;
+        }
+      }
+    }
+  }
+};
+disableCheckout();
+
+
+
+//Request Listener for fetch
+/* For Fetch */ 
+var oldFetch = fetch;  // must be on the global scope
+fetch = async function(url, options) {
+    console.log('Fetch', url);
+    var promise = oldFetch(url, options);
+  	await promise;
+    // if (url === "/cart/change") {
+    //         isCartjsListened = false;
+    //         disableCheckout();
+    //         setTimeout(function(){disableCheckout()}, 100);
+    //         setTimeout(function(){disableCheckout()}, 200); 
+    //         setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
+    // }
+  if (url === "/cart.js" && !isCartjsListened) {
+            isCartjsListened = true;
+            disableCheckout();
+            setTimeout(function(){disableCheckout()}, 100);
+            setTimeout(function(){disableCheckout()}, 200); 
+            setTimeout(function(){if(typeof loadSlots !== 'undefined')loadSlots();}, 500); 
+    }
+    return promise;
+}
+</script>
