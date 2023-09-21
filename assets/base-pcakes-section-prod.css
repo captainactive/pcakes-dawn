@@ -405,7 +405,9 @@ border-radius: 4px;
 	padding-top: 20px;
 }
 
-.yotpo-review-right-panel {}
+.yotpo-review-right-panel {
+  text-align: start;
+}
 
 
 /*  ///////////// BULK DISCOUNT  //////////    */
