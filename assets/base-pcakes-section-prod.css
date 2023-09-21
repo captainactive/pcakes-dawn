@@ -387,7 +387,7 @@ border-radius: 4px;
     display: grid !important;
   	grid-row-gap: 10px;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 40px;
 }
 
 .yotpo-review-rating-title {
@@ -400,16 +400,16 @@ border-radius: 4px;
 }
 
 .yotpo-bottom-line-summary {
-  display: block;
+  display: block!important;
 }
 .yotpo-review-title {
   margin-left:0px !important;
 }
 .yotpo-bottom-line {
-  margin:0;
+  margin:0!important;
 }
 .yotpo-bottom-line-right-panel {
-  padding-right: 0px;
+  padding-right: 0px!important;
 }
 
 .yotpo-review {
