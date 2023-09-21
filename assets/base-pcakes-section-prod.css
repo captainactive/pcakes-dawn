@@ -375,6 +375,9 @@ border-radius: 4px;
 
 /* YOTPO NEW DETAILS */
 
+.yotpo-head {
+  margin-top: 0;!important;
+}
 .yotpo-reviews-trademark, .yotpo-reviews-by, .yotpo-headline {
   display: none !important;
 }
