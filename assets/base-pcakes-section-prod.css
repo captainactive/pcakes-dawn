@@ -383,6 +383,13 @@ border-radius: 4px;
   margin-bottom: 0!important;
 }
 
+.yotpo-layout-header-wrapper {
+    display: grid !important;
+  	grid-row-gap: 10px;
+	grid-column-gap: 1fr 1fr;
+	grid-template-rows:  1fr;
+}
+
 .yotpo-review-rating-title {
   display: grid !important;
   	grid-row-gap: 10px;
