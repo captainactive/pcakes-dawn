@@ -384,10 +384,10 @@ border-radius: 4px;
 }
 
 .yotpo-review-rating-title {
-  display: grid;
+  display: grid !important;
   	grid-row-gap: 25px;
 	grid-column-gap: 25px;
-	grid-template-rows: 1fr ;
+	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr;
 	padding-top: 30px;
 }
