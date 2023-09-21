@@ -396,7 +396,7 @@ border-radius: 4px;
   margin-left:0px !important;
 }
 
-.yotpo-review {
+.yotpo-reviewxx {
     display: grid !important;
   	grid-row-gap: 10px;
 	grid-column-gap: 25px;
@@ -405,7 +405,7 @@ border-radius: 4px;
 	padding-top: 20px;
 }
 
-.yotpo-review-right-panel
+.yotpo-review-right-panel {}
 
 
 /*  ///////////// BULK DISCOUNT  //////////    */
