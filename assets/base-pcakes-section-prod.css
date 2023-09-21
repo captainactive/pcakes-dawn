@@ -387,7 +387,7 @@ border-radius: 4px;
   display: grid !important;
   	grid-row-gap: 10px;
 	grid-column-gap: 25px;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 20px 1fr;
 	grid-template-columns: 1fr;
 	padding-top: 20px;
 }
@@ -395,6 +395,17 @@ border-radius: 4px;
 .yotpo-review-title {
   margin-left:0px !important;
 }
+
+.yotpo-review {
+    display: grid !important;
+  	grid-row-gap: 10px;
+	grid-column-gap: 25px;
+	grid-template-rows: 60px 1fr 20px;
+	grid-template-columns: 1fr;
+	padding-top: 20px;
+}
+
+.yotpo-review-right-panel
 
 
 /*  ///////////// BULK DISCOUNT  //////////    */
