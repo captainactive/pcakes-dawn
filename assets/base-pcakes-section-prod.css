@@ -386,7 +386,7 @@ border-radius: 4px;
 .yotpo-layout-header-wrapper {
     display: grid !important;
   	grid-row-gap: 10px;
-	grid-column-gap: 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
 }
 
@@ -399,8 +399,17 @@ border-radius: 4px;
 	padding-top: 10px;
 }
 
+.yotpo-bottom-line-summary {
+  display: block;
+}
 .yotpo-review-title {
   margin-left:0px !important;
+}
+.yotpo-bottom-line {
+  margin:0;
+}
+.yotpo-bottom-line-right-panel {
+  padding-right: 0px;
 }
 
 .yotpo-review {
@@ -410,6 +419,10 @@ border-radius: 4px;
 	grid-template-rows: 60px 1fr 20px;
 	grid-template-columns: 1fr;
 	padding-top: 20px;
+}
+
+.yotpo-new-review-btn-wrapper {
+  margin: auto;
 }
 
 .yotpo-review-right-panel {
