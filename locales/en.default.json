@@ -483,7 +483,7 @@
         "shipping_label": "Delivery\/Pickup"
       },
       "shipping": {
-        "title": "Method",
+        "title": "Delivery Address \/\/ If this is a Pickup, Enter your Billing Address",
         "shipping_method_title": "Pickup\/Delivery Method"
       },
       "payment": {
