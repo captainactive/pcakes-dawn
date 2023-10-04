@@ -290,6 +290,8 @@
    
     
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
   <body class="gradient">
@@ -447,5 +449,7 @@ Please ensure Javascript is enabled for purposes of
 </noscript>
 
 <!-- USER WAY ADA --> 
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>

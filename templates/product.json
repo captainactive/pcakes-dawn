@@ -215,6 +215,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -224,6 +229,7 @@
         "ab7148d0-d89c-4c9a-8708-3a8d16aec864",
         "caption",
         "price",
+        "loox-rating",
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
         "350680f0-8058-4d5b-94cc-38930f6b92e9",
@@ -319,7 +325,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -344,6 +349,7 @@
         "column-0",
         "column-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -381,7 +387,6 @@
     },
     "9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9": {
       "type": "multirow",
-      "disabled": true,
       "blocks": {
         "template--16655251996914__9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9-167840439498bfcf1c-0": {
           "type": "row",
@@ -398,6 +403,7 @@
       "block_order": [
         "template--16655251996914__9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9-167840439498bfcf1c-0"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "small",
         "desktop_image_width": "small",
@@ -419,6 +425,26 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -427,6 +453,7 @@
     "multicolumn",
     "related-products",
     "9dbfab90-f2c2-4581-9b7d-6c69f4f88ab9",
-    "1678407954a48f9a26"
+    "1678407954a48f9a26",
+    "loox-product-reviews-app-section"
   ]
 }
