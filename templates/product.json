@@ -144,7 +144,7 @@
             "icon": "star",
             "content": "",
             "page": "",
-            "liquid": "<div id=\"ReviewsWidget\"><\/div>"
+            "liquid": "{% render 'reviewsio_product-widget' %}"
           }
         },
         "fcebf180-2f2b-47fe-bd81-4bc2da9c2379": {
