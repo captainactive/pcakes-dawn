@@ -437,8 +437,7 @@ border-radius: 4px;
 
 /*REVIEWS.IO */
 .ruk_rating_snippet .ruk-rating-snippet-count {
-  font-size:18px;
-}
+  font-size:16px!important;}
 
 
 /*  ///////////// BULK DISCOUNT  //////////    */
