@@ -433,6 +433,14 @@ border-radius: 4px;
 }
 
 
+
+
+/*REVIEWS.IO */
+.ruk-rating-snippet-count {
+  font-size:18px;
+}
+
+
 /*  ///////////// BULK DISCOUNT  //////////    */
 
 table#wsaio-volume-discount--table {
