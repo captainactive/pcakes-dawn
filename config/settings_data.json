@@ -207,6 +207,14 @@
           "wsaio_custom_css_file": ""
         }
       },
+      "10830403595879607806": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "url_key": "shop.pattys-cakes.com",
+          "lang": "auto"
+        }
+      },
       "15316669992541710076": {
         "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
@@ -217,19 +225,11 @@
           "text": "Reviews",
           "line_break": false,
           "listen_for_changes": false,
-          "rating_without_brackets": false,
+          "rating_without_brackets": true,
           "format_review_count": false,
-          "show_popup": true,
+          "show_popup": false,
           "anchor_to_reviews_widget": false,
-          "show_empty_stars": true
-        }
-      },
-      "10830403595879607806": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "url_key": "shop.pattys-cakes.com",
-          "lang": "auto"
+          "show_empty_stars": false
         }
       }
     }
