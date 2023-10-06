@@ -241,11 +241,10 @@
 
  <!-- SNIP/CARD-PRODUCT - OKENDO REVIEWS  -->
         <div class="itemgrid4"> 
-         X
+         REVIEWS BELOW <!-- temp--> 
             {% if product != blank %} 
-   {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
-{% endif %} 
-
+                 {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ product.id }}"{% endcapture %} 
+            {% endif %} 
           <div data-oke-star-rating {{ product_data_attribute }}>{{ card_product.metafields.okendo.StarRatingSnippet }}</div>
         </div>
 
