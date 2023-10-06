@@ -243,6 +243,8 @@
         <div class="itemgrid4"> 
          
             {% render 'okendo-reviews-product-rating-summary', card_product: product %} XX
+
+          <div data-oke-star-rating {{ product_data_attribute }}>{{ card_product.metafields.okendo.StarRatingSnippet }}</div>
         </div>
 
         <!-- STARTING PRICE //// DELETED! -->  
