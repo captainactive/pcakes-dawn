@@ -48,8 +48,8 @@
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "show_heading": false,
-            "heading": "",
-            "badge_link": "",
+            "heading": "Customer Love",
+            "badge_link": "shopify:\/\/collections\/standard-cakes",
             "product": "red-velvet-standard-cake"
           }
         }
