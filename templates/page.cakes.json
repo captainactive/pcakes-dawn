@@ -172,8 +172,8 @@
       "type": "test-section",
       "settings": {
         "custom_text_title": "",
-        "custom_html": "",
-        "custom_text_body": "<p> <\/p><p> <\/p><p> <\/p><p> <\/p><p><\/p><p><\/p>"
+        "custom_html": "<div style=\"padding-bottom: 80px;\">\n<\/div>",
+        "custom_text_body": "<p><\/p><p><\/p><p><\/p>"
       }
     },
     "1696644384ed8d30f7": {
