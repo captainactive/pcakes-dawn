@@ -100,21 +100,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "0ad90e6e-8bab-4819-8ca8-ec6b1745dd92": {
-      "type": "test-section",
-      "settings": {
-        "custom_text_title": "Title",
-        "custom_html": "<p>html<\/p>test<script src=\"https:\/\/static.klaviyo.com\/onsite\/js\/klaviyo.js?company_id=W8wHpm\" type=\"text\/javascript\" async=\"\"><\/script>",
-        "custom_text_body": "<p>Add your text here<\/p>"
-      }
     }
   },
   "order": [
     "main",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
     "993835be-49b3-4691-bf02-7246ab619b3a",
-    "6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c",
-    "0ad90e6e-8bab-4819-8ca8-ec6b1745dd92"
+    "6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c"
   ]
 }
