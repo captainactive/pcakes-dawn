@@ -59,7 +59,7 @@
           <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
       {% endif %}
 
-      {% if customer.metafields.custom.rivo.value.status != "member1" %}
+      {% if customer.metafields.custom.rivo.value.status != "member" %}
           <H2>Join our loyalty program</H2>
           <p>Earn free dessert, get discounts, and more! Join today!</p>
           <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
@@ -78,16 +78,16 @@
   <!--h2>{{ 'customer.account.details' | t }}</h2-->
    <h2>Account Addresses</h2>
 
-  {{ customer.default_address | format_address }}
+      {{ customer.default_address | format_address }}
+      <a href="{{ routes.account_addresses_url }}">
+        {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+      </a>
+  </div> 
 
-  <a href="{{ routes.account_addresses_url }}">
-    {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
-  </a>
-</div> 
-       <br>   
-<br>
           
-<br>
+<br><br><br>
+
+          
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
