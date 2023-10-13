@@ -50,7 +50,11 @@
 
                     {{ customer.metafields.custom.rivo.value | json }}
 
-        
+        {% for item in customer.metafields.custom.rivo.value %}
+ {{item[0]}}<br/>
+{% endfor %}
+
+          
           {% for i in customer.metafields.custom.rivo.value %}
     <li>{{i.points_balance}} ({{i.vip_tier}})</li>
 {% endfor %}
