@@ -53,7 +53,7 @@
     <h2>Loyalty</h2>
     
       {% if customer.metafields.custom.rivo.value.status == "member" %}
-          <H3>Congrats you have {{ customer.metafields.custom.rivo.value.points_balance }} Points on {{ customer.metafields.custom.rivo.value.vip_tier }}! </H3>
+          <H3>You have {{ customer.metafields.custom.rivo.value.points_balance }} Points on {{ customer.metafields.custom.rivo.value.vip_tier }}! </H3>
           <p>View the loyalty program and redeem your points</p>
           <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
       {% endif %}
