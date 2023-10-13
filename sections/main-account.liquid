@@ -58,7 +58,8 @@
 
 
                           {% assign arr = customer.metafields.custom.rivo.value | split: "," %}
-{{ arr }}
+                          {% assign arr2 = arr | split: ":" %}
+{{ arr2 }}
           
 
 <div>   
