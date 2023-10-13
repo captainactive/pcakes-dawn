@@ -48,6 +48,12 @@
     </a>
   </div>
 
+                    {{ customer.metafields.custom.rivo.value | json }}
+
+
+                          {% assign arr = "foo bar coo" | split: " " %}
+{{ arr | json }}
+          
 
 <div>   
   <div>
@@ -190,8 +196,9 @@
       {% endpaginate %}
     </div>
 
-          {{ customer.metafields.custom.rivo.value }}
 
+
+                          
   </div>
 </div>
 
