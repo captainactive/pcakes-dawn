@@ -51,36 +51,30 @@
 {{customer.metafields.custom.rivo.value }}
 
           
-<div>   
-  <div>
     <h2>Loyalty</h2>
     
       {% if customer.metafields.custom.rivo.value.status == "member" %}
           <H3>Congrats you have {{ customer.metafields.custom.rivo.value.points_balance }} Points! </H3>
-
-      <p>View the loyalty program and redeem your points</p>
-      <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
-    
+          <p>View the loyalty program and redeem your points</p>
+          <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
       {% endif %}
 
       {% if customer.metafields.custom.rivo.value.status != "member1" %}
           <H2>Join our loyalty program</H2>
           <p>Earn free dessert, get discounts, and more! Join today!</p>
           <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
-    
       {% endif %}
     
+ 
+      <br><br><br>
    
-<br><br>
-
-      <br>
      <h2>Account Holder</h2>
       <p>{{ customer.name }}<br>
       {{ customer.email }}</p>
-  </div>
-</div>
+
 <br><br>
-<div>
+
+  <div>
   <!--h2>{{ 'customer.account.details' | t }}</h2-->
    <h2>Account Addresses</h2>
 
