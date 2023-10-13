@@ -57,7 +57,7 @@
 
 
 
-                          {% assign arr = customer.metafields.custom.rivo.value | split: "," %}
+                          {% assign arr = customer.metafields.custom.rivo.value | json | split: "," %}
                           {% assign arr2 = arr | split: ":" %}
 {{ arr2 }}
           
