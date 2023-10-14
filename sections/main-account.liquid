@@ -48,39 +48,45 @@
     </a>
   </div>
 
-                   
-
-   
-
-       
-
-<div>   
-  <div>
+<!--{{ customer.metafields.custom.rivo.value }}-->
+          
     <h2>Loyalty</h2>
-    <p>View your loyalty points and levels.</p>
-      <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
+    
+      {% if customer.metafields.custom.rivo.value.status == "member" %}
+          <H3>You have {{ customer.metafields.custom.rivo.value.points_balance }} Points on {{ customer.metafields.custom.rivo.value.vip_tier }}! </H3>
+          <p>View the loyalty program and redeem your points</p>
+          <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
+      {% endif %}
 
-      <br>
+      {% if customer.metafields.custom.rivo.value.status != "member" %}
+          <H2>Join our loyalty program</H2>
+          <p>Earn free dessert, get discounts, and more! Join today!</p>
+          <div> <a href="/pages/loyalty-program" class="pcakes-button">View Loyalty</a></div>
+      {% endif %}
+    
+ 
+      <br><br>
+   
      <h2>Account Holder</h2>
       <p>{{ customer.name }}<br>
       {{ customer.email }}</p>
-  </div>
-</div>
 
-<div>
+<br>
+
+  <div>
   <!--h2>{{ 'customer.account.details' | t }}</h2-->
    <h2>Account Addresses</h2>
 
-  {{ customer.default_address | format_address }}
+      {{ customer.default_address | format_address }}
+      <a href="{{ routes.account_addresses_url }}">
+        {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+      </a>
+  </div> 
 
-  <a href="{{ routes.account_addresses_url }}">
-    {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
-  </a>
-</div> 
-       <br>   
-<br>
           
+<br><br><br>
 
+          
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
