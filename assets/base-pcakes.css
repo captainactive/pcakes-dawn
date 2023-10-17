@@ -497,12 +497,14 @@ display: none;
 }
 }
 
-.banner__heading {
-  text-shadow: 1px 1px 8px #383838;
-}
-.subtitle {
-  color: #ffffff;
-  text-shadow: 1px 1px 4px #000;
+@media (min-width: 748px) {
+  .banner__heading {
+    text-shadow: 1px 1px 8px #383838;
+  }
+  .subtitle {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000;
+  }
 }
 
 
