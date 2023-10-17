@@ -62,20 +62,20 @@
     {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
     <!-- Display the active VIP tier card first on mobile -->
     {% case vip_tier %}
-      {% when Bronze' %}
+      {% when 'Tier 1' %}
         <div class="margin-top-40">
           <div class="rivo-vip_row">
             <!-- VIP Tier 1 -->
-      <div class="rivo-vip_card rivo-vip_tier-1">
-        <div class="rivo-vip_header">
-          <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
-          <h3 class="rivo-vip_name">{{ tier1 }}</h3>
-          <p class="rivo-vip_rule">Free to Join!</p>
-        </div>
-        <ul class="rivo-vip_list">
-          <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
-        </ul>
-      </div>
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Free to Join!</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
+              </ul>
+            </div>
             <!-- VIP Tier 2 -->
             <div class="rivo-vip_card rivo-vip_tier-2">
               <div class="rivo-vip_header">
@@ -92,21 +92,19 @@
             <!-- VIP Tier 3 -->
             <div class="rivo-vip_card rivo-vip_tier-3">
               <div class="rivo-vip_header">
-                <h3>{{ tier3 }}</h3>
-                <p class="rivo-vip_rule">Spend $500+</p>
+                <img src="{{ icon3 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $350</p>
               </div>
               <ul class="rivo-vip_list">
-                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
-                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
-                <li class="rivo-vip_list-item"><p>Early Access</p></li>
-                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
-                <li class="rivo-vip_list-item"><p>Free Returns</p></li>
-                <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+                <li class="rivo-vip_list-item"><p>1.50X Points Value</p></li>
+                <li class="rivo-vip_list-item"><p>100 Entry Bonus Points</p></li>
+                <li class="rivo-vip_list-item"><p>Exclusive Deals</p></li>
               </ul>
             </div>
           </div>
         </div>
-      {% when 'Silver' %}
+      {% when 'Tier 2' %}
         <div class="margin-top-40">
           <div class="rivo-vip_row">
             <!-- VIP Tier 2 -->
@@ -123,59 +121,58 @@
               </ul>
             </div>
             <!-- VIP Tier 1 -->
-      <div class="rivo-vip_card rivo-vip_tier-1">
-        <div class="rivo-vip_header">
-          <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
-          <h3 class="rivo-vip_name">{{ tier1 }}</h3>
-          <p class="rivo-vip_rule">Free to Join!</p>
-        </div>
-        <ul class="rivo-vip_list">
-          <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
-        </ul>
-      </div>
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Free to Join!</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
+              </ul>
+            </div>
             <!-- VIP Tier 3 -->
             <div class="rivo-vip_card rivo-vip_tier-3">
               <div class="rivo-vip_header">
-                <h3>{{ tier3 }}</h3>
-                <p class="rivo-vip_rule">Spend $500+</p>
+                <img src="{{ icon3 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $350</p>
               </div>
               <ul class="rivo-vip_list">
-                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
-                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
-                <li class="rivo-vip_list-item"><p>Early Access</p></li>
-                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
-                <li class="rivo-vip_list-item"><p>Free Returns</p></li>
-                <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+                <li class="rivo-vip_list-item"><p>1.50X Points Value</p></li>
+                <li class="rivo-vip_list-item"><p>100 Entry Bonus Points</p></li>
+                <li class="rivo-vip_list-item"><p>Exclusive Deals</p></li>
               </ul>
             </div>
           </div>
         </div>
-      {% when 'Gold' %}
+      {% when 'Tier 3' %}
         <div class="margin-top-40">
           <div class="rivo-vip_row">
             <!-- VIP Tier 3 -->
             <div class="rivo-vip_card rivo-vip_tier-3">
               <div class="rivo-vip_header">
-                <h3>{{ tier3 }}</h3>
-                <p class="rivo-vip_rule">Spend $800</p>
+                <img src="{{ icon3 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $350</p>
               </div>
               <ul class="rivo-vip_list">
-                <li class="rivo-vip_list-item"><p>Two Points Per Dollar</p></li>
-                <li class="rivo-vip_list-item"><p>150 Points Upon Entry</p></li>
-                <li class="rivo-vip_list-item"><p>100 Birthday Points</p></li>
+                <li class="rivo-vip_list-item"><p>1.50X Points Value</p></li>
+                <li class="rivo-vip_list-item"><p>100 Entry Bonus Points</p></li>
+                <li class="rivo-vip_list-item"><p>Exclusive Deals</p></li>
               </ul>
             </div>
             <!-- VIP Tier 1 -->
-      <div class="rivo-vip_card rivo-vip_tier-1">
-        <div class="rivo-vip_header">
-          <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
-          <h3 class="rivo-vip_name">{{ tier1 }}</h3>
-          <p class="rivo-vip_rule">Free to Join!</p>
-        </div>
-        <ul class="rivo-vip_list">
-          <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
-        </ul>
-      </div>
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+                <h3 class="rivo-vip_name">{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Free to Join!</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
+              </ul>
+            </div>
             <!-- VIP Tier 2 -->
             <div class="rivo-vip_card rivo-vip_tier-2">
               <div class="rivo-vip_header">
@@ -196,16 +193,16 @@
     <div class="margin-top-40">
       <div class="rivo-vip_row">
         <!-- VIP Tier 1 -->
-      <div class="rivo-vip_card rivo-vip_tier-1">
-        <div class="rivo-vip_header">
-          <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
-          <h3 class="rivo-vip_name">{{ tier1 }}</h3>
-          <p class="rivo-vip_rule">Free to Join!</p>
+        <div class="rivo-vip_card rivo-vip_tier-1">
+          <div class="rivo-vip_header">
+            <img src="{{ icon1 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+            <h3 class="rivo-vip_name">{{ tier1 }}</h3>
+            <p class="rivo-vip_rule">Free to Join!</p>
+          </div>
+          <ul class="rivo-vip_list">
+            <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
+          </ul>
         </div>
-        <ul class="rivo-vip_list">
-          <li class="rivo-vip_list-item"><p>1X Points Value</p></li>
-        </ul>
-      </div>
         <!-- VIP Tier 2 -->
         <div class="rivo-vip_card rivo-vip_tier-2">
           <div class="rivo-vip_header">
@@ -222,16 +219,14 @@
         <!-- VIP Tier 3 -->
         <div class="rivo-vip_card rivo-vip_tier-3">
           <div class="rivo-vip_header">
-            <h3>{{ tier3 }}</h3>
-            <p class="rivo-vip_rule">Spend $500+</p>
+            <img src="{{ icon3 }}" class="rivo-vip_header_icon" alt="Patty's Cupcake">
+            <h3 class="rivo-vip_name">{{ tier3 }}</h3>
+            <p class="rivo-vip_rule">Spend $350</p>
           </div>
           <ul class="rivo-vip_list">
-            <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
-            <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
-            <li class="rivo-vip_list-item"><p>Early Access</p></li>
-            <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
-            <li class="rivo-vip_list-item"><p>Free Returns</p></li>
-            <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+            <li class="rivo-vip_list-item"><p>1.50X Points Value</p></li>
+            <li class="rivo-vip_list-item"><p>100 Entry Bonus Points</p></li>
+            <li class="rivo-vip_list-item"><p>Exclusive Deals</p></li>
           </ul>
         </div>
       </div>
@@ -361,17 +356,17 @@
           {% if customer %}
             {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
             {% case vip_tier %}
-              {% when "Bronze" %}
+              {% when "Tier 1" %}
                 .rivo-vip_tier-1 {
                   background: #f7f3ef !important;
                 box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
                 }
-              {% when "Silver" %}
+              {% when "Tier 2" %}
                 .rivo-vip_tier-2 {
                   background: #f7f3ef !important;
                   box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
                 }
-              {% when "Gold" %}
+              {% when "Tier 3" %}
                 .rivo-vip_tier-3 {
                   background: #f7f3ef !important;
                   box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
