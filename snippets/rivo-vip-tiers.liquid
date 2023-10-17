@@ -1,0 +1,368 @@
+{% assign tiers = shop.metafields.rivo.loy.vip_program.tiers %}
+{% assign tier1 = tiers[0].name %}
+{% assign tier2 = tiers[1].name %}
+{% assign tier3 = tiers[2].name %}
+
+<div class="rivo-vip_desktop">
+  <div class="margin-top-40">
+    <div class="rivo-vip_row">
+      <!-- VIP Tier 1 -->
+      <div class="rivo-vip_card rivo-vip_tier-1">
+        <div class="rivo-vip_header">
+          <h3>{{ tier1 }}</h3>
+          <p class="rivo-vip_rule">Free to Join!</p>
+        </div>
+        <ul class="rivo-vip_list">
+          <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+          <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+          <li class="rivo-vip_list-item"><p>Early Access</p></li>
+        </ul>
+      </div>
+      <!-- VIP Tier 2 -->
+      <div class="rivo-vip_card rivo-vip_tier-2">
+        <div class="rivo-vip_header">
+          <h3>{{ tier2 }}</h3>
+          <p class="rivo-vip_rule">Spend $250+</p>
+        </div>
+        <ul class="rivo-vip_list">
+          <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+          <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+          <li class="rivo-vip_list-item"><p>Early Access to Limited Editions & New Products</p></li>
+          <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+        </ul>
+      </div>
+      <!-- VIP Tier 3 -->
+      <div class="rivo-vip_card rivo-vip_tier-3">
+        <div class="rivo-vip_header">
+          <h3>{{ tier3 }}</h3>
+          <p class="rivo-vip_rule">Spend $500+</p>
+        </div>
+        <ul class="rivo-vip_list">
+          <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+          <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+          <li class="rivo-vip_list-item"><p>Early Access to Limited Editions & New Products</p></li>
+          <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+          <li class="rivo-vip_list-item"><p>Free Returns</p></li>
+          <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+  On mobile, display the active VIP Tier first
+{% endcomment %}
+
+<div class="rivo-vip_mobile">
+  <!-- VIP Tiers Cards -->
+  {% if customer %}
+    {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
+    <!-- Display the active VIP tier card first on mobile -->
+    {% case vip_tier %}
+      {% when 'Bronze' %}
+        <div class="margin-top-40">
+          <div class="rivo-vip_row">
+            <!-- VIP Tier 1 -->
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <h3>{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Free to join!</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 2 -->
+            <div class="rivo-vip_card rivo-vip_tier-2">
+              <div class="rivo-vip_header">
+                <h3>{{ tier2 }}</h3>
+                <p class="rivo-vip_rule">Spend $250+</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 3 -->
+            <div class="rivo-vip_card rivo-vip_tier-3">
+              <div class="rivo-vip_header">
+                <h3>{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $500+</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+                <li class="rivo-vip_list-item"><p>Free Returns</p></li>
+                <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      {% when 'Silver' %}
+        <div class="margin-top-40">
+          <div class="rivo-vip_row">
+            <!-- VIP Tier 2 -->
+            <div class="rivo-vip_card rivo-vip_tier-2">
+              <div class="rivo-vip_header">
+                <h3>{{ tier2 }}</h3>
+                <p class="rivo-vip_rule">Spend $250+</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 1 -->
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <h3>{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Free to join!</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 3 -->
+            <div class="rivo-vip_card rivo-vip_tier-3">
+              <div class="rivo-vip_header">
+                <h3>{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $500+</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+                <li class="rivo-vip_list-item"><p>Free Returns</p></li>
+                <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      {% when 'Gold' %}
+        <div class="margin-top-40">
+          <div class="rivo-vip_row">
+            <!-- VIP Tier 3 -->
+            <div class="rivo-vip_card rivo-vip_tier-3">
+              <div class="rivo-vip_header">
+                <h3>{{ tier3 }}</h3>
+                <p class="rivo-vip_rule">Spend $800</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Two Points Per Dollar</p></li>
+                <li class="rivo-vip_list-item"><p>150 Points Upon Entry</p></li>
+                <li class="rivo-vip_list-item"><p>100 Birthday Points</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 1 -->
+            <div class="rivo-vip_card rivo-vip_tier-1">
+              <div class="rivo-vip_header">
+                <h3>{{ tier1 }}</h3>
+                <p class="rivo-vip_rule">Join for free</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>50 Points for Creating an Account</p></li>
+                <li class="rivo-vip_list-item"><p>50 Birthday Points</p></li>
+              </ul>
+            </div>
+            <!-- VIP Tier 2 -->
+            <div class="rivo-vip_card rivo-vip_tier-2">
+              <div class="rivo-vip_header">
+                <h3>{{ tier2 }}</h3>
+                <p class="rivo-vip_rule">Spend $250+</p>
+              </div>
+              <ul class="rivo-vip_list">
+                <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+                <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+                <li class="rivo-vip_list-item"><p>Early Access</p></li>
+                <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    {% endcase %}
+  {% else %}
+    <div class="margin-top-40">
+      <div class="rivo-vip_row">
+        <!-- VIP Tier 1 -->
+        <div class="rivo-vip_card rivo-vip_tier-1">
+          <div class="rivo-vip_header">
+            <h3>{{ tier1 }}</h3>
+            <p class="rivo-vip_rule">Free to join!</p>
+          </div>
+          <ul class="rivo-vip_list">
+            <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+            <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+            <li class="rivo-vip_list-item"><p>Early Access</p></li>
+          </ul>
+        </div>
+        <!-- VIP Tier 2 -->
+        <div class="rivo-vip_card rivo-vip_tier-2">
+          <div class="rivo-vip_header">
+            <h3>{{ tier2 }}</h3>
+            <p class="rivo-vip_rule">Spend $250+</p>
+          </div>
+          <ul class="rivo-vip_list">
+            <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+            <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+            <li class="rivo-vip_list-item"><p>Early Access</p></li>
+            <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+          </ul>
+        </div>
+        <!-- VIP Tier 3 -->
+        <div class="rivo-vip_card rivo-vip_tier-3">
+          <div class="rivo-vip_header">
+            <h3>{{ tier3 }}</h3>
+            <p class="rivo-vip_rule">Spend $500+</p>
+          </div>
+          <ul class="rivo-vip_list">
+            <li class="rivo-vip_list-item"><p>Earn 1 Point for every $1 spent</p></li>
+            <li class="rivo-vip_list-item"><p>Birthday Surprise</p></li>
+            <li class="rivo-vip_list-item"><p>Early Access</p></li>
+            <li class="rivo-vip_list-item"><p>Free Engraving*</p></li>
+            <li class="rivo-vip_list-item"><p>Free Returns</p></li>
+            <li class="rivo-vip_list-item"><p>Upgrade to Expedited Shipping**</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+    .rivo-vip_mobile {
+      display: none;
+    }
+
+    .rivo-vip_row {
+      display: flex;
+      overflow-x: auto;
+      padding: 40px 0;
+      width: 80%;
+      margin: 0 auto;
+      font-family: ITC Conduit, sans-serif !important;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .rivo-vip_row {
+        width: 100%;
+      }
+    }
+
+    .rivo-vip_card {
+      flex: 1; /* distribute the space equally among the cards */
+      width: calc(33.3333% - 10px); /* each card takes up roughly a third, minus a bit for the margin */
+      background-color: #dbe4eb;
+      margin-right: 15px; /* space between cards */
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border: 1px solid #003767;
+    }
+
+    .rivo-vip_header {
+      background: #FFF;
+      padding: 15px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .rivo-vip_row .rivo-vip_card:last-child {
+      margin-right: 0; /* remove margin from the last card to ensure it doesn't overflow */
+    }
+
+    .rivo-vip_card h3 {
+      margin-top: 0;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    .rivo-vip_list {
+      list-style-type: none;
+      padding: 40px 30px;
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+      margin: 0 !important;
+      text-align: left;
+    }
+
+    .rivo-vip_list-item {
+      text-transform: uppercase;
+      background: url('https://cdn.shopify.com/s/files/1/0667/5821/3850/files/Opinel_USA_Knife_Icon_c8307b6b-6c68-4d48-9152-0889bdec3fa8.svg?v=1695808325') no-repeat left center; /* Adds the image as a background to the left */
+      background-size: 20px; /* Adjust the size of the image as you like */
+      padding-left: 30px; /* Adds padding to the left of the text to avoid overlap with the image */
+    }
+
+
+    .rivo-vip_rule {
+      margin: 1rem 0;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .rivo-vip_row {
+        display: flex;
+        overflow-x: scroll; /* Allows horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        width: 100%;
+        scroll-snap-type: x mandatory;
+      }
+
+      .rivo-vip_card {
+        flex: none; /* Prevents the cards from stretching or shrinking */
+        width: 65%; /* Adjust to desired mobile card width */
+        margin-right: 10px;
+        scroll-snap-align: start;
+      }
+
+      .rivo-vip_row .rivo-vip_card:last-child {
+        margin-right: 10px;
+      }
+      .rivo-vip_mobile {
+         display: block;
+      }
+      .rivo-vip_desktop {
+         display: none;
+      }
+      .rivo-vip_list {
+        padding: 20px;
+      } 
+      .rivo-vip_rule {
+          margin: 0 !important;
+      }
+    }
+
+       /* Highlighting the current VIP Tier of the customer */
+      {% if customer %}
+        {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
+        {% case vip_tier %}
+          {% when "Bronze" %}
+            .rivo-vip_tier-1 {
+              background: #f7f3ef !important;
+            box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
+            }
+          {% when "Silver" %}
+            .rivo-vip_tier-2 {
+              background: #f7f3ef !important;
+              box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
+            }
+          {% when "Gold" %}
+            .rivo-vip_tier-3 {
+              background: #f7f3ef !important;
+              box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
+            }
+          {% else %}
+        {% endcase %}
+      {% endif %}
+</style>
