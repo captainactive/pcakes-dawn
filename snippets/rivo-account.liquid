@@ -7,24 +7,26 @@
     <div class="rivo-account-row margin-top-20">
       <div class="rivo-column">
         <h3 class="rivo-title_large">Rewards</h3>
-        
-        
-        <p class="text-color-purple"><span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points</p>
-
-        <!-- Points Progress Bar -->
-        {% render 'rivo-account-progressbar' %}
-
-        <!-- Redeem a Reward -->
-        {% render 'rivo-account-rewards' %}
+        <p class="text-color-purple">
+          <span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points
+        </p>
       </div>
       <div class="rivo-column">
         <h3 class="rivo-title_large">Current Tier</h3>
         <span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.vip_tier }}</span>
-        
+
         <div>
           {% render 'rivo-account-tiers-progress' %}
         </div>
       </div>
+    </div>
+    <div class="rivo-account-container_single">
+      <h3>Exchange Points</h3>
+      <!-- Points Progress Bar -->
+      {% render 'rivo-account-progressbar' %}
+
+      <!-- Redeem a Reward -->
+      {% render 'rivo-account-rewards' %}
     </div>
   </div>
 </div>
