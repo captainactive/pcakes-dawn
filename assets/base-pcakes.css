@@ -498,7 +498,7 @@ display: none;
 }
 
 .banner__heading {
-  text-shadow: 1px 1px 4px #383838;
+  text-shadow: 1px 1px 6px #000;
 }
 .subtitle {
   color: #ffffff;
