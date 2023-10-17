@@ -244,143 +244,128 @@
 </div>
 
 <style>
-  .rivo-vip_mobile {
-    display: none;
-  }
+      .rivo-vip_mobile {
+        display: none;
+      }
 
-  .rivo-vip_row {
-    display: flex;
-    overflow-x: auto;
-    padding: 40px 0;
-    width: 80%;
-    margin: 0 auto;
-  }
+      .rivo-vip_row {
+        display: flex;
+        overflow-x: auto;
+        padding: 40px 0;
+        width: 80%;
+        margin: 0 auto;
+      }
 
-  @media only screen and (max-width: 1100px) {
-    .rivo-vip_row {
-      width: 100%;
-    }
-  }
+      @media only screen and (max-width: 1100px) {
+        .rivo-vip_row {
+          width: 100%;
+        }
+      }
 
-  .rivo-vip_card {
-    flex: 1;
-    /* distribute the space equally among the cards */
-    width: calc(33.3333% - 10px);
-    /* each card takes up roughly a third, minus a bit for the margin */
-    background-color: #FCF2F6;
-    margin-right: 15px;
-    /* space between cards */
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    border: 1px solid #E14984;
-  }
+      .rivo-vip_card {
+        flex: 1; /* distribute the space equally among the cards */
+        width: calc(33.3333% - 10px); /* each card takes up roughly a third, minus a bit for the margin */
+        background-color: #FCF2F6;
+        margin-right: 15px; /* space between cards */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        border: 1px solid #E14984;
+      }
 
-  .rivo-vip_header {
-    background: #FFF;
-    padding: 15px;
-    border-radius: 5px 5px 0 0;
-  }
+      .rivo-vip_header {
+        background: #FFF;
+        padding: 15px;
+        border-radius: 5px 5px 0 0;
+      }
 
-  .rivo-vip_row .rivo-vip_card:last-child {
-    margin-right: 0;
-    /* remove margin from the last card to ensure it doesn't overflow */
-  }
+      .rivo-vip_row .rivo-vip_card:last-child {
+        margin-right: 0; /* remove margin from the last card to ensure it doesn't overflow */
+      }
 
-  .rivo-vip_card h3 {
-    margin: 0.5rem 0;
-    font-weight: bolder;
-    text-transform: uppercase;
-  }
+      .rivo-vip_card h3 {
+        margin: 0.5rem 0;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
 
-  .rivo-vip_list {
-    list-style-type: none;
-    padding: 40px 30px;
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-    margin: 0 !important;
-    text-align: left;
-  }
+      .rivo-vip_list {
+        list-style-type: none;
+        padding: 40px 30px;
+        margin-block-start: 0 !important;
+        margin-block-end: 0 !important;
+        margin: 0 !important;
+        text-align: left;
+      }
 
-  .rivo-vip_list-item {
-    background: url('https://cdn.shopify.com/s/files/1/0667/5821/3850/files/Pattys_Cakes_check-fat-fill.svg?v=1697533938') no-repeat left center;
-    /* Adds the image as a background to the left */
-    background-size: 20px;
-    /* Adjust the size of the image as you like */
-    padding-left: 30px;
-    /* Adds padding to the left of the text to avoid overlap with the image */
-    color: #8654A8;
-  }
+      .rivo-vip_list-item {
+        background: url('https://cdn.shopify.com/s/files/1/0667/5821/3850/files/Pattys_Cakes_check-fat-fill.svg?v=1697533938') no-repeat left center; /* Adds the image as a background to the left */
+        background-size: 20px; /* Adjust the size of the image as you like */
+        padding-left: 30px; /* Adds padding to the left of the text to avoid overlap with the image */
+        color: #8654A8;
+      }
 
 
-  .rivo-vip_rule {
-    font-size: 18px;
-    font-family: "Fjalla One", sans-serif;
-    color: #8654A8;
-    margin: 0;
-  }
+      .rivo-vip_rule {
+          font-size: 18px;
+          font-family: "Fjalla One", sans-serif;
+          color: #8654A8;
+        margin: 0;
+      }
 
-  @media only screen and (max-width: 900px) {
-    .rivo-vip_row {
-      display: flex;
-      overflow-x: scroll;
-      /* Allows horizontal scrolling */
-      -webkit-overflow-scrolling: touch;
-      /* Smooth scrolling for iOS */
-      width: 100%;
-      scroll-snap-type: x mandatory;
-    }
+      @media only screen and (max-width: 900px) {
+        .rivo-vip_row {
+          display: flex;
+          overflow-x: scroll; /* Allows horizontal scrolling */
+          -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+          width: 100%;
+          scroll-snap-type: x mandatory;
+        }
 
-    .rivo-vip_card {
-      flex: none;
-      /* Prevents the cards from stretching or shrinking */
-      width: 65%;
-      /* Adjust to desired mobile card width */
-      margin-right: 10px;
-      scroll-snap-align: start;
-    }
+        .rivo-vip_card {
+          flex: none; /* Prevents the cards from stretching or shrinking */
+          width: 65%; /* Adjust to desired mobile card width */
+          margin-right: 10px;
+          scroll-snap-align: start;
+        }
 
-    .rivo-vip_row .rivo-vip_card:last-child {
-      margin-right: 10px;
-    }
+        .rivo-vip_row .rivo-vip_card:last-child {
+          margin-right: 10px;
+        }
+        .rivo-vip_mobile {
+           display: block;
+        }
+        .rivo-vip_desktop {
+           display: none;
+        }
+        .rivo-vip_list {
+          padding: 20px;
+        }
+        .rivo-vip_rule {
+            margin: 0 !important;
+        }
+      }
 
-    .rivo-vip_mobile {
-      display: block;
-    }
-
-    .rivo-vip_desktop {
-      display: none;
-    }
-
-    .rivo-vip_list {
-      padding: 20px;
-    }
-
-    .rivo-vip_rule {
-      margin: 0 !important;
-    }
-  }
-
-           /* Highlighting the current VIP Tier of the customer */
-          {% if customer %}
-            {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
-            {% case vip_tier %}
-              {% when "Bronze" %}
-                .rivo-vip_tier-1 {
-                  background: #f7f3ef !important;
+         /* Highlighting the current VIP Tier of the customer */
+        {% if customer %}
+          {% assign vip_tier = customer.metafields.custom.rivo.value.vip_tier %}
+          {% case vip_tier %}
+            {% when "Bronze" %}
+              .rivo-vip_tier-1 {
+                background: #f7f3ef !important;
+              box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
+              }
+            {% when "Silver" %}
+              .rivo-vip_tier-2 {
+                background: #f7f3ef !important;
                 box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
-                }
-              {% when "Silver" %}
-                .rivo-vip_tier-2 {
-                  background: #f7f3ef !important;
-                  box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
-                }
-              {% when "Gold" %}
-                .rivo-vip_tier-3 {
-                  background: #f7f3ef !important;
-                  box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
-                }
-              {% else %}
-            {% endcase %}
-          {% endif %}
+              }
+            {% when "Gold" %}
+              .rivo-vip_tier-3 {
+                background: #f7f3ef !important;
+                box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.41);
+              }
+            {% else %}
+          {% endcase %}
+        {% endif %}
 </style>
