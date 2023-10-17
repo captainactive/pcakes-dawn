@@ -18,8 +18,8 @@
         Are you sure you want to redeem <span id="points"></span> points for a <span id="reward-name"></span>?
       </p>
       <button id="cancel-btn" class="modal-btn">Cancel</button>
-      <button id="redeem-btn" class="btn btn--secondary">Redeem</button>
-      <button id="close-window-btn" class="btn btn--secondary" style="display: none;">Close Window</button>
+      <button id="redeem-btn" class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0">Redeem</button>
+      <button id="close-window-btn" class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0" style="display: none;">Close Window</button>
     </div>
   </div>
 </div>
@@ -38,7 +38,6 @@
     padding-inline-start: 0 !important;
     margin-block-start: 0 !important;
     margin-block-end: 0 !important;
-    margin: 0 !important;
   }
 
   @media (max-width: 768px) {
@@ -124,9 +123,9 @@
     padding: 20px 50px;
     padding-bottom: 50px;
     background: #FFF;
-    border: 2px solid #E7F4FA;
+    border: 1.5px solid #B3B3B3;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 1px;
+    border-radius: 5px;
     max-width: 500px;
     text-align: center;
     display: flex;
@@ -136,11 +135,10 @@
 
   #modal-message {
    padding: 20px 50px;
-    color: #000;
   }
 
   .close {
-    color: #000;
+    color: #4D4D4D;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -150,7 +148,7 @@
 
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #F3D9De;
     text-decoration: none;
     cursor: pointer;
   }
@@ -168,23 +166,6 @@
     cursor: pointer;
   }
   */
-
-  .rivo-rewards-flex button {
-    padding: 7px 18px;
-    color: #fff;
-    background: #39BCCD;
-    border: 2px solid #39BCCD;
-    font-weight: 800;
-    font-style: normal;
-    display: inline-block;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background .15s ease-in-out;
-    text-transform: uppercase;
-    height: 50px;
-    line-height: 30px;
-    font-size: 18px;
-  }
 
   #cancel-btn {
     background: none;
