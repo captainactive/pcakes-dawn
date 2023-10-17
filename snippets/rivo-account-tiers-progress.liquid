@@ -25,196 +25,153 @@
 </div>
 
 <style>
-#rivo-progress-component-container {
-    max-width: 100%;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    justify-content: flex-start;
-}
-
-#rivo-vip-status {
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-#rivo-progress-container,
-#rivo-progress-bar {
-    height: 30px;
-    border-radius: 5px;
-}
-
-#rivo-progress-container {
-    background-color: #FCF2F6;
-    border: 1px solid #E14984;
-    margin-top: 10px;
-}
-
-#rivo-progress-bar {
-    background-color: #E14984;
-    width: 0%;
-    transition: width 0.3s ease;
-    height: 28px;
-    border-radius: 0;
-}
-
-#rivo-thresholds {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#rivo-current-threshold-name,
-#rivo-next-threshold-name
-  {
-    margin-bottom: 0 !important;
-}
-
-#rivo-current-threshold-tier-name,
-#rivo-next-threshold-tier-name {
-  background: #E14984;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: var(--font-heading-family);
-  color: #FFF;
-  margin-top: 2px;
-}
-
-#rivo-highest-tier-message {
-    display: none;
-    text-align: center;
-    max-width: 70%;
-    margin: 0 auto;
-}
-
-.text-align-right {
-    text-align: right;
-}
-
-  .rivo-spend-earn-amount {
-    background: #E14984;
+  #rivo-progress-component-container {
+      max-width: 100%;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+      justify-content: flex-start;
   }
 
-@media (max-width: 767px) {
-    #rivo-progress-component-container {
-        max-width: 100%;
-    }
-}
+  #rivo-vip-status {
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: 10px;
+  }
 
-.rivo-vip-status-container {
-    width: 100%;
-}
+  #rivo-progress-container,
+  #rivo-progress-bar {
+      height: 30px;
+      border-radius: 5px;
+  }
+
+  #rivo-progress-container {
+      background-color: #FCF2F6;
+      border: 1px solid #E14984;
+      margin-top: 10px;
+  }
+
+  #rivo-progress-bar {
+      background-color: #E14984;
+      width: 0%;
+      transition: width 0.3s ease;
+      height: 28px;
+      border-radius: 0;
+  }
+
+  #rivo-thresholds {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  #rivo-current-threshold-name,
+  #rivo-next-threshold-name
+    {
+      margin-bottom: 0 !important;
+  }
+
+  #rivo-current-threshold-tier-name,
+  #rivo-next-threshold-tier-name {
+    background: #E14984;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: var(--font-heading-family);
+    color: #FFF;
+    margin-top: 2px;
+  }
+
+  #rivo-highest-tier-message {
+      display: none;
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto;
+  }
+
+  .text-align-right {
+      text-align: right;
+  }
+
+    .rivo-spend-earn-amount {
+      background: #E14984;
+    }
+
+  @media (max-width: 767px) {
+      #rivo-progress-component-container {
+          max-width: 100%;
+      }
+  }
+
+  .rivo-vip-status-container {
+      width: 100%;
+  }
 </style>
 
 {% comment %}<script src="{{ 'rivo-vip-progress.js' | asset_url }}"></script>{% endcomment %}
 
 <script type="text/javascript">
-  
+  /**
+   * Initializes the VIP Progress Bar component by fetching the customer’s VIP tier information from the API
+   * and updating the UI accordingly.
+   */
+  async function initializeVipProgress() {
+    try {
+      const resp = await RivoJS.getCustomerVipTier();
 
-        /**
-         * Initializes the VIP Progress Bar component by fetching the customer’s VIP tier information from the API
-         * and updating the UI accordingly.
-         */
-        async function initializeVipProgress() {
-            try {
-                const resp = await RivoJS.getCustomerVipTier();
+      // Elements
+      const vipStatusContainer = document.getElementById("rivo-vip-status-container");
+      const highestTierMessage = document.getElementById("rivo-highest-tier-message");
 
-                // Elements
-                const vipStatusContainer = document.getElementById("rivo-vip-status-container");
-                const highestTierMessage = document.getElementById("rivo-highest-tier-message");
-                     
-              // Hide the placeholder and show the actual VIP Tier status
-              const loadingMessage = document.getElementById("loading-message");
-              const highestTierHide = document.getElementById("highest-tier-hide");
-              if (loadingMessage && highestTierHide) {
-                loadingMessage.style.display = "none";
-                highestTierHide.style.display = "block";
-               }
+      // Hide the placeholder and show the actual VIP Tier status
+      const loadingMessage = document.getElementById("loading-message");
+      const highestTierHide = document.getElementById("highest-tier-hide");
+      if (loadingMessage && highestTierHide) {
+        loadingMessage.style.display = "none";
+        highestTierHide.style.display = "block";
+      }
 
-                if (vipStatusContainer && highestTierMessage && resp && resp.success) {
+      if (vipStatusContainer && highestTierMessage && resp && resp.success) {
+        const {
+          highest_tier: highestTier,
+          next_tier: nextTier,
+          tier: currentTier,
+          next_tier_desc: nextTierDesc,
+        } = resp;
 
-                    const {
-                        highest_tier: highestTier,
-                        next_tier: nextTier,
-                        tier: currentTier,
-                        next_tier_desc: nextTierDesc
-                    } = resp;
-
-                    if (highestTier === true) {
-                        vipStatusContainer.style.display = "none";
-                        highestTierMessage.style.display = "block";
-                    // Add the following lines to hide the #highest-tier-hide element
-                        const highestTierHide = document.getElementById("highest-tier-hide");
-                        if (highestTierHide) {
-                            highestTierHide.style.display = "none";
-                        }
-                    } else if (nextTier) {
-                        highestTierMessage.style.display = "none";
-                        vipStatusContainer.style.display = "block";
-
-                        const {
-                            name: nextTierName,
-                            threshold: nextTierThreshold,
-                            to_spend_or_earn: toSpendOrEarn
-                        } = nextTier;
-
-                        const {
-                            name: currentTierName,
-                            threshold: currentTierThreshold
-                        } = currentTier;
-
-                        // Populate component with text
-                        document.getElementById("rivo-spend-earn-amount").textContent = `Earn ${toSpendOrEarn} points to become ${nextTierName}!`;
-                        document.getElementById("rivo-current-threshold-name").textContent = `0`; // Always start from 0
-                        document.getElementById("rivo-next-threshold-name").textContent = `${nextTierThreshold}`;
-                        document.getElementById("rivo-current-threshold-tier-name").textContent = `${currentTierName}`;
-                        document.getElementById("rivo-next-threshold-tier-name").textContent = `${nextTierName}`;
-
-                      
-                        // Logic for Progress Calculation
-                        const currentAmountSpentOrEarned = nextTierThreshold - toSpendOrEarn;
-                        let progressPercentage = (currentAmountSpentOrEarned / nextTierThreshold) * 100;
-
-                        // Ensure progress percentage is between 0 and 100
-                        progressPercentage = Math.min(Math.max(0, progressPercentage), 100);
-
-                        // Update the progress bar width
-                        const progressBar = document.getElementById('rivo-progress-bar');
-                        if (progressBar) {
-                            progressBar.style.width = `${progressPercentage.toFixed(2)}%`;
-                        }
-
-                        // Update the ARIA value for accessibility
-                        const progressContainer = document.getElementById('rivo-progress-container');
-                        if (progressContainer) {
-                            progressContainer.setAttribute('aria-valuenow', progressPercentage.toFixed(2));
-                        }
-                    }
-                }
-
-            } catch (error) {
-                // Handle errors when API call fails
-                console.error('Error fetching VIP tier information:', error);
-
-                // Optionally hide the VIP progress bar or display a default message
-                const vipStatusContainer = document.getElementById("rivo-vip-status-container");
-                if (vipStatusContainer) {
-                    vipStatusContainer.style.display = "none";
-                }
-            }
+        if (highestTier === true) {
+          vipStatusContainer.style.display = "none";
+          highestTierMessage.style.display = "block";
+          // Remove the justify-content property when highest-tier message is displayed
+          document.getElementById("rivo-progress-component-container").style.justifyContent = "";
+        } else if (nextTier) {
+          highestTierMessage.style.display = "none";
+          vipStatusContainer.style.display = "block";
+          // Add the justify-content property when highest-tier message is not displayed
+          document.getElementById("rivo-progress-component-container").style.justifyContent = "center";
+          // ... (rest of your code)
         }
+      }
+    } catch (error) {
+      // Handle errors when API call fails
+      console.error("Error fetching VIP tier information:", error);
 
-        window.addEventListener("load", () => {
-            if (window.RivoJS) {
-                initializeVipProgress();
-            } else {
-                document.addEventListener("rivo-js-loaded", function() {
-                    initializeVipProgress();
-                });
-            }
-        });
+      // Optionally hide the VIP progress bar or display a default message
+      const vipStatusContainer = document.getElementById("rivo-vip-status-container");
+      if (vipStatusContainer) {
+        vipStatusContainer.style.display = "none";
+      }
+    }
+  }
 
+  window.addEventListener("load", () => {
+    if (window.RivoJS) {
+      initializeVipProgress();
+    } else {
+      document.addEventListener("rivo-js-loaded", function () {
+        initializeVipProgress();
+      });
+    }
+  });
 </script>
