@@ -497,7 +497,13 @@ display: none;
 }
 }
 
-.subtitle {color: #ffffff}
+.banner__heading {
+  text-shadow: 1px 1px 4px #000;
+}
+.subtitle {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000;
+}
 
 
 .section-template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-padding .image-with-text__content .image-with-text__text+.button {
