@@ -1,3 +1,10 @@
+<section class="bh-section-banner bh-container bg-[#002631]">
+    <div class="area-full flex flex-row space-x-6 sm:space-x-16 justify-center py-6 text-white text-[12px] sm:text-[16px] font-bold tracking-widest leading-none uppercase">
+        <a href="#rivo-section-redeem">Redeem Points</a>
+        <a href="#rivo-section-tiers">Tiers Benefits</a>
+    </div>
+</section>
+
 <div class="rivo-account-container">
   {% assign default_balance = shop.metafields.rivo.loy.points_program.ways_to_earn | first %}
   <div class="rivo-account-wrapper">
@@ -23,12 +30,12 @@
         </div>
       </div>
     </div>
-    <div class="rivo-account-container_single text-align-center">
+    <div class="rivo-account-container_single text-align-center" id="rivo-section-redeem">
       <h2 class="title inline-richtext h1">Sweet Earnings, Sweeter Treats</h2>
       <!-- Redeem a Reward -->
       {% render 'rivo-account-rewards' %}
     </div>
-    <div class="rivo-account-container_single text-align-center">
+    <div class="rivo-account-container_single text-align-center" id="rivo-section-tiers">
       <!-- VIP Tiers -->
       <h2 class="title inline-richtext h1">VIPs Earn More</h2>
       <p class="rivo-subtitle">Level up for more sweetness and exclusive perks</p>
