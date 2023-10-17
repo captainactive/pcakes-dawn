@@ -1,11 +1,10 @@
-
 <div class="rivo-account-container">
-<div class="rivo-account-tabs_menu">
+  <div class="rivo-account-tabs_menu">
     <div class="area-full flex flex-row space-x-6 sm:space-x-16 justify-center py-6 text-white text-[12px] sm:text-[16px] font-bold tracking-widest leading-none uppercase">
-        <a href="#rivo-section-redeem">Redeem Points</a>
-        <a href="#rivo-section-tiers">Tiers Benefits</a>
+      <a href="#rivo-section-redeem">Redeem Points</a>
+      <a href="#rivo-section-tiers">Tiers Benefits</a>
     </div>
-</div>
+  </div>
   {% assign default_balance = shop.metafields.rivo.loy.points_program.ways_to_earn | first %}
   <div class="rivo-account-wrapper">
     <div class="text-align-center">
@@ -45,91 +44,96 @@
 </div>
 
 <style>
-    .rivo-account-wrapper {
-      padding: 30px;
-      background: #FCF2F6;
-      margin: 20px auto;
-      display: flex;
-      gap: 30px;
-      flex-direction: column;
-    }
+  .rivo-account-container {
+    display: flex;
+        flex-direction: column;
 
-  /* Tabs Menu */
-
-  .rivo-account-tabs_menu {
-    background: #8654A8;
   }
-    .rivo-account-row {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 50px;
+      .rivo-account-wrapper {
+        padding: 30px;
+        background: #FCF2F6;
+        margin: 20px auto;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+      }
+
+    /* Tabs Menu */
+
+    .rivo-account-tabs_menu {
+      background: #8654A8;
     }
-
-    .margin-top-20 {
-      margin-top: 20px;
-    }
-
-    .rivo-heading-border {
-      margin-bottom: 10px;
-    }
-
-    .rivo-subtitle {
-    color: #E14984 !important;
-    font-size: 20px !important;
-    line-height: 1.3;
-    font-family: 'Raleway', sans-serif, serif, monospace !important;
-  }
-
-    .rivo-text_large {
-      font-size: 32px;
-      font-weight: 700;
-      text-align: left;
-      color: #8654A8;
-      font-family: var(--font-heading-family);
-      font-style: var(--font-heading-style);
-      font-weight: var(--font-heading-weight);
-      letter-spacing: calc(var(--font-heading-scale) * .06rem);
-      line-height: calc(1 + .3/max(1,var(--font-heading-scale)));
-      font-size: calc(var(--font-heading-scale) * 5rem);
-      margin-bottom: 20px;
-    }
-
-    .text-color-purple {
-      color: #8654A8;
-    }
-
-    .rivo-space-between {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .text-align-center {
-      text-align: center;
-    }
-
-    .rivo-title_large {
-      padding-bottom: 1.75rem;
-      color: #e14984;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid #e14984;
-    }
-
-
-    @media (max-width: 768px) {
       .rivo-account-row {
-        grid-template-columns: 1fr !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
       }
-      .rivo-row {
-        flex-direction: column;
+
+      .margin-top-20 {
+        margin-top: 20px;
       }
-      .rivo-column {
-        width: 100%;
+
+      .rivo-heading-border {
+        margin-bottom: 10px;
       }
-      .rivo-space-between {
-        flex-direction: column;
-      }
+
+      .rivo-subtitle {
+      color: #E14984 !important;
+      font-size: 20px !important;
+      line-height: 1.3;
+      font-family: 'Raleway', sans-serif, serif, monospace !important;
     }
+
+      .rivo-text_large {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+        color: #8654A8;
+        font-family: var(--font-heading-family);
+        font-style: var(--font-heading-style);
+        font-weight: var(--font-heading-weight);
+        letter-spacing: calc(var(--font-heading-scale) * .06rem);
+        line-height: calc(1 + .3/max(1,var(--font-heading-scale)));
+        font-size: calc(var(--font-heading-scale) * 5rem);
+        margin-bottom: 20px;
+      }
+
+      .text-color-purple {
+        color: #8654A8;
+      }
+
+      .rivo-space-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .text-align-center {
+        text-align: center;
+      }
+
+      .rivo-title_large {
+        padding-bottom: 1.75rem;
+        color: #e14984;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #e14984;
+      }
+
+
+      @media (max-width: 768px) {
+        .rivo-account-row {
+          grid-template-columns: 1fr !important;
+        }
+        .rivo-row {
+          flex-direction: column;
+        }
+        .rivo-column {
+          width: 100%;
+        }
+        .rivo-space-between {
+          flex-direction: column;
+        }
+      }
 </style>
 
 <script type="text/javascript">
