@@ -2,7 +2,6 @@
   <div class="rivo-vip-status-actual">
     <p class="text-align-left" id="loading-message">Loading your VIP Tier status...</p>
     <p class="text-align-left" id="highest-tier-hide" style="display: none;">
-      You are <b><span id="rivo-vip-status"> </span></b> through the next earning period.<br>
       <span class="text-align-left" id="rivo-spend-earn-amount"></span>
     </p>
   </div>
@@ -49,13 +48,13 @@
 }
 
 #rivo-progress-container {
-    background-color: #FFF;
-    border: 1px solid #B3B3B3;
+    background-color: #FCF2F6;
+    border: 1px solid #E14984;
     margin-top: 10px;
 }
 
 #rivo-progress-bar {
-    background-color: #66D0EE;
+    background-color: #E14984;
     width: 0%;
     transition: width 0.3s ease;
     height: 28px;
@@ -162,7 +161,6 @@
                         } = currentTier;
 
                         // Populate component with text
-                        document.getElementById("rivo-vip-status").textContent = `${currentTierName}`;
                         document.getElementById("rivo-spend-earn-amount").textContent = `Earn ${toSpendOrEarn} points to become a ${nextTierName}!`;
                         document.getElementById("rivo-current-threshold-name").textContent = `0`; // Always start from 0
                         document.getElementById("rivo-next-threshold-name").textContent = `${nextTierThreshold}`;
