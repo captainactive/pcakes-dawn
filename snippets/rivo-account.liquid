@@ -10,6 +10,8 @@
         <p class="text-color-purple">
           <span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points
         </p>
+        <!-- Points Progress Bar -->
+        {% render 'rivo-account-progressbar' %}
       </div>
       <div class="rivo-column">
         <h3 class="rivo-title_large">Current Tier</h3>
@@ -22,8 +24,6 @@
     </div>
     <div class="rivo-account-container_single text-align-center">
       <h2 class="title inline-richtext h1">Exchange Points</h2>
-      <!-- Points Progress Bar -->
-      {% render 'rivo-account-progressbar' %}
 
       <!-- Redeem a Reward -->
       {% render 'rivo-account-rewards' %}
