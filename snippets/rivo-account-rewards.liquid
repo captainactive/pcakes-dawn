@@ -33,159 +33,163 @@
 </div>
 
 <style>
-  .rivo-rewards-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin: 25px 0;
-  }
+    .rivo-rewards-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin: 25px 0;
+    }
 
-  .rivo-rewards-list {
-    gap: 10px;
-    list-style: none;
-    padding-inline-start: 0 !important;
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-    display: flex;
-  }
-
-  @media (max-width: 768px) {
     .rivo-rewards-list {
-      grid-template-columns: 1fr;
+      gap: 10px;
+      list-style: none;
+      padding-inline-start: 0 !important;
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+      display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: flex-start; /* Align items to the left within the container */
+  }
     }
-  }
 
-  .rivo-rewards-card {
-    background: #FCF2F6 !important;
-    border: 1px solid #E14984 !important;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    flex-direction: column;
-    text-align: -webkit-center !important;
-    height: 150px;
-    padding: 0 20px !important;
-    transition: all .25s ease-in-out;
-    justify-content: center;
-  }
+    @media (max-width: 768px) {
+      .rivo-rewards-list {
+        grid-template-columns: 1fr;
+      }
+    }
 
-    .rivo-rewards-card:hover {
-      background: #E14984 !important;
-    } 
+    .rivo-rewards-card {
+      background: #FCF2F6 !important;
+      border: 1px solid #E14984 !important;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      flex-direction: column;
+      text-align: -webkit-center !important;
+      height: 150px;
+      padding: 0 20px !important;
+      transition: all .25s ease-in-out;
+      justify-content: center;
+      width: calc(33.33% - 10px); /* 33.33% for 3 cards per row, adjust as needed */
+    }
 
-  #redeem-rewards .rivo-rewards-card p {
-    margin: 0 !important;
-  }
+      .rivo-rewards-card:hover {
+        background: #E14984 !important;
+      }
 
-  .rivo-card-title {
-    color: #E14984;
-    font-size: 120%;
-    line-height: 140%;
-    margin: 0.5rem 0 !important;
-    font-family: var(--font-heading-family);
-  }
+    #redeem-rewards .rivo-rewards-card p {
+      margin: 0 !important;
+    }
 
-  .rivo-card-description {
-    color: #8654A8;
-    font-size: 16px;
-  }
+    .rivo-card-title {
+      color: #E14984;
+      font-size: 120%;
+      line-height: 140%;
+      margin: 0.5rem 0 !important;
+      font-family: var(--font-heading-family);
+    }
 
-    .rivo-rewards-card:hover .rivo-card-title,
-    .rivo-rewards-card:hover rivo-card-description {
-     color: #FCF2F6 !important;
-    } 
+    .rivo-card-description {
+      color: #8654A8;
+      font-size: 16px;
+    }
 
-
-  .rivo-rewards-card-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .rivo-rewards-card:hover, .redeem-reward-item:hover {
-    cursor: pointer;
-  }
+      .rivo-rewards-card:hover .rivo-card-title,
+      .rivo-rewards-card:hover rivo-card-description {
+       color: #FCF2F6 !important;
+      }
 
 
+    .rivo-rewards-card-icon {
+      width: 50px;
+      height: 50px;
+    }
 
-  .modal {
-    display: none;
-    position: fixed;
-    padding-top: 250px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: #FFF;
-    z-index: 20;
-  }
+    .rivo-rewards-card:hover, .redeem-reward-item:hover {
+      cursor: pointer;
+    }
 
 
-  @media screen and (max-width: 768px) {
+
+    .modal {
+      display: none;
+      position: fixed;
+      padding-top: 250px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #FFF;
+      z-index: 20;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .modal-content {
+        margin: 0 20px;
+      }
+    }
+
+
     .modal-content {
-      margin: 0 20px;
+      margin: auto;
+      padding: 20px 50px;
+      padding-bottom: 50px;
+      background: #FFF;
+      border: 1.5px solid #B3B3B3;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      max-width: 500px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
-  }
 
+    #modal-message {
+     padding: 20px 50px;
+    }
 
-  .modal-content {
-    margin: auto;
-    padding: 20px 50px;
-    padding-bottom: 50px;
-    background: #FFF;
-    border: 1.5px solid #B3B3B3;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    max-width: 500px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+    .close {
+      color: #4D4D4D;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      align-self: flex-end;
+      background-color: transparent !important;
+    }
 
-  #modal-message {
-   padding: 20px 50px;
-  }
+    .close:hover,
+    .close:focus {
+      color: #F3D9De;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    /*
+    .modal-btn {
+      margin: 0 auto;
+      background: #000;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 50px !important;
+      padding: 8px 32px;
+      font-weight: 700;
+      line-height: 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    */
 
-  .close {
-    color: #4D4D4D;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    align-self: flex-end;
-    background-color: transparent !important;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #F3D9De;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  /*
-  .modal-btn {
-    margin: 0 auto;
-    background: #000;
-    border: none;
-    text-transform: uppercase;
-    border-radius: 50px !important;
-    padding: 8px 32px;
-    font-weight: 700;
-    line-height: 24px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  */
-
-  #cancel-btn {
-    background: none;
-    border: none;
-    text-decoration: underline;
-    color: #000;
-    text-transform: capitalize;
-    font-weight: 400;
-    cursor: pointer;
-  }
+    #cancel-btn {
+      background: none;
+      border: none;
+      text-decoration: underline;
+      color: #000;
+      text-transform: capitalize;
+      font-weight: 400;
+      cursor: pointer;
+    }
 </style>
 
 <script type="text/javascript">
