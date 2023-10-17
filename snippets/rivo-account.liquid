@@ -7,7 +7,8 @@
     <div class="rivo-account-row margin-top-20">
       <div class="rivo-column">
         <h3 class="rivo-title_large">Rewards</h3>
-        <div class="feature_divider"></div>
+        
+        
         <p class="text-color-purple"><span class="rivo-points">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points</p>
 
         <!-- Points Progress Bar -->
@@ -18,7 +19,8 @@
       </div>
       <div class="rivo-column">
         <h3 class="rivo-title_large">Current Tier</h3>
-        <div class="feature_divider"></div>
+        <span class="rivo-points">{{ customer.metafields.custom.rivo.value.points_balance }}</span>
+        
         <div>
           {% render 'rivo-account-tiers-progress' %}
         </div>
