@@ -1,0 +1,125 @@
+<div class="margin-top-30">
+  <div class="faq-wrapper" id="faq-wrapper"></div>
+</div>
+
+<style>
+.faq-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-family: ITC Conduit, sans-serif !important;
+  font-size: 20px !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid black !important;
+  text-align: left !important;
+}
+
+.toggle-button {
+  font-size: 20px;
+  background: none;
+  color: #444F4A;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  display: none;
+  padding: 10px 0;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .faq-wrapper {
+    max-width: 100%;
+  }
+}
+</style>
+  <script>
+      const faqs = [ 
+        { question: "What is Le Club Opinel?", 
+         answer: "Le Club Opinel is an exclusive program designed to thank our customers. Every time you purchase one of our products, follow us on social media, or refer friends, you earn points that can be redeemed for discounts, early access to products, and more." 
+        }, 
+        { question: "Who can join Le Club Opinel?", 
+         answer: "Anyone can sign up for Le Club Opinel! Just create an account on our website and you'll start earning points and unlocking rewards right away." 
+        }, 
+        { question: "How do I earn points?", 
+         answer: "Earning points is easy! Every purchase of our products, following us on social media, sharing your OpinelUSA experience with friends, and participating in select promotional activities will reward you with points that can be redeemed for exclusive benefits and discounts." 
+        }, 
+        { question: "How do I use my points?", 
+         answer: "Once you've earned enough points, you can start using them to redeem discounts, exclusive early access to new products and a variety of other rewards. Simply log in to your account on our website and click on the rewards section to see the latest offerings." 
+        }, 
+        { question: "Do my points expire?", 
+         answer: "Points will expire after one year if there isn't any account activity." 
+        }, 
+        { question: "GOLD MEMBERS | How do I claim my free return?", 
+         answer: "To use your free return perk, contact us at retail@opinel-usa.com with your order number in subject line to receive your pre-paid return label. The conditions of the standard return policy apply: you must return the item within 30 days of fulfillment date, the item and the packaging must be intact and shipping costs are not eligible for refund." 
+        },
+        { question: "SILVER & GOLD MEMBERS | How do I get my free engraving perk?", 
+         answer: "Free engraving perk is available on specific dates to be determined by Opinel. You will get notified of the dates via email." 
+        },
+      ];
+
+    // Add more FAQS above ⬆️⬆️⬆️⬆️⬆️
+
+const faqWrapper = document.querySelector("#faq-wrapper");
+
+faqs.forEach((faq, index) => {
+  const questionWrapper = document.createElement("div");
+  const question = document.createElement("div");
+  const questionText = document.createElement("span");
+  const toggleButton = document.createElement("button");
+  const answer = document.createElement("div");
+
+  questionWrapper.className = "question-wrapper";
+  questionWrapper.setAttribute("data-question", index);
+  
+  question.className = "question";
+  
+  questionText.textContent = faq.question;
+  question.appendChild(questionText);
+
+  toggleButton.className = "toggle-button";
+  toggleButton.innerHTML = "+";
+  question.appendChild(toggleButton);
+
+  answer.className = "answer";
+  answer.textContent = faq.answer;
+  answer.style.display = "none";
+
+  questionWrapper.appendChild(question);
+  questionWrapper.appendChild(answer);
+
+  faqWrapper.appendChild(questionWrapper);
+
+question.addEventListener("click", () => {
+  answer.style.display = answer.style.display === "none" ? "block" : "none";
+  toggleButton.innerHTML = toggleButton.innerHTML === "+" ? "-" : "+";
+
+  // Close all other open questions (if any)
+  const openQuestions = document.querySelectorAll(".question-wrapper.open");
+  openQuestions.forEach(openQuestion => {
+    const openAnswer = openQuestion.querySelector(".answer");
+    const openButton = openQuestion.querySelector(".toggle-button");
+
+    if (openAnswer !== answer) {
+      openAnswer.style.display = "none";
+      openButton.innerHTML = "+";
+      openQuestion.classList.remove("open");
+    }
+  });
+
+  // Toggle the current question
+  questionWrapper.classList.toggle("open", answer.style.display === "block");
+});
+});
+  </script>
