@@ -1,5 +1,22 @@
 <!-- LOY Page -->
 <div id="rivo-page-wrapper" style="min-height:800px;"></div>
 
+<!-- VIP Tiers -->
+<div class="rivo-page-section">
+  <div class="rivo-container">
+    <h2 class="rivo-title">Le Club Opinel Tiers</h2>
+    {% if customer %}
+      <div class="desk-max-width-80">
+        {% render 'rivo-account-tiers-progress' %}
+      </div>
+    {% else %}
+
+    {% endif %}
+
+    {% render 'rivo-vip-tiers' %}
+
+  </div>
+</div>
+
 <!-- Referrals -->
 <div id="rivo-referral-campaign-3202"></div>
