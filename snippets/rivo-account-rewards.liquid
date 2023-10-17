@@ -1,0 +1,413 @@
+<div class="rivo-rewards-flex">
+  <div class="rivo-rewards-wrapper" id="redeem-rewards">
+    <p class="margin-bottom-20"><strong>Redeem your rewards at checkout:</strong></p>
+    <ul id="redeem-rewards-list" class="rivo-rewards-list"></ul>
+  </div>
+
+  <div class="rivo-rewards-wrapper" id="redeemed-rewards" style="display: none;">
+    <p class="margin-bottom-20">
+      <strong><span class="text-color-blue">Use</span> your previously redeemed rewards:</strong>
+    </p>
+    <ul id="redeemed-rewards-list" class="rivo-rewards-list"></ul>
+  </div>
+
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <p id="modal-message">
+        Are you sure you want to redeem <span id="points"></span> points for a <span id="reward-name"></span>?
+      </p>
+      <button id="cancel-btn" class="modal-btn">Cancel</button>
+      <button id="redeem-btn" class="btn btn--secondary">Redeem</button>
+      <button id="close-window-btn" class="btn btn--secondary" style="display: none;">Close Window</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .rivo-rewards-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 0;
+  }
+
+  .rivo-rewards-list {
+    gap: 10px;
+    list-style: none;
+    padding-inline-start: 0 !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    .rivo-rewards-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .rivo-rewards-card {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  #redeem-rewards .rivo-rewards-card p {
+    margin: 0 !important;
+  }
+
+  .rivo-card-title {
+    color: #0D0D0D;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .rivo-card-description {
+    color: #0D0D0D;
+    margin-bottom: 0;
+  }
+
+  .rivo-rewards-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .rivo-rewards-card:hover, .redeem-reward-item:hover {
+    cursor: pointer;
+  }
+
+  .rivo-rewards-card-content {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .text-color-blue {
+    color: #39BCCD;
+  }
+
+
+  @media (max-width: 768px) {
+    .rivo-rewards-card-content {
+      gap: 0;
+      flex-direction: column;
+      align-items: baseline;
+    }
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    padding-top: 250px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #FFF;
+    z-index: 20;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      margin: 0 20px;
+    }
+  }
+
+
+  .modal-content {
+    margin: auto;
+    padding: 20px 50px;
+    padding-bottom: 50px;
+    background: #FFF;
+    border: 2px solid #E7F4FA;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #modal-message {
+   padding: 20px 50px;
+    color: #000;
+  }
+
+  .close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-end;
+    background-color: transparent !important;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /*
+  .modal-btn {
+    margin: 0 auto;
+    background: #000;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 50px !important;
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  */
+
+  .rivo-rewards-flex button {
+    padding: 7px 18px;
+    color: #fff;
+    background: #39BCCD;
+    border: 2px solid #39BCCD;
+    font-weight: 800;
+    font-style: normal;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background .15s ease-in-out;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  #cancel-btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+  }
+</style>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.RivoJS) {
+      // RivoJS is already loaded
+      initRivoJS();
+    } else {
+      // Listen for the rivo-js-loaded event
+      document.addEventListener("rivo-js-loaded", function() {
+        initRivoJS();
+      });
+    }
+  });
+
+  function initRivoJS() {
+    console.log("RivoJS is loaded and ready to use");
+
+    var modal = document.getElementById('confirmation-modal');
+    var closeBtn = document.getElementById('close-modal');
+    var cancelBtn = document.getElementById('cancel-btn');
+    var redeemBtn = document.getElementById('redeem-btn');
+    var modalMessage = document.getElementById('modal-message');
+    var pointsSpan = document.getElementById('points');
+    var rewardNameSpan = document.getElementById('reward-name');
+
+    var selectedRewardId = null;
+
+    Promise.all([RivoJS.getShopRewards(), RivoJS.getCustomerDetails()]).then(function(responses) {
+      var rewards = responses[0];
+      var customerDetails = responses[1];
+
+      var availableRewards = rewards.filter(function(reward) {
+        return customerDetails.points_tally >= reward.points_amount;
+      });
+  console.log(document.getElementById('redeem-rewards-list'));
+      var rewardsList = document.getElementById('redeem-rewards-list');
+
+
+      if (availableRewards.length === 0) {
+        var noRewards = document.createElement('p');
+        noRewards.innerText = "You have no rewards to redeem at the moment";
+        rewardsList.appendChild(noRewards);
+      } else {
+        availableRewards.forEach(function(reward, index) {
+          var rewardItem = document.createElement('li');
+          rewardItem.classList.add('rivo-rewards-card');
+          rewardItem.dataset.rewardId = reward.id;
+          rewardItem.dataset.rewardPoints = reward.points_amount;
+          rewardItem.dataset.rewardName = reward.name === 'Free Shipping' ? reward.name + ' voucher' : reward.name;
+
+          var rewardIcon = document.createElement('img');
+          rewardIcon.classList.add('rivo-rewards-card-icon');
+          rewardIcon.src = reward.icon_url;
+          rewardItem.appendChild(rewardIcon);
+
+          var cardContent = document.createElement('div');
+          cardContent.classList.add('rivo-rewards-card-content');
+
+          var rewardTitle = document.createElement('p');
+          rewardTitle.classList.add('rivo-card-title');
+          rewardTitle.innerText = reward.name;
+          cardContent.appendChild(rewardTitle);
+
+          var rewardPoints = document.createElement('p');
+          rewardPoints.classList.add('rivo-card-description');
+          rewardPoints.innerText = "(" + reward.points_amount.toLocaleString() + " points) →";
+          cardContent.appendChild(rewardPoints);
+
+          rewardItem.appendChild(cardContent);
+
+
+          rewardItem.addEventListener('click', function(event) {
+            // store the selected reward id
+            selectedRewardId = this.dataset.rewardId;
+            // update the message in the modal
+            pointsSpan.innerText = this.dataset.rewardPoints;
+            rewardNameSpan.innerText = this.dataset.rewardName;
+            // show the modal
+            modal.style.display = "block";
+          });
+
+          rewardsList.appendChild(rewardItem);
+        });
+      }
+    }).catch(function(error) {
+      console.log('There was an error:', error);
+    });
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    cancelBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    redeemBtn.onclick = function() {
+      modalMessage.innerText = "Generating discount...";
+      redeemBtn.style.display = "none";
+                cancelBtn.style.display = "none";
+      window.RivoJS.redeemReward(selectedRewardId).then(function(data) {
+        console.log(data);
+        if (data.success) {
+          var discountCode = data.points_purchase.code;
+          fetch('/discount/' + discountCode)
+            .then(function(response) {
+              if (response.ok) {
+                modalMessage.innerText = "Your " + rewardNameSpan.innerText + " code has been applied to your shopping cart";
+                document.getElementById('close-window-btn').style.display = "block";
+                redeemBtn.style.display = "none";
+                cancelBtn.style.display = "none";
+              } else {
+                throw new Error('Error: Failed to apply discount code');
+              }
+            })
+            .catch(function(error) {
+              console.log('There was an error:', error);
+              modalMessage.innerText = "Failed to apply the discount code";
+              document.getElementById('close-window-btn').style.display = "block";
+              redeemBtn.style.display = "none";
+              cancelBtn.style.display = "none";
+            });
+        }
+      });
+    }
+
+    var closeWindowBtn = document.getElementById('close-window-btn');
+    closeWindowBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    var redeemedRewardsList = document.getElementById('redeemed-rewards-list');
+
+    RivoJS.getCustomerPointsPurchases().then(function(resp) {
+      var notUsedRewards = resp.points_purchases.filter(function(points_purchase) {
+        return points_purchase.used_at === null;
+      });
+
+      if (notUsedRewards.length > 0) {
+        notUsedRewards.forEach(function(points_purchase) {
+          var redeemedRewardItem = document.createElement('li');
+          redeemedRewardItem.classList.add('rivo-rewards-card');
+          redeemedRewardItem.classList.add('redeemed-reward-item');
+
+          redeemedRewardItem.dataset.rewardName = points_purchase.reward.name;
+
+          var redeemedRewardIcon = document.createElement('img');
+          redeemedRewardIcon.classList.add('rivo-rewards-card-icon');
+          redeemedRewardIcon.src = points_purchase.reward.icon_url;
+          redeemedRewardItem.appendChild(redeemedRewardIcon);
+
+          var redeemedCardContent = document.createElement('div');
+          redeemedCardContent.classList.add('rivo-rewards-card-content');
+
+          var redeemedRewardTitle = document.createElement('p');
+          redeemedRewardTitle.classList.add('rivo-card-title');
+          redeemedRewardTitle.innerText = points_purchase.reward.name;
+          redeemedCardContent.appendChild(redeemedRewardTitle);
+
+          var redeemedDate = document.createElement('p');
+          redeemedDate.classList.add('rivo-card-description');
+          redeemedDate.innerText = "Redeemed on: " + new Date(points_purchase.applied_at).toLocaleDateString('en-US');
+          redeemedCardContent.appendChild(redeemedDate);
+
+          if (points_purchase.expires_at) {
+            var expirationDate = document.createElement('p');
+            expirationDate.classList.add('rivo-card-description');
+            expirationDate.innerText = "Expires on: " + new Date(points_purchase.expires_at).toLocaleDateString('en-US');
+            redeemedCardContent.appendChild(expirationDate);
+          }
+
+          redeemedRewardItem.appendChild(redeemedCardContent);
+
+
+
+          redeemedRewardItem.addEventListener('click', function() {
+            var self = this; // save 'this' to use it in promise
+            redeemBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+            modalMessage.innerText = "Applying discount...";
+            var discountCode = points_purchase.code;
+            fetch('/discount/' + discountCode)
+            .then(function(response) {
+                if (response.ok) {
+                    modalMessage.innerText = "Your " + self.dataset.rewardName + " code has been applied to your shopping cart";
+                    document.getElementById('close-window-btn').style.display = "block";
+                } else {
+                    console.log('Error:', response.status, response.statusText);
+                    throw new Error('Failed to apply discount code');
+                }
+            })
+            .catch(function(error) {
+                console.log('There was an error:', error);
+                modalMessage.innerText = "Failed to apply the discount code";
+                document.getElementById('close-window-btn').style.display = "block";
+                redeemBtn.style.display = "none";
+                cancelBtn.style.display = "none";
+            });
+
+            // Show the modal
+            modal.style.display = "block";
+        });
+
+
+            redeemedRewardsList.appendChild(redeemedRewardItem);
+        });
+
+          var redeemedRewardsContainer = document.getElementById('redeemed-rewards');
+          redeemedRewardsContainer.style.display = "block";
+        }
+      }).catch(function(error) {
+        console.log('There was an error:', error);
+      });
+  }
+</script>

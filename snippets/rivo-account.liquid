@@ -1,25 +1,123 @@
-<section class="bh-section-banner bh-container bg-[#002631]">
-  <div class="area-full flex flex-row space-x-6 sm:space-x-16 justify-center py-6 text-white text-[12px] sm:text-[16px] font-bold tracking-widest leading-none uppercase">
-    <a href="#bh-section-redeem">Points</a>
-    <a href="#bh-section-tiers">Tiers</a>
-    <a href="#bh-section-refer">Referrals</a>
-  </div>
-</section>
-
-<div class="rivo-section">
-  <div class="rivo-container">
-    <div class="rivo-row desk-2">
-      <div class="rivo-col flex-col">
-        <h3>Your Points</h3>
-        <p>{{ customer.metafields.custom.rivo.value.points_balance }}</p>
-      </div>
-      <div class="rivo-col flex-col">
-        <h3>Current Tier</h3>
-        <p>Tier1</p>
-        <p>400 points to unlock Tier 2</p>
-      </div>
+{% assign default_balance = shop.metafields.rivo.loy.points_program.ways_to_earn | first %}
+<div class="rivo-account-wrapper">
+  <h2 class="text-align-center">Hi {{ customer.first_name }} 👋</h2>
+  <p class="text-align-center">
+    Been baking up points? Time to savor the fruits (or treats) of your labor with the rewards below!
+  </p>
+  <div class="rivo-row desk-2 margin-top-40">
+    <div class="rivo-column align-self-start">
+      <h4 class="rivo-h4-border-bottom">Your Rewards</h4>
+      <p>
+        <span class="rivo-points">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points
+      </p>
+      <!-- Points Progress Bar -->
+      {% render 'rivo-account-progressbar' %}
+    </div>
+    <div class="rivo-column align-self-start">
+      <h4 class="rivo-h4-border-bottom">Rewards to be used!</h4>
+      <!-- Redeem a Reward -->
+      {% render 'rivo-account-rewards' %}
+      <div></div>
     </div>
   </div>
 </div>
 
-<style></style>
+<style>
+  .rivo-account-wrapper {
+      margin-bottom: 40px;
+      padding: 25px;
+      background: #E7F4FA;
+      border: 2px solid #FFF;
+      box-shadow: 0px 0px 0px 15px #E7F4FA;
+  }
+
+  .rivo-row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 100px;
+  }
+
+  .margin-top-40 {
+      margin-top: 40px;
+  }
+
+  .rivo-heading-border {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+  }
+
+  .rivo-points {
+      font-size: 32px;
+      font-weight: 700;
+  }
+
+  .rivo-column {
+      width: 50%;
+  }
+
+  .rivo-space-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .text-align-center {
+      text-align: center;
+  }
+
+  .align-self-start {
+      align-self: flex-start;
+  }
+
+  .rivo-h4-border-bottom {
+      border-bottom: 1px solid #000;
+      padding-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+      .rivo-row {
+          flex-direction: column;
+      }
+      .rivo-column {
+          width: 100%;
+      }
+      .rivo-space-between {
+          flex-direction: column;
+      }
+      .rivo-card-grey {
+          padding: 15px;
+      }
+  }
+</style>
+
+<script type="text/javascript">
+  // REDEEM REWARDS
+
+    document.addEventListener("DOMContentLoaded", function(){
+      document.querySelectorAll('.redeem').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+          // redeem the reward and expect a promise with the data
+          window.RivoJS.redeemReward(this.dataset.rewardId).then(function(data){
+            console.log(data)
+            alert("reward been redeemed");
+          });
+        });
+      });
+    });
+
+
+    // UNLOCK NEXT VIP TIER
+
+    document.addEventListener("rivo-js-loaded", function() {
+    RivoJS.getCustomerVipTier().then(function(resp) {
+      var pointsNeeded = resp.next_tier.to_spend_or_earn;
+      var tierName = resp.next_tier.name;
+      var vipInfoP = document.getElementById('vip-unlock');
+      if (vipInfoP) {
+        vipInfoP.innerHTML = "Earn " + pointsNeeded + " more points to become a " + tierName;
+      }
+    });
+  });
+</script>
