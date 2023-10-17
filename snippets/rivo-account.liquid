@@ -1,94 +1,100 @@
-{% assign default_balance = shop.metafields.rivo.loy.points_program.ways_to_earn | first %}
-<div class="rivo-account-wrapper">
-  <h2 class="text-align-center">Hi {{ customer.first_name }} 👋</h2>
-  <p class="text-align-center">
-    Been baking up points? Time to savor the fruits (or treats) of your labor with the rewards below!
-  </p>
-  <div class="rivo-row desk-2 margin-top-40">
-    <div class="rivo-column align-self-start">
-      <h4 class="rivo-h4-border-bottom">Your Rewards</h4>
+<div class="rivo-account-container">
+  {% assign default_balance = shop.metafields.rivo.loy.points_program.ways_to_earn | first %}
+  <div class="rivo-account-wrapper">
+    <div class="text-align-center">
+      <h2>Hi {{ customer.first_name }} 👋</h2>
       <p>
-        <span class="rivo-points">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points
+        You have <span class="rivo-points">{{ customer.metafields.custom.rivo.value.points_balance }}</span> points
       </p>
-      <!-- Points Progress Bar -->
-      {% render 'rivo-account-progressbar' %}
     </div>
-    <div class="rivo-column align-self-start">
-      <h4 class="rivo-h4-border-bottom">Rewards to be used!</h4>
-      <!-- Redeem a Reward -->
-      {% render 'rivo-account-rewards' %}
-      <div></div>
+    <div class="rivo-account-row margin-top-40">
+      <div class="rivo-column">
+        <h3 class="rivo-title_large">Rewards</h3>
+        <div class="feature_divider"></div>
+
+        <!-- Points Progress Bar -->
+        {% render 'rivo-account-progressbar' %}
+
+        <!-- Redeem a Reward -->
+        {% render 'rivo-account-rewards' %}
+      </div>
+      <div class="rivo-column">
+        <h3 class="rivo-title_large">Tier Status</h3>
+        <div class="feature_divider"></div>
+        <div>
+          {% render 'rivo-account-tiers-progress' %}
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
   .rivo-account-wrapper {
-      margin-bottom: 40px;
-      padding: 25px;
-      background: #E7F4FA;
-      border: 2px solid #FFF;
-      box-shadow: 0px 0px 0px 15px #E7F4FA;
+    padding: 30px;
+    background: #faeae6;
+    margin: 40px auto;
+    border-radius: 5px;
   }
 
-  .rivo-row {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      gap: 100px;
+  .rivo-account-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
 
   .margin-top-40 {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .rivo-heading-border {
-      margin-bottom: 10px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .rivo-points {
-      font-size: 32px;
-      font-weight: 700;
-  }
-
-  .rivo-column {
-      width: 50%;
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .rivo-space-between {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .text-align-center {
-      text-align: center;
+    text-align: center;
   }
 
-  .align-self-start {
-      align-self: flex-start;
+  .rivo-title_large {
+    font-size: 30px;
+    padding-top: 0;
+    font-weight: 600;
+    text-shadow: -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000, 1.2px -1.2px 0 #000,
+      -1.2px -1.2px 0 #000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
   }
 
-  .rivo-h4-border-bottom {
-      border-bottom: 1px solid #000;
-      padding-bottom: 1rem;
+  .rivo-title_large {
+    margin-bottom: 25px;
   }
+
 
   @media (max-width: 768px) {
-      .rivo-row {
-          flex-direction: column;
-      }
-      .rivo-column {
-          width: 100%;
-      }
-      .rivo-space-between {
-          flex-direction: column;
-      }
-      .rivo-card-grey {
-          padding: 15px;
-      }
+    .rivo-account-row {
+      grid-template-columns: 1fr !important;
+    }
+    .rivo-row {
+      flex-direction: column;
+    }
+    .rivo-column {
+      width: 100%;
+    }
+    .rivo-space-between {
+      flex-direction: column;
+    }
   }
 </style>
 
