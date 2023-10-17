@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/header-image_8090b774-ceb0-478f-812c-eeb4546b944e.jpg",
+        "image": "shopify:\/\/shop_images\/web-header.jpg",
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "desktop_content_position": "bottom-left",
@@ -49,7 +49,6 @@
     },
     "rich_text": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -69,6 +68,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -170,7 +170,6 @@
     },
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-0": {
           "type": "heading",
@@ -199,6 +198,7 @@
         "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-1",
         "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
         "height": "adapt",
@@ -459,7 +459,6 @@
     },
     "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-0": {
           "type": "heading",
@@ -488,6 +487,7 @@
         "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-1",
         "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/patty-of-pattys-cakes.jpg",
         "height": "adapt",
