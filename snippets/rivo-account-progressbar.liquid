@@ -1,8 +1,5 @@
 <div class="rivo-points-progress-container">
-  <div class="threshold-points">
-    <span class="rivo-points-start">0</span>
-    <span class="rivo-points-end">...</span>
-  </div>
+  <p id="rivo-points-info" class="min-height-45" aria-live="polite">Loading your rewards progress...</p>
   <div class="rivo-progress-bar">
     <div class="rivo-bar">
       <div
@@ -17,7 +14,10 @@
       </div>
     </div>
   </div>
-  <p id="rivo-points-info" aria-live="polite">Loading your rewards progress...</p>
+  <div class="threshold-points">
+    <span class="rivo-points-start">0</span>
+    <span class="rivo-points-end">...</span>
+  </div>
 </div>
 
 <style>
@@ -41,6 +41,7 @@
         top: 50%;
         color: #fff;
         transform: translateY(-50%);
+        background-color: #66D0EE;
         padding: 0 5px;
         border-radius: 0 1px 1px 0;
     }
@@ -48,9 +49,9 @@
     .rivo-progress-bar {
         position: relative;
         background-color: #FFF;
-        height: 50px;
-        border-radius: 1px;
-        border: 1px solid #000;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #B3B3B3;
         overflow: hidden;
         margin-top: 10px;
         width: 100%;
@@ -61,22 +62,29 @@
   }
 
     .rivo-bar .rivo-fill {
-        height: 50px;
-        background-color: #97CAEB;
+        height: 30px;
+        background-color: #66D0EE;
         width: 0%;
-        border-radius: 1px;
+        border-radius: 0px;
     }
 
     #rivo-points-info {
-      text-align: left;
-      margin-top: 1rem;
+        text-align: left;
     }
+
+  .min-height-45 {
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
 </style>
 
 <script type="text/javascript">
   
-   
-
+  
+  
+  
+    (function() {
         async function init() {
             try {
                 const pointsInfoElem = document.getElementById('rivo-points-info');
@@ -138,6 +146,11 @@
             }
         }
 
-        document.addEventListener("DOMContentLoaded", init);
+        document.addEventListener("rivo-js-loaded", init);
+    })();
+
+
+
+
 
 </script>
