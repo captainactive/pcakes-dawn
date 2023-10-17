@@ -15,8 +15,9 @@
       </div>
       <div class="rivo-column">
         <h3 class="rivo-title_large">Current Tier</h3>
-        <span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.vip_tier }}</span>
-
+        <p class="text-color-purple">
+          <span class="rivo-text_large">{{ customer.metafields.custom.rivo.value.vip_tier }}</span>
+        </p>
         <div>
           {% render 'rivo-account-tiers-progress' %}
         </div>
