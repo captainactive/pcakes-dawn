@@ -18,8 +18,16 @@
         Are you sure you want to redeem <span id="points"></span> points for a <span id="reward-name"></span>?
       </p>
       <button id="cancel-btn" class="modal-btn">Cancel</button>
-      <button id="redeem-btn" class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0">Redeem</button>
-      <button id="close-window-btn" class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0" style="display: none;">Close Window</button>
+      <button id="redeem-btn" class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0">
+        Redeem
+      </button>
+      <button
+        id="close-window-btn"
+        class="flits-button flits-primary-btn flits-profile-edit-button flits-ml-0"
+        style="display: none;"
+      >
+        Close Window
+      </button>
     </div>
   </div>
 </div>
@@ -47,10 +55,17 @@
   }
 
   .rivo-rewards-card {
-    text-align: left;
+    background: #FCF2F6 !important;
+    border: 1px solid #E14984 !important;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: -webkit-center !important;
+    height: 230px;
+    padding: 0 20px !important;
+    padding-top: 15px !important;
+    transition: all .25s ease-in-out;
   }
 
   #redeem-rewards .rivo-rewards-card p {
