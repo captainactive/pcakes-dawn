@@ -1,16 +1,16 @@
-<div class="margin-top-30">
-  <div class="faq-wrapper" id="faq-wrapper"></div>
+<div class="rivo-margin-top-30">
+  <div class="rivo-faq-wrapper" id="faq-wrapper"></div>
 </div>
 
 <style>
-.faq-wrapper {
+.rivo-faq-wrapper {
   max-width: 60%;
   margin: 0 auto;
   margin-top: 40px;
   font-size: 20px !important;
 }
 
-.question {
+.rivo-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
   color: #8a54a8
 }
 
-.toggle-button {
+.rivo-toggle-button {
   font-size: 20px;
   background: none;
   color: #E14984;
@@ -30,91 +30,98 @@
   transition: transform 0.3s ease;
 }
 
-.answer {
+.rivo-answer {
   display: none;
   padding: 10px 0;
   text-align: left;
 }
 
 @media (max-width: 767px) {
-  .faq-wrapper {
+  .rivo-faq-wrapper {
     max-width: 100%;
   }
 }
 </style>
-  <script>
-      const faqs = [ 
-        { question: "What is the Patty's Sweet Rewards?", 
-         answer: "The Patty's Sweet Rewards is an exclusive program designed to thank our customers. Every time you purchase one of our products, follow us on social media, or refer friends, you earn points that can be redeemed for discounts, early access to products, and more." 
-        }, 
-        { question: "Who can join the Patty's Sweet Rewards?", 
-         answer: "Anyone can sign up for the Patty's Sweet Rewards! Just create an account on our website and you'll start earning points and unlocking rewards right away." 
-        }, 
-        { question: "How do I earn points?", 
-         answer: "Earning points is easy! Every purchase of our products through our online store, following us on social media, sharing your Patty's Cakes & Desserts experience with friends, and participating in select promotional activities will reward you with points that can be redeemed for exclusive benefits and discounts. In store purchases do not earn rewards points. This is ONLINE only." 
-        }, 
-        { question: "Do purchases in the store earn points?", 
-         answer: "Only purchases made in our ONLINE store earn points. In-store purchases do not earn points." 
-        },
-        { question: "How do I use my points?", 
-         answer: "Simply log in to your account on our website and click on the rewards section to see the latest offerings." 
-        }, 
-        { question: "Do my points expire?", 
-         answer: "Points will expire after one year if there isn't any account activity." 
-        }, 
-      ];
 
-    // Add more FAQS above ⬆️⬆️⬆️⬆️⬆️
+<script>
+  const faqs = [
+    {
+      question: "What is the Patty's Sweet Rewards?",
+      answer: "The Patty's Sweet Rewards is an exclusive program designed to thank our customers. Every time you purchase one of our products, follow us on social media, or refer friends, you earn points that can be redeemed for discounts, early access to products, and more."
+    },
+    {
+      question: "Who can join the Patty's Sweet Rewards?",
+      answer: "Anyone can sign up for the Patty's Sweet Rewards! Just create an account on our website and you'll start earning points and unlocking rewards right away."
+    },
+    {
+      question: "How do I earn points?",
+      answer: "Earning points is easy! Every purchase of our products through our online store, following us on social media, sharing your Patty's Cakes & Desserts experience with friends, and participating in select promotional activities will reward you with points that can be redeemed for exclusive benefits and discounts. In store purchases do not earn rewards points. This is ONLINE only."
+    },
+    {
+      question: "Do purchases in the store earn points?",
+      answer: "Only purchases made in our ONLINE store earn points. In-store purchases do not earn points."
+    },
+    {
+      question: "How do I use my points?",
+      answer: "Simply log in to your account on our website and click on the rewards section to see the latest offerings."
+    },
+    {
+      question: "Do my points expire?",
+      answer: "Points will expire after one year if there isn't any account activity."
+    },
+  ];
 
-const faqWrapper = document.querySelector("#faq-wrapper");
+  // Add more FAQS above ⬆️⬆️⬆️⬆️⬆️
 
-faqs.forEach((faq, index) => {
-  const questionWrapper = document.createElement("div");
-  const question = document.createElement("div");
-  const questionText = document.createElement("span");
-  const toggleButton = document.createElement("button");
-  const answer = document.createElement("div");
+  const faqWrapper = document.querySelector("#faq-wrapper");
 
-  questionWrapper.className = "question-wrapper";
-  questionWrapper.setAttribute("data-question", index);
-  
-  question.className = "question";
-  
-  questionText.textContent = faq.question;
-  question.appendChild(questionText);
+  faqs.forEach((faq, index) => {
+    const questionWrapper = document.createElement("div");
+    const question = document.createElement("div");
+    const questionText = document.createElement("span");
+    const toggleButton = document.createElement("button");
+    const answer = document.createElement("div");
 
-  toggleButton.className = "toggle-button";
-  toggleButton.innerHTML = "+";
-  question.appendChild(toggleButton);
+    questionWrapper.className = "rivo-question-wrapper";
+    questionWrapper.setAttribute("data-question", index);
 
-  answer.className = "answer";
-  answer.textContent = faq.answer;
-  answer.style.display = "none";
+    question.className = "rivo-question";
 
-  questionWrapper.appendChild(question);
-  questionWrapper.appendChild(answer);
+    questionText.textContent = faq.question;
+    question.appendChild(questionText);
 
-  faqWrapper.appendChild(questionWrapper);
+    toggleButton.className = "rivo-toggle-button";
+    toggleButton.innerHTML = "+";
+    question.appendChild(toggleButton);
 
-question.addEventListener("click", () => {
-  answer.style.display = answer.style.display === "none" ? "block" : "none";
-  toggleButton.innerHTML = toggleButton.innerHTML === "+" ? "-" : "+";
+    answer.className = "rivo-answer";
+    answer.textContent = faq.answer;
+    answer.style.display = "none";
 
-  // Close all other open questions (if any)
-  const openQuestions = document.querySelectorAll(".question-wrapper.open");
-  openQuestions.forEach(openQuestion => {
-    const openAnswer = openQuestion.querySelector(".answer");
-    const openButton = openQuestion.querySelector(".toggle-button");
+    questionWrapper.appendChild(question);
+    questionWrapper.appendChild(answer);
 
-    if (openAnswer !== answer) {
-      openAnswer.style.display = "none";
-      openButton.innerHTML = "+";
-      openQuestion.classList.remove("open");
-    }
+    faqWrapper.appendChild(questionWrapper);
+
+    question.addEventListener("click", () => {
+      answer.style.display = answer.style.display === "none" ? "block" : "none";
+      toggleButton.innerHTML = toggleButton.innerHTML === "+" ? "-" : "+";
+
+      // Close all other open questions (if any)
+      const openQuestions = document.querySelectorAll(".rivo-question-wrapper.open");
+      openQuestions.forEach(openQuestion => {
+        const openAnswer = openQuestion.querySelector(".rivo-answer");
+        const openButton = openQuestion.querySelector(".rivo-toggle-button");
+
+        if (openAnswer !== answer) {
+          openAnswer.style.display = "none";
+          openButton.innerHTML = "+";
+          openQuestion.classList.remove("open");
+        }
+      });
+
+      // Toggle the current question
+      questionWrapper.classList.toggle("open", answer.style.display === "block");
+    });
   });
-
-  // Toggle the current question
-  questionWrapper.classList.toggle("open", answer.style.display === "block");
-});
-});
-  </script>
+</script>
