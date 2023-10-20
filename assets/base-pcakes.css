@@ -376,7 +376,7 @@ footer h2, footer h3 {
 
 /* FOOTER REVIEWS  */
 
-.section-sections--16655251341554__5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a-padding  {
+.section-sections--16655251341554__5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a-padding, .section-sections--16779409654002__5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a-padding  {
 	background-color: #f3b6ce;
 	padding: 30px;
 }	
@@ -495,6 +495,16 @@ display: none;
 .section-template--16655251996914__image-with-text-padding img {
   border: 1px solid #e14984;
 }
+}
+
+@media (max-width: 748px) {
+  .banner__heading {
+    text-shadow: 1px 1px 8px #383838;
+  }
+  .subtitle {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000;
+  }
 }
 
 

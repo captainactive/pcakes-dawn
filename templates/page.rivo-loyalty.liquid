@@ -1,5 +1,48 @@
+<!-- LOY Page -->
 <div id="rivo-page-wrapper" style="min-height:800px;"></div>
 
-<!-- Referrals -->
+<!-- VIP Tiers -->
+<div class="rivo-page-section">
+  <div class="rivo-container">
+    <h2 class="title inline-richtext h1">VIPs Earn More</h2>
+    <p class="rivo-subtitle">Level up for more sweetness and exclusive perks</p>
+    {% render 'rivo-vip-tiers' %}
+  </div>
+</div>
 
+<!-- Referrals -->
 <div id="rivo-referral-campaign-3202"></div>
+
+<!-- FAQs -->
+<div class="rivo-page-section" id="rivo-faqs">
+  <div class="rivo-container">
+    <h2 class="title inline-richtext h1">Loyalty FAQs</h2>
+    <p class="rivo-subtitle">All your dessert questions answered, right here!</p>
+    {% render 'rivo-faqs' %}
+  </div>
+</div>
+
+<style>
+.rivo-page-section {
+  padding: 40px 60px;
+}
+
+.rivo-container {
+  text-align: center;
+}
+
+.rivo-subtitle {
+  color: #E14984 !important;
+  font-size: 20px !important;
+  line-height: 1.3;
+  font-family: 'Raleway', sans-serif, serif, monospace !important;
+}
+
+
+@media (min-width: 768px) {
+  #rivo-faqs {
+    padding-top: 20px;
+  }
+}
+
+</style>
