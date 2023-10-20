@@ -34,39 +34,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "16966438248719b507": {
-      "type": "apps",
-      "blocks": {
-        "ba082ed7-a258-423e-956e-8fa85da02b79": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/media-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": ""
-          }
-        },
-        "ad26ca8f-8051-42e2-a5a4-7a4ad76969ef": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "Customer Love",
-            "badge_link": "shopify:\/\/collections\/standard-cakes",
-            "product": "red-velvet-standard-cake"
-          }
-        }
-      },
-      "block_order": [
-        "ba082ed7-a258-423e-956e-8fa85da02b79",
-        "ad26ca8f-8051-42e2-a5a4-7a4ad76969ef"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "banner",
     "23c0b79e-f860-4007-8d55-2dce2d33801a",
-    "product-grid",
-    "16966438248719b507"
+    "product-grid"
   ]
 }
