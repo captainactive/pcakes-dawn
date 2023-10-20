@@ -19,7 +19,6 @@
     },
     "4ff30744-af1e-4052-b30a-822153c5fd82": {
       "type": "pcakes-collection-top",
-      "disabled": true,
       "blocks": {
         "template--16655251964146__4ff30744-af1e-4052-b30a-822153c5fd82-1677818921f7fc429a-0": {
           "type": "heading",
@@ -48,6 +47,7 @@
         "template--16655251964146__4ff30744-af1e-4052-b30a-822153c5fd82-1677818921f7fc429a-1",
         "template--16655251964146__4ff30744-af1e-4052-b30a-822153c5fd82-1677818921f7fc429a-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/1305-banana-split-cupcake-web.jpg",
         "height": "adapt",
