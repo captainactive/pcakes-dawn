@@ -167,12 +167,42 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "cd0521fc-fa77-4ecd-a5f0-bfb6ec9a5ec9": {
+      "type": "test-section",
+      "settings": {
+        "custom_text_title": "",
+        "custom_html": "<div style=\"padding-bottom: 80px;\">\n<\/div>",
+        "custom_text_body": "<p><\/p><p><\/p><p><\/p>"
+      }
+    },
+    "1696644384ed8d30f7": {
+      "type": "apps",
+      "blocks": {
+        "ee8d13f7-3f89-4566-9b7d-a96498ec2bdb": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": false,
+            "heading": "",
+            "badge_link": "",
+            "product": "confetti-standard-cake"
+          }
+        }
+      },
+      "block_order": [
+        "ee8d13f7-3f89-4566-9b7d-a96498ec2bdb"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
     "7ed8a1a3-b69f-4ce7-ac7a-8e780cbc23fa",
-    "45d3e66f-a2b7-4b73-bcaa-958680d4c011"
+    "45d3e66f-a2b7-4b73-bcaa-958680d4c011",
+    "cd0521fc-fa77-4ecd-a5f0-bfb6ec9a5ec9",
+    "1696644384ed8d30f7"
   ]
 }

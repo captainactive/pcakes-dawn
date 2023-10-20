@@ -1,0 +1,160 @@
+<div class="rivo-points-progress-container">
+  <p id="rivo-points-info" aria-live="polite">Loading your rewards progress...</p>
+  <div class="rivo-progress-bar">
+    <div class="rivo-bar">
+      <div
+        class="rivo-fill"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+        style="width: 0%;"
+      >
+        <span class="rivo-points-display">0</span>
+      </div>
+    </div>
+  </div>
+  <div class="threshold-points">
+    <span class="rivo-points-start">0</span>
+    <span class="rivo-points-end">...</span>
+  </div>
+</div>
+
+<style>
+    .rivo-points-progress-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .threshold-points {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rivo-bar .rivo-fill {
+        position: relative;
+    }
+
+    .rivo-points-display {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        color: #fff;
+        transform: translateY(-50%);
+        background-color: #E14984;
+        padding: 0 5px;
+        border-radius: 0 1px 1px 0;
+    }
+
+    .rivo-progress-bar {
+        position: relative;
+        background-color: #FCF2F6;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #E14984;
+        overflow: hidden;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+  #rivo-loy-progressbar .rivo-progress-bar {
+     margin-top: 25px;
+  }
+
+    .rivo-bar .rivo-fill {
+        height: 30px;
+        background-color: #E14984;
+        width: 0%;
+        border-radius: 0px;
+    }
+
+    #rivo-points-info {
+        text-align: left;
+    }
+
+  .min-height-45 {
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+
+
+.rivo-points-start,
+.rivo-points-end {
+  background: #E14984;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: var(--font-heading-family);
+  color: #FFF;
+  margin-top: 5px;
+}  
+</style>
+
+<script type="text/javascript">
+
+  
+    (function() {
+        async function init() {
+            try {
+                const pointsInfoElem = document.getElementById('rivo-points-info');
+                const progressBarElem = document.querySelector('.rivo-progress-bar');
+                const fillElem = document.querySelector('.rivo-bar .rivo-fill');
+                const pointsStartElem = document.querySelector('.rivo-points-start');
+                const pointsEndElem = document.querySelector('.rivo-points-end');
+
+                const customerResp = await RivoJS.getCustomerDetails();
+                const { points_tally: currentPoints } = customerResp;
+
+                const rewardsResp = await RivoJS.getShopRewards();
+
+                let sortedRewards = rewardsResp.slice().sort((a, b) => a.points_amount - b.points_amount);
+                const topReward = sortedRewards[sortedRewards.length - 1];
+
+                const eligibleRewards = rewardsResp.filter(reward => reward.enabled && currentPoints >= reward.points_amount);
+                const bestReward = eligibleRewards.reduce((max, reward) => reward.points_amount > max.points_amount ? reward : max, { points_amount: 0 });
+
+                const rewardResp = await RivoJS.getCustomerBestRewardToShow();
+                const { name: rewardName, points_amount: requiredPoints } = rewardResp;
+
+                const remainingPoints = Math.max(0, requiredPoints - currentPoints);
+                const progressPercentage = Math.min(100, (currentPoints / requiredPoints) * 100);
+
+                if (fillElem) {
+                    fillElem.style.width = `${progressPercentage}%`;
+                    fillElem.setAttribute("aria-valuenow", progressPercentage);
+
+                    const pointsDisplayElem = fillElem.querySelector('.rivo-points-display');
+                    if (pointsDisplayElem) {
+                        pointsDisplayElem.textContent = currentPoints;
+                    }
+                }
+
+                const [usedPointsPurchases, unusedPointsPurchases] = await Promise.all([
+                    RivoJS.getCustomerPointsPurchases({ used: true }),
+                    RivoJS.getCustomerPointsPurchases({ used: false })
+                ]);
+
+                const totalPointsPurchases = usedPointsPurchases.points_purchases.length + unusedPointsPurchases.points_purchases.length;
+
+                let rewardMessage;
+                if (totalPointsPurchases === 0) {
+                    rewardMessage = `You are ${remainingPoints} points away from your first reward`;
+                } else {
+                    rewardMessage = `You are ${remainingPoints} points away from your next reward`;
+                }
+
+                if (pointsInfoElem) pointsInfoElem.innerText = rewardMessage;
+                if (fillElem) {
+                    fillElem.style.width = `${progressPercentage}%`;
+                    fillElem.setAttribute("aria-valuenow", progressPercentage);
+                }
+                if (pointsEndElem) pointsEndElem.innerText = requiredPoints;
+
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        document.addEventListener("rivo-js-loaded", init);
+    })();
+</script>
