@@ -47,6 +47,7 @@
         "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-1",
         "template--16655251931378__993835be-49b3-4691-bf02-7246ab619b3a-167872727568b51ee1-2"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -87,6 +88,7 @@
         "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-2",
         "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
