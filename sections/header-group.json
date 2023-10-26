@@ -22,11 +22,21 @@
             "color_scheme": "accent-1",
             "link": "shopify:\/\/pages\/loyalty"
           }
+        },
+        "93fed86e-b7fc-45be-9ada-61748fc91e91": {
+          "type": "announcement",
+          "settings": {
+            "text": "Halloween Hours - 10am to 5pm",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce"
+        "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce",
+        "93fed86e-b7fc-45be-9ada-61748fc91e91"
       ],
       "custom_css": [
         "p {font-family: var(--font-body-family); font-size: 110%; font-weight: normal;}"
