@@ -25,8 +25,9 @@
         },
         "93fed86e-b7fc-45be-9ada-61748fc91e91": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
-            "text": "Halloween Hours - 10am to 5pm",
+            "text": "Thanksgiving Hours - 10am to 12pm | Closed on Friday Nov. 24",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": ""
