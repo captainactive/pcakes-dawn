@@ -9,6 +9,7 @@
     },
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width\"><h2>Color Swatches<\/h2>{% render 'pc-color-swatches' %}<\/div",
         "color_scheme": "background-1",
