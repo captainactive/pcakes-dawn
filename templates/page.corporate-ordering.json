@@ -102,12 +102,40 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e68049d2-50cb-440f-8a6b-3fc07ce8bbc2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Cupcake Packs",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "large-packs",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "f671c920-0b5a-4cb8-b34b-96b5f40e3972",
     "c9e30cd9-8dcc-46af-b5f1-8c0f43fcc894",
-    "993835be-49b3-4691-bf02-7246ab619b3a"
+    "993835be-49b3-4691-bf02-7246ab619b3a",
+    "e68049d2-50cb-440f-8a6b-3fc07ce8bbc2"
   ]
 }
