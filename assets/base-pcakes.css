@@ -991,3 +991,7 @@ justify-items: center;
 }
 }
 
+::selection {
+  background-color: none;
+}
+
