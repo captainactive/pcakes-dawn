@@ -26,9 +26,17 @@
 
   .ptable tbody tr th:first-child, .ptable tbody tr td:first-child {
     display: grid;
+    grid-column:1 / span 4;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+    .ptable tbody tr th, .ptable tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
 }
 </style>
 
