@@ -235,17 +235,108 @@
   width:100%;
 }
 
-
-
-
-
-
-
-
-
 .icingimage {
 	width:80%; 
 	height:auto; 
 	margin-left:30px; 
 	border-radius:5px;
 }
+
+
+/* CAKE PRICING PAGES */
+  
+.info {
+  display: none;
+}
+.ptable-sizes tbody tr {
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+}
+.ptable tbody tr td, .ptable tbody tr th {
+  align-items: center;
+  display: grid;
+}
+.ptable th {
+  word-break: break-word;
+}
+.r4 {
+  color: red;
+}
+.r2 {
+  color: green;
+}
+.anchor {
+  position: relative;
+  display: block;
+  top: -180px;
+  visibility: hidden;
+}
+.quesinfo {
+  text-decoration: none;
+}
+
+
+/* CAKE PRICING PAGES | MOBILE DETAILS */
+
+  @media(max-width: 675px) {
+  .ptable {
+    border: none;
+  }
+  .ptable tbody tr {
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: #F2F2F2 solid 1px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+  .ptable {
+    padding: 5px 3px 5px 8px;
+  }
+  .ptable tbody tr:first-child {
+    display: none;
+  }
+  .ptable tbody tr td:first-child {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    text-align: center;
+    font-size: 105%;
+    background-color: #F2F2F2;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 10px;
+    padding: 8px 1px;
+    border-bottom: solid 1px #e14984;
+  }
+  .ptable td, .ptable th {
+    padding: 1px 3px
+  }
+  .ptable tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .r1, .r2, .r3, .r4, .r5 {
+    grid-column: 1 / span 4;
+  }
+  .r1, .r2, .r3, .r4, .r5 {
+    /*font-size: 85%;*/
+  }
+  .savetxt {
+    /*font-size: 70%;*/
+  }
+  .buynow, .buynow:visited {
+    margin: 3px auto;
+    width: 80%;
+    max-width: 260px;
+  }
+  .info {
+    display: contents;
+  }
+}
+ /* END || CAKE PRICING PAGES | MOBILE DETAILS */
+
+
