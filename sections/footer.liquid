@@ -15,26 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 
-<scipt>
-//SMOOTH SCROLLING
-//https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
-$(function() {
-//  $('a[href*="#"]:not([href="#"])').click(function() {
- $('a[href*="#"]:not([href="#"]):not([href="#menu"]):not([href="#0"]):not([href="#mm-0"]):not([href="#mm-1"]):not([href="#mm-2"]):not([href="#mm-3"]):not([href="#mm-4"]):not([href="#mm-5"]):not([href="#mm-6"]):not([href="#mm-7"])').click(function(){ //ADAPT FOR THE MOBILE MENU
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</scipt>
 
 {%- style -%}
   .footer {
