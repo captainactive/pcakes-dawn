@@ -21,10 +21,13 @@
 	}
 	.ptable {
 		padding: 5px 3px 5px 8px;
-
     }
 
-  .ptable tbody tr th:first-child, .ptable tbody tr td:first-child {
+  tr:first-child {
+    display:none;
+  }
+  
+ .ptable tbody tr td:first-child {
     display: grid;
     grid-column:1 / span 4;
     grid-template-columns: 1fr;
@@ -33,7 +36,7 @@
  
   }
 
-    .ptable tbody tr th, .ptable tbody tr td {
+   .ptable tbody tr td {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
