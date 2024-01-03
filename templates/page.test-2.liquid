@@ -9,9 +9,53 @@
 
 <style>
 
+    .buynow, .buynow:visited {
+	margin: 0px auto; 
+  width: 80%;
+    max-width: 260px;
+    
+	border-radius: 4px; 
+	align-content: center;
+	background-color:#8a54a8; 
+	color:#FFF !important; 
+	font-size:14px;
+	/*white-space: nowrap;*/
+	display: grid;
+	text-decoration: none;
+
+  padding: 7px 3px;
+  line-height: 110%;
+}
+.buynow:active, .buynow:hover {
+	background-color:#e14984;
+	text-decoration: none;
+}
+  
+  
+
+  
   .info {
     display: none;
   }
+
+  .ptable-sizes tbody tr {
+  grid-template-columns:3fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.ptable tbody tr td, .ptable tbody tr th {
+  align-items: center;
+  display: grid;
+}
+  
+.ptable th {
+  word-break:break-word;
+}
+
+  
+
+
+
+  
 @media( max-width: 675px) {
 
   .ptable {
@@ -84,41 +128,7 @@
   }  
 }
 
-.ptable tbody tr td, .ptable tbody tr th {
-  align-items: center;
-  display: grid;
-}
-  
-.ptable th {
-  word-break:break-word;
-}
 
-  
-.ptable-sizes tbody tr {
-  grid-template-columns:3fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-    .buynow, .buynow:visited {
-	margin: 0px auto; 
-  width: 80%;
-    max-width: 260px;
-    
-	border-radius: 4px; 
-	align-content: center;
-	background-color:#8a54a8; 
-	color:#FFF !important; 
-	font-size:14px;
-	/*white-space: nowrap;*/
-	display: grid;
-	text-decoration: none;
-
-  padding: 7px 3px;
-  line-height: 110%;
-}
-.buynow:active, .buynow:hover {
-	background-color:#e14984;
-	text-decoration: none;
-}
   
 </style>
 
