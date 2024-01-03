@@ -100,9 +100,12 @@
 </style>
 
 
-  {%-
- assign serves = "<span class='info'>Serves:</span>"
-  
+  {% liquid
+  assign serves = "<span class='info'>Serves: </span>"
+  assign normal = "<span class='info'>Normal Price: </span>" 
+  assign online = "<span class='info'>Online Price: </span>" 
+  assign savings = "<span class='info'>Savings: </span>" 
+  assign savingspost = "<div class='savetxt'>Buy online and save!</div>" 
   %}
 
   
@@ -119,9 +122,9 @@
   <tr>
     <td>4&quot; Round Smash Cake (no filling) </td>
     <td class="r1">{{ serves }}1</td>
-    <td class="r3">Normal Price: $31</td>
-    <td class="r2">Online Price: $21</td>
-    <td class="r4">Savings: 48%<div class="savetxt">Buy online and save!</div></td>
+    <td class="r3">{{ normal }}$31</td>
+    <td class="r2">{{ online }}$21</td>
+    <td class="r4">{{ savings }}48% {{ savingspost }}</td>
 	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/products/smash-cake-semi-custom">order online</a></td>
   </tr>
     <tr>
