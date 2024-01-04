@@ -214,7 +214,7 @@
           "type": "column",
           "settings": {
             "title": "Custom Order Counter Hours",
-            "text": "<p>Tuesday-Friday: 10 am - 5:00 pm<br\/>Saturday: 10 am - 4 pm<\/p><p>Sunday-Monday: Closed<\/p>",
+            "text": "<p>Tuesday-Friday: 10 am - 5:00 pm<br\/>Saturday: 10 am - 4 pm<\/p><p>Sunday-Monday: Closed<\/p><p>An appointment is required, <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\" title=\"schedule one now\">schedule one now.<\/a><\/p>",
             "link_label": "",
             "link": ""
           }
