@@ -40,10 +40,10 @@ CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT.
 
 	 {% comment %}  5 DAY DATE: YEAR/MONTH/DAY {% endcomment %}  
 	{% assign five_day_avail_date = "2023/10/24 00:01" | date: '%s'%}
-	{% assign five_day_lead_time = 114  %}
+	{% assign five_day_lead_time = 70  %}
 	{% assign five_day_lead_time_days = 5  %} 
 
-	 {% comment %}  110 is normal! trying 114 {% endcomment %}  
+	 {% comment %}  110 is normal! trying 114, this worked {% endcomment %}  
 
 	 {% comment %}  SOLDOUT DATE: YEAR/MONTH/DAY {% endcomment %}  
 	{% assign sold_out_avail_date = "2023/01/28 00:01" | date: '%s'%}
