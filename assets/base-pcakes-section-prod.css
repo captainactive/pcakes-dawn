@@ -565,9 +565,14 @@ table#wsaio-volume-discount--table th, table#wsaio-volume-discount--table td {
 }	
 
 
-
-
-
+.onlinesavings {
+  border-radius: 4px;
+  background-color: #8a54a8;
+  color: #FFF 
+  font-size: 14px;
+  padding: 7px 3px;
+  line-height: 110%;
+}
 
 
 
