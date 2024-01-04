@@ -46,6 +46,12 @@
           "settings": {
           }
         },
+        "64b51433-874b-423a-a97c-dec9bef946ef": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%   if product.metafields.pcakes.online-savings %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online-savings}}% when you buy this online}}\n  {% endif %}"
+          }
+        },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
           "type": "custom_liquid",
           "settings": {
@@ -214,12 +220,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "64b51433-874b-423a-a97c-dec9bef946ef": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%   if product.metafields.pcakes.online-savings %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online-savings}}% when you buy this online}}\n  {% endif %}"
-          }
         }
       },
       "block_order": [
@@ -230,6 +230,7 @@
         "ab7148d0-d89c-4c9a-8708-3a8d16aec864",
         "caption",
         "price",
+        "64b51433-874b-423a-a97c-dec9bef946ef",
         "509e35e4-7159-4a39-a416-a5df9d0d3428",
         "description",
         "350680f0-8058-4d5b-94cc-38930f6b92e9",
@@ -251,8 +252,7 @@
         "0f8b82b3-1a13-499e-9bc8-377b4fdd3eaf",
         "482e5093-9f52-4b15-b07e-f569237a6e36",
         "8cf77127-d99a-46a6-98bc-23de985f94b5",
-        "share",
-        "64b51433-874b-423a-a97c-dec9bef946ef"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
