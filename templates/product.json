@@ -49,7 +49,7 @@
         "64b51433-874b-423a-a97c-dec9bef946ef": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%   if product.metafields.pcakes.online_savings %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online_savings}}% when you buy this online!\n  {% endif %}"
+            "custom_liquid": "{%   if product.metafields.pcakes.online_savings %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online_savings}}% when you buy this online!<\/div>\n  {% endif %}"
           }
         },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
