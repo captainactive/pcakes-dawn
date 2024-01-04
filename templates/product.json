@@ -212,7 +212,7 @@
         "aa1f8d14-1064-4a68-987c-089c26a0e79a": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%   if product.metafields.pcakes.online_savings %}\n    <div class=\"tinytext\">*Savings are calculated on the base price of the cake, before artwork is added, if needed.<\/div>\n  {% endif %}"
+            "custom_liquid": "{%   if product.metafields.pcakes.online_savings %}\n    <div class=\"tinytext\">*Savings are calculated on the base price of the cake, before artwork pricing is added, if needed.<\/div>\n  {% endif %}"
           }
         },
         "share": {
