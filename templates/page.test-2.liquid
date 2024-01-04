@@ -1,6 +1,12 @@
 <noscript>{{ 'base-pcakes-cake-info-pages.css' | asset_url | stylesheet_tag }}</noscript>
 
 
+
+{%   if product.metafields.pcakes.online-savings %}
+    <div class="onlinesavings">Save up to {{ product.metafields.pcakes.online-savings}}% when you buy this online}}
+  {% endif %}
+
+
 <style > .buynow, .buynow:visited {
   border-radius: 4px;
   align-content: center;
