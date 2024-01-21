@@ -150,6 +150,53 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_TPXbJF": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_jyi7Mc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cookies"
+          }
+        },
+        "featured_collection_U98Ax9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cookie-packs"
+          }
+        },
+        "featured_collection_XwHdqx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cookies"
+          }
+        },
+        "featured_collection_t74CQH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cookie-packs"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_jyi7Mc",
+        "featured_collection_U98Ax9",
+        "featured_collection_XwHdqx",
+        "featured_collection_t74CQH"
+      ],
+      "settings": {
+        "title": "Cookies",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1f422dfe-8f5a-4481-b5a4-554d79c0d04f": {
       "type": "collection-list",
       "blocks": {
@@ -167,12 +214,14 @@
         },
         "template--16658650333426__1f422dfe-8f5a-4481-b5a4-554d79c0d04f-1677979167d644fc2e-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "cookies"
           }
         },
         "4e2b1c52-9481-4aee-8731-654b75dac235": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "cookie-packs"
           }
@@ -298,6 +347,7 @@
     "main",
     "e6d81bd5-1699-48e4-a5a6-9fd4af7fa94f",
     "55d53d97-09b3-44be-ae22-bab185b12791",
+    "collection_list_TPXbJF",
     "1f422dfe-8f5a-4481-b5a4-554d79c0d04f",
     "c0393ea4-2a28-484e-9c24-b37312ac598b"
   ]
