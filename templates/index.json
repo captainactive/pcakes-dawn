@@ -78,6 +78,60 @@
         "padding_bottom": 0
       }
     },
+    "collection_list_ehtPVW": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_CqfXt7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "love-valentines-day"
+          }
+        },
+        "featured_collection_UWyrAJ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cupcakes"
+          }
+        },
+        "featured_collection_bzHJ7T": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cookies"
+          }
+        },
+        "featured_collection_KxEnwj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cupcakes"
+          }
+        },
+        "featured_collection_PMnzdq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cake-balls"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_CqfXt7",
+        "featured_collection_UWyrAJ",
+        "featured_collection_bzHJ7T",
+        "featured_collection_KxEnwj",
+        "featured_collection_PMnzdq"
+      ],
+      "settings": {
+        "title": "Valentine's Day Goodies",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "accent-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "e35d42e6-4217-49e1-9143-08965faa71a1": {
       "type": "multicolumn",
       "blocks": {
@@ -267,7 +321,7 @@
         "5b76face-13f0-442e-9d09-9bd353471bd3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cookies"
+            "collection": "mini-cookies"
           }
         },
         "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0": {
@@ -506,6 +560,7 @@
   "order": [
     "image_banner",
     "rich_text",
+    "collection_list_ehtPVW",
     "e35d42e6-4217-49e1-9143-08965faa71a1",
     "24a1ac6f-b8af-42b3-b639-d7dac3028b33",
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
