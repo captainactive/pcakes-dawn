@@ -540,7 +540,7 @@ display: none;
 	}
 
 .pc-cart-boxes-wide {
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1fr auto;
   border-radius: 3px;
   grid-column: span 2;
 	}
