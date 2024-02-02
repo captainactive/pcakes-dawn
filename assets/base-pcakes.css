@@ -538,6 +538,13 @@ display: none;
 	grid-template-columns: 1fr 3fr;
   border-radius: 3px;
 	}
+
+.pc-cart-boxes-wide {
+	grid-template-columns: 1fr 5fr;
+  border-radius: 3px;
+  grid-column: span 2;
+	}
+
 .pc-cart-boxes-note {
 	grid-template-columns: 1fr;
 	grid-column: span 2;
