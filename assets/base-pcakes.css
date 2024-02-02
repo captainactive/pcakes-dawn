@@ -525,7 +525,7 @@ display: none;
 	grid-template-columns: 1fr 1fr;
 }	
 
-.pc-cart-boxes-sub, .pc-cart-boxes-note {
+.pc-cart-boxes-sub, .pc-cart-boxes-note, .pc-cart-boxes-wide {
 	display: grid;
 	grid-row-gap: 2px;
 	grid-column-gap: 2px;
