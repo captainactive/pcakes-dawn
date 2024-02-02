@@ -590,8 +590,8 @@ display: none;
 	.pc-cart-boxes {
 	grid-template-columns: 1fr;
 	}
-.pc-cart-boxes-note {
-	/* grid-column: span 1; */
+.pc-cart-boxes-note, .pc-cart-boxes-wide {
+	 grid-column: span 1;
 }	
 	}
 @media (max-width: 500px) {
