@@ -1,187 +1,101 @@
 
-<style type="text/css">
- .colorsgrid {
-	display: grid;
-	grid-row-gap: 2px;
-	grid-column-gap: 6px;
-	grid-template-rows: auto auto;
-	grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
-	/*grid-template-columns: repeat(5, 1fr);*/
-		
-	}
- .colorsbox {
-	display: grid;
-	grid-row-gap: 2px;
-	grid-column-gap: 2px;
-	grid-template-rows: 1fr 1fr;
-	/*grid-template-columns: repeat(auto-fit, minmax( 25px, 1fr));*/
-	grid-template-columns: 1fr;
-		
-	}    
-	.colorswatch {
-		display: block;
-		height: 50px;
-		width: 100%;
-		background-color:aqua;
-	}
-	.colorbox p {
-		display: grid;
-		align-items: center;
-		justify-items: center;
-		margin: 5px 0px 20px 0px;
-		text-align: center;
-		line-height: 120%;
-	}
 
-        
-</style>
+<style>
+.color-grid {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: 1fr;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    line-height: 120%;
+}
 
-
-<div class="colorsgrid">
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #66589c;">&nbsp;</div>
-    <p>Regular <br>
-      Purple</p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #b488b5;">&nbsp;</div>
-    <p>Pastel<br>
-      Purple</p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #edd3e2;">&nbsp;</div>
-    <p>Light<br>
-      Purple </p>
-  </div>
+  .colorsubbox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px 100px 40px 100px;
+    grid-row-gap: 5px;
+    text-align: center;
+    justify-items: center;
+    border: #F2F2F2 solid 1px;
+    padding: 10px 10px 16px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  /*
+  .colorsubbox:hover {
+    border: #F2F2F2 solid 3px;
+    padding: 8px;
+  } */
   
-  <!--div class="colorbox">
-                <div class="colorswatch" style="background-color: #294a81;">&nbsp;</div>
-                <p><br>Navy Regular</p>
-            </div-->
+  .colorsubbox div {
+    display: grid;
+    align-items: center;
+  }
+  .clr-title {
+    margin: 7px 0 5px 0;
+  }
+  .clr-subtitle {
+    font-size: 80%;
+  }
+
+
+  @media (max-width: 600px) {
+
+.color-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+     grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+  .colorsubbox {
+    grid-template-rows: 1fr 35px 70px 35px 70px;
+  }
+  .colorsubbox img {
+    height: 100%;
+    width: auto;
+  }
+ .clr-title {
+   font-size: 80%;
+ }
+    .clr-subtitle {
+    font-size: 70%;
+  }
+}
+</style >
+
+
+
   
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #3c7bb9;">&nbsp;</div>
-    <p>Regular<br>
-      Blue </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #b4ddf0;">&nbsp;</div>
-    <p>Pastel<br>
-      Blue </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #eaf4f1;">&nbsp;</div>
-    <p>Light<br>
-      Blue </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #6ebfcd;">&nbsp;</div>
-    <p>Regular<br>
-      Teal </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #a6d4de;">&nbsp;</div>
-    <p>Pastel<br>
-      Teal </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #ddede9;">&nbsp;</div>
-    <p>Light<br>
-      Teal </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #98c153;">&nbsp;</div>
-    <p>Neon <br>
-      Green </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #7fba75;">&nbsp;</div>
-    <p>Regular<br>
-      Green </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #add0a1;">&nbsp;</div>
-    <p>Pastel<br>
-      Green </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #dce9cf;">&nbsp;</div>
-    <p>Light<br>
-      Green </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #f9e94f;">&nbsp;</div>
-    <p>Regular<br>
-      Yellow </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #fef7d4;">&nbsp;</div>
-    <p>Pastel<br>
-      Yellow </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #f8ca46;">&nbsp;</div>
-    <p>Regular<br>
-      Orange </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #fae3a6;">&nbsp;</div>
-    <p>Pastel<br>
-      Orange </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #f7dfe6;">&nbsp;</div>
-    <p>Regular<br>
-      Pink </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #fceded;">&nbsp;</div>
-    <p>Pastel<br>
-      Pink </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #e37881;">&nbsp;</div>
-    <p>Hot<br>
-      Pink </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #de5236;">&nbsp;</div>
-    <p>Regular<br>
-      Red </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #906537;">&nbsp;</div>
-    <p>Regular<br>
-      Brown </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #efc67e;">&nbsp;</div>
-    <p>Pastel<br>
-      Brown </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #f9e163;">&nbsp;</div>
-    <p>Regular<br>
-      Gold </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #fcf5c5;">&nbsp;</div>
-    <p>Pastel<br>
-      Gold </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #cad1c6;">&nbsp;</div>
-    <p>Regular<br>
-      Gray </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #edede5;">&nbsp;</div>
-    <p>Pastel<br>
-      Gray </p>
-  </div>
-  <div class="colorbox">
-    <div class="colorswatch" style="background-color: #384338;">&nbsp;</div>
-    <p>Regular<br>
-      Black </p>
-  </div>
+{% # use airtable "color" base for quick modification and editing  %}
+<h3>Color Swatches</h3>
+  <div class="color-grid">
+
+<div class="colorsubbox"><div class="clr-title">Super Red</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/101-gel-super-red-reg.jpg?v=1707014733" alt="Cake Color Swatch -  Regular Super Red" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/102-gel-super-red-pastel.jpg?v=1707014733" alt="Cake Color Swatch - Pastel Super Red" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Tourmaline</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/131-gel-tourmaline-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Tourmaline" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/132-gel-tourmaline-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Tourmaline" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Neon Pink</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/161-gel-neon-bright-pink-reg.jpg?v=1707015816" alt="Cake Color Swatch -  Regular Neon Bright Pink" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/162-gel-neon-bright-pink-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Neon Bright Pink" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Rose Pink</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/191-gel-rose-pink-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Rose Pink" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/192-gel-rose-pink-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Rose Pink" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Sunset Orange</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/221-gel-sunset-orange-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Sunset Orange" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/222-gel-sunset-orange-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Sunset Orange" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Golden Yellow</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/251-gel-golden-yellow-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Golden Yellow" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/252-gel-golden-yellow-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Golden Yellow" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Lemon Yellow</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/281-gel-lemon-yellow-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Lemon Yellow" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/282-gel-lemon-yellow-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Lemon Yellow" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Lime Green</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/311-gel-lime-green-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Lime Green" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/312-gel-lime-green-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Lime Green" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Leaf Green</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/341-gel-leaf-green-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Leaf Green" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/342-gel-leaf-green-pastel.jpg?v=1707015816" alt="Cake Color Swatch - Pastel Leaf Green" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Olive Green</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/371-gel-olive-green-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Olive Green" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/372-gel-olive-green-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Olive Green" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Teal Green</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/401-gel-teal-green-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Teal Green" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/402-gel-teal-green-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Teal Green" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Sky Blue</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/431-gel-sky-blue-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Sky Blue" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/432-gel-sky-blue-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Sky Blue" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Royal Blue</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/461-gel-royal-blue-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Royal Blue" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/462-gel-royal-blue-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Royal Blue" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Navy Blue</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/491-gel-navy-blue-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Navy Blue" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/492-gel-navy-blue-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Navy Blue" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Sapphire</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/521-gel-sapphire-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Sapphire" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/522-gel-sapphire-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Sapphire" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Violet</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/551-gel-violet-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Violet" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/552-gel-violet-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Violet" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Burgundy Wine</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/581-gel-burgundy-wine-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Burgundy Wine" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/582-gel-burgundy-wine-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Burgundy Wine" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Brown</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/611-gel-brown-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Brown" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/612-gel-brown-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Brown" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Stone Gray</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/671-gel-stone-gray-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Stone Gray" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/672-gel-stone-gray-pastel.jpg?v=1707015814" alt="Cake Color Swatch - Pastel Stone Gray" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Black</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/701-gel-black-reg.jpg?v=1707015816" alt="Cake Color Swatch -  Regular Black" class="cakeclr-img imgreg" height="100" width="100"/>	<div class="clr-subtitle">Pastel</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/702-gel-black-pastel.jpg?v=1707015815" alt="Cake Color Swatch - Pastel Black" class="cakeclr-img imgpastel" height="100" width="100"/></div>
+<div class="colorsubbox"><div class="clr-title">Ivory</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/641-gel-ivory-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Ivory" class="cakeclr-img imgreg" height="100" width="100"/>	<div></div><div></div></div>
+<div class="colorsubbox"><div class="clr-title">Classic Gold</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/761-air-classic-gold-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular Classic Gold" class="cakeclr-img imgreg" height="100" width="100"/><div></div><div></div></div>
+<div class="colorsubbox"><div class="clr-title">True Silver</div> <div class="clr-subtitle">Regular</div><img src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/731-air-true-silver-reg.jpg?v=1707015815" alt="Cake Color Swatch -  Regular True Silver" class="cakeclr-img imgreg" height="100" width="100"/><div></div><div></div></div>
+    
+    </div>
 </div>
