@@ -9,10 +9,12 @@
 }
 
 @media( max-width: 500px) {
+  .imgcertdel4 {
 max-width: 230px;
 }
 }
 @media( max-width: 390px) {
+  .imgcertdel4 {
 max-width: 170px;
 }
 }
