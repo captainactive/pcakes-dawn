@@ -128,7 +128,7 @@
 
 .sticky-price-contain {
   display: grid;
-    grid-template-columns: 1fr 80px 140px 1fr;
+    grid-template-columns: 1fr  140px 1fr;
   margin: 0 auto;
 }
 .sticky-price-contain div {
@@ -142,7 +142,7 @@
   <div class="sticky-price">
         <div class="sticky-price-contain">
             <div>&nbsp:</div>
-            <div class="price-label">Price:</div>
+            <!--div class="price-label">Price:</div-->
              <div>   {%- render 'price',
                   product: product,
                   use_variant: true,
