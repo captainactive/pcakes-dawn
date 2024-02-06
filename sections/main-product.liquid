@@ -126,20 +126,24 @@
   z-index: 10;
 }
 
+.sticky-price-contain {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
 </style>
 
   <div class="sticky-price">
-  
-          Price: 
-
-                {%- render 'price',
+        <div class="sticky-price-contain">
+            <div>Price:</div>
+             <div>   {%- render 'price',
                   product: product,
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--small'
                 -%}
-              
-             
+              </div>
+        </div> 
   </div>
 
 
