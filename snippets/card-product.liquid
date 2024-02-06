@@ -274,8 +274,8 @@
         <div class="itemgrid7"> 
            {% comment %} SET THE THE METAFIELD! {% endcomment %}
 
-  {% if page_type == "search_page"    %}
-          <!-- EXPLORE -->  
+  {% if page_type == "search_page" %}
+          <!-- EXPLORE -->  {% # SEARCH PAGE WORKAROUND FOR QUICK ADD NOT WORKING %}
                 <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     EXPLORE 
                 </a>
