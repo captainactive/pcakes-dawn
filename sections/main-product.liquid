@@ -131,10 +131,7 @@
    dd
            
  <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-            {% if product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
-              <!-- CUSTOMIZE --> 
-              <div class="tinytext"> Starting at</div>
-              {% endif %}
+
                 {%- render 'price',
                   product: product,
                   use_variant: true,
