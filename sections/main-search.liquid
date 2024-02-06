@@ -63,7 +63,7 @@
     }
   }
 {%- endstyle -%}
-...
+
 <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
   <div class="template-search__header page-width">
     <h1 class="h2 center">
@@ -230,7 +230,8 @@
                           show_secondary_image: section.settings.show_secondary_image,
                           show_vendor: section.settings.show_vendor,
                           show_rating: section.settings.show_rating,
-                          lazy_load: lazy_load
+                          lazy_load: lazy_load,
+                          page_type: search
                         %}
                       {%- when 'article' -%}
                         {% render 'article-card',
