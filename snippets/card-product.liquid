@@ -84,10 +84,6 @@
   justify-items: left; }
 
   </style>
-
-{{ page_type }}.
-  {{ card_product.page.url }}.
-
  <div class="card-wrapper underline-links-hover pcakes-card-grid"> 
 
       
@@ -277,7 +273,13 @@
 
         <div class="itemgrid7"> 
            {% comment %} SET THE THE METAFIELD! {% endcomment %}
-  
+
+  {% if page_type == "search_page"    %}
+          <!-- EXPLORE -->  
+                <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
+                    EXPLORE 
+                </a>
+    {% else %}
             {% if card_product.metafields.pcakes.quickadd == "customize"    %}
                 <!-- CUSTOMIZE --> 
                 <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
@@ -285,25 +287,23 @@
                 </a>
                             
 
-                {% elsif card_product.metafields.pcakes.quickadd == "explore" %}
+          {% elsif card_product.metafields.pcakes.quickadd == "explore" %}
                 <!-- EXPLORE -->  
                 <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     EXPLORE 
                 </a>
 
               
-               {% elsif card_product.metafields.pcakes.quickadd == "choosesize" %}              
+          {% elsif card_product.metafields.pcakes.quickadd == "choosesize" %}              
                   <!-- CHOOSE SIZE -->                
                   <a class="button pcakes-button" href="{{ card_product.url | within: collection }}">
                     CHOOSE SIZE
                 </a>          
 
-                 {% elsif card_product.metafields.pcakes.quickadd == "quickadd" %}
-                 <!-- QUICKADD -->  
-              
+          {% elsif card_product.metafields.pcakes.quickadd == "quickadd" %}
+                 <!-- QUICKADD -->      
                 <product-form>
-
-              <a class="button pcakes-button explore-button" href="{{ card_product.url | within: collection }}">
+                <a class="button pcakes-button explore-button" href="{{ card_product.url | within: collection }}">
                     EXPLORE 
                 </a>
                     <div class="quick-add no-js-hidden">
@@ -408,6 +408,9 @@
                           
                 
                 {% endif %}
+       {% endif %}
+
+                      
         </div>
 
         
