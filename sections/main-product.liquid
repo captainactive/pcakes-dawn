@@ -133,13 +133,16 @@
 }
 .sticky-price-contain div {
         display: grid;    
+}     
+.price-label {
+   padding-top: 20px;
 }            
 </style>
 
   <div class="sticky-price">
         <div class="sticky-price-contain">
             <div>&nbsp:</div>
-            <div>Price:</div>
+            <div class="price-label">Price:</div>
              <div>   {%- render 'price',
                   product: product,
                   use_variant: true,
