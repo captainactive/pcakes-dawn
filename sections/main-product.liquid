@@ -15,39 +15,7 @@
   <!--PCAKES-->
   {{ 'base-pcakes-section-prod.css' | asset_url | stylesheet_tag }}
 
-<style>
-.sticky-price {
-  display: block;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  color: #cccccc;
-  background-color: #eaeaea;
-  text-align: center;
-  z-index: 10;
-}
 
-</style>
-
-  <div class="sticky-price">
-   dd
-           
- <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-            {% if product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
-              <!-- CUSTOMIZE --> 
-              <div class="tinytext"> Starting at</div>
-              {% endif %}
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--large'
-                -%}
-              </div>
-             
-  </div>
 
 
   {%- style -%}
@@ -140,6 +108,50 @@
                   price_class: 'price--large'
                 -%}
               </div>
+
+
+            
+<style>
+.sticky-price {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: #cccccc;
+  background-color: #eaeaea;
+  text-align: center;
+  z-index: 10;
+}
+
+</style>
+
+  <div class="sticky-price">
+   dd
+           
+ <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+            {% if product.metafields.pcakes.quickadd == "customize" or card_product.metafields.pcakes.quickadd == "choosesize"   %}
+              <!-- CUSTOMIZE --> 
+              <div class="tinytext"> Starting at</div>
+              {% endif %}
+                {%- render 'price',
+                  product: product,
+                  use_variant: true,
+                  show_badges: true,
+                  price_class: 'price--large'
+                -%}
+              </div>
+             
+  </div>
+
+
+            
+
+
+
+
+            
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
