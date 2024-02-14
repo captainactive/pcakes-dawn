@@ -342,6 +342,17 @@ CUPCAKES
 {% endif %}
 
 
+  {% if request.page_type == "cart" %}
+        {% if prodtags contains "GF White" or prodtags contains "GF Chocolate" %}
+          		
+
+                      <div class="cart-alert">
+                        <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
+                       <div class="alert-lrg-cart">Due to high demand, White Gluten cupcakes are sold out.</div>          
+                    </div> 
+          	    
+        {% endif %}
+  {% endif %}
 
 
 
