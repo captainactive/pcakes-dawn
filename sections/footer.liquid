@@ -19,7 +19,7 @@
 {% assign page = all_pages[page_id] %}
 
 
-  {% assign metafield_value = page.metafields.pck['avail-tags'] %}
+  {% assign metafield_value = page.metafields.pck.avail-tags %}
   {% if metafield_value %}
     {{ metafield_value }}
   {% else %}
