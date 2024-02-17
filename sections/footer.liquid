@@ -18,16 +18,13 @@
 {% assign page_id = 105706324210 %}
 {% assign page = all_pages[page_id] %}
 
-{% if page %}
+
   {% assign metafield_value = page.metafields.pck['avail-tags'] %}
   {% if metafield_value %}
     {{ metafield_value }}
   {% else %}
     Metafield not found.
   {% endif %}
-{% else %}
-  Page not found.
-{% endif %}
 
 
 {%- style -%}
