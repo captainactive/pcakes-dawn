@@ -15,14 +15,19 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 
-{% assign metafield_value = shop.metafields.global['pages'][105706324210]['pck.avail-tags'] %}
+{% assign page_id = 105706324210 %}
+{% assign page = all_pages[page_id] %}
 
-{% if metafield_value %}
-  {{ metafield_value }}
+{% if page %}
+  {% assign metafield_value = page.metafields.pck['avail-tags'] %}
+  {% if metafield_value %}
+    {{ metafield_value }}
+  {% else %}
+    Metafield not found.
+  {% endif %}
 {% else %}
-  Metafield not found.
+  Page not found.
 {% endif %}
-
 
 
 {%- style -%}
