@@ -681,6 +681,24 @@ background: #8a54a8;
 		<strong>Desserts should be one of the last items to arrive at your event.</strong> Keep your fridge space available for other items and choose a pick-up or delivery time within <strong>1-2 hours of the event start time</strong>.</div>
 	</div> 
 
+  <script>
+$(document).ready(function() {
+    // Find elements with class "neo-time-enabled"
+    $(".neo-time-enabled").each(function() {
+        var text = $(this).text().trim(); // Get the text content
+
+        // Check if text matches "10:15 AM - 11:45 AM"
+        if (text === "10:15 AM - 11:45 AM") {
+            // Add " - Priority" after the text
+            $(this).text(text + " - Priority");
+        } else {
+            // Add " - $5" after the text
+            $(this).text(text + " - $5");
+        }
+    });
+});
+</script>
+
   <div class="pccartcartboxes">
     <div class="pickeasy"></div>
   </div> 
@@ -698,9 +716,6 @@ background: #8a54a8;
 
 <br>
 
-<script>
-
-    </script>
 
 
 <div id="box-pickup-info" style="display: none;">
