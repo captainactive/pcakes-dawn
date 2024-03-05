@@ -684,21 +684,19 @@ background: #8a54a8;
 
 
   <script>
-$(document).ready(function() {
-    // Find elements with class "neo-time-enabled"
-    var elements = document.querySelectorAll('.test1');
-    elements.forEach(function(element) {
-        var text = element.textContent.trim(); // Get the text content
+// Find the element with class "test1"
+var element = document.querySelector('.test1');
 
-        // Check if text matches "10:15 AM - 11:45 AM"
-        if (text === "x") {
-            // Add " - Priority" after the text
-            element.textContent = text + " - Priority";
-        } else {
-            // Add " - $5" after the text
-            element.textContent = text + " - $5";
-        }
-    });
+// Check if the element is found
+if (element) {
+    // Get the current content of the element
+    var content = element.innerHTML;
+
+    // Append " - XX" to the content
+    content += " - XX";
+
+    // Set the updated content back to the element
+    element.innerHTML = content;
 }
 </script>
 
