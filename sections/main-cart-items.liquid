@@ -814,6 +814,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function modifyElements() {
     // Find elements with class "neo-time-enabled"
     var elements = document.querySelectorAll('.neo-time-enabled');
+    console.log('Looking for it');
     elements.forEach(function(element) {
         var text = element.textContent.trim(); // Get the text content
 
