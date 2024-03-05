@@ -683,20 +683,35 @@ background: #8a54a8;
 
 
 <script>
-$(document).ready(function() {
+// Function to modify elements
+function modifyElements() {
     // Find elements with class "neo-time-enabled"
-    $(".test1").each(function() {
-        var text = $(this).text().trim(); // Get the text content
+    var elements = document.querySelectorAll('.neo-time-enabled');
+    elements.forEach(function(element) {
+        var text = element.textContent.trim(); // Get the text content
 
         // Check if text matches "10:15 AM - 11:45 AM"
-        if (text === ".") {
+        if (text === "10:15 AM - 11:45 AM") {
             // Add " - Priority" after the text
-            $(this).text(text + " - Priority");
+            element.textContent = text + " - Priority";
         } else {
             // Add " - $5" after the text
-            $(this).text(text + " - $5");
+            element.textContent = text + " - $5";
         }
     });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the script and execute the modification function
+    fetch("https://shop.pattys-cakes.com/cart.js")
+        .then(response => response.text())
+        .then(data => {
+            // Once the script is fetched, execute the modification function
+            modifyElements();
+        })
+        .catch(error => {
+            console.error('Error fetching cart.js:', error);
+        });
 });
 </script>
 
