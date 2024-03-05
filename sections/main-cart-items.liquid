@@ -682,7 +682,7 @@ background: #8a54a8;
 	</div> 
 
 <script>
-$(document).ready(function() {
+$(window).on('load', function() {
     // Function to modify elements
     function modifyElements() {
         // Find elements with class "neo-time-enabled"
@@ -700,10 +700,11 @@ $(document).ready(function() {
         });
     }
 
-    // Trigger modification when an element with class "neo-time-grid" loads
-    $(".neo-table .neo-grid .neo-time-grid").load(function() {
-        modifyElements(); // Call the function to modify elements
-    });
+    // Check if an element with class "neo-time-grid" is present
+    if ($(".neo-time-grid").length > 0) {
+        // Call the function to modify elements
+        modifyElements();
+    }
 });
 </script>
   
