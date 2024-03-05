@@ -809,9 +809,11 @@ document.addEventListener('DOMContentLoaded', function() {
   </form>
 </cart-items>
 <div class="test1">x</div>
+
+                          
 <script>
 // Function to modify elements
-function modifyElements(data) {
+function modifyElements() {
     // Find elements with class "neo-time-enabled"
     var elements = document.querySelectorAll('.neo-time-enabled');
     elements.forEach(function(element) {
@@ -829,24 +831,23 @@ function modifyElements(data) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to fetch cart.js and modify elements
-    function fetchAndModify() {
-        fetch("https://shop.pattys-cakes.com/cart.js")
-            .then(response => response.text())
-            .then(data => {
-                // Execute the modification function
-                modifyElements(data);
-            })
-            .catch(error => {
-                console.error('Error fetching cart.js:', error);
+    // Function to check for changes in script elements
+    function observeScripts() {
+        var observer = new MutationObserver(function(mutationsList, observer) {
+            mutationsList.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+                    // If src attribute of a script element changes, call modifyElements
+                    modifyElements();
+                }
             });
+        });
+
+        // Observe changes to all script elements
+        observer.observe(document, { attributes: true, subtree: true, attributeFilter: ['src'] });
     }
 
-    // Call fetchAndModify function initially
-    fetchAndModify();
-
-    // Check and modify elements every 5 seconds
-    setInterval(fetchAndModify, 5000); // Adjust interval as needed
+    // Call observeScripts function initially
+    observeScripts();
 });
 </script>
 
