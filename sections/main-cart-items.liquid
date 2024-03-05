@@ -681,9 +681,9 @@ background: #8a54a8;
 		<strong>Desserts should be one of the last items to arrive at your event.</strong> Keep your fridge space available for other items and choose a pick-up or delivery time within <strong>1-2 hours of the event start time</strong>.</div>
 	</div> 
 
+
 <script>
-// Function to modify elements
-function modifyElements() {
+$(document).ready(function() {
     // Find elements with class "neo-time-enabled"
     $(".test1").each(function() {
         var text = $(this).text().trim(); // Get the text content
@@ -696,14 +696,6 @@ function modifyElements() {
             // Add " - $5" after the text
             $(this).text(text + " - $5");
         }
-    });
-}
-
-$(document).ready(function() {
-    // Load the script asynchronously
-    $.getScript("https://shop.pattys-cakes.com/cart.js", function() {
-        // Once the script is loaded, execute the modification function
-        modifyElements();
     });
 });
 </script>
