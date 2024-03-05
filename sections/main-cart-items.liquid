@@ -830,25 +830,8 @@ function modifyElements() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Function to check for changes in script elements
-    function observeScripts() {
-        var observer = new MutationObserver(function(mutationsList, observer) {
-            mutationsList.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
-                    // If src attribute of a script element changes, call modifyElements
-                    modifyElements();
-                }
-            });
-        });
-
-        // Observe changes to all script elements
-        observer.observe(document, { attributes: true, subtree: true, attributeFilter: ['src'] });
-    }
-
-    // Call observeScripts function initially
-    observeScripts();
-});
+// Execute the modification function every 5000 ms (5 seconds)
+setInterval(modifyElements, 3000);
 </script>
 
                           
