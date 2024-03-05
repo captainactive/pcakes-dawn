@@ -808,8 +808,6 @@ document.addEventListener('DOMContentLoaded', function() {
                           
   </form>
 </cart-items>
-<div class="test1">x</div>
-
                           
 <script>
 // Function to modify elements
@@ -823,10 +821,19 @@ function modifyElements() {
         if (text === "10:15 AM - 11:45 AM") {
             // Add " - Priority" after the text
             element.textContent = text + " - Priority";
-        } else {
-            // Add " - $5" after the text
+        } else if (text === "10:00 AM - 1:00 PM") {
+            // Add " - Priority" after the text
             element.textContent = text + " - $5";
-        }
+        } else if (text === "12:00 PM - 3:00 PM") {
+            // Add " - Priority" after the text
+            element.textContent = text + " - $5";
+        } else if (text === "2:00 PM - 5:00 PM") {
+            // Add " - Priority" after the text
+            element.textContent = text + " - $5";
+        } else if (text === "4:00 PM - 7:00 PM") {
+            // Add " - Priority" after the text
+            element.textContent = text + " - $5";
+        } 
     });
 }
 
