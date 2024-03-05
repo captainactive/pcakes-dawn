@@ -831,6 +831,7 @@ function modifyElements() {
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch the script and execute the modification function
     fetch("https://shop.pattys-cakes.com/cart.js")
+        console.log('Getting it');
         .then(response => response.text())
         .then(data => {
             // Once the script is fetched, execute the modification function
