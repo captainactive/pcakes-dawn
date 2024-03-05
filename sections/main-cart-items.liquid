@@ -683,22 +683,6 @@ background: #8a54a8;
 
 
 
-  <script>
-// Find the element with class "test1"
-var element = document.querySelector('.test1');
-
-// Check if the element is found
-if (element) {
-    // Get the current content of the element
-    var content = element.innerHTML;
-
-    // Append " - XX" to the content
-    content += " - XX";
-
-    // Set the updated content back to the element
-    element.innerHTML = content;
-}
-</script>
 
   
   <div class="pccartcartboxes">
@@ -825,6 +809,22 @@ document.addEventListener('DOMContentLoaded', function() {
   </form>
 </cart-items>
 <div class="test1">x</div>
+  <script>
+// Find the element with class "test1"
+var element = document.querySelector('.test1');
+
+// Check if the element is found
+if (element) {
+    // Get the current content of the element
+    var content = element.innerHTML;
+
+    // Append " - XX" to the content
+    content += " - XX";
+
+    // Set the updated content back to the element
+    element.innerHTML = content;
+}
+</script>
 
                           
 {% schema %}
