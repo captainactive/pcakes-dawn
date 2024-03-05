@@ -809,21 +809,37 @@ document.addEventListener('DOMContentLoaded', function() {
   </form>
 </cart-items>
 <div class="test1">x</div>
-  <script>
-// Find the element with class "test1"
-var element = document.querySelector('.test1');
+<script>
+// Function to modify elements
+function modifyElements() {
+    // Find elements with class "neo-time-enabled"
+    var elements = document.querySelectorAll('.test1');
+    elements.forEach(function(element) {
+        var text = element.textContent.trim(); // Get the text content
 
-// Check if the element is found
-if (element) {
-    // Get the current content of the element
-    var content = element.innerHTML;
-
-    // Append " - XX" to the content
-    content += " - XX";
-
-    // Set the updated content back to the element
-    element.innerHTML = content;
+        // Check if text matches "10:15 AM - 11:45 AM"
+        if (text === "x") {
+            // Add " - Priority" after the text
+            element.textContent = text + " - Priority";
+        } else {
+            // Add " - $5" after the text
+            element.textContent = text + " - $5";
+        }
+    });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Fetch the script and execute the modification function
+    fetch("https://shop.pattys-cakes.com/cart.js")
+        .then(response => response.text())
+        .then(data => {
+            // Once the script is fetched, execute the modification function
+            modifyElements();
+        })
+        .catch(error => {
+            console.error('Error fetching cart.js:', error);
+        });
+});
 </script>
 
                           
