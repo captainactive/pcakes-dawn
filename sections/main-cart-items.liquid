@@ -685,11 +685,11 @@ background: #8a54a8;
 // Function to modify elements
 function modifyElements() {
     // Find elements with class "neo-time-enabled"
-    $(".neo-time-enabled").each(function() {
+    $(".test1").each(function() {
         var text = $(this).text().trim(); // Get the text content
 
         // Check if text matches "10:15 AM - 11:45 AM"
-        if (text === "10:15 AM - 11:45 AM") {
+        if (text === ".") {
             // Add " - Priority" after the text
             $(this).text(text + " - Priority");
         } else {
@@ -829,11 +829,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </p                     
 
 
-
-     <!-- Zapiet | Store Pickup + Delivery -->
-            <!--div id="storePickupApp"></div-->
-            <!-- Zapiet | Store Pickup + Delivery -->
-
+      <p class="test1">.</p>
                           
   </form>
 </cart-items>
