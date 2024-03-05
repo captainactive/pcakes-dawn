@@ -809,8 +809,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </form>
 </cart-items>
 <div class="test1">x</div>
-
-      <script>
+<script>
 // Function to modify elements
 function modifyElements(data) {
     // Find elements with class "neo-time-enabled"
@@ -830,16 +829,24 @@ function modifyElements(data) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Fetch the script and execute the modification function
-    fetch("https://shop.pattys-cakes.com/cart.js")
-        .then(response => response.text())
-        .then(data => {
-            // Once the script is fetched, execute the modification function
-            modifyElements(data);
-        })
-        .catch(error => {
-            console.error('Error fetching cart.js:', error);
-        });
+    // Function to fetch cart.js and modify elements
+    function fetchAndModify() {
+        fetch("https://shop.pattys-cakes.com/cart.js")
+            .then(response => response.text())
+            .then(data => {
+                // Execute the modification function
+                modifyElements(data);
+            })
+            .catch(error => {
+                console.error('Error fetching cart.js:', error);
+            });
+    }
+
+    // Call fetchAndModify function initially
+    fetchAndModify();
+
+    // Check and modify elements every 5 seconds
+    setInterval(fetchAndModify, 5000); // Adjust interval as needed
 });
 </script>
 
