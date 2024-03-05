@@ -682,32 +682,31 @@ background: #8a54a8;
 	</div> 
 
 <script>
-$(window).on('load', function() {
-    // Function to modify elements
-    function modifyElements() {
-        // Find elements with class "neo-time-enabled"
-        $(".neo-time-enabled").each(function() {
-            var text = $(this).text().trim(); // Get the text content
+// Function to modify elements
+function modifyElements() {
+    // Find elements with class "neo-time-enabled"
+    $(".neo-time-enabled").each(function() {
+        var text = $(this).text().trim(); // Get the text content
 
-            // Check if text matches "10:15 AM - 11:45 AM"
-            if (text === "10:15 AM - 11:45 AM") {
-                // Add " - Priority" after the text
-                $(this).text(text + " - Priority");
-            } else {
-                // Add " - $5" after the text
-                $(this).text(text + " - $5");
-            }
-        });
-    }
+        // Check if text matches "10:15 AM - 11:45 AM"
+        if (text === "10:15 AM - 11:45 AM") {
+            // Add " - Priority" after the text
+            $(this).text(text + " - Priority");
+        } else {
+            // Add " - $5" after the text
+            $(this).text(text + " - $5");
+        }
+    });
+}
 
-    // Check if an element with class "neo-time-grid" is present
-    if ($(".neo-time-grid").length > 0) {
-        // Call the function to modify elements
+$(document).ready(function() {
+    // Load the script asynchronously
+    $.getScript("https://shop.pattys-cakes.com/cart.js", function() {
+        // Once the script is loaded, execute the modification function
         modifyElements();
-    }
+    });
 });
 </script>
-  
 
   <div class="pccartcartboxes">
     <div class="pickeasy"></div>
