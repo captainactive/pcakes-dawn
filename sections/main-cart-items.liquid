@@ -685,8 +685,8 @@ background: #8a54a8;
 $(document).ready(function() {
     // Function to modify elements
     function modifyElements() {
-        // Find elements with class "neo-time-grid"
-        $(".neo-time-grid").each(function() {
+        // Find elements with class "neo-time-enabled"
+        $(".neo-time-enabled").each(function() {
             var text = $(this).text().trim(); // Get the text content
 
             // Check if text matches "10:15 AM - 11:45 AM"
@@ -700,8 +700,8 @@ $(document).ready(function() {
         });
     }
 
-    // Trigger modification when an element with class "neo-popup" loads
-    $(".neo-popup").load(function() {
+    // Trigger modification when an element with class "neo-time-grid" loads
+    $(".neo-time-grid").load(function() {
         modifyElements(); // Call the function to modify elements
     });
 });
