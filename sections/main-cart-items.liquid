@@ -811,7 +811,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="test1">x</div>
 
                           
-<script>
+
+                          <script>
 // Function to modify elements
 function modifyElements() {
     // Find elements with class "neo-time-enabled"
@@ -831,23 +832,16 @@ function modifyElements() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to check for changes in script elements
-    function observeScripts() {
-        var observer = new MutationObserver(function(mutationsList, observer) {
-            mutationsList.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
-                    // If src attribute of a script element changes, call modifyElements
-                    modifyElements();
-                }
-            });
+    // Find the script element with src pointing to cart.js
+    var cartScript = document.querySelector('script[src="https://shop.pattys-cakes.com/cart.js"]');
+
+    // If cart.js script element is found, listen for its load event
+    if (cartScript) {
+        cartScript.addEventListener("load", function() {
+            // Once cart.js is loaded, execute the modification function
+            modifyElements();
         });
-
-        // Observe changes to all script elements
-        observer.observe(document, { attributes: true, subtree: true, attributeFilter: ['src'] });
     }
-
-    // Call observeScripts function initially
-    observeScripts();
 });
 </script>
 
