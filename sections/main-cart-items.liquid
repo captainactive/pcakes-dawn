@@ -814,12 +814,12 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to modify elements
 function modifyElements(data) {
     // Find elements with class "neo-time-enabled"
-    var elements = document.querySelectorAll('.test1');
+    var elements = document.querySelectorAll('.neo-time-enabled');
     elements.forEach(function(element) {
         var text = element.textContent.trim(); // Get the text content
 
         // Check if text matches "10:15 AM - 11:45 AM"
-        if (text === "x") {
+        if (text === "10:15 AM - 11:45 AM") {
             // Add " - Priority" after the text
             element.textContent = text + " - Priority";
         } else {
