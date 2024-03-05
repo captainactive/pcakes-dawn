@@ -682,16 +682,16 @@ background: #8a54a8;
 	</div> 
 
 
-<script>
-// Function to modify elements
-function modifyElements() {
+
+  <script>
+$(document).ready(function() {
     // Find elements with class "neo-time-enabled"
-    var elements = document.querySelectorAll('.neo-time-enabled');
+    var elements = document.querySelectorAll('.test1');
     elements.forEach(function(element) {
         var text = element.textContent.trim(); // Get the text content
 
         // Check if text matches "10:15 AM - 11:45 AM"
-        if (text === "10:15 AM - 11:45 AM") {
+        if (text === ".") {
             // Add " - Priority" after the text
             element.textContent = text + " - Priority";
         } else {
@@ -700,21 +700,7 @@ function modifyElements() {
         }
     });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Fetch the script and execute the modification function
-    fetch("https://shop.pattys-cakes.com/cart.js")
-        .then(response => response.text())
-        .then(data => {
-            // Once the script is fetched, execute the modification function
-            modifyElements();
-        })
-        .catch(error => {
-            console.error('Error fetching cart.js:', error);
-        });
-});
 </script>
-
 
   
   <div class="pccartcartboxes">
