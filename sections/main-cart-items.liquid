@@ -719,8 +719,8 @@ background: #8a54a8;
 
 <div class="pc-cart-boxes-note pccartnote">
   <h2>Delivery Windows</h2>
-  <h3>Local Delivery - $5 on Weekdays</h3>
-    <p>$5 Tuesday-Friday. $9 on Saturdays.</p>
+  <h3>$5 Local Delivery</h3>
+    <p> Three hour windows. Tuesday-Saturday:</p>
   	<ul>
     <li>10:00 am – 1:00 pm</li>
     <li> 12:00 pm – 3:00 pm</li>
@@ -732,7 +732,7 @@ background: #8a54a8;
       <ul>
        <li> 10:15 am – 11:45 am</li>
      </ul> 
-     <p>Ranges from $20-$40 depending on zip code. Tuesday - Friday Only.</p>
+     <p>Ranges from $20-$40 depending on zip code.Tuesday - Friday Only.</p>
     <br>       
     <p style="font-size:90%;"><i>If delivery windows are not displaying in the date and time selector above, they are full.</i></p> 
 </div>
@@ -810,7 +810,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </cart-items>
                           
 <script>
-// Function to modify elements
+// Function to modify elements ADD THE DELIVERY WINDOWS
 function modifyElements() {
     // Find elements with class "neo-time-enabled"
     var elements = document.querySelectorAll('.neo-time-enabled');
@@ -820,24 +820,24 @@ function modifyElements() {
         // Check if text matches "10:15 AM - 11:45 AM"
         if (text === "10:15 AM - 11:45 AM") {
             // Add " - Priority" after the text
-            element.textContent = text + " - Priority $$$";
+            element.textContent = text + " - Priority $$";
         } else if (text === "10:00 AM - 1:00 PM") {
             // Add " - Priority" after the text
-            element.textContent = text + " - $";
+            element.textContent = text + " - $5";
         } else if (text === "12:00 PM - 3:00 PM") {
             // Add " - Priority" after the text
-            element.textContent = text + " - $";
+            element.textContent = text + " - $5";
         } else if (text === "2:00 PM - 5:00 PM") {
             // Add " - Priority" after the text
-            element.textContent = text + " - $";
+            element.textContent = text + " - $5";
         } else if (text === "4:00 PM - 7:00 PM") {
             // Add " - Priority" after the text
-            element.textContent = text + " - $";
+            element.textContent = text + " - $5";
         } 
     });
 }
 
-// Execute the modification function every 5000 ms (5 seconds)
+// Execute the modification function every 3000 ms (3 seconds)
 setInterval(modifyElements, 3000);
 </script>
 
