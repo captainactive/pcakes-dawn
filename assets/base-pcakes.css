@@ -1108,6 +1108,9 @@ justify-items: center;
   height: 100%;
 	}	
 
+.layer-sub {
+  display: grid;}
+}
  .layer-btn {
    background-color:#8a54a8;
    color: #ffffff;
