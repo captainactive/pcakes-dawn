@@ -1078,7 +1078,7 @@ justify-items: center;
 
 
 
-  .layer-cont {
+  .layer-cont-flavor {
 	display: grid;
 	grid-row-gap: 10px;
 	grid-column-gap: 10px;
