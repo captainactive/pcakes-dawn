@@ -1108,7 +1108,7 @@ justify-items: center;
   height: 100%;
 	}	
 
-.layer-sub {
+.layer-sub div {
   display: grid;}
 }
  .layer-btn {
