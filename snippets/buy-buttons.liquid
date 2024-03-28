@@ -91,12 +91,8 @@
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--large'
-                -%}
-          
-            
+                -%}          
          </div> 
-
-        
                         
       <!-- SNIP / BUY BUTTONS - END ADD ONS -->
             
@@ -114,7 +110,8 @@
 
    {% if products.product.tags contains "mod-hide" %}
 
-     {{ 'products.product.tags' }}
+     {{ products.product.tags }}
+     {{ product.tags }}
 
           {% # HIDES THE BUY BUTTON IF THE ITEM IS A MODIFIER %} 
                  <div style="background: red; color: #ffffff; border: solid red 2px; padding: 20px; border-radius: 4px;">This subitem cannot be purchased directly. Please see the parent item.</div>
