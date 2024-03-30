@@ -130,6 +130,9 @@
 	grid-template-columns: 1fr;
 	grid-row-gap: 25px;
 }
+.handle-conttop {
+	grid-template-columns: 1fr 1fr;
+}	
 .handle-txt1, .handle-txt2 {
 		font-size: 85%;
 	}	
@@ -141,6 +144,10 @@
 	}	
 	}	
 	
+@media (max-width: 400px) {
+.handle-conttop {
+	grid-template-columns: 1fr;
+}		
 
 	
 </style>
@@ -151,7 +158,7 @@
 	
 <h2>Helpful Details</h2>	
 	
-<div class="handle-cont">
+<div class="handle-cont handle-conttop">
 		<div class="handle-subtop">
 		<img class="handle-img1" loading="lazy" src="https://cdn.shopify.com/s/files/1/0024/7441/0043/files/cutting-cake_250.png?v=1711823426" alt="" border="0" />
 		<div class="handle-subtop-details">
