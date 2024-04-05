@@ -64,19 +64,25 @@
     "6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c": {
       "type": "collection-list",
       "blocks": {
-        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-1": {
+        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-3": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "congrats-gifting"
           }
         },
         "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "standard-cakes"
           }
         },
-        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-3": {
+        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "semi-custom-cakes"
+          }
+        },
+        "featured_collection_gaMnmC": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
@@ -84,12 +90,13 @@
         }
       },
       "block_order": [
-        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-1",
+        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-3",
         "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-2",
-        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-3"
+        "template--16655251931378__6ebb2e2d-445f-4a87-a01c-1b1ae0b9263c-featured_collection-1",
+        "featured_collection_gaMnmC"
       ],
       "settings": {
-        "title": "Gr",
+        "title": "Graduation Cakes",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 5,
