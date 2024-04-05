@@ -170,19 +170,12 @@
           "settings": {
             "collection": "cookies"
           }
-        },
-        "featured_collection_t74CQH": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "cookie-packs"
-          }
         }
       },
       "block_order": [
         "featured_collection_jyi7Mc",
         "featured_collection_U98Ax9",
-        "featured_collection_XwHdqx",
-        "featured_collection_t74CQH"
+        "featured_collection_XwHdqx"
       ],
       "settings": {
         "title": "Cookies",
@@ -231,6 +224,18 @@
           "settings": {
             "collection": "bag-o-cake"
           }
+        },
+        "featured_collection_4PxLLB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "desserts"
+          }
+        },
+        "featured_collection_mLzTBY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ice-cream"
+          }
         }
       },
       "block_order": [
@@ -238,7 +243,9 @@
         "template--16658650333426__1f422dfe-8f5a-4481-b5a4-554d79c0d04f-1677979167d644fc2e-1",
         "template--16658650333426__1f422dfe-8f5a-4481-b5a4-554d79c0d04f-1677979167d644fc2e-2",
         "4e2b1c52-9481-4aee-8731-654b75dac235",
-        "2cc9abe1-22a2-47af-9e7b-a70f66769368"
+        "2cc9abe1-22a2-47af-9e7b-a70f66769368",
+        "featured_collection_4PxLLB",
+        "featured_collection_mLzTBY"
       ],
       "settings": {
         "title": "Desserts",
