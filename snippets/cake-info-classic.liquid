@@ -1,1 +1,269 @@
-test
+<div class="page-width info-pages">	
+  
+  {% liquid
+  assign serves = "<span class='info'>Serves: </span>"
+  assign normal = "<span class='info'>Starting Regular Price: </span>" 
+  assign online = "<span class='info'>Starting Online Price: </span>" 
+  assign savings = "<div><span class='info'>Savings: </span>" 
+  assign savingspost = "<div class='info savetxt'> - Buy online and save! <a class='quesinfo' href='#ques'>(?)</a></div><div>"
+  %}
+
+<h2>Cake Pricing</h2>
+  <h3>Buy Online and Save up to 48%!</h3>
+  <p>Select, customize, and checkout with your cake online and save!</p> 
+
+
+<br>
+
+<h2>Custom Cake Sizes and Shapes</h2>
+<!-- CLASSIC FLAVORS  -->
+
+
+  
+<h3>Round Cakes</h3>	
+<table id="tblcakes" class="ptable ptable-sizes">
+  <tr>
+    <th scope="col" class="txtleft">Size/Shape</th>
+    <th scope="col">Serves</th>
+    <th scope="col"><div>Starting Regular Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col"><div>Starting Online Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col" class="r4">Savings</th>
+	  <th scope="col">Order</th>
+  </tr>
+  <tr>
+    <td>4&quot; Round Smash Cake (no filling) </td>
+    <td class="r1">{{ serves }}1</td>
+    <td class="r3">{{ normal }}$31</td>
+    <td class="r2">{{ online }}$21</td>
+    <td class="r4">{{ savings }}48% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/products/smash-cake-semi-custom">order online</a></td>
+  </tr>
+  <tr>
+    <td>8&quot; Round Single Layer</td>
+    <td class="r1">{{ serves }}11</td>
+    <td class="r3">{{ normal }}$59</td>
+    <td class="r2">{{ online }}$45</td>
+    <td class="r4">{{ savings }}36% {{ savingspost }}</td>
+    <td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/round-single-layer">order online</a></td>
+  </tr>  
+   <tr>
+    <td>10&quot; Round Single Layer</td>
+    <td class="r1">{{ serves }}16</td>
+    <td class="r3">{{ normal }}$70</td>
+    <td class="r2">{{ online }}$56</td>
+    <td class="r4">{{ savings }}27% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/round-single-layer">order online</a></td>	
+  </tr>
+   <tr>
+    <td >6&quot; Round Double Layer</td>
+    <td class="r1">{{ serves }}12</td>
+    <td class="r3">{{ normal }}$63</td>
+    <td class="r2">{{ online }}$49</td>
+    <td class="r4">{{ savings }}29%{{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/round-double-layer">order online</a></td>
+  </tr>  
+   <tr>
+    <td>8&quot; Round Double Layer</td>
+    <td class="r1">{{ serves }}23 </td>
+    <td class="r3">{{ normal }}$73 </td>
+    <td class="r2">{{ online }}$59 </td>
+    <td class="r4">{{ savings }}24% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/round-double-layer">order online</a></td>	
+  </tr>  
+ <tr>
+      <td>10&quot; Round Double Layer</td>
+    <td class="r1">{{ serves }}36 </td>
+    <td class="r3">{{ normal }}$97 </td>
+    <td class="r2">{{ online }}$83 </td>
+    <td class="r4">{{ savings }}17% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/round-double-layer">order online</a></td>	
+  </tr>
+</table>
+	
+	
+<h3>Sheet Cakes</h3>	
+<table class="ptable ptable-sizes">
+  <tr>
+    <th scope="col" class="txtleft">Size/Shape</th>
+    <th scope="col">Serves</th>
+    <th scope="col"><div>Starting Regular Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col"><div>Starting Online Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col" class="r4">Savings</th>
+	  <th scope="col">Order</th>
+  </tr>
+
+
+
+    
+   <tr>
+    <td>8x11 Sheet</td>
+    <td class="r1">{{ serves }}20 </td>
+    <td class="r3">{{ normal }}$79 </td>
+    <td class="r2">{{ online }}$65 </td>
+    <td class="r4">{{ savings }}22% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>
+  </tr>
+
+     <tr>
+    <td>Quarter Sheet</td>
+    <td class="r1">{{ serves }}29 </td>
+    <td class="r3">{{ normal }}$89 </td>
+    <td class="r2">{{ online }}$75 </td>
+    <td class="r4">{{ savings }}19% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>
+  </tr>
+
+     <tr>
+   <td>Third Sheet</td>
+    <td class="r1">{{ serves }}37 </td>
+    <td class="r3">{{ normal }}$101 </td>
+    <td class="r2">{{ online }}$87 </td>
+    <td class="r4">{{ savings }}16% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>
+  </tr>
+
+
+  
+   <tr>
+    <td>Half Sheet</td>
+    <td class="r1">{{ serves }}48 </td>
+    <td class="r3">{{ normal }}$113 </td>
+    <td class="r2">{{ online }}$99 </td>
+    <td class="r4">{{ savings }}14% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>
+  </tr>
+
+  <tr>
+    <td>Two-Thirds Sheet</td>
+    <td class="r1">{{ serves }}75 </td>
+    <td class="r3">{{ normal }}$143 </td>
+    <td class="r2">{{ online }}$129 </td>
+    <td class="r4">{{ savings }}11% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>	
+  </tr>
+
+  <tr>
+    <td>Full Sheet</td>
+    <td class="r1">{{ serves }}100 </td>
+    <td class="r3">{{ normal }}$175 </td>
+    <td class="r2">{{ online }}$161</td>
+    <td class="r4">{{ savings }}9%{{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/semi-custom-cakes/sheet">order online</a></td>	 
+  </tr>
+
+</table>
+
+	
+<h3>Heart Cake</h3>	
+<table class="ptable ptable-sizes">
+  <tr>
+    <th scope="col" class="txtleft">Size/Shape</th>
+    <th scope="col">Serves</th>
+    <th scope="col"><div>Starting Regular Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col"><div>Starting Online Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col" class="r4">Savings</th>
+	  <th scope="col">Order</th>
+  </tr>
+	
+   <tr>
+    <td>8&quot; Round Double Layer</td>
+    <td class="r1">{{ serves }}23 </td>
+    <td class="r3">{{ normal }}$109 </td>
+    <td class="r2">{{ online }}$95 </td>
+    <td class="r4">{{ savings }}15% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/theme-cakes?filter.p.m.pc-filter.shape2=Heart&sort_by=manual">order online</a></td>	
+  </tr> 
+	
+</table>
+	
+<h3>Tiered Cakes</h3>	
+<table class="ptable ptable-sizes">
+  <tr>
+    <th scope="col" class="txtleft">Size/Shape</th>
+    <th scope="col">Serves</th>
+    <th scope="col"><div>Starting Regular Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col"><div>Starting Online Price: <a class="quesinfo" href="#ques">(?)</a></div></th>
+    <th scope="col" class="r4">Savings</th>
+	  <th scope="col">Order</th>
+  </tr>
+
+
+     <tr>
+    <td>2 Tier Round (5&quot; &amp; 8&quot;)</td>
+    <td class="r1">{{ serves }}30</td>
+    <td class="r3">{{ normal }}$175 </td>
+    <td class="r2">{{ online }}$159 </td>
+    <td class="r4">{{ savings }}9% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/tiered-cakes">order online</a></td>	
+  </tr>
+
+
+     <tr>
+    <td>2 Tier Round (6&quot; &amp; 9&quot;)</td>
+    <td class="r1">{{ serves }}40 </td>
+    <td class="r3">{{ normal }}$185 </td>
+    <td class="r2">{{ online }}$169 </td>
+    <td class="r4">{{ savings }}9% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/tiered-cakes">order online</a></td>
+  </tr>
+
+
+     <tr>
+    <td>2 Tier Round (6&quot; &amp; 10&quot;)</td>
+    <td class="r1">{{ serves }}47 </td>
+    <td class="r3">{{ normal }}$205 </td>
+    <td class="r2">{{ online }}$189 </td>
+    <td class="r4">{{ savings }}8% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/tiered-cakes">order online</a></td>  
+  </tr>
+
+
+
+     <tr>
+    <td>2 Tier Round (6&quot; &amp; 11&quot;)</td>
+    <td class="r1">{{ serves }}55 </td>
+    <td class="r3">{{ normal }}$225 </td>
+    <td class="r2">{{ online }}$209 </td>
+    <td class="r4">{{ savings }}7% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/tiered-cakes">order online</a></td> 
+  </tr>
+
+
+     <tr>
+   <td>2 Tier Round (6&quot; &amp; 12&quot;)</td>
+    <td class="r1">{{ serves }}65 </td>
+    <td class="r3">{{ normal }}$245 </td>
+    <td class="r2">{{ online }}$229 </td>
+    <td class="r4">{{ savings }}7% {{ savingspost }}</td>
+	<td class="r5"><a class="buynow" href="https://shop.pattys-cakes.com/collections/tiered-cakes">order online</a></td> 
+  </tr>
+
+
+
+     <tr>
+    <td>3-4-5 Tier Round and Square Cakes</td>
+    <td class="r1">{{ serves }}75-500+ </td>
+    <td class="r3">{{ normal }}$375+ </td>
+    <td class="r2">-</td>
+    <td class="r4">-</td>
+	<td class="r5"><a class="buynow" href="https://pattys-cakes.com/events">request</a></td>
+  </tr>
+
+</table>
+
+  <span class="anchor" id="ques"></span>  
+
+  <br><br>
+<h2>Cake Pricing Explained</h2>
+<h3>Starting Online Price</h3><p> This pricing is available for cakes purchased on our <strong>online store only</strong>. This is the starting price, plus artwork. The pricing will be listed on each cake.</p>
+<h3>Starting Regular Price</h3>
+<p>Is the pricing used when placing your order via <strong>email or in-person</strong>. This is the starting price, plus artwork. </p>
+<h3>What if your design is not available online?</h3><p> Then the cake will be priced at the "Regular Starting Price." Yes, even if your design is only slightly different.       
+<h3>What is included?</h3> 
+  <p>All cakes include a filling and a basic design for the price listed. Additional artwork or changes will increase the price.</p>
+  <p>Sales tax is not collected.</p> 
+ 
+  <h3>Need More?</h3> 
+  <p>Not seeing what you are looking for? <a href="https://pattys-cakes.com/contact-us?contact=107">Send us a message</a></p>
+	 <!-- END CLASSIC -->
+	</div>
