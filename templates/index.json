@@ -277,8 +277,8 @@
             "image": "shopify:\/\/shop_images\/google-about.jpg",
             "title": "Featured Google",
             "text": "<p>Featured on the About page of Google, the most visited site in the world. <\/p>",
-            "link_label": "View the Page",
-            "link": "https:\/\/about.google\/"
+            "link_label": "",
+            "link": ""
           }
         },
         "column_hNqXBz": {
