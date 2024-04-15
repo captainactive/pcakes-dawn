@@ -275,8 +275,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/google-about.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Featured Google",
+            "text": "<p>Featured on the About page of Google, the most visited site in the world. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -285,8 +285,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/google-eir-web-home.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Ecomonic Impact Report",
+            "text": "<p>Google selected us to represent California in their 2023 Economic Impact Report.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -295,8 +295,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/google-eir.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Featured Business",
+            "text": "<p>Out of 4.5 million small businesses in California, they choose us. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -308,7 +308,7 @@
         "column_K8yFjR"
       ],
       "settings": {
-        "title": "As Recognized by Google",
+        "title": "Selected by Google",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
