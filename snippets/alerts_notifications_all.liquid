@@ -226,33 +226,6 @@ STANDARD CAKES
 
 
 
-{% if prodtags contains "box" %}
-{% else %}
-  {% if request.page_type == "product" %} 
-  	{% if product.tags contains "Standard Cakes"%}
-
-          <div class="alert-bar">
-              <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-                 <div class="alert-large">
-                     <div>Edible Images on Standard Cakes are unavailable April 25-27th.</div>    
-                 </div> 
-            </div>
-
-         	
-   	{% endif %}
-
-  {% elsif request.page_type == "cart" %}
-  	{% if prodtags contains "Standard Cakes" %}
-              <div class="cart-alert">
-                <div class="alert-clock-cart"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
-               <div class="alert-lrg-cart">Edible Images on Standard Cakes are unavailable April 25-27th.</div>          
-            </div>  
-
-  			
-      {% endif %}
-  {% endif %}
-{% endif %}
-
 
      
 
