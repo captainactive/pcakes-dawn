@@ -23,7 +23,7 @@
           }
         },
         "6a0c645a-1dab-4224-8f48-c46f0c7d1203": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
           }
@@ -43,7 +43,7 @@
         "64b51433-874b-423a-a97c-dec9bef946ef": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%   if product.metafields.pcakes.online_savings %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online_savings}}% when you buy this online!*<\/div>\n  {% endif %}"
+            "custom_liquid": "{%   if product.metafields.pcakes.online_savings > 0 %}\n    <div class=\"onlinesavings\">Save up to {{ product.metafields.pcakes.online_savings}}% when you buy this online!*<\/div>\n  {% endif %}"
           }
         },
         "509e35e4-7159-4a39-a416-a5df9d0d3428": {
