@@ -271,12 +271,12 @@
     "multicolumn_iKhQfF": {
       "type": "multicolumn",
       "blocks": {
-        "column_K8yFjR": {
+        "column_QiaqRK": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/google-eir.jpg",
-            "title": "Featured Business",
-            "text": "<p>Out of 4.5 million small businesses in California, Google choose us. <\/p>",
+            "image": "shopify:\/\/shop_images\/google-about.jpg",
+            "title": "Featured Google",
+            "text": "<p>Featured on the About page of Google, the most visited site in the world. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -291,21 +291,21 @@
             "link": "https:\/\/economicimpact.google\/state\/ca\/#pattys-cakes"
           }
         },
-        "column_QiaqRK": {
+        "column_K8yFjR": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/google-about.jpg",
-            "title": "Featured Google",
-            "text": "<p>Featured on the About page of Google, the most visited site in the world. <\/p>",
+            "image": "shopify:\/\/shop_images\/google-eir.jpg",
+            "title": "Featured Business",
+            "text": "<p>Out of 4.5 million small businesses in California, Google choose us. <\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_K8yFjR",
+        "column_QiaqRK",
         "column_hNqXBz",
-        "column_QiaqRK"
+        "column_K8yFjR"
       ],
       "settings": {
         "title": "Selected by Google",
