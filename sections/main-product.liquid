@@ -110,55 +110,7 @@
               </div>
 
 
-           <!-- SECTIONS/ MAIN-PRODUCT -->  
-          <style>
-          .sticky-price {
-            display: block;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 70px;
-            color: #cccccc;
-            background-color: #ffffff;
-            text-align: center;
-            margin: 0px;
-            z-index: 10;
-          }
-            body {
-            padding-bottom: 50px;
-            }
-          
-          .sticky-price-contain {
-            display: grid;
-              grid-template-columns: 1fr  140px 1fr;
-            margin: 0 auto;
-            box-shadow: #eaeaea 0px 0px 3px 1px;
-          }
-          .sticky-price-contain div {
-                  display: grid;    
-          }     
-          .main-price {
-               padding-top: 5px;
-          }            
-          </style>
-          
-            <div class="sticky-price">
-                  <div class="sticky-price-contain">
-                      <div>&nbsp;</div>
-                      <!--div class="price-label">Price:</div-->
-                      <div class="main-price">   {%- render 'price',
-                            product: product,
-                            use_variant: true,
-                            show_badges: true,
-                            price_class: 'price--small'
-                          -%}
-                        </div>
-                      <div>&nbsp;</div>
-                  </div> 
-            </div>
-
-
+    
             
 
 
