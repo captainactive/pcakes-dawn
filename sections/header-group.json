@@ -36,7 +36,7 @@
         "93fed86e-b7fc-45be-9ada-61748fc91e91": {
           "type": "announcement",
           "settings": {
-            "text": "Holiday Hours - We'll be Closed on the 4th of July",
+            "text": "Holiday Hours - We'll be closed on the 4th of July.",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": ""
