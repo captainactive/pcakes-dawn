@@ -37,6 +37,7 @@ class CartDrawer extends HTMLElement {
     }, { once: true });
 
     document.body.classList.add('overflow-hidden');
+    (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
   }
 
   close() {
@@ -73,6 +74,7 @@ class CartDrawer extends HTMLElement {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
     });
+    (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
   }
 
   getSectionInnerHTML(html, selector = '.shopify-section') {
