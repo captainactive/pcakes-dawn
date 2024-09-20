@@ -71,8 +71,12 @@ if (!customElements.get('product-form')) {
           if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
           if (!this.error) this.submitButton.removeAttribute('aria-disabled');
           this.querySelector('.loading-overlay__spinner').classList.add('hidden');
+          if (window.BOLD && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function'){
+  setTimeout(function(){
+        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
+  },800);
+    }
         });
-      (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
     }
 
     handleErrorMessage(errorMessage = false) {
