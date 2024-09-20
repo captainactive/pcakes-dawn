@@ -18,7 +18,11 @@ It may be overwritten and any customizations would be lost.
       permanent_domain: '{{ shop.permanent_domain }}',
       url: '{{ shop.url }}',
       secure_url: '{{ shop.secure_url }}',
+      {%- if settings.currency_code_enabled -%}
+      money_format: {{ shop.money_with_currency_format | json }},
+      {%- else -%}
       money_format: {{ shop.money_format | json }},
+      {%- endif -%}
       currency: {{ shop.currency | json }}
     };
     window.BOLD.common.Shopify.customer = {
