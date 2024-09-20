@@ -154,7 +154,11 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
-    (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
+    if (window.BOLD && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function'){
+  setTimeout(function(){
+        BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
+  },800);
+    }
   }
 
   updateLiveRegions(line, message) {
