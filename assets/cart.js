@@ -6,6 +6,7 @@ class CartRemoveButton extends HTMLElement {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
       cartItems.updateQuantity(this.dataset.index, 0);
+      (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
     });
   }
 }
@@ -46,6 +47,7 @@ class CartItems extends HTMLElement {
       console.log("Stop updating product quantity - Pickeasy");
     else
       this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+    (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
   }
 
   onCartUpdate() {
@@ -152,6 +154,7 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
+    (typeof window.BOLD !== 'undefined' && typeof window.BOLD.common !== 'undefined' && typeof window.BOLD.common.eventEmitter !== 'undefined' && typeof window.BOLD.common.eventEmitter.emit !== 'undefined' && (BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded')));
   }
 
   updateLiveRegions(line, message) {
