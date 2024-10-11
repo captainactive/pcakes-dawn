@@ -489,7 +489,7 @@
       },
       "order_summary": {
         "free_shipping_discount_label": "Free Delivery",
-        "shipping_label": "Delivery/Pickup "
+        "shipping_label": "Pickup "
       },
       "shipping": {
         "title": "Delivery Address // If this is a Pickup, Enter your Billing Address",
