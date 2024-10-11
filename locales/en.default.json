@@ -495,7 +495,7 @@
       "shipping": {
         "title": "Delivery Address // If this is a Pickup, Enter your Billing Address",
         "shipping_method_title": "Pickup/Delivery Method",
-        "delivery_title": "Pickup/Delivery Details"
+        "delivery_title": "Delivery Address // If this is a Pickup, Enter your Billing Address"
       },
       "payment": {
         "same_billing_address_label": "Same as Delivery Address"
