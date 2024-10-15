@@ -502,6 +502,10 @@
       },
       "order_payment_collection": {
         "pay_now": "Complete Checkout"
+      },
+      "thank_you": {
+        "shipping_address_title": "Delivery [Or Picking Billing] Address",
+        "shipping_method_title": "Delivery/Pickup"
       }
     }
   }
