@@ -504,7 +504,7 @@
         "pay_now": "Complete Checkout"
       },
       "thank_you": {
-        "shipping_address_title": "Delivery [Or Picking Billing] Address",
+        "shipping_address_title": "Delivery Address or Pickup Billing Address",
         "shipping_method_title": "Delivery/Pickup"
       }
     }
