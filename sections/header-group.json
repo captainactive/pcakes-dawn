@@ -25,7 +25,6 @@
         },
         "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Buy, Earn, Enjoy.  Join our Loyalty Program Today.",
             "text_alignment": "center",
@@ -35,6 +34,7 @@
         },
         "93fed86e-b7fc-45be-9ada-61748fc91e91": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Holiday Hours - We'll be closing at 5pm on Halloween.",
             "text_alignment": "center",
