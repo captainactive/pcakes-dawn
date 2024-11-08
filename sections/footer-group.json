@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,7 +14,7 @@
     "a6e08b7b-d4f1-4d06-887d-0b8a7a1e2c6b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness<\/h2>\n<p>Since 1985<\/p><\/div> <img class=\"pc-patty-footer\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/vector-patty-350.png?v=1677971937\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;<\/span><\/div>",
+        "custom_liquid": "<div class=\"pc-patty-footer-cont\"><div><h2>Baking Deliciousiness</h2>\n<p>Since 1985</p></div> <img class=\"pc-patty-footer\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/vector-patty-350.png?v=1677971937\" alt=\"Patty of Patty's Cakes\"><span>&nbsp;</span></div>",
         "color_scheme": "background-1",
         "padding_top": 80,
         "padding_bottom": 0
@@ -14,7 +23,7 @@
     "5f8a8777-6783-4b6f-9c73-9dd3a91bdd6a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-yelp.svg?v=1677971684\">\n\t\t<img alt=\"Google 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-google.svg?v=1677971684\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-trip.svg?v=1677971684\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-ww.svg?v=1677971684\">\n\t\t<img alt=\"The Knot 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-knot.svg?v=1677971684\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" loading='lazy' src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/review-icon-pc.svg?v=1677971684\">\n\t<\/div>\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\"> \n\t<div class=\"pc-review-icons\">\n\t\t<img alt=\"Yelp 4.5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-yelp.svg?v=1677971684\">\n\t\t<img alt=\"Google 5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-google.svg?v=1677971684\">\n\t\t<img alt=\"TripAdvisor 5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-trip.svg?v=1677971684\">\n\n\t\t<img alt=\"Wedding Wire 5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-ww.svg?v=1677971684\">\n\t\t<img alt=\"The Knot 5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-knot.svg?v=1677971684\">\n\t\t<img alt=\"Patty's Cakes 5 Stars\" loading='lazy' src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/review-icon-pc.svg?v=1677971684\">\n\t</div>\n</div>",
         "color_scheme": "background-1",
         "padding_top": 24,
         "padding_bottom": 24
@@ -24,7 +33,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<img class=\"pc-shoppay\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0024\/7441\/0043\/files\/Shop_Pay_with_Affirm_-_White.svg?v=1677733355\">",
+        "custom_liquid": "<img class=\"pc-shoppay\" src=\"https://cdn.shopify.com/s/files/1/0024/7441/0043/files/Shop_Pay_with_Affirm_-_White.svg?v=1677733355\">",
         "color_scheme": "accent-2",
         "padding_top": 40,
         "padding_bottom": 52
@@ -37,14 +46,14 @@
           "type": "text",
           "settings": {
             "heading": "Location Info",
-            "subtext": "<p>825 W. Commonwealth Ave<br\/>Fullerton, CA 92832<br\/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"Call us at 714 525 8350\">(714) 525-8350<\/a><br\/><a href=\"https:\/\/pattys-cakes.com\/contact-us\" title=\"Contact Us\">Email<\/a><\/p>"
+            "subtext": "<p>825 W. Commonwealth Ave<br/>Fullerton, CA 92832<br/><a href=\"tel:(714) 525-8350\" target=\"_blank\" title=\"Call us at 714 525 8350\">(714) 525-8350</a><br/><a href=\"https://pattys-cakes.com/contact-us\" title=\"Contact Us\">Email</a></p>"
           }
         },
         "footer-2": {
           "type": "text",
           "settings": {
             "heading": "Store Hours",
-            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br\/>Sunday: Closed. Delivery for large events is available.<br\/>Monday: Closed<br\/><\/p><h3>Custom Order Counter Hours<\/h3><p>An appointment is required,  <a href=\"https:\/\/pattys-cakes.com\/contact-us?contact=107\" title=\"schedule one now\">schedule one now.<\/a><\/p><p>Tuesday-Friday: 10 am - 5:00 pm<br\/>Saturday: 10 am - 4 pm<\/p>"
+            "subtext": "<p>Tuesday-Saturday: 10 am - 9 pm<br/>Sunday: Closed. Delivery for large events is available.<br/>Monday: Closed<br/></p><h3>Custom Order Counter Hours</h3><p>An appointment is required,  <a href=\"https://pattys-cakes.com/contact-us?contact=107\" title=\"schedule one now\">schedule one now.</a></p><p>Tuesday-Friday: 10 am - 5:00 pm<br/>Saturday: 10 am - 4 pm</p>"
           }
         },
         "footer-0": {
@@ -67,7 +76,7 @@
           "type": "text",
           "settings": {
             "heading": "Allergen Info.",
-            "subtext": "<p>Our items are made on equipment used in producing items containing tree nuts, peanuts, soy, eggs, and milk.<\/p>"
+            "subtext": "<p>Our items are made on equipment used in producing items containing tree nuts, peanuts, soy, eggs, and milk.</p>"
           }
         },
         "7c512f14-f51c-4d04-9a61-72f8383f28f1": {
@@ -75,14 +84,15 @@
           "disabled": true,
           "settings": {
             "heading": "Reviews",
-            "section_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  <\/div>"
+            "section_liquid": "<div style=\"color: white\" class=\"yotpo bottomLine\"\n                    data-product-id=\"{{ product.id }}\">\n                  </div>"
           }
         },
         "c8f3ed7b-dcaa-402f-a62a-732b1b69ee58": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "heading": "Support",
-            "section_liquid": "<div id=\"support-code\"><\/div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code<\/button>"
+            "section_liquid": "<div id=\"support-code\"></div>\n                <button id=\"generate-button\" onclick=\"generateSupportCode();\">Get Support Code</button>"
           }
         }
       },
