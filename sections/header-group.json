@@ -25,6 +25,7 @@
         },
         "d0ba0b22-225c-45a8-9f6f-5aec0d0fd3ce": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Buy, Earn, Enjoy.  Join our Loyalty Program Today.",
             "text_alignment": "center",
@@ -34,9 +35,8 @@
         },
         "93fed86e-b7fc-45be-9ada-61748fc91e91": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Holiday Hours - We'll be closing at 5pm on Halloween.",
+            "text": "Thanksgiving Hours - Open 10am -12pm | Closed on Fri. Nov. 29",
             "text_alignment": "center",
             "color_scheme": "accent-1",
             "link": ""
@@ -51,8 +51,7 @@
       "custom_css": [
         "p {font-family: var(--font-body-family); font-size: 110%; font-weight: normal;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "122a88d2-99ec-4f91-9602-b5e9a6003af7": {
       "type": "custom-liquid",
@@ -65,9 +64,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "middle-left",
         "menu": "v2-1-main",
