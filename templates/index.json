@@ -56,6 +56,184 @@
         "show_text_below": false
       }
     },
+    "rich_text_g7q8cC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ntU4XQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Popular Valentine's Day Pack</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_dAYtgK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_VAL9g6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ntU4XQ",
+        "text_dAYtgK",
+        "button_VAL9g6"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_NCgUTc": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_AYTAMh": {
+          "type": "caption",
+          "settings": {
+            "caption": "popular item!",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_HDdB47": {
+          "type": "heading",
+          "settings": {
+            "heading": "Valentine's Crave Box",
+            "heading_size": "h1"
+          }
+        },
+        "text_emKGEr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything your Valentine is craving, all wrapped up in one gorgeous heart-covered box.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_ngxMhg": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://products/valentines-crave-box"
+          }
+        }
+      },
+      "block_order": [
+        "caption_AYTAMh",
+        "heading_HDdB47",
+        "text_emKGEr",
+        "button_ngxMhg"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/crave-box-3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_tBtbaj": {
+      "type": "featured-product",
+      "blocks": {
+        "text_yq63FJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_im8BeR": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_QDXxzD": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_FFy78D": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_gDxjne": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_CNq8fQ": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_bLbM4E": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "custom_liquid_HNAnkz": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_yq63FJ",
+        "title_im8BeR",
+        "price_QDXxzD",
+        "variant_picker_FFy78D",
+        "quantity_selector_gDxjne",
+        "buy_buttons_CNq8fQ",
+        "share_bLbM4E",
+        "custom_liquid_HNAnkz"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "valentines-crave-box",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -620,88 +798,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "featured_product_tBtbaj": {
-      "type": "featured-product",
-      "blocks": {
-        "text_yq63FJ": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_im8BeR": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_QDXxzD": {
-          "type": "price",
-          "disabled": true,
-          "settings": {}
-        },
-        "variant_picker_FFy78D": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_gDxjne": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "buy_buttons_CNq8fQ": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_bLbM4E": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "custom_liquid_HNAnkz": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_yq63FJ",
-        "title_im8BeR",
-        "price_QDXxzD",
-        "variant_picker_FFy78D",
-        "quantity_selector_gDxjne",
-        "buy_buttons_CNq8fQ",
-        "share_bLbM4E",
-        "custom_liquid_HNAnkz"
-      ],
-      "settings": {
-        "product": "valentines-crave-box",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
+    "rich_text_g7q8cC",
+    "image_with_text_NCgUTc",
+    "featured_product_tBtbaj",
     "rich_text",
     "collection_list_ehtPVW",
     "e35d42e6-4217-49e1-9143-08965faa71a1",
@@ -712,7 +815,6 @@
     "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
-    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25",
-    "featured_product_tBtbaj"
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
   ]
 }
