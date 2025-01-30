@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -21,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -35,7 +44,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/web-header.jpg",
+        "image": "shopify://shop_images/web-header.jpg",
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "desktop_content_position": "bottom-left",
@@ -53,14 +62,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Freshly Baked Deliciousness<\/p>",
+            "heading": "<p>Freshly Baked Deliciousness</p>",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>We are all about flavor! We use a light, airy icing on our cakes and cupcakes. Our icings are enjoyed by all and brings smiles to all!<\/p>"
+            "text": "<p>We are all about flavor! We use a light, airy icing on our cakes and cupcakes. Our icings are enjoyed by all and brings smiles to all!</p>"
           }
         }
       },
@@ -119,7 +128,6 @@
         "featured_collection_KxEnwj",
         "featured_collection_PMnzdq"
       ],
-      "disabled": true,
       "settings": {
         "title": "Valentine's Day Goodies",
         "heading_size": "h1",
@@ -139,7 +147,7 @@
         "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-cbs2.jpg",
+            "image": "shopify://shop_images/patty-cakes-news-cbs2.jpg",
             "title": "CBS 2 News",
             "text": "",
             "link_label": "",
@@ -149,7 +157,7 @@
         "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-abc7.jpg",
+            "image": "shopify://shop_images/patty-cakes-news-abc7.jpg",
             "title": "ABC 7 News",
             "text": "",
             "link_label": "",
@@ -159,7 +167,7 @@
         "template--16655251636466__e35d42e6-4217-49e1-9143-08965faa71a1-1677721029d4277f1a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patty-cakes-news-fox11.jpg",
+            "image": "shopify://shop_images/patty-cakes-news-fox11.jpg",
             "title": "Good Day LA",
             "text": "",
             "link_label": "",
@@ -195,10 +203,10 @@
         "template--16655251636466__24a1ac6f-b8af-42b3-b639-d7dac3028b33-16777242901b6b9552-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+            "image": "shopify://shop_images/img-patty-mall2.jpg",
             "caption": "Baking",
             "heading": "Since 1985",
-            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have baked for thousands of people in Orange County.<\/p>",
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have baked for thousands of people in Orange County.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -236,7 +244,7 @@
         "template--16655251636466__4d2b4220-80f2-4173-a691-e1fcd5aab2fe-16777209299ef3025f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people<\/p>",
+            "text": "<p>It all started as a hobby for Patty back in 1985, decorating cakes for fun as she raised her 3 boys as a single mom. Since then Patty and her team have bake for thousands of people</p>",
             "text_style": "body"
           }
         },
@@ -255,7 +263,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/img-patty-mall2.jpg",
+        "image": "shopify://shop_images/img-patty-mall2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -274,9 +282,9 @@
         "column_QiaqRK": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/google-about.jpg",
+            "image": "shopify://shop_images/google-about.jpg",
             "title": "Featured Google",
-            "text": "<p>Featured on the About page of Google, the most visited site in the world. <\/p>",
+            "text": "<p>Featured on the About page of Google, the most visited site in the world. </p>",
             "link_label": "",
             "link": ""
           }
@@ -284,19 +292,19 @@
         "column_hNqXBz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/google-eir-web-home.jpg",
+            "image": "shopify://shop_images/google-eir-web-home.jpg",
             "title": "Ecomonic Impact Report",
-            "text": "<p>Google selected us to represent California in their 2023 Economic Impact Report.<\/p>",
+            "text": "<p>Google selected us to represent California in their 2023 Economic Impact Report.</p>",
             "link_label": "View Report",
-            "link": "https:\/\/economicimpact.google\/state\/ca\/#pattys-cakes"
+            "link": "https://economicimpact.google/state/ca/#pattys-cakes"
           }
         },
         "column_K8yFjR": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/google-eir.jpg",
+            "image": "shopify://shop_images/google-eir.jpg",
             "title": "Featured Business",
-            "text": "<p>Out of 4.5 million small businesses in California, Google choose us. <\/p>",
+            "text": "<p>Out of 4.5 million small businesses in California, Google choose us. </p>",
             "link_label": "",
             "link": ""
           }
@@ -436,7 +444,7 @@
           "settings": {
             "caption": "Caption",
             "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -444,12 +452,12 @@
         "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bag-o-cake.jpg",
+            "image": "shopify://shop_images/bag-o-cake.jpg",
             "caption": "Patty's Famous",
             "heading": "Bag-O-Cake",
-            "text": "<p>Bag-O-Cake is comprised of the scrumptious top of the cake, where all the goodness is found. We guarantee you can’t eat just one bite.<\/p>",
+            "text": "<p>Bag-O-Cake is comprised of the scrumptious top of the cake, where all the goodness is found. We guarantee you can’t eat just one bite.</p>",
             "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/bag-o-cake"
+            "button_link": "shopify://collections/bag-o-cake"
           }
         },
         "template--16655251636466__c17535a6-21a0-4bac-8237-e8baeb53f00c-16777217332a27574c-2": {
@@ -458,7 +466,7 @@
           "settings": {
             "caption": "Caption",
             "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -492,7 +500,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.<\/p>",
+            "text": "<p>We were honored with the Fullerton Chamber of Commerce 2015 Small Business of the Year Award.</p>",
             "link_label": "",
             "link": ""
           }
@@ -500,7 +508,7 @@
         "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pattys-cakes-greg-sebourn.jpg",
+            "image": "shopify://shop_images/pattys-cakes-greg-sebourn.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -510,7 +518,7 @@
         "template--16655251636466__95c8973e-410b-4133-8a10-68877962cf7a-1677721029d4277f1a-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-of-the-year.jpg",
+            "image": "shopify://shop_images/small-business-of-the-year.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -581,7 +589,7 @@
         "template--16655251636466__18c9c5a7-129e-4a6a-a2de-8b0b768a3f25-16777209299ef3025f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "text_style": "body"
           }
         },
@@ -600,7 +608,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/patty-of-pattys-cakes.jpg",
+        "image": "shopify://shop_images/patty-of-pattys-cakes.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -609,6 +617,84 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_tBtbaj": {
+      "type": "featured-product",
+      "blocks": {
+        "text_yq63FJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_im8BeR": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_QDXxzD": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_FFy78D": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_gDxjne": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_CNq8fQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_bLbM4E": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "custom_liquid_HNAnkz": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_yq63FJ",
+        "title_im8BeR",
+        "price_QDXxzD",
+        "variant_picker_FFy78D",
+        "quantity_selector_gDxjne",
+        "buy_buttons_CNq8fQ",
+        "share_bLbM4E",
+        "custom_liquid_HNAnkz"
+      ],
+      "settings": {
+        "product": "valentines-crave-box",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -626,6 +712,7 @@
     "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
-    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25"
+    "18c9c5a7-129e-4a6a-a2de-8b0b768a3f25",
+    "featured_product_tBtbaj"
   ]
 }
