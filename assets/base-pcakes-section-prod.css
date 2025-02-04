@@ -464,6 +464,9 @@ border-radius: 5px;
   text-align: left!important;
   text-transform: none;
   font-size: calc(var(--font-heading-scale)* 2.4rem)!important;
+  display: block;
+  border: none;
+  border-bottom: .1rem solid;
   
 }
 
