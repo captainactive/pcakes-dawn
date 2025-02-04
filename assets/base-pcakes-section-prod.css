@@ -464,10 +464,11 @@ border-radius: 5px;
   text-align: left!important;
   text-transform: none!important;
   font-size: calc(var(--font-heading-scale)* 2.4rem)!important;
-  display: block!important;
-  border: none!important;
-  border-bottom: .1rem solid!important;
-  font-weight: normalimportant;
+  display: block !important;
+  border: none !important;
+  border-bottom: .1rem solid !important;
+  font-weight: normal !important;
+  border-radius: none !important;
   
 }
 
