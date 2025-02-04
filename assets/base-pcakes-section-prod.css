@@ -460,13 +460,12 @@ border-radius: 5px;
 
 .dresfk {
   font-family: var(--font-heading-family) !important;
-  border-bottom: .1rem solid rgba(var(--color-foreground),.08) !important;
   text-align: left!important;
   text-transform: none!important;
   font-size: calc(var(--font-heading-scale)* 2.4rem)!important;
   display: block !important;
   border: none !important;
-  border-bottom: .1rem solid !important;
+  border-bottom: .1rem solid rgba(var(--color-foreground),.08) !important;
   font-weight: normal !important;
   border-radius: 0 !important;
   
