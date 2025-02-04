@@ -458,7 +458,7 @@ table#wsaio-volume-discount--table {
 border-radius: 5px;
 }
 
-.wsaiovolumetable.dresfk {
+.wsaiovolumetable .dresfk {
   font-family: var(--font-heading-family);
 }
 
