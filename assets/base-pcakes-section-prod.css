@@ -462,11 +462,12 @@ border-radius: 5px;
   font-family: var(--font-heading-family) !important;
   border-bottom: .1rem solid;
   text-align: left!important;
-  text-transform: none;
+  text-transform: none!important;
   font-size: calc(var(--font-heading-scale)* 2.4rem)!important;
   display: block!important;
   border: none!important;
   border-bottom: .1rem solid!important;
+  font-weight: normalimportant;
   
 }
 
