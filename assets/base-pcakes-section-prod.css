@@ -460,6 +460,8 @@ border-radius: 5px;
 
 .dresfk {
   font-family: var(--font-heading-family) !important;
+  border-bottom: .1rem solid;
+  text-align: left!important;
 }
 
 .ba-discount-table th, .wholesale-table th {
