@@ -459,7 +459,7 @@ border-radius: 5px;
 }
 
 .wsaiovolumetable .dresfk {
-  font-family: var(--font-heading-family);
+  font-family: var(--font-heading-family) !important;
 }
 
 .ba-discount-table th, .wholesale-table th {
