@@ -455,8 +455,11 @@ table#wsaio-volume-discount--table {
   margin-right: auto;
   text-align: center;
   border-spacing: 0;
- 
 border-radius: 5px;
+}
+
+.wsaiovolumetable .dresfk {
+  font-family: var(--font-heading-family);
 }
 
 .ba-discount-table th, .wholesale-table th {
