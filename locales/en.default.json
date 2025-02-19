@@ -508,7 +508,10 @@
         "shipping_method_title": "Delivery/Pickup",
         "in_transit": "Order Received ",
         "in_transit_title": "Your order is received and added to our queue. Check your email confirmation for details. ",
-        "in_transit_description_days": "Your order will be ready on the day you requested. "
+        "in_transit_description_days": "Your order will be ready on the day you requested. ",
+        "marker": {
+          "shipping": "Delivery/Billing Address"
+        }
       }
     }
   }
