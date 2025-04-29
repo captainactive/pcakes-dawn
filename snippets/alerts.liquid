@@ -35,12 +35,12 @@ CHANGE AVAIL DATE WHEN AN ITEM SELLS OUT.
 
 	 {% comment %}  3 DAY DATE: YEAR/MONTH/DAY {% endcomment %}  
 	{% assign three_day_avail_date = "2025/04/29 00:01" | date: '%s'%}
-	{% assign three_day_lead_time = 64 %} 
+	{% assign three_day_lead_time = 66 %} 
 	{% assign three_day_lead_time_days = 3 %} 
 
 	 {% comment %}  5 DAY DATE: YEAR/MONTH/DAY {% endcomment %}  
 	{% assign five_day_avail_date = "2025/02/18 00:01" | date: '%s'%}
-	{% assign five_day_lead_time = 110  %}
+	{% assign five_day_lead_time = 112  %}
 	{% assign five_day_lead_time_days = 5  %} 
 
 	 {% comment %}  110 is normal! trying 114, this worked {% endcomment %}  
