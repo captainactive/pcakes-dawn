@@ -162,8 +162,8 @@
           "type": "caption",
           "settings": {
             "caption": "New Items",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_style": "subtitle",
+            "text_size": "large"
           }
         },
         "heading_iTxa6X": {
@@ -183,7 +183,7 @@
         "button_y7ck8f": {
           "type": "button",
           "settings": {
-            "button_label": "View More",
+            "button_label": "Order Now!",
             "button_link": "shopify://products/pattys-banana-pudding"
           }
         }
