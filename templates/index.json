@@ -155,6 +155,59 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_ibG4pB": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_gBeJXg": {
+          "type": "caption",
+          "settings": {
+            "caption": "New Items",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_iTxa6X": {
+          "type": "heading",
+          "settings": {
+            "heading": "Patty's Classic Banana Pudding",
+            "heading_size": "h1"
+          }
+        },
+        "text_8AKQGL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Creamy, dreamy, and layered to perfection, our banana pudding is a new customer favorite!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_y7ck8f": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://products/valentines-crave-box"
+          }
+        }
+      },
+      "block_order": [
+        "caption_gBeJXg",
+        "heading_iTxa6X",
+        "text_8AKQGL",
+        "button_y7ck8f"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/crave-box-3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_product_tBtbaj": {
       "type": "featured-product",
       "blocks": {
@@ -806,6 +859,7 @@
     "image_banner",
     "rich_text_g7q8cC",
     "image_with_text_NCgUTc",
+    "image_with_text_ibG4pB",
     "featured_product_tBtbaj",
     "rich_text",
     "collection_list_ehtPVW",
