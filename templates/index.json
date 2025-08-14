@@ -208,6 +208,59 @@
         "padding_bottom": 0
       }
     },
+    "image_with_text_HFggEB": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_kEeEyd": {
+          "type": "caption",
+          "settings": {
+            "caption": "*Limited Time Only!",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_4Qy6cW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dubai Chocolate Pudding",
+            "heading_size": "h1"
+          }
+        },
+        "text_xyY7Ce": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pistachio pudding with roasted pistachios, mini chocolate chips, crunchy kataifi, and a chocolate drizzle.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CrdLqh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now!",
+            "button_link": "shopify://products/dubai-chocolate-pudding"
+          }
+        }
+      },
+      "block_order": [
+        "caption_kEeEyd",
+        "heading_4Qy6cW",
+        "text_xyY7Ce",
+        "button_CrdLqh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/3_9f90e574-1805-4ede-91ca-42902a452687.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_product_tBtbaj": {
       "type": "featured-product",
       "blocks": {
@@ -860,6 +913,7 @@
     "rich_text_g7q8cC",
     "image_with_text_NCgUTc",
     "image_with_text_ibG4pB",
+    "image_with_text_HFggEB",
     "featured_product_tBtbaj",
     "rich_text",
     "collection_list_ehtPVW",
