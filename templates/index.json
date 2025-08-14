@@ -194,6 +194,7 @@
         "text_8AKQGL",
         "button_y7ck8f"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/3_9f90e574-1805-4ede-91ca-42902a452687.png",
         "height": "adapt",
@@ -248,7 +249,7 @@
         "button_CrdLqh"
       ],
       "settings": {
-        "image": "shopify://shop_images/3_9f90e574-1805-4ede-91ca-42902a452687.png",
+        "image": "shopify://shop_images/1_e21d29ea-9d4c-410c-b4e8-e2cd94c3ff6e.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
