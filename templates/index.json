@@ -56,6 +56,34 @@
         "show_text_below": false
       }
     },
+    "featured_collection_q6hn8M": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Explore our New Product Jar-O Cake",
+        "heading_size": "h1",
+        "description": "<p><br/>All the cake you love, layered into a jar! Fluffy cake, creamy fillings, and luscious toppings — perfectly packaged for spoonfuls of happiness anytime<br/><br/><br/><br/></p>",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "jar-o-cake-1",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "rich_text_g7q8cC": {
       "type": "rich-text",
       "blocks": {
@@ -911,6 +939,7 @@
   },
   "order": [
     "image_banner",
+    "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
     "image_with_text_NCgUTc",
     "image_with_text_ibG4pB",
