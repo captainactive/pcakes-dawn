@@ -36,7 +36,7 @@ PRE-DEFINED MESSAGES
           <div class="alert-collect-right">  
               <div>
               {% if alert3day == "normal" %}                    
-             <strong>2 day cakes are available.</strong><br> The first available pick up/delivery date is {{next2daydate}}.
+             <strong>2 day cakes are available.</strong><br> 
             {% else %}   
               <strong>2 day cakes are SOLD OUT this week.</strong><br> The first available pick up/delivery date is {{next2daydate}}.
             {% endif %}
@@ -83,7 +83,7 @@ PRODUCT PAGE
           <div class="alert-clock"><img class="icon-clock-sm" src="{{ icon_clock }}"/></div>
                <div class="alert-large">
                    <div>Due to high demand, this cake is sold out this week. Please see our <a href="/collections/standard-cakes">Standard cakes</a>.</div> 
-                   <div class="alert-btm">The first available pick up/delivery date is {{next2daydate}}.</div>  
+                   <div class="alert-btm">The first available pick up/delivery date is {{nextdaydate}}.</div>  
                </div> 
           </div>
 		{% endif %}  
