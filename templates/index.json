@@ -56,6 +56,60 @@
         "show_text_below": false
       }
     },
+    "image_with_text_a6UKUm": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_DQGUGD": {
+          "type": "caption",
+          "settings": {
+            "caption": "New Items",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_9iMxiK": {
+          "type": "heading",
+          "settings": {
+            "heading": "It’s Halloween Time!",
+            "heading_size": "h1"
+          }
+        },
+        "text_7PJfBM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Simply Cakes exclusive Halloween Special Cupcake Boxes at Patty’s! </strong></p><p></p><p>Just <strong>2 days’ notice</strong>, and you can schedule for <strong>pickup or delivery</strong>.</p><p> </p><p>Don’t miss out on these spooky treats! </p>",
+            "text_style": "body"
+          }
+        },
+        "button_tk8zU9": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://products/valentines-crave-box"
+          }
+        }
+      },
+      "block_order": [
+        "caption_DQGUGD",
+        "heading_9iMxiK",
+        "text_7PJfBM",
+        "button_tk8zU9"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/2_5c74ffac-8a91-4310-abb1-f8ca00690c39.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_q6hn8M": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -940,6 +994,7 @@
   },
   "order": [
     "image_banner",
+    "image_with_text_a6UKUm",
     "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
     "image_with_text_NCgUTc",
