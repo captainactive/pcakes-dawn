@@ -60,7 +60,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "New! Jar-O Cakes – the perfect way to enjoy cake on the go",
+        "title": "Explore our New Product Jar-O Cake",
         "heading_size": "h1",
         "description": "<p><br/>All the cake you love, layered into a jar! Fluffy cake, creamy fillings, and luscious toppings — perfectly packaged for spoonfuls of happiness anytime<br/><br/><br/><br/></p>",
         "show_description": false,
@@ -276,6 +276,7 @@
         "text_xyY7Ce",
         "button_CrdLqh"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/1_e21d29ea-9d4c-410c-b4e8-e2cd94c3ff6e.png",
         "height": "adapt",
