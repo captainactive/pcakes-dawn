@@ -62,7 +62,7 @@
         "caption_DQGUGD": {
           "type": "caption",
           "settings": {
-            "caption": "New Items",
+            "caption": "",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -70,8 +70,8 @@
         "heading_9iMxiK": {
           "type": "heading",
           "settings": {
-            "heading": "It’s Halloween Time!",
-            "heading_size": "h1"
+            "heading": "Simply Spooky!                            Patty’s x Simply Cakes Halloween Collab 🕷️",
+            "heading_size": "h2"
           }
         },
         "text_7PJfBM": {
