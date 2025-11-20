@@ -56,6 +56,74 @@
         "show_text_below": false
       }
     },
+    "featured_product_j36FdF": {
+      "type": "featured-product",
+      "blocks": {
+        "text_dpWzCG": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_hkqYnT": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_BFCfDT": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Axxgz4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_6YFfXw": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_BTnRAj": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_kL4H9y": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_dpWzCG",
+        "title_hkqYnT",
+        "price_BFCfDT",
+        "variant_picker_Axxgz4",
+        "quantity_selector_6YFfXw",
+        "buy_buttons_BTnRAj",
+        "share_kL4H9y"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "pattys-pumpkin-pie",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_a6UKUm": {
       "type": "image-with-text",
       "blocks": {
@@ -994,6 +1062,7 @@
   },
   "order": [
     "image_banner",
+    "featured_product_j36FdF",
     "image_with_text_a6UKUm",
     "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
