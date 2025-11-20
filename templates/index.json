@@ -844,6 +844,12 @@
           "settings": {
             "collection": "bag-o-cake"
           }
+        },
+        "featured_collection_dexiai": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jar-o-cake-1"
+          }
         }
       },
       "block_order": [
@@ -858,7 +864,8 @@
         "5b76face-13f0-442e-9d09-9bd353471bd3",
         "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0",
         "6a83ab8b-35d7-408e-afab-746db64c7693",
-        "0aea4033-4bc0-43b6-8f55-7656cf917dce"
+        "0aea4033-4bc0-43b6-8f55-7656cf917dce",
+        "featured_collection_dexiai"
       ],
       "settings": {
         "title": "Plenty to Choose From",
@@ -1063,6 +1070,7 @@
   "order": [
     "image_banner",
     "featured_product_j36FdF",
+    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_a6UKUm",
     "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
@@ -1076,7 +1084,6 @@
     "24a1ac6f-b8af-42b3-b639-d7dac3028b33",
     "4d2b4220-80f2-4173-a691-e1fcd5aab2fe",
     "multicolumn_iKhQfF",
-    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "c17535a6-21a0-4bac-8237-e8baeb53f00c",
     "95c8973e-410b-4133-8a10-68877962cf7a",
     "featured_collection",
