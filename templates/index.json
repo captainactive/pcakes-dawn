@@ -62,8 +62,8 @@
         "text_dpWzCG": {
           "type": "text",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "text": "New & Limited Time Only!",
+            "text_style": "body"
           }
         },
         "title_hkqYnT": {
