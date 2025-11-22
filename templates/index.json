@@ -124,6 +124,186 @@
         "padding_bottom": 36
       }
     },
+    "featured_product_ydjhPK": {
+      "type": "featured-product",
+      "blocks": {
+        "text_63RaPn": {
+          "type": "text",
+          "settings": {
+            "text": "New & Limited Time Only!",
+            "text_style": "body"
+          }
+        },
+        "title_ydGgVn": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_L6JBRE": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_EDGfw8": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_UpHNNd": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_jHcWEr": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_9qgBgh": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_63RaPn",
+        "title_ydGgVn",
+        "price_L6JBRE",
+        "variant_picker_EDGfw8",
+        "quantity_selector_UpHNNd",
+        "buy_buttons_jHcWEr",
+        "share_9qgBgh"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "simply-cakes-thanksgiving-6pc",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cupcakes"
+          }
+        },
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cupcakes"
+          }
+        },
+        "6dd67bee-7612-429f-b90b-3bd97d2e189d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gluten-free-cupcakes"
+          }
+        },
+        "4176e170-74d9-400c-8257-7fea47ba800c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vegan-cupcakes"
+          }
+        },
+        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "standard-cakes"
+          }
+        },
+        "540a865d-6f7c-43da-a640-1cc1766c4a50": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vegan-cakes"
+          }
+        },
+        "58102b15-c734-4b45-ac24-3d31f7327f8f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tiered-cakes"
+          }
+        },
+        "45db95d4-6560-424a-820f-5bfc12fadf50": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "semi-custom-cakes"
+          }
+        },
+        "5b76face-13f0-442e-9d09-9bd353471bd3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mini-cookies"
+          }
+        },
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cake-balls"
+          }
+        },
+        "6a83ab8b-35d7-408e-afab-746db64c7693": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "candles-and-accessories"
+          }
+        },
+        "0aea4033-4bc0-43b6-8f55-7656cf917dce": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bag-o-cake"
+          }
+        },
+        "featured_collection_dexiai": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jar-o-cake-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1",
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2",
+        "6dd67bee-7612-429f-b90b-3bd97d2e189d",
+        "4176e170-74d9-400c-8257-7fea47ba800c",
+        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170",
+        "540a865d-6f7c-43da-a640-1cc1766c4a50",
+        "58102b15-c734-4b45-ac24-3d31f7327f8f",
+        "45db95d4-6560-424a-820f-5bfc12fadf50",
+        "5b76face-13f0-442e-9d09-9bd353471bd3",
+        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0",
+        "6a83ab8b-35d7-408e-afab-746db64c7693",
+        "0aea4033-4bc0-43b6-8f55-7656cf917dce",
+        "featured_collection_dexiai"
+      ],
+      "settings": {
+        "title": "Plenty to Choose From",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_a6UKUm": {
       "type": "image-with-text",
       "blocks": {
@@ -770,116 +950,6 @@
         "padding_bottom": 36
       }
     },
-    "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "cupcakes"
-          }
-        },
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mini-cupcakes"
-          }
-        },
-        "6dd67bee-7612-429f-b90b-3bd97d2e189d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "gluten-free-cupcakes"
-          }
-        },
-        "4176e170-74d9-400c-8257-7fea47ba800c": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "vegan-cupcakes"
-          }
-        },
-        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "standard-cakes"
-          }
-        },
-        "540a865d-6f7c-43da-a640-1cc1766c4a50": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "vegan-cakes"
-          }
-        },
-        "58102b15-c734-4b45-ac24-3d31f7327f8f": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tiered-cakes"
-          }
-        },
-        "45db95d4-6560-424a-820f-5bfc12fadf50": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "semi-custom-cakes"
-          }
-        },
-        "5b76face-13f0-442e-9d09-9bd353471bd3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mini-cookies"
-          }
-        },
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "cake-balls"
-          }
-        },
-        "6a83ab8b-35d7-408e-afab-746db64c7693": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "candles-and-accessories"
-          }
-        },
-        "0aea4033-4bc0-43b6-8f55-7656cf917dce": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bag-o-cake"
-          }
-        },
-        "featured_collection_dexiai": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "jar-o-cake-1"
-          }
-        }
-      },
-      "block_order": [
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1",
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2",
-        "6dd67bee-7612-429f-b90b-3bd97d2e189d",
-        "4176e170-74d9-400c-8257-7fea47ba800c",
-        "e116a8a0-9ad2-43bc-b7ee-bba8541a7170",
-        "540a865d-6f7c-43da-a640-1cc1766c4a50",
-        "58102b15-c734-4b45-ac24-3d31f7327f8f",
-        "45db95d4-6560-424a-820f-5bfc12fadf50",
-        "5b76face-13f0-442e-9d09-9bd353471bd3",
-        "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-0",
-        "6a83ab8b-35d7-408e-afab-746db64c7693",
-        "0aea4033-4bc0-43b6-8f55-7656cf917dce",
-        "featured_collection_dexiai"
-      ],
-      "settings": {
-        "title": "Plenty to Choose From",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "c17535a6-21a0-4bac-8237-e8baeb53f00c": {
       "type": "multirow",
       "blocks": {
@@ -1070,6 +1140,7 @@
   "order": [
     "image_banner",
     "featured_product_j36FdF",
+    "featured_product_ydjhPK",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_a6UKUm",
     "featured_collection_q6hn8M",
