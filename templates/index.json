@@ -223,7 +223,7 @@
     "featured_collection_gCYEzP": {
       "type": "featured-collection",
       "disabled": true,
-      "name": "t:sections.featured-collection.presets.name",
+      "name": "Christmas Collection",
       "settings": {
         "title": "Patty's Christmas Collection",
         "heading_size": "h1",
