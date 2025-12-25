@@ -56,6 +56,35 @@
         "show_text_below": false
       }
     },
+    "featured_collection_gCYEzP": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Christmas Collection",
+      "settings": {
+        "title": "Patty's Christmas Collection",
+        "heading_size": "h1",
+        "description": "<p>perfect for gifting or holiday gatherings</p>",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "pattys-christmas-dessert-collection",
+        "products_to_show": 9,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
       "type": "collection-list",
       "blocks": {
@@ -216,34 +245,6 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_collection_gCYEzP": {
-      "type": "featured-collection",
-      "name": "Christmas Collection",
-      "settings": {
-        "title": "Patty's Christmas Collection",
-        "heading_size": "h1",
-        "description": "<p>perfect for gifting or holiday gatherings</p>",
-        "show_description": false,
-        "description_style": "subtitle",
-        "collection": "pattys-christmas-dessert-collection",
-        "products_to_show": 9,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1029,9 +1030,9 @@
   },
   "order": [
     "image_banner",
+    "featured_collection_gCYEzP",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_a6UKUm",
-    "featured_collection_gCYEzP",
     "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
     "image_with_text_NCgUTc",
