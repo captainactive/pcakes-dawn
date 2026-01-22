@@ -56,6 +56,55 @@
         "show_text_below": false
       }
     },
+    "image_banner_8BAYWd": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_tNPLNt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Romance Never Tasted So Good",
+            "heading_size": "h1"
+          }
+        },
+        "text_8JxREM": {
+          "type": "text",
+          "settings": {
+            "text": "Baked for Love",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_wYhXK3": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "❤️Explore Valentine's Collection❤️",
+            "button_link_1": "shopify://collections/valentines-collection",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tNPLNt",
+        "text_8JxREM",
+        "buttons_wYhXK3"
+      ],
+      "disabled": true,
+      "name": "Valentine's Collection",
+      "settings": {
+        "image": "shopify://shop_images/Pink_Valentine_s_Day_Love_Greeting_Card-3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "featured_collection_gCYEzP": {
       "type": "featured-collection",
       "disabled": true,
@@ -585,7 +634,6 @@
         "heading",
         "text"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -1030,6 +1078,7 @@
   },
   "order": [
     "image_banner",
+    "image_banner_8BAYWd",
     "featured_collection_gCYEzP",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_a6UKUm",
