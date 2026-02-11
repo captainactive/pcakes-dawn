@@ -107,29 +107,22 @@
     "collection_list_TkTPnJ": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_yUkAXt": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hbd-cookies"
-          }
-        },
-        "featured_collection_D7jYfh": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "super-bowl-2026"
-          }
-        },
         "featured_collection_zFbhJf": {
           "type": "featured_collection",
           "settings": {
             "collection": "valentines-collection"
           }
+        },
+        "featured_collection_yUkAXt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hbd-cookies"
+          }
         }
       },
       "block_order": [
-        "featured_collection_yUkAXt",
-        "featured_collection_D7jYfh",
-        "featured_collection_zFbhJf"
+        "featured_collection_zFbhJf",
+        "featured_collection_yUkAXt"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
