@@ -128,6 +128,7 @@
         },
         "price_QDXxzD": {
           "type": "price",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker_FFy78D": {
@@ -172,6 +173,7 @@
         "share_bLbM4E",
         "custom_liquid_HNAnkz"
       ],
+      "disabled": true,
       "settings": {
         "product": "valentines-crave-box",
         "color_scheme": "background-1",
