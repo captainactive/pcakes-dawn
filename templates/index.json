@@ -443,7 +443,6 @@
         "text_emKGEr",
         "button_ngxMhg"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/crave-box-3.jpg",
         "height": "adapt",
@@ -1111,6 +1110,7 @@
   },
   "order": [
     "image_banner",
+    "image_with_text_NCgUTc",
     "image_banner_8BAYWd",
     "collection_list_TkTPnJ",
     "featured_collection_gCYEzP",
@@ -1118,7 +1118,6 @@
     "image_with_text_a6UKUm",
     "featured_collection_q6hn8M",
     "rich_text_g7q8cC",
-    "image_with_text_NCgUTc",
     "image_with_text_ibG4pB",
     "image_with_text_HFggEB",
     "featured_product_tBtbaj",
