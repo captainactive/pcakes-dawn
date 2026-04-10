@@ -56,87 +56,6 @@
         "show_text_below": false
       }
     },
-    "featured_product_yLwh7z": {
-      "type": "featured-product",
-      "blocks": {
-        "text_ndx4ia": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_keDjmG": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "icon_with_text_nkazWT": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "lightning_bolt",
-            "heading_1": "New Product Alert",
-            "icon_2": "return",
-            "heading_2": "",
-            "icon_3": "truck",
-            "heading_3": ""
-          }
-        },
-        "price_dTbTTg": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_HRYHAE": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_9ajBDF": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_zjgdwr": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_4keLjL": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_ndx4ia",
-        "title_keDjmG",
-        "icon_with_text_nkazWT",
-        "price_dTbTTg",
-        "variant_picker_HRYHAE",
-        "quantity_selector_9ajBDF",
-        "buy_buttons_zjgdwr",
-        "share_4keLjL"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "custom-logo-cookie",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
       "type": "collection-list",
       "blocks": {
@@ -1167,7 +1086,6 @@
   },
   "order": [
     "image_banner",
-    "featured_product_yLwh7z",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_NCgUTc",
     "featured_product_tBtbaj",
