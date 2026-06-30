@@ -56,6 +56,75 @@
         "show_text_below": false
       }
     },
+    "featured_product_8NyCWW": {
+      "type": "featured-product",
+      "blocks": {
+        "text_WCKBDY": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_k7Erbd": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_Jt6wqm": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_RzMKNa": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_rJRfFc": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_Lttdtb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_ebVMMz": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_WCKBDY",
+        "title_k7Erbd",
+        "price_Jt6wqm",
+        "variant_picker_RzMKNa",
+        "quantity_selector_rJRfFc",
+        "buy_buttons_Lttdtb",
+        "share_ebVMMz"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "4th-of-july-cupcake-bundle-12-pack",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_kee69m": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -1114,6 +1183,7 @@
   },
   "order": [
     "image_banner",
+    "featured_product_8NyCWW",
     "featured_collection_kee69m",
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2",
     "image_with_text_NCgUTc",
