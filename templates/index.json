@@ -63,6 +63,7 @@
         "buy_buttons_Lttdtb",
         "share_ebVMMz"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "4th-of-july-cupcake-bundle-12-pack",
