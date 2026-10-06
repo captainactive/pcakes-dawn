@@ -352,7 +352,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, product.tags: tags -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true, tags: tags -%}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -2127,3 +2127,17 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'buy-buttons', block: block, product: product, product_form_id:
+    product_form_id, section_id: section.id, show_pickup_availability: true, product.tags:
+    tags -%}"
+  to: "{%- render 'buy-buttons', block: block, product: product, product_form_id:
+    product_form_id, section_id: section.id, show_pickup_availability: true, tags:
+    tags -%}"
+  position: 18015..18177
+{% endcomment %}
