@@ -1,4 +1,4 @@
-{% comment %}
+{% if section and section.location != blank %}{% comment %}
   Renders a collection card
 
   Accepts:
@@ -181,3 +181,460 @@
     {% endif %}
   </div>
 </div>
+{% else %}{% comment %}
+  Renders a collection card
+
+  Accepts:
+  - card_collection: {Object} Collection Liquid object
+  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+  - columns: {Number}
+  - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
+  - wrapper_class: {String} Wrapper class for card (optional)
+
+  Usage:
+  {% render 'card-collection' %}
+{% endcomment %}
+
+{%- liquid
+  assign ratio = 1
+  if card_collection.featured_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
+    assign ratio = card_collection.featured_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == null
+    assign ratio = 1
+  endif
+  assign card_color_scheme = settings.card_color_scheme
+  assign card_style = settings.card_style
+  if wrapper_class == null or wrapper_class == 'none'
+    assign card_color_scheme = settings.collection_card_color_scheme
+    assign card_style = settings.collection_card_style
+  endif
+-%}
+
+<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+  <div
+    class="
+      card
+      card--{{ card_style }}
+      {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
+      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
+      {% if extend_height %} card--extend-height{% endif %}
+      {% if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif %}
+    "
+    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+  >
+    <div
+      class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+    >
+      {%- if card_collection.featured_image -%}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            <img
+              srcset="
+                {%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 535 -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 750 -%}{{ card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image | image_url: width: 1000 }} 1000w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if card_collection.featured_image.width >= 3000 -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w
+              "
+              src="{{ card_collection.featured_image | image_url: width: 1500 }}"
+              sizes="
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                calc(100vw - 3rem)
+              "
+              alt=""
+              height="{{ card_collection.featured_image.height }}"
+              width="{{ card_collection.featured_image.width }}"
+              loading="lazy"
+              class="motion-reduce"
+            >
+          </div>
+        </div>
+      {%- endif -%}
+
+      <!-- SNIP/CARD-COLLECTION-->
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading">
+            <a
+              {% if card_collection == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ card_collection.url }}"
+              {% endif %}
+              class="full-unstyled-link"
+            >
+              {%- if card_collection.title != blank -%}
+                {{- card_collection.title | escape -}}
+              {%- else -%}
+                {{ 'onboarding.collection_title' | t }}
+              {%- endif -%}
+              {%- if card_collection.description == blank -%}
+                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+              {%- endif %}
+            </a>
+          </h3>
+          {%- if card_collection.description != blank -%}
+            <p class="card__caption">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+    {% if card_style == 'card' or card_collection.featured_image %}
+
+<style>
+.pc-col-leadtime {
+  color: #8a54a8;
+  font-weight: bold;
+}
+ .card__heading a {
+   color: #ffffff;
+   background-color: #8a54a8;
+   margin: 0 auto;
+   padding: 14px 8px;
+   width: 95%;
+   border-radius: 5px; 
+ }
+  .pc-leadtime-cont {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+  
+  
+</style>
+
+
+
+
+    
+       <!-- SNIP/CARD-COLLECTION 2-->
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading">
+            <a
+              {% if card_collection == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ card_collection.url }}"
+              {% endif %}
+              class="full-unstyled-link"
+            >
+              {%- if card_collection.title != blank -%}
+                {{- card_collection.title | escape -}}
+              {%- else -%}
+                {{ 'onboarding.collection_title' | t }}
+              {%- endif -%}
+              {%- if card_collection.featured_image or card_collection.description == blank -%}
+                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+              {%- endif %}
+            </a>
+          </h3>
+          {%- if card_collection.featured_image == null and card_collection.description != blank -%}
+            <p class="card__caption">
+              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+              <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+            </p>
+          {%- endif -%}
+
+          {% if request.page_type == "page" %}{{ 'Liquid error (snippets/card-collection line 166): Unknown operator !=null' }}{% elsif request.page_type == "page" %}
+         <div class="pc-leadtime-cont">
+           <div> 
+              <div class="tinytext">          
+              Lead time:
+              </div>         
+             <div class="pc-col-leadtime">          
+              {{card_collection.metafields.pcakes-col.leadtime}}
+            <div>
+        </div>
+        </div>
+             {%- endif -%}
+      </div>
+
+    
+    {% endif %}
+  </div>
+</div>
+{% endif %}{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% comment %}\n  Renders a collection card\n\n  Accepts:\n  - card_collection:
+    {Object} Collection Liquid object\n  - media_aspect_ratio: {String} Size of the
+    product image card. Values are \"square\" and \"portrait\". Default is \"square\"
+    (optional)\n  - columns: {Number}\n  - extend_height: {Boolean} Card height extends
+    to available container space. Default: false (optional)\n  - wrapper_class: {String}
+    Wrapper class for card (optional)\n\n  Usage:\n  {% render 'card-collection' %}\n{%
+    endcomment %}\n\n{%- liquid\n  assign ratio = 1\n  if card_collection.featured_image
+    and media_aspect_ratio == 'portrait'\n    assign ratio = 0.8\n  elsif card_collection.featured_image
+    and media_aspect_ratio == 'adapt'\n    assign ratio = card_collection.featured_image.aspect_ratio\n
+    \ endif\n  if ratio == 0 or ratio == null\n    assign ratio = 1\n  endif\n  assign
+    card_color_scheme = settings.card_color_scheme\n  assign card_style = settings.card_style\n
+    \ if wrapper_class == null or wrapper_class == 'none'\n    assign card_color_scheme
+    = settings.collection_card_color_scheme\n    assign card_style = settings.collection_card_style\n
+    \ endif\n-%}\n\n<div class=\"card-wrapper animate-arrow {% if wrapper_class and
+    wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{%
+    endif %}\">\n  <div\n    class=\"\n      card\n      card--{{ card_style }}\n
+    \     {% if card_collection.featured_image %} card--media{% else %} card--text{%
+    endif %}\n      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{%
+    endif %}\n      {% if extend_height %} card--extend-height{% endif %}\n      {%
+    if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif
+    %}\n    \"\n    style=\"--ratio-percent: {{ 1 | divided_by: ratio | times: 100
+    }}%;\"\n  >\n    <div\n      class=\"card__inner {% if card_style == 'standard'
+    %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image
+    or card_style == 'standard' %} ratio{% endif %}\"\n      style=\"--ratio-percent:
+    {{ 1 | divided_by: ratio | times: 100 }}%;\"\n    >\n      {%- if card_collection.featured_image
+    -%}\n        <div class=\"card__media\">\n          <div class=\"media media--transparent
+    media--hover-effect\">\n            <img\n              srcset=\"\n                {%-
+    if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image
+    | image_url: width: 165 }} 165w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 535
+    -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif
+    -%}\n                {%- if card_collection.featured_image.width >= 750 -%}{{
+    card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}\n
+    \               {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image
+    | image_url: width: 1000 }} 1000w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 3000
+    -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif
+    -%}\n                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width
+    }}w\n              \"\n              src=\"{{ card_collection.featured_image |
+    image_url: width: 1500 }}\"\n              sizes=\"\n                (min-width:
+    {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by:
+    columns }}px,\n                (min-width: 750px) {% if columns > 1 %}calc((100vw
+    - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},\n                calc(100vw
+    - 3rem)\n              \"\n              alt=\"\"\n              height=\"{{ card_collection.featured_image.height
+    }}\"\n              width=\"{{ card_collection.featured_image.width }}\"\n              loading=\"lazy\"\n
+    \             class=\"motion-reduce\"\n            >\n          </div>\n        </div>\n
+    \     {%- endif -%}\n\n      <!-- SNIP/CARD-COLLECTION-->\n      <div class=\"card__content\">\n
+    \       <div class=\"card__information\">\n          <h3 class=\"card__heading\">\n
+    \           <a\n              {% if card_collection == blank %}\n                role=\"link\"
+    aria-disabled=\"true\"\n              {% else %}\n                href=\"{{ card_collection.url
+    }}\"\n              {% endif %}\n              class=\"full-unstyled-link\"\n
+    \           >\n              {%- if card_collection.title != blank -%}\n                {{-
+    card_collection.title | escape -}}\n              {%- else -%}\n                {{
+    'onboarding.collection_title' | t }}\n              {%- endif -%}\n              {%-
+    if card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.description != blank -%}\n            <p
+    class=\"card__caption\">\n              {{- card_collection.description | strip_html
+    | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{% render
+    'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n        </div>\n
+    \     </div>\n    </div>\n    {% if card_style == 'card' or card_collection.featured_image
+    %}\n\n<style>\n.pc-col-leadtime {\n  color: #8a54a8;\n  font-weight: bold;\n}\n
+    .card__heading a {\n   color: #ffffff;\n   background-color: #8a54a8;\n   margin:
+    0 auto;\n   padding: 14px 8px;\n   width: 95%;\n   border-radius: 5px; \n }\n
+    \ .pc-leadtime-cont {\n    padding-top: 5px;\n    padding-bottom: 25px;\n  }\n
+    \ \n  \n</style>\n\n\n\n\n    \n       <!-- SNIP/CARD-COLLECTION 2-->\n      <div
+    class=\"card__content\">\n        <div class=\"card__information\">\n          <h3
+    class=\"card__heading\">\n            <a\n              {% if card_collection
+    == blank %}\n                role=\"link\" aria-disabled=\"true\"\n              {%
+    else %}\n                href=\"{{ card_collection.url }}\"\n              {%
+    endif %}\n              class=\"full-unstyled-link\"\n            >\n              {%-
+    if card_collection.title != blank -%}\n                {{- card_collection.title
+    | escape -}}\n              {%- else -%}\n                {{ 'onboarding.collection_title'
+    | t }}\n              {%- endif -%}\n              {%- if card_collection.featured_image
+    or card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.featured_image == null and card_collection.description
+    != blank -%}\n            <p class=\"card__caption\">\n              {{- card_collection.description
+    | strip_html | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{%
+    render 'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n\n          {%
+    if request.page_type == \"page\" and card_collection.metafields.pcakes-col.leadtime
+    !=null %}\n         <div class=\"pc-leadtime-cont\">\n           <div> \n              <div
+    class=\"tinytext\">          \n              Lead time:\n              </div>
+    \        \n             <div class=\"pc-col-leadtime\">          \n              {{card_collection.metafields.pcakes-col.leadtime}}\n
+    \           <div>\n        </div>\n        </div>\n             {%- endif -%}\n
+    \     </div>\n\n    \n    {% endif %}\n  </div>\n</div>\n"
+  to: "{% if section and section.location != blank %}{% comment %}\n  Renders a collection
+    card\n\n  Accepts:\n  - card_collection: {Object} Collection Liquid object\n  -
+    media_aspect_ratio: {String} Size of the product image card. Values are \"square\"
+    and \"portrait\". Default is \"square\" (optional)\n  - columns: {Number}\n  -
+    extend_height: {Boolean} Card height extends to available container space. Default:
+    false (optional)\n  - wrapper_class: {String} Wrapper class for card (optional)\n\n
+    \ Usage:\n  {% render 'card-collection' %}\n{% endcomment %}\n\n{%- liquid\n  assign
+    ratio = 1\n  if card_collection.featured_image and media_aspect_ratio == 'portrait'\n
+    \   assign ratio = 0.8\n  elsif card_collection.featured_image and media_aspect_ratio
+    == 'adapt'\n    assign ratio = card_collection.featured_image.aspect_ratio\n  endif\n
+    \ if ratio == 0 or ratio == null\n    assign ratio = 1\n  endif\n  assign card_color_scheme
+    = settings.card_color_scheme\n  assign card_style = settings.card_style\n  if
+    wrapper_class == null or wrapper_class == 'none'\n    assign card_color_scheme
+    = settings.collection_card_color_scheme\n    assign card_style = settings.collection_card_style\n
+    \ endif\n-%}\n\n<div class=\"card-wrapper animate-arrow {% if wrapper_class and
+    wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{%
+    endif %}\">\n  <div\n    class=\"\n      card\n      card--{{ card_style }}\n
+    \     {% if card_collection.featured_image %} card--media{% else %} card--text{%
+    endif %}\n      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{%
+    endif %}\n      {% if extend_height %} card--extend-height{% endif %}\n      {%
+    if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif
+    %}\n    \"\n    style=\"--ratio-percent: {{ 1 | divided_by: ratio | times: 100
+    }}%;\"\n  >\n    <div\n      class=\"card__inner {% if card_style == 'standard'
+    %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image
+    or card_style == 'standard' %} ratio{% endif %}\"\n      style=\"--ratio-percent:
+    {{ 1 | divided_by: ratio | times: 100 }}%;\"\n    >\n      {%- if card_collection.featured_image
+    -%}\n        <div class=\"card__media\">\n          <div class=\"media media--transparent
+    media--hover-effect\">\n            <img\n              srcset=\"\n                {%-
+    if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image
+    | image_url: width: 165 }} 165w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 535
+    -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif
+    -%}\n                {%- if card_collection.featured_image.width >= 750 -%}{{
+    card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}\n
+    \               {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image
+    | image_url: width: 1000 }} 1000w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 3000
+    -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif
+    -%}\n                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width
+    }}w\n              \"\n              src=\"{{ card_collection.featured_image |
+    image_url: width: 1500 }}\"\n              sizes=\"\n                (min-width:
+    {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by:
+    columns }}px,\n                (min-width: 750px) {% if columns > 1 %}calc((100vw
+    - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},\n                calc(100vw
+    - 3rem)\n              \"\n              alt=\"\"\n              height=\"{{ card_collection.featured_image.height
+    }}\"\n              width=\"{{ card_collection.featured_image.width }}\"\n              loading=\"lazy\"\n
+    \             class=\"motion-reduce\"\n            >\n          </div>\n        </div>\n
+    \     {%- endif -%}\n\n      <!-- SNIP/CARD-COLLECTION-->\n      <div class=\"card__content\">\n
+    \       <div class=\"card__information\">\n          <h3 class=\"card__heading\">\n
+    \           <a\n              {% if card_collection == blank %}\n                role=\"link\"
+    aria-disabled=\"true\"\n              {% else %}\n                href=\"{{ card_collection.url
+    }}\"\n              {% endif %}\n              class=\"full-unstyled-link\"\n
+    \           >\n              {%- if card_collection.title != blank -%}\n                {{-
+    card_collection.title | escape -}}\n              {%- else -%}\n                {{
+    'onboarding.collection_title' | t }}\n              {%- endif -%}\n              {%-
+    if card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.description != blank -%}\n            <p
+    class=\"card__caption\">\n              {{- card_collection.description | strip_html
+    | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{% render
+    'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n        </div>\n
+    \     </div>\n    </div>\n    {% if card_style == 'card' or card_collection.featured_image
+    %}\n\n<style>\n.pc-col-leadtime {\n  color: #8a54a8;\n  font-weight: bold;\n}\n
+    .card__heading a {\n   color: #ffffff;\n   background-color: #8a54a8;\n   margin:
+    0 auto;\n   padding: 14px 8px;\n   width: 95%;\n   border-radius: 5px; \n }\n
+    \ .pc-leadtime-cont {\n    padding-top: 5px;\n    padding-bottom: 25px;\n  }\n
+    \ \n  \n</style>\n\n\n\n\n    \n       <!-- SNIP/CARD-COLLECTION 2-->\n      <div
+    class=\"card__content\">\n        <div class=\"card__information\">\n          <h3
+    class=\"card__heading\">\n            <a\n              {% if card_collection
+    == blank %}\n                role=\"link\" aria-disabled=\"true\"\n              {%
+    else %}\n                href=\"{{ card_collection.url }}\"\n              {%
+    endif %}\n              class=\"full-unstyled-link\"\n            >\n              {%-
+    if card_collection.title != blank -%}\n                {{- card_collection.title
+    | escape -}}\n              {%- else -%}\n                {{ 'onboarding.collection_title'
+    | t }}\n              {%- endif -%}\n              {%- if card_collection.featured_image
+    or card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.featured_image == null and card_collection.description
+    != blank -%}\n            <p class=\"card__caption\">\n              {{- card_collection.description
+    | strip_html | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{%
+    render 'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n\n          {%
+    if request.page_type == \"page\" and card_collection.metafields.pcakes-col.leadtime
+    !=null %}\n         <div class=\"pc-leadtime-cont\">\n           <div> \n              <div
+    class=\"tinytext\">          \n              Lead time:\n              </div>
+    \        \n             <div class=\"pc-col-leadtime\">          \n              {{card_collection.metafields.pcakes-col.leadtime}}\n
+    \           <div>\n        </div>\n        </div>\n             {%- endif -%}\n
+    \     </div>\n\n    \n    {% endif %}\n  </div>\n</div>\n{% else %}{% comment
+    %}\n  Renders a collection card\n\n  Accepts:\n  - card_collection: {Object} Collection
+    Liquid object\n  - media_aspect_ratio: {String} Size of the product image card.
+    Values are \"square\" and \"portrait\". Default is \"square\" (optional)\n  -
+    columns: {Number}\n  - extend_height: {Boolean} Card height extends to available
+    container space. Default: false (optional)\n  - wrapper_class: {String} Wrapper
+    class for card (optional)\n\n  Usage:\n  {% render 'card-collection' %}\n{% endcomment
+    %}\n\n{%- liquid\n  assign ratio = 1\n  if card_collection.featured_image and
+    media_aspect_ratio == 'portrait'\n    assign ratio = 0.8\n  elsif card_collection.featured_image
+    and media_aspect_ratio == 'adapt'\n    assign ratio = card_collection.featured_image.aspect_ratio\n
+    \ endif\n  if ratio == 0 or ratio == null\n    assign ratio = 1\n  endif\n  assign
+    card_color_scheme = settings.card_color_scheme\n  assign card_style = settings.card_style\n
+    \ if wrapper_class == null or wrapper_class == 'none'\n    assign card_color_scheme
+    = settings.collection_card_color_scheme\n    assign card_style = settings.collection_card_style\n
+    \ endif\n-%}\n\n<div class=\"card-wrapper animate-arrow {% if wrapper_class and
+    wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{%
+    endif %}\">\n  <div\n    class=\"\n      card\n      card--{{ card_style }}\n
+    \     {% if card_collection.featured_image %} card--media{% else %} card--text{%
+    endif %}\n      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{%
+    endif %}\n      {% if extend_height %} card--extend-height{% endif %}\n      {%
+    if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif
+    %}\n    \"\n    style=\"--ratio-percent: {{ 1 | divided_by: ratio | times: 100
+    }}%;\"\n  >\n    <div\n      class=\"card__inner {% if card_style == 'standard'
+    %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image
+    or card_style == 'standard' %} ratio{% endif %}\"\n      style=\"--ratio-percent:
+    {{ 1 | divided_by: ratio | times: 100 }}%;\"\n    >\n      {%- if card_collection.featured_image
+    -%}\n        <div class=\"card__media\">\n          <div class=\"media media--transparent
+    media--hover-effect\">\n            <img\n              srcset=\"\n                {%-
+    if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image
+    | image_url: width: 165 }} 165w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 535
+    -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif
+    -%}\n                {%- if card_collection.featured_image.width >= 750 -%}{{
+    card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}\n
+    \               {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image
+    | image_url: width: 1000 }} 1000w,{%- endif -%}\n                {%- if card_collection.featured_image.width
+    >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%-
+    endif -%}\n                {%- if card_collection.featured_image.width >= 3000
+    -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif
+    -%}\n                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width
+    }}w\n              \"\n              src=\"{{ card_collection.featured_image |
+    image_url: width: 1500 }}\"\n              sizes=\"\n                (min-width:
+    {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by:
+    columns }}px,\n                (min-width: 750px) {% if columns > 1 %}calc((100vw
+    - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},\n                calc(100vw
+    - 3rem)\n              \"\n              alt=\"\"\n              height=\"{{ card_collection.featured_image.height
+    }}\"\n              width=\"{{ card_collection.featured_image.width }}\"\n              loading=\"lazy\"\n
+    \             class=\"motion-reduce\"\n            >\n          </div>\n        </div>\n
+    \     {%- endif -%}\n\n      <!-- SNIP/CARD-COLLECTION-->\n      <div class=\"card__content\">\n
+    \       <div class=\"card__information\">\n          <h3 class=\"card__heading\">\n
+    \           <a\n              {% if card_collection == blank %}\n                role=\"link\"
+    aria-disabled=\"true\"\n              {% else %}\n                href=\"{{ card_collection.url
+    }}\"\n              {% endif %}\n              class=\"full-unstyled-link\"\n
+    \           >\n              {%- if card_collection.title != blank -%}\n                {{-
+    card_collection.title | escape -}}\n              {%- else -%}\n                {{
+    'onboarding.collection_title' | t }}\n              {%- endif -%}\n              {%-
+    if card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.description != blank -%}\n            <p
+    class=\"card__caption\">\n              {{- card_collection.description | strip_html
+    | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{% render
+    'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n        </div>\n
+    \     </div>\n    </div>\n    {% if card_style == 'card' or card_collection.featured_image
+    %}\n\n<style>\n.pc-col-leadtime {\n  color: #8a54a8;\n  font-weight: bold;\n}\n
+    .card__heading a {\n   color: #ffffff;\n   background-color: #8a54a8;\n   margin:
+    0 auto;\n   padding: 14px 8px;\n   width: 95%;\n   border-radius: 5px; \n }\n
+    \ .pc-leadtime-cont {\n    padding-top: 5px;\n    padding-bottom: 25px;\n  }\n
+    \ \n  \n</style>\n\n\n\n\n    \n       <!-- SNIP/CARD-COLLECTION 2-->\n      <div
+    class=\"card__content\">\n        <div class=\"card__information\">\n          <h3
+    class=\"card__heading\">\n            <a\n              {% if card_collection
+    == blank %}\n                role=\"link\" aria-disabled=\"true\"\n              {%
+    else %}\n                href=\"{{ card_collection.url }}\"\n              {%
+    endif %}\n              class=\"full-unstyled-link\"\n            >\n              {%-
+    if card_collection.title != blank -%}\n                {{- card_collection.title
+    | escape -}}\n              {%- else -%}\n                {{ 'onboarding.collection_title'
+    | t }}\n              {%- endif -%}\n              {%- if card_collection.featured_image
+    or card_collection.description == blank -%}\n                <span class=\"icon-wrap\">{%
+    render 'icon-arrow' %}</span>\n              {%- endif %}\n            </a>\n
+    \         </h3>\n          {%- if card_collection.featured_image == null and card_collection.description
+    != blank -%}\n            <p class=\"card__caption\">\n              {{- card_collection.description
+    | strip_html | truncatewords: 12 -}}\n              <span class=\"icon-wrap\">&nbsp;{%
+    render 'icon-arrow' %}</span>\n            </p>\n          {%- endif -%}\n\n          {%
+    if request.page_type == \"page\" %}{{ 'Liquid error (snippets/card-collection
+    line 166): Unknown operator !=null' }}{% elsif request.page_type == \"page\" %}\n
+    \        <div class=\"pc-leadtime-cont\">\n           <div> \n              <div
+    class=\"tinytext\">          \n              Lead time:\n              </div>
+    \        \n             <div class=\"pc-col-leadtime\">          \n              {{card_collection.metafields.pcakes-col.leadtime}}\n
+    \           <div>\n        </div>\n        </div>\n             {%- endif -%}\n
+    \     </div>\n\n    \n    {% endif %}\n  </div>\n</div>\n{% endif %}"
+  position: 0..14827
+{% endcomment %}
