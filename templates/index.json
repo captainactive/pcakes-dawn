@@ -83,6 +83,12 @@
     "ce618cbd-c7d6-4f13-9429-ba6a7458bfe2": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_VTEmVD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thanksgiving-simply-cakes-collab"
+          }
+        },
         "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1": {
           "type": "featured_collection",
           "settings": {
@@ -169,6 +175,7 @@
         }
       },
       "block_order": [
+        "featured_collection_VTEmVD",
         "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-1",
         "template--16655251636466__ce618cbd-c7d6-4f13-9429-ba6a7458bfe2-167772166806fbaef8-2",
         "6dd67bee-7612-429f-b90b-3bd97d2e189d",
